@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.09",
+  "title": "Éditeur de propriétés",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Dans quel onglet règle-t-on la résolution et les images par seconde ?", "choices": ["Render", "Output", "Scene", "World"], "answer": 1, "explain": "Output > Format."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Où change-t-on la caméra active de la scène ?", "choices": ["Object", "Data", "Scene", "View Layer"], "answer": 2, "explain": "Scene > Camera."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Où règle-t-on la focale d'une caméra ?", "answer_text": "Onglet Data (Object Data) de la caméra > Lens > Focal Length."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Pourquoi l'onglet Material n'apparaît-il pas quand une lumière est sélectionnée ?", "answer_text": "Les onglets dépendent du type de l'objet actif : une lumière n'a pas de matériau."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Comment remettre un champ à sa valeur par défaut ?", "answer_text": "Backspace avec la souris au-dessus du champ (ou clic droit > Reset to Default)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "À quoi sert l'épingle de l'éditeur Properties ?", "answer_text": "À figer l'affichage sur un datablock même si l'on sélectionne d'autres objets."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Où se trouve le bouclier (Fake User) d'un matériau ?", "answer_text": "Dans la ligne de datablock en haut de l'onglet Material (ou dans l'Outliner, mode Blender File)."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Donnez deux usages des propriétés personnalisées en production.", "answer_text": "Métadonnées de plan (shot, version, artiste), paramètres de rig, données pour scripts de pipeline."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Combien d'images pour 5 secondes à 25 fps ?", "choices": ["100", "120", "125", "150"], "answer": 2, "explain": "5 × 25 = 125."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Pourquoi fixer la cadence (fps) avant d'animer ?", "answer_text": "Les clés sont posées sur des numéros d'image : changer les fps ensuite modifie la durée réelle et donc le timing."}
+  ]
+}

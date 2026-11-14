@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.11",
+  "title": "Matériaux simples",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle valeur de Metallic pour du bois ?", "choices": ["0", "0,5", "1", "2"], "answer": 0, "explain": "Non-métal : 0."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Roughness = 0 donne une surface…", "choices": ["Mate", "Parfaitement lisse et réfléchissante", "Transparente", "Invisible"], "answer": 1, "explain": "0 = miroir/verni ; 1 = mat."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quels réglages pour un verre simple ?", "answer_text": "Transmission Weight 1, Roughness 0 (IOR ~1,45–1,5)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Comment faire briller une lanterne ?", "answer_text": "Emission Color + Emission Strength (5 à 20)."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Pourquoi éviter le noir pur et le blanc pur en Base Color ?", "answer_text": "Aucun matériau réel n'absorbe ou ne renvoie 100 % de la lumière : les valeurs extrêmes paraissent artificielles et faussent l'éclairage."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment donner un matériau différent à certaines faces ?", "answer_text": "Ajouter un emplacement (+), New (ou choisir le matériau), Edit Mode, sélectionner les faces, Assign."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Quel emplacement s'applique aux faces par défaut ?", "answer_text": "Le premier emplacement (index 0)."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Comment copier les matériaux d'un objet vers d'autres ?", "answer_text": "Sélectionner les cibles puis la source (active), Ctrl+L > Link Materials."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Quel mode d'affichage montre les matériaux sous un éclairage de test ?", "choices": ["Wireframe", "Solid", "Material Preview", "X-Ray"], "answer": 2, "explain": "Material Preview (HDRI de test)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Deux objets partagent MAT_Wood. Comment en assombrir un seul ?", "answer_text": "Créer une copie du matériau (bouton copie de la ligne de datablock), la renommer et l'assombrir."}
+  ]
+}

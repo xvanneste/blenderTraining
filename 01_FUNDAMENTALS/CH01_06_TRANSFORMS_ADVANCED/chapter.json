@@ -1,0 +1,25 @@
+{
+  "code": "CH01.06",
+  "title": "Transformations avancées",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Une caisse peut mesurer 2 mètres parce que son maillage mesure 2 mètres, ou parce qu'on a étiré un cube d'un mètre : même image, mais des biseaux, des simulations et des exports qui se comportent différemment. Ce chapitre explique la différence entre échelle et dimensions et pourquoi on applique les transformations, puis les orientations (global, local, normal…) et le snapping, l'aimantation qui permet de poser, plaquer et aligner sans approximation. Exercice : un déménagement où rien ne doit flotter ni traverser.",
+  "prereqs": ["CH01.03 (G, R, S, axes).", "CH01.04 (données partagées)."],
+  "objectives": [
+    "Distinguer échelle et dimensions ; appliquer les transformations (Ctrl+A) et savoir quand.",
+    "Choisir une orientation de transformation (Global, Local, Normal, View…).",
+    "Configurer et utiliser le snapping (Snap Target, Snap Base, Ctrl temporaire).",
+    "Poser et plaquer des objets avec précision."
+  ],
+  "competences": [["C01.06.a", "Appliquer échelle/rotation à bon escient, aligner par snapping", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Échelle, dimensions, appliquer", "25 min"], ["L2", "Orientations", "20 min"], ["L3", "Snapping", "30 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_06_moving_starter.blend", "Caisse étirée, livre flottant, étagère, planche tournée"],
+    ["COMPLETED_EXAMPLES/ch01_06_moving_solution.blend", "Tout posé et aligné"],
+    ["SCRIPTS/validate_ch01_06.py", "Correcteur (18 points)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_06_moving_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_06.py\" --python-exit-code 1 -- --exercise moving",
+  "deliverables": ["ch01_06_moving_<prenom>_v001.blend validé.", "Mini-projet : la chambre rangée."],
+  "next": "[CH01.07 — Origines, pivots, curseur 3D](../CH01_07_ORIGINS_PIVOTS/README.md)"
+}

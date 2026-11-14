@@ -1,0 +1,39 @@
+{
+  "blender": "5.3.0",
+  "file": "G:\\_formation\\blender\\BLENDER_CINEMA_MASTER_ACADEMY\\00_SETUP\\CH00_01_INSTALLATION\\STARTER_FILES\\ch00_01_testcard_starter.blend",
+  "samples": 64,
+  "resolution": [
+    960,
+    540
+  ],
+  "results": [
+    {
+      "api": "CPU",
+      "devices": [
+        "CPU"
+      ],
+      "seconds": 7.41,
+      "image": "G:\\_formation\\blender\\BLENDER_CINEMA_MASTER_ACADEMY\\00_SETUP\\CH00_01_INSTALLATION\\COMPLETED_EXAMPLES\\benchmark_reference\\bench_cpu.png",
+      "speedup_vs_cpu": 1.0
+    },
+    {
+      "api": "CUDA",
+      "devices": [
+        "NVIDIA GeForce RTX 3080"
+      ],
+      "seconds": 0.83,
+      "image": "G:\\_formation\\blender\\BLENDER_CINEMA_MASTER_ACADEMY\\00_SETUP\\CH00_01_INSTALLATION\\COMPLETED_EXAMPLES\\benchmark_reference\\bench_cuda.png",
+      "speedup_vs_cpu": 8.93
+    },
+    {
+      "api": "OPTIX",
+      "devices": [
+        "NVIDIA GeForce RTX 3080"
+      ],
+      "seconds": 0.84,
+      "image": "G:\\_formation\\blender\\BLENDER_CINEMA_MASTER_ACADEMY\\00_SETUP\\CH00_01_INSTALLATION\\COMPLETED_EXAMPLES\\benchmark_reference\\bench_optix.png",
+      "speedup_vs_cpu": 8.82
+    }
+  ],
+  "date": "20261114_091450"
+}

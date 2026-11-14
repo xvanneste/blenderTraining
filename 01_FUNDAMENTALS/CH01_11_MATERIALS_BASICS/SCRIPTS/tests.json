@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_11_files.py",
+  "validator": "validate_ch01_11.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_11_house_colors_solution.blend", "exercise": "colors", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch01_11_house_colors_starter.blend", "exercise": "colors", "expect": false}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_06_files.py",
+  "validator": "validate_ch01_06.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_06_moving_solution.blend", "exercise": "moving", "expect": true},
+    {"file": "STARTER_FILES/ch01_06_moving_starter.blend", "exercise": "moving", "expect": false}
+  ]
+}

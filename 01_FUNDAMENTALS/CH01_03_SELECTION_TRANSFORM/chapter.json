@@ -1,0 +1,26 @@
+{
+  "code": "CH01.03",
+  "title": "Sélection et manipulation",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant absolu",
+  "duration": "2 h 30",
+  "intro": "Sélectionner et transformer, c'est 80 % des gestes d'un artiste 3D. Ce chapitre installe la distinction essentielle entre objets sélectionnés et objet actif, toutes les méthodes de sélection (clic, rectangle, cercle, lasso, Outliner, motif de nom), et les transformations au clavier — G, R, S, contraintes d'axe, saisie numérique — qui donnent vitesse et précision. Exercice phare : un puzzle de quatre pièces à ranger exactement dans leurs silhouettes, vérifié au centimètre près.",
+  "prereqs": ["CH01.02 (navigation)."],
+  "objectives": [
+    "Distinguer objets sélectionnés et objet actif.",
+    "Sélectionner par clic, rectangle, cercle, lasso, Outliner et motif de nom.",
+    "Déplacer, tourner, mettre à l'échelle au clavier avec contraintes d'axe globales et locales.",
+    "Saisir des valeurs exactes et remettre à zéro les transformations.",
+    "Utiliser gizmos et sidebar, y compris sur plusieurs objets à la fois."
+  ],
+  "competences": [["C01.03.a", "Transformer avec précision au clavier", "Exercice 3 (correcteur), tests chronométrés"]],
+  "lessons": [["L1", "Sélectionner", "30 min"], ["L2", "Transformer au clavier", "40 min"], ["L3", "Gizmos, sidebar et précision", "20 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_03_puzzle_starter.blend", "4 pièces, 4 silhouettes cibles, 30 cailloux"],
+    ["COMPLETED_EXAMPLES/ch01_03_puzzle_solution.blend", "Pièces rangées"],
+    ["SCRIPTS/validate_ch01_03.py", "Correcteur (comparaison géométrique au cm)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_03_puzzle_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_03.py\" --python-exit-code 1 -- --exercise puzzle",
+  "deliverables": ["ch01_03_puzzle_<prenom>_v001.blend validé.", "Mini-projet : nature morte de primitives rendue."],
+  "next": "[CH01.04 — Objets et meshes](../CH01_04_OBJECTS_DATA/README.md)"
+}

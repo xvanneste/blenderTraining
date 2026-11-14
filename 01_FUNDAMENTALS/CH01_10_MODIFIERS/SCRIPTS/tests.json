@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_10_files.py",
+  "validator": "validate_ch01_10.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_10_bridge_solution.blend", "exercise": "bridge", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch01_10_bridge_starter.blend", "exercise": "bridge", "expect": false}
+  ]
+}

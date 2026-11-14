@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_02_files.py",
+  "validator": "validate_ch01_02.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_02_museum_solution.blend", "exercise": "cameras", "expect": true},
+    {"file": "STARTER_FILES/ch01_02_museum_starter.blend", "exercise": "cameras", "expect": false}
+  ]
+}

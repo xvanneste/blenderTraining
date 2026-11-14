@@ -1,0 +1,11 @@
+{
+  "build": "build_ch00_06_files.py",
+  "validator": "validate_ch00_06.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch00_06_messy_scene_solution.blend", "exercise": "naming", "expect": true},
+    {"file": "STARTER_FILES/ch00_06_messy_scene_starter.blend", "exercise": "naming", "expect": false}
+  ],
+  "extra": [
+    {"script": "bcma_create_project.py", "args": ["--root", "{tmp}", "--name", "test_film", "--sequences", "2", "--shots", "2"]}
+  ]
+}

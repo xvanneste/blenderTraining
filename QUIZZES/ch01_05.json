@@ -1,0 +1,19 @@
+{
+  "chapter": "CH01.05",
+  "title": "Modes Object et Edit",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle touche bascule entre Object Mode et Edit Mode ?", "choices": ["Tab", "E", "Ctrl+E", "Alt+Tab"], "answer": 0, "explain": "Tab (Ctrl+Tab : menu des modes)."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Combien de sommets, d'arêtes et de faces a un cube ?", "answer_text": "8 sommets, 12 arêtes, 6 faces."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "En Edit Mode, la touche 2 active la sélection…", "choices": ["Des sommets", "Des arêtes", "Des faces", "Des objets"], "answer": 1, "explain": "1 sommets, 2 arêtes, 3 faces."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Dans quel mode pose-t-on un squelette (armature) pour l'animation ?", "answer_text": "Pose Mode."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Alt + clic gauche sur une arête sélectionne…", "choices": ["Un anneau", "Une boucle d'arêtes", "Toute la partie connectée", "L'objet"], "answer": 1, "explain": "Edge loop ; Ctrl+Alt+clic = anneau."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Pourquoi activer X-Ray (Alt+Z) avant une sélection rectangulaire ?", "answer_text": "Sans X-Ray, seuls les éléments visibles sont sélectionnés ; avec X-Ray, ceux de derrière aussi."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Que sélectionne L avec la souris sur une partie du maillage ?", "answer_text": "Toute la partie connectée (linked) sous la souris."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Comment agrandir progressivement une sélection ?", "answer_text": "Ctrl + Num + (et Ctrl + Num - pour réduire)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Quel raccourci extrude la sélection ?", "choices": ["X", "E", "M", "I"], "answer": 1, "explain": "E."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Que fait S X 0 sur une face sélectionnée ?", "answer_text": "Met à l'échelle 0 sur X : tous les sommets sélectionnés s'alignent sur le même X (la face s'écrase en arête)."},
+    {"id": "Q11", "lesson": "L3", "type": "open", "q": "Pourquoi sortir de l'Edit Mode avant d'enregistrer ou de rendre ?", "answer_text": "Les modifications sont validées dans le maillage à la sortie du mode ; scripts, correcteurs et certains outils lisent le maillage validé."},
+    {"id": "Q12", "lesson": "L4", "type": "open", "q": "Comment régler le rayon de l'édition proportionnelle pendant un déplacement ?", "answer_text": "Avec la molette de la souris (après avoir activé O)."}
+  ]
+}

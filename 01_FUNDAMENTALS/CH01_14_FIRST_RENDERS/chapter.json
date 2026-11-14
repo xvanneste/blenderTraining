@@ -1,0 +1,28 @@
+{
+  "code": "CH01.14",
+  "title": "Premiers rendus",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Tout ce que vous avez appris dans la phase 1 converge ici : produire une image finale propre. Ce chapitre compare EEVEE et Cycles, explique les réglages de qualité (seuil de bruit, échantillons, débruitage), les formats de sortie et la gestion des couleurs (AgX et ses looks, ACES, False Color), puis la façon d'enregistrer et de comparer ses rendus. Exercice : régler, rendre et enregistrer une nature morte en Full HD, vérifiée jusqu'à la présence et l'exposition du fichier image.",
+  "prereqs": ["CH01.11 à CH01.13 (matériaux, caméra, éclairage).", "CH00.01 (GPU)."],
+  "objectives": [
+    "Choisir entre EEVEE et Cycles selon l'objectif.",
+    "Régler l'échantillonnage adaptatif et le débruitage de Cycles.",
+    "Configurer résolution, format, profondeur et chemin de sortie.",
+    "Choisir View Transform et Look.",
+    "Enregistrer, comparer (slots) et automatiser un rendu."
+  ],
+  "competences": [["C01.14.a", "Produire un rendu final propre", "Exercice 3 (correcteur, image vérifiée)"]],
+  "lessons": [["L1", "EEVEE et Cycles", "25 min"], ["L2", "Qualité et bruit", "25 min"], ["L3", "Sortie et couleurs", "25 min"], ["L4", "Enregistrer et comparer", "15 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_14_final_render_starter.blend", "Nature morte prête, réglages par défaut"],
+    ["COMPLETED_EXAMPLES/ch01_14_final_render_solution.blend", "Réglages de rendu final"],
+    ["COMPLETED_EXAMPLES/renders/ch01_14_final.png", "Rendu Cycles de référence (1920×1080)"],
+    ["COMPLETED_EXAMPLES/renders/ch01_14_eevee.png", "Même plan en EEVEE"],
+    ["SCRIPTS/validate_ch01_14.py", "Correcteur (réglages + image produite)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_14_final_render_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_14.py\" --python-exit-code 1 -- --exercise final",
+  "deliverables": ["ch01_14_final_render_<prenom>_v001.blend validé + renders/ch01_14_final.png.", "Projet de phase P1 « Nature morte »."],
+  "next": "[Projet de phase P1](../PROJECT_P1/README.md), puis [Phase 18 — CH18.01](../../18_GREASE_PENCIL/README.md) et [Phase 2](../../02_MODELING/README.md)"
+}

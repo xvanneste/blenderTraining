@@ -1,0 +1,19 @@
+{
+  "chapter": "CH01.04",
+  "title": "Objets et meshes",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Où est stockée la position d'un objet ?", "choices": ["Dans le maillage", "Dans l'objet", "Dans le matériau", "Dans la collection"], "answer": 1, "explain": "La transformation appartient à l'objet ; la géométrie au maillage."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un datablock ?", "answer_text": "Tout élément de données d'un .blend (objet, maillage, matériau, image, caméra…), avec un nom et un nombre d'utilisateurs."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Que devient un matériau à 0 utilisateur à l'enregistrement ?", "answer_text": "Il est supprimé (orphelin), sauf s'il a un Fake User."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "À quoi sert le bouclier (Fake User) ?", "answer_text": "À donner un utilisateur fictif pour conserver une donnée non utilisée."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Quel mode de l'Outliner liste tous les datablocks du fichier ?", "answer_text": "Blender File."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quel raccourci crée une duplication liée ?", "choices": ["Shift+D", "Alt+D", "Ctrl+D", "Ctrl+L"], "answer": 1, "explain": "Alt+D partage les données."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Vous modifiez en Edit Mode un objet créé par Alt+D : que se passe-t-il ?", "answer_text": "Tous les objets qui partagent ce maillage sont modifiés."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Comment rendre un objet lié indépendant ?", "answer_text": "Object Data : cliquer le nombre d'utilisateurs (Make Single User), ou Object > Relations > Make Single User."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Quel raccourci répète la dernière action ?", "answer_text": "Shift+R."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Ctrl+J fusionne les objets sélectionnés dans…", "choices": ["Un nouvel objet", "L'objet actif", "Le premier sélectionné", "Une collection"], "answer": 1, "explain": "L'objet actif garde son nom, son origine, ses modificateurs."},
+    {"id": "Q11", "lesson": "L3", "type": "mcq", "q": "Quelle option de P crée un objet par partie non connectée ?", "choices": ["Selection", "By Material", "By Loose Parts", "By Vertex"], "answer": 2, "explain": "By Loose Parts."},
+    {"id": "Q12", "lesson": "L3", "type": "open", "q": "Pour organiser des objets sans les fusionner, que faut-il utiliser ?", "answer_text": "Des collections ou le parentage."}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "code": "CH01.11",
+  "title": "Matériaux simples",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "La forme dit ce qu'est un objet ; le matériau dit de quoi il est fait. Ce chapitre présente le Principled BSDF et ses réglages essentiels (couleur, métal, rugosité, transmission, émission), les emplacements de matériaux qui permettent de colorer différemment les faces d'un même objet, les modes d'affichage pour juger le résultat, et le partage des matériaux entre objets. Exercice : mettre en couleurs une maison — murs, toit, porte, gouttière métallique et lanterne lumineuse.",
+  "prereqs": ["CH01.05 (Edit Mode, sélection de faces).", "CH01.09 (Properties)."],
+  "objectives": [
+    "Créer, nommer et régler un matériau Principled BSDF.",
+    "Distinguer métal et non-métal, mat et brillant, opaque et transparent, émissif.",
+    "Gérer plusieurs emplacements de matériaux et assigner par face.",
+    "Choisir le mode d'affichage adapté (Solid, Material Preview, Rendered).",
+    "Maîtriser le partage des matériaux et créer des variantes."
+  ],
+  "competences": [["C01.11.a", "Créer et assigner des matériaux", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Matériau et Principled BSDF", "30 min"], ["L2", "Plusieurs matériaux sur un objet", "25 min"], ["L3", "Voir, partager, organiser", "15 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_11_house_colors_starter.blend", "Maison grise, gouttière et lanterne sans matériau"],
+    ["COMPLETED_EXAMPLES/ch01_11_house_colors_solution.blend", "Maison en couleurs"],
+    ["COMPLETED_EXAMPLES/ch01_11_house_colors_reference.png", "Rendu de référence"],
+    ["SCRIPTS/validate_ch01_11.py", "Correcteur (affectation par face, réglages)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_11_house_colors_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_11.py\" --python-exit-code 1 -- --exercise colors --render",
+  "deliverables": ["ch01_11_house_colors_<prenom>_v001.blend validé.", "Mini-projet : le village coloré."],
+  "next": "[CH01.12 — Caméras](../CH01_12_CAMERAS/README.md)"
+}

@@ -1,0 +1,27 @@
+{
+  "code": "CH01.12",
+  "title": "Caméras",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "En cinéma 3D, rien n'existe hors du cadre : la caméra est le regard du spectateur. Ce chapitre vous apprend à placer et activer une caméra, à choisir une focale (grand-angle, normale, téléobjectif) en comprenant ce qu'elle change, à composer avec la règle des tiers et la hauteur de caméra, et à guider l'œil avec la profondeur de champ. Exercice : le portrait d'un gardien de phare, tête sur les tiers, arrière-plan flou mais lisible.",
+  "prereqs": ["CH01.02 (navigation, Ctrl+Alt+Num 0).", "CH01.09 (Properties)."],
+  "objectives": [
+    "Ajouter, activer et placer une caméra (alignement sur la vue, Lock Camera to View).",
+    "Choisir une focale selon l'intention.",
+    "Composer avec les guides (tiers) et la hauteur de caméra.",
+    "Régler la profondeur de champ (Focus on Object, F-Stop).",
+    "Choisir une résolution et un format d'image."
+  ],
+  "competences": [["C01.12.a", "Cadrer un plan avec intention", "Exercice 3 (correcteur), mini-projet"]],
+  "lessons": [["L1", "Placer et activer une caméra", "20 min"], ["L2", "Focale et capteur", "25 min"], ["L3", "Composition, hauteur, format", "25 min"], ["L4", "Profondeur de champ", "20 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_12_portrait_starter.blend", "Gardien, phare, caméra mal placée"],
+    ["COMPLETED_EXAMPLES/ch01_12_portrait_solution.blend", "Portrait cadré aux tiers avec profondeur de champ"],
+    ["COMPLETED_EXAMPLES/ch01_12_portrait_reference.png", "Rendu de référence"],
+    ["SCRIPTS/validate_ch01_12.py", "Correcteur (projection, focale, DOF)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_12_portrait_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_12.py\" --python-exit-code 1 -- --exercise portrait --render",
+  "deliverables": ["ch01_12_portrait_<prenom>_v001.blend validé.", "Mini-projet : trois plans, trois émotions."],
+  "next": "[CH01.13 — Éclairage élémentaire](../CH01_13_LIGHTING_BASICS/README.md)"
+}

@@ -1,0 +1,21 @@
+{
+  "chapter": "CH00.07",
+  "title": "Sauvegardes, récupération, versions",
+  "pass_score": 11,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Blender a planté. Quel menu essayer en premier ?", "choices": ["File > Revert", "File > Recover > Auto Save", "Edit > Undo History", "File > Defaults"], "answer": 1, "explain": "Recover > Auto Save liste les sauvegardes automatiques."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Vous avez quitté sans enregistrer en cliquant « Don't Save ». Que tenter ?", "answer_text": "File > Recover > Last Session (quit.blend)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Que contient un fichier .blend1 ?", "answer_text": "L'état du fichier avant le dernier enregistrement (copie automatique, écrasée à chaque Ctrl+S)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Citez une limite documentée de l'Auto Save.", "answer_text": "Il n'enregistre pas les changements en cours en Sculpt Mode, Texture Paint et Edit Mode."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Pourquoi Ctrl+Z ne peut-il pas annuler une suppression après réouverture du fichier ?", "answer_text": "L'historique d'annulation est en mémoire et disparaît à la fermeture/réouverture."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Que fait Ctrl+Alt+S sur scene_v007.blend ?", "choices": ["Écrase scene_v007", "Crée scene_v008.blend", "Crée scene_v007.blend1", "Exporte en USD"], "answer": 1, "explain": "Save Incremental."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Donnez deux moments où il faut incrémenter la version.", "answer_text": "Avant une modification risquée, après une étape validée, en fin de séance, avant d'envoyer le fichier."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Énoncez la règle 3-2-1.", "answer_text": "3 copies, sur 2 supports différents, dont 1 hors site."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Un dossier synchronisé dans le cloud est-il une sauvegarde suffisante ?", "choices": ["Oui", "Non : une suppression ou un chiffrement se synchronise aussi", "Oui si payant", "Seulement pour les .blend"], "answer": 1, "explain": "Synchronisation ≠ sauvegarde versionnée."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quelle est la seule preuve qu'une sauvegarde fonctionne ?", "answer_text": "Une restauration réussie (testée)."},
+    {"id": "Q11", "lesson": "L4", "type": "mcq", "q": "Format pour transmettre une géométrie animée « cuite » (sans rig) au lighting ?", "choices": ["PNG", "Alembic", "JPEG", "WAV"], "answer": 1, "explain": "Alembic (ou USD)."},
+    {"id": "Q12", "lesson": "L4", "type": "mcq", "q": "Format d'image pour un rendu destiné au compositing ?", "choices": ["JPEG", "OpenEXR", "GIF", "BMP"], "answer": 1, "explain": "OpenEXR : virgule flottante, multicouche."},
+    {"id": "Q13", "lesson": "L4", "type": "open", "q": "Pourquoi ne jamais utiliser JPEG dans la chaîne de fabrication ?", "answer_text": "Compression avec perte et 8 bits : artefacts cumulatifs, pas de données au-delà du blanc, pas de transparence."},
+    {"id": "Q14", "lesson": "L4", "type": "open", "q": "Quel format ouvert sert à échanger des scènes complètes entre studios ?", "answer_text": "USD (OpenUSD)."}
+  ]
+}

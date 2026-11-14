@@ -1,0 +1,28 @@
+{
+  "code": "CH18.02",
+  "title": "Perspective",
+  "phase_title": "18 — Grease Pencil (module A : fondamentaux du dessin)",
+  "level": "débutant",
+  "duration": "3 h",
+  "intro": "La perspective place le spectateur dans l'espace : elle dit à quelle hauteur et dans quelle direction regarde la caméra. Ce chapitre explique la ligne d'horizon, les points de fuite et les fuyantes, puis les systèmes à un, deux et trois points de fuite, la mesure en perspective, la place des personnages par rapport à l'horizon et la perspective atmosphérique. Exercice : un couloir, un coin de rue et une tour en contre-plongée sur une feuille Grease Pencil guidée.",
+  "prereqs": ["CH18.01 (boîtes en perspective)."],
+  "objectives": [
+    "Placer une ligne d'horizon et des points de fuite selon le point de vue voulu.",
+    "Choisir entre perspective à 1, 2 ou 3 points.",
+    "Diviser, répéter et reporter des hauteurs en perspective.",
+    "Placer des personnages par rapport à l'horizon.",
+    "Relier perspective dessinée et focale/orientation d'une caméra 3D."
+  ],
+  "competences": [["C18.02.a", "Dessiner un décor en perspective", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Horizon, points de fuite, fuyantes", "45 min"], ["L2", "Deux et trois points", "1 h"], ["L3", "Mesurer, répéter, éloigner", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_02_perspective_starter.blend", "Feuille à 3 cadres guidés (1, 2, 3 points)"],
+    ["COMPLETED_EXAMPLES/ch18_02_perspective_solution.blend", "Couloir, rue, tour (référence)"],
+    ["COMPLETED_EXAMPLES/ch18_02_perspective_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/validate_ch18_02.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_02_perspective_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_02.py\" --python-exit-code 1 -- --exercise perspective --render",
+  "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : trois décors."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.03 — Proportions, silhouettes, gestuelle](../CH18_03_PROPORTIONS_GESTURE/README.md)"
+}

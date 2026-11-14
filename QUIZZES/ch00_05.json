@@ -1,0 +1,17 @@
+{
+  "chapter": "CH00.05",
+  "title": "Extensions et add-ons",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quel fichier distingue une extension (format 4.2+) d'un ancien add-on ?", "choices": ["__init__.py", "blender_manifest.toml", "addon.json", "setup.py"], "answer": 1, "explain": "Le manifeste TOML décrit identité, version, licence, permissions."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quel add-on livré facilite le travail dans le Shader Editor ?", "choices": ["Rigify", "Node Wrangler", "Pose Library", "Hydra Storm"], "answer": 1, "explain": "Node Wrangler."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quelle est la plateforme officielle des extensions ?", "answer_text": "extensions.blender.org"},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Pourquoi n'active-t-on pas d'add-on pour importer un OBJ ou un USD ?", "answer_text": "Ces formats sont intégrés au cœur (C++) de Blender."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Par défaut, Blender 5.3 peut-il se connecter à Internet pour les extensions ?", "choices": ["Oui, toujours", "Non, il faut autoriser l'accès en ligne", "Seulement le week-end", "Seulement via Steam"], "answer": 1, "explain": "Allow Online Access doit être accepté (ou --online-mode)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Citez trois éléments à vérifier avant d'installer une extension inconnue.", "answer_text": "Source/auteur, licence, permissions déclarées, compatibilité de version, contenu du paquet (code)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Comment installer un .zip d'extension téléchargé ?", "answer_text": "Preferences > Get Extensions (ou Add-ons) > menu ˅ > Install from Disk, ou glisser-déposer le .zip dans Blender."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Pourquoi laisser Auto Run Python Scripts désactivé ?", "answer_text": "Un .blend peut contenir du code (drivers, scripts) ; il ne doit s'exécuter que si le fichier est de confiance."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quelle commande vérifie un dossier d'extension ?", "answer_text": "blender -c extension validate <dossier>"},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Quelle licence doit avoir une extension add-on qui utilise l'API Python de Blender et qui est distribuée ?", "choices": ["N'importe laquelle", "Compatible GPL", "Creative Commons NC", "Propriétaire uniquement"], "answer": 1, "explain": "Compatible GPL (ex. GPL-3.0-or-later)."}
+  ]
+}

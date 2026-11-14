@@ -1,0 +1,11 @@
+{
+  "build": "build_ch00_03_files.py",
+  "validator": "validate_ch00_03.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch00_03_heavy_scene_solution.blend", "exercise": "optimize", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch00_03_heavy_scene_starter.blend", "exercise": "optimize", "expect": false}
+  ],
+  "extra": [
+    {"script": "bcma_scene_cost.py", "file": "STARTER_FILES/ch00_03_heavy_scene_starter.blend", "args": []}
+  ]
+}

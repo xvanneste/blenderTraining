@@ -1,0 +1,98 @@
+{
+ "chapter": "CH01.08",
+ "title": "Collections et Outliner",
+ "pass_score": 8,
+ "questions": [
+  {
+   "id": "Q1",
+   "lesson": "L1",
+   "type": "mcq",
+   "q": "Quel raccourci déplace la sélection vers une collection ?",
+   "choices": [
+    "C",
+    "M",
+    "Ctrl+G",
+    "Shift+C"
+   ],
+   "answer": 1,
+   "explain": "M (Shift+M : lier à une collection supplémentaire)."
+  },
+  {
+   "id": "Q2",
+   "lesson": "L1",
+   "type": "open",
+   "q": "Un objet peut-il appartenir à deux collections ?",
+   "answer_text": "Oui (Shift+M ou Ctrl+glisser dans l'Outliner), à utiliser avec parcimonie."
+  },
+  {
+   "id": "Q3",
+   "lesson": "L1",
+   "type": "open",
+   "q": "Pourquoi éviter de laisser des objets directement dans la Scene Collection ?",
+   "answer_text": "Ils échappent à l'organisation : impossible de les masquer, exclure ou lier par groupe ; les outils de pipeline s'appuient sur les collections."
+  },
+  {
+   "id": "Q4",
+   "lesson": "L2",
+   "type": "mcq",
+   "q": "Quel interrupteur empêche un objet d'apparaître au rendu tout en le laissant visible pour travailler ?",
+   "choices": [
+    "L'œil",
+    "L'appareil photo",
+    "La flèche",
+    "La case Exclude"
+   ],
+   "answer": 1,
+   "explain": "Disable in Renders."
+  },
+  {
+   "id": "Q5",
+   "lesson": "L2",
+   "type": "open",
+   "q": "L'œil (H) affecte-t-il le rendu ?",
+   "answer_text": "Non : il masque seulement dans le viewport (temporaire, par view layer)."
+  },
+  {
+   "id": "Q6",
+   "lesson": "L2",
+   "type": "open",
+   "q": "À quoi sert l'interrupteur « flèche » ?",
+   "answer_text": "Rendre un objet/une collection non sélectionnable (visible mais protégé des clics)."
+  },
+  {
+   "id": "Q7",
+   "lesson": "L2",
+   "type": "open",
+   "q": "Comment afficher les colonnes appareil photo, écran, flèche dans l'Outliner ?",
+   "answer_text": "Filtre (entonnoir) de l'Outliner > Restriction Toggles."
+  },
+  {
+   "id": "Q8",
+   "lesson": "L3",
+   "type": "mcq",
+   "q": "Pour parenter A à B (B est le parent), on sélectionne…",
+   "choices": [
+    "B puis A, Ctrl+P",
+    "A puis B (B actif), Ctrl+P",
+    "A seul, Ctrl+P",
+    "B seul, Alt+P"
+   ],
+   "answer": 1,
+   "explain": "Le parent est l'objet actif (sélectionné en dernier)."
+  },
+  {
+   "id": "Q9",
+   "lesson": "L3",
+   "type": "open",
+   "q": "Différence entre collection et parentage ?",
+   "answer_text": "La collection organise (dossier) ; le parentage crée une relation de mouvement (l'enfant suit le parent)."
+  },
+  {
+   "id": "Q10",
+   "lesson": "L3",
+   "type": "open",
+   "q": "Quel mode de l'Outliner liste les données sans utilisateur ?",
+   "answer_text": "Unused Data (appelé Orphan Data dans d'anciennes versions)."
+  }
+ ]
+}

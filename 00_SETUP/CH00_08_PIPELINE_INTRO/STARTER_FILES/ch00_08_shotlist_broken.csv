@@ -1,0 +1,6 @@
+sequence;shot;duration_frames;shot_size;camera_move;description;characters;assets;status
+sq010;sh0010;120;EWS;slow push-in;Atelier de nuit sous la pluie.;;set_workshop;board
+sq010;sh020;96;MS;static;Le robot répare une ampoule.;robot;set_workshop;board
+sq010;sh0040;72;Plan large;static;La fenêtre, la pluie s'arrête.;robot;set_workshop;board
+sq010;sh0030;-10;CU;static;L'ampoule s'allume.;robot;prp_bulb;board
+sq10;sh0050;96;FS;pan left;;robot;set_workshop;fini

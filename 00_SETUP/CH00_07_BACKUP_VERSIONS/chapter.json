@@ -1,0 +1,31 @@
+{
+  "code": "CH00.07",
+  "title": "Sauvegardes, récupération, versions",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Tout le monde perd un jour du travail : plantage, mauvaise manipulation, disque qui meurt. La différence entre un amateur et un professionnel, c'est que le professionnel perd cinq minutes, pas trois semaines. Vous découvrirez les cinq filets de sécurité de Blender, la discipline des versions incrémentales, la règle de sauvegarde 3-2-1 automatisée par script, et les formats de fichiers qui circulent dans un pipeline de film. Exercice : récupérer un personnage supprimé puis enregistré par erreur.",
+  "prereqs": ["CH00.02 (Auto Save, Save Versions)", "CH00.06 (arborescence, nommage _vNNN)"],
+  "objectives": [
+    "Récupérer un travail perdu (Last Session, Auto Save, .blend1).",
+    "Versionner avec Save Incremental (Ctrl+Alt+S).",
+    "Mettre en place une sauvegarde 3-2-1 automatisée et tester une restauration.",
+    "Choisir le bon format d'échange (USD, Alembic, FBX, glTF, OBJ, EXR, PNG)."
+  ],
+  "competences": [
+    ["C00.07.a", "Récupérer un travail perdu et versionner", "Exercices 1 et 3 (correcteur)"],
+    ["C00.07.b", "Appliquer une stratégie de sauvegarde 3-2-1", "Exercice 2"],
+    ["C00.07.c", "Choisir un format de fichier adapté", "Exercice 4, quiz"]
+  ],
+  "lessons": [["L1", "Les filets de sécurité et la récupération", "25 min"], ["L2", "Versionner", "15 min"], ["L3", "Sauvegarde 3-2-1", "25 min"], ["L4", "Formats de fichiers", "20 min"]],
+  "files": [
+    ["STARTER_FILES/ch00_07_recovery/ch00_07_hero_scene_v001.blend", "Fichier enregistré après la suppression du héros"],
+    ["STARTER_FILES/ch00_07_recovery/ch00_07_hero_scene_v001.blend1", "Copie de sauvegarde contenant encore le héros"],
+    ["COMPLETED_EXAMPLES/ch00_07_hero_scene_v002.blend", "Version récupérée"],
+    ["../../SCRIPTS/bcma_backup.py", "Sauvegarde zip datée, vérifiée, avec rotation"],
+    ["SCRIPTS/validate_ch00_07.py", "Correcteur de l'exercice 3"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"<dossier>\\ch00_07_hero_scene_v002.blend\" `\n  --python \"SCRIPTS\\validate_ch00_07.py\" --python-exit-code 1 -- --exercise recover",
+  "deliverables": ["ch00_07_hero_scene_v002.blend validé.", "Sauvegarde 3-2-1 en place, restauration testée.", "Fiche de poste §8 (plan de continuité)."],
+  "next": "[CH00.08 — Introduction au pipeline cinéma](../CH00_08_PIPELINE_INTRO/README.md)"
+}

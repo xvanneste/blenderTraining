@@ -1,0 +1,13 @@
+{
+  "build": "build_ch00_01_files.py",
+  "validator": "validate_ch00_01.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch00_01_testcard_solution.blend", "exercise": "testcard", "expect": true, "render": true},
+    {"file": "COMPLETED_EXAMPLES/ch00_01_broken_render_solution.blend", "exercise": "broken", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch00_01_testcard_starter.blend", "exercise": "testcard", "expect": false, "render": false},
+    {"file": "STARTER_FILES/ch00_01_broken_render_starter.blend", "exercise": "broken", "expect": false, "render": true}
+  ],
+  "extra": [
+    {"script": "bcma_system_report.py", "args": ["--out", "{tmp}"]}
+  ]
+}

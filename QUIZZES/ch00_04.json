@@ -1,0 +1,17 @@
+{
+  "chapter": "CH00.04",
+  "title": "Périphériques d'entrée",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quel geste fait orbiter la vue 3D avec une souris 3 boutons ?", "choices": ["Clic gauche glissé", "Clic du milieu glissé", "Clic droit glissé", "Molette"], "answer": 1, "explain": "MMB glissé = orbite."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Shift + clic du milieu glissé permet de…", "choices": ["Zoomer", "Orbiter", "Faire un panoramique", "Sélectionner"], "answer": 2, "explain": "Panoramique (pan)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quelle touche du pavé numérique bascule entre perspective et orthographique ?", "answer_text": "Num 5."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Citez deux alternatives au pavé numérique.", "answer_text": "Emulate Numpad, le gizmo de navigation, le pie menu des vues, un pavé USB séparé."},
+    {"id": "Q5", "lesson": "L1", "type": "mcq", "q": "Ctrl + Num 1 affiche…", "choices": ["La vue de face", "La vue arrière", "La vue de gauche", "La vue de dessous"], "answer": 1, "explain": "Ctrl inverse la vue : arrière."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Avec Emulate 3 Button Mouse, le bouton du milieu est remplacé par…", "choices": ["Ctrl + clic gauche", "Alt + clic gauche", "Shift + clic droit", "Double-clic"], "answer": 1, "explain": "Alt + clic gauche (modificateur réglable : Alt ou OS-Key)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "La pression de votre tablette ne fonctionne pas. Citez deux vérifications.", "answer_text": "Pilote officiel installé ; Tablet API (Windows Ink / Wintab) ; icône de pression activée sur Radius/Strength de la brush."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "À quoi sert le réglage Max Threshold de la tablette ?", "answer_text": "Définir la pression nécessaire pour atteindre 100 % : le baisser si l'on appuie peu."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Pour quelles phases de l'académie une tablette devient-elle quasi indispensable ?", "answer_text": "Sculpture (phase 3), peinture de textures (phase 4), Grease Pencil / storyboard / animation 2D (phase 18)."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'une souris 3D (NDOF) ?", "answer_text": "Un périphérique qui déplace la vue sur 6 axes simultanément (translation et rotation), réglable dans Input > NDOF."}
+  ]
+}

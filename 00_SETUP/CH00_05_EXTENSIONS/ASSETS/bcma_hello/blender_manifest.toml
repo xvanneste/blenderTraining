@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+# Identifiant unique : minuscules, chiffres et _ uniquement.
+id = "bcma_hello"
+version = "1.0.0"
+name = "BCMA Hello"
+tagline = "Extension d'exemple de la Blender Cinema Master Academy"
+maintainer = "BCMA apprenant"
+type = "add-on"
+
+tags = ["3D View"]
+
+blender_version_min = "4.2.0"
+
+# Licence obligatoire (identifiant SPDX). Les add-ons utilisant l'API de Blender
+# doivent être compatibles GPL.
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+# Aucune permission demandée : l'extension n'accède ni au réseau ni aux fichiers.

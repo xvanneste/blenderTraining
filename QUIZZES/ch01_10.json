@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.10",
+  "title": "Modificateurs essentiels",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Que signifie « non destructif » pour un modificateur ?", "answer_text": "Il modifie le résultat affiché/rendu sans changer le maillage d'origine : réglable et réversible tant qu'on ne l'applique pas."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Dans quel sens la pile de modificateurs est-elle évaluée ?", "choices": ["De bas en haut", "De haut en bas", "Simultanément", "Au hasard"], "answer": 1, "explain": "Chaque modificateur reçoit le résultat du précédent (au-dessus)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Comment désactiver un modificateur seulement au rendu ?", "answer_text": "Icône appareil photo (Render) du modificateur."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Quel modificateur répète un objet ?", "choices": ["Mirror", "Array", "Solidify", "Bevel"], "answer": 1, "explain": "Array."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Par rapport à quoi Mirror fait-il la symétrie ?", "answer_text": "Par rapport à l'origine de l'objet (ou à un Mirror Object)."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quel modificateur donne une épaisseur à une surface ?", "choices": ["Solidify", "Subdivision", "Array", "Boolean"], "answer": 0, "explain": "Solidify."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi un léger Bevel rend-il un objet plus réaliste ?", "answer_text": "Les arêtes réelles ne sont jamais parfaitement vives : le biseau accroche la lumière et crée un liseré qui lit les formes."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Différence entre Relative Offset et Constant Offset dans Array ?", "answer_text": "Relative : en multiples de la taille de l'objet ; Constant : en distance fixe (mètres)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Pour un seau épais et lisse, quel ordre ?", "choices": ["Subdivision puis Solidify", "Solidify puis Subdivision", "Peu importe", "Bevel puis Mirror"], "answer": 1, "explain": "Épaissir puis lisser."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Donnez une bonne raison d'appliquer un modificateur.", "answer_text": "Retouche manuelle impossible autrement, ou export vers un logiciel qui ne gère pas les modificateurs."}
+  ]
+}

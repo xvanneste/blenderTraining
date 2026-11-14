@@ -1,0 +1,18 @@
+{
+  "title": "CH18.01 — Formes et volumes",
+  "exercises": {
+    "volumes": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Lines": {"min_strokes": 25, "min_points": 150, "min_width": 2.5,
+                       "hint": "Calque USER_Lines : 20 traits droits + 10 ellipses dans la zone en haut à gauche."},
+        "USER_Boxes": {"min_strokes": 50, "min_width": 3.0, "min_height": 1.2,
+                       "hint": "Calque USER_Boxes : 10 boîtes (≈ 7–9 traits chacune) dans la zone du bas."},
+        "USER_Values": {"min_strokes": 6, "min_width": 2.5,
+                        "hint": "Calque USER_Values : 3 sphères + leurs ombres, avec des matériaux remplis."}
+      },
+      "fill_layers": ["USER_Values"],
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

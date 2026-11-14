@@ -1,0 +1,32 @@
+{
+  "code": "CH00.06",
+  "title": "Organisation de projet",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "2 h",
+  "intro": "Les films terminés sont ceux dont l'organisation permet d'avancer sans friction. Ce chapitre installe les réflexes de studio : une arborescence de production claire (assets séparés des plans, une tâche par dossier), un nommage lisible par les humains et par les scripts, des chemins relatifs qui survivent au déplacement d'un projet, et le tout nouveau système de projet de Blender 5.3. Vous remettrez aux normes une scène en désordre, validée par un correcteur automatique.",
+  "prereqs": ["CH00.02 (Relative Paths activé).", "CH00.05 utile (extension BCMA Hello)."],
+  "objectives": [
+    "Créer l'arborescence d'un film (préproduction, assets, plans, montage, son, livraisons).",
+    "Nommer fichiers, objets, collections et matériaux selon des conventions de studio.",
+    "Renommer vite : F2, Outliner, Batch Rename.",
+    "Utiliser et réparer les chemins relatifs (Make Paths Relative, Find Missing Files).",
+    "Créer et ouvrir un projet Blender 5.3 (File > Project), comprendre project.toml."
+  ],
+  "competences": [
+    ["C00.06.a", "Créer une arborescence et appliquer les conventions de nommage", "Exercices 1 et 3 (correcteur)"],
+    ["C00.06.b", "Gérer les chemins relatifs et les fichiers manquants", "Exercice 2"]
+  ],
+  "lessons": [["L1", "Arborescence de production", "25 min"], ["L2", "Conventions de nommage", "25 min"], ["L3", "Chemins relatifs et fichiers externes", "20 min"], ["L4", "Le système de projet Blender 5.3", "15 min"]],
+  "files": [
+    ["STARTER_FILES/ch00_06_messy_scene_starter.blend", "Scène en désordre (noms par défaut, chemin absolu)"],
+    ["COMPLETED_EXAMPLES/ch00_06_messy_scene_solution.blend", "Scène conforme"],
+    ["ASSETS/textures/tx_wood_planks.png", "Texture générée utilisée par la scène"],
+    ["SCRIPTS/bcma_create_project.py", "Crée l'arborescence d'un film (+ Blender Project dans Blender)"],
+    ["../../SCRIPTS/bcma_naming_check.py", "Contrôle des conventions (réutilisable dans tout le cursus)"],
+    ["SCRIPTS/validate_ch00_06.py", "Correcteur de l'exercice 3"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch00_06_messy_scene_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch00_06.py\" --python-exit-code 1 -- --exercise naming",
+  "deliverables": ["PROJECTS/mon_premier_film (ou le nom de votre court A) créé et ouvert comme projet Blender.", "ch00_06_messy_scene_<prenom>_v001.blend validé.", "README de projet (mini-projet)."],
+  "next": "[CH00.07 — Sauvegardes, récupération, versions](../CH00_07_BACKUP_VERSIONS/README.md)"
+}

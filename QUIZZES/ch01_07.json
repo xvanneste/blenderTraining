@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.07",
+  "title": "Origines, pivots, curseur 3D",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce que l'origine d'un objet ?", "answer_text": "Le point qui représente l'objet : sa Location, et le centre de ses rotations et mises à l'échelle par défaut."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Où placer l'origine d'un personnage destiné à être posé au sol ?", "answer_text": "Au sol, entre les pieds."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Quelle commande déplace l'origine sans bouger la géométrie, vers un point précis ?", "choices": ["Geometry to Origin", "Origin to 3D Cursor", "Apply Location", "Clear Location"], "answer": 1, "explain": "On place d'abord le curseur 3D, puis Origin to 3D Cursor."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Pourquoi corriger une origine après l'animation pose problème ?", "answer_text": "L'animation est faite sur la transformation de l'objet (autour de l'origine) : déplacer l'origine fausse toutes les clés."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Où apparaissent les nouveaux objets ?", "choices": ["À l'origine du monde", "Au curseur 3D", "Sur l'objet actif", "Au centre de la vue"], "answer": 1, "explain": "Au curseur 3D."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment placer le curseur au milieu de deux sommets sélectionnés ?", "answer_text": "En Edit Mode : Shift+S > Cursor to Selected."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Comment remettre le curseur à l'origine du monde ?", "answer_text": "Shift+S > Cursor to World Origin (ou Shift+C)."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quel pivot fait tourner chaque objet sélectionné sur lui-même ?", "choices": ["Median Point", "3D Cursor", "Individual Origins", "Bounding Box Center"], "answer": 2, "explain": "Individual Origins."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quelle touche ouvre le menu du point de pivot ?", "answer_text": "Le point (.)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Vous voulez faire tourner 3 boulons autour du centre d'une roue. Procédure ?", "answer_text": "Curseur au centre de la roue (Shift+S > Cursor to Selected), pivot = 3D Cursor, sélectionner les boulons, R + axe + angle."}
+  ]
+}

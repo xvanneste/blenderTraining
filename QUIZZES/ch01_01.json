@@ -1,0 +1,19 @@
+{
+  "chapter": "CH01.01",
+  "title": "L'interface",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Qu'est-ce qu'un workspace ?", "choices": ["Un fichier .blend", "Une disposition de zones et d'éditeurs prête à l'emploi", "Une collection", "Un mode d'édition"], "answer": 1, "explain": "Onglets en haut : Layout, Modeling, Shading…"},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quel éditeur affiche l'arborescence de tout ce que contient la scène ?", "choices": ["Properties", "Outliner", "Info", "Spreadsheet"], "answer": 1, "explain": "Outliner."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Où règle-t-on le moteur de rendu, les matériaux ou les modificateurs d'un objet ?", "answer_text": "Dans l'éditeur Properties (onglets Render, Material, Modifiers…)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Les workspaces personnels sont-ils enregistrés dans les préférences ?", "answer_text": "Non, dans le .blend ; pour les retrouver dans chaque nouveau fichier : File > Defaults > Save Startup File."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quelle touche affiche/masque la sidebar de la vue 3D ?", "choices": ["T", "N", "S", "F9"], "answer": 1, "explain": "N (T = toolbar)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Vous venez d'ajouter un cube trop grand. Comment changer sa taille sans le supprimer, juste après l'ajout ?", "answer_text": "Panneau Adjust Last Operation (en bas à gauche, ou F9) : Size."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Que trouve-t-on dans l'onglet Item de la sidebar ?", "answer_text": "Les transformations numériques de l'objet actif : Location, Rotation, Scale, Dimensions."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quel raccourci maximise la zone sous la souris ?", "choices": ["Ctrl+Space", "Alt+Space", "Shift+F", "F11"], "answer": 0, "explain": "Ctrl+Space (Ctrl+Alt+Space : plein écran sans interface)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Comment changer l'éditeur affiché dans une zone ?", "answer_text": "Bouton Editor Type, à gauche de l'en-tête de la zone."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Comment fusionner deux zones ?", "answer_text": "Clic droit sur la frontière > Join Areas (ou glisser depuis un coin vers la zone voisine)."},
+    {"id": "Q11", "lesson": "L4", "type": "mcq", "q": "Quelle touche ouvre la recherche de commandes ?", "choices": ["F1", "F3", "F12", "Tab"], "answer": 1, "explain": "F3 : Menu Search."},
+    {"id": "Q12", "lesson": "L4", "type": "open", "q": "Vous appuyez sur A pour tout sélectionner dans la vue 3D, mais rien ne se passe dans la vue. Cause probable ?", "answer_text": "La souris était au-dessus d'un autre éditeur (Outliner, Properties) : les raccourcis s'appliquent à l'éditeur survolé."}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "code": "CH01.01",
+  "title": "L'interface",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant absolu",
+  "duration": "2 h",
+  "intro": "Blender n'a pas une interface figée : c'est un atelier que l'on reconfigure selon la tâche. Comprendre sa logique — workspaces, zones, éditeurs, régions — vous évitera la principale frustration des débutants : « je ne trouve pas » et « le raccourci ne marche pas ». Vous partirez à la chasse au trésor dans une scène préparée, apprendrez à diviser, fusionner et maximiser les zones, à trouver n'importe quelle commande avec F3, et vous construirez votre propre workspace d'étude.",
+  "prereqs": ["Phase 0 validée (Blender 5.3 installé, préférences réglées)."],
+  "objectives": [
+    "Nommer les parties de l'interface : topbar, workspaces, zones, éditeurs, régions, status bar.",
+    "Reconnaître les éditeurs essentiels et leur rôle.",
+    "Afficher/masquer Toolbar (T) et Sidebar (N), utiliser Adjust Last Operation (F9).",
+    "Diviser, fusionner, maximiser une zone et changer son éditeur.",
+    "Trouver une commande avec F3 et comprendre le principe du survol.",
+    "Créer et enregistrer un workspace personnel."
+  ],
+  "competences": [["C01.01.a", "Nommer et réorganiser les éditeurs", "Exercices 1–3, tests chronométrés"]],
+  "lessons": [["L1", "Zones, éditeurs, workspaces", "30 min"], ["L2", "Régions et Adjust Last Operation", "20 min"], ["L3", "Manipuler les zones", "25 min"], ["L4", "Trouver une commande, principe du survol", "15 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_01_interface_starter.blend", "Scène par défaut + chasse au trésor (Text Editor : README_EXERCICE)"],
+    ["COMPLETED_EXAMPLES/ch01_01_interface_solution.blend", "Fichier contenant un workspace BCMA_Study"],
+    ["SCRIPTS/validate_ch01_01.py", "Correcteur de l'exercice 3"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_01_interface_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_01.py\" --python-exit-code 1 -- --exercise workspace",
+  "deliverables": ["Réponses de la chasse au trésor.", "ch01_01_interface_<prenom>_v001.blend validé.", "Capture annotée « Mon atelier »."],
+  "next": "[CH01.02 — Navigation 3D](../CH01_02_NAVIGATION/README.md)"
+}

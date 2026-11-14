@@ -1,0 +1,26 @@
+{
+  "code": "CH01.10",
+  "title": "Modificateurs essentiels",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "2 h",
+  "intro": "Les modificateurs sont le cœur du travail non destructif : ils répètent, symétrisent, épaississent, biseautent ou lissent un objet sans toucher à son maillage d'origine, et restent réglables à tout moment. Ce chapitre présente la pile de modificateurs et son ordre d'évaluation, six modificateurs essentiels (Array, Mirror, Solidify, Bevel, Subdivision Surface, Boolean en aperçu) et la règle d'or : n'appliquer que lorsque c'est indispensable. Exercice : un petit pont construit à partir d'une planche, d'une demi-rambarde, d'un pilier et d'un seau.",
+  "prereqs": ["CH01.06 (échelle appliquée).", "CH01.07 (origines)."],
+  "objectives": [
+    "Ajouter, régler, réordonner, désactiver et appliquer des modificateurs.",
+    "Utiliser Array, Mirror, Solidify, Bevel et Subdivision Surface.",
+    "Choisir le bon ordre dans la pile.",
+    "Savoir quand appliquer (et quand ne pas appliquer) un modificateur."
+  ],
+  "competences": [["C01.10.a", "Construire une pile non destructive", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Le principe de la pile", "20 min"], ["L2", "Les six essentiels", "40 min"], ["L3", "Ordre et application", "20 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_10_bridge_starter.blend", "Planche, demi-rambarde, pilier, seau sans épaisseur"],
+    ["COMPLETED_EXAMPLES/ch01_10_bridge_solution.blend", "Piles de modificateurs complètes"],
+    ["COMPLETED_EXAMPLES/ch01_10_bridge_reference.png", "Rendu de référence"],
+    ["SCRIPTS/validate_ch01_10.py", "Correcteur (géométrie évaluée, ordre de pile)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_10_bridge_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_10.py\" --python-exit-code 1 -- --exercise bridge --render",
+  "deliverables": ["ch01_10_bridge_<prenom>_v001.blend validé.", "Mini-projet : la passerelle."],
+  "next": "[CH01.11 — Matériaux simples](../CH01_11_MATERIALS_BASICS/README.md)"
+}

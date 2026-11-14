@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_01_files.py",
+  "validator": "validate_ch01_01.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_01_interface_solution.blend", "exercise": "workspace", "expect": true},
+    {"file": "STARTER_FILES/ch01_01_interface_starter.blend", "exercise": "workspace", "expect": false}
+  ]
+}

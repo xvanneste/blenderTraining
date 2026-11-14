@@ -1,0 +1,17 @@
+{
+  "title": "CH18.02 — Perspective",
+  "exercises": {
+    "perspective": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_OnePoint": {"min_strokes": 12, "min_width": 2.5, "min_height": 3.0,
+                          "hint": "Couloir à 1 point de fuite dans le cadre de gauche (murs, portes, fenêtre)."},
+        "USER_TwoPoint": {"min_strokes": 30, "min_width": 2.5, "min_height": 2.0,
+                          "hint": "Au moins 4 bâtiments-boîtes à 2 points de fuite dans le cadre du milieu."},
+        "USER_ThreePoint": {"min_strokes": 8, "min_width": 1.2, "min_height": 2.5,
+                            "hint": "Tour en contre-plongée dans le cadre de droite (verticales convergentes)."}
+      },
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

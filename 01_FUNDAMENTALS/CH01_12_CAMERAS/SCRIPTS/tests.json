@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_12_files.py",
+  "validator": "validate_ch01_12.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_12_portrait_solution.blend", "exercise": "portrait", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch01_12_portrait_starter.blend", "exercise": "portrait", "expect": false}
+  ]
+}

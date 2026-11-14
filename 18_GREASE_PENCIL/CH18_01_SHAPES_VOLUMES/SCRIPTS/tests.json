@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_01_files.py",
+  "validator": "validate_ch18_01.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_01_volumes_solution.blend", "exercise": "volumes", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_01_volumes_starter.blend", "exercise": "volumes", "expect": false}
+  ]
+}

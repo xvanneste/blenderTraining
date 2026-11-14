@@ -1,0 +1,29 @@
+{
+  "code": "CH00.05",
+  "title": "Extensions et add-ons",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Blender s'enrichit d'add-ons : certains sont livrés avec lui (Node Wrangler, Rigify, importeurs), des milliers d'autres sont distribués sous forme d'extensions depuis la plateforme officielle extensions.blender.org. Une extension, c'est du code exécuté avec vos droits : ce chapitre vous apprend à les activer, à les évaluer et à les installer en sécurité, puis à comprendre comment elles sont construites, à partir d'une petite extension de l'académie (BCMA Hello) que vous installerez vous-même.",
+  "prereqs": ["CH00.02 validé (préférences sauvegardées)."],
+  "objectives": [
+    "Distinguer add-on, extension et dépôt.",
+    "Activer les add-ons livrés utiles à la formation (Node Wrangler, Rigify).",
+    "Gérer l'accès en ligne et installer une extension depuis le catalogue ou depuis le disque.",
+    "Évaluer une extension : source, licence, permissions, lecture du paquet.",
+    "Comprendre la structure d'une extension (manifeste, register) et la construire avec l'outil officiel."
+  ],
+  "competences": [
+    ["C00.05.a", "Installer, évaluer et désinstaller une extension en sécurité", "Exercices 1–3, quiz"],
+    ["C00.05.b", "Lire et construire une extension simple", "Leçon 3, défi 1"]
+  ],
+  "lessons": [["L1", "Le système d'extensions et les add-ons livrés", "25 min"], ["L2", "Installer en sécurité", "30 min"], ["L3", "Anatomie d'une extension", "20 min"]],
+  "files": [
+    ["ASSETS/bcma_hello/", "Source de l'extension d'exemple (manifeste + code commenté)"],
+    ["ASSETS/bcma_hello-1.0.0.zip", "Paquet installable construit par `blender -c extension build`"],
+    ["SCRIPTS/bcma_extensions_report.py", "Inventaire des dépôts et add-ons activés"],
+    ["SCRIPTS/test_bcma_hello.py", "Test automatique de l'extension sans l'installer"]
+  ],
+  "deliverables": ["Node Wrangler et Rigify activés.", "Extension BCMA Hello installée, testée puis désinstallée.", "Politique d'extensions (mini-projet)."],
+  "next": "[CH00.06 — Organisation de projet](../CH00_06_PROJECT_ORGANIZATION/README.md)"
+}

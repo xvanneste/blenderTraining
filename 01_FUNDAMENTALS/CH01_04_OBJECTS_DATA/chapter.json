@@ -1,0 +1,27 @@
+{
+  "code": "CH01.04",
+  "title": "Objets et meshes",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Dans Blender, un objet n'est pas sa forme : c'est un conteneur placé dans la scène qui pointe vers des données (un maillage, une caméra, une lumière…). Cette idée explique la moitié des comportements « étranges » des débutants et ouvre des techniques de production essentielles : plusieurs objets qui partagent une même forme, des données qu'on rend uniques, des objets qu'on joint ou qu'on sépare. Exercice : une ferme avec une clôture en duplication liée, un piquet cassé, une table à assembler et des rochers à séparer.",
+  "prereqs": ["CH01.03 (sélection, transformations)."],
+  "objectives": [
+    "Distinguer objet, données (Object Data) et datablocks.",
+    "Lire le nombre d'utilisateurs, utiliser le Fake User, purger les orphelins.",
+    "Choisir entre Duplicate (Shift+D) et Duplicate Linked (Alt+D).",
+    "Rendre des données uniques (Make Single User) au bon moment.",
+    "Joindre (Ctrl+J) et séparer (P) des objets.",
+    "Ajouter des primitives et régler leurs paramètres."
+  ],
+  "competences": [["C01.04.a", "Distinguer objet/donnée et gérer partage, jointure, séparation", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Objet et données", "25 min"], ["L2", "Dupliquer : copie ou lien", "30 min"], ["L3", "Joindre, séparer, ajouter", "25 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_04_farm_starter.blend", "Piquet, table en 5 morceaux, rochers en un objet"],
+    ["COMPLETED_EXAMPLES/ch01_04_farm_solution.blend", "Clôture liée, piquet cassé unique, table jointe, rochers séparés"],
+    ["SCRIPTS/validate_ch01_04.py", "Correcteur (17 points)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_04_farm_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_04.py\" --python-exit-code 1 -- --exercise farm",
+  "deliverables": ["ch01_04_farm_<prenom>_v001.blend validé.", "Mini-projet : le potager."],
+  "next": "[CH01.05 — Modes Object et Edit](../CH01_05_EDIT_MODE/README.md)"
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_03_files.py",
+  "validator": "validate_ch01_03.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_03_puzzle_solution.blend", "exercise": "puzzle", "expect": true},
+    {"file": "STARTER_FILES/ch01_03_puzzle_starter.blend", "exercise": "puzzle", "expect": false}
+  ]
+}

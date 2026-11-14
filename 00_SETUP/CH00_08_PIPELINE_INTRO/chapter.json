@@ -1,0 +1,32 @@
+{
+  "code": "CH00.08",
+  "title": "Introduction au pipeline cinéma",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "2 h",
+  "intro": "Avant d'apprendre les outils, il faut voir la carte complète : comment une idée devient un film. Ce chapitre présente la préproduction, la production et la postproduction, les deux chaînes de fabrication (assets réutilisables et plans uniques), les départements d'un studio et la façon dont chaque phase de l'académie s'y insère. Vous découperez un mini-scénario de 30 secondes en plans, dans une shot list vérifiée par script, et vous estimerez la charge de travail de votre futur premier court-métrage. Ce chapitre clôt la phase 0 avec le projet « Studio prêt ».",
+  "prereqs": ["CH00.06 (arborescence, nommage)."],
+  "objectives": [
+    "Décrire les étapes de fabrication d'un film d'animation 3D et leurs livrables.",
+    "Distinguer assets et plans, et expliquer pourquoi on lie plutôt que copier.",
+    "Associer chaque département à une phase de l'académie.",
+    "Écrire une shot list (codes, durées, valeurs de plans, statuts) et la vérifier.",
+    "Produire une première estimation de charge."
+  ],
+  "competences": [
+    ["C00.08.a", "Expliquer le pipeline d'un plan", "Leçons 1–2, quiz"],
+    ["C00.08.b", "Établir une shot list et une estimation", "Exercices 1–3"]
+  ],
+  "lessons": [["L1", "Préproduction, production, postproduction", "25 min"], ["L2", "Assets, plans et départements", "30 min"], ["L3", "Le plan comme unité de travail : la shot list", "40 min"], ["L4", "Estimer", "15 min"]],
+  "files": [
+    ["ASSETS/bcma_pipeline_diagram.svg", "Schéma du pipeline avec les phases de l'académie"],
+    ["STARTER_FILES/ch00_08_shotlist_template.csv", "Modèle de shot list"],
+    ["STARTER_FILES/ch00_08_shotlist_broken.csv", "Shot list à corriger (7 erreurs)"],
+    ["COMPLETED_EXAMPLES/ch00_08_shotlist_solution.csv", "Découpage de référence (8 plans, 30 s)"],
+    ["../../SCRIPTS/bcma_shotlist_check.py", "Vérificateur de shot list"]
+  ],
+  "validator_usage": "python \"..\\..\\SCRIPTS\\bcma_shotlist_check.py\" \"ch00_08_shotlist_<prenom>.csv\" --target-seconds 30 --tolerance 3",
+  "deliverables": ["Shot list du robot validée (30 s).", "Shot list + estimation de votre court A.", "Projet de phase P0 « Studio prêt » ≥ 70/100."],
+  "pass_criteria": ["Quiz ≥ 10/13.", "Exercice 3 réalisé sans tutoriel.", "Projet P0 ≥ 70/100 : la phase 0 est validée."],
+  "next": "[Phase 1 — CH01.01 L'interface](../../01_FUNDAMENTALS/CH01_01_INTERFACE/README.md)"
+}

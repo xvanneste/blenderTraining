@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.02",
+  "title": "Perspective",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "La ligne d'horizon correspond à…", "choices": ["La limite du sol", "La hauteur des yeux de l'observateur", "Le milieu de l'image", "Le bord supérieur du cadre"], "answer": 1, "explain": "Hauteur des yeux = hauteur de la caméra."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un point de fuite ?", "answer_text": "Le point de l'horizon vers lequel convergent les lignes parallèles d'une même direction."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "En perspective à 1 point, que deviennent les lignes verticales ?", "answer_text": "Elles restent verticales."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Caméra à hauteur d'homme : où l'horizon coupe-t-il les personnages debout de même taille ?", "answer_text": "Au niveau de leurs yeux, quelle que soit leur distance."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quel système pour un coin de rue vu de trois-quarts ?", "choices": ["1 point", "2 points", "3 points", "Aucun"], "answer": 1, "explain": "On regarde un angle : 2 points."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Quand faut-il un troisième point de fuite ?", "answer_text": "Quand la caméra est inclinée vers le haut ou le bas (contre-plongée, plongée) : les verticales convergent."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Des points de fuite très proches de l'objet évoquent quelle focale ?", "answer_text": "Un grand-angle (perspective exagérée)."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Comment trouver le milieu d'une face en perspective ?", "answer_text": "Tracer ses deux diagonales : leur croisement est le centre en perspective."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Citez deux effets de la perspective atmosphérique.", "answer_text": "Moins de contraste, couleurs plus pâles/bleutées, moins de détails, traits plus fins au loin."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quelle méthode professionnelle garantit une perspective exacte pour un storyboard ?", "answer_text": "Bloquer le décor en 3D grossière avec une caméra et dessiner par-dessus en Grease Pencil."}
+  ]
+}

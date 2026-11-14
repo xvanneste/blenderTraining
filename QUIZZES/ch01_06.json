@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.06",
+  "title": "Transformations avancées",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Différence entre Scale et Dimensions ?", "answer_text": "Scale est un multiplicateur appliqué à l'objet ; Dimensions est la taille réelle résultante en mètres."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Après Ctrl+A > Scale, que vaut l'échelle ?", "choices": ["Inchangée", "(1, 1, 1)", "(0, 0, 0)", "Les dimensions"], "answer": 1, "explain": "La transformation est cuite dans les sommets ; l'échelle revient à 1."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Citez deux outils faussés par une échelle non uniforme non appliquée.", "answer_text": "Bevel, Solidify, textures procédurales, simulations (tissu, rigid body), rigging, export."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Pourquoi n'applique-t-on pas toujours la rotation ?", "answer_text": "Parce qu'on perd l'orientation locale de l'objet (axes locaux) ; un objet orienté ou animé doit garder sa rotation."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quelle orientation suit la rotation de l'objet ?", "choices": ["Global", "Local", "View", "Cursor"], "answer": 1, "explain": "Local."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Quelle touche ouvre le menu circulaire des orientations ?", "answer_text": "La virgule (,)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "En Edit Mode, quelle orientation donne un axe perpendiculaire à la face sélectionnée ?", "answer_text": "Normal."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quel raccourci active/désactive le snapping ?", "choices": ["Shift+Tab", "Ctrl+Tab", "Shift+S", "Alt+S"], "answer": 0, "explain": "Shift+Tab (Ctrl+Shift+Tab : panneau de réglages)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Comment activer le snapping juste le temps d'un déplacement ?", "answer_text": "Maintenir Ctrl pendant la transformation."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Votre objet se colle à une surface mais la traverse à moitié. Quel réglage modifier ?", "answer_text": "Snap Base : passer de Center à Closest."}
+  ]
+}

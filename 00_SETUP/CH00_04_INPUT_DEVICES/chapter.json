@@ -1,0 +1,22 @@
+{
+  "code": "CH00.04",
+  "title": "Périphériques d'entrée",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "1 h",
+  "intro": "Blender se pilote à deux mains : une sur la souris, une sur le clavier. Selon votre matériel — souris 3 boutons, trackpad, clavier sans pavé numérique, tablette graphique — certains réglages changent tout. Ce chapitre vous aide à configurer chaque périphérique, à connaître les solutions de remplacement (émulations, gizmo de navigation) et à vérifier la pression de votre stylet, indispensable pour la sculpture, la peinture de textures et Grease Pencil.",
+  "prereqs": ["CH00.02 validé (fenêtre Preferences connue)."],
+  "objectives": [
+    "Utiliser les gestes de navigation standard à la souris 3 boutons.",
+    "Remplacer le pavé numérique (Emulate Numpad, gizmo, pavé USB).",
+    "Configurer un trackpad (Emulate 3 Button Mouse, gestes multi-touch).",
+    "Installer et calibrer une tablette graphique (Tablet API, seuil de pression).",
+    "Connaître l'intérêt et les limites d'une souris 3D (NDOF).",
+    "Organiser un poste ergonomique pour des milliers d'heures de pratique."
+  ],
+  "competences": [["C00.04.a", "Configurer souris, clavier, trackpad et tablette", "Exercices 1–3, rapport bcma_input_report.py"]],
+  "lessons": [["L1", "Souris et clavier", "25 min"], ["L2", "Trackpad, tablette, souris 3D", "25 min"]],
+  "files": [["SCRIPTS/bcma_input_report.py", "Rapport des réglages d'entrée selon votre matériel (mouse3 / laptop / tablet)"]],
+  "deliverables": ["Rapport bcma_input_report.py sans recommandation en attente.", "Section « périphériques » de la fiche de poste.", "Mini-projet : poste ergonomique."],
+  "next": "[CH00.05 — Extensions et add-ons](../CH00_05_EXTENSIONS/README.md)"
+}

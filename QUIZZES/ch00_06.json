@@ -1,0 +1,19 @@
+{
+  "chapter": "CH00.06",
+  "title": "Organisation de projet",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Pourquoi numéroter les plans sh0010, sh0020… plutôt que sh1, sh2 ?", "answer_text": "Pour insérer des plans (sh0015) sans renuméroter, et pour un tri alphabétique correct."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Où ranger le rig d'un personnage utilisé dans 30 plans ?", "choices": ["03_shots/sq010/sh0010/anim", "02_assets/rigs (ou characters)", "04_edit", "99_archive"], "answer": 1, "explain": "Un asset réutilisé va dans 02_assets, jamais dans un plan."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quelle est la différence entre un asset et un plan ?", "answer_text": "Un asset est réutilisable (personnage, décor, accessoire) ; un plan est une unité unique du film, qui assemble des assets."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Quel nom de fichier respecte la convention BCMA ?", "choices": ["Mon Court Final.blend", "mon_court_sq010_sh0020_anim_v004.blend", "anim-v4-OK.blend", "MonCourt_SH20.blend"], "answer": 1, "explain": "projet_séquence_plan_tâche_vNNN, minuscules."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Quel raccourci renomme l'objet actif ?", "answer_text": "F2."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Quel outil renomme en masse ?", "answer_text": "Edit > Batch Rename (Ctrl+F2)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi éviter espaces et accents dans les noms de fichiers ?", "answer_text": "Certains outils (lignes de commande, fermes de rendu, autres logiciels, serveurs) les gèrent mal."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Que signifie // au début d'un chemin dans Blender ?", "choices": ["La racine du disque", "Le dossier du fichier .blend", "Le dossier de Blender", "Un chemin réseau"], "answer": 1, "explain": "Chemin relatif au .blend."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quel menu rend relatifs tous les chemins d'un fichier ?", "answer_text": "File > External Data > Make Paths Relative."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quel est l'inconvénient de Pack Resources en production ?", "answer_text": "Le .blend s'alourdit et les textures sont dupliquées dans chaque fichier : plus de stockage, mises à jour impossibles à centraliser."},
+    {"id": "Q11", "lesson": "L4", "type": "mcq", "q": "Où Blender 5.3 enregistre-t-il la configuration d'un projet ?", "choices": ["Dans chaque .blend", "Dans .blender_project/project.toml à la racine", "Dans userpref.blend", "Dans le registre Windows"], "answer": 1, "explain": "Dossier caché .blender_project, fichier project.toml."},
+    {"id": "Q12", "lesson": "L4", "type": "open", "q": "Citez deux éléments configurables dans les paramètres d'un projet Blender 5.3.", "answer_text": "Nom, variables de projet, bibliothèques d'assets du projet, configuration OCIO, image d'accueil."}
+  ]
+}

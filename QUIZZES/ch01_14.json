@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.14",
+  "title": "Premiers rendus",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quel moteur simule les trajets de la lumière (path tracing) ?", "choices": ["Workbench", "EEVEE", "Cycles", "Grease Pencil"], "answer": 2, "explain": "Cycles."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Donnez un usage typique d'EEVEE et un de Cycles.", "answer_text": "EEVEE : previz, animation stylisée, look dev rapide. Cycles : rendus réalistes, images finales."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quel raccourci rend l'animation complète ?", "answer_text": "Ctrl+F12."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Que fait le Noise Threshold de Cycles ?", "answer_text": "Échantillonnage adaptatif : Cycles arrête d'échantillonner un pixel quand son bruit passe sous le seuil."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Le débruitage permet surtout de…", "choices": ["Augmenter la résolution", "Rendre avec moins d'échantillons", "Changer de moteur", "Ajouter du flou"], "answer": 1, "explain": "Il nettoie le bruit restant."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Pourquoi éviter Max Samples = 4096 pour un test ?", "answer_text": "Temps de rendu inutilement long ; quelques dizaines à centaines d'échantillons + débruitage suffisent pour juger."},
+    {"id": "Q7", "lesson": "L3", "type": "mcq", "q": "Quel format pour une image fixe destinée au web, sans perte ?", "choices": ["PNG", "JPEG", "FFmpeg Video", "Raw"], "answer": 0, "explain": "PNG (JPEG perd de la qualité)."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Pourquoi éviter de rendre une longue animation directement en vidéo ?", "answer_text": "En cas de plantage, tout est perdu ; avec des images numérotées, on reprend où l'on s'est arrêté et on monte ensuite."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "À quoi sert la vue False Color ?", "answer_text": "Diagnostiquer l'exposition : visualiser les zones sous- et surexposées."},
+    {"id": "Q10", "lesson": "L4", "type": "open", "q": "F12 enregistre-t-il l'image ? Comment l'enregistrer ?", "answer_text": "Non. Dans la fenêtre de rendu : Image > Save As (Shift+Alt+S)."}
+  ]
+}

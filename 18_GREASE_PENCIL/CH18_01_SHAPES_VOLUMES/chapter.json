@@ -1,0 +1,29 @@
+{
+  "code": "CH18.01",
+  "title": "Formes et volumes",
+  "phase_title": "18 — Grease Pencil : dessin 2D, storyboard, animatique et animation hybride (module A)",
+  "level": "débutant absolu (aucune pratique du dessin requise)",
+  "duration": "3 h 30 + 10–15 min par jour d'échauffement",
+  "intro": "Storyboarder ne demande pas d'être illustrateur : il faut des traits assurés, des volumes justes et des valeurs lisibles. Ce premier chapitre du module dessin part de zéro : le geste qui part de l'épaule, les quatre volumes primaires (boîte, cylindre, sphère, cône), les ellipses, et la lumière qui rend un volume lisible (terminateur, ombre propre, ombre portée, trois valeurs). Vous travaillez directement dans Grease Pencil, sur une feuille d'exercices préparée avec guides, ligne d'horizon et points de fuite.",
+  "prereqs": ["CH01.01–CH01.02 (interface, navigation).", "Tablette conseillée (CH00.04), non obligatoire."],
+  "objectives": [
+    "Tracer des lignes et des ellipses d'un seul geste.",
+    "Construire boîtes, cylindres, sphères et cônes en perspective simple.",
+    "Décomposer un objet du quotidien en volumes primaires.",
+    "Rendre un volume lisible avec trois valeurs (lumière, ombre propre, ombre portée).",
+    "Dessiner, effacer, lisser et changer de calque/matériau dans Grease Pencil."
+  ],
+  "competences": [["C18.01.a", "Construire un objet en volumes", "Exercice 3 (correcteur + grille d'auto-évaluation)"]],
+  "lessons": [["L1", "Le geste et les lignes", "1 h"], ["L2", "Les volumes primaires", "1 h 30"], ["L3", "Lumière et valeurs", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_01_volumes_starter.blend", "Feuille GP : guides verrouillés, 3 calques de travail, caméra orthographique"],
+    ["COMPLETED_EXAMPLES/ch18_01_volumes_solution.blend", "Feuille complétée (référence technique)"],
+    ["COMPLETED_EXAMPLES/ch18_01_volumes_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/gp_spec.json", "Spécification de correction (quantités, zones, remplissages)"],
+    ["SCRIPTS/validate_ch18_01.py", "Correcteur (via SCRIPTS/bcma_gp_check.py)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_01_volumes_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_01.py\" --python-exit-code 1 -- --exercise volumes --render",
+  "deliverables": ["Feuille complétée et validée.", "Grille d'auto-évaluation ≥ 14/20.", "Carnet de 7 jours (mini-projet)."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée par le correcteur.", "Auto-évaluation ≥ 14/20 (refaite à J+7)."],
+  "next": "[CH18.02 — Perspective](../CH18_02_PERSPECTIVE/README.md)"
+}

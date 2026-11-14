@@ -1,0 +1,119 @@
+{
+ "chapter": "CH01.03",
+ "title": "Sélection et manipulation",
+ "pass_score": 10,
+ "questions": [
+  {
+   "id": "Q1",
+   "lesson": "L1",
+   "type": "open",
+   "q": "Quelle différence entre un objet sélectionné et l'objet actif ?",
+   "answer_text": "Plusieurs objets peuvent être sélectionnés ; un seul est actif (le dernier cliqué, contour plus clair), il sert de référence et est affiché dans Properties."
+  },
+  {
+   "id": "Q2",
+   "lesson": "L1",
+   "type": "mcq",
+   "q": "Quel raccourci désélectionne tout ?",
+   "choices": [
+    "A",
+    "Alt+A",
+    "Ctrl+A",
+    "X"
+   ],
+   "answer": 1,
+   "explain": "Alt+A (A = tout sélectionner, Ctrl+A = menu Apply, X = supprimer)."
+  },
+  {
+   "id": "Q3",
+   "lesson": "L1",
+   "type": "mcq",
+   "q": "Quelle touche lance la sélection au cercle (pinceau) ?",
+   "choices": [
+    "B",
+    "C",
+    "L",
+    "O"
+   ],
+   "answer": 1,
+   "explain": "C."
+  },
+  {
+   "id": "Q4",
+   "lesson": "L1",
+   "type": "open",
+   "q": "Comment sélectionner tous les objets dont le nom commence par GEO_Tree_ ?",
+   "answer_text": "Select > Select Pattern… avec GEO_Tree_*."
+  },
+  {
+   "id": "Q5",
+   "lesson": "L1",
+   "type": "open",
+   "q": "Comment inverser une sélection ?",
+   "answer_text": "Ctrl+I (Select > Invert)."
+  },
+  {
+   "id": "Q6",
+   "lesson": "L2",
+   "type": "mcq",
+   "q": "Que fait G Z Z ?",
+   "choices": [
+    "Déplace sur Z global",
+    "Déplace sur l'axe Z local de l'objet",
+    "Annule",
+    "Exclut Z"
+   ],
+   "answer": 1,
+   "explain": "Deuxième pression = axe local."
+  },
+  {
+   "id": "Q7",
+   "lesson": "L2",
+   "type": "open",
+   "q": "Écrivez la séquence de touches pour tourner un objet de -30° autour de Y.",
+   "answer_text": "R Y -30 Entrée."
+  },
+  {
+   "id": "Q8",
+   "lesson": "L2",
+   "type": "mcq",
+   "q": "Pendant un déplacement, Shift+Z signifie…",
+   "choices": [
+    "Uniquement Z",
+    "Tous les axes sauf Z",
+    "Axe Z local",
+    "Annuler"
+   ],
+   "answer": 1,
+   "explain": "Exclusion d'axe : plan X-Y."
+  },
+  {
+   "id": "Q9",
+   "lesson": "L2",
+   "type": "open",
+   "q": "Comment annuler une transformation en cours ?",
+   "answer_text": "Clic droit ou Échap."
+  },
+  {
+   "id": "Q10",
+   "lesson": "L2",
+   "type": "open",
+   "q": "Quel raccourci remet la rotation d'un objet à zéro ?",
+   "answer_text": "Alt+R."
+  },
+  {
+   "id": "Q11",
+   "lesson": "L2",
+   "type": "open",
+   "q": "À quoi sert Ctrl maintenu pendant un déplacement ?",
+   "answer_text": "Avancer par pas réguliers (snapping incrémental)."
+  },
+  {
+   "id": "Q12",
+   "lesson": "L3",
+   "type": "open",
+   "q": "Comment appliquer la même valeur Z à 10 objets via la sidebar ?",
+   "answer_text": "Saisir la valeur sur l'objet actif, puis clic droit sur le champ > Copy to Selected (ou glisser la valeur en maintenant Alt)."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+sequence;shot;duration_frames;shot_size;camera_move;description;characters;assets;status
+sq010;sh0010;120;EWS;slow push-in;Atelier de nuit sous la pluie, une seule fenêtre éclairée.;;set_workshop;board
+sq010;sh0020;96;MS;static;Le petit robot répare une ampoule, concentré.;robot;set_workshop,prp_bulb;board
+sq010;sh0030;60;CU;static;L'ampoule s'allume : le visage du robot s'illumine.;robot;prp_bulb;board
+sq010;sh0040;72;OTS;static;Par-dessus l'épaule du robot : la fenêtre, la pluie s'arrête.;robot;set_workshop;board
+sq010;sh0050;96;FS;pan left;Le robot court vers la fenêtre, trébuche, se rattrape.;robot;set_workshop;board
+sq010;sh0060;72;ECU;static;Reflet d'un lever de soleil dans l'œil du robot.;robot;;board
+sq010;sh0070;96;WS;crane up;La ville s'éveille, la fenêtre de l'atelier brille.;;set_city;board
+sq010;sh0080;108;MCU;slow push-in;Le robot pose l'ampoule sur le rebord et sourit.;robot;set_workshop,prp_bulb;board

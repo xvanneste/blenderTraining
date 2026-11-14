@@ -1,0 +1,25 @@
+{
+  "code": "CH01.08",
+  "title": "Collections et Outliner",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Une scène de film contient des centaines d'objets : sans organisation, impossible de travailler. Ce chapitre installe les collections (les dossiers de la scène), les cinq interrupteurs de visibilité qu'il ne faut pas confondre (exclure, sélectionnable, œil, écran, appareil photo), l'Outliner comme centre de contrôle, et le parentage, qui fait suivre un objet par un autre. Exercice : ranger un salon livré en vrac, exclure du rendu les repères de travail et accrocher un abat-jour à son pied de lampe.",
+  "prereqs": ["CH01.04 (objets).", "CH01.07 (origines)."],
+  "objectives": [
+    "Créer, imbriquer et utiliser des collections (M, Shift+M, Outliner).",
+    "Distinguer et utiliser les cinq contrôles de visibilité.",
+    "Naviguer dans l'Outliner (modes d'affichage, recherche, renommage).",
+    "Parenter et déparenter (Ctrl+P, Alt+P, Keep Transform)."
+  ],
+  "competences": [["C01.08.a", "Organiser une scène (collections, visibilités, parentage)", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Collections", "25 min"], ["L2", "Les cinq interrupteurs de visibilité", "25 min"], ["L3", "Outliner et parentage", "25 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_08_living_room_starter.blend", "Salon de 17 objets en vrac"],
+    ["COMPLETED_EXAMPLES/ch01_08_living_room_solution.blend", "Salon rangé, HELPERS hors rendu, lampe parentée"],
+    ["SCRIPTS/validate_ch01_08.py", "Correcteur (23 points + rendu)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_08_living_room_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_08.py\" --python-exit-code 1 -- --exercise organize --render",
+  "deliverables": ["ch01_08_living_room_<prenom>_v001.blend validé.", "Mini-projet : un de vos fichiers remis au propre."],
+  "next": "[CH01.09 — Éditeur de propriétés](../CH01_09_PROPERTIES_EDITOR/README.md)"
+}

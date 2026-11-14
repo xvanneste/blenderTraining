@@ -1,0 +1,25 @@
+{
+  "code": "CH01.07",
+  "title": "Origines, pivots, curseur 3D",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Une porte dont l'origine est au milieu ne s'ouvrira jamais correctement : elle tournera sur elle-même comme une girouette. Ce chapitre explique l'origine d'un objet (le point autour duquel il tourne et se met à l'échelle), comment la déplacer sans bouger la géométrie, le curseur 3D comme outil de précision, et les points de pivot qui déterminent autour de quoi tourne une sélection. Exercice : une porte à accrocher à sa charnière et des boulons à faire tourner autour d'une roue.",
+  "prereqs": ["CH01.05 (Edit Mode, sélection de sommets).", "CH01.06 (snapping)."],
+  "objectives": [
+    "Comprendre le rôle de l'origine et choisir son emplacement.",
+    "Déplacer l'origine (Set Origin, Affect Only Origins).",
+    "Placer et utiliser le curseur 3D (Shift+RMB, Shift+S).",
+    "Choisir le point de pivot adapté (Median, 3D Cursor, Individual Origins…)."
+  ],
+  "competences": [["C01.07.a", "Contrôler origines, curseur et pivots", "Exercice 3 (correcteur)"]],
+  "lessons": [["L1", "Origines", "25 min"], ["L2", "Curseur 3D", "20 min"], ["L3", "Point de pivot", "25 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_07_door_starter.blend", "Porte (origine au centre), roue et 3 boulons"],
+    ["COMPLETED_EXAMPLES/ch01_07_door_solution.blend", "Porte sur charnière, ouverte ; boulons tournés autour de la roue"],
+    ["SCRIPTS/validate_ch01_07.py", "Correcteur (15 points)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_07_door_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_07.py\" --python-exit-code 1 -- --exercise door",
+  "deliverables": ["ch01_07_door_<prenom>_v001.blend validé.", "Mini-projet : trois mécanismes prêts à animer."],
+  "next": "[CH01.08 — Collections et Outliner](../CH01_08_COLLECTIONS_OUTLINER/README.md)"
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_07_files.py",
+  "validator": "validate_ch01_07.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_07_door_solution.blend", "exercise": "door", "expect": true},
+    {"file": "STARTER_FILES/ch01_07_door_starter.blend", "exercise": "door", "expect": false}
+  ]
+}

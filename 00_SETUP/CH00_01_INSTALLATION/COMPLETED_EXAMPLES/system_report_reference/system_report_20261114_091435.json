@@ -1,0 +1,98 @@
+{
+  "data": {
+    "generated_at": "2026-11-14T09:14:33",
+    "blender": {
+      "version": "5.3.0",
+      "build_hash": "02f0899d78e3",
+      "build_date": "2026-11-10",
+      "build_branch": "blender-v5.3-release",
+      "binary": "C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe",
+      "factory_startup": false,
+      "background": true,
+      "online_access": false
+    },
+    "python": "3.13.13",
+    "system": {
+      "os": "Windows-11-10.0.22631-SP0",
+      "cpu": "Intel64 Family 6 Model 165 Stepping 5, GenuineIntel",
+      "logical_cpus": 20,
+      "ram_gb": 63.9
+    },
+    "gpu_ui_backend": "VULKAN",
+    "cycles_devices": {
+      "CUDA": [
+        {
+          "name": "NVIDIA GeForce RTX 3080",
+          "type": "CUDA",
+          "use": true
+        }
+      ],
+      "OPTIX": [
+        {
+          "name": "NVIDIA GeForce RTX 3080",
+          "type": "OPTIX",
+          "use": true
+        }
+      ],
+      "HIP": [],
+      "ONEAPI": [],
+      "METAL": {
+        "error": "bpy_struct: item.attr = val: enum \"METAL\" not found in ('NONE', 'CUDA', 'OPTIX', 'HIP', 'ONEAPI')"
+      },
+      "_selected_api": "OPTIX"
+    },
+    "paths": {
+      "user_config": "C:\\Users\\xvann\\AppData\\Roaming\\Blender Foundation\\Blender\\5.3",
+      "system": "C:\\ProgramData\\Blender Foundation\\Blender\\5.3",
+      "local": "C:\\Program Files\\Blender Foundation\\Blender 5.3\\5.3",
+      "temp": "C:\\Users\\xvann\\AppData\\Local\\Temp\\blender_a07420\\"
+    },
+    "save_settings": {
+      "auto_save": true,
+      "auto_save_minutes": 2,
+      "save_versions": 1,
+      "relative_paths": true,
+      "file_compression": true,
+      "undo_steps": 32
+    },
+    "extensions_repos": [
+      {
+        "name": "extensions.blender.org",
+        "enabled": true,
+        "remote": "https://extensions.blender.org/api/v1/extensions/"
+      },
+      {
+        "name": "User Default",
+        "enabled": true,
+        "remote": ""
+      },
+      {
+        "name": "System",
+        "enabled": true,
+        "remote": ""
+      }
+    ]
+  },
+  "diagnostic": [
+    [
+      "OK",
+      "Version 5.3.0 (cible de l'académie : 5.3)"
+    ],
+    [
+      "OK",
+      "GPU NVIDIA RTX compatible OptiX détecté : utilisez OptiX pour Cycles."
+    ],
+    [
+      "OK",
+      "RAM : 63.9 Go (16 Go conseillés, 32+ pour la production)."
+    ],
+    [
+      "OK",
+      "Auto Save : actif toutes les 2 min."
+    ],
+    [
+      "OK",
+      "Versions de sauvegarde (.blend1…) : 1."
+    ]
+  ]
+}

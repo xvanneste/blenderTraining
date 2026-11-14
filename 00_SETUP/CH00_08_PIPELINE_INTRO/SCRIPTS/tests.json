@@ -1,0 +1,5 @@
+{
+  "extra": [
+    {"script": "test_shotlist.py", "args": []}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_03_files.py",
+  "validator": "validate_ch18_03.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_03_gesture_solution.blend", "exercise": "gesture", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_03_gesture_starter.blend", "exercise": "gesture", "expect": false}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.12",
+  "title": "Caméras",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Comment rendre une caméra active ?", "answer_text": "La sélectionner puis Ctrl+Num 0 (ou Scene > Camera)."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Quel est le risque de Lock Camera to View ?", "answer_text": "Oublier de le décocher : toute navigation en vue caméra déplace la caméra."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Comment faire viser un objet en permanence par une caméra ?", "answer_text": "Contrainte Track To (ou Damped Track) vers cet objet ou un Empty."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Quelle focale est la plus adaptée à un portrait flatteur ?", "choices": ["14 mm", "24 mm", "85 mm", "Orthographique"], "answer": 2, "explain": "Courte téléfocale (65–85 mm)."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Changer la focale équivaut-il à rapprocher la caméra ?", "answer_text": "Non : la focale change le cadrage et la compression ; la distance change la perspective."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "À quoi sert Shift Y ?", "answer_text": "Décentrer l'image verticalement sans incliner la caméra : les verticales restent droites (architecture)."},
+    {"id": "Q7", "lesson": "L3", "type": "open", "q": "Énoncez la règle des tiers.", "answer_text": "Diviser l'image en 3x3 et placer les éléments importants sur les lignes ou leurs intersections."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Une contre-plongée rend un personnage plutôt…", "choices": ["Vulnérable", "Imposant", "Flou", "Lointain"], "answer": 1, "explain": "Caméra plus basse que le sujet : il domine."},
+    {"id": "Q9", "lesson": "L4", "type": "mcq", "q": "Quel F-Stop donne le plus de flou d'arrière-plan ?", "choices": ["f/1.4", "f/8", "f/16", "f/22"], "answer": 0, "explain": "Petit nombre = grande ouverture = faible profondeur de champ."},
+    {"id": "Q10", "lesson": "L4", "type": "open", "q": "Pourquoi mettre au point sur un Empty plutôt qu'à une distance fixe ?", "answer_text": "L'Empty (placé sur les yeux, parenté au personnage) garde la mise au point même si le sujet ou la caméra bougent."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_04_files.py",
+  "validator": "validate_ch01_04.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_04_farm_solution.blend", "exercise": "farm", "expect": true},
+    {"file": "STARTER_FILES/ch01_04_farm_starter.blend", "exercise": "farm", "expect": false}
+  ]
+}

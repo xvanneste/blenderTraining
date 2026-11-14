@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Segoe UI, Arial, sans-serif">
+  <title>Pipeline de fabrication d'un film d'animation 3D (BCMA)</title>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <style>
+      .box{stroke:#333;stroke-width:1.2;rx:8}
+      .t{font-size:14px;fill:#111;text-anchor:middle}
+      .s{font-size:11px;fill:#444;text-anchor:middle}
+      .h{font-size:16px;font-weight:bold;fill:#222}
+      .ln{stroke:#555;stroke-width:1.6;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <text x="20" y="32" class="h">PRÉPRODUCTION</text>
+  <text x="20" y="212" class="h">PRODUCTION</text>
+  <text x="20" y="412" class="h">POSTPRODUCTION</text>
+  <!-- préproduction -->
+  <g>
+    <rect class="box" x="20" y="50" width="160" height="70" fill="#fde9c9"/><text x="100" y="80" class="t">Idée / scénario</text><text x="100" y="100" class="s">CH15.01 · CH14.02</text>
+    <rect class="box" x="220" y="50" width="160" height="70" fill="#fde9c9"/><text x="300" y="80" class="t">Design</text><text x="300" y="100" class="s">CH18.01–05 · CH15.03</text>
+    <rect class="box" x="420" y="50" width="160" height="70" fill="#fde9c9"/><text x="500" y="80" class="t">Storyboard GP</text><text x="500" y="100" class="s">CH18.10–13</text>
+    <rect class="box" x="620" y="50" width="160" height="70" fill="#fde9c9"/><text x="700" y="80" class="t">Animatique</text><text x="700" y="100" class="s">CH18.14–15</text>
+    <rect class="box" x="820" y="50" width="160" height="70" fill="#fde9c9"/><text x="900" y="80" class="t">Shot list / planning</text><text x="900" y="100" class="s">CH00.08 · CH15.04</text>
+    <path class="ln" d="M180,85 L218,85"/><path class="ln" d="M380,85 L418,85"/><path class="ln" d="M580,85 L618,85"/><path class="ln" d="M780,85 L818,85"/>
+  </g>
+  <!-- production : assets -->
+  <g>
+    <rect class="box" x="20" y="230" width="150" height="60" fill="#d8ecff"/><text x="95" y="256" class="t">Modélisation</text><text x="95" y="274" class="s">Phase 2 · 3</text>
+    <rect class="box" x="190" y="230" width="150" height="60" fill="#d8ecff"/><text x="265" y="256" class="t">Surfaçage</text><text x="265" y="274" class="s">Phase 4</text>
+    <rect class="box" x="360" y="230" width="150" height="60" fill="#d8ecff"/><text x="435" y="256" class="t">Rigging</text><text x="435" y="274" class="s">Phase 6</text>
+    <text x="265" y="320" class="s">ASSETS (réutilisables) — 02_assets/</text>
+    <path class="ln" d="M170,260 L188,260"/><path class="ln" d="M340,260 L358,260"/>
+  </g>
+  <!-- production : plans -->
+  <g>
+    <rect class="box" x="560" y="230" width="120" height="60" fill="#dff5df"/><text x="620" y="256" class="t">Layout</text><text x="620" y="274" class="s">CH18.20 · Ph. 9</text>
+    <rect class="box" x="700" y="230" width="120" height="60" fill="#dff5df"/><text x="760" y="256" class="t">Animation</text><text x="760" y="274" class="s">Phase 7</text>
+    <rect class="box" x="840" y="230" width="100" height="60" fill="#dff5df"/><text x="890" y="256" class="t">FX</text><text x="890" y="274" class="s">Phase 8</text>
+    <rect class="box" x="960" y="230" width="110" height="60" fill="#dff5df"/><text x="1015" y="256" class="t">Lighting</text><text x="1015" y="274" class="s">Phase 9</text>
+    <rect class="box" x="1085" y="230" width="100" height="60" fill="#dff5df"/><text x="1135" y="256" class="t">Rendu</text><text x="1135" y="274" class="s">Phase 10</text>
+    <text x="870" y="320" class="s">PLANS (uniques) — 03_shots/sqNNN/shNNNN/</text>
+    <path class="ln" d="M680,260 L698,260"/><path class="ln" d="M820,260 L838,260"/><path class="ln" d="M940,260 L958,260"/><path class="ln" d="M1070,260 L1083,260"/>
+    <path class="ln" d="M510,260 L558,260"/>
+  </g>
+  <!-- liens préprod → prod -->
+  <path class="ln" d="M700,120 C700,170 620,180 620,228"/>
+  <path class="ln" d="M300,120 C300,170 95,180 95,228"/>
+  <!-- postproduction -->
+  <g>
+    <rect class="box" x="560" y="430" width="140" height="60" fill="#f3dff5"/><text x="630" y="456" class="t">Compositing</text><text x="630" y="474" class="s">Phase 11</text>
+    <rect class="box" x="730" y="430" width="140" height="60" fill="#f3dff5"/><text x="800" y="456" class="t">Montage · son</text><text x="800" y="474" class="s">Phase 12</text>
+    <rect class="box" x="900" y="430" width="140" height="60" fill="#f3dff5"/><text x="970" y="456" class="t">Étalonnage</text><text x="970" y="474" class="s">Ph. 11–12</text>
+    <rect class="box" x="1060" y="430" width="125" height="60" fill="#f3dff5"/><text x="1122" y="456" class="t">Livraison</text><text x="1122" y="474" class="s">CH12.06 · 16.08</text>
+    <path class="ln" d="M700,460 L728,460"/><path class="ln" d="M870,460 L898,460"/><path class="ln" d="M1040,460 L1058,460"/>
+    <path class="ln" d="M1135,290 C1135,360 630,370 630,428"/>
+  </g>
+  <text x="20" y="505" class="s" style="text-anchor:start">Phases transversales : 0 (poste), 1 (fondamentaux), 5 (procédural), 13 (Python), 14 (IA), 15–17 (réalisation, production, expertise), 18 (Grease Pencil).</text>
+</svg>

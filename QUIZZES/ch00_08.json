@@ -1,0 +1,20 @@
+{
+  "chapter": "CH00.08",
+  "title": "Introduction au pipeline cinéma",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "À quelle période appartient l'animatique ?", "choices": ["Préproduction", "Production", "Postproduction", "Livraison"], "answer": 0, "explain": "Préproduction : on valide rythme et découpage avant toute 3D."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Pourquoi résoudre les problèmes le plus tôt possible ?", "answer_text": "Le coût d'une modification augmente à chaque étape : couper un plan dans l'animatique coûte une minute, après l'éclairage des semaines."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Le compositing appartient à…", "choices": ["La préproduction", "La production", "La postproduction", "Aucune"], "answer": 2, "explain": "Postproduction."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Différence entre la chaîne des assets et celle des plans ?", "answer_text": "Assets : fabriqués une fois et réutilisés (modélisation, surfaçage, rigging). Plans : uniques, ils assemblent les assets (layout, animation, FX, lighting, rendu, comp)."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Pourquoi un plan lie-t-il l'asset au lieu de le copier ?", "answer_text": "Corriger l'asset corrige automatiquement tous les plans ; pas de doublons."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quel département place les caméras et les éléments d'un plan avant l'animation ?", "choices": ["Rigging", "Layout", "Compositing", "Surfacing"], "answer": 1, "explain": "Layout."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Quel département s'occupe des simulations (fumée, tissu) ?", "answer_text": "FX."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "À 24 images par seconde, combien d'images pour un plan de 3 secondes ?", "choices": ["24", "48", "72", "300"], "answer": 2, "explain": "3 × 24 = 72."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Que signifie CU ?", "choices": ["Plan de coupe", "Gros plan (Close-Up)", "Caméra Unique", "Plan d'ensemble"], "answer": 1, "explain": "Close-Up : visage."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quelle valeur de plan choisir pour situer un lieu au début d'une séquence ?", "answer_text": "Un plan de très grand ensemble ou d'ensemble (EWS / WS), dit plan d'établissement."},
+    {"id": "Q11", "lesson": "L3", "type": "open", "q": "Que signifie OTS et dans quelle situation l'utilise-t-on ?", "answer_text": "Over The Shoulder (amorce épaule) : surtout dans les dialogues (champ/contrechamp)."},
+    {"id": "Q12", "lesson": "L3", "type": "open", "q": "Pourquoi ne jamais mettre de point-virgule dans une description de la shot list BCMA ?", "answer_text": "C'est le séparateur de colonnes : il décale toutes les colonnes suivantes."},
+    {"id": "Q13", "lesson": "L4", "type": "open", "q": "Comment rendre ses estimations de charge plus fiables avec le temps ?", "answer_text": "Mesurer le temps réel passé par tâche sur chaque projet et corriger les estimations suivantes."}
+  ]
+}

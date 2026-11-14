@@ -1,0 +1,26 @@
+{
+  "code": "CH01.09",
+  "title": "Éditeur de propriétés",
+  "phase_title": "1 — Fondamentaux absolus",
+  "level": "débutant",
+  "duration": "1 h 30",
+  "intro": "Presque tous les réglages de Blender vivent dans l'éditeur Properties : moteur de rendu, résolution, cadence, caméra active, couleur du monde, affichage d'un objet, focale d'une caméra, puissance d'une lumière, matériaux… Ce chapitre vous donne la carte de ses onglets, du plus général (la scène) au plus particulier (le matériau), les gestes de saisie efficaces, la ligne de datablock (utilisateurs, bouclier) et les propriétés personnalisées qui serviront plus tard aux scripts de pipeline. Exercice : une chasse aux propriétés en 11 consignes vérifiées automatiquement.",
+  "prereqs": ["CH01.04 (datablocks).", "CH01.08 (visibilités)."],
+  "objectives": [
+    "Retrouver un réglage dans le bon onglet (scène, objet, données, matériau).",
+    "Saisir et réinitialiser des valeurs efficacement (glisser, Ctrl, Shift, Backspace, RMB).",
+    "Utiliser la ligne de datablock : utilisateurs, Fake User, épingle.",
+    "Créer des propriétés personnalisées.",
+    "Configurer résolution, cadence, plage d'images et unités d'un plan."
+  ],
+  "competences": [["C01.09.a", "Retrouver et régler un paramètre", "Exercice 3 (correcteur), tests chronométrés"]],
+  "lessons": [["L1", "Les onglets et leur logique", "25 min"], ["L2", "Manipuler les champs et les datablocks", "20 min"], ["L3", "Propriétés personnalisées et réglages de plan", "25 min"]],
+  "files": [
+    ["STARTER_FILES/ch01_09_hunt_starter.blend", "Scène de plan aux réglages par défaut"],
+    ["COMPLETED_EXAMPLES/ch01_09_hunt_solution.blend", "Les 11 consignes réalisées"],
+    ["SCRIPTS/validate_ch01_09.py", "Correcteur (13 points)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_09_hunt_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_09.py\" --python-exit-code 1 -- --exercise hunt",
+  "deliverables": ["ch01_09_hunt_<prenom>_v001.blend validé.", "Mini-projet : gabarit de plan dans TEMPLATES/."],
+  "next": "[CH01.10 — Modificateurs essentiels](../CH01_10_MODIFIERS/README.md)"
+}

@@ -1,0 +1,19 @@
+{
+  "chapter": "CH00.03",
+  "title": "Performances CPU, GPU, mémoire",
+  "pass_score": 10,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle ressource limite le plus souvent un rendu Cycles sur GPU d'une scène très chargée en textures ?", "choices": ["Le disque", "La VRAM", "Le nombre de cœurs CPU", "La résolution de l'écran"], "answer": 1, "explain": "La scène doit tenir dans la mémoire de la carte graphique."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Les modificateurs et déformations d'animation sont calculés principalement par…", "choices": ["Le GPU", "Le CPU", "La VRAM", "Le backend Vulkan"], "answer": 1, "explain": "Le CPU (sauf GPU Subdivision au viewport)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un « budget » en production 3D ? Donnez deux exemples.", "answer_text": "Une limite de ressources fixée à l'avance : ex. 20 min de rendu par image, 10 Go de VRAM, 100 000 triangles par personnage, 2 Go de textures par décor."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Cocher CPU + GPU dans Cycles Render Devices accélère-t-il toujours le rendu ?", "answer_text": "Non : cela dépend de la machine et de la scène ; il faut mesurer (benchmark)."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quel est le backend graphique par défaut de Blender 5.3 sous Windows ?", "choices": ["DirectX", "Metal", "Vulkan", "OpenGL"], "answer": 2, "explain": "Vulkan depuis 5.3 (OpenGL reste disponible)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Changer le backend de Vulkan à OpenGL change-t-il le rendu Cycles ?", "answer_text": "Non : le backend concerne l'affichage (interface, viewport) ; Cycles utilise CUDA/OptiX/HIP/oneAPI ou le CPU."},
+    {"id": "Q7", "lesson": "L3", "type": "mcq", "q": "Un objet de 1 000 faces a une Subdivision Render 3. Combien de faces au rendu (quads) ?", "choices": ["3 000", "8 000", "64 000", "1 000 000"], "answer": 2, "explain": "1 000 × 4³ = 64 000."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Pourquoi la barre d'état peut-elle afficher 300 000 faces pour une scène qui en rendra 16 millions ?", "answer_text": "Les statistiques montrent la géométrie du viewport (Levels Viewport) ; le rendu utilise Levels Render, souvent plus élevé."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Où afficher les statistiques directement dans la vue 3D ?", "answer_text": "Menu Overlays de la vue 3D > Statistics."},
+    {"id": "Q10", "lesson": "L4", "type": "mcq", "q": "Quel raccourci ouvre le menu Link/Transfer Data ?", "choices": ["Ctrl+J", "Ctrl+L", "Alt+D", "Shift+D"], "answer": 1, "explain": "Ctrl+L. (Ctrl+J joint les objets, Alt+D crée une duplication liée, Shift+D une copie.)"},
+    {"id": "Q11", "lesson": "L4", "type": "open", "q": "Quel est l'avantage de Render > Simplify par rapport à modifier chaque objet ?", "answer_text": "Il plafonne globalement (subdivision, etc.) sans modifier les objets : réversible en un clic, idéal pour prévisualiser ou sécuriser un rendu."},
+    {"id": "Q12", "lesson": "L4", "type": "open", "q": "200 objets partagent le même maillage. Vous modifiez la forme de l'un d'eux en Edit Mode. Que se passe-t-il ?", "answer_text": "Les 200 changent : ils partagent les mêmes données. Pour en isoler un : Object Data > bouton du nombre d'utilisateurs (Make Single User)."}
+  ]
+}

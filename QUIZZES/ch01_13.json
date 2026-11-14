@@ -1,0 +1,17 @@
+{
+  "chapter": "CH01.13",
+  "title": "Éclairage élémentaire",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle lumière émet des rayons parallèles et dont seule l'orientation compte ?", "choices": ["Point", "Spot", "Area", "Sun"], "answer": 3, "explain": "Sun."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Énoncez la loi de l'inverse du carré.", "answer_text": "L'éclairement diminue avec le carré de la distance : deux fois plus loin = quatre fois moins de lumière."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Pour des ombres douces, il faut une source…", "choices": ["Petite", "Grande", "Colorée", "Lointaine et petite"], "answer": 1, "explain": "Grande source = ombres douces."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Quelle température pour une lumière de bougie ? et pour un ciel bleu ?", "answer_text": "Bougie ~1900–2700 K (chaude) ; ciel bleu ~7000–10000 K (froide)."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Quand la case Temperature est cochée, que devient la couleur de la lumière ?", "answer_text": "Une teinte (Tint) qui se combine à la couleur de la température."},
+    {"id": "Q6", "lesson": "L1", "type": "open", "q": "Dans quelle direction éclaire une lumière Area ?", "answer_text": "Devant elle, selon son axe -Z local (il faut l'orienter vers le sujet)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Quel est le rôle de la key light ?", "answer_text": "Lumière principale : donne la forme, la direction et l'ambiance."},
+    {"id": "Q8", "lesson": "L2", "type": "mcq", "q": "Où place-t-on la rim light ?", "choices": ["Devant, au niveau des yeux", "Derrière le sujet, en hauteur", "Sous le sujet", "Sur la caméra"], "answer": 1, "explain": "Contre-jour : détache la silhouette."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Key 400 W, fill 50 W : quel ratio et quelle ambiance ?", "answer_text": "8:1, ambiance contrastée/dramatique."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Pourquoi ne pas éclairer en augmentant fortement le World ?", "answer_text": "Une ambiance uniforme aplatit les formes et supprime la direction et le contraste voulus."}
+  ]
+}

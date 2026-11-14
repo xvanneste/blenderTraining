@@ -1,0 +1,8 @@
+{
+  "build": "build_ch01_09_files.py",
+  "validator": "validate_ch01_09.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch01_09_hunt_solution.blend", "exercise": "hunt", "expect": true},
+    {"file": "STARTER_FILES/ch01_09_hunt_starter.blend", "exercise": "hunt", "expect": false}
+  ]
+}

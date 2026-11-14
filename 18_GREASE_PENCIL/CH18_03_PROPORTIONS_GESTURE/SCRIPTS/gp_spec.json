@@ -1,0 +1,18 @@
+{
+  "title": "CH18.03 — Proportions, silhouettes, gestuelle",
+  "exercises": {
+    "gesture": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Gesture": {"min_strokes": 40, "min_width": 6.0,
+                         "hint": "20 croquis gestuels (ligne d'action + tête + bassin au minimum) dans la bande du haut."},
+        "USER_Mannequins": {"min_strokes": 80, "min_width": 3.0, "min_height": 2.5,
+                            "hint": "8 mannequins (≈ 10–15 traits chacun) dans la zone du bas."},
+        "USER_Silhouettes": {"min_strokes": 4, "min_width": 1.2,
+                             "hint": "4 silhouettes fermées et remplies (MAT_GP_Black)."}
+      },
+      "fill_layers": ["USER_Silhouettes"],
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

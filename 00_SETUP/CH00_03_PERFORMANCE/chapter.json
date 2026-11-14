@@ -1,0 +1,41 @@
+{
+  "code": "CH00.03",
+  "title": "Performances CPU, GPU, mémoire",
+  "phase_title": "0 — Préparation et installation",
+  "level": "débutant",
+  "duration": "2 h (théorie 40 min · pratique 60 min · évaluation 20 min)",
+  "intro": "Une scène peut être magnifique et pourtant impossible à produire : trop lente à manipuler, trop lourde pour la mémoire de la carte graphique, trop longue à rendre. Ce chapitre vous apprend à penser en budget : comprendre quelle partie de l'ordinateur travaille pour chaque tâche, lire les statistiques, estimer le coût réel d'une scène au rendu, et appliquer les premiers leviers d'optimisation. Vous optimiserez une scène volontairement trop lourde — 200 galets qui représentent 16 millions de faces au rendu — sans changer son image.",
+  "prereqs": ["CH00.01 et CH00.02 validés.", "Statistiques de la barre d'état activées (CH00.02)."],
+  "objectives": [
+    "Expliquer le rôle du CPU, du GPU, de la RAM et de la VRAM dans chaque tâche de Blender.",
+    "Choisir et changer le backend graphique (Vulkan / OpenGL) en cas de problème.",
+    "Lire les statistiques et estimer le coût d'une scène au rendu.",
+    "Partager les données entre objets (duplication liée, Link Object Data).",
+    "Régler la subdivision et le panneau Simplify pour respecter un budget.",
+    "Mesurer et documenter un gain d'optimisation."
+  ],
+  "competences": [
+    ["C00.03.a", "Identifier la ressource limitante et choisir le bon périphérique", "Leçons 1–2, quiz"],
+    ["C00.03.b", "Mesurer et réduire le coût d'une scène", "Exercice 3 (correcteur), mini-projet"]
+  ],
+  "lessons": [
+    ["L1", "Comment Blender utilise CPU, GPU, RAM et VRAM", "20 min"],
+    ["L2", "Backend graphique : Vulkan et OpenGL", "10 min"],
+    ["L3", "Lire les statistiques et estimer le coût au rendu", "25 min"],
+    ["L4", "Les leviers d'optimisation", "35 min"]
+  ],
+  "files": [
+    ["STARTER_FILES/ch00_03_heavy_scene_starter.blend", "200 galets, données dupliquées, Subdivision 2/5 (~16,4 M faces au rendu)"],
+    ["COMPLETED_EXAMPLES/ch00_03_heavy_scene_solution.blend", "Version optimisée (données partagées, Subdivision 1/2, Simplify) — 0,26 M faces"],
+    ["SCRIPTS/bcma_scene_cost.py", "Estimation du coût d'une scène au rendu (réutilisable)"],
+    ["SCRIPTS/validate_ch00_03.py", "Correcteur de l'exercice 3"],
+    ["SCRIPTS/build_ch00_03_files.py", "Régénère les .blend"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch00_03_heavy_scene_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch00_03.py\" --python-exit-code 1 -- --exercise optimize --render",
+  "deliverables": [
+    "ch00_03_heavy_scene_<prenom>_v001.blend validé par le correcteur.",
+    "Rapport d'optimisation (mini-projet).",
+    "Fiche de poste section 6 (goulots d'étranglement)."
+  ],
+  "next": "[CH00.04 — Périphériques d'entrée](../CH00_04_INPUT_DEVICES/README.md)"
+}

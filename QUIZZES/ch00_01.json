@@ -1,0 +1,27 @@
+{
+  "chapter": "CH00.01",
+  "title": "Installer, lancer et vérifier Blender",
+  "pass_score": 16,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Sous quelle licence Blender est-il distribué ?", "choices": ["Freeware propriétaire", "GNU GPL", "Creative Commons BY", "MIT"], "answer": 1, "explain": "GNU GPL (v2 ou ultérieure)."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Vous vendez un court-métrage entièrement réalisé dans Blender. Qu'en est-il des droits sur le film ?", "choices": ["Le film doit être publié sous GPL", "Il vous appartient", "Il appartient à la Blender Foundation", "Vous devez payer une licence commerciale"], "answer": 1, "explain": "La GPL couvre le logiciel, pas vos créations. Vérifiez les licences des assets tiers."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Que signifie le dernier chiffre de 5.3.1 ?", "choices": ["Une version bêta", "Une version de correction de bugs", "Une version LTS", "Le numéro de build"], "answer": 1, "explain": "Correctif : corrections de bugs, pas de nouvelles fonctions."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Combien de temps une version LTS est-elle maintenue ?", "choices": ["3 mois", "1 an", "2 ans", "5 ans"], "answer": 2, "explain": "2 ans."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Pourquoi ne faut-il pas utiliser une daily build pour un projet réel ?", "answer_text": "Elle n'est pas complètement testée : plantages possibles, et des fichiers enregistrés avec une version en développement peuvent poser problème sur une version stable."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quelle méthode ne nécessite pas de droits administrateur ET permet d'avoir plusieurs versions ?", "choices": ["Installeur .msi", "Microsoft Store", "Zip", "Aucune"], "answer": 2, "explain": "Le zip : pas d'admin, un dossier par version."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Comment rendre une installation zip portable ?", "answer_text": "Créer un dossier nommé 'portable' à côté de blender.exe."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Quel est le principal risque du Microsoft Store pour une production longue ?", "answer_text": "Les mises à jour automatiques peuvent changer la version en cours de projet."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Une installation zip ne crée pas d'association de fichiers. Citez une façon de l'ajouter.", "answer_text": "Preferences > System > Register, ou 'blender -r' en ligne de commande."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Où se trouvent les préférences de Blender 5.3 sous Windows (installation non portable) ?", "answer_text": "%APPDATA%\\Blender Foundation\\Blender\\5.3\\config\\"},
+    {"id": "Q11", "lesson": "L3", "type": "open", "q": "Quelle est la différence entre userpref.blend et startup.blend ?", "answer_text": "userpref.blend = préférences ; startup.blend = scène et interface au démarrage / File > New."},
+    {"id": "Q12", "lesson": "L3", "type": "mcq", "q": "Que fait l'argument --factory-startup ?", "choices": ["Réinstalle Blender", "Supprime vos préférences", "Démarre sans lire vos préférences ni votre startup.blend", "Démarre en mode sans échec réseau"], "answer": 2, "explain": "Réglages d'usine pour la session, rien n'est supprimé."},
+    {"id": "Q13", "lesson": "L4", "type": "open", "q": "GPU coché dans les préférences, mais Cycles rend toujours sur CPU. Pourquoi ?", "answer_text": "Il faut aussi choisir Render > Device > GPU Compute dans la scène."},
+    {"id": "Q14", "lesson": "L4", "type": "open", "q": "Quelle API de calcul choisir pour une NVIDIA RTX 3080 ?", "answer_text": "OptiX (en premier) ou CUDA, puis mesurer."},
+    {"id": "Q15", "lesson": "L4", "type": "open", "q": "Pourquoi le premier rendu GPU d'une session est-il souvent plus lent ?", "answer_text": "Chargement/compilation des kernels GPU de Cycles."},
+    {"id": "Q16", "lesson": "L4", "type": "open", "q": "Que fait : blender -b scene.blend -o //out/img_#### -f 10 ?", "answer_text": "Sans interface, ouvre scene.blend et rend l'image 10 dans out/img_0010 (à côté du .blend)."},
+    {"id": "Q17", "lesson": "L4", "type": "open", "q": "À quoi sert --python-exit-code 1 ?", "answer_text": "Renvoyer un code d'erreur si le script Python lève une exception, pour que l'automatisation détecte l'échec."},
+    {"id": "Q18", "lesson": "L5", "type": "open", "q": "Citez les 5 suspects d'un rendu noir, de la caméra vers la lumière.", "answer_text": "Clip caméra ; visibilité au rendu (objets et collections) ; lumières et monde ; résolution % ; caméra active / image / sortie."},
+    {"id": "Q19", "lesson": "L5", "type": "open", "q": "Une collection n'apparaît pas au rendu mais est visible dans le viewport. Que vérifiez-vous ?", "answer_text": "L'icône appareil photo (Disable in Renders) de la collection dans l'Outliner et son exclusion du View Layer."},
+    {"id": "Q20", "lesson": "L5", "type": "open", "q": "Pourquoi un rendu de contrôle à 25 % et 8 échantillons pour diagnostiquer ?", "answer_text": "Quelques secondes au lieu de minutes : on teste les hypothèses une à une ; la qualité est inutile pour le diagnostic."}
+  ]
+}
