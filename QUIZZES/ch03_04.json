@@ -1,0 +1,17 @@
+{
+  "chapter": "CH03.04",
+  "title": "Sculpture stylisée",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle forme dominante évoque la douceur et la sympathie ?", "choices": ["Le triangle", "Le carré", "Le cercle", "Aucune"], "answer": 2, "explain": "Carré = stabilité, triangle = danger/dynamisme."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Qu'est-ce que le principe grand / moyen / petit ?", "answer_text": "Utiliser trois tailles bien distinctes pour créer du contraste ; des tailles égales s'annulent."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Comment tester la lisibilité d'un design ?", "answer_text": "Par la silhouette (ombre chinoise), de face et de profil."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Styliser, est-ce simplifier par manque de temps ?", "answer_text": "Non : c'est choisir et exagérer ce qui sert une intention, et supprimer le reste."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quelle option d'un élément de métaballe permet de creuser ?", "choices": ["Stiffness", "Negative", "Hide", "Radius"], "answer": 1, "explain": "Object Data > Active Element > Negative."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Pourquoi les métaballes sont-elles moins prévisibles que des ellipsoïdes ?", "answer_text": "Leur rayon est un rayon d'influence : la taille visible dépend des voisins et du seuil ; elles se règlent à l'œil."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Deux façons de faire un socle plat et fermé ?", "answer_text": "Mesh > Bisect avec Clear Inner et Fill, ou Boolean Difference avec un grand cube."},
+    {"id": "Q8", "lesson": "L2", "type": "mcq", "q": "Quel modificateur pour creuser les orbites avec des sphères ?", "choices": ["Mirror", "Boolean (Difference)", "Solidify", "Decimate"], "answer": 1, "explain": "Puis remesh pour adoucir."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Quelles brosses pour des plans nets ?", "answer_text": "Clay Strips pour poser des plans, Scrape/Fill pour aplatir, Pinch pour affirmer les arêtes ; peu de Smooth."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Quand casser la symétrie ?", "answer_text": "À la fin, volontairement (mèche, sourire en coin), sans nuire à la lisibilité."}
+  ]
+}

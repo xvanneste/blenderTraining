@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.05",
+  "title": "Hard Surface",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Pourquoi biseauter des arêtes même très finement ?", "answer_text": "Aucune arête réelle n'est infiniment vive ; le petit arrondi accroche la lumière et dessine la forme au rendu."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Un Bevel à 1 segment produit…", "choices": ["un arrondi", "un chanfrein", "rien", "une subdivision"], "answer": 1, "explain": "1 segment = facette (chanfrein) ; plusieurs = arrondi."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quelle largeur typique pour une arête « cassée » d'objet manufacturé ?", "answer_text": "De l'ordre de 1 à 3 mm (0,001–0,003 m), avec 2 segments."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Quelle Limit Method biseaute seulement les arêtes choisies à la main ?", "choices": ["None", "Angle", "Weight", "Profile"], "answer": 2, "explain": "Weight : arêtes ayant un Bevel Weight."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Comment poser un Bevel Weight ?", "answer_text": "Edit Mode, sélectionner les arêtes, Edge → Edge Bevel Weight, valeur (ex. 1)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Décrivez la recette à deux modificateurs Bevel.", "answer_text": "Un Bevel « Weight » large pour les arrondis voulus, puis un Bevel « Angle » fin (2–3 mm, 2 segments, Harden Normals) pour toutes les autres arêtes vives."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Harden Normals exige…", "choices": ["Shade Flat", "Shade Smooth", "une texture", "Cycles"], "answer": 1, "explain": "Comme Weighted Normal, il agit sur un objet lissé."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Pourquoi appliquer l'échelle avant de régler les biseaux ?", "answer_text": "Sinon la largeur du bevel est déformée selon les axes (biseaux irréguliers)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Faut-il fusionner les boutons avec la coque ?", "answer_text": "Non, pas nécessairement : des pièces séparées ou jointes (Ctrl+J) sans liaison topologique suffisent pour des éléments rigides."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Qu'est-ce que la hiérarchie des détails ?", "answer_text": "Grandes formes → formes moyennes → petits détails ; garder de grandes surfaces calmes et regrouper les détails pour éviter le bruit visuel."}
+  ]
+}

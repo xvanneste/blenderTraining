@@ -1,0 +1,27 @@
+{
+  "code": "CH18.19",
+  "title": "Dessiner dans et sur la 3D",
+  "phase_title": "18 — Grease Pencil (module F : hybride 2D/3D)",
+  "level": "intermédiaire",
+  "duration": "3 h",
+  "intro": "Grease Pencil dessine en 3D : ce chapitre place un personnage 2D debout dans un décor 3D (Stroke Placement, Drawing Plane, curseur 3D), peint des éléments directement sur les surfaces (placement Surface), génère les contours du décor avec Line Art et règle l'occlusion au rendu final par la passe Z. Le correcteur mesure pieds au sol, échelle, profondeur, part cachée vue de la caméra (lancer de rayons) et distance des dessins aux surfaces.",
+  "prereqs": ["CH18.06 à CH18.09.", "Phase 1 (navigation 3D, curseur 3D)."],
+  "objectives": [
+    "Choisir Stroke Placement et Drawing Plane selon l'intention.",
+    "Dessiner sur des surfaces 3D.",
+    "Générer des contours avec Line Art.",
+    "Intégrer un personnage 2D dans un décor 3D avec une occlusion correcte."
+  ],
+  "competences": [["C18.19.a", "Personnage 2D dans un décor 3D", "Exercice 2 (correcteur) + grille"]],
+  "lessons": [["L1", "Placement des traits et dessin sur surface", "1 h 30"], ["L2", "Line Art et occlusion", "1 h 30"]],
+  "files": [
+    ["STARTER_FILES/ch18_19_hybrid_starter.blend", "Décor 3D, objets GP vides, passe Z coupée"],
+    ["COMPLETED_EXAMPLES/ch18_19_hybrid_solution.blend", "Line Art, personnage, décors peints"],
+    ["COMPLETED_EXAMPLES/ch18_19_hybrid_reference.png", "Rendu final (occlusion visible)"],
+    ["SCRIPTS/validate_ch18_19.py", "Correcteur (hybrid)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_19_hybrid_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_19.py\" --python-exit-code 1 -- --exercise hybrid --render",
+  "deliverables": ["Scène hybride validée.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
+  "next": "[CH18.20 — Workflow 2D → 3D](../CH18_20_2D_TO_3D/README.md)"
+}

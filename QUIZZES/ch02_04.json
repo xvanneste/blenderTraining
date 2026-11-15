@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.04",
+  "title": "Normales",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'une normale et à quoi sert-elle au rendu ?", "answer_text": "Un vecteur perpendiculaire à la surface indiquant l'extérieur ; le rendu s'en sert pour calculer la réflexion de la lumière."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Avec l'overlay Face Orientation, une face rouge est…", "choices": ["sélectionnée", "vue de l'intérieur (normale inversée)", "un n-gon", "lissée"], "answer": 1, "explain": "Bleu = extérieur, rouge = intérieur."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Raccourci de Recalculate Outside ?", "choices": ["Shift+N", "Alt+N", "Ctrl+N", "N"], "answer": 0, "explain": "Shift+N ; Shift+Ctrl+N pour Inside ; Alt+N ouvre le menu Normals."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Pourquoi une face retournée est-elle dangereuse même si le rendu paraît correct ?", "answer_text": "Elle casse d'autres opérations : Solidify, Weighted Normal, Backface Culling, exports vers moteurs, booléens, simulations."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Par quoi l'ancienne case Auto Smooth a-t-elle été remplacée depuis Blender 4.1 ?", "answer_text": "Par l'opérateur Object → Shade Auto Smooth, qui ajoute un modificateur Smooth by Angle (Geometry Nodes) réglable."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Une boîte de conserve en Shade Smooth intégral a des couvercles « gonflés ». Que faire ?", "choices": ["Shade Flat", "Shade Auto Smooth (≈ 30°)", "Subdivision", "Recalculate Outside"], "answer": 1, "explain": "Les arêtes au-delà de l'angle restent vives, le flanc reste lisse."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Comment forcer une arête précise à rester vive ?", "answer_text": "Edit Mode, sélectionner l'arête, Edge → Mark Sharp (respectée par Smooth by Angle tant que Ignore Sharpness est décoché)."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Quel problème résout Weighted Normal ?", "answer_text": "Sur un objet chanfreiné et lissé, il pondère les normales par la surface des faces pour que les grandes faces restent parfaitement planes (plus de dégradés)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Où placer Weighted Normal dans la pile de modificateurs ?", "choices": ["En premier", "En dernier", "Peu importe", "Il faut l'appliquer"], "answer": 1, "explain": "Il doit voir la géométrie finale (après Bevel, Mirror…)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Weighted Normal n'a aucun effet. Première chose à vérifier ?", "answer_text": "Que l'objet est en Shade Smooth (sinon les normales restent plates par face)."}
+  ]
+}

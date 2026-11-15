@@ -1,0 +1,13 @@
+{
+  "title": "CH18.11 — Découpage dessiné",
+  "exercises": {
+    "board": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Board": {"min_strokes": 24, "min_width": 9.0, "min_height": 3.5,
+                       "hint": "6 cases remplies, une flèche de regard par personnage."}
+      },
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

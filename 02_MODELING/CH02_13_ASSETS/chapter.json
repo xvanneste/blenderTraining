@@ -1,0 +1,28 @@
+{
+  "code": "CH02.13",
+  "title": "Assets réutilisables",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "1 h 30",
+  "intro": "Un studio ne remodélise jamais deux fois la même chaise : il la publie dans une bibliothèque. Ce chapitre transforme vos props des chapitres précédents en assets documentés et catalogués, déclare la bibliothèque dans les préférences et explique les différences entre Link, Append et Append (Reuse Data).",
+  "prereqs": ["CH02.02 à CH02.12 (les props réutilisés)."],
+  "objectives": [
+    "Marquer des objets comme assets et les documenter (description, auteur, licence, tags).",
+    "Organiser des catalogues et comprendre blender_assets.cats.txt.",
+    "Déclarer une bibliothèque dans les préférences.",
+    "Choisir entre Link, Append et Append (Reuse Data)."
+  ],
+  "competences": [["C02.13.a", "Publier un asset", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Marquer et documenter", "45 min"], ["L2", "Bibliothèques et import", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch02_13_library_starter.blend", "6 props des chapitres précédents, non marqués"],
+    ["COMPLETED_EXAMPLES/ch02_13_library_solution.blend", "Bibliothèque : 6 assets documentés"],
+    ["COMPLETED_EXAMPLES/blender_assets.cats.txt", "Catalogues de la bibliothèque"],
+    ["COMPLETED_EXAMPLES/ch02_13_library_reference.png", "Rendu de la bibliothèque"],
+    ["SCRIPTS/validate_ch02_13.py", "Correcteur (marquage, catalogues, métadonnées)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"ASSETS\\ch02_13_library_<prenom>.blend\" `\n  --python \"02_MODELING\\CH02_13_ASSETS\\SCRIPTS\\validate_ch02_13.py\" --python-exit-code 1 -- --exercise library --render",
+  "deliverables": ["Bibliothèque validée.", "Auto-évaluation ≥ 14/20.", "Projet P2."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Bibliothèque validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[Projet P2 — Décor + 10 props](../README.md)"
+}

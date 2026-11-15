@@ -1,0 +1,17 @@
+{
+  "chapter": "CH03.03",
+  "title": "Résolution dynamique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Pourquoi le mannequin de CH03.01 donne-t-il trois morceaux au Voxel Remesh ?", "answer_text": "Ses masses ne se chevauchent pas (pas de cou, de taille, bras écartés de la cage) : seules les masses qui se recouvrent fusionnent."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Raccourci du Voxel Remesh en Sculpt Mode ?", "choices": ["R", "Ctrl+R", "Ctrl+D", "Shift+R"], "answer": 1, "explain": "R règle la taille de voxel à l'écran."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Voxel Size trop grand : conséquence ?", "choices": ["Blender plante", "Les détails fins (doigts) disparaissent", "Les UV sont conservées", "Plus de faces"], "answer": 1, "explain": "Le volume est reconstruit à la résolution du voxel."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Que faut-il faire avant de joindre les masses ?", "answer_text": "Tout désélectionner (Alt+A) pour ne pas joindre le sol ou d'autres objets, puis sélectionner seulement les masses."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Que fait DynTopo ?", "answer_text": "Il ajoute ou retire des triangles sous la brosse pendant le sculpt : densité locale à la demande."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quelle méthode conserve la base et ses UV ?", "choices": ["Voxel Remesh", "DynTopo", "Multiresolution", "QuadriFlow"], "answer": 2, "explain": "Les autres reconstruisent la topologie."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi régler Levels Viewport plus bas que Sculpt ?", "answer_text": "Pour garder un affichage fluide tout en sculptant au niveau de détail maximal."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Faut-il appliquer le Multires d'un personnage destiné à l'animation ?", "answer_text": "Non : la base légère sert au rig ; le détail est cuit en textures (normal/displacement)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Ajouter des cornes fines là où la densité manque ?", "choices": ["Voxel Remesh", "DynTopo", "Multires", "Decimate"], "answer": 1, "explain": "Densité ajoutée localement."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Donnez l'ordre type : blocage → … → détail.", "answer_text": "Masses + Voxel Remesh, exploration (DynTopo/Remesh), retopologie, Multires sur la base propre, cuisson des détails."}
+  ]
+}

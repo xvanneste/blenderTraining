@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.20",
+  "title": "Workflow 2D → 3D",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quel avantage à dessiner le board à travers une caméra du décor 3D ?", "answer_text": "Perspective, focale et échelle justes d'emblée ; les cadrages sont réutilisés au layout sans traduction."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Comment faire suivre la caméra par l'objet GP du board ?", "choices": ["Contrainte Track To", "Parent = la caméra", "Line Art", "Le mettre dans la collection CAMERAS"], "answer": 1, "explain": "Object Properties > Relations > Parent."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi exclure les boards du rendu final ?", "answer_text": "Ce sont des guides de travail, pas des éléments de l'image finale."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel Drawing Plane pour dessiner face à l'objectif en vue caméra ?", "choices": ["Top (X-Y)", "View", "Side (Y-Z)", "Cursor"], "answer": 1, "explain": "Plan parallèle à la vue."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Qu'est-ce que le blocking ?", "answer_text": "Placer personnages et accessoires 3D dans leurs poses clés, plan par plan, sans animation fine."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quelle interpolation pour que le personnage change de place à la coupe ?", "choices": ["Bézier", "Linear", "Constant", "Elastic"], "answer": 2, "explain": "Il garde sa position jusqu'à la clé suivante."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "En 5.3, quelle touche ouvre le menu des keying sets (Location & Rotation…) ?", "choices": ["I", "K", "R", "Ctrl+B"], "answer": 1, "explain": "I insère directement les canaux par défaut des préférences."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Le blocking montre que le personnage dessiné est plus grand que la porte : que faire ?", "answer_text": "Trancher : corriger le board si le décor est juste, ou le décor si l'intention du board prime."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Citez deux familles de styles hybrides.", "answer_text": "3D sous un rendu dessiné (Line Art, toon) ; 2D dans un décor 3D ; 3D avec effets ou annotations 2D."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Comment éviter de déplacer une caméra du board par erreur ?", "answer_text": "Désactiver sa sélection (Outliner) ou la verrouiller ; travailler en vue caméra sans la sélectionner."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_11_files.py",
+  "validator": "validate_ch02_11.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_11_uv_solution.blend", "exercise": "uv", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_11_uv_starter.blend", "exercise": "uv", "expect": false}
+  ]
+}

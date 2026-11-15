@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_10_files.py",
+  "validator": "validate_ch02_10.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_10_optim_solution.blend", "exercise": "optim", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_10_optim_starter.blend", "exercise": "optim", "expect": false}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.02",
+  "title": "Outils polygonaux I",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Raccourci de Loop Cut and Slide ?", "choices": ["Ctrl+B", "Ctrl+R", "Shift+R", "Alt+E"], "answer": 1, "explain": "Ctrl+R ; molette pour le nombre de coupes."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Comment laisser une coupe exactement au milieu ?", "answer_text": "Clic gauche pour valider la coupe, puis clic droit pour annuler le glissement : elle reste centrée."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi extruder les pieds en plusieurs tronçons ?", "answer_text": "Pour créer des boucles intermédiaires qui servent ensuite à brancher des éléments (traverses) ou à plier."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel menu ouvre Alt+E en Edit Mode ?", "choices": ["Merge", "Extrude (Faces, Along Normals, Individual, Manifold, Edges, Vertices)", "Bevel", "Snap"], "answer": 1, "explain": "Menu Extrude avec ses variantes."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Que fait Bridge Edge Loops et quelle condition faut-il respecter ?", "answer_text": "Il relie deux boucles d'arêtes (ou deux faces) par un tube de faces ; les deux côtés doivent avoir le même nombre de sommets."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Votre pont est vrillé. Quel réglage corriger ?", "answer_text": "Twist, dans le panneau de l'opération Bridge Edge Loops."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Pour un chanfrein simple, combien de segments de Bevel ?", "choices": ["1", "3", "8", "0"], "answer": 0, "explain": "1 segment = chanfrein ; 2–3 = arrondi léger."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Comment creuser un plateau proprement ?", "answer_text": "Inset (I) avec Depth 0 pour un rebord plat, puis Extrude (E) vers l'intérieur."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Décrivez la méthode « du gros au fin ».", "answer_text": "Blocking des volumes à l'échelle, découpes (Loop Cut), construction (Extrude, Bridge), puis finitions (Bevel, Inset, détails)."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "À quoi sert F9 après une opération ?", "choices": ["Rendu", "Rouvrir le panneau de la dernière opération pour la régler", "Sauvegarder", "Basculer en fil de fer"], "answer": 1, "explain": "Adjust Last Operation."}
+  ]
+}

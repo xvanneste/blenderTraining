@@ -1,0 +1,28 @@
+{
+  "code": "CH02.12",
+  "title": "Modélisation pour l'animation",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "1 h 45",
+  "intro": "Un personnage plie aux articulations : sa topologie doit le permettre. Ce chapitre montre, mesures à l'appui, pourquoi un coude à 4 segments s'écrase (12,5 % de volume perdu) et comment trois boucles bien placées le sauvent, puis fixe les règles d'échelle, de transformations et de pose pour livrer un maillage prêt au rigging.",
+  "prereqs": ["CH02.01 (pôles)", "CH02.02 (Loop Cut)", "CH02.09 (densité)."],
+  "objectives": [
+    "Expliquer la perte de volume au pli d'une articulation.",
+    "Placer des boucles d'articulation efficaces.",
+    "Respecter échelle réelle, transformations appliquées et pose de référence.",
+    "Tester la déformation avec une armature simple."
+  ],
+  "competences": [["C02.12.a", "Préparer un mesh déformable", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Pourquoi un maillage plie mal", "30 min"], ["L2", "Boucles d'articulation", "45 min"], ["L3", "Échelle, transformations, test précoce", "30 min"]],
+  "files": [
+    ["STARTER_FILES/ch02_12_arm_starter.blend", "Bras à 4 segments + armature 2 os"],
+    ["COMPLETED_EXAMPLES/ch02_12_arm_solution.blend", "Bras avec 4 boucles au coude"],
+    ["COMPLETED_EXAMPLES/ch02_12_arm_bent_starter.png", "Coude plié, avant"],
+    ["COMPLETED_EXAMPLES/ch02_12_arm_bent_solution.png", "Coude plié, après"],
+    ["SCRIPTS/validate_ch02_12.py", "Correcteur (boucles, quads, volume au pli de 90°)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_12_arm_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_12.py\" --python-exit-code 1 -- --exercise arm --render",
+  "deliverables": ["Bras validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la main."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Bras validé.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.13 — Assets réutilisables](../CH02_13_ASSETS/README.md)"
+}

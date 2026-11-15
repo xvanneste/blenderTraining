@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.06",
+  "title": "Grease Pencil : interface et objets",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "De quoi est fait un trait Grease Pencil ?", "answer_text": "D'une suite de points en 3D (position, rayon, opacité), appartenant à une image clé d'un calque d'un objet GP."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quelle entrée d'Add → Grease Pencil crée un objet vide pour commencer à dessiner ?", "choices": ["Stroke", "Blank", "Monkey", "Scene Line Art"], "answer": 1, "explain": "Blank : un calque, un matériau, aucun trait."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Dans quel mode lisse-t-on un trait tremblé au pinceau ?", "choices": ["Draw Mode", "Edit Mode", "Sculpt Mode", "Weight Paint"], "answer": 2, "explain": "Sculpt Mode déforme les traits au pinceau (Smooth, Push, Twist…)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Que contient le modèle File → New → 2D Animation dans Blender 5.3 ?", "answer_text": "Les workspaces « 2D Animation » et « 2D Full Canvas », un objet GP Stroke et une caméra, en 1920×1080 à 24 i/s."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Pourquoi séparer SKETCH, LINE et COLOR en calques ?", "answer_text": "Pour travailler chaque étape séparément : esquisse verrouillée et pâle, encrage, couleur ; on peut masquer, verrouiller ou modifier l'un sans abîmer les autres."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment créer un groupe de calques et y ranger un calque ?", "answer_text": "Panneau Layers : icône dossier (Add New Layer Group), puis glisser-déposer le calque sur la ligne du groupe."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Quand créer un objet GP séparé plutôt qu'un calque ?", "choices": ["Jamais", "Pour chaque élément qui bouge ou se place indépendamment (personnage, décor, effets)", "Pour chaque couleur", "Pour chaque image"], "answer": 1, "explain": "Un objet par élément indépendant ; les calques organisent le contenu d'un même objet."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Citez les quatre options de Stroke Placement.", "answer_text": "Origin, 3D Cursor, Surface, Stroke."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Au rendu F12, votre dessin passe devant une maison qui devrait le cacher. Que faire ?", "answer_text": "Activer la passe Z : Properties → View Layer → Passes → Data → Z."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "À quoi sert Stroke Depth Order ?", "choices": ["À cacher le GP derrière les maillages au rendu", "À ordonner les traits entre eux : ordre des calques (2D Layers) ou position 3D réelle (3D Location)", "À changer l'épaisseur des traits", "À choisir le moteur de rendu"], "answer": 1, "explain": "Il ordonne les traits entre eux ; l'occlusion par les maillages au rendu dépend de la passe Z."}
+  ]
+}

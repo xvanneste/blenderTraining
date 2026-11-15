@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.08",
+  "title": "Modélisation organique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce que le blocking ?", "answer_text": "Construire rapidement la forme avec des volumes simples pour valider proportions et silhouette avant tout détail."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Que juge-t-on en premier sur une forme organique ?", "choices": ["Les détails", "La silhouette et les proportions", "Les UV", "Les matériaux"], "answer": 1, "explain": "Du gros au fin."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Citez deux repères d'une forme organique crédible.", "answer_text": "Rythme épais/fin, asymétrie maîtrisée, lignes d'action courbes, échelle cohérente (deux parmi ceux-ci)."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Pourquoi activer le Mirror avec Clip en box modeling ?", "answer_text": "Pour ne modéliser qu'une moitié symétrique, les sommets du plan de symétrie restant collés au plan (pas de trou au milieu)."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Raccourci de To Sphere ?", "choices": ["Shift+Alt+S", "Ctrl+S", "Alt+S", "Shift+S"], "answer": 0, "explain": "Shift+Alt+S arrondit la sélection."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quelle touche active l'édition proportionnelle ?", "choices": ["P", "O", "K", "J"], "answer": 1, "explain": "O (molette pour le rayon pendant la transformation)."},
+    {"id": "Q7", "lesson": "L3", "type": "open", "q": "Sur quoi le modificateur Skin génère-t-il un volume ?", "answer_text": "Sur un squelette d'arêtes (sommets reliés, sans faces), avec un rayon par sommet."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "En Edit Mode, Ctrl+A sur un objet Skin…", "choices": ["applique les modificateurs", "redimensionne le rayon Skin (Skin Resize)", "sélectionne tout", "ajoute un sommet"], "answer": 1, "explain": "Skin Resize ; en Object Mode, Ctrl+A ouvre Apply."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quel modificateur suit toujours le Skin, et pourquoi ?", "answer_text": "Subdivision Surface : le Skin produit une cage grossière en quads que la subdivision lisse."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Que permet Skin Armature Create ?", "answer_text": "Générer une armature qui suit le squelette, pour un rig rapide (déformer branches, tentacules…)."}
+  ]
+}

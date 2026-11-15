@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_06_files.py",
+  "validator": "validate_ch18_06.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_06_gp_scene_solution.blend", "exercise": "organize", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_06_gp_scene_starter.blend", "exercise": "organize", "expect": false}
+  ]
+}

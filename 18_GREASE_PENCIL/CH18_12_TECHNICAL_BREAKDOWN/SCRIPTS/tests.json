@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_12_files.py",
+  "validator": "validate_ch18_12.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_12_board_solution.blend", "exercise": "board", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_12_board_starter.blend", "exercise": "board", "expect": false}
+  ]
+}

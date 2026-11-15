@@ -1,0 +1,27 @@
+{
+  "code": "CH18.20",
+  "title": "Workflow 2D → 3D",
+  "phase_title": "18 — Grease Pencil (module F : hybride 2D/3D)",
+  "level": "intermédiaire",
+  "duration": "3 h",
+  "intro": "Storyboarder directement à travers les caméras d'un décor 3D, puis réutiliser ces caméras pour le layout : chaque case du board est un objet Grease Pencil enfant de sa caméra, liée à son marqueur. Le blocking place ensuite le personnage 3D sur la silhouette dessinée, plan par plan, avec des clés Constant. Le correcteur superpose, dans l'image de chaque caméra, la silhouette dessinée et le mannequin 3D (recouvrement et pieds), et vérifie que les caméras du board n'ont pas bougé.",
+  "prereqs": ["CH18.14 (caméras liées aux marqueurs).", "CH18.19."],
+  "objectives": [
+    "Dessiner un board dans une caméra (GP enfant de la caméra).",
+    "Réutiliser les caméras du board pour le layout.",
+    "Faire un blocking 3D fidèle au board (clés Constant).",
+    "Choisir et unifier un style hybride."
+  ],
+  "competences": [["C18.20.a", "Caméras de board réutilisées en layout", "Exercice 2 (correcteur) + grille"]],
+  "lessons": [["L1", "Le board dans le décor 3D", "1 h"], ["L2", "Blocking 3D d'après le board", "2 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_20_layout_starter.blend", "Décor, 3 caméras + boards, mannequin non placé"],
+    ["COMPLETED_EXAMPLES/ch18_20_layout_solution.blend", "Blocking des 3 plans"],
+    ["COMPLETED_EXAMPLES/ch18_20_layout_contact.png", "Les 3 plans, board superposé"],
+    ["SCRIPTS/validate_ch18_20.py", "Correcteur (layout)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_20_layout_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_20.py\" --python-exit-code 1 -- --exercise layout --render",
+  "deliverables": ["Blocking validé.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
+  "next": "[CH18.21 — IA pour le storyboard](../CH18_21_AI_STORYBOARD/README.md)"
+}

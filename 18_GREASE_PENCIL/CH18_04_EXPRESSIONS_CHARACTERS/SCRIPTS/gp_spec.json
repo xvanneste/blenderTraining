@@ -1,0 +1,17 @@
+{
+  "title": "CH18.04 — Expressions et personnages",
+  "exercises": {
+    "expressions": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Heads": {"min_strokes": 24, "min_width": 6.0,
+                       "hint": "6 têtes construites (cercle, mâchoire, axe, ligne des yeux) dans la bande du haut."},
+        "USER_Expressions": {"min_strokes": 48, "min_width": 2.5, "min_height": 2.0,
+                             "hint": "Les 6 émotions (≈ 8 traits par tête : contour, yeux, sourcils, bouche)."},
+        "USER_ModelSheet": {"min_strokes": 12, "min_width": 2.5,
+                            "hint": "Face, trois-quarts et profil alignés sur les 3 repères."}
+      },
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

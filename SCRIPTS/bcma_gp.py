@@ -86,16 +86,42 @@ def drawing_owner_materials(drawing):
     return ob.data.materials if ob else None
 
 
-def polyline(drawing, pts, radius=0.008, mat=0, cyclic=False, opacity=1.0, pressure=None):
-    """Ajoute un trait passant par les points donnés. pressure : liste de facteurs de rayon."""
+def _curve_attr(drawing, name, dtype, index, value):
+    """Écrit un attribut de trait (domaine CURVE), en le créant au besoin."""
+    a = drawing.attributes.get(name)
+    if a is None:
+        a = drawing.attributes.new(name, dtype, "CURVE")
+    a.data[index].value = value
+
+
+def _next_fill_id(drawing):
+    a = drawing.attributes.get("fill_id")
+    return 1 + (max((d.value for d in a.data), default=0) if a else 0)
+
+
+def polyline(drawing, pts, radius=0.008, mat=0, cyclic=False, opacity=1.0, pressure=None,
+             fill=None, hide_stroke=None):
+    """Ajoute un trait passant par les points donnés. pressure : liste de facteurs de rayon.
+
+    Remplissage (Blender 5.3) : il est porté PAR TRAIT (attribut `fill_id` ≠ 0, comme le fait
+    le pinceau en mode Fill/Both ou Edit Mode > Set Stroke Type) ; les cases Stroke/Fill du
+    matériau n'existent plus dans l'interface. fill=None : remplir si le matériau a été créé
+    avec un fill (material(..., fill=couleur)). hide_stroke=True : remplissage seul (type Fill).
+    """
     pts = [_pt(p) for p in pts]
     drawing.add_strokes([len(pts)])
-    s = drawing.strokes[len(drawing.strokes) - 1]
+    idx = len(drawing.strokes) - 1
+    s = drawing.strokes[idx]
     s.cyclic = cyclic
     s.material_index = mat
-    mats = drawing_owner_materials(drawing)
-    if mats and mat < len(mats) and mats[mat] and mats[mat].grease_pencil.show_fill:
-        s.fill_opacity = 1.0  # GP v3 : l'opacité de remplissage est portée par chaque trait
+    if fill is None:
+        mats = drawing_owner_materials(drawing)
+        fill = bool(mats and mat < len(mats) and mats[mat] and mats[mat].grease_pencil.show_fill)
+    if fill:
+        s.fill_opacity = 1.0
+        _curve_attr(drawing, "fill_id", "INT", idx, _next_fill_id(drawing))
+        if hide_stroke:
+            _curve_attr(drawing, "hide_stroke", "BOOLEAN", idx, True)
     for i, (pt, co) in enumerate(zip(s.points, pts)):
         pt.position = co
         pt.radius = radius * (pressure[i] if pressure else 1.0)
@@ -128,9 +154,7 @@ def circle(drawing, center, r, radius=0.008, mat=0, n=48, fill_mat=None):
 
 def hatch_ellipse(drawing, center, rx, rz, spacing=0.05, angle=0.8, radius=0.004, mat=0, opacity=1.0):
     """Hachures parallèles limitées à une ellipse (valeurs d'ombre au trait).
-    Note : les remplissages (Fill) de traits créés PAR SCRIPT ne s'affichent pas au rendu en
-    mode arrière-plan dans Blender 5.3 (constaté) ; les hachures servent donc aux exemples
-    générés. Dans l'interface, l'outil Fill fonctionne normalement."""
+    (Les remplissages fonctionnent aussi par script : voir polyline(fill=True).)"""
     cx, cz = center
     ca, sa = math.cos(angle), math.sin(angle)
     R = max(rx, rz)
@@ -145,6 +169,32 @@ def hatch_ellipse(drawing, center, rx, rz, spacing=0.05, angle=0.8, radius=0.004
         if len(pts) >= 2:
             polyline(drawing, [pts[0], pts[-1]], radius, mat, opacity=opacity)
         t += spacing
+
+
+def clip_to_rect(pts, rect, steps=12):
+    """Découpe une polyligne (x, z) par un rectangle (x0, z0, x1, z1) → morceaux intérieurs."""
+    x0, z0, x1, z1 = rect
+    fine = []
+    for a, b in zip(pts, pts[1:]):
+        for i in range(steps):
+            t = i / steps
+            fine.append((a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t))
+    fine.append(pts[-1])
+    out, cur = [], []
+    for p in fine:
+        if x0 <= p[0] <= x1 and z0 <= p[1] <= z1:
+            cur.append(p)
+        elif cur:
+            out.append(cur)
+            cur = []
+    if cur:
+        out.append(cur)
+    return [c for c in out if len(c) >= 2]
+
+
+def polyline_clipped(drawing, pts, rect, radius=0.008, mat=0):
+    """Trace une polyligne coupée par le cadre d'une case de storyboard."""
+    return [polyline(drawing, piece, radius, mat) for piece in clip_to_rect(pts, rect)]
 
 
 def rect(drawing, x0, z0, x1, z1, radius=0.008, mat=0):
@@ -311,6 +361,7 @@ def sheet(name="GP_Practice", width=12.0, height=6.75, guide_layers=("GUIDE",), 
     for lname in list(guide_layers) + list(user_layers):
         drawings[lname] = layer(ob, lname)
     for lay in ob.data.layers:
+        lay.use_lights = False   # feuille sans lampe : couleurs exactes (sinon traits/aplats assombris)
         if lay.name in guide_layers:
             lay.lock = True
             lay.opacity = 0.6

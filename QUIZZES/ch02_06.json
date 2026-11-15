@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.06",
+  "title": "Subdivision Surface",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce que la cage d'un objet subdivisé ?", "answer_text": "Le maillage de contrôle léger que l'on modélise ; la subdivision en calcule une surface lisse."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Combien de faces après 2 niveaux de subdivision d'une face ?", "choices": ["2", "4", "16", "64"], "answer": 2, "explain": "×4 par niveau : 4 × 4 = 16."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Raccourci pour régler rapidement la subdivision d'un objet ?", "choices": ["Shift+1…5", "Ctrl+0…5", "Alt+S", "Ctrl+R"], "answer": 1, "explain": "Ctrl+0 à Ctrl+5 en Object Mode."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Quelle règle relie la position d'une boucle de maintien et l'arrondi ?", "answer_text": "La distance entre la boucle et l'arête fixe le rayon de l'arrondi : plus elle est proche, plus l'arête est nette."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Raccourci du crease d'arête ?", "choices": ["Shift+E", "Ctrl+E", "Alt+E", "E"], "answer": 0, "explain": "Shift+E puis valeur de 0 à 1."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Avantage et limite du crease ?", "answer_text": "Avantage : rapide, sans géométrie supplémentaire. Limite : dépend d'un attribut parfois mal exporté, et un crease de 1 donne une arête parfaitement vive peu réaliste."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi les triangles et n-gons posent problème dans une cage ?", "answer_text": "Ils produisent des bosses et des pincements après subdivision."},
+    {"id": "Q8", "lesson": "L2", "type": "mcq", "q": "Le crease ne fait rien. Que vérifier ?", "choices": ["Use Creases dans le modificateur", "Le matériau", "La caméra", "Les UV"], "answer": 0, "explain": "Use Creases doit être coché."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quels niveaux régler pour un viewport fluide et un rendu lisse ?", "answer_text": "Levels Viewport 0–1 et Render 2–3."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Comment plafonner la subdivision de toute une scène ?", "answer_text": "Render → Simplify → Max Subdivision."}
+  ]
+}

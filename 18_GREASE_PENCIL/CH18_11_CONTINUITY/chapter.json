@@ -1,0 +1,30 @@
+{
+  "code": "CH18.11",
+  "title": "Continuité et dialogue",
+  "phase_title": "18 — Grease Pencil (module C : storyboard)",
+  "level": "intermédiaire",
+  "duration": "2 h 30",
+  "intro": "Un dialogue se raconte en champ/contrechamp, sans que le spectateur se perde : axe respecté, regards et positions constants à l'écran, entrées et sorties de champ cohérentes. Ce chapitre découpe une scène de dialogue en six plans, dessinés sur une planche puis réalisés avec des caméras 3D montées par des marqueurs de timeline — le correcteur mesure l'axe, les côtés et la variété.",
+  "prereqs": ["CH18.10 (valeurs de plans, 180°)."],
+  "objectives": [
+    "Découper un dialogue : master, champ/contrechamp, amorces, plans serrés, insert.",
+    "Respecter axe, regards et positions à l'écran.",
+    "Gérer entrées et sorties de champ.",
+    "Monter les plans dans Blender avec marqueurs et Bind Camera to Markers."
+  ],
+  "competences": [["C18.11.a", "Découpage de dialogue sans faux raccord", "Exercice 3 (correcteurs + grille)"]],
+  "lessons": [["L1", "Découper un dialogue", "1 h"], ["L2", "Les raccords", "45 min"], ["L3", "Le découpage dans Blender", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_11_dialogue_starter.blend", "Plateau : A et B face à face, table, tasse"],
+    ["STARTER_FILES/ch18_11_board_starter.blend", "Planche GP de 6 cases"],
+    ["COMPLETED_EXAMPLES/ch18_11_dialogue_solution.blend", "6 caméras + 6 marqueurs liés"],
+    ["COMPLETED_EXAMPLES/ch18_11_dialogue_contact.png", "Planche-contact des 6 plans"],
+    ["COMPLETED_EXAMPLES/ch18_11_board_solution.blend", "Découpage dessiné"],
+    ["COMPLETED_EXAMPLES/ch18_11_board_reference.png", "Rendu de la planche"],
+    ["SCRIPTS/validate_ch18_11.py", "Correcteur (marqueurs, 180°, côtés, variété, durées, planche)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_11_dialogue_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_11.py\" --python-exit-code 1 -- --exercise dialogue",
+  "deliverables": ["Dialogue et planche validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la traversée."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Les deux correcteurs validés.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.12 — Cadrage, composition, découpage technique](../CH18_12_TECHNICAL_BREAKDOWN/README.md)"
+}

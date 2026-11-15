@@ -1,0 +1,10 @@
+{
+  "build": "build_ch18_11_files.py",
+  "validator": "validate_ch18_11.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_11_dialogue_solution.blend", "exercise": "dialogue", "expect": true},
+    {"file": "STARTER_FILES/ch18_11_dialogue_starter.blend", "exercise": "dialogue", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch18_11_board_solution.blend", "exercise": "board", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_11_board_starter.blend", "exercise": "board", "expect": false}
+  ]
+}

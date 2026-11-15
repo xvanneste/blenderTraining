@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.10",
+  "title": "Langage cinématographique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Un plan coupé à la mi-cuisse est un…", "choices": ["Plan moyen", "Plan américain", "Gros plan", "Plan rapproché poitrine"], "answer": 1, "explain": "Plan américain : coupe entre genou et mi-cuisse."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Différence entre plan d'ensemble et plan moyen ?", "answer_text": "Les deux montrent le personnage entier ; en plan d'ensemble il est petit dans le décor (≤ 30 % de la hauteur), en plan moyen il occupe la plus grande partie de la hauteur."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un insert ?", "answer_text": "Un plan où un objet ou un détail occupe le cadre pour donner une information."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Que raconte surtout un gros plan ?", "choices": ["Le lieu", "L'émotion du personnage", "L'action du corps entier", "La géographie de la scène"], "answer": 1, "explain": "Visage = émotion, pensée."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Quel effet produit une contre-plongée ?", "answer_text": "Le personnage paraît puissant, dominant, menaçant ou héroïque."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Un téléobjectif (135 mm) pour un gros plan donne…", "choices": ["un visage déformé et un décor large", "un visage flatteur et un arrière-plan resserré, flou", "aucune différence", "un plan d'ensemble"], "answer": 1, "explain": "Caméra loin : perspective aplatie."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'un plan débullé (dutch angle) ?", "answer_text": "Un plan où la caméra est penchée (horizon incliné), qui exprime malaise ou instabilité."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Énoncez la règle des 180°.", "answer_text": "Les caméras d'une scène restent du même côté de la ligne qui relie les deux personnages, pour conserver les directions de regard à l'écran."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Que se passe-t-il si l'on franchit l'axe sans transition ?", "choices": ["Rien", "Les personnages semblent changer de côté : le spectateur est perdu", "L'image devient floue", "Le son se coupe"], "answer": 1, "explain": "Les directions de regard s'inversent."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Comment franchir l'axe proprement ?", "answer_text": "Par un mouvement de caméra visible qui passe l'axe, un plan neutre dans l'axe, ou un déplacement de personnage qui crée un nouvel axe."}
+  ]
+}

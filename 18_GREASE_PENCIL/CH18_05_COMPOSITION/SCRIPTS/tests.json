@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_05_files.py",
+  "validator": "validate_ch18_05.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_05_composition_solution.blend", "exercise": "composition", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_05_composition_starter.blend", "exercise": "composition", "expect": false}
+  ]
+}

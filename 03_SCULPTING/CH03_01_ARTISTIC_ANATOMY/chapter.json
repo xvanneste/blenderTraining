@@ -1,0 +1,29 @@
+{
+  "code": "CH03.01",
+  "title": "Anatomie artistique",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "débutant → intermédiaire",
+  "duration": "4 h",
+  "intro": "Avant de sculpter, il faut des proportions justes. Ce chapitre construit un personnage en 16 masses simples sur une toise : canon de 7,5 têtes, repères anatomiques (menton, épaules, entrejambe, genoux, coudes, bout des doigts), symétrie, puis un enfant de 5 têtes et une pose de contrapposto (bassin et cage inclinés en sens opposés, tête à l'aplomb du pied d'appui). Le correcteur mesure chaque masse.",
+  "prereqs": ["Phase 1 (transformations, Sidebar, vues orthographiques).", "CH18.03 conseillé (proportions dessinées)."],
+  "objectives": [
+    "Mesurer un personnage en têtes et choisir un canon.",
+    "Placer les masses principales et les segments aux repères anatomiques.",
+    "Construire une symétrie propre.",
+    "Poser un contrapposto équilibré."
+  ],
+  "competences": [["C03.01.a", "Construire des proportions", "Exercices 2–3 (correcteur) + grille"]],
+  "lessons": [["L1", "Proportions et canon", "1 h 30"], ["L2", "Masses et membres", "1 h 30"], ["L3", "Geste et contrapposto", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch03_01_proportions_starter.blend", "Toise, repères, caméras face/profil"],
+    ["COMPLETED_EXAMPLES/ch03_01_adult_solution.blend", "Adulte 7,5 têtes"],
+    ["COMPLETED_EXAMPLES/ch03_01_child_solution.blend", "Enfant 5 têtes"],
+    ["COMPLETED_EXAMPLES/ch03_01_gesture_solution.blend", "Contrapposto"],
+    ["COMPLETED_EXAMPLES/ch03_01_adult_reference.png", "Face + profil"],
+    ["SCRIPTS/validate_ch03_01.py", "Correcteur (adult, child, gesture)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_01_proportions_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_01.py\" --python-exit-code 1 -- --exercise adult --render",
+  "deliverables": ["Adulte et enfant validés.", "Contrapposto validé.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercices 2 et 3 validés."],
+  "next": "[CH03.02 — Sculpt Mode](../CH03_02_SCULPT_MODE/README.md)"
+}

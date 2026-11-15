@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.04",
+  "title": "Expressions et personnages",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Où se trouve la ligne des yeux ?", "choices": ["Au tiers supérieur de la tête", "À mi-hauteur de la tête complète", "Au niveau du sommet de l'oreille", "Juste sous les cheveux"], "answer": 1, "explain": "À mi-hauteur (crâne + mâchoire) ; on la place souvent trop haut."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "À quoi sert l'axe central courbé ?", "answer_text": "Il indique l'orientation de la tête (où elle regarde) et place le nez, la bouche et le menton."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Qu'est-ce qui distingue une tête de trois-quarts d'une tête de face ?", "answer_text": "Axe décalé et courbé, œil du fond plus étroit, nez qui dépasse l'axe du côté du regard."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Où placer la base du nez ?", "answer_text": "À mi-chemin entre la ligne des yeux et le menton."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Quelles trois zones portent l'essentiel d'une expression ?", "answer_text": "Les sourcils, les paupières et la bouche."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Extrémités intérieures des sourcils levées : quelle émotion ?", "choices": ["Colère", "Tristesse (ou peur)", "Joie", "Dégoût"], "answer": 1, "explain": "Intérieur levé = tristesse ou peur ; intérieur abaissé = colère."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Décrivez la bouche du dégoût.", "answer_text": "Lèvre supérieure relevée, souvent asymétrique, nez froncé."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Pourquoi introduire de l'asymétrie dans une expression ?", "answer_text": "Une symétrie parfaite donne un visage figé, comme un masque ; l'asymétrie rend l'expression naturelle."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Quelle forme de base suggère un personnage gentil et doux ?", "choices": ["Ronde", "Carrée", "Triangulaire", "Rectangulaire allongée"], "answer": 0, "explain": "Rond = doux ; carré = solide ; triangle = dynamique/menaçant."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Qu'est-ce qu'une feuille de modèle et à quoi sert-elle ?", "answer_text": "Document de référence (turnaround aligné, expressions, mains, couleurs) qui garantit que le personnage reste identique d'un dessin et d'un artiste à l'autre ; il sert aussi de plan pour la modélisation 3D."}
+  ]
+}

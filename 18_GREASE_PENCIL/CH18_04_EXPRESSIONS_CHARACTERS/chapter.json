@@ -1,0 +1,28 @@
+{
+  "code": "CH18.04",
+  "title": "Expressions et personnages",
+  "phase_title": "18 — Grease Pencil (module A : fondamentaux du dessin)",
+  "level": "débutant",
+  "duration": "3 h 30",
+  "intro": "Un storyboard raconte avec des visages. Ce chapitre apprend à construire une tête (crâne, axe, ligne des yeux à mi-hauteur, mâchoire), à la faire tourner, puis à dessiner les six émotions de base avec trois zones seulement : sourcils, paupières, bouche. Vous concevrez enfin votre premier personnage et sa feuille de modèle (face, trois-quarts, profil alignés), le document qui garantit qu'il reste le même d'un plan à l'autre.",
+  "prereqs": ["CH18.01 (volumes).", "CH18.03 (proportions, silhouette)."],
+  "objectives": [
+    "Construire une tête et placer correctement yeux, nez, bouche et oreilles.",
+    "Dessiner la tête sous six angles.",
+    "Dessiner les six émotions de base et des émotions mixtes.",
+    "Concevoir un personnage à partir d'une forme de base et d'une silhouette.",
+    "Réaliser une feuille de modèle alignée (turnaround)."
+  ],
+  "competences": [["C18.04.a", "Model sheet d'un personnage", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Construire et orienter la tête", "1 h"], ["L2", "Les expressions", "1 h"], ["L3", "Concevoir un personnage, la feuille de modèle", "1 h 30"]],
+  "files": [
+    ["STARTER_FILES/ch18_04_expressions_starter.blend", "Feuille : construction de tête, repères de turnaround, 3 calques de travail"],
+    ["COMPLETED_EXAMPLES/ch18_04_expressions_solution.blend", "Feuille complétée (référence schématique)"],
+    ["COMPLETED_EXAMPLES/ch18_04_expressions_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/validate_ch18_04.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_04_expressions_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_04.py\" --python-exit-code 1 -- --exercise expressions --render",
+  "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : le casting (3 personnages)."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.05 — Composition et dessin cinématographique](../CH18_05_COMPOSITION/README.md)"
+}

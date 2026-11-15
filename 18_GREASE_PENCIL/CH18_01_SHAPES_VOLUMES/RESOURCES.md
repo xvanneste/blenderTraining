@@ -10,7 +10,8 @@ Vérifications 5.3.0 : raccourcis de Draw Mode relevés dans `blender_default.py
 effacer `Ctrl+LMB`, lisser `Shift+LMB`, taille `[`/`]`, calques `Y`, matériaux `U`,
 outils Line/Polyline/Box/Circle/Arc/Curve/Eyedropper) ; API Grease Pencil v3 utilisée pour
 générer guides et solution (calques, images, traits, matériaux).
-**Limite constatée** : les remplissages de traits créés par script ne s'affichent pas au rendu en
-mode arrière-plan ; la solution utilise donc des hachures. Dans l'interface, le remplissage
-fonctionne normalement.
+**Note 5.3 (vérifiée)** : le remplissage est porté par chaque trait (pinceau en mode *Fill* ou
+*Both*, outil *Fill*, ou Edit Mode → *Set Stroke Type*) ; le matériau n'a plus de cases
+Stroke/Fill, seulement ses panneaux *Stroke* et *Fill* (couleurs, styles). La solution combine
+aplats gris et hachures.
 Ressources produites : feuille d'exercice, solution, rendu de référence (licence BCMA).

@@ -34,7 +34,11 @@ Lisez [DOCUMENTATION/CONVENTIONS.md](DOCUMENTATION/CONVENTIONS.md) : nommage des
 (`…_v001.blend`), des objets (`GEO_`, `CAM_`, `LGT_`…), chemins relatifs, unités en
 mètres. Ces habitudes vous feront gagner des centaines d'heures.
 
-## 5. Ouvrez le premier chapitre
+## 5. Ouvrez l'application (facultatif)
+`SITE/index.html` réunit tout le contenu (navigation, quiz, recherche, progression). Elle se
+régénère avec `python TOOLSuild_site.py`.
+
+## 6. Ouvrez le premier chapitre
 👉 [00_SETUP/CH00_01_INSTALLATION/README.md](00_SETUP/CH00_01_INSTALLATION/README.md)
 
 ## Besoin d'aide ?

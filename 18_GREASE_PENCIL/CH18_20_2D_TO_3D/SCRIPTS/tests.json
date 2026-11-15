@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_20_files.py",
+  "validator": "validate_ch18_20.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_20_layout_solution.blend", "exercise": "layout", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_20_layout_starter.blend", "exercise": "layout", "expect": false}
+  ]
+}

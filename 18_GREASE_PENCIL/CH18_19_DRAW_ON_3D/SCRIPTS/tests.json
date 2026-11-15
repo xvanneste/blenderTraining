@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_19_files.py",
+  "validator": "validate_ch18_19.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_19_hybrid_solution.blend", "exercise": "hybrid", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_19_hybrid_starter.blend", "exercise": "hybrid", "expect": false}
+  ]
+}

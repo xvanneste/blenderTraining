@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.09",
+  "title": "Retopologie",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Pourquoi retopologiser une sculpture ?", "answer_text": "Son maillage dense et désordonné est inutilisable pour l'animation, les UV et la subdivision ; on reconstruit une cage légère en quads."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Où concentrer les boucles d'une cage ?", "answer_text": "Là où la forme plie ou se déforme : articulations, bouche, yeux ; peu ailleurs."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Comment récupère-t-on les petits détails perdus par la retopologie ?", "choices": ["On ne peut pas", "Par textures (normal map, baking) ou Multiresolution", "En triangulant", "Avec un Boolean"], "answer": 1, "explain": "Détails fins → textures ou multirésolution."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Décrivez la retopologie rapide d'une forme fermée simple.", "answer_text": "Sphère de quads (cube subdivisé + To Sphere) mise à l'échelle pour envelopper la forme, puis modificateur Shrinkwrap (Nearest Surface Point) avec la sculpture comme cible."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Que se passe-t-il si la cage est plus petite que la forme ?", "answer_text": "Les sommets se collent au point le plus proche, sur le « ventre » de la forme : les extrémités ne sont pas couvertes (63 % seulement dans l'essai du chapitre)."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "À quoi sert l'Offset du Shrinkwrap ?", "choices": ["Faire tourner la cage", "Garder la cage légèrement au-dessus de la surface", "Changer la cible", "Lisser"], "answer": 1, "explain": "Quelques millimètres évitent que la cage soit cachée dans la sculpture."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Citez deux Wrap Methods du Shrinkwrap.", "answer_text": "Nearest Surface Point, Project, Nearest Vertex, Target Normal Project (deux parmi celles-ci)."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quel élément d'aimantation projette les sommets sur la surface visée ?", "choices": ["Increment", "Face Project", "Volume", "Grid"], "answer": 1, "explain": "Snap Target for Individual Elements : Face Project (ou Face Nearest)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Pourquoi décocher Include Active en retopologie ?", "answer_text": "Sinon les sommets s'aimantent aussi à la cage en cours d'édition au lieu de la sculpture."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Que font clic, Ctrl+clic et Shift+clic avec Poly Build ?", "answer_text": "Clic : extruder au curseur ; Ctrl+clic : créer une face ; Shift+clic : supprimer."}
+  ]
+}

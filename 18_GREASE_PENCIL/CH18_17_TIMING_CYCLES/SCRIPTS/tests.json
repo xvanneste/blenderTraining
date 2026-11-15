@@ -1,0 +1,10 @@
+{
+  "build": "build_ch18_17_files.py",
+  "validator": "validate_ch18_17.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_17_xsheet_solution.blend", "exercise": "xsheet", "expect": true},
+    {"file": "STARTER_FILES/ch18_17_xsheet_starter.blend", "exercise": "xsheet", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch18_17_walk_solution.blend", "exercise": "walk", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_17_walk_starter.blend", "exercise": "walk", "expect": false}
+  ]
+}

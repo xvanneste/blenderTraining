@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_05_files.py",
+  "validator": "validate_ch02_05.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_05_device_solution.blend", "exercise": "device", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_05_device_starter.blend", "exercise": "device", "expect": false}
+  ]
+}

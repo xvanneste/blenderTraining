@@ -1,0 +1,28 @@
+{
+  "code": "CH02.11",
+  "title": "UV fondamentaux",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "2 h 15",
+  "intro": "Pour poser une texture image sur un objet 3D, il faut le déplier comme un patron de couture : ce sont les UV. Ce chapitre explique coutures et îles, les méthodes de dépliage de Blender 5.3, le contrôle par damier et la densité de texels, sur une caisse et une boîte de conserve — avec un correcteur qui mesure chevauchements et étirements.",
+  "prereqs": ["CH02.01 à CH02.03."],
+  "objectives": [
+    "Expliquer espace UV, coutures, îles et étirement.",
+    "Placer des coutures et déplier (Unwrap, Smart UV Project).",
+    "Ranger les îles (Pack Islands) et harmoniser la densité.",
+    "Contrôler un dépliage avec un damier."
+  ],
+  "competences": [["C02.11.a", "Déplier un objet simple", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "UV, coutures, îles", "45 min"], ["L2", "Méthodes de dépliage", "1 h"], ["L3", "Contrôler la qualité", "30 min"]],
+  "files": [
+    ["STARTER_FILES/ch02_11_uv_starter.blend", "Caisse et boîte sans UV, matériau damier"],
+    ["COMPLETED_EXAMPLES/ch02_11_uv_solution.blend", "Caisse (Smart UV) et boîte (coutures + Unwrap)"],
+    ["COMPLETED_EXAMPLES/ch02_11_uv_starter_view.png", "Rendu sans UV"],
+    ["COMPLETED_EXAMPLES/ch02_11_uv_reference.png", "Rendu avec UV"],
+    ["SCRIPTS/validate_ch02_11.py", "Correcteur (bornes, occupation, chevauchement, étirement, coutures)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_11_uv_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_11.py\" --python-exit-code 1 -- --exercise uv --render",
+  "deliverables": ["Dépliages validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : déplier trois props."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Dépliages validés.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.12 — Modélisation pour l'animation](../CH02_12_ANIMATION_READY/README.md)"
+}

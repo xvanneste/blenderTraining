@@ -1,0 +1,10 @@
+{
+  "build": "build_ch18_14_files.py",
+  "validator": "validate_ch18_14.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_14_animatic_solution.blend", "exercise": "animatic", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_14_animatic_starter.blend", "exercise": "animatic", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch18_14_layout_solution.blend", "exercise": "layout", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_14_layout_starter.blend", "exercise": "layout", "expect": false}
+  ]
+}

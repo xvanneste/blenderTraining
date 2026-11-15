@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_12_files.py",
+  "validator": "validate_ch02_12.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_12_arm_solution.blend", "exercise": "arm", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_12_arm_starter.blend", "exercise": "arm", "expect": false}
+  ]
+}

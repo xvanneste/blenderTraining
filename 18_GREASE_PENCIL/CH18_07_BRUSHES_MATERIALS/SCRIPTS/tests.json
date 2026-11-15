@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_07_files.py",
+  "validator": "validate_ch18_07.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_07_brushes_solution.blend", "exercise": "brushes", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_07_brushes_starter.blend", "exercise": "brushes", "expect": false}
+  ]
+}

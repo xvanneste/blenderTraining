@@ -31,9 +31,8 @@
 
 | Statut | Chapitres |
 |---|---|
-| ✅ Terminé et vérifié | 24 |
-| ⬜ Non commencé | 174 |
-| 🟨 Partiellement terminé | 1 |
+| ✅ Terminé et vérifié | 61 |
+| ⬜ Non commencé | 138 |
 | **Total** | **199** |
 
 ## Phase 0 — `00_SETUP/`
@@ -72,28 +71,28 @@
 
 | Chapitre | Titre | Statut | Manques |
 |---|---|---|---|
-| CH02.01 | Topologie | ⬜ Non commencé |  |
-| CH02.02 | Outils polygonaux I | ⬜ Non commencé |  |
-| CH02.03 | Outils polygonaux II | ⬜ Non commencé |  |
-| CH02.04 | Normales | ⬜ Non commencé |  |
-| CH02.05 | Hard Surface | ⬜ Non commencé |  |
-| CH02.06 | Subdivision Surface | ⬜ Non commencé |  |
-| CH02.07 | Booléens et non destructif | ⬜ Non commencé |  |
-| CH02.08 | Modélisation organique | ⬜ Non commencé |  |
-| CH02.09 | Retopologie | ⬜ Non commencé |  |
-| CH02.10 | Optimisation | ⬜ Non commencé |  |
-| CH02.11 | UV fondamentaux | ⬜ Non commencé |  |
-| CH02.12 | Modélisation pour l'animation | ⬜ Non commencé |  |
-| CH02.13 | Assets réutilisables | ⬜ Non commencé |  |
+| [CH02.01](02_MODELING/CH02_01_TOPOLOGY/README.md) | Topologie | ✅ Terminé et vérifié |  |
+| [CH02.02](02_MODELING/CH02_02_POLY_TOOLS_1/README.md) | Outils polygonaux I | ✅ Terminé et vérifié |  |
+| [CH02.03](02_MODELING/CH02_03_POLY_TOOLS_2/README.md) | Outils polygonaux II | ✅ Terminé et vérifié |  |
+| [CH02.04](02_MODELING/CH02_04_NORMALS/README.md) | Normales | ✅ Terminé et vérifié |  |
+| [CH02.05](02_MODELING/CH02_05_HARD_SURFACE/README.md) | Hard Surface | ✅ Terminé et vérifié |  |
+| [CH02.06](02_MODELING/CH02_06_SUBDIVISION/README.md) | Subdivision Surface | ✅ Terminé et vérifié |  |
+| [CH02.07](02_MODELING/CH02_07_BOOLEANS/README.md) | Booléens et non destructif | ✅ Terminé et vérifié |  |
+| [CH02.08](02_MODELING/CH02_08_ORGANIC/README.md) | Modélisation organique | ✅ Terminé et vérifié |  |
+| [CH02.09](02_MODELING/CH02_09_RETOPOLOGY/README.md) | Retopologie | ✅ Terminé et vérifié |  |
+| [CH02.10](02_MODELING/CH02_10_OPTIMIZATION/README.md) | Optimisation | ✅ Terminé et vérifié |  |
+| [CH02.11](02_MODELING/CH02_11_UV_BASICS/README.md) | UV fondamentaux | ✅ Terminé et vérifié |  |
+| [CH02.12](02_MODELING/CH02_12_ANIMATION_READY/README.md) | Modélisation pour l'animation | ✅ Terminé et vérifié |  |
+| [CH02.13](02_MODELING/CH02_13_ASSETS/README.md) | Assets réutilisables | ✅ Terminé et vérifié |  |
 
 ## Phase 3 — `03_SCULPTING/`
 
 | Chapitre | Titre | Statut | Manques |
 |---|---|---|---|
-| CH03.01 | Anatomie artistique | ⬜ Non commencé |  |
-| CH03.02 | Sculpt Mode | ⬜ Non commencé |  |
-| CH03.03 | Résolution dynamique | ⬜ Non commencé |  |
-| CH03.04 | Sculpture stylisée | ⬜ Non commencé |  |
+| [CH03.01](03_SCULPTING/CH03_01_ARTISTIC_ANATOMY/README.md) | Anatomie artistique | ✅ Terminé et vérifié |  |
+| [CH03.02](03_SCULPTING/CH03_02_SCULPT_MODE/README.md) | Sculpt Mode | ✅ Terminé et vérifié |  |
+| [CH03.03](03_SCULPTING/CH03_03_DYNAMIC_RESOLUTION/README.md) | Résolution dynamique | ✅ Terminé et vérifié |  |
+| [CH03.04](03_SCULPTING/CH03_04_STYLIZED/README.md) | Sculpture stylisée | ✅ Terminé et vérifié |  |
 | CH03.05 | Sculpture réaliste | ⬜ Non commencé |  |
 | CH03.06 | Visages | ⬜ Non commencé |  |
 | CH03.07 | Mains et pieds | ⬜ Non commencé |  |
@@ -309,23 +308,23 @@
 |---|---|---|---|
 | [CH18.01](18_GREASE_PENCIL/CH18_01_SHAPES_VOLUMES/README.md) | Formes et volumes | ✅ Terminé et vérifié |  |
 | [CH18.02](18_GREASE_PENCIL/CH18_02_PERSPECTIVE/README.md) | Perspective | ✅ Terminé et vérifié |  |
-| [CH18.03](18_GREASE_PENCIL/CH18_03_PROPORTIONS_GESTURE/README.md) | Proportions, silhouettes, gestuelle | 🟨 Partiellement terminé | README.md, LESSON.md, THEORY.md, TUTORIAL.md, EXERCISES.md, QUIZ.md, SOLUTIONS.md, TROUBLESHOOTING.md, RESOURCES.md, QUIZZES/ch18_03.json |
-| CH18.04 | Expressions et personnages | ⬜ Non commencé |  |
-| CH18.05 | Composition et dessin cinématographique | ⬜ Non commencé |  |
-| CH18.06 | Grease Pencil : interface et objets | ⬜ Non commencé |  |
-| CH18.07 | Brushes, traits, remplissages, matériaux | ⬜ Non commencé |  |
-| CH18.08 | Calques, modificateurs, transformations | ⬜ Non commencé |  |
-| CH18.09 | Dessin dans l'espace 3D et organisation | ⬜ Non commencé |  |
-| CH18.10 | Langage cinématographique | ⬜ Non commencé |  |
-| CH18.11 | Continuité et dialogue | ⬜ Non commencé |  |
-| CH18.12 | Cadrage, composition, découpage technique | ⬜ Non commencé |  |
-| CH18.13 | Storyboards d'action, d'émotion, complexes | ⬜ Non commencé |  |
-| CH18.14 | Du scénario à l'animatique | ⬜ Non commencé |  |
-| CH18.15 | Son, rythme, transitions, export, révision | ⬜ Non commencé |  |
-| CH18.16 | Animation 2D : principes et image par image | ⬜ Non commencé |  |
-| CH18.17 | Timing, spacing, cycles | ⬜ Non commencé |  |
-| CH18.18 | Personnages, expressions, effets, caméra | ⬜ Non commencé |  |
-| CH18.19 | Dessiner dans et sur la 3D | ⬜ Non commencé |  |
-| CH18.20 | Workflow 2D → 3D | ⬜ Non commencé |  |
-| CH18.21 | IA pour le storyboard | ⬜ Non commencé |  |
-| CH18.22 | Projets de la phase | ⬜ Non commencé |  |
+| [CH18.03](18_GREASE_PENCIL/CH18_03_PROPORTIONS_GESTURE/README.md) | Proportions, silhouettes, gestuelle | ✅ Terminé et vérifié |  |
+| [CH18.04](18_GREASE_PENCIL/CH18_04_EXPRESSIONS_CHARACTERS/README.md) | Expressions et personnages | ✅ Terminé et vérifié |  |
+| [CH18.05](18_GREASE_PENCIL/CH18_05_COMPOSITION/README.md) | Composition et dessin cinématographique | ✅ Terminé et vérifié |  |
+| [CH18.06](18_GREASE_PENCIL/CH18_06_GP_INTERFACE/README.md) | Grease Pencil : interface et objets | ✅ Terminé et vérifié |  |
+| [CH18.07](18_GREASE_PENCIL/CH18_07_BRUSHES_MATERIALS/README.md) | Brushes, traits, remplissages, matériaux | ✅ Terminé et vérifié |  |
+| [CH18.08](18_GREASE_PENCIL/CH18_08_LAYERS_MODIFIERS/README.md) | Calques, modificateurs, transformations | ✅ Terminé et vérifié |  |
+| [CH18.09](18_GREASE_PENCIL/CH18_09_DRAWING_IN_3D/README.md) | Dessin dans l'espace 3D et organisation | ✅ Terminé et vérifié |  |
+| [CH18.10](18_GREASE_PENCIL/CH18_10_FILM_LANGUAGE/README.md) | Langage cinématographique | ✅ Terminé et vérifié |  |
+| [CH18.11](18_GREASE_PENCIL/CH18_11_CONTINUITY/README.md) | Continuité et dialogue | ✅ Terminé et vérifié |  |
+| [CH18.12](18_GREASE_PENCIL/CH18_12_TECHNICAL_BREAKDOWN/README.md) | Cadrage, composition, découpage technique | ✅ Terminé et vérifié |  |
+| [CH18.13](18_GREASE_PENCIL/CH18_13_COMPLEX_BOARDS/README.md) | Storyboards d'action, d'émotion, complexes | ✅ Terminé et vérifié |  |
+| [CH18.14](18_GREASE_PENCIL/CH18_14_ANIMATIC/README.md) | Du scénario à l'animatique | ✅ Terminé et vérifié |  |
+| [CH18.15](18_GREASE_PENCIL/CH18_15_SOUND_EXPORT/README.md) | Son, rythme, transitions, export, révision | ✅ Terminé et vérifié |  |
+| [CH18.16](18_GREASE_PENCIL/CH18_16_2D_ANIMATION/README.md) | Animation 2D : principes et image par image | ✅ Terminé et vérifié |  |
+| [CH18.17](18_GREASE_PENCIL/CH18_17_TIMING_CYCLES/README.md) | Timing, spacing, cycles | ✅ Terminé et vérifié |  |
+| [CH18.18](18_GREASE_PENCIL/CH18_18_ACTING_FX/README.md) | Personnages, expressions, effets, caméra | ✅ Terminé et vérifié |  |
+| [CH18.19](18_GREASE_PENCIL/CH18_19_DRAW_ON_3D/README.md) | Dessiner dans et sur la 3D | ✅ Terminé et vérifié |  |
+| [CH18.20](18_GREASE_PENCIL/CH18_20_2D_TO_3D/README.md) | Workflow 2D → 3D | ✅ Terminé et vérifié |  |
+| [CH18.21](18_GREASE_PENCIL/CH18_21_AI_STORYBOARD/README.md) | IA pour le storyboard | ✅ Terminé et vérifié |  |
+| [CH18.22](18_GREASE_PENCIL/CH18_22_PROJECTS/README.md) | Projets de la phase | ✅ Terminé et vérifié |  |

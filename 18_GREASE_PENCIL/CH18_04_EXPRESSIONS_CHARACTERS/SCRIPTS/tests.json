@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_04_files.py",
+  "validator": "validate_ch18_04.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_04_expressions_solution.blend", "exercise": "expressions", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_04_expressions_starter.blend", "exercise": "expressions", "expect": false}
+  ]
+}

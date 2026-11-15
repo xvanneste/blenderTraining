@@ -1,0 +1,29 @@
+{
+  "code": "CH18.17",
+  "title": "Timing, spacing, cycles",
+  "phase_title": "18 — Grease Pencil (module E : animation 2D)",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Le même jeu de dessins change de caractère selon son exposition : ce chapitre apprend à lire et appliquer une feuille d'exposition (en un, en deux, tenues) dans la Dope Sheet, puis à construire le cycle de base de tout animateur : la marche de profil sur place, en deux, avec contacts, positions basses, passages et positions hautes. Le correcteur mesure chaque dessin (écart des jambes, rebond, appui au sol, dérive) et vérifie la boucle.",
+  "prereqs": ["CH18.16."],
+  "objectives": [
+    "Lire et appliquer une feuille d'exposition.",
+    "Re-minuter une animation sans redessiner.",
+    "Construire un cycle qui boucle sans saut.",
+    "Animer une marche 2D : contact, bas, passage, haut."
+  ],
+  "competences": [["C18.17.a", "Cycle de marche 2D", "Exercices 1–2 (correcteur) + grille"]],
+  "lessons": [["L1", "Feuille d'exposition et re-minutage", "1 h"], ["L2", "Le cycle de marche", "3 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_17_xsheet_starter.blend", "8 dessins en un + feuille XSHEET"],
+    ["COMPLETED_EXAMPLES/ch18_17_xsheet_solution.blend", "Dessins re-minutés"],
+    ["STARTER_FILES/ch18_17_walk_starter.blend", "Feuille, guides, cycle 1–24"],
+    ["COMPLETED_EXAMPLES/ch18_17_walk_solution.blend", "Marche en deux (12 dessins)"],
+    ["COMPLETED_EXAMPLES/ch18_17_walk_reference.png", "Planche des 12 dessins"],
+    ["SCRIPTS/validate_ch18_17.py", "Correcteur (xsheet, walk)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_17_walk_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_17.py\" --python-exit-code 1 -- --exercise walk --render",
+  "deliverables": ["Feuille d'exposition appliquée.", "Cycle de marche validé.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercices 1 et 2 validés."],
+  "next": "[CH18.18 — Personnages, expressions, effets, caméra](../CH18_18_ACTING_FX/README.md)"
+}

@@ -19,10 +19,10 @@
 
 | Chapitre | Statut |
 |---|---|
-| CH03.01 Anatomie artistique | ⬜ Non commencé |
-| CH03.02 Sculpt Mode | ⬜ Non commencé |
-| CH03.03 Résolution dynamique | ⬜ Non commencé |
-| CH03.04 Sculpture stylisée | ⬜ Non commencé |
+| [CH03.01 Anatomie artistique](CH03_01_ARTISTIC_ANATOMY/README.md) | ✅ Terminé et vérifié |
+| [CH03.02 Sculpt Mode](CH03_02_SCULPT_MODE/README.md) | ✅ Terminé et vérifié |
+| [CH03.03 Résolution dynamique](CH03_03_DYNAMIC_RESOLUTION/README.md) | ✅ Terminé et vérifié |
+| [CH03.04 Sculpture stylisée](CH03_04_STYLIZED/README.md) | ✅ Terminé et vérifié |
 | CH03.05 Sculpture réaliste | ⬜ Non commencé |
 | CH03.06 Visages | ⬜ Non commencé |
 | CH03.07 Mains et pieds | ⬜ Non commencé |

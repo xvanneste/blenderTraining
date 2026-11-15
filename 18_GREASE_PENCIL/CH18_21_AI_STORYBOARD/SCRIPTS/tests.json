@@ -1,0 +1,8 @@
+{
+  "build": "build_ch18_21_files.py",
+  "validator": "validate_ch18_21.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_21_assist_solution.blend", "exercise": "assist", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_21_assist_starter.blend", "exercise": "assist", "expect": false}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "code": "CH02.08",
+  "title": "Modélisation organique",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "2 h 45",
+  "intro": "Arbres, rochers, créatures : les formes organiques se pensent en volumes et en silhouettes, pas en faces. Ce chapitre présente le blocking par volumes, le box modeling avec subdivision, et le modificateur Skin qui transforme un simple squelette d'arêtes en volume lisse — démontré sur un arbre construit à partir d'un seul sommet.",
+  "prereqs": ["CH02.06 (subdivision)", "CH18.03 (silhouettes) conseillé."],
+  "objectives": [
+    "Bloquer une forme en volumes simples et juger sa silhouette.",
+    "Modéliser une forme organique en box modeling.",
+    "Construire un squelette d'arêtes et l'habiller avec Skin + Subdivision.",
+    "Régler les rayons du Skin pour un rythme crédible."
+  ],
+  "competences": [["C02.08.a", "Modéliser une forme organique", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Blocking par volumes", "45 min"], ["L2", "Box modeling", "1 h"], ["L3", "Le modificateur Skin", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch02_08_tree_starter.blend", "GEO_Tree : un seul sommet"],
+    ["COMPLETED_EXAMPLES/ch02_08_tree_solution.blend", "Arbre : squelette, Skin, Subdivision"],
+    ["COMPLETED_EXAMPLES/ch02_08_tree_reference.png", "Rendu du volume"],
+    ["COMPLETED_EXAMPLES/ch02_08_tree_skeleton.png", "Rendu du squelette seul"],
+    ["SCRIPTS/validate_ch02_08.py", "Correcteur (squelette, embranchements, pile, rayons, fermeture)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_08_tree_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_08.py\" --python-exit-code 1 -- --exercise tree --render",
+  "deliverables": ["Arbre validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la créature."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Arbre validé.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.09 — Retopologie](../CH02_09_RETOPOLOGY/README.md)"
+}

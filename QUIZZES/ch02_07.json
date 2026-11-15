@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.07",
+  "title": "Booléens et non destructif",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Quelle opération Boolean perce un trou ?", "choices": ["Union", "Intersect", "Difference", "Merge"], "answer": 2, "explain": "Difference retire le volume du cutter."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Quels solvers propose Blender 5.3 pour le Boolean ?", "answer_text": "Float (rapide), Exact (robuste) et Manifold (rapide et robuste sur maillages fermés)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi un cutter doit-il traverser franchement la pièce ?", "answer_text": "Des faces exactement coplanaires provoquent des faces parasites ou des trous ratés, surtout avec le solver Float."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Operand Type Collection permet…", "choices": ["d'utiliser tous les objets d'une collection comme cutters avec un seul modificateur", "de copier la collection", "de masquer la collection", "rien"], "answer": 0, "explain": "Un seul Boolean pour tous les cutters de la collection."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Comment rendre un cutter discret dans le viewport et invisible au rendu ?", "answer_text": "Object Properties → Viewport Display → Display As : Wire (ou Bounds) ; Visibility → Show In → Renders décoché."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Pourquoi parenter les cutters à la pièce ?", "answer_text": "Pour qu'ils suivent ses transformations (animation, déplacement) et que les trous restent en place."},
+    {"id": "Q7", "lesson": "L3", "type": "mcq", "q": "Pour biseauter aussi le bord des trous, le Bevel doit être…", "choices": ["au-dessus du Boolean", "sous le Boolean", "appliqué avant", "dans un autre objet"], "answer": 1, "explain": "La pile s'exécute de haut en bas : Boolean d'abord, puis Bevel."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Quand la topologie d'un booléen est-elle acceptable ?", "answer_text": "Sur des pièces rigides rendues avec Bevel + Harden Normals/Weighted Normal, et sur des surfaces planes ; pas pour la subdivision ni la déformation."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quand et comment appliquer les modificateurs ?", "answer_text": "Seulement à la fin et sur une copie, pour une raison précise (export, sculpture, impression) : Object → Apply → Visual Geometry to Mesh, ou Ctrl+A sur chaque modificateur de haut en bas."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Subdiviser après un Boolean donne souvent…", "choices": ["un résultat parfait", "des bosses dues aux n-gons et triangles", "un objet invisible", "des UV parfaits"], "answer": 1, "explain": "La topologie booléenne n'est pas faite pour la subdivision."}
+  ]
+}

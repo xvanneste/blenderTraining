@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.11",
+  "title": "UV fondamentaux",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "À quoi servent les UV ?", "answer_text": "À indiquer, pour chaque coin de face, quel point de la texture image (coordonnées U, V de 0 à 1) s'y applique : c'est le dépliage de la surface."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'une couture et une île ?", "answer_text": "Une couture est une arête marquée où la surface est coupée pour le dépliage ; une île est un morceau déplié d'un seul tenant."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Coutures classiques d'un cylindre ?", "choices": ["Aucune", "1 arête verticale + les 2 cercles des couvercles", "Toutes les arêtes", "Seulement le cercle du haut"], "answer": 1, "explain": "3 îles : un rectangle et deux disques."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Où placer les coutures ?", "answer_text": "Là où elles se voient le moins : dessous, arrière, angles vifs, plis."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quelle touche ouvre le menu de dépliage en Edit Mode ?", "choices": ["U", "Y", "N", "T"], "answer": 0, "explain": "U : UV Mapping."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Quand utiliser Smart UV Project ?", "answer_text": "Pour des objets anguleux ou des props simples à déplier rapidement, sans placer de coutures à la main."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "À quoi sert Pack Islands ?", "answer_text": "À ranger les îles dans le carré 0–1 sans chevauchement, avec une marge."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Des carrés de damier déformés signalent…", "choices": ["un étirement", "une couture", "une bonne densité", "un matériau absent"], "answer": 0, "explain": "Étirement : coutures à revoir."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Qu'est-ce que la densité de texels ?", "answer_text": "Le nombre de pixels de texture par unité de surface ; elle doit être comparable entre objets d'un même plan."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Comment uniformiser la densité entre îles ?", "answer_text": "UV → Average Islands Scale, puis Pack Islands."}
+  ]
+}

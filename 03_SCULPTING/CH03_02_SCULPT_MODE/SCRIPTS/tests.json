@@ -1,0 +1,8 @@
+{
+  "build": "build_ch03_02_files.py",
+  "validator": "validate_ch03_02.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch03_02_face_solution.blend", "exercise": "face", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch03_02_face_starter.blend", "exercise": "face", "expect": false}
+  ]
+}

@@ -13,6 +13,7 @@ Chaque chapitre fournit SCRIPTS/gp_spec.json :
       "camera": {"name": "CAM_Sheet", "ortho": true},
       "materials_min": 1,
       "fill_layers": ["USER_Values"]          (optionnel : au moins un trait rempli)
+      (dans "layers", "min_fills": n exige n traits remplis sur ce calque)
     }
   }
 }
@@ -58,6 +59,14 @@ def check_exercise(r, ex):
             r.check(w >= spec.get("min_width", 0) and h >= spec.get("min_height", 0),
                     f"{lname} : dessin de {w:.1f} × {h:.1f} m (≥ {spec.get('min_width', 0)} × {spec.get('min_height', 0)})",
                     "Utilisez toute la zone de travail indiquée par le cadre.", 1)
+        if "min_fills" in spec:
+            lay = next((l for l in ob.data.layers if l.name == lname), None)
+            nf = 0
+            for fr in (lay.frames if lay else []):
+                a = fr.drawing.attributes.get("fill_id")
+                nf += sum(1 for d in a.data if d.value != 0) if a else 0
+            r.check(nf >= spec["min_fills"], f"{lname} : {nf} trait(s) rempli(s) (≥ {spec['min_fills']})",
+                    "Outil Fill (clic dans une zone fermée) ou pinceau en mode Fill/Both.", 2)
         if "min_frames" in spec:
             r.check(frames >= spec["min_frames"], f"{lname} : {frames} image(s) clé(s) (≥ {spec['min_frames']})",
                     "Ajoutez des images clés (Dope Sheet / nouvelle image puis dessin).", 2)
@@ -66,12 +75,11 @@ def check_exercise(r, ex):
         filled = False
         if lay:
             for fr in lay.frames:
-                for s in fr.drawing.strokes:
-                    m = ob.data.materials[s.material_index] if s.material_index < len(ob.data.materials) else None
-                    if m and m.grease_pencil and m.grease_pencil.show_fill:
-                        filled = True
+                a = fr.drawing.attributes.get("fill_id")   # 5.3 : remplissage porté par le trait
+                if a and any(d.value != 0 for d in a.data):
+                    filled = True
         r.check(filled, f"{lname} : au moins une forme remplie (matériau avec Fill)",
-                "Utilisez un matériau dont Fill est activé, ou l'outil Fill.", 1)
+                "Pinceau en mode Fill ou Both (en-tête Draw Mode), outil Fill, ou Edit Mode > Set Stroke Type.", 1)
     if "materials_min" in ex:
         r.check(len(ob.data.materials) >= ex["materials_min"],
                 f"{len(ob.data.materials)} matériau(x) GP (≥ {ex['materials_min']})", "Créez des matériaux GP distincts.", 1)

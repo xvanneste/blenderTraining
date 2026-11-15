@@ -1,0 +1,22 @@
+{
+  "build": "build_ch18_22_files.py",
+  "validator": "validate_ch18_22.py",
+  "cases": [
+    {"file": "../CH18_13_COMPLEX_BOARDS/COMPLETED_EXAMPLES/ch18_13_action_solution.blend", "exercise": "p1", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_22_p2_dialogue_example.blend", "exercise": "p2", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_22_p3_action_example.blend", "exercise": "p3", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_22_p4_animatic_example.blend", "exercise": "p4", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_22_p5_animation_example.blend", "exercise": "p5", "expect": true, "render": true},
+    {"file": "../CH18_19_DRAW_ON_3D/COMPLETED_EXAMPLES/ch18_19_hybrid_solution.blend", "exercise": "p6", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_22_p7_short_example.blend", "exercise": "p7", "expect": true},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p1", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p2", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p3", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p4", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p5", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p6", "expect": false},
+    {"file": "STARTER_FILES/ch18_22_project_starter.blend", "exercise": "p7", "expect": false},
+    {"file": "../CH18_14_ANIMATIC/COMPLETED_EXAMPLES/ch18_14_animatic_solution.blend", "exercise": "p3", "expect": false},
+    {"file": "../CH18_15_SOUND_EXPORT/COMPLETED_EXAMPLES/ch18_15_edit_solution.blend", "exercise": "p4", "expect": false}
+  ]
+}

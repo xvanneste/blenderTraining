@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.13",
+  "title": "Assets réutilisables",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un asset dans Blender ?", "answer_text": "Une donnée (objet, matériau, collection, node group…) marquée pour être retrouvée dans l'Asset Browser et réutilisée dans d'autres scènes."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Où trouve-t-on Mark as Asset pour un objet ?", "choices": ["Object → Asset", "File → Export", "Render", "Edit → Undo"], "answer": 0, "explain": "Object → Asset → Mark as Asset, ou clic droit dans l'Outliner."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Où Blender enregistre-t-il les catalogues ?", "answer_text": "Dans le fichier blender_assets.cats.txt situé à côté du .blend (dans le dossier de la bibliothèque)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Quelles métadonnées renseigner pour chaque asset ?", "answer_text": "Description, auteur, licence (et copyright), tags, catalogue, aperçu."},
+    {"id": "Q5", "lesson": "L1", "type": "mcq", "q": "Comment générer l'aperçu d'un asset ?", "choices": ["F12", "Icône ⟳ sous l'aperçu dans le panneau N de l'Asset Browser (Generate Preview)", "Ctrl+S", "Shift+A"], "answer": 1, "explain": "Generate Preview."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment rendre une bibliothèque disponible dans tous vos projets ?", "answer_text": "Edit → Preferences → Asset Libraries → + et choisir le dossier contenant les .blend de bibliothèque."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Quelle méthode garde une référence vers le fichier source ?", "choices": ["Append", "Link", "Pack", "Export"], "answer": 1, "explain": "Link : une correction de la source se propage."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Quand préférer Append (Reuse Data) ?", "answer_text": "Pour copier un asset sans dupliquer les données déjà présentes (matériaux, textures)."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Pourquoi ne peut-on pas modifier un objet lié ?", "answer_text": "Il appartient au fichier source (une seule source de vérité) ; on modifie la source, ou on crée une Library Override."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Quelles vérifications avant de publier un asset ?", "answer_text": "Nom clair, origine au sol, échelle 1 et transformations appliquées, topologie et UV validées, métadonnées complètes."}
+  ]
+}

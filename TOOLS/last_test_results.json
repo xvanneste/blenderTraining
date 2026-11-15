@@ -1,554 +1,1553 @@
 {
- "date": "2026-11-14 10:48",
+ "date": "2026-11-15 08:59",
  "failures": 0,
  "results": [
   {
-   "chapter": "CH00_02_PREFERENCES",
-   "test": "build build_ch00_02_files.py",
+   "chapter": "CH00_01_INSTALLATION",
+   "test": "build build_ch00_01_files.py",
    "ok": true,
-   "seconds": 2.2
-  },
-  {
-   "chapter": "CH00_02_PREFERENCES",
-   "test": "COMPLETED_EXAMPLES/ch00_02_navigation_solution.blend [needle] attendu VALIDÉ",
-   "ok": true,
-   "seconds": 2.7
-  },
-  {
-   "chapter": "CH00_02_PREFERENCES",
-   "test": "STARTER_FILES/ch00_02_navigation_playground.blend [needle] attendu REFUSÉ",
-   "ok": true,
-   "seconds": 1.9
-  },
-  {
-   "chapter": "CH00_02_PREFERENCES",
-   "test": "script bcma_prefs_profile.py",
-   "ok": true,
-   "seconds": 1.7
-  },
-  {
-   "chapter": "CH00_02_PREFERENCES",
-   "test": "script bcma_prefs_profile.py",
-   "ok": true,
-   "seconds": 1.8
+   "seconds": 2.3,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_01_INSTALLATION",
    "test": "COMPLETED_EXAMPLES/ch00_01_testcard_solution.blend [testcard] attendu VALIDÉ",
    "ok": true,
    "seconds": 2.2,
-   "date": "2026-11-14 09:40"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_01_INSTALLATION",
    "test": "COMPLETED_EXAMPLES/ch00_01_broken_render_solution.blend [broken] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.3,
-   "date": "2026-11-14 09:40"
+   "seconds": 2.4,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_01_INSTALLATION",
    "test": "STARTER_FILES/ch00_01_testcard_starter.blend [testcard] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:40"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_01_INSTALLATION",
    "test": "STARTER_FILES/ch00_01_broken_render_starter.blend [broken] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 09:40"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_01_INSTALLATION",
    "test": "script bcma_system_report.py",
    "ok": true,
-   "seconds": 4.6,
-   "date": "2026-11-14 09:40"
+   "seconds": 4.7,
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH00_02_PREFERENCES",
+   "test": "build build_ch00_02_files.py",
+   "ok": true,
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH00_02_PREFERENCES",
+   "test": "COMPLETED_EXAMPLES/ch00_02_navigation_solution.blend [needle] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH00_02_PREFERENCES",
+   "test": "STARTER_FILES/ch00_02_navigation_playground.blend [needle] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH00_02_PREFERENCES",
+   "test": "script bcma_prefs_profile.py",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH00_02_PREFERENCES",
+   "test": "script bcma_prefs_profile.py",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_03_PERFORMANCE",
    "test": "build build_ch00_03_files.py",
    "ok": true,
    "seconds": 2.0,
-   "date": "2026-11-14 09:44"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_03_PERFORMANCE",
    "test": "COMPLETED_EXAMPLES/ch00_03_heavy_scene_solution.blend [optimize] attendu VALIDÉ",
    "ok": true,
    "seconds": 5.6,
-   "date": "2026-11-14 09:44"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_03_PERFORMANCE",
    "test": "STARTER_FILES/ch00_03_heavy_scene_starter.blend [optimize] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.8,
-   "date": "2026-11-14 09:44"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_03_PERFORMANCE",
    "test": "script bcma_scene_cost.py",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 09:44"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_04_INPUT_DEVICES",
    "test": "script bcma_input_report.py",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:47"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_04_INPUT_DEVICES",
    "test": "script bcma_input_report.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 09:47"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_04_INPUT_DEVICES",
    "test": "script bcma_input_report.py",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:47"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_05_EXTENSIONS",
    "test": "script bcma_extensions_report.py",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:47"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_05_EXTENSIONS",
    "test": "script test_bcma_hello.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 09:47"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_06_PROJECT_ORGANIZATION",
    "test": "build build_ch00_06_files.py",
    "ok": true,
    "seconds": 1.9,
-   "date": "2026-11-14 09:52"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_06_PROJECT_ORGANIZATION",
    "test": "COMPLETED_EXAMPLES/ch00_06_messy_scene_solution.blend [naming] attendu VALIDÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:52"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_06_PROJECT_ORGANIZATION",
    "test": "STARTER_FILES/ch00_06_messy_scene_starter.blend [naming] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.8,
-   "date": "2026-11-14 09:52"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_06_PROJECT_ORGANIZATION",
    "test": "script bcma_create_project.py",
    "ok": true,
-   "seconds": 1.6,
-   "date": "2026-11-14 09:52"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_07_BACKUP_VERSIONS",
    "test": "build build_ch00_07_files.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 09:53"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_07_BACKUP_VERSIONS",
    "test": "COMPLETED_EXAMPLES/ch00_07_hero_scene_v002.blend [recover] attendu VALIDÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:53"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_07_BACKUP_VERSIONS",
    "test": "STARTER_FILES/ch00_07_recovery/ch00_07_hero_scene_v001.blend [recover] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.6,
-   "date": "2026-11-14 09:53"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_07_BACKUP_VERSIONS",
    "test": "script test_backup.py",
    "ok": true,
-   "seconds": 5.9,
-   "date": "2026-11-14 09:53"
+   "seconds": 5.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH00_08_PIPELINE_INTRO",
    "test": "script test_shotlist.py",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 09:56"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_01_INTERFACE",
    "test": "build build_ch01_01_files.py",
    "ok": true,
-   "seconds": 2.3,
-   "date": "2026-11-14 10:00"
+   "seconds": 1.9,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_01_INTERFACE",
    "test": "COMPLETED_EXAMPLES/ch01_01_interface_solution.blend [workspace] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 10:00"
+   "seconds": 1.9,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_01_INTERFACE",
    "test": "STARTER_FILES/ch01_01_interface_starter.blend [workspace] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.8,
-   "date": "2026-11-14 10:00"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_02_NAVIGATION",
    "test": "build build_ch01_02_files.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 10:03"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_02_NAVIGATION",
    "test": "COMPLETED_EXAMPLES/ch01_02_museum_solution.blend [cameras] attendu VALIDÉ",
    "ok": true,
    "seconds": 1.8,
-   "date": "2026-11-14 10:03"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_02_NAVIGATION",
    "test": "STARTER_FILES/ch01_02_museum_starter.blend [cameras] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:03"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_03_SELECTION_TRANSFORM",
    "test": "build build_ch01_03_files.py",
    "ok": true,
    "seconds": 2.2,
-   "date": "2026-11-14 10:05"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_03_SELECTION_TRANSFORM",
    "test": "COMPLETED_EXAMPLES/ch01_03_puzzle_solution.blend [puzzle] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.8,
-   "date": "2026-11-14 10:05"
+   "seconds": 1.9,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_03_SELECTION_TRANSFORM",
    "test": "STARTER_FILES/ch01_03_puzzle_starter.blend [puzzle] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:05"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_04_OBJECTS_DATA",
    "test": "build build_ch01_04_files.py",
    "ok": true,
    "seconds": 2.0,
-   "date": "2026-11-14 10:08"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_04_OBJECTS_DATA",
    "test": "COMPLETED_EXAMPLES/ch01_04_farm_solution.blend [farm] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.8,
-   "date": "2026-11-14 10:08"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_04_OBJECTS_DATA",
    "test": "STARTER_FILES/ch01_04_farm_starter.blend [farm] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 10:08"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_05_EDIT_MODE",
    "test": "build build_ch01_05_files.py",
    "ok": true,
    "seconds": 2.1,
-   "date": "2026-11-14 10:10"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_05_EDIT_MODE",
    "test": "COMPLETED_EXAMPLES/ch01_05_house_solution.blend [house] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 10:10"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_05_EDIT_MODE",
    "test": "STARTER_FILES/ch01_05_house_starter.blend [house] attendu REFUSÉ",
    "ok": true,
-   "seconds": 2.0,
-   "date": "2026-11-14 10:10"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_06_TRANSFORMS_ADVANCED",
    "test": "build build_ch01_06_files.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 10:12"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_06_TRANSFORMS_ADVANCED",
    "test": "COMPLETED_EXAMPLES/ch01_06_moving_solution.blend [moving] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 10:12"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_06_TRANSFORMS_ADVANCED",
    "test": "STARTER_FILES/ch01_06_moving_starter.blend [moving] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.6,
-   "date": "2026-11-14 10:12"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_07_ORIGINS_PIVOTS",
    "test": "build build_ch01_07_files.py",
    "ok": true,
-   "seconds": 2.3,
-   "date": "2026-11-14 10:15"
+   "seconds": 1.9,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_07_ORIGINS_PIVOTS",
    "test": "COMPLETED_EXAMPLES/ch01_07_door_solution.blend [door] attendu VALIDÉ",
    "ok": true,
-   "seconds": 1.8,
-   "date": "2026-11-14 10:15"
+   "seconds": 1.7,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_07_ORIGINS_PIVOTS",
    "test": "STARTER_FILES/ch01_07_door_starter.blend [door] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:15"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_08_COLLECTIONS_OUTLINER",
    "test": "build build_ch01_08_files.py",
    "ok": true,
    "seconds": 1.9,
-   "date": "2026-11-14 10:18"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_08_COLLECTIONS_OUTLINER",
    "test": "COMPLETED_EXAMPLES/ch01_08_living_room_solution.blend [organize] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.5,
-   "date": "2026-11-14 10:18"
+   "seconds": 2.6,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_08_COLLECTIONS_OUTLINER",
    "test": "STARTER_FILES/ch01_08_living_room_starter.blend [organize] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:18"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_09_PROPERTIES_EDITOR",
    "test": "build build_ch01_09_files.py",
    "ok": true,
    "seconds": 2.0,
-   "date": "2026-11-14 10:20"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_09_PROPERTIES_EDITOR",
    "test": "COMPLETED_EXAMPLES/ch01_09_hunt_solution.blend [hunt] attendu VALIDÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:20"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_09_PROPERTIES_EDITOR",
    "test": "STARTER_FILES/ch01_09_hunt_starter.blend [hunt] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:20"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_10_MODIFIERS",
    "test": "build build_ch01_10_files.py",
    "ok": true,
    "seconds": 1.9,
-   "date": "2026-11-14 10:22"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_10_MODIFIERS",
    "test": "COMPLETED_EXAMPLES/ch01_10_bridge_solution.blend [bridge] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.9,
-   "date": "2026-11-14 10:22"
+   "seconds": 2.6,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_10_MODIFIERS",
    "test": "STARTER_FILES/ch01_10_bridge_starter.blend [bridge] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.7,
-   "date": "2026-11-14 10:22"
+   "seconds": 1.8,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_11_MATERIALS_BASICS",
    "test": "build build_ch01_11_files.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 10:26"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_11_MATERIALS_BASICS",
    "test": "COMPLETED_EXAMPLES/ch01_11_house_colors_solution.blend [colors] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.5,
-   "date": "2026-11-14 10:26"
+   "seconds": 2.6,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_11_MATERIALS_BASICS",
    "test": "STARTER_FILES/ch01_11_house_colors_starter.blend [colors] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.8,
-   "date": "2026-11-14 10:26"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_12_CAMERAS",
    "test": "build build_ch01_12_files.py",
    "ok": true,
-   "seconds": 2.0,
-   "date": "2026-11-14 10:29"
+   "seconds": 1.9,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_12_CAMERAS",
    "test": "COMPLETED_EXAMPLES/ch01_12_portrait_solution.blend [portrait] attendu VALIDÉ",
    "ok": true,
    "seconds": 2.5,
-   "date": "2026-11-14 10:29"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_12_CAMERAS",
    "test": "STARTER_FILES/ch01_12_portrait_starter.blend [portrait] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:29"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_13_LIGHTING_BASICS",
    "test": "build build_ch01_13_files.py",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 10:32"
+   "seconds": 2.0,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_13_LIGHTING_BASICS",
    "test": "COMPLETED_EXAMPLES/ch01_13_bust_solution.blend [threepoint] attendu VALIDÉ",
    "ok": true,
    "seconds": 2.6,
-   "date": "2026-11-14 10:32"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_13_LIGHTING_BASICS",
    "test": "STARTER_FILES/ch01_13_bust_starter.blend [threepoint] attendu REFUSÉ",
    "ok": true,
    "seconds": 2.6,
-   "date": "2026-11-14 10:32"
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_14_FIRST_RENDERS",
    "test": "build build_ch01_14_files.py",
    "ok": true,
-   "seconds": 13.0,
-   "date": "2026-11-14 10:37"
+   "seconds": 13.2,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_14_FIRST_RENDERS",
    "test": "COMPLETED_EXAMPLES/ch01_14_final_render_solution.blend [final] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.5,
-   "date": "2026-11-14 10:37"
+   "seconds": 2.2,
+   "date": "2026-11-14 14:36"
   },
   {
    "chapter": "CH01_14_FIRST_RENDERS",
    "test": "STARTER_FILES/ch01_14_final_render_starter.blend [final] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.8,
-   "date": "2026-11-14 10:37"
+   "date": "2026-11-14 14:36"
+  },
+  {
+   "chapter": "CH02_01_TOPOLOGY",
+   "test": "build build_ch02_01_files.py",
+   "ok": true,
+   "seconds": 3.0,
+   "date": "2026-11-14 15:07"
+  },
+  {
+   "chapter": "CH02_01_TOPOLOGY",
+   "test": "COMPLETED_EXAMPLES/ch02_01_topology_solution.blend [clinic] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 15:07"
+  },
+  {
+   "chapter": "CH02_01_TOPOLOGY",
+   "test": "STARTER_FILES/ch02_01_topology_starter.blend [clinic] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:07"
+  },
+  {
+   "chapter": "CH02_02_POLY_TOOLS_1",
+   "test": "build build_ch02_02_files.py",
+   "ok": true,
+   "seconds": 2.8,
+   "date": "2026-11-14 15:12"
+  },
+  {
+   "chapter": "CH02_02_POLY_TOOLS_1",
+   "test": "COMPLETED_EXAMPLES/ch02_02_stool_solution.blend [stool] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 15:12"
+  },
+  {
+   "chapter": "CH02_02_POLY_TOOLS_1",
+   "test": "STARTER_FILES/ch02_02_stool_starter.blend [stool] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:12"
+  },
+  {
+   "chapter": "CH02_03_POLY_TOOLS_2",
+   "test": "build build_ch02_03_files.py",
+   "ok": true,
+   "seconds": 2.8,
+   "date": "2026-11-14 15:17"
+  },
+  {
+   "chapter": "CH02_03_POLY_TOOLS_2",
+   "test": "COMPLETED_EXAMPLES/ch02_03_cutting_solution.blend [atelier] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 15:17"
+  },
+  {
+   "chapter": "CH02_03_POLY_TOOLS_2",
+   "test": "STARTER_FILES/ch02_03_cutting_starter.blend [atelier] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 15:17"
+  },
+  {
+   "chapter": "CH02_04_NORMALS",
+   "test": "build build_ch02_04_files.py",
+   "ok": true,
+   "seconds": 3.5,
+   "date": "2026-11-14 15:21"
+  },
+  {
+   "chapter": "CH02_04_NORMALS",
+   "test": "COMPLETED_EXAMPLES/ch02_04_normals_solution.blend [normals] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 15:21"
+  },
+  {
+   "chapter": "CH02_04_NORMALS",
+   "test": "STARTER_FILES/ch02_04_normals_starter.blend [normals] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:21"
+  },
+  {
+   "chapter": "CH02_05_HARD_SURFACE",
+   "test": "build build_ch02_05_files.py",
+   "ok": true,
+   "seconds": 3.1,
+   "date": "2026-11-14 15:25"
+  },
+  {
+   "chapter": "CH02_05_HARD_SURFACE",
+   "test": "COMPLETED_EXAMPLES/ch02_05_device_solution.blend [device] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 15:25"
+  },
+  {
+   "chapter": "CH02_05_HARD_SURFACE",
+   "test": "STARTER_FILES/ch02_05_device_starter.blend [device] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:25"
+  },
+  {
+   "chapter": "CH02_06_SUBDIVISION",
+   "test": "build build_ch02_06_files.py",
+   "ok": true,
+   "seconds": 3.4,
+   "date": "2026-11-14 15:30"
+  },
+  {
+   "chapter": "CH02_06_SUBDIVISION",
+   "test": "COMPLETED_EXAMPLES/ch02_06_subdiv_solution.blend [subdiv] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 15:30"
+  },
+  {
+   "chapter": "CH02_06_SUBDIVISION",
+   "test": "STARTER_FILES/ch02_06_subdiv_starter.blend [subdiv] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:30"
+  },
+  {
+   "chapter": "CH02_07_BOOLEANS",
+   "test": "build build_ch02_07_files.py",
+   "ok": true,
+   "seconds": 3.4,
+   "date": "2026-11-14 15:33"
+  },
+  {
+   "chapter": "CH02_07_BOOLEANS",
+   "test": "COMPLETED_EXAMPLES/ch02_07_plate_solution.blend [plate] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.8,
+   "date": "2026-11-14 15:33"
+  },
+  {
+   "chapter": "CH02_07_BOOLEANS",
+   "test": "STARTER_FILES/ch02_07_plate_starter.blend [plate] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 15:33"
+  },
+  {
+   "chapter": "CH02_08_ORGANIC",
+   "test": "build build_ch02_08_files.py",
+   "ok": true,
+   "seconds": 6.5,
+   "date": "2026-11-14 19:03"
+  },
+  {
+   "chapter": "CH02_08_ORGANIC",
+   "test": "COMPLETED_EXAMPLES/ch02_08_tree_solution.blend [tree] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:03"
+  },
+  {
+   "chapter": "CH02_08_ORGANIC",
+   "test": "STARTER_FILES/ch02_08_tree_starter.blend [tree] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:03"
+  },
+  {
+   "chapter": "CH02_09_RETOPOLOGY",
+   "test": "build build_ch02_09_files.py",
+   "ok": true,
+   "seconds": 3.2,
+   "date": "2026-11-14 19:07"
+  },
+  {
+   "chapter": "CH02_09_RETOPOLOGY",
+   "test": "COMPLETED_EXAMPLES/ch02_09_retopo_solution.blend [retopo] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:07"
+  },
+  {
+   "chapter": "CH02_09_RETOPOLOGY",
+   "test": "STARTER_FILES/ch02_09_retopo_starter.blend [retopo] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 19:07"
+  },
+  {
+   "chapter": "CH02_10_OPTIMIZATION",
+   "test": "build build_ch02_10_files.py",
+   "ok": true,
+   "seconds": 3.6,
+   "date": "2026-11-14 19:09"
+  },
+  {
+   "chapter": "CH02_10_OPTIMIZATION",
+   "test": "COMPLETED_EXAMPLES/ch02_10_optim_solution.blend [optim] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 3.1,
+   "date": "2026-11-14 19:09"
+  },
+  {
+   "chapter": "CH02_10_OPTIMIZATION",
+   "test": "STARTER_FILES/ch02_10_optim_starter.blend [optim] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.9,
+   "date": "2026-11-14 19:09"
+  },
+  {
+   "chapter": "CH02_11_UV_BASICS",
+   "test": "build build_ch02_11_files.py",
+   "ok": true,
+   "seconds": 4.3,
+   "date": "2026-11-14 19:12"
+  },
+  {
+   "chapter": "CH02_11_UV_BASICS",
+   "test": "COMPLETED_EXAMPLES/ch02_11_uv_solution.blend [uv] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:12"
+  },
+  {
+   "chapter": "CH02_11_UV_BASICS",
+   "test": "STARTER_FILES/ch02_11_uv_starter.blend [uv] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:12"
+  },
+  {
+   "chapter": "CH02_12_ANIMATION_READY",
+   "test": "build build_ch02_12_files.py",
+   "ok": true,
+   "seconds": 3.3,
+   "date": "2026-11-14 19:15"
+  },
+  {
+   "chapter": "CH02_12_ANIMATION_READY",
+   "test": "COMPLETED_EXAMPLES/ch02_12_arm_solution.blend [arm] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:15"
+  },
+  {
+   "chapter": "CH02_12_ANIMATION_READY",
+   "test": "STARTER_FILES/ch02_12_arm_starter.blend [arm] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:15"
+  },
+  {
+   "chapter": "CH02_13_ASSETS",
+   "test": "build build_ch02_13_files.py",
+   "ok": true,
+   "seconds": 3.4,
+   "date": "2026-11-14 19:22"
+  },
+  {
+   "chapter": "CH02_13_ASSETS",
+   "test": "COMPLETED_EXAMPLES/ch02_13_library_solution.blend [library] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:22"
+  },
+  {
+   "chapter": "CH02_13_ASSETS",
+   "test": "STARTER_FILES/ch02_13_library_starter.blend [library] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:22"
   },
   {
    "chapter": "CH18_01_SHAPES_VOLUMES",
    "test": "build build_ch18_01_files.py",
    "ok": true,
-   "seconds": 2.8,
-   "date": "2026-11-14 10:43"
+   "seconds": 2.9,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_01_SHAPES_VOLUMES",
    "test": "COMPLETED_EXAMPLES/ch18_01_volumes_solution.blend [volumes] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.4,
-   "date": "2026-11-14 10:43"
+   "seconds": 2.5,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_01_SHAPES_VOLUMES",
    "test": "STARTER_FILES/ch18_01_volumes_starter.blend [volumes] attendu REFUSÉ",
    "ok": true,
-   "seconds": 1.9,
-   "date": "2026-11-14 10:43"
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_02_PERSPECTIVE",
    "test": "build build_ch18_02_files.py",
    "ok": true,
-   "seconds": 2.8,
-   "date": "2026-11-14 10:46"
+   "seconds": 3.0,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_02_PERSPECTIVE",
    "test": "COMPLETED_EXAMPLES/ch18_02_perspective_solution.blend [perspective] attendu VALIDÉ",
    "ok": true,
-   "seconds": 2.4,
-   "date": "2026-11-14 10:46"
+   "seconds": 2.5,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_02_PERSPECTIVE",
    "test": "STARTER_FILES/ch18_02_perspective_starter.blend [perspective] attendu REFUSÉ",
    "ok": true,
    "seconds": 1.7,
-   "date": "2026-11-14 10:46"
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_03_PROPORTIONS_GESTURE",
    "test": "build build_ch18_03_files.py",
    "ok": true,
-   "seconds": 2.7,
-   "date": "2026-11-14 10:48"
+   "seconds": 2.9,
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_03_PROPORTIONS_GESTURE",
    "test": "COMPLETED_EXAMPLES/ch18_03_gesture_solution.blend [gesture] attendu VALIDÉ",
    "ok": true,
    "seconds": 2.4,
-   "date": "2026-11-14 10:48"
+   "date": "2026-11-14 19:33"
   },
   {
    "chapter": "CH18_03_PROPORTIONS_GESTURE",
    "test": "STARTER_FILES/ch18_03_gesture_starter.blend [gesture] attendu REFUSÉ",
    "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_04_EXPRESSIONS_CHARACTERS",
+   "test": "build build_ch18_04_files.py",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_04_EXPRESSIONS_CHARACTERS",
+   "test": "COMPLETED_EXAMPLES/ch18_04_expressions_solution.blend [expressions] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.4,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_04_EXPRESSIONS_CHARACTERS",
+   "test": "STARTER_FILES/ch18_04_expressions_starter.blend [expressions] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_05_COMPOSITION",
+   "test": "build build_ch18_05_files.py",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_05_COMPOSITION",
+   "test": "COMPLETED_EXAMPLES/ch18_05_composition_solution.blend [composition] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.4,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_05_COMPOSITION",
+   "test": "STARTER_FILES/ch18_05_composition_starter.blend [composition] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_06_GP_INTERFACE",
+   "test": "build build_ch18_06_files.py",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_06_GP_INTERFACE",
+   "test": "COMPLETED_EXAMPLES/ch18_06_gp_scene_solution.blend [organize] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_06_GP_INTERFACE",
+   "test": "STARTER_FILES/ch18_06_gp_scene_starter.blend [organize] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_07_BRUSHES_MATERIALS",
+   "test": "build build_ch18_07_files.py",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_07_BRUSHES_MATERIALS",
+   "test": "COMPLETED_EXAMPLES/ch18_07_brushes_solution.blend [brushes] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.4,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_07_BRUSHES_MATERIALS",
+   "test": "STARTER_FILES/ch18_07_brushes_starter.blend [brushes] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_08_LAYERS_MODIFIERS",
+   "test": "build build_ch18_08_files.py",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_08_LAYERS_MODIFIERS",
+   "test": "COMPLETED_EXAMPLES/ch18_08_layers_solution.blend [layers] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.3,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_08_LAYERS_MODIFIERS",
+   "test": "STARTER_FILES/ch18_08_layers_starter.blend [layers] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_09_DRAWING_IN_3D",
+   "test": "build build_ch18_09_files.py",
+   "ok": true,
+   "seconds": 3.2,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_09_DRAWING_IN_3D",
+   "test": "COMPLETED_EXAMPLES/ch18_09_set_solution.blend [set] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_09_DRAWING_IN_3D",
+   "test": "STARTER_FILES/ch18_09_set_starter.blend [set] attendu REFUSÉ",
+   "ok": true,
    "seconds": 1.8,
-   "date": "2026-11-14 10:48"
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_10_FILM_LANGUAGE",
+   "test": "build build_ch18_10_files.py",
+   "ok": true,
+   "seconds": 5.6,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_10_FILM_LANGUAGE",
+   "test": "COMPLETED_EXAMPLES/ch18_10_shots_solution.blend [shots] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_10_FILM_LANGUAGE",
+   "test": "STARTER_FILES/ch18_10_shots_starter.blend [shots] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_10_FILM_LANGUAGE",
+   "test": "COMPLETED_EXAMPLES/ch18_10_board_solution.blend [board] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_10_FILM_LANGUAGE",
+   "test": "STARTER_FILES/ch18_10_board_starter.blend [board] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_11_CONTINUITY",
+   "test": "build build_ch18_11_files.py",
+   "ok": true,
+   "seconds": 4.5,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_11_CONTINUITY",
+   "test": "COMPLETED_EXAMPLES/ch18_11_dialogue_solution.blend [dialogue] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_11_CONTINUITY",
+   "test": "STARTER_FILES/ch18_11_dialogue_starter.blend [dialogue] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_11_CONTINUITY",
+   "test": "COMPLETED_EXAMPLES/ch18_11_board_solution.blend [board] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.4,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_11_CONTINUITY",
+   "test": "STARTER_FILES/ch18_11_board_starter.blend [board] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:33"
+  },
+  {
+   "chapter": "CH18_12_TECHNICAL_BREAKDOWN",
+   "test": "build build_ch18_12_files.py",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-14 19:35"
+  },
+  {
+   "chapter": "CH18_12_TECHNICAL_BREAKDOWN",
+   "test": "COMPLETED_EXAMPLES/ch18_12_board_solution.blend [board] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:35"
+  },
+  {
+   "chapter": "CH18_12_TECHNICAL_BREAKDOWN",
+   "test": "STARTER_FILES/ch18_12_board_starter.blend [board] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:35"
+  },
+  {
+   "chapter": "CH18_13_COMPLEX_BOARDS",
+   "test": "build build_ch18_13_files.py",
+   "ok": true,
+   "seconds": 3.0,
+   "date": "2026-11-14 19:39"
+  },
+  {
+   "chapter": "CH18_13_COMPLEX_BOARDS",
+   "test": "COMPLETED_EXAMPLES/ch18_13_action_solution.blend [action] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:39"
+  },
+  {
+   "chapter": "CH18_13_COMPLEX_BOARDS",
+   "test": "STARTER_FILES/ch18_13_action_starter.blend [action] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:39"
+  },
+  {
+   "chapter": "CH18_14_ANIMATIC",
+   "test": "build build_ch18_14_files.py",
+   "ok": true,
+   "seconds": 7.9,
+   "date": "2026-11-14 19:45"
+  },
+  {
+   "chapter": "CH18_14_ANIMATIC",
+   "test": "COMPLETED_EXAMPLES/ch18_14_animatic_solution.blend [animatic] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:45"
+  },
+  {
+   "chapter": "CH18_14_ANIMATIC",
+   "test": "STARTER_FILES/ch18_14_animatic_starter.blend [animatic] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 19:45"
+  },
+  {
+   "chapter": "CH18_14_ANIMATIC",
+   "test": "COMPLETED_EXAMPLES/ch18_14_layout_solution.blend [layout] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 19:45"
+  },
+  {
+   "chapter": "CH18_14_ANIMATIC",
+   "test": "STARTER_FILES/ch18_14_layout_starter.blend [layout] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 19:45"
+  },
+  {
+   "chapter": "CH18_15_SOUND_EXPORT",
+   "test": "build build_ch18_15_files.py",
+   "ok": true,
+   "seconds": 66.7,
+   "date": "2026-11-14 19:58"
+  },
+  {
+   "chapter": "CH18_15_SOUND_EXPORT",
+   "test": "COMPLETED_EXAMPLES/ch18_15_edit_solution.blend [edit] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 3.3,
+   "date": "2026-11-14 19:58"
+  },
+  {
+   "chapter": "CH18_15_SOUND_EXPORT",
+   "test": "STARTER_FILES/ch18_15_edit_starter.blend [edit] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 19:58"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "build build_ch18_16_files.py",
+   "ok": true,
+   "seconds": 3.3,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "COMPLETED_EXAMPLES/ch18_16_keys_solution.blend [keys] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.1,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "COMPLETED_EXAMPLES/ch18_16_bounce_solution.blend [bounce] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "COMPLETED_EXAMPLES/ch18_16_keys_solution.blend [bounce] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "STARTER_FILES/ch18_16_bounce_starter.blend [keys] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_16_2D_ANIMATION",
+   "test": "STARTER_FILES/ch18_16_bounce_starter.blend [bounce] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:03"
+  },
+  {
+   "chapter": "CH18_17_TIMING_CYCLES",
+   "test": "build build_ch18_17_files.py",
+   "ok": true,
+   "seconds": 5.0,
+   "date": "2026-11-14 20:06"
+  },
+  {
+   "chapter": "CH18_17_TIMING_CYCLES",
+   "test": "COMPLETED_EXAMPLES/ch18_17_xsheet_solution.blend [xsheet] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:06"
+  },
+  {
+   "chapter": "CH18_17_TIMING_CYCLES",
+   "test": "STARTER_FILES/ch18_17_xsheet_starter.blend [xsheet] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:06"
+  },
+  {
+   "chapter": "CH18_17_TIMING_CYCLES",
+   "test": "COMPLETED_EXAMPLES/ch18_17_walk_solution.blend [walk] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.4,
+   "date": "2026-11-14 20:06"
+  },
+  {
+   "chapter": "CH18_17_TIMING_CYCLES",
+   "test": "STARTER_FILES/ch18_17_walk_starter.blend [walk] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:06"
+  },
+  {
+   "chapter": "CH18_18_ACTING_FX",
+   "test": "build build_ch18_18_files.py",
+   "ok": true,
+   "seconds": 4.4,
+   "date": "2026-11-14 20:10"
+  },
+  {
+   "chapter": "CH18_18_ACTING_FX",
+   "test": "COMPLETED_EXAMPLES/ch18_18_shot_solution.blend [shot] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 20:10"
+  },
+  {
+   "chapter": "CH18_18_ACTING_FX",
+   "test": "STARTER_FILES/ch18_18_shot_starter.blend [shot] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:10"
+  },
+  {
+   "chapter": "CH18_19_DRAW_ON_3D",
+   "test": "build build_ch18_19_files.py",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-14 20:14"
+  },
+  {
+   "chapter": "CH18_19_DRAW_ON_3D",
+   "test": "COMPLETED_EXAMPLES/ch18_19_hybrid_solution.blend [hybrid] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 20:14"
+  },
+  {
+   "chapter": "CH18_19_DRAW_ON_3D",
+   "test": "STARTER_FILES/ch18_19_hybrid_starter.blend [hybrid] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:14"
+  },
+  {
+   "chapter": "CH18_20_2D_TO_3D",
+   "test": "build build_ch18_20_files.py",
+   "ok": true,
+   "seconds": 4.0,
+   "date": "2026-11-14 20:18"
+  },
+  {
+   "chapter": "CH18_20_2D_TO_3D",
+   "test": "COMPLETED_EXAMPLES/ch18_20_layout_solution.blend [layout] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 20:18"
+  },
+  {
+   "chapter": "CH18_20_2D_TO_3D",
+   "test": "STARTER_FILES/ch18_20_layout_starter.blend [layout] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:18"
+  },
+  {
+   "chapter": "CH18_21_AI_STORYBOARD",
+   "test": "build build_ch18_21_files.py",
+   "ok": true,
+   "seconds": 5.2,
+   "date": "2026-11-14 20:22"
+  },
+  {
+   "chapter": "CH18_21_AI_STORYBOARD",
+   "test": "COMPLETED_EXAMPLES/ch18_21_assist_solution.blend [assist] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.5,
+   "date": "2026-11-14 20:22"
+  },
+  {
+   "chapter": "CH18_21_AI_STORYBOARD",
+   "test": "STARTER_FILES/ch18_21_assist_starter.blend [assist] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:22"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "build build_ch18_22_files.py",
+   "ok": true,
+   "seconds": 3.4,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "../CH18_13_COMPLEX_BOARDS/COMPLETED_EXAMPLES/ch18_13_action_solution.blend [p1] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.9,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "COMPLETED_EXAMPLES/ch18_22_p2_dialogue_example.blend [p2] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "COMPLETED_EXAMPLES/ch18_22_p3_action_example.blend [p3] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "COMPLETED_EXAMPLES/ch18_22_p4_animatic_example.blend [p4] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "COMPLETED_EXAMPLES/ch18_22_p5_animation_example.blend [p5] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.6,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "../CH18_19_DRAW_ON_3D/COMPLETED_EXAMPLES/ch18_19_hybrid_solution.blend [p6] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "COMPLETED_EXAMPLES/ch18_22_p7_short_example.blend [p7] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p1] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p2] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p3] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p4] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p5] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p6] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "STARTER_FILES/ch18_22_project_starter.blend [p7] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "../CH18_14_ANIMATIC/COMPLETED_EXAMPLES/ch18_14_animatic_solution.blend [p3] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH18_22_PROJECTS",
+   "test": "../CH18_15_SOUND_EXPORT/COMPLETED_EXAMPLES/ch18_15_edit_solution.blend [p4] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-14 20:28"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "build build_ch03_01_files.py",
+   "ok": true,
+   "seconds": 5.3,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "COMPLETED_EXAMPLES/ch03_01_adult_solution.blend [adult] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.7,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "COMPLETED_EXAMPLES/ch03_01_child_solution.blend [child] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "COMPLETED_EXAMPLES/ch03_01_gesture_solution.blend [gesture] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "COMPLETED_EXAMPLES/ch03_01_child_solution.blend [adult] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "COMPLETED_EXAMPLES/ch03_01_adult_solution.blend [gesture] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_01_ARTISTIC_ANATOMY",
+   "test": "STARTER_FILES/ch03_01_proportions_starter.blend [adult] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:41"
+  },
+  {
+   "chapter": "CH03_02_SCULPT_MODE",
+   "test": "build build_ch03_02_files.py",
+   "ok": true,
+   "seconds": 3.4,
+   "date": "2026-11-15 08:46"
+  },
+  {
+   "chapter": "CH03_02_SCULPT_MODE",
+   "test": "COMPLETED_EXAMPLES/ch03_02_face_solution.blend [face] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 3.1,
+   "date": "2026-11-15 08:46"
+  },
+  {
+   "chapter": "CH03_02_SCULPT_MODE",
+   "test": "STARTER_FILES/ch03_02_face_starter.blend [face] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 2.1,
+   "date": "2026-11-15 08:46"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "build build_ch03_03_files.py",
+   "ok": true,
+   "seconds": 4.2,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "COMPLETED_EXAMPLES/ch03_03_remesh_solution.blend [remesh] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.7,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "STARTER_FILES/ch03_03_remesh_starter.blend [remesh] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend [multires] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "STARTER_FILES/ch03_03_multires_starter.blend [multires] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend [decide] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 1.8,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_03_DYNAMIC_RESOLUTION",
+   "test": "STARTER_FILES/ch03_03_multires_starter.blend [decide] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 1.7,
+   "date": "2026-11-15 08:54"
+  },
+  {
+   "chapter": "CH03_04_STYLIZED",
+   "test": "build build_ch03_04_files.py",
+   "ok": true,
+   "seconds": 4.6,
+   "date": "2026-11-15 08:59"
+  },
+  {
+   "chapter": "CH03_04_STYLIZED",
+   "test": "COMPLETED_EXAMPLES/ch03_04_bust_solution.blend [bust] attendu VALIDÉ",
+   "ok": true,
+   "seconds": 2.9,
+   "date": "2026-11-15 08:59"
+  },
+  {
+   "chapter": "CH03_04_STYLIZED",
+   "test": "STARTER_FILES/ch03_04_bust_starter.blend [bust] attendu REFUSÉ",
+   "ok": true,
+   "seconds": 2.0,
+   "date": "2026-11-15 08:59"
   }
  ]
 }

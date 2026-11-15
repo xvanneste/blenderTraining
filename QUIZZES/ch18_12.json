@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.12",
+  "title": "Cadrage, composition, découpage technique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un découpage technique ?", "answer_text": "La traduction d'une scène en plans numérotés, avec pour chacun valeur, angle, mouvement, durée, action, dialogue et son."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Pourquoi numéroter les plans de 10 en 10 (SH0010, SH0020…) ?", "choices": ["Par tradition", "Pour pouvoir insérer des plans (SH0015) sans tout renuméroter", "Pour compter les secondes", "Pour le son"], "answer": 1, "explain": "On insère SH0015 entre SH0010 et SH0020."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Que contient l'en-tête d'une planche ?", "answer_text": "Projet, séquence, numéro de page, version, date."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel format pour les cases ?", "choices": ["Carré", "Le format de l'image finale (16:9, 2,39:1…)", "A4 portrait", "Libre"], "answer": 1, "explain": "Toutes identiques, au format du film."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Dans la convention du chapitre, une flèche en tirets indique…", "choices": ["un personnage", "un mouvement de caméra", "un son", "un dialogue"], "answer": 1, "explain": "Tirets = caméra ; plein = personnage."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment dessine-t-on un travelling avant ?", "answer_text": "Des flèches des coins de la case vers le centre (ou un cadre d'arrivée dessiné dans le cadre de départ)."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Combien de temps doit-on mettre à lire une case ?", "answer_text": "Environ une seconde : silhouette lisible, composition simple, 3 valeurs."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Écrivez une note normée pour un plan rapproché taille fixe de 2 s, plan 30 de la séquence 020.", "answer_text": "SQ020_SH0030 · PRT · fixe · 2 s"},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Le texte ajouté est invisible en vue caméra de la feuille. Pourquoi ?", "choices": ["Il est couché (face vers le haut) : le tourner de 90° sur X", "Il n'a pas de matériau", "La police manque", "Il est trop grand"], "answer": 0, "explain": "R X 90 pour le mettre face à la caméra (−Y)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Que devient la planche au module D ?", "answer_text": "Une animatique : chaque case devient un plan dans la timeline, avec sa durée et son son."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.22",
+  "title": "Projets de la phase",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Que contient une note d'intention ?", "answer_text": "En quelques lignes, ce que le spectateur doit ressentir et comprendre."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quand réduire le périmètre d'un projet ?", "choices": ["À la fin", "Avant de commencer, puis dès le premier jalon si besoin", "Jamais", "Après l'export"], "answer": 1, "explain": "Réduire tôt coûte peu."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi ne jamais écraser une version montrée ?", "answer_text": "Pour comparer, revenir en arrière et savoir quelle version a reçu quelles notes."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel projet est repris en phase 15 ?", "choices": ["Le 1", "Le 4", "Le 6", "Le 7"], "answer": 3, "explain": "Storyboard + animatique d'un court de 3–5 min."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Que vérifie le correcteur, que ne vérifie-t-il pas ?", "answer_text": "Il vérifie la structure mesurable (cases, plans, durées, sons, export, notes…) ; pas la qualité artistique, jugée par les grilles."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Durée acceptée pour le projet 3 ?", "choices": ["10–20 s", "25–35 s", "55–75 s", "180–300 s"], "answer": 1, "explain": "Scène d'action de 30 s."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi les exemples techniques ne sont-ils pas des modèles artistiques ?", "answer_text": "Ils réutilisent et répètent des contenus des chapitres pour montrer la structure ; ils échoueraient aux grilles."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Comment organiser le projet 7 pour éviter qu'il dérape ?", "answer_text": "Séquence par séquence : board, animatique, revue, puis séquence suivante ; réduire le périmètre tôt."},
+    {"id": "Q9", "lesson": "L2", "type": "mcq", "q": "Format d'une note de révision accepté ?", "choices": ["« c'est bien »", "code · image · remarque", "une capture d'écran", "un e-mail"], "answer": 1, "explain": "Précis et exploitable."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quand un projet est-il clos ?", "answer_text": "Correcteur validé, grille au-dessus du seuil, rendu/export final archivé, note de fin rédigée."}
+  ]
+}

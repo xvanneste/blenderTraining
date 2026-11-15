@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.18",
+  "title": "Personnages, expressions, effets, caméra",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Citez les étapes d'une réaction (take).", "answer_text": "Attente, déclencheur, anticipation, réaction écrasé/étiré, pose extrême tenue, retour."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quand le personnage doit-il réagir à un éclair ?", "choices": ["Avant l'éclair", "Sur la même image", "1 à 6 images après", "Une seconde après"], "answer": 2, "explain": "Juste après : il perçoit puis réagit."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi tenir la pose de surprise 12 à 30 images ?", "answer_text": "Pour que le spectateur ait le temps de la lire."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quelle zone du visage porte surtout l'émotion ?", "choices": ["Le nez", "Les sourcils", "Les oreilles", "Le menton"], "answer": 1, "explain": "Sourcils = émotion ; yeux = attention ; bouche = intensité."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Qu'est-ce qu'un moving hold ?", "answer_text": "Une tenue maintenue vivante par un très léger mouvement (dessins alternés, clignement)."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Pourquoi animer l'effet sur un calque séparé ?", "answer_text": "Pour le minuter, le modifier ou le remplacer sans toucher au personnage, et régler l'ordre d'affichage."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Comment faire disparaître la fumée après son dernier dessin ?", "choices": ["Supprimer le calque", "Une clé vide (Insert Blank Keyframe)", "Baisser l'opacité du matériau", "Changer de caméra"], "answer": 1, "explain": "Sinon le dernier dessin reste affiché."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Décrivez un bon tremblement de caméra.", "answer_text": "Positions alternées, amplitude décroissante sur ~8–12 images, début sur l'impact, retour exact au repos."},
+    {"id": "Q9", "lesson": "L2", "type": "mcq", "q": "Un éclair d'impact s'anime plutôt…", "choices": ["en un, 1 à 3 dessins", "en trois, 20 dessins", "par interpolation", "en tenue de 2 s"], "answer": 0, "explain": "Bref et violent."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Le tremblement est trop mou : que changer ?", "answer_text": "L'interpolation des clés (Linear ou Constant au lieu de Bézier) et/ou raccourcir les intervalles."}
+  ]
+}

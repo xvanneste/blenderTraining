@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.11",
+  "title": "Continuité et dialogue",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "À quoi sert le plan d'installation (master) ?", "answer_text": "À montrer le lieu et la position des personnages l'un par rapport à l'autre avant les plans plus serrés."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Une amorce, c'est…", "choices": ["un fondu au noir", "un élément au premier plan (souvent l'épaule de l'interlocuteur) qui encadre le sujet", "un plan très large", "un générique"], "answer": 1, "explain": "Ex. : B filmé par-dessus l'épaule de A."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quand utiliser des plans serrés dans un dialogue ?", "answer_text": "Quand l'émotion ou l'enjeu monte : le gros plan concentre l'attention sur le visage."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'un raccord regard ?", "answer_text": "La cohérence des directions de regard d'un plan à l'autre : A, à gauche, regarde vers la droite ; B, à droite, vers la gauche."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Un personnage sort du cadre par la droite. Par où doit-il entrer dans le plan suivant ?", "choices": ["Par la droite", "Par la gauche", "Par le haut", "Peu importe"], "answer": 1, "explain": "Même sens de déplacement à l'écran."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'un raccord mouvement ?", "answer_text": "Couper pendant un geste pour qu'il se poursuive dans le plan suivant, ce qui rend la coupe invisible."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Différence entre faux raccord et jump cut ?", "answer_text": "Le faux raccord est une incohérence (regard, position, accessoire) ; le jump cut est une coupe entre deux plans trop semblables, qui produit un saut."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quel raccourci lie la caméra sélectionnée au marqueur sélectionné ?", "choices": ["Ctrl+B", "M", "F2", "Ctrl+M"], "answer": 0, "explain": "Marker → Bind Camera to Markers."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Que se passe-t-il à la lecture d'une scène dont les marqueurs sont liés à des caméras ?", "answer_text": "La caméra active change à chaque marqueur : la scène se lit comme un montage des plans."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Pourquoi utiliser le même code pour le marqueur et la caméra (SH020 / CAM_SH020) ?", "answer_text": "Pour que montage, rendu et suivi de production identifient le plan par un code unique."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.03",
+  "title": "Outils polygonaux II",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Pendant une coupe au Knife (Blender 5.3), maintenir Shift…", "choices": ["annule la coupe", "aimante au milieu des arêtes", "coupe à travers l'objet", "valide"], "answer": 1, "explain": "Shift = milieux ; Ctrl = sans aimantation ; C = à travers ; Entrée = valider."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Comment couper un objet à une hauteur exacte et supprimer la partie haute ?", "answer_text": "Mesh → Bisect, puis dans le panneau : Plane Point (Z voulu), Plane Normal (0,0,1), Clear Outer, et Fill pour boucher."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quelle touche du Knife coupe aussi les faces cachées ?", "answer_text": "C (cut through) pendant la coupe ; ou Shift+K sur une sélection."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Autour de quoi Spin fait-il tourner la sélection ?", "choices": ["L'origine de l'objet", "Le curseur 3D (Center)", "Le centre du monde toujours", "La caméra"], "answer": 1, "explain": "Center = curseur 3D par défaut ; Shift+C le remet au centre."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Après un Spin de 360° avec Auto Merge, que reste-t-il à faire si le profil touche l'axe ?", "answer_text": "Tout sélectionner (A) puis M → By Distance : les sommets superposés sur l'axe ne sont pas fusionnés par Auto Merge."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Quels réglages du modificateur Screw donnent un ressort de 5 spires ?", "answer_text": "Screw (montée par tour) > 0, Iterations = 5, axe Z, section décalée de l'origine (rayon de l'hélice)."},
+    {"id": "Q7", "lesson": "L3", "type": "mcq", "q": "M → At Center sur les 4 sommets du haut d'un cube donne…", "choices": ["un cube plus petit", "une pyramide", "un trou", "rien"], "answer": 1, "explain": "Les 4 sommets fusionnent en un point centré."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Différence entre Delete et Dissolve ?", "answer_text": "Delete retire des éléments et laisse un trou ; Dissolve les retire en réunissant les faces voisines, sans trou."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "À quoi sert Limited Dissolve et quelle précaution prendre ?", "answer_text": "À retirer les arêtes inutiles des zones planes (Max Angle) ; il crée des n-gons, donc à réserver aux surfaces planes qui ne se déforment pas, avec un angle faible."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Quelle option de Merge supprime les sommets en double ?", "choices": ["At First", "Collapse", "By Distance", "At Cursor"], "answer": 2, "explain": "By Distance (Merge by Distance)."}
+  ]
+}

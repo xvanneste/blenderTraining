@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blender Cinema Master Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <button id="menuBtn" class="icon" aria-label="Afficher le sommaire">☰</button>
+  <a href="#home" class="brand">Blender Cinema Master Academy</a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Rechercher (ex. passe Z, Fill, Snap Base…)" aria-label="Rechercher">
+  </div>
+  <span id="progressBadge" class="badge" title="Chapitres marqués « acquis » / chapitres disponibles"></span>
+</header>
+<div class="layout">
+  <nav id="nav" aria-label="Sommaire"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

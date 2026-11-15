@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_03_files.py",
+  "validator": "validate_ch02_03.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_03_cutting_solution.blend", "exercise": "atelier", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_03_cutting_starter.blend", "exercise": "atelier", "expect": false}
+  ]
+}

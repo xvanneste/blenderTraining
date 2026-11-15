@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.12",
+  "title": "Modélisation pour l'animation",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Pourquoi un coude avec peu de géométrie s'écrase-t-il au pli ?", "answer_text": "Les sommets entre deux os sont interpolés ; avec trop peu de sommets au pli, l'interpolation écrase la forme et le volume diminue."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Volume conservé mesuré avec 4 segments réguliers plié à 90° ?", "choices": ["99 %", "87,5 %", "50 %", "100 %"], "answer": 1, "explain": "87,5 % ; 97,5 % avec 4 boucles serrées au coude."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Faut-il augmenter la densité partout pour bien plier ?", "answer_text": "Non : il faut de la géométrie là où ça plie ; 40 segments réguliers ne font guère mieux que 4 boucles bien placées, pour un coût bien supérieur."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Combien de boucles minimum autour d'une articulation ?", "choices": ["1", "3", "10", "0"], "answer": 1, "explain": "3 minimum, resserrées vers le pli ; plus pour les grandes amplitudes."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Pourquoi les anneaux doivent-ils être continus ?", "answer_text": "Un triangle ou un n-gon interrompt l'anneau : Loop Cut devient impossible et la déformation irrégulière."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Où ne jamais placer un pôle ?", "answer_text": "Sur une zone de pli ou d'articulation."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Quelle topologie pour les yeux et la bouche ?", "answer_text": "Des boucles concentriques autour de chaque ouverture."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Que faire avant de confier un personnage au rigging ?", "answer_text": "Échelle réelle, Ctrl+A All Transforms, origine aux pieds, face à −Y, A-pose ou T-pose, symétrie sur X."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "En Pose Mode, Alt+R…", "choices": ["ajoute une rotation", "efface la rotation des os sélectionnés", "renomme l'os", "rend la scène"], "answer": 1, "explain": "Clear Rotation : retour à la pose de repos."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Les poids sont-ils perdus si l'on ajoute une boucle après le skinning ?", "answer_text": "Non avec Loop Cut : les poids sont interpolés automatiquement sur la nouvelle boucle."}
+  ]
+}

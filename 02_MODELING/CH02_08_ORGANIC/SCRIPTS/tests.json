@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_08_files.py",
+  "validator": "validate_ch02_08.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_08_tree_solution.blend", "exercise": "tree", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_08_tree_starter.blend", "exercise": "tree", "expect": false}
+  ]
+}

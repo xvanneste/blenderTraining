@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.13",
+  "title": "Storyboards d'action, d'émotion, complexes",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quelles trois questions se poser pour chaque case d'action ?", "answer_text": "Qui ? Fait quoi ? Où va le regard du spectateur ?"},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Combien d'idées par case ?", "choices": ["Une", "Trois", "Autant que possible", "Aucune règle"], "answer": 0, "explain": "Une idée par case pour une lecture immédiate."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "À quoi servent les lignes de vitesse ?", "answer_text": "À montrer le mouvement rapide d'un objet ou d'un personnage dans une image fixe."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Pendant le pic d'une action, les plans sont plutôt…", "choices": ["longs et larges", "courts et serrés", "toujours de 3 s", "fixes et lents"], "answer": 1, "explain": "0,5–1,5 s, valeurs serrées."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Pourquoi garder des plans longs au début et à la fin ?", "answer_text": "Pour installer la situation et laisser respirer la résolution : le contraste avec l'action la rend plus forte."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'un plan de réaction ?", "answer_text": "Un plan (souvent un gros plan) sur le personnage qui subit ou regarde l'action, qui transmet l'émotion."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Durée moyenne de la séquence d'exemple « La tasse tombe » ?", "choices": ["0,5 s", "1,58 s", "3 s", "5 s"], "answer": 1, "explain": "12 plans, 19 s au total."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Comment garder la géographie claire avec plusieurs personnages ?", "answer_text": "Plan large d'installation et de rappel après chaque déplacement, un axe par paire qui dialogue, hiérarchie visuelle du personnage principal."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Qu'est-ce qu'une ellipse ?", "answer_text": "Sauter un moment évident de l'action pour gagner du temps sans perdre le spectateur."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quel est le rôle d'un insert dans une action ?", "answer_text": "Montrer l'objet qui porte l'enjeu et ponctuer l'action."}
+  ]
+}

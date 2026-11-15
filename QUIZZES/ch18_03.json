@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.03",
+  "title": "Proportions, silhouettes, gestuelle",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Combien de têtes mesure un adulte aux proportions réalistes ?", "choices": ["4", "5,5", "7,5", "10"], "answer": 2, "explain": "≈ 7,5 têtes (8 pour un style héroïque, 3–5 pour un cartoon)."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Où tombe à peu près le milieu du corps ?", "answer_text": "À l'entrejambe (≈ 3,75 têtes depuis le sol)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Un bras plié est-il plus court qu'un bras tendu ?", "answer_text": "Non : les segments gardent leur longueur ; seule l'orientation (et le raccourci en perspective) change."},
+    {"id": "Q4", "lesson": "L2", "type": "open", "q": "Qu'est-ce que la ligne d'action ?", "answer_text": "Une courbe unique qui traverse le corps de la tête au pied d'appui et résume la pose."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quelle ligne d'action évoque la décontraction et la grâce ?", "choices": ["Droite", "En C", "En S", "Aucune"], "answer": 2, "explain": "En S."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment vérifier qu'un personnage debout est en équilibre ?", "answer_text": "Une verticale tracée depuis le cou doit tomber sur le pied d'appui ou entre les pieds."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Décrivez le contrapposto.", "answer_text": "Poids sur une jambe : la hanche de ce côté monte, l'épaule du même côté descend ; épaules et bassin s'inclinent en sens opposé."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "À quoi sert le test de la silhouette noire ?", "answer_text": "Vérifier que la pose se comprend sans aucun détail intérieur."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Pourquoi écarter les bras du corps dans une silhouette ?", "answer_text": "Un bras collé au torse disparaît dans la masse noire et la pose devient illisible."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Dans un croquis gestuel de 30 s, que dessine-t-on en premier ?", "choices": ["Le visage", "Les mains", "La ligne d'action", "Les vêtements"], "answer": 2, "explain": "La ligne d'action, puis tête, cage, bassin, membres."}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "code": "CH18.03",
+  "title": "Proportions, silhouettes, gestuelle",
+  "phase_title": "18 — Grease Pencil (module A : fondamentaux du dessin)",
+  "level": "débutant",
+  "duration": "3 h + 10 min par jour de croquis",
+  "intro": "Un personnage de storyboard doit se lire en une seconde : sa pose, sa direction, son intention. Ce chapitre donne trois outils qui remplacent la connaissance de l'anatomie : les proportions mesurées en têtes, le mannequin construit en volumes, et la ligne d'action qui résume toute la pose. Vous travaillerez l'équilibre, le contrapposto, la silhouette lisible en noir et le croquis gestuel chronométré, sur une feuille Grease Pencil guidée par une échelle de proportions.",
+  "prereqs": ["CH18.01 (volumes, geste).", "CH18.02 conseillé (horizon et personnages)."],
+  "objectives": [
+    "Mesurer un corps en hauteurs de tête et choisir un style de proportions.",
+    "Construire un mannequin en volumes avec des membres de longueur constante.",
+    "Commencer chaque pose par une ligne d'action expressive.",
+    "Vérifier l'équilibre et utiliser le contrapposto.",
+    "Produire des silhouettes lisibles et des croquis gestuels de 30 secondes."
+  ],
+  "competences": [["C18.03.a", "Croquis gestuel en 30 s et poses lisibles", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Proportions et mannequin", "1 h"], ["L2", "Ligne d'action, équilibre, contrapposto", "1 h"], ["L3", "Silhouette et croquis gestuel", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_03_gesture_starter.blend", "Feuille : échelle en têtes, mannequin, lignes d'action, 3 calques de travail"],
+    ["COMPLETED_EXAMPLES/ch18_03_gesture_solution.blend", "Feuille complétée (référence)"],
+    ["COMPLETED_EXAMPLES/ch18_03_gesture_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/validate_ch18_03.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_03_gesture_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_03.py\" --python-exit-code 1 -- --exercise gesture --render",
+  "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : 100 croquis en 10 jours."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.04 — Expressions et personnages](../CH18_04_EXPRESSIONS_CHARACTERS/README.md)"
+}

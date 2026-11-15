@@ -1,0 +1,17 @@
+{
+  "title": "CH18.05 — Composition et dessin cinématographique",
+  "exercises": {
+    "composition": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Thumbnails": {"min_strokes": 18, "min_width": 4.5, "min_height": 1.8,
+                            "hint": "6 vignettes (≥ 3 traits chacune) réparties dans les 6 cadres."},
+        "USER_Values": {"min_strokes": 40, "min_width": 3.5, "min_height": 1.8,
+                        "hint": "3 valeurs au trait : hachures espacées (fond), moyennes, serrées (premier plan)."},
+        "USER_Planes": {"min_strokes": 12, "min_width": 3.5, "min_height": 1.8,
+                        "hint": "Premier plan, plan moyen et arrière-plan dans le cadre de droite."}
+      },
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

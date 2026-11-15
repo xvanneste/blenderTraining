@@ -1,0 +1,28 @@
+{
+  "code": "CH18.07",
+  "title": "Brushes, traits, remplissages, matériaux",
+  "phase_title": "18 — Grease Pencil (module B : maîtrise de Grease Pencil)",
+  "level": "débutant",
+  "duration": "3 h",
+  "intro": "Un dessin propre tient à trois choses : le bon pinceau, la bonne couleur, le bon ordre de calques. Ce chapitre présente les pinceaux livrés avec Blender 5.3 (assets Essentials), les matériaux Grease Pencil et la palette par matériaux, l'outil Fill et ses réglages, la gomme, et la méthode d'encrage des studios 2D. Il explique aussi un changement de Blender 5.3 : le remplissage est désormais choisi trait par trait.",
+  "prereqs": ["CH18.06 (objets, calques, modes)."],
+  "objectives": [
+    "Choisir et régler un pinceau (Size, Strength, pression, Stroke Mode).",
+    "Créer une palette de matériaux GP nommés.",
+    "Remplir un dessin au trait avec l'outil Fill sans fuite ni liseré.",
+    "Gommer selon le bon mode (Dissolve, Point, Stroke).",
+    "Organiser un encrage SKETCH → LINE → COLOR."
+  ],
+  "competences": [["C18.07.a", "Dessin propre trait + aplat", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Pinceaux et qualité du trait", "1 h"], ["L2", "Matériaux et remplissages", "1 h 15"], ["L3", "Gommer et encrer proprement", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_07_brushes_starter.blend", "Feuille : 3 bandes de traits, dessin au trait à remplir, 2 calques de travail"],
+    ["COMPLETED_EXAMPLES/ch18_07_brushes_solution.blend", "Feuille complétée (8 matériaux, 9 aplats)"],
+    ["COMPLETED_EXAMPLES/ch18_07_brushes_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/validate_ch18_07.py", "Correcteur (via bcma_gp_check + gp_spec.json : traits, aplats, matériaux)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_07_brushes_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_07.py\" --python-exit-code 1 -- --exercise brushes --render",
+  "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : personnage encré et mis en couleur."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.08 — Calques, modificateurs, transformations](../CH18_08_LAYERS_MODIFIERS/README.md)"
+}

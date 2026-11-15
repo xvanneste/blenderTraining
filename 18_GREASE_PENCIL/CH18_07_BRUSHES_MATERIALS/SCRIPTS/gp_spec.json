@@ -1,0 +1,16 @@
+{
+  "title": "CH18.07 — Brushes, traits, remplissages, matériaux",
+  "exercises": {
+    "brushes": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Lines": {"min_strokes": 15, "min_width": 8.0, "min_height": 1.6,
+                       "hint": "3 bandes × 5 traits, un pinceau par bande (Pencil, Ink Pen, Marker Bold)."},
+        "USER_Fills": {"min_strokes": 8, "min_fills": 8, "min_width": 8.0,
+                       "hint": "Outil Fill, Layer Mode : Visible ; cliquez dans les formes fermées du dessin guide."}
+      },
+      "materials_min": 5,
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

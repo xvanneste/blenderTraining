@@ -1,0 +1,10 @@
+{
+  "build": "build_ch18_10_files.py",
+  "validator": "validate_ch18_10.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_10_shots_solution.blend", "exercise": "shots", "expect": true},
+    {"file": "STARTER_FILES/ch18_10_shots_starter.blend", "exercise": "shots", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch18_10_board_solution.blend", "exercise": "board", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch18_10_board_starter.blend", "exercise": "board", "expect": false}
+  ]
+}

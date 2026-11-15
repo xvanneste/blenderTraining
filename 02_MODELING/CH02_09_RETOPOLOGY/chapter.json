@@ -1,0 +1,28 @@
+{
+  "code": "CH02.09",
+  "title": "Retopologie",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "2 h 15",
+  "intro": "Sculptures, scans et booléens donnent des maillages trop denses et désordonnés pour l'animation et les UV. La retopologie reconstruit une cage légère en quads par-dessus. Ce chapitre présente la méthode rapide au Shrinkwrap (avec un piège mesuré : la cage doit envelopper la forme) et la méthode manuelle au Poly Build avec aimantation sur la surface.",
+  "prereqs": ["CH02.01 (topologie)", "CH02.06 (subdivision)."],
+  "objectives": [
+    "Choisir une densité selon l'usage.",
+    "Retopologiser une forme simple avec Shrinkwrap.",
+    "Configurer l'aimantation Face Project et Poly Build.",
+    "Contrôler écart et couverture d'une cage."
+  ],
+  "competences": [["C02.09.a", "Retopologiser un sculpt simple", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Pourquoi et combien", "30 min"], ["L2", "Retopologie rapide (Shrinkwrap)", "45 min"], ["L3", "Retopologie manuelle", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch02_09_retopo_starter.blend", "Rocher sculpté de 20 480 faces"],
+    ["COMPLETED_EXAMPLES/ch02_09_retopo_solution.blend", "Cage de 216 quads + Shrinkwrap"],
+    ["COMPLETED_EXAMPLES/ch02_09_retopo_reference.png", "Rendu de la cage"],
+    ["COMPLETED_EXAMPLES/ch02_09_retopo_wire.png", "Rendu fil de fer"],
+    ["SCRIPTS/validate_ch02_09.py", "Correcteur (densité, quads, écart et couverture BVH)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_09_retopo_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_09.py\" --python-exit-code 1 -- --exercise retopo --render",
+  "deliverables": ["Cage validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : retopologie de la créature."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Cage validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.10 — Optimisation](../CH02_10_OPTIMIZATION/README.md)"
+}

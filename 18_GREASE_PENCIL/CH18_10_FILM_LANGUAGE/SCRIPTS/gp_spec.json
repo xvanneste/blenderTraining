@@ -1,0 +1,13 @@
+{
+  "title": "CH18.10 — Planche des 8 valeurs de plans",
+  "exercises": {
+    "board": {
+      "object": "GP_Practice",
+      "layers": {
+        "USER_Shots": {"min_strokes": 40, "min_width": 9.0, "min_height": 3.4,
+                       "hint": "8 cadres remplis : PE, PM, PA, PRT, PRP, GP, TGP, Insert."}
+      },
+      "camera": {"name": "CAM_Sheet", "ortho": true}
+    }
+  }
+}

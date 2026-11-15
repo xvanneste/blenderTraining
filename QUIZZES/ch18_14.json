@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.14",
+  "title": "Du scénario à l'animatique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "À 24 i/s, combien d'images dure un plan de 1,5 s ?", "choices": ["15", "24", "36", "48"], "answer": 2, "explain": "1,5 × 24 = 36."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Le plan 1 dure 3 s et commence à l'image 1. À quelle image commence le plan 2 ?", "answer_text": "73 (72 images de 1 à 72)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi l'animatique est-elle décisive avant la production ?", "answer_text": "C'est le premier film complet : on y juge rythme, clarté et durée quand un changement coûte encore peu."},
+    {"id": "Q4", "lesson": "L2", "type": "mcq", "q": "Quel raccourci insère une image clé vide sur le calque GP actif (mode Draw) ?", "choices": ["I", "Shift+I", "Ctrl+B", "M"], "answer": 1, "explain": "Insert Blank Keyframe (Active Layer)."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Combien de temps reste affiché un dessin d'image clé GP ?", "answer_text": "Jusqu'à l'image clé suivante du même calque."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Raccourci pour renommer un marqueur dans la Timeline ?", "choices": ["F2", "Ctrl+R", "N", "Tab"], "answer": 0, "explain": "Rename Marker."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Où active-t-on l'incrustation du nom de marqueur et du numéro d'image ?", "answer_text": "Output Properties > Metadata (Marker, Frame) + Burn Into Image."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Quelle commande fait changer la caméra active au passage d'un marqueur ?", "choices": ["Add Marker", "Bind Camera to Markers", "Jump to Next Marker", "Set Active Camera"], "answer": 1, "explain": "Marker > Bind Camera to Markers (Ctrl+B)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Le correcteur trouve PM au lieu de PRP : que faire ?", "answer_text": "Resserrer le cadre : rapprocher la caméra ou allonger la focale jusqu'à couper à la poitrine."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Pourquoi donner le même code au plan, à la caméra et au marqueur ?", "answer_text": "Pour lire ensemble liste de plans, timeline et Outliner, et permettre une vérification automatique."}
+  ]
+}

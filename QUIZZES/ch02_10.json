@@ -1,0 +1,17 @@
+{
+  "chapter": "CH02.10",
+  "title": "Optimisation",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "En quelle unité le Ratio du Decimate est-il calculé ?", "choices": ["Faces", "Triangles", "Sommets", "Arêtes"], "answer": 1, "explain": "Ratio 0,2 = 20 % des triangles (un quad = 2 triangles)."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Quel mode de Decimate pour un mur plat découpé en grille ?", "answer_text": "Planar (dissout les faces coplanaires selon l'Angle Limit)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Quel mode pour un maillage issu d'une subdivision régulière ?", "answer_text": "Un-Subdivide (Iterations = nombre de niveaux à défaire)."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Collapse produit surtout…", "choices": ["des quads parfaits", "des triangles", "des n-gons", "rien"], "answer": 1, "explain": "Bien pour fonds et LOD, pas pour une cage à animer."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Qu'est-ce qu'un LOD ?", "answer_text": "Un niveau de détail : version plus ou moins légère d'un objet, choisie selon la distance à la caméra."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Quel raccourci crée une copie qui partage le maillage ?", "choices": ["Shift+D", "Alt+D", "Ctrl+D", "D"], "answer": 1, "explain": "Alt+D : copie liée."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Pourquoi des LOD liés peuvent-ils avoir des Decimate différents ?", "answer_text": "Les modificateurs appartiennent à l'objet, pas au maillage partagé."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Routine de nettoyage d'un modèle importé ?", "answer_text": "Merge by Distance, Delete Loose, Degenerate Dissolve, puis vérification des normales (Shift+N)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Où se trouve Delete Loose ?", "choices": ["Mesh → Clean Up", "Object → Apply", "File → Export", "Edge"], "answer": 0, "explain": "Mesh → Clean Up → Delete Loose."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Citez un autre levier d'optimisation que la réduction de maillage.", "answer_text": "Instances/copies liées, niveaux de subdivision bas au viewport, Simplify, textures à la bonne résolution, purge des données inutilisées (un parmi ceux-ci)."}
+  ]
+}

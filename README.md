@@ -38,10 +38,11 @@ Votre suivi : [PROGRESS.md](PROGRESS.md) · État du projet : [PROJECT_STATE.md]
 ## Organisation des dossiers
 | Dossier | Contenu |
 |---|---|
-| `00_SETUP/` … `17_EXPERT_SPECIALIZATIONS/` | Les phases, un sous-dossier par chapitre |
+| `00_SETUP/` … `18_GREASE_PENCIL/` | Les 19 phases, un sous-dossier par chapitre |
 | `ASSETS/` | Bibliothèque partagée (modèles, rigs, textures, HDRI, audio…) — chaque entrée est tracée dans `ASSET_MANIFEST.json` |
 | `SCRIPTS/` | Scripts Python transverses (les scripts propres à un chapitre sont dans son dossier `SCRIPTS/`) |
-| `TOOLS/` | Outils de l'académie : `run_all_tests.ps1`, `check_manifest.py` |
+| `TOOLS/` | Outils : `run_all_tests.py`/`.ps1`, `check_manifest.py`, `academy_status.py`, `build_site.py` |
+| `SITE/` | Application de consultation hors ligne (générée) : ouvrir `SITE/index.html` |
 | `TEMPLATES/` | Modèles (leçon, fiches) |
 | `QUIZZES/` | Quiz au format JSON (pour l'application) |
 | `CHEAT_SHEETS/` | Fiches de révision et de raccourcis |
@@ -49,6 +50,15 @@ Votre suivi : [PROGRESS.md](PROGRESS.md) · État du projet : [PROJECT_STATE.md]
 | `RENDERS/` | Vos rendus |
 | `PORTFOLIO/` | Vos meilleures réalisations, prêtes à montrer |
 | `DOCUMENTATION/` | Conventions, compatibilité de version, décisions |
+
+## Application de consultation
+```powershell
+python TOOLSuild_site.py     # régénère SITE/ après chaque nouveau chapitre
+```
+Ouvrez `SITE/index.html` dans un navigateur : sommaire par phase avec statut réel, lecture des
+documents de chaque chapitre, quiz interactifs, recherche, fiches de révision, progression et favoris
+(mémorisés dans ce navigateur). Si votre navigateur bloque les fichiers locaux, servez le dossier :
+`python -m http.server 8765` à la racine de l'académie, puis `http://localhost:8765/SITE/`.
 
 ## Vérifier l'intégrité de l'académie
 ```powershell

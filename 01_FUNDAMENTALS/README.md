@@ -18,7 +18,8 @@
 | CH01.13 Éclairage élémentaire | Point, Sun, Spot, Area, World, intensité en watts | C01.13.a éclairer une scène simple |
 | CH01.14 Premiers rendus | EEVEE vs Cycles, résolution, échantillons, sortie PNG, F12, sauvegarde d'image | C01.14.a produire un rendu final propre |
 
-**Projet P1 :** *« Nature morte »* — petite scène éclairée, cadrée et rendue (EEVEE + Cycles).
+**Projet P1 :** *« Nature morte »* — petite scène éclairée, cadrée et rendue (EEVEE + Cycles) —
+[PROJECT_P1/README.md](PROJECT_P1/README.md).
 
 ## État de production
 

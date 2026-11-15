@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_01_files.py",
+  "validator": "validate_ch02_01.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_01_topology_solution.blend", "exercise": "clinic", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_01_topology_starter.blend", "exercise": "clinic", "expect": false}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.05",
+  "title": "Composition et dessin cinématographique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Énoncez la règle des tiers.", "answer_text": "On divise le cadre en 3 × 3 et on place horizon et sujets sur les lignes ou les intersections, plutôt qu'au centre."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Un horizon placé très haut dans le cadre donne plutôt une impression de…", "choices": ["Liberté, ciel immense", "Écrasement, personnage lié au sol", "Symétrie", "Vitesse"], "answer": 1, "explain": "Horizon bas = ciel, liberté ; horizon haut = sol, écrasement."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Qu'est-ce que l'espace de regard (lead room) ?", "answer_text": "Laisser plus d'espace dans le cadre du côté où le personnage regarde ou se déplace."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel procédé isole un personnage en l'entourant d'une porte ou d'une fenêtre ?", "choices": ["La diagonale", "Le cadre dans le cadre", "La règle des tiers", "La perspective atmosphérique"], "answer": 1, "explain": "Cadre dans le cadre : isolement, enfermement, regard extérieur."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Qu'est-ce que la valeur d'une zone ?", "answer_text": "Sa clarté, du blanc au noir, indépendamment de sa couleur."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Où placer le sujet en termes de valeurs ?", "answer_text": "Là où le contraste est maximal : sombre sur clair, ou clair sur sombre."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Au trait, comment obtient-on une valeur sombre ?", "choices": ["Hachures très espacées", "Hachures serrées et épaisses", "Un seul contour fin", "En changeant de calque"], "answer": 1, "explain": "Espacées = clair ; moyennes = gris ; serrées et épaisses = sombre."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Nommez les trois plans d'un décor.", "answer_text": "Premier plan (foreground), plan moyen (middle ground), arrière-plan (background)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Qu'est-ce que la perspective atmosphérique ?", "answer_text": "Plus un élément est lointain, plus il perd contraste et détails et tend vers la couleur du ciel (plus clair)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Citez deux indices de profondeur autres que la perspective atmosphérique.", "answer_text": "Chevauchement, diminution de taille, position plus haute dans l'image, épaisseur du trait, flou (deux parmi ceux-ci)."}
+  ]
+}

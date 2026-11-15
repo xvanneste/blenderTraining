@@ -1,0 +1,112 @@
+{
+  "chapter": "CH03.02",
+  "title": "Sculpt Mode",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un maillage doit-il être dense pour sculpter ?",
+      "answer_text": "Les brosses déplacent les sommets existants : sans assez de sommets, pas de forme fine."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Raccourci du rayon de la brosse ?",
+      "choices": [
+        "R",
+        "F",
+        "S",
+        "Shift+R"
+      ],
+      "answer": 1,
+      "explain": "Shift+F = force."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Ctrl maintenu avec Draw ?",
+      "choices": [
+        "Lisse",
+        "Inverse : creuse",
+        "Masque",
+        "Change de brosse"
+      ],
+      "answer": 1,
+      "explain": "Shift maintenu = lissage."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle brosse pour un sillon net (bouche, plis) ?",
+      "choices": [
+        "Inflate",
+        "Grab",
+        "Crease Polish",
+        "Smooth"
+      ],
+      "answer": 2,
+      "explain": "Shift+C."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle brosse pour corriger une silhouette en déplaçant toute une zone ?",
+      "answer_text": "Grab (G)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Où active-t-on la symétrie et dans quel espace s'applique-t-elle ?",
+      "answer_text": "Dans l'en-tête du Sculpt Mode (Mirror X/Y/Z) ; en espace local de l'objet."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Raccourci pour effacer le masque ?",
+      "choices": [
+        "Alt+M",
+        "Ctrl+M",
+        "M",
+        "Ctrl+I"
+      ],
+      "answer": 0,
+      "explain": "Ctrl+I inverse le masque, M = brosse Mask."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi servent les Face Sets ?",
+      "answer_text": "Grouper des faces pour isoler, cacher, masquer ou travailler par parties."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Touche pour isoler le Face Set sous la souris (bascule) ?",
+      "choices": [
+        "H",
+        "Shift+H",
+        "Alt+H",
+        "W"
+      ],
+      "answer": 1,
+      "explain": "H le cache, Alt+H réaffiche tout."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Dans quel ordre travailler un sculpt ?",
+      "answer_text": "Grandes formes, formes secondaires, lissage, détails seulement quand les volumes sont justes."
+    }
+  ]
+}

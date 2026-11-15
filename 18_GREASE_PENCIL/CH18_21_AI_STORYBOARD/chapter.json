@@ -1,0 +1,28 @@
+{
+  "code": "CH18.21",
+  "title": "IA pour le storyboard",
+  "phase_title": "18 — Grease Pencil (module G : IA)",
+  "level": "intermédiaire",
+  "duration": "3 h",
+  "intro": "L'IA peut proposer des références, des découpages, des variantes ou des scripts ; elle ne garantit ni la continuité, ni les droits, ni l'intention. Ce chapitre traite une liste de plans « proposée par une IA » qui contient quatre erreurs typiques (code en double, axe franchi, durée nulle, total faux), la corrige, lit puis exécute un script de préparation des plans écrit avec une IA (caméras, focales mesurées, marqueurs, boards), et documente chaque décision dans un journal d'usage. Aucun outil d'IA n'est installé ni requis.",
+  "prereqs": ["CH18.11, CH18.14, CH18.20."],
+  "objectives": [
+    "Situer l'apport et les risques de l'IA à chaque étape du storyboard.",
+    "Contrôler une proposition générée avec des règles vérifiables.",
+    "Lire, tester et utiliser un script écrit avec une IA.",
+    "Tenir un journal d'usage (outil, accepté, refusé, corrigé, droits)."
+  ],
+  "competences": [["C18.21.a", "Storyboard assisté contrôlé", "Exercice 2 (correcteur) + grille"]],
+  "lessons": [["L1", "Ce que l'IA peut apporter, et ses risques", "1 h"], ["L2", "Contrôler une proposition et un script", "2 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_21_assist_starter.blend", "Décor, proposition erronée, journal vide, script embarqué"],
+    ["COMPLETED_EXAMPLES/ch18_21_assist_solution.blend", "Liste corrigée, plans générés, journal"],
+    ["COMPLETED_EXAMPLES/ch18_21_assist_contact.png", "Les 6 plans générés"],
+    ["SCRIPTS/shot_prep.py", "Préparation des plans (écrit avec une IA, testé)"],
+    ["SCRIPTS/validate_ch18_21.py", "Correcteur (assist)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_21_assist_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_21.py\" --python-exit-code 1 -- --exercise assist --render",
+  "deliverables": ["Storyboard assisté validé.", "Journal AI_LOG.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
+  "next": "[CH18.22 — Projets de la phase](../CH18_22_PROJECTS/README.md)"
+}

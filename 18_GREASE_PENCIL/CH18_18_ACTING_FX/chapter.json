@@ -1,0 +1,27 @@
+{
+  "code": "CH18.18",
+  "title": "Personnages, expressions, effets, caméra",
+  "phase_title": "18 — Grease Pencil (module E : animation 2D)",
+  "level": "intermédiaire → avancé",
+  "duration": "4 h",
+  "intro": "Un plan animé complet de 5 secondes : un personnage qui pense, anticipe, sursaute (écrasé, étiré), reste figé de surprise puis se détend ; un effet dessiné (éclair puis fumée qui disparaît) sur son propre calque ; une caméra 2D qui tremble à l'impact et revient exactement en place. Le correcteur vérifie tenues, réaction après l'effet, déformation, vie de l'effet et tremblement synchronisé.",
+  "prereqs": ["CH18.16 et CH18.17.", "CH18.04 (expressions dessinées)."],
+  "objectives": [
+    "Construire une réaction : anticipation, take, tenue, retour.",
+    "Dessiner des expressions lisibles et diriger le regard.",
+    "Animer un effet 2D qui naît, évolue et disparaît.",
+    "Animer une caméra 2D (tremblement synchronisé)."
+  ],
+  "competences": [["C18.18.a", "Plan animé de 5 s", "Exercice 2 ou 3 (correcteur) + grille"]],
+  "lessons": [["L1", "Acting et expressions", "2 h"], ["L2", "Effets et caméra 2D", "2 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_18_shot_starter.blend", "Décor, calques vides, scénario"],
+    ["COMPLETED_EXAMPLES/ch18_18_shot_solution.blend", "Plan « L'ampoule » animé"],
+    ["COMPLETED_EXAMPLES/ch18_18_shot_contact.png", "8 images clés du plan"],
+    ["SCRIPTS/validate_ch18_18.py", "Correcteur (shot)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_18_shot_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_18.py\" --python-exit-code 1 -- --exercise shot --render",
+  "deliverables": ["Plan de 5 s validé.", "Planche d'expressions.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Plan validé par le correcteur."],
+  "next": "[CH18.19 — Dessiner dans et sur la 3D](../CH18_19_DRAW_ON_3D/README.md)"
+}

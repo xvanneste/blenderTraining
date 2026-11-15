@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.09",
+  "title": "Dessin dans l'espace 3D et organisation",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quelle différence entre Stroke Placement et Drawing Plane ?", "answer_text": "Stroke Placement choisit le point de référence ou la surface de projection (Origin, 3D Cursor, Surface, Stroke) ; Drawing Plane choisit l'orientation du plan qui passe par ce point (View, Front, Side, Top, Cursor)."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Pour dessiner une route à plat sur le sol :", "choices": ["Drawing Plane View", "Drawing Plane Top (X-Y), curseur à Z = 0", "Drawing Plane Front (X-Z)", "Stroke Placement Stroke"], "answer": 1, "explain": "Top (X-Y) est le plan horizontal ; le curseur fixe sa hauteur."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Comment placer le curseur 3D précisément à Y = 14 ?", "answer_text": "Barre latérale N → onglet View → 3D Cursor → Location Y = 14 (Shift+clic droit pour un placement à la souris)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "À quoi sert la grille Canvas ?", "answer_text": "Elle affiche le plan de dessin actif pour vérifier qu'on dessine bien à plat ou de face (Viewport Overlays → Canvas → Use Grid)."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Pourquoi dessiner plus grand ce qui est loin ?", "answer_text": "Parce que la perspective de la caméra réduit les éléments lointains : un trait petit à 25 m paraît minuscule à l'écran."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Qu'apporte un décor dessiné sur plusieurs profondeurs par rapport à un dessin plat ?", "choices": ["Rien", "Une vraie parallaxe quand la caméra bouge", "Un rendu plus rapide", "Des couleurs plus vives"], "answer": 1, "explain": "Les éléments proches défilent plus vite que les lointains."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Dans quel ordre construire un layout dessiné ?", "answer_text": "Poser la caméra, puis un calque par plan (sol, fond, plan moyen, premier plan) en plaçant le curseur à la bonne distance, en dessinant en vue caméra et en vérifiant en orbitant."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Comment ajouter une image de référence dans la scène et éviter de la perdre ?", "answer_text": "Add → Image → Reference ; puis File → External Data → Pack Resources (ou garder un chemin relatif valide)."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Où alléger l'affichage du Grease Pencil pendant la lecture ?", "choices": ["Render → Simplify → Grease Pencil", "Output → Format", "World → Surface", "Object → Visibility"], "answer": 0, "explain": "Simplify → Grease Pencil : Playback Only, Fill, Modifiers, Shader Effects…"},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Quand décocher Lights sur les calques d'un décor dessiné ?", "answer_text": "Quand on veut des couleurs plates fidèles au dessin, non assombries ou modifiées par les lampes de la scène."}
+  ]
+}

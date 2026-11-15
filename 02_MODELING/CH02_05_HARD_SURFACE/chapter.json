@@ -1,0 +1,29 @@
+{
+  "code": "CH02.05",
+  "title": "Hard Surface",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "2 h 45",
+  "intro": "Un objet manufacturé se lit par ses arêtes et ses reflets. Ce chapitre installe le workflow hard surface non destructif : arêtes « cassées » qui accrochent la lumière, coins arrondis choisis par Bevel Weight, deux modificateurs Bevel empilés, Harden Normals, détails mécaniques et hiérarchie des formes — sur un boîtier de commande en dimensions réelles.",
+  "prereqs": ["CH02.02 à CH02.04."],
+  "objectives": [
+    "Expliquer pourquoi une arête doit être biseautée pour le rendu.",
+    "Poser des Bevel Weights et utiliser Limit Method Weight / Angle.",
+    "Empiler deux Bevels et activer Harden Normals.",
+    "Ajouter panneaux en creux et pièces jointes sans casser la topologie.",
+    "Respecter échelle réelle et hiérarchie des détails."
+  ],
+  "competences": [["C02.05.a", "Modéliser un objet mécanique", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Arêtes et lumière", "45 min"], ["L2", "Bevel modificateur : Weight et Angle", "1 h"], ["L3", "Détails mécaniques", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch02_05_device_starter.blend", "Pavé 40 × 20 × 50 cm"],
+    ["COMPLETED_EXAMPLES/ch02_05_device_solution.blend", "Boîtier complet (2 Bevels, écran, boutons)"],
+    ["COMPLETED_EXAMPLES/ch02_05_device_reference.png", "Rendu de référence"],
+    ["COMPLETED_EXAMPLES/ch02_05_device_closeup.png", "Gros plan sur les arêtes"],
+    ["SCRIPTS/validate_ch02_05.py", "Correcteur (poids, modificateurs, creux, boutons, fermeture)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_05_device_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_05.py\" --python-exit-code 1 -- --exercise device --render",
+  "deliverables": ["Boîtier validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : le talkie-walkie."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Boîtier validé.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.06 — Subdivision Surface](../CH02_06_SUBDIVISION/README.md)"
+}

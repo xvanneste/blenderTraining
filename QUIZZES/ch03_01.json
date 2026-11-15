@@ -1,0 +1,17 @@
+{
+  "chapter": "CH03.01",
+  "title": "Anatomie artistique",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quelle est l'unité de mesure du canon ?", "answer_text": "La hauteur de la tête, du sommet du crâne au menton."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Canon courant d'un adulte réaliste ?", "choices": ["4 têtes", "5 têtes", "7 à 7,5 têtes", "10 têtes"], "answer": 2, "explain": "8 têtes et plus = idéalisé/héroïque."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Où tombe l'entrejambe chez l'adulte ?", "choices": ["Au tiers de la taille", "À la moitié de la taille", "Aux deux tiers", "Au niveau des coudes"], "answer": 1, "explain": "≈ 0,50 H."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Bras tendus le long du corps, où arrive le bout des doigts ?", "answer_text": "Vers la mi-cuisse, environ 0,38 H."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Quelles sont les trois masses principales du corps ?", "answer_text": "La tête, la cage thoracique et le bassin."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Canon approximatif d'un enfant de 5–6 ans ?", "choices": ["≈ 5 têtes", "≈ 7 têtes", "≈ 8 têtes", "≈ 3 têtes"], "answer": 0, "explain": "Tête proportionnellement grosse, jambes courtes."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "À quelle hauteur sont les coudes, bras le long du corps ?", "answer_text": "À la taille, près du nombril (≈ 0,62 H)."},
+    {"id": "Q8", "lesson": "L3", "type": "open", "q": "Décrivez le contrapposto.", "answer_text": "Poids sur une jambe tendue ; côté appui hanche haute et épaule basse ; bassin et cage inclinés en sens opposés ; tête à l'aplomb du pied d'appui ; jambe libre fléchie."},
+    {"id": "Q9", "lesson": "L3", "type": "mcq", "q": "Côté jambe d'appui, l'épaule est…", "choices": ["plus haute", "plus basse", "au même niveau", "en arrière"], "answer": 1, "explain": "Inclinaisons opposées du bassin et des épaules."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Pourquoi la tête se place-t-elle au-dessus du pied d'appui ?", "answer_text": "Pour l'équilibre : le centre de gravité doit être à l'aplomb de l'appui."}
+  ]
+}

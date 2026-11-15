@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.21",
+  "title": "IA pour le storyboard",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quelle est la règle de base face à une proposition d'IA ?", "answer_text": "C'est une hypothèse : on la contrôle avec les mêmes critères que son propre travail, et on trace le contrôle."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Principal risque d'un moodboard d'images trouvées ou générées ?", "choices": ["La taille des fichiers", "Les droits d'auteur et l'imitation de style", "La couleur", "Le format 16:9"], "answer": 1, "explain": "Licence de chaque image, sources notées."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi les model sheets générées posent-elles problème ?", "answer_text": "Incohérences d'un dessin à l'autre (proportions, costume) : à redessiner depuis une feuille de référence unique."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Avant d'envoyer un projet non publié à un service d'IA en ligne…", "choices": ["rien à vérifier", "lire et accepter consciemment ses conditions d'usage", "le compresser", "le renommer"], "answer": 1, "explain": "Confidentialité et droits."},
+    {"id": "Q5", "lesson": "L1", "type": "open", "q": "Que contient un journal d'usage de l'IA ?", "answer_text": "Outil et date, demande, ce qui est accepté, refusé ou corrigé et pourquoi, origine/droits des références."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Citez les quatre erreurs de la proposition du chapitre.", "answer_text": "Code en double, plan qui franchit l'axe, durée nulle, total différent de la cible."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Avant d'exécuter un script écrit avec une IA…", "choices": ["on l'exécute sur l'original", "on le lit et on le teste sur une copie", "on le partage", "on supprime les caméras"], "answer": 1, "explain": "Savoir ce qu'il crée et supprime."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Que supprime shot_prep.py avant de créer les plans ?", "answer_text": "Les caméras CAM_SH* et boards BOARD_SH* existants, et les marqueurs."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Pourquoi vérifier les plans par mesure plutôt qu'à l'œil ?", "answer_text": "Une image peut sembler juste alors que la valeur, l'image de début ou le côté de l'axe sont faux ; la mesure est objective et rapide."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Qu'est-ce qui reste la responsabilité de l'auteur ?", "answer_text": "Intention, rythme, émotion, continuité, choix des cadrages et dessin final."}
+  ]
+}

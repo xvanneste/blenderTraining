@@ -1,0 +1,31 @@
+{
+  "code": "CH18.10",
+  "title": "Langage cinématographique",
+  "phase_title": "18 — Grease Pencil (module C : storyboard)",
+  "level": "intermédiaire",
+  "duration": "2 h 45",
+  "intro": "Avant de storyboarder, il faut parler la langue du cinéma : valeurs de plans, angles, axe et règle des 180°, focales. Ce chapitre fait les deux gestes du métier : dessiner les 8 valeurs sur une planche Grease Pencil, et les cadrer avec de vraies caméras 3D sur un personnage — chaque cadrage étant mesuré par le correcteur.",
+  "prereqs": ["CH18.05 (composition)", "CH01.12 (caméras)."],
+  "objectives": [
+    "Nommer et reconnaître les 8 valeurs de plans.",
+    "Cadrer chaque valeur avec une caméra 3D.",
+    "Utiliser plongée et contre-plongée à dessein.",
+    "Respecter la règle des 180° en champ/contrechamp.",
+    "Choisir une focale selon l'effet recherché."
+  ],
+  "competences": [["C18.10.a", "Nommer et dessiner 8 valeurs de plans", "Exercice 3 (correcteurs + grille)"]],
+  "lessons": [["L1", "Les valeurs de plans", "1 h 15"], ["L2", "Angles et focales", "45 min"], ["L3", "L'axe et les 180°", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_10_shots_starter.blend", "Plateau : 2 mannequins, table, tasse"],
+    ["STARTER_FILES/ch18_10_board_starter.blend", "Planche GP de 8 cadres"],
+    ["COMPLETED_EXAMPLES/ch18_10_shots_solution.blend", "12 caméras de référence"],
+    ["COMPLETED_EXAMPLES/ch18_10_shots_contact.png", "Planche-contact des 12 caméras"],
+    ["COMPLETED_EXAMPLES/ch18_10_board_solution.blend", "Planche des 8 valeurs dessinée"],
+    ["COMPLETED_EXAMPLES/ch18_10_board_reference.png", "Rendu de la planche"],
+    ["SCRIPTS/validate_ch18_10.py", "Correcteur (valeurs mesurées, angles, 180°, planche)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_10_shots_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_10.py\" --python-exit-code 1 -- --exercise shots",
+  "deliverables": ["Caméras et planche validées.", "Auto-évaluation ≥ 14/20.", "Mini-projet : un dialogue en 8 plans."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Les deux correcteurs validés.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.11 — Continuité et dialogue](../CH18_11_CONTINUITY/README.md)"
+}

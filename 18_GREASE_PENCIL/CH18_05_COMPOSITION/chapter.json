@@ -1,0 +1,27 @@
+{
+  "code": "CH18.05",
+  "title": "Composition et dessin cinématographique",
+  "phase_title": "18 — Grease Pencil (module A : fondamentaux du dessin)",
+  "level": "débutant",
+  "duration": "3 h",
+  "intro": "Un storyboard n'est pas une suite de jolis dessins : c'est une suite de cadres pensés. Ce chapitre apprend à composer dans un cadre 16:9 (tiers, lignes directrices, symétrie, diagonale, cadre dans le cadre, espace de regard), à rendre une image lisible avec seulement trois valeurs, et à construire la profondeur d'un décor en trois plans. Ce sont les bases du storyboard (module C) et du layout 3D.",
+  "prereqs": ["CH18.02 (perspective).", "CH18.03 (mannequin)."],
+  "objectives": [
+    "Composer une vignette avec une règle de composition choisie.",
+    "Placer horizon et sujet pour produire un effet voulu.",
+    "Rendre une vignette lisible en trois valeurs, au trait.",
+    "Construire un décor en trois plans (premier plan, plan moyen, arrière-plan)."
+  ],
+  "competences": [["C18.05.a", "Vignette lisible en 3 valeurs", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Le cadre et les règles de composition", "1 h"], ["L2", "Les valeurs", "1 h"], ["L3", "La profondeur en trois plans", "1 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_05_composition_starter.blend", "Feuille : 6 cadres avec tiers, cadre de valeurs, exemple 3 plans, 3 calques de travail"],
+    ["COMPLETED_EXAMPLES/ch18_05_composition_solution.blend", "Feuille complétée (référence schématique)"],
+    ["COMPLETED_EXAMPLES/ch18_05_composition_reference.png", "Rendu de la référence"],
+    ["SCRIPTS/validate_ch18_05.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_05_composition_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_05.py\" --python-exit-code 1 -- --exercise composition --render",
+  "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : séquence en 6 vignettes."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.06 — Grease Pencil : interface et objets](../CH18_06_GP_INTERFACE/README.md)"
+}

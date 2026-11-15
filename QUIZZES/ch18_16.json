@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.16",
+  "title": "Animation 2D : principes et image par image",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Animer « en deux » à 24 i/s, c'est…", "choices": ["24 dessins par seconde", "12 dessins par seconde", "2 dessins par seconde", "deux calques"], "answer": 1, "explain": "Un dessin toutes les 2 images."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Différence entre pose à pose et straight ahead ?", "answer_text": "Pose à pose : clés d'abord puis intervalles (contrôle) ; straight ahead : dessins dans l'ordre (spontané, mais dérive)."},
+    {"id": "Q3", "lesson": "L1", "type": "mcq", "q": "Dans la Dope Sheet, quelle touche change le type d'une clé ?", "choices": ["T", "R", "K", "I"], "answer": 1, "explain": "Keyframe Type (R)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "À quoi sert l'onion skinning ?", "answer_text": "Voir les dessins voisins en transparence pour régler arcs et espacement."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Différence entre timing et espacement ?", "answer_text": "Timing : la durée (nombre d'images) d'une action ; espacement : la distance entre dessins successifs, qui donne vitesse et ralentis."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Où les dessins d'une balle sont-ils le plus rapprochés ?", "choices": ["Au contact", "Au sommet", "Partout pareil", "Juste après le contact"], "answer": 1, "explain": "La balle ralentit en montant et repart lentement : ralenti au sommet."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Quand la balle est-elle écrasée, quand est-elle étirée ?", "answer_text": "Écrasée au contact ; étirée juste avant et juste après, dans le sens du mouvement ; ronde au sommet."},
+    {"id": "Q8", "lesson": "L2", "type": "mcq", "q": "Une balle écrasée de 25 % en hauteur doit…", "choices": ["garder sa largeur", "s'élargir d'environ 33 %", "rétrécir", "changer de couleur"], "answer": 1, "explain": "Volume constant : 0,75 × 1,33 ≈ 1."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Comment la hauteur des rebonds évolue-t-elle pour une balle en caoutchouc ?", "answer_text": "Chaque rebond monte à une fraction (≈ 60 %) du précédent et dure moins longtemps."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "La balle semble flotter : diagnostic ?", "answer_text": "Espacement trop régulier ou trop serré près du sol : il faut accélérer la chute (dessins écartés en bas)."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_02_files.py",
+  "validator": "validate_ch02_02.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_02_stool_solution.blend", "exercise": "stool", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_02_stool_starter.blend", "exercise": "stool", "expect": false}
+  ]
+}

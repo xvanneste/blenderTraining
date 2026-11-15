@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.15",
+  "title": "Son, rythme, transitions, export, révision",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Quelles sont les trois couches sonores d'une animatique, dans l'ordre de pose ?", "answer_text": "Dialogues temporaires, bruitages clés, musique temporaire."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "À 24 i/s, un décalage de 2 images représente environ…", "choices": ["8 ms", "42 ms", "83 ms", "500 ms"], "answer": 2, "explain": "2/24 s ≈ 83 ms : perceptible sur un impact."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi poser les dialogues temporaires en premier ?", "answer_text": "Ils fixent la durée des plans parlés ; le reste se cale ensuite."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "Quel menu ajoute un fondu d'entrée et de sortie au volume d'un son ?", "choices": ["Strip > Mute", "Add > Fade > Fade In and Out", "Add > Transition > Wipe", "Marker > Bind Camera to Markers"], "answer": 1, "explain": "Il anime Volume (son) ou l'opacité (image)."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Que faut-il pour créer un Crossfade dans le Video Sequencer ?", "answer_text": "Deux strips image/vidéo sélectionnés qui se chevauchent (sur deux canaux) ; la durée du fondu = le chevauchement."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Le raccord le plus courant au montage est…", "choices": ["le fondu enchaîné", "la coupe franche", "le volet", "le fondu au noir"], "answer": 1, "explain": "Les autres transitions doivent être justifiées."},
+    {"id": "Q7", "lesson": "L2", "type": "open", "q": "Comment ajouter un fondu enchaîné sans changer la durée totale ?", "answer_text": "Allonger le début du plan suivant (sur un autre canal) pour qu'il chevauche le précédent, sans déplacer sa fin."},
+    {"id": "Q8", "lesson": "L3", "type": "mcq", "q": "Votre vidéo exportée est muette alors que le montage a du son : cause probable ?", "choices": ["Container MPEG-4", "Audio Codec : No Audio", "Video Codec H.264", "Resolution 50 %"], "answer": 1, "explain": "Encoding > Audio > Audio Codec doit être AAC (par exemple)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Quel est le format d'une note de révision exploitable ?", "answer_text": "Code du plan · numéro d'image · remarque concrète (action à faire)."},
+    {"id": "Q10", "lesson": "L3", "type": "open", "q": "Pourquoi versionner (v001, v002…) au lieu d'écraser ?", "answer_text": "Pour comparer, revenir en arrière et savoir quelle version a reçu quelles notes."}
+  ]
+}

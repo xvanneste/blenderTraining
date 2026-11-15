@@ -16,25 +16,26 @@
 | CH02.12 Modélisation pour l'animation | Boucles aux articulations, déformation, échelle réelle | C02.12.a préparer un mesh déformable |
 | CH02.13 Assets réutilisables | Asset Browser, marquage, catalogues, prévisualisations, link/append | C02.13.a publier un asset |
 
-**Projet P2 :** décor détaillé (pièce ou atelier) + collection de 10 props publiés comme assets.
+**Projet P2 :** décor détaillé (pièce ou atelier) + collection de 10 props publiés comme assets —
+brief, contraintes et grille : [PROJECT_P2/README.md](PROJECT_P2/README.md) (correcteur `validate_p2.py`, testé par `test_p2.py`).
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH02.01 Topologie | ⬜ Non commencé |
-| CH02.02 Outils polygonaux I | ⬜ Non commencé |
-| CH02.03 Outils polygonaux II | ⬜ Non commencé |
-| CH02.04 Normales | ⬜ Non commencé |
-| CH02.05 Hard Surface | ⬜ Non commencé |
-| CH02.06 Subdivision Surface | ⬜ Non commencé |
-| CH02.07 Booléens et non destructif | ⬜ Non commencé |
-| CH02.08 Modélisation organique | ⬜ Non commencé |
-| CH02.09 Retopologie | ⬜ Non commencé |
-| CH02.10 Optimisation | ⬜ Non commencé |
-| CH02.11 UV fondamentaux | ⬜ Non commencé |
-| CH02.12 Modélisation pour l'animation | ⬜ Non commencé |
-| CH02.13 Assets réutilisables | ⬜ Non commencé |
+| [CH02.01 Topologie](CH02_01_TOPOLOGY/README.md) | ✅ Terminé et vérifié |
+| [CH02.02 Outils polygonaux I](CH02_02_POLY_TOOLS_1/README.md) | ✅ Terminé et vérifié |
+| [CH02.03 Outils polygonaux II](CH02_03_POLY_TOOLS_2/README.md) | ✅ Terminé et vérifié |
+| [CH02.04 Normales](CH02_04_NORMALS/README.md) | ✅ Terminé et vérifié |
+| [CH02.05 Hard Surface](CH02_05_HARD_SURFACE/README.md) | ✅ Terminé et vérifié |
+| [CH02.06 Subdivision Surface](CH02_06_SUBDIVISION/README.md) | ✅ Terminé et vérifié |
+| [CH02.07 Booléens et non destructif](CH02_07_BOOLEANS/README.md) | ✅ Terminé et vérifié |
+| [CH02.08 Modélisation organique](CH02_08_ORGANIC/README.md) | ✅ Terminé et vérifié |
+| [CH02.09 Retopologie](CH02_09_RETOPOLOGY/README.md) | ✅ Terminé et vérifié |
+| [CH02.10 Optimisation](CH02_10_OPTIMIZATION/README.md) | ✅ Terminé et vérifié |
+| [CH02.11 UV fondamentaux](CH02_11_UV_BASICS/README.md) | ✅ Terminé et vérifié |
+| [CH02.12 Modélisation pour l'animation](CH02_12_ANIMATION_READY/README.md) | ✅ Terminé et vérifié |
+| [CH02.13 Assets réutilisables](CH02_13_ASSETS/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH02_MM_NOM/` conforme à

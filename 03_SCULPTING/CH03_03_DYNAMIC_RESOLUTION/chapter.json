@@ -1,0 +1,29 @@
+{
+  "code": "CH03.03",
+  "title": "Résolution dynamique",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "intermédiaire",
+  "duration": "3 h",
+  "intro": "Adapter la densité du maillage à l'étape du sculpt : Voxel Remesh pour fusionner des masses en un volume régulier, DynTopo pour ajouter du détail là où l'on sculpte, Multiresolution pour détailler en gardant une base légère. On découvre pourquoi le mannequin du CH03.01 donne trois morceaux au remesh (masses qui ne se chevauchent pas) et comment le réparer. Le correcteur compte les morceaux, les arêtes non fermées, les quads, la densité, les niveaux Multires et vérifie vos choix de méthode.",
+  "prereqs": ["CH03.01 et CH03.02."],
+  "objectives": [
+    "Fusionner des masses par Voxel Remesh (chevauchements, taille de voxel).",
+    "Utiliser DynTopo en connaissant ce qu'il détruit.",
+    "Régler un Multiresolution fluide sur une base légère.",
+    "Choisir la méthode adaptée à chaque situation."
+  ],
+  "competences": [["C03.03.a", "Choisir la bonne méthode", "Exercices 1–3 (correcteur) + grille"]],
+  "lessons": [["L1", "Voxel Remesh", "1 h"], ["L2", "DynTopo et Multiresolution", "1 h 30"], ["L3", "Choisir", "30 min"]],
+  "files": [
+    ["STARTER_FILES/ch03_03_remesh_starter.blend", "16 masses séparées (CH03.01)"],
+    ["COMPLETED_EXAMPLES/ch03_03_remesh_solution.blend", "SCULPT_Body remeshé, un seul volume"],
+    ["COMPLETED_EXAMPLES/ch03_03_remesh_reference.png", "Rendu de contrôle"],
+    ["STARTER_FILES/ch03_03_multires_starter.blend", "Tête de base 384 faces + DECISIONS"],
+    ["COMPLETED_EXAMPLES/ch03_03_multires_solution.blend", "Multires 5 niveaux + réponses"],
+    ["SCRIPTS/validate_ch03_03.py", "Correcteur (remesh, multires, decide)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_03_remesh_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_03.py\" --python-exit-code 1 -- --exercise remesh --render",
+  "deliverables": ["Remesh validé.", "Multires validé.", "Décisions validées."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Les trois exercices validés."],
+  "next": "[CH03.04 — Sculpture stylisée](../CH03_04_STYLIZED/README.md)"
+}

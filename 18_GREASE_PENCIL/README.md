@@ -40,26 +40,26 @@ sont **obligatoires avant la phase 15**.
 |---|---|
 | [CH18.01 Formes et volumes](CH18_01_SHAPES_VOLUMES/README.md) | ✅ Terminé et vérifié |
 | [CH18.02 Perspective](CH18_02_PERSPECTIVE/README.md) | ✅ Terminé et vérifié |
-| [CH18.03 Proportions, silhouettes, gestuelle](CH18_03_PROPORTIONS_GESTURE/README.md) | 🟨 Partiellement terminé |
-| CH18.04 Expressions et personnages | ⬜ Non commencé |
-| CH18.05 Composition et dessin cinématographique | ⬜ Non commencé |
-| CH18.06 Grease Pencil : interface et objets | ⬜ Non commencé |
-| CH18.07 Brushes, traits, remplissages, matériaux | ⬜ Non commencé |
-| CH18.08 Calques, modificateurs, transformations | ⬜ Non commencé |
-| CH18.09 Dessin dans l'espace 3D et organisation | ⬜ Non commencé |
-| CH18.10 Langage cinématographique | ⬜ Non commencé |
-| CH18.11 Continuité et dialogue | ⬜ Non commencé |
-| CH18.12 Cadrage, composition, découpage technique | ⬜ Non commencé |
-| CH18.13 Storyboards d'action, d'émotion, complexes | ⬜ Non commencé |
-| CH18.14 Du scénario à l'animatique | ⬜ Non commencé |
-| CH18.15 Son, rythme, transitions, export, révision | ⬜ Non commencé |
-| CH18.16 Animation 2D : principes et image par image | ⬜ Non commencé |
-| CH18.17 Timing, spacing, cycles | ⬜ Non commencé |
-| CH18.18 Personnages, expressions, effets, caméra | ⬜ Non commencé |
-| CH18.19 Dessiner dans et sur la 3D | ⬜ Non commencé |
-| CH18.20 Workflow 2D → 3D | ⬜ Non commencé |
-| CH18.21 IA pour le storyboard | ⬜ Non commencé |
-| CH18.22 Projets de la phase | ⬜ Non commencé |
+| [CH18.03 Proportions, silhouettes, gestuelle](CH18_03_PROPORTIONS_GESTURE/README.md) | ✅ Terminé et vérifié |
+| [CH18.04 Expressions et personnages](CH18_04_EXPRESSIONS_CHARACTERS/README.md) | ✅ Terminé et vérifié |
+| [CH18.05 Composition et dessin cinématographique](CH18_05_COMPOSITION/README.md) | ✅ Terminé et vérifié |
+| [CH18.06 Grease Pencil : interface et objets](CH18_06_GP_INTERFACE/README.md) | ✅ Terminé et vérifié |
+| [CH18.07 Brushes, traits, remplissages, matériaux](CH18_07_BRUSHES_MATERIALS/README.md) | ✅ Terminé et vérifié |
+| [CH18.08 Calques, modificateurs, transformations](CH18_08_LAYERS_MODIFIERS/README.md) | ✅ Terminé et vérifié |
+| [CH18.09 Dessin dans l'espace 3D et organisation](CH18_09_DRAWING_IN_3D/README.md) | ✅ Terminé et vérifié |
+| [CH18.10 Langage cinématographique](CH18_10_FILM_LANGUAGE/README.md) | ✅ Terminé et vérifié |
+| [CH18.11 Continuité et dialogue](CH18_11_CONTINUITY/README.md) | ✅ Terminé et vérifié |
+| [CH18.12 Cadrage, composition, découpage technique](CH18_12_TECHNICAL_BREAKDOWN/README.md) | ✅ Terminé et vérifié |
+| [CH18.13 Storyboards d'action, d'émotion, complexes](CH18_13_COMPLEX_BOARDS/README.md) | ✅ Terminé et vérifié |
+| [CH18.14 Du scénario à l'animatique](CH18_14_ANIMATIC/README.md) | ✅ Terminé et vérifié |
+| [CH18.15 Son, rythme, transitions, export, révision](CH18_15_SOUND_EXPORT/README.md) | ✅ Terminé et vérifié |
+| [CH18.16 Animation 2D : principes et image par image](CH18_16_2D_ANIMATION/README.md) | ✅ Terminé et vérifié |
+| [CH18.17 Timing, spacing, cycles](CH18_17_TIMING_CYCLES/README.md) | ✅ Terminé et vérifié |
+| [CH18.18 Personnages, expressions, effets, caméra](CH18_18_ACTING_FX/README.md) | ✅ Terminé et vérifié |
+| [CH18.19 Dessiner dans et sur la 3D](CH18_19_DRAW_ON_3D/README.md) | ✅ Terminé et vérifié |
+| [CH18.20 Workflow 2D → 3D](CH18_20_2D_TO_3D/README.md) | ✅ Terminé et vérifié |
+| [CH18.21 IA pour le storyboard](CH18_21_AI_STORYBOARD/README.md) | ✅ Terminé et vérifié |
+| [CH18.22 Projets de la phase](CH18_22_PROJECTS/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre a son sous-dossier `CH18_MM_NOM/` conforme à

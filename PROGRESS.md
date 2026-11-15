@@ -75,6 +75,36 @@ tableaux détaillés seront ajoutés ici au fur et à mesure que les chapitres s
 
 ---
 
+## PHASE 18 — Grease Pencil (module A : fondamentaux du dessin)
+
+### CH18.01 Formes et volumes — contenu disponible ✅
+| Code | Compétence | Statut | Quiz | Exercice | Temps T1 | Révisions (J+7 / J+30 / J+90) |
+|---|---|---|---|---|---|---|
+| C18.01.a | Construire un objet en volumes | ⬜ | /10 | Exercice 3 | | ☐ ☐ ☐ |
+
+### CH18.02 Perspective — contenu disponible ✅
+| Code | Compétence | Statut | Quiz | Exercice | Temps T1 | Révisions (J+7 / J+30 / J+90) |
+|---|---|---|---|---|---|---|
+| C18.02.a | Dessiner un décor en perspective | ⬜ | /10 | Exercice 3 | | ☐ ☐ ☐ |
+
+### CH18.03 Proportions, silhouettes, gestuelle — contenu disponible ✅
+| Code | Compétence | Statut | Quiz | Exercice | Temps T1 | Révisions (J+7 / J+30 / J+90) |
+|---|---|---|---|---|---|---|
+| C18.03.a | Croquis gestuel en 30 s et poses lisibles | ⬜ | /10 | Exercice 3 | | ☐ ☐ ☐ |
+
+### CH18.04 Expressions et personnages — contenu disponible ✅
+| Code | Compétence | Statut | Quiz | Exercice | Temps T1 | Révisions (J+7 / J+30 / J+90) |
+|---|---|---|---|---|---|---|
+| C18.04.a | Model sheet d'un personnage | ⬜ | /10 | Exercice 3 | | ☐ ☐ ☐ |
+
+### CH18.05 Composition et dessin cinématographique — contenu disponible ✅
+| Code | Compétence | Statut | Quiz | Exercice | Temps T1 | Révisions (J+7 / J+30 / J+90) |
+|---|---|---|---|---|---|---|
+| C18.05.a | Vignette lisible en 3 valeurs | ⬜ | /10 | Exercice 3 | | ☐ ☐ ☐ |
+
+
+---
+
 ## Bilans de compétences (fin de phase)
 Notez de 1 à 5 sur chaque axe, avec une phrase de justification.
 

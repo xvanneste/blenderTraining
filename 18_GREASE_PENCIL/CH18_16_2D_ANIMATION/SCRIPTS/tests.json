@@ -1,0 +1,11 @@
+{
+  "build": "build_ch18_16_files.py",
+  "validator": "validate_ch18_16.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch18_16_keys_solution.blend", "exercise": "keys", "expect": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_16_bounce_solution.blend", "exercise": "bounce", "expect": true, "render": true},
+    {"file": "COMPLETED_EXAMPLES/ch18_16_keys_solution.blend", "exercise": "bounce", "expect": false},
+    {"file": "STARTER_FILES/ch18_16_bounce_starter.blend", "exercise": "keys", "expect": false},
+    {"file": "STARTER_FILES/ch18_16_bounce_starter.blend", "exercise": "bounce", "expect": false}
+  ]
+}

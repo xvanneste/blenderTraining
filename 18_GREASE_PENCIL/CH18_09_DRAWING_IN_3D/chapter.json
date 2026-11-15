@@ -1,0 +1,30 @@
+{
+  "code": "CH18.09",
+  "title": "Dessin dans l'espace 3D et organisation",
+  "phase_title": "18 — Grease Pencil (module B : maîtrise de Grease Pencil)",
+  "level": "intermédiaire",
+  "duration": "3 h 15",
+  "intro": "Le Grease Pencil prend toute sa puissance quand on dessine dans l'espace : un décor en plusieurs profondeurs, un sol dessiné à plat, des éléments qui réagissent à la caméra avec une vraie parallaxe. Ce chapitre apprend à maîtriser Stroke Placement, Drawing Plane, le curseur 3D et le Canvas, à utiliser des images de référence, puis à organiser et optimiser une scène dessinée.",
+  "prereqs": ["CH18.06 (objets GP, passe Z).", "CH18.05 (composition).", "CH01.12 (caméras)."],
+  "objectives": [
+    "Choisir Stroke Placement et Drawing Plane selon ce qu'on dessine.",
+    "Placer le curseur 3D précisément et utiliser la grille du Canvas.",
+    "Construire un décor dessiné sur plusieurs profondeurs, avec un sol à plat.",
+    "Utiliser et ranger des images de référence.",
+    "Organiser et optimiser une scène Grease Pencil."
+  ],
+  "competences": [["C18.09.a", "Décor dessiné en profondeur", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Placement et plans de dessin", "1 h"], ["L2", "Un décor en profondeur", "1 h 30"], ["L3", "Références, organisation, optimisation", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_09_set_starter.blend", "Sol, caméra, référence, GP_Set vide (4 calques)"],
+    ["COMPLETED_EXAMPLES/ch18_09_set_solution.blend", "Décor dessiné sur 4 profondeurs"],
+    ["COMPLETED_EXAMPLES/ch18_09_set_reference.png", "Rendu caméra"],
+    ["COMPLETED_EXAMPLES/ch18_09_set_top.png", "Vue de dessus (plans de dessin)"],
+    ["ASSETS/ch18_09_concept.png", "Image de référence (licence BCMA)"],
+    ["SCRIPTS/validate_ch18_09.py", "Correcteur (profondeurs mesurées, sol à plat, cadre, passe Z)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_09_set_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_09.py\" --python-exit-code 1 -- --exercise set --render",
+  "deliverables": ["Décor validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : travelling dans un décor dessiné."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Décor validé.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.10 — Langage cinématographique](../CH18_10_FILM_LANGUAGE/README.md)"
+}

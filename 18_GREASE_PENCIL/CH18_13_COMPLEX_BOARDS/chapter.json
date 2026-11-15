@@ -1,0 +1,27 @@
+{
+  "code": "CH18.13",
+  "title": "Storyboards d'action, d'émotion, complexes",
+  "phase_title": "18 — Grease Pencil (module C : storyboard)",
+  "level": "intermédiaire → avancé",
+  "duration": "4 h",
+  "intro": "Raconter une action en images, c'est maîtriser la clarté (une idée par case), le rythme (la durée des plans) et l'émotion (la réaction). Ce chapitre construit une planche de 12 cases normée — le projet obligatoire n° 1 de la phase 18 — vérifiée jusque dans son rythme : durée moyenne, plans courts pendant l'action, plans longs pour installer et conclure.",
+  "prereqs": ["CH18.10 à CH18.12."],
+  "objectives": [
+    "Rendre une action lisible case par case.",
+    "Construire le rythme par la durée et l'alternance des plans.",
+    "Dessiner des plans de réaction et d'émotion.",
+    "Garder la géographie claire avec plusieurs personnages."
+  ],
+  "competences": [["C18.13.a", "Storyboard d'action lisible", "Exercice 3 = projet n° 1 (correcteur + grille)"]],
+  "lessons": [["L1", "Clarté de l'action", "1 h"], ["L2", "Rythme et émotion", "1 h"], ["L3", "Séquences complexes (projet n° 1)", "2 h"]],
+  "files": [
+    ["STARTER_FILES/ch18_13_action_starter.blend", "Gabarit de 12 cases"],
+    ["COMPLETED_EXAMPLES/ch18_13_action_solution.blend", "Séquence « La tasse tombe »"],
+    ["COMPLETED_EXAMPLES/ch18_13_action_reference.png", "Rendu de la planche"],
+    ["SCRIPTS/validate_ch18_13.py", "Correcteur (dessin, flèches, notes, variété, rythme)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_13_action_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_13.py\" --python-exit-code 1 -- --exercise action --render",
+  "deliverables": ["Planche de 12 cases validée (projet obligatoire n° 1).", "Auto-évaluation ≥ 14/20."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Planche validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.14 — Du scénario à l'animatique](../CH18_14_ANIMATIC/README.md)"
+}

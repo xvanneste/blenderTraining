@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_06_files.py",
+  "validator": "validate_ch02_06.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_06_subdiv_solution.blend", "exercise": "subdiv", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_06_subdiv_starter.blend", "exercise": "subdiv", "expect": false}
+  ]
+}

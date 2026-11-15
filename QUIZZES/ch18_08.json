@@ -1,0 +1,17 @@
+{
+  "chapter": "CH18.08",
+  "title": "Calques, modificateurs, transformations",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "open", "q": "Que signifie travailler de façon non destructive ?", "answer_text": "Empiler des réglages (modificateurs, masques, fusion, transformations) sans modifier les traits, pour pouvoir tout changer ensuite sans redessiner."},
+    {"id": "Q2", "lesson": "L1", "type": "mcq", "q": "Quel mode de fusion pour un calque d'ombres ?", "choices": ["Add", "Multiply", "Regular", "Divide"], "answer": 1, "explain": "Multiply fonce ce qui est dessous ; Add éclaircit (lumières)."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Comment rendre un calque masque invisible tout en gardant le masque actif (Blender 5.3) ?", "answer_text": "Mettre son Opacity à 0 ; ne pas fermer son œil (un masque caché n'agit plus)."},
+    {"id": "Q4", "lesson": "L1", "type": "open", "q": "Où active-t-on un masque sur un calque ?", "answer_text": "Calque actif → Object Data → Layers → sous-panneau Masks : cocher l'en-tête, puis + et choisir le calque masque."},
+    {"id": "Q5", "lesson": "L2", "type": "mcq", "q": "Quel modificateur fait apparaître progressivement le dessin dans le temps ?", "choices": ["Noise", "Build", "Tint", "Simplify"], "answer": 1, "explain": "Build : Sequential/Concurrent/Additive, Grow/Shrink/Vanish."},
+    {"id": "Q6", "lesson": "L2", "type": "open", "q": "Comment limiter un modificateur au seul calque LINE ?", "answer_text": "Panneau Influence du modificateur → Layer : LINE."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Dans quelle catégorie du menu Add Modifier se trouve Tint ?", "choices": ["Edit", "Generate", "Deform", "Color"], "answer": 3, "explain": "Color : Hue/Saturation, Opacity, Tint."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "À quoi sert le modificateur Line Art ?", "answer_text": "À générer automatiquement des traits de contour à partir de la géométrie 3D (scène, collection ou objet)."},
+    {"id": "Q9", "lesson": "L3", "type": "open", "q": "Vous voulez décaler seulement les nuages, sans toucher aux traits ni à l'objet. Que modifiez-vous ?", "answer_text": "La transformation du calque CLOUDS : Layers → Transform → Translation."},
+    {"id": "Q10", "lesson": "L3", "type": "mcq", "q": "Après Apply sur un modificateur…", "choices": ["rien ne change", "le résultat est figé dans les traits : on perd le réglage", "le modificateur est seulement masqué", "le fichier est sauvegardé"], "answer": 1, "explain": "Apply est destructif : on fige le résultat ; à réserver aux exports, après une copie de sécurité."}
+  ]
+}

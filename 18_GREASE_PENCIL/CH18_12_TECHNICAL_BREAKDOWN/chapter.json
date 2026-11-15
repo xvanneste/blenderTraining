@@ -1,0 +1,27 @@
+{
+  "code": "CH18.12",
+  "title": "Cadrage, composition, découpage technique",
+  "phase_title": "18 — Grease Pencil (module C : storyboard)",
+  "level": "intermédiaire",
+  "duration": "2 h 45",
+  "intro": "Un storyboard professionnel est un document technique : cases au format de l'image, plans numérotés, valeur, mouvement, durée, flèches de caméra et de personnage. Ce chapitre construit une planche normée dans Blender — dessin Grease Pencil, flèches, annotations en objets texte — vérifiée par un correcteur qui contrôle la norme de chaque note.",
+  "prereqs": ["CH18.10 (valeurs de plans)", "CH18.11 (continuité)."],
+  "objectives": [
+    "Rédiger un découpage technique numéroté (SQ/SH).",
+    "Composer et dessiner une planche de 6 cases au format de l'image.",
+    "Distinguer flèches de caméra et flèches de personnage.",
+    "Annoter chaque case selon une norme et paginer la planche."
+  ],
+  "competences": [["C18.12.a", "Planche de storyboard normée", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Le découpage technique", "45 min"], ["L2", "La planche dessinée", "1 h 15"], ["L3", "Annoter dans Blender", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch18_12_board_starter.blend", "Gabarit : 6 cases + bandeaux de notes"],
+    ["COMPLETED_EXAMPLES/ch18_12_board_solution.blend", "Planche normée « La tasse »"],
+    ["COMPLETED_EXAMPLES/ch18_12_board_reference.png", "Rendu de la planche"],
+    ["SCRIPTS/validate_ch18_12.py", "Correcteur (dessin par case, flèches, notes normées, en-tête)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_12_board_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_12.py\" --python-exit-code 1 -- --exercise board --render",
+  "deliverables": ["Planche validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : deux pages."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Planche validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH18.13 — Storyboards d'action, d'émotion, complexes](../CH18_13_COMPLEX_BOARDS/README.md)"
+}

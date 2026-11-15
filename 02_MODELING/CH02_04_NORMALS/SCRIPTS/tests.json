@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_04_files.py",
+  "validator": "validate_ch02_04.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_04_normals_solution.blend", "exercise": "normals", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_04_normals_starter.blend", "exercise": "normals", "expect": false}
+  ]
+}

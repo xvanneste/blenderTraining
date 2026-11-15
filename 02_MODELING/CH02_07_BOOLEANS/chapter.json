@@ -1,0 +1,28 @@
+{
+  "code": "CH02.07",
+  "title": "Booléens et non destructif",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "2 h 15",
+  "intro": "Percer, découper, fusionner des volumes sans jamais perdre la possibilité de revenir en arrière : c'est le travail non destructif avec le modificateur Boolean. Ce chapitre apprend à ranger les cutters dans une collection, à les rendre invisibles au rendu, à ordonner la pile de modificateurs (Boolean puis Bevel) et à juger quand une topologie booléenne est acceptable.",
+  "prereqs": ["CH02.05 (Bevel modificateur)", "CH01.08 (collections, parentage)."],
+  "objectives": [
+    "Utiliser Boolean (Difference, Union, Intersect) et choisir un solver.",
+    "Organiser des cutters en collection, invisibles au rendu.",
+    "Ordonner la pile de modificateurs.",
+    "Savoir quand appliquer et quand retopologiser."
+  ],
+  "competences": [["C02.07.a", "Workflow non destructif", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Le modificateur Boolean", "45 min"], ["L2", "Organisation non destructive", "45 min"], ["L3", "Ordre de la pile et topologie", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch02_07_plate_starter.blend", "Platine 60 × 40 × 3 cm"],
+    ["COMPLETED_EXAMPLES/ch02_07_plate_solution.blend", "Platine percée non destructive"],
+    ["COMPLETED_EXAMPLES/ch02_07_plate_reference.png", "Rendu de référence"],
+    ["COMPLETED_EXAMPLES/ch02_07_plate_moved.png", "Même fichier, cutter déplacé"],
+    ["SCRIPTS/validate_ch02_07.py", "Correcteur (cutters, pile, trous traversants par Euler)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_07_plate_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_07.py\" --python-exit-code 1 -- --exercise plate --render",
+  "deliverables": ["Platine validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la grille d'aération."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Platine validée.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.08 — Modélisation organique](../CH02_08_ORGANIC/README.md)"
+}

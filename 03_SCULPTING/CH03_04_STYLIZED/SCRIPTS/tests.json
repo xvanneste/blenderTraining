@@ -1,0 +1,8 @@
+{
+  "build": "build_ch03_04_files.py",
+  "validator": "validate_ch03_04.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch03_04_bust_solution.blend", "exercise": "bust", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch03_04_bust_starter.blend", "exercise": "bust", "expect": false}
+  ]
+}

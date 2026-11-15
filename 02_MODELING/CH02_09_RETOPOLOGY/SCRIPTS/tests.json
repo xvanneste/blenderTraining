@@ -1,0 +1,8 @@
+{
+  "build": "build_ch02_09_files.py",
+  "validator": "validate_ch02_09.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch02_09_retopo_solution.blend", "exercise": "retopo", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch02_09_retopo_starter.blend", "exercise": "retopo", "expect": false}
+  ]
+}

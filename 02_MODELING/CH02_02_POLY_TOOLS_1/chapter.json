@@ -1,0 +1,28 @@
+{
+  "code": "CH02.02",
+  "title": "Outils polygonaux I",
+  "phase_title": "2 — Modélisation professionnelle",
+  "level": "intermédiaire",
+  "duration": "3 h 15",
+  "intro": "Six outils suffisent à modéliser la majorité des objets d'un décor : Loop Cut, Extrude, Inset, Bevel, Bridge et Fill. Ce chapitre les met en œuvre sur un objet concret, un tabouret en dimensions réelles, en suivant la méthode professionnelle du gros au fin et en réglant chaque opération par des valeurs chiffrées.",
+  "prereqs": ["CH02.01 (topologie)."],
+  "objectives": [
+    "Ajouter et placer précisément des boucles avec Loop Cut and Slide.",
+    "Extruder en tronçons, en bloc ou faces séparées.",
+    "Relier deux boucles ou deux faces avec Bridge Edge Loops (et corriger une vrille).",
+    "Chanfreiner (Bevel) et creuser (Inset + Extrude).",
+    "Modéliser un prop simple en dimensions réelles."
+  ],
+  "competences": [["C02.02.a", "Modéliser un prop simple", "Exercice 3 (correcteur + grille)"]],
+  "lessons": [["L1", "Loop Cut et Extrude", "1 h 15"], ["L2", "Bridge, Bevel, Inset", "1 h 15"], ["L3", "Méthode et finitions", "45 min"]],
+  "files": [
+    ["STARTER_FILES/ch02_02_stool_starter.blend", "Assise seule (40 × 40 × 6 cm à 42 cm du sol)"],
+    ["COMPLETED_EXAMPLES/ch02_02_stool_solution.blend", "Tabouret complet (134 faces, 100 % quads)"],
+    ["COMPLETED_EXAMPLES/ch02_02_stool_reference.png", "Rendu de référence"],
+    ["SCRIPTS/validate_ch02_02.py", "Correcteur (dimensions, pieds, traverses, chanfrein, creux, fermeture)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_02_stool_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_02.py\" --python-exit-code 1 -- --exercise stool --render",
+  "deliverables": ["Tabouret validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : trois props de la pièce."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Tabouret validé.", "Auto-évaluation ≥ 14/20."],
+  "next": "[CH02.03 — Outils polygonaux II](../CH02_03_POLY_TOOLS_2/README.md)"
+}

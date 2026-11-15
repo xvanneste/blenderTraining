@@ -1,0 +1,27 @@
+{
+  "code": "CH03.02",
+  "title": "Sculpt Mode",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "débutant",
+  "duration": "3 h 30",
+  "intro": "Premier sculpt : un visage simple sur une sphère dense. Le chapitre présente les brosses de base de Blender 5.3 (Draw, Clay Strips, Inflate, Grab, Snake Hook, Crease Polish, Smooth…), le réglage du rayon et de la force, la symétrie Mirror X, les masques qui protègent et les Face Sets qui organisent. Le correcteur compare chaque sommet à sa position d'origine : relief du nez, orbites creusées, symétrie, zone masquée intacte, Face Sets.",
+  "prereqs": ["CH03.01.", "Phase 1 (navigation, modes)."],
+  "objectives": [
+    "Utiliser les brosses de base, leur rayon, leur force et leur inversion.",
+    "Sculpter en symétrie.",
+    "Protéger une zone par un masque.",
+    "Organiser un sculpt en Face Sets."
+  ],
+  "competences": [["C03.02.a", "Sculpter un volume simple", "Exercice 2 (correcteur) + grille"]],
+  "lessons": [["L1", "Brosses, rayon, force", "1 h 30"], ["L2", "Symétrie, masques, Face Sets : le premier visage", "2 h"]],
+  "files": [
+    ["STARTER_FILES/ch03_02_face_starter.blend", "Sphère dense, positions d'origine mémorisées"],
+    ["COMPLETED_EXAMPLES/ch03_02_face_solution.blend", "Visage simple (généré par script)"],
+    ["COMPLETED_EXAMPLES/ch03_02_face_reference.png", "Rendu de contrôle"],
+    ["SCRIPTS/validate_ch03_02.py", "Correcteur (face)"]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_02_face_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_02.py\" --python-exit-code 1 -- --exercise face --render",
+  "deliverables": ["Visage simple validé.", "Auto-évaluation ≥ 7/10."],
+  "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
+  "next": "[CH03.03 — Résolution dynamique](../CH03_03_DYNAMIC_RESOLUTION/README.md)"
+}
