@@ -1,0 +1,549 @@
+[
+  {
+    "title": "Les outils indispensables",
+    "units": [
+      {
+        "id": "outils",
+        "title": "Les outils de modélisation sur une pièce d’essai",
+        "keys": [
+          "Tab",
+          "1",
+          "2",
+          "3",
+          "G/R/S",
+          "E",
+          "I",
+          "Ctrl+B",
+          "Ctrl+R",
+          "M",
+          "O",
+          "K",
+          "Shift+N"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quel raccourci ajoute une boucle sur une bande de quads ?",
+            "choices": [
+              "Ctrl+R",
+              "Ctrl+B",
+              "K"
+            ],
+            "answer": 0,
+            "explain": "Ctrl+R trace une boucle. K permet une coupe dessinée."
+          },
+          {
+            "id": "Q2",
+            "type": "mcq",
+            "q": "Quelle commande corrige en premier des faces orientées vers l’intérieur ?",
+            "choices": [
+              "Shade Smooth",
+              "Shift+N en Edit Mode",
+              "Subdivision Surface"
+            ],
+            "answer": 1,
+            "explain": "Shift+N recalcule les normales à l’extérieur sur la sélection."
+          },
+          {
+            "id": "Q3",
+            "type": "mcq",
+            "q": "Que modifie O en Edit Mode ?",
+            "choices": [
+              "L’origine",
+              "Le rayon d’influence du déplacement",
+              "Le type de sélection"
+            ],
+            "answer": 1,
+            "explain": "O active l’édition proportionnelle. La molette règle son rayon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Neuf projets de modélisation",
+    "units": [
+      {
+        "id": "caisse",
+        "title": "1. Caisse en bois",
+        "keys": [
+          "Tab",
+          "S",
+          "I",
+          "E",
+          "Ctrl+B",
+          "Shift+D",
+          "Shift+N"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Pourquoi faire Inset avant une extrusion négative ?",
+            "choices": [
+              "Créer le rebord",
+              "Appliquer l’échelle",
+              "Changer l’origine"
+            ],
+            "answer": 0,
+            "explain": "Le contour intérieur laisse une paroi autour du creux."
+          }
+        ]
+      },
+      {
+        "id": "table",
+        "title": "2. Table",
+        "keys": [
+          "N",
+          "G",
+          "S",
+          "Ctrl+A",
+          "Shift+D",
+          "Ctrl+B"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Comment vérifier la stabilité de la table ?",
+            "choices": [
+              "Mesurer le poids du .blend",
+              "Contrôler le contact des quatre pieds et le dessous du plateau",
+              "Rendre les pieds lisses"
+            ],
+            "answer": 1,
+            "explain": "Les appuis et les liaisons se vérifient dans des vues distinctes."
+          }
+        ]
+      },
+      {
+        "id": "chaise",
+        "title": "3. Chaise",
+        "keys": [
+          "G",
+          "R",
+          "S",
+          "Shift+D",
+          "E",
+          "Ctrl+R",
+          "Ctrl+B"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quelle modification incline le dossier sans déplacer ses appuis ?",
+            "choices": [
+              "Déplacer les sommets du haut en Edit Mode",
+              "Tourner la scène entière",
+              "Déplacer les quatre pieds"
+            ],
+            "answer": 0,
+            "explain": "Seule la partie supérieure doit bouger."
+          }
+        ]
+      },
+      {
+        "id": "epee",
+        "title": "4. Accessoire d’épée stylisée",
+        "keys": [
+          "Tab",
+          "Ctrl+R",
+          "E",
+          "M",
+          "Ctrl+B",
+          "Mirror",
+          "Shift+N"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Pourquoi conserver la demi-lame éditable ?",
+            "choices": [
+              "Pour modifier le reflet sur un seul côté seulement",
+              "Pour contrôler la silhouette sans perdre la symétrie",
+              "Pour cacher l’épaisseur"
+            ],
+            "answer": 1,
+            "explain": "Mirror réplique la cage autour de son origine."
+          }
+        ]
+      },
+      {
+        "id": "coffre",
+        "title": "5. Coffre ouvrant",
+        "keys": [
+          "I",
+          "E",
+          "Ctrl+R",
+          "O",
+          "Ctrl+B",
+          "Shift+S",
+          "R"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Où placer le pivot du couvercle ?",
+            "choices": [
+              "Au centre du coffre",
+              "Au centre de la poignée",
+              "Sur l’axe de la charnière"
+            ],
+            "answer": 2,
+            "explain": "Le couvercle doit pivoter autour de la charnière."
+          }
+        ]
+      },
+      {
+        "id": "maison",
+        "title": "6. Petite maison",
+        "keys": [
+          "Tab",
+          "Ctrl+R",
+          "G",
+          "E",
+          "I",
+          "K",
+          "Ctrl+B"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quelle vue révèle une faîtière trop basse ou décentrée ?",
+            "choices": [
+              "Une orthographique où les deux versants sont visibles",
+              "Uniquement la vue de dessus",
+              "La vue UV"
+            ],
+            "answer": 0,
+            "explain": "Comparez la pente et la position du sommet par rapport aux murs."
+          }
+        ]
+      },
+      {
+        "id": "stylise",
+        "title": "7. Personnage stylisé",
+        "keys": [
+          "Mirror",
+          "Tab",
+          "E",
+          "G/R/S",
+          "O",
+          "Subdivision Surface"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Que comparer en premier entre deux personnages stylisés ?",
+            "choices": [
+              "Le bruit de texture",
+              "La silhouette en miniature",
+              "Le nombre de matériaux"
+            ],
+            "answer": 1,
+            "explain": "Les grandes masses distinguent le personnage avant les détails."
+          }
+        ]
+      },
+      {
+        "id": "visage",
+        "title": "8. Visage humain",
+        "keys": [
+          "Mirror",
+          "E",
+          "G",
+          "Ctrl+R",
+          "Merge",
+          "Subdivision Surface"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Qu’est-ce qui doit rester séparé de la peau autour de l’œil ?",
+            "choices": [
+              "Le globe",
+              "La paupière supérieure",
+              "L’orbite"
+            ],
+            "answer": 0,
+            "explain": "Le globe bouge dans une orbite modélisée dans la tête."
+          }
+        ]
+      },
+      {
+        "id": "corps",
+        "title": "9. Corps humain complet",
+        "keys": [
+          "Mirror",
+          "E",
+          "Ctrl+R",
+          "M",
+          "O",
+          "Numpad 1/3"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Comment raccorder deux anneaux du corps avec Bridge Edge Loops ?",
+            "choices": [
+              "Empiler les bouchons",
+              "Prévoir deux bords ouverts compatibles",
+              "Appliquer Shade Smooth"
+            ],
+            "answer": 1,
+            "explain": "Enlevez les bouchons et vérifiez le nombre et l’ordre des sommets."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Créer un personnage humain 3D à partir de photos dans Blender",
+    "units": [
+      {
+        "id": "hum-poses",
+        "title": "Leçon 1 — T-Pose et A-Pose",
+        "keys": [
+          "Numpad 1",
+          "Numpad 3"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quel changement caractérise généralement l’A-Pose ?",
+            "choices": [
+              "Les coudes sont au-dessus de la tête",
+              "Les bras sont abaissés par rapport à la T-Pose",
+              "Les pieds ne touchent plus le sol"
+            ],
+            "answer": 1,
+            "explain": "Les bras descendent en diagonale tout en gardant le corps neutre."
+          }
+        ]
+      },
+      {
+        "id": "hum-photos",
+        "title": "Leçon 2 — Préparer les photos",
+        "keys": [
+          "Numpad 1",
+          "Numpad 3"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quel couple est le plus approprié ?",
+            "choices": [
+              "Deux vues au grand-angle avec bras dans deux poses",
+              "Une face recadrée et un profil cohérent avec sol et crâne visibles",
+              "Deux portraits cadrés au niveau de la taille"
+            ],
+            "answer": 1,
+            "explain": "Les deux vues doivent rendre visibles les repères de l’ensemble du corps."
+          }
+        ]
+      },
+      {
+        "id": "hum-import",
+        "title": "Leçon 3 — Importer et aligner les photos dans Blender",
+        "keys": [
+          "Numpad 1",
+          "Numpad 3",
+          "Numpad 5",
+          "Shift+A",
+          "G",
+          "S",
+          "N"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quelle méthode corrige une différence de taille entre les vues ?",
+            "choices": [
+              "Étirer verticalement jusqu’à retrouver la forme",
+              "Échelle uniforme, puis déplacer pour aligner sol et crâne",
+              "Changer la focale du viewport en plein Edit Mode"
+            ],
+            "answer": 1,
+            "explain": "Mettez les sujets à l’échelle et alignez des repères communs."
+          }
+        ]
+      },
+      {
+        "id": "hum-corps",
+        "title": "Leçon 4 — Construire le corps humain",
+        "keys": [
+          "Tab",
+          "1/2/3",
+          "E",
+          "G/S/R",
+          "Ctrl+R",
+          "M",
+          "Numpad 1/3"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "À quel moment vérifier les proportions d’un avant-bras ?",
+            "choices": [
+              "Juste avant le rendu",
+              "À chaque anneau important, en face et de profil",
+              "Après application du rig uniquement"
+            ],
+            "answer": 1,
+            "explain": "Le profil corrige la profondeur avant que l’erreur soit propagée."
+          }
+        ]
+      },
+      {
+        "id": "hum-mirror",
+        "title": "Leçon 5 — Mirror et couture centrale",
+        "keys": [
+          "Tab",
+          "S X 0",
+          "N",
+          "Mirror",
+          "Clipping",
+          "Merge"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "D’où vient normalement le plan de Mirror ?",
+            "choices": [
+              "De la caméra",
+              "De l’origine et de l’axe local de l’objet",
+              "De la face sélectionnée"
+            ],
+            "answer": 1,
+            "explain": "Choisissez une origine propre avant de déplacer des sommets de la couture."
+          }
+        ]
+      },
+      {
+        "id": "hum-visage",
+        "title": "Leçon 6 — Modéliser la tête et le visage",
+        "keys": [
+          "Numpad 1/3",
+          "Mirror",
+          "E",
+          "I",
+          "G",
+          "Ctrl+R",
+          "Bridge Edge Loops"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Que vérifier avant de détailler les narines ?",
+            "choices": [
+              "Silhouette du nez en profil et dessous",
+              "Seulement le matériau",
+              "L’export FBX"
+            ],
+            "answer": 0,
+            "explain": "La pointe et les ailes ont d’abord besoin d’un volume lisible."
+          }
+        ]
+      },
+      {
+        "id": "hum-topologie",
+        "title": "Leçon 7 — Retopologie, anatomie et déformations",
+        "keys": [
+          "Ctrl+R",
+          "M",
+          "Alt+clic",
+          "Shift+N",
+          "Poly Build",
+          "Shrinkwrap"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Où placer de préférence un pôle près du coude ?",
+            "choices": [
+              "Au centre du pli",
+              "Dans une zone moins sollicitée",
+              "Sur n’importe quel sommet tant que tout est en quads"
+            ],
+            "answer": 1,
+            "explain": "Loin du pli, le changement de flux perturbe moins la déformation."
+          }
+        ],
+        "video": "assets/cage_flexion_0001-0049.mp4"
+      },
+      {
+        "id": "hum-rig",
+        "title": "Leçon 8 — Préparer le personnage à l’animation",
+        "keys": [
+          "Shift+A",
+          "Tab",
+          "E",
+          "Ctrl+P",
+          "Pose Mode",
+          "Alt+R"
+        ],
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Que faut-il montrer pour valider le rig ?",
+            "choices": [
+              "Seulement une armature visible",
+              "Seulement une image de face",
+              "Une flexion réelle et un retour à la pose neutre"
+            ],
+            "answer": 2,
+            "explain": "Vérifiez le comportement des poids et le volume après déformation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Projet final",
+    "units": [
+      {
+        "id": "projet-humain",
+        "title": "Projet final — Modéliser un personnage humain complet dans Blender à partir de photographies en A-Pose ou T-Pose",
+        "keys": [
+          "Mirror",
+          "Shift+N",
+          "Ctrl+A",
+          "Ctrl+P",
+          "UV Editing",
+          "Pose Mode"
+        ],
+        "video": "../../PROPOSITIONS/RECONSTRUCTION_2_VUES/marche_personnage_0001-0096.mp4",
+        "quiz": [
+          {
+            "id": "Q1",
+            "type": "mcq",
+            "q": "Quelle preuve montre que l’export est utilisable ?",
+            "choices": [
+              "Le fichier existe",
+              "Le fichier réimporté retrouve l’échelle et les éléments attendus",
+              "Le fichier FBX est plus volumineux que le .blend"
+            ],
+            "answer": 1,
+            "explain": "Une réimportation dans un fichier neuf révèle les dépendances manquantes."
+          }
+        ]
+      }
+    ]
+  }
+]

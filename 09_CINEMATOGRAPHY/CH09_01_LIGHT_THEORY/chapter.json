@@ -1,0 +1,68 @@
+{
+  "code": "CH09.01",
+  "title": "Théorie de la lumière",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Éclairer, c'est contrôler quatre choses : la quantité de lumière (intensité), d'où elle vient (direction et distance), la dureté de l'ombre qu'elle projette (taille de la source) et sa couleur. Ce chapitre les rend mesurables : le correcteur rend lui-même une scène minimaliste (un plan gris, une lampe, un cube qui projette une ombre, un monde noir) et lit les pixels. Vous y vérifiez la loi de l'inverse du carré (trois fois plus loin, neuf fois moins de lumière), l'effet du rayon d'une lampe sur la pénombre, et l'effet de la couleur de la lampe sur la couleur reçue.",
+  "prereqs": [
+    "CH01 (scène, objets, rendu de base), CH04 (matériaux)."
+  ],
+  "objectives": [
+    "Énoncer et appliquer la loi de l'inverse du carré.",
+    "Régler Power, Radius et Color d'une lampe.",
+    "Prévoir la douceur d'une ombre.",
+    "Mesurer une exposition sur un rendu linéaire."
+  ],
+  "competences": [
+    [
+      "C09.01.a",
+      "Analyser un éclairage",
+      "Exercice 2 (correcteur) + profils d'ombre"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Intensité et distance",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Dureté et couleur",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_01_light_starter.blend",
+      "Une lampe blanche de 10 W à 1 m au-dessus du plan, Radius 0 : la référence d'exposition"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_01_light_solution.blend",
+      "Lampe à 3 m, 100 W, Radius 0,5 m, couleur chaude (1 ; 0,85 ; 0,65) : même exposition que la référence"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_01_light_reference.png",
+      "Profil de luminance le long d'une ligne traversant l'ombre : source étendue (orange, bord progressif) et source ponctuelle (bleu, bord net)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sous-exposé, surexposé, trop près, ombre dure, lumière froide)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_01.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_01_light_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_01.py\" -- --exercise light",
+  "deliverables": [
+    "Éclairage mesuré validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.02 — Trois points et variantes](../CH09_02_THREE_POINT/README.md)"
+}

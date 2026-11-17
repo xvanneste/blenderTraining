@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.01",
+  "title": "Cadre, éthique et droits",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que faire si une autorisation d’entrée manque ?",
+      "type": "mcq",
+      "choices": [
+        "Suspendre l’usage ou remplacer la ressource",
+        "Publier puis vérifier",
+        "Retirer le crédit"
+      ],
+      "answer": 0,
+      "explain": "L’autorisation d’utiliser une entrée, les conditions d’un service et les droits sur le résultat sont des vérifications distinctes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel élément archiver pour les conditions ?",
+      "type": "mcq",
+      "choices": [
+        "Une supposition fondée sur le nom de l’outil",
+        "Une source et une date de vérification",
+        "Le nom du dossier"
+      ],
+      "answer": 1,
+      "explain": "Pour cet exercice, un brief fictif suffit. Les données envoyées à un fournisseur doivent être justifiées."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelle entrée envoyer pour cet atelier ?",
+      "type": "mcq",
+      "choices": [
+        "Le dossier client complet",
+        "Une photographie privée sans autorisation",
+        "Le brief fictif minimisé"
+      ],
+      "answer": 2,
+      "explain": "Des conditions de fournisseur peuvent évoluer. Une revue juridique dépend du cas et du territoire."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La source est indiquée comme « Internet ». »",
+      "answer_text": "Le lien, l’auteur et les conditions se sont perdus. Identifiez la page et l’autorisation exactes ou suspendez l’usage."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un contrat autorise la diffusion du son mais reste muet sur l’envoi au fournisseur. Quelle décision inscrire ?",
+      "answer_text": "Suspendre l’envoi et vérifier l’autorisation applicable ou remplacer le son."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles pièces relient un crédit à un média ?",
+      "answer_text": "Un identifiant, la source exacte, la preuve d’autorisation et le libellé de crédit retenu."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment garder la silhouette utile sans partager le portrait ?",
+      "answer_text": "Remplacer le portrait par une silhouette fictive qui conserve uniquement les besoins de posture et de cadrage."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Inventaire » ?",
+      "answer_text": "Trois lignes avec une décision, une preuve et un responsable de suivi."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Minimisation » ?",
+      "answer_text": "Le brief reste utile et aucun identifiant personnel du dossier n’apparaît."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Décision » ?",
+      "answer_text": "La source au contrat introuvable est suspendue, avec un remplacement documenté."
+    }
+  ]
+}

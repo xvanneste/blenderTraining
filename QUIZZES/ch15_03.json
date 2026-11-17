@@ -1,0 +1,95 @@
+{
+  "chapter": "CH15.03",
+  "title": "Direction artistique",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Pourquoi contrôler en niveaux de gris ?",
+      "type": "mcq",
+      "choices": [
+        "Pour vérifier la hiérarchie des valeurs",
+        "Pour convertir le projet en noir et blanc",
+        "Pour réduire le nombre de calques"
+      ],
+      "answer": 0,
+      "explain": "Une contrainte visuelle produit une cohérence observable entre les plans."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quelle couleur traduit le signal ?",
+      "type": "mcq",
+      "choices": [
+        "Le vert par défaut",
+        "L’ocre dans la bible de cet exercice",
+        "La couleur de fond du logiciel"
+      ],
+      "answer": 1,
+      "explain": "La couleur signale un changement narratif. Les valeurs doivent rester lisibles en noir et blanc."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Qu’évaluer à petite taille ?",
+      "type": "mcq",
+      "choices": [
+        "Le détail des coutures uniquement",
+        "Le code de transport",
+        "La silhouette et le point focal"
+      ],
+      "answer": 2,
+      "explain": "Le contrôle des valeurs détermine où se porte l’œil, y compris sous AgX."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Tous les éléments deviennent ocre dans le dernier plan. »",
+      "answer_text": "La lumière d’accent inonde le décor. Resserrez le faisceau ou réduisez sa portée et contrôlez la silhouette."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le signal et le visage se confondent en gris. Que corriger ?",
+      "answer_text": "Séparer leurs valeurs et isoler l’accent sur la balise. Vérifier en miniature avant de valider."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi réserver une couleur à une information ?",
+      "answer_text": "Sa rareté crée un repère narratif. Ici l’ocre devient l’état actif de la balise."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel test met en cause la bible plutôt qu’un seul plan ?",
+      "answer_text": "Disposer les trois plans côte à côte et chercher une règle de contraste ou de palette qui échoue plusieurs fois."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Règles visuelles » ?",
+      "answer_text": "Trois échantillons avec leur rôle et une forme interdite, motivée par la lecture."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Color script » ?",
+      "answer_text": "Trois vignettes colorées et leurs versions en niveaux de gris."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Test Blender » ?",
+      "answer_text": "Le visage ou la main reste identifiable et le signal domine seulement au plan final."
+    }
+  ]
+}

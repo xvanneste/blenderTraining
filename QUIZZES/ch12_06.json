@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.06",
+  "title": "Export et livraison",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un conteneur ?",
+      "choices": [
+        "Un fichier qui range des pistes vidéo et audio (MP4, MKV…)",
+        "Un codec",
+        "Une résolution",
+        "Un plugin"
+      ],
+      "answer": 0,
+      "explain": "Ici MPEG-4 (.mp4), marque `isom`."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que désigne le code `avc1` ?",
+      "choices": [
+        "Une piste vidéo H.264",
+        "Une piste audio AAC",
+        "Un conteneur",
+        "Un sous-titre"
+      ],
+      "answer": 0,
+      "explain": "MPEG-4 Part 2 donne `mp4v` : refusé."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que désigne le code `mp4a` ?",
+      "choices": [
+        "Une piste audio AAC",
+        "Une piste vidéo",
+        "Un sous-titre",
+        "Une couleur"
+      ],
+      "answer": 0,
+      "explain": "Sans audio : aucune piste « soun »."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un export sans audio est-il refusé ?",
+      "answer_text": "Le master doit contenir le son : no_audio donne un fichier de 11,7 Ko sans piste audio."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où règle-t-on le codec audio dans Blender ?",
+      "answer_text": "Output Properties > Output > Encoding > Audio Codec (propriété `ffmpeg.audio_codec`) : relu par l'API ; panneau non regardé."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi la durée vaut-elle 1,6 s à 30 i/s ?",
+      "choices": [
+        "48 images ÷ 30 i/s = 1,6 s",
+        "Le son est plus court",
+        "Le codec raccourcit",
+        "Par hasard"
+      ],
+      "answer": 0,
+      "explain": "À 24 i/s : 2,0 s."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur lit-il le fichier sans ffprobe ?",
+      "choices": [
+        "Il parcourt les boîtes MP4 (ftyp, mvhd, trak/stsd) avec un analyseur",
+        "Il le joue",
+        "Il lit le nom",
+        "Il le télécharge"
+      ],
+      "answer": 0,
+      "explain": "SCRIPTS/mp4probe.py : conteneur, codecs, largeur × hauteur, durée."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quels outils complémentaires cite le programme et lesquels ai-je testés ?",
+      "answer_text": "DaVinci Resolve, Audacity/Reaper, FFmpeg en ligne de commande, OpenTimelineIO : aucun n'est installé ni testé ici ; seul l'export FFmpeg intégré à Blender est mesuré."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que manque-t-il à ce contrôle de livraison ?",
+      "answer_text": "Le loudness (LUFS), les métadonnées, la compatibilité réelle des lecteurs, le débit : le poids (≤ 400 Ko) n'en est qu'un indice."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cet analyseur MP4 ?",
+      "answer_text": "Il gère les fichiers produits par Blender 5.3 (boîtes simples) ; pas les MP4 fragmentés ni toutes les variantes ; la lecture de la durée suit le conteneur, pas le contenu."
+    }
+  ]
+}

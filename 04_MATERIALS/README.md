@@ -20,19 +20,19 @@
 
 | Chapitre | Statut |
 |---|---|
-| CH04.01 UV Unwrapping avancé | ⬜ Non commencé |
-| CH04.02 Packing et UDIM | ⬜ Non commencé |
-| CH04.03 PBR et Principled BSDF | ⬜ Non commencé |
-| CH04.04 Shader Editor | ⬜ Non commencé |
-| CH04.05 Textures procédurales | ⬜ Non commencé |
-| CH04.06 Texture Painting | ⬜ Non commencé |
-| CH04.07 Baking | ⬜ Non commencé |
-| CH04.08 Relief | ⬜ Non commencé |
-| CH04.09 Matériaux types | ⬜ Non commencé |
-| CH04.10 Matériaux de personnages | ⬜ Non commencé |
-| CH04.11 Gestion des couleurs | ⬜ Non commencé |
+| [CH04.01 UV Unwrapping avancé](CH04_01_UV_UNWRAP/README.md) | ✅ Terminé et vérifié |
+| [CH04.02 Packing et UDIM](CH04_02_PACKING_UDIM/README.md) | ✅ Terminé et vérifié |
+| [CH04.03 PBR et Principled BSDF](CH04_03_PBR_PRINCIPLED/README.md) | ✅ Terminé et vérifié |
+| [CH04.04 Shader Editor](CH04_04_SHADER_EDITOR/README.md) | ✅ Terminé et vérifié |
+| [CH04.05 Textures procédurales](CH04_05_PROCEDURAL_TEXTURES/README.md) | ✅ Terminé et vérifié |
+| [CH04.06 Texture Painting](CH04_06_TEXTURE_PAINTING/README.md) | ✅ Terminé et vérifié |
+| [CH04.07 Baking](CH04_07_BAKING/README.md) | ✅ Terminé et vérifié |
+| [CH04.08 Relief](CH04_08_RELIEF/README.md) | ✅ Terminé et vérifié |
+| [CH04.09 Matériaux types](CH04_09_TYPICAL_MATERIALS/README.md) | ✅ Terminé et vérifié |
+| [CH04.10 Matériaux de personnages](CH04_10_CHARACTER_MATERIALS/README.md) | ✅ Terminé et vérifié |
+| [CH04.11 Gestion des couleurs](CH04_11_COLOR_MANAGEMENT/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
-Chaque chapitre aura son sous-dossier `CH04_MM_NOM/` conforme à
+Chaque chapitre a son sous-dossier `CH04_MM_NOM/` conforme à
 [TEMPLATES/LESSON_TEMPLATE.md](../TEMPLATES/LESSON_TEMPLATE.md).
 Programme complet : [CURRICULUM.md](../CURRICULUM.md) · Suivi : [PROGRESS.md](../PROGRESS.md)

@@ -9,7 +9,7 @@ build_ch01_11_files.py — La maison en couleurs (CH01.11 : matériaux simples).
       MAT_Wall (blanc cassé), MAT_Roof (tuile rouge, rugueux) sur les 2 pans du toit,
       MAT_Door (bois brun) sur la face de porte, MAT_Metal (métal, peu rugueux) sur la
       gouttière, MAT_Lamp_Glow (émissif jaune) sur la lanterne.
-Usage : blender -b --factory-startup --python build_ch01_11_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_11_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

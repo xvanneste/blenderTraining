@@ -1,0 +1,69 @@
+{
+  "code": "CH04.10",
+  "title": "Matériaux de personnages",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Peau, yeux, cheveux et tissus sont les matériaux qui font ou défont un personnage. Ce chapitre les construit sur quatre sphères d'essai : peau avec sous-surface et pores, œil avec iris et cornée humide, cheveux avec le Principled Hair BSDF, tissu avec Sheen et trame. Le correcteur vérifie les valeurs qui font la crédibilité de chacun : rayon de sous-surface rouge > vert > bleu, vernis net sur l'œil, nœud de cheveux dédié, liseré de tissu.",
+  "prereqs": [
+    "CH04.03–05 (Principled, nœuds, textures)",
+    "CH04.08 recommandé (bump)."
+  ],
+  "objectives": [
+    "Régler une peau avec sous-surface et micro-relief.",
+    "Construire un œil (sclère, iris, cornée).",
+    "Utiliser le Principled Hair BSDF.",
+    "Rendre un tissu avec Sheen et une trame."
+  ],
+  "competences": [
+    [
+      "C04.10.a",
+      "Peau, yeux, cheveux et tissus crédibles",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Peau et yeux",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Cheveux et tissus",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_10_character_starter.blend",
+      "Quatre sphères, matériaux par défaut"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_10_character_solution.blend",
+      "Peau, œil, cheveux, tissu (Cycles)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_10_character_reference.png",
+      "Deux vues Cycles"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (peau opaque, rayon uniforme, œil sec, cheveux en Principled, tissu sans Sheen)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_10.py",
+      "Correcteur (character)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_10_character_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_10.py\" -- --exercise character --render",
+  "deliverables": [
+    "Quatre matériaux de personnage validés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.11 — Gestion des couleurs](../CH04_11_COLOR_MANAGEMENT/README.md)"
+}

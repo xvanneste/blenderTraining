@@ -1,0 +1,68 @@
+{
+  "code": "CH10.02",
+  "title": "Cycles en profondeur",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Cycles est le moteur de rendu physique de Blender : il suit des rayons de lumière qui rebondissent dans la scène. Trois réglages gouvernent sa qualité et son coût : le nombre de rebonds (la lumière indirecte, par exemple le plafond d'une pièce éclairé par les murs), le nombre d'échantillons (moins de bruit) et l'échantillonnage adaptatif (dépenser plus d'échantillons là où l'image est bruitée). Le correcteur rend une pièce blanche deux fois avec deux graines aléatoires et mesure la lumière du plafond et le bruit.",
+  "prereqs": [
+    "CH09.01 (lumière), CH10.01 (EEVEE)."
+  ],
+  "objectives": [
+    "Régler les rebonds diffus pour la lumière indirecte.",
+    "Activer l'échantillonnage adaptatif et choisir un seuil.",
+    "Mesurer le bruit par deux rendus.",
+    "Choisir un nombre d'échantillons maximal raisonnable."
+  ],
+  "competences": [
+    [
+      "C10.02.a",
+      "Régler Cycles",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Rebonds et lumière indirecte",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Échantillons et bruit",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_02_cycles_starter.blend",
+      "Diffuse 0 rebond (plafond noir : 0,01), échantillonnage adaptatif désactivé, 4 échantillons ; 18/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_02_cycles_solution.blend",
+      "Diffuse 4, adaptatif activé, seuil 0,02, 64 échantillons : plafond à 0,33, bruit 0,0097 ; 36/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_02_cycles_reference.png",
+      "Départ (gauche : plafond noir, piqué de lucioles) et solution (droite : plafond éclairé par les murs)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans rebonds diffus, trop peu d'échantillons, sans adaptatif, seuil trop large, trop d'échantillons)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_02.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_02_cycles_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_02.py\" -- --exercise cycles",
+  "deliverables": [
+    "Réglages Cycles justifiés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.03 — Bruit et débruitage](../CH10_03_DENOISING/README.md)"
+}

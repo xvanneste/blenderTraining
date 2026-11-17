@@ -1,0 +1,105 @@
+{
+  "chapter": "CH03.10",
+  "title": "Préparation au rigging",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi appliquer l'échelle et la rotation (Ctrl+A) avant le rig ?",
+      "choices": [
+        "Pour alléger le fichier",
+        "Un rig suppose des transformations neutres (échelle 1, rotation 0) : sinon les os et les déformations sont faussés",
+        "Pour changer le nom",
+        "Pour activer la symétrie"
+      ],
+      "answer": 1,
+      "explain": "Mesuré : le starter avait une échelle de 0,01 et une rotation de 4° non appliquées."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où placer l'origine d'un personnage ?",
+      "answer_text": "Au sol, entre les pieds, en (0, 0, 0) : le personnage se place, se tourne et s'échelonne naturellement, et l'os racine du rig s'y accroche."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle convention de nommage prend ce chapitre ?",
+      "answer_text": "Objet CHR_<Nom>_Body (ex. CHR_Hero_Body), données ME_CHR_<Nom>_Body, collection CHR_<Nom> ; aucun suffixe .001, pas d'espace."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle taille de personnage adulte en mètres ?",
+      "choices": [
+        "≈ 0,18 m",
+        "≈ 1,76 m (1,55–1,95 pour le correcteur)",
+        "≈ 17,6 m",
+        "≈ 176 m"
+      ],
+      "answer": 1,
+      "explain": "Un maillage en centimètres avec une échelle 0,01 donne la bonne taille à l'écran mais des données fausses."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Vers quel axe le personnage regarde-t-il ?",
+      "answer_text": "Vers −Y (convention de ce chapitre, comme dans tout le cursus), Z vers le haut ; les orteils dépassent vers −Y."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi une pose en A ou en T plutôt que les bras le long du corps ?",
+      "choices": [
+        "Pour la beauté",
+        "Les épaules et les aisselles se déforment mieux ; on peut peindre les poids et poser les os",
+        "Pour économiser des polygones",
+        "Par habitude"
+      ],
+      "answer": 1,
+      "explain": "Mesuré : A à 38°, T à 90° ; bras le long du corps (4°) refusés."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Différence entre pose A et pose T ?",
+      "answer_text": "A : bras à ≈ 30–55° de la verticale, plus proche d'une pose naturelle, moins de déformation d'épaule. T : bras à 90°, plus simple à symétriser et à peindre. Les deux sont acceptées."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la symétrie X est-elle vérifiée à 5 mm ?",
+      "answer_text": "Un rig symétrique (Mirror des os, poids en miroir) exige un maillage symétrique ; un bras décalé de 10 cm descend la symétrie à 79 % (mesuré)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle commande fixe l'origine sur le curseur 3D ?",
+      "choices": [
+        "Object > Set Origin > Origin to 3D Cursor",
+        "Object > Join",
+        "Mesh > Merge",
+        "Object > Parent"
+      ],
+      "answer": 0,
+      "explain": "Placez d'abord le curseur 3D à l'origine du monde (Shift+C) ou sur le centre des pieds."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Deux contrôles de propreté d'un maillage avant rig ?",
+      "answer_text": "Sommets isolés (Select All by Trait > Loose Geometry) et doublons (Mesh > Clean Up > Merge by Distance) ; aussi volume fermé et normales vers l'extérieur."
+    }
+  ]
+}

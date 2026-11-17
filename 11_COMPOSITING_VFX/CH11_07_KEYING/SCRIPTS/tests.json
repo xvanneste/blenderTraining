@@ -1,0 +1,36 @@
+{
+  "build": "build_ch11_07_files.py",
+  "validator": "validate_ch11_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_07_keying_solution.blend",
+      "exercise": "keying",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_07_keying_starter.blend",
+      "exercise": "keying",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_07_keying_no_key.blend",
+      "exercise": "keying",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_07_keying_wrong_key_color.blend",
+      "exercise": "keying",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_07_keying_no_spill.blend",
+      "exercise": "keying",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_07_keying_no_background.blend",
+      "exercise": "keying",
+      "expect": false
+    }
+  ]
+}

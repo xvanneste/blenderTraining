@@ -8,7 +8,7 @@ build_ch03_04_files.py — « Le buste stylisé » (CH03.04, sculpture stylisée
       Buste « grosse tête » : blocage en ellipsoïdes qui se chevauchent (poitrine, cou, tête, crâne, nez,
       arcades, menton, oreilles, mèche) → Join → Voxel Remesh (5 mm) → orbites creusées par Boolean
       Difference → Voxel Remesh → socle plat (Bisect + Fill) → SCULPT_Bust, un seul volume fermé.
-Usage : blender -b --factory-startup --python build_ch03_04_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch03_04_files.py
 Testé avec : Blender 5.3.0.
 """
 import math
@@ -68,8 +68,7 @@ def studio_views():
 def design_board():
     ob, _cam, drw = None, None, None
     ob = G.new_object("GP_Design", L.collection("DESIGN"))
-    ob.location = (-1.2, 0.5, 0)
-    ob.rotation_euler.x = math.radians(90)
+    ob.location = (-1.2, 0.5, 0)       # bcma_gp écrit déjà en (x, 0, z) : pas de rotation (sinon les silhouettes sont couchées au sol)
     ink = G.material(ob, "MAT_GP_Ink", (0.05, 0.05, 0.08))
     d = G.layer(ob, "DESIGN")
     ob.data.layers["DESIGN"].use_lights = False
@@ -157,7 +156,10 @@ def main():
     out = os.path.join(CH, "COMPLETED_EXAMPLES")
     build(False)
     L.save(os.path.join(CH, "STARTER_FILES", "ch03_04_bust_starter.blend"))
-    sc = build(True)
+    if os.path.exists(os.path.join(out, ".sculpted_with_mcp")):
+        print("[BCMA] solution avec plans sculptés à la brosse (Blender 5.2 via MCP) conservée : non régénérée")
+        return
+    sc = build(True)          # repli : blocage seul, sans sculpt des plans
     L.save(os.path.join(out, "ch03_04_bust_solution.blend"))
     for o in bpy.data.objects:
         if o.name == "GP_Design":

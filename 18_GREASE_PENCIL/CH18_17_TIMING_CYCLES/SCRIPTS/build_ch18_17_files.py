@@ -13,7 +13,7 @@ build_ch18_17_files.py — « Timing, exposition, cycle de marche 2D » (CH18.17
       7 et 19, hauts 9 et 21 ; pieds posés au sol et glissant vers l'arrière, jambe libre en arc,
       bras en opposition, rebond du bassin ; onion « Show Start Frame » activé.
 Génération : trajectoires des pieds + rebond du bassin + cinématique inverse à 2 segments.
-Usage : blender -b --factory-startup --python build_ch18_17_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_17_files.py
 Testé avec : Blender 5.3.0.
 """
 import json

@@ -1,0 +1,69 @@
+{
+  "code": "CH07.01",
+  "title": "Les 12 principes",
+  "phase_title": "7 — Animation 3D",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Les douze principes de l'animation (formulés par les animateurs des studios Disney) sont la grammaire de tout mouvement crédible : squash & stretch, anticipation, mise en scène, pose à pose, chevauchement, ralentis, arcs, action secondaire, timing, exagération, volume du dessin, attrait. Ce chapitre les présente tous, puis en met deux à l'épreuve sur une balle qui saute : l'ÉCRASEMENT-ÉTIREMENT (à volume constant) et l'ANTICIPATION. Le correcteur lit l'animation image par image : contact au sol, volume, anticipation, étirement, sommet neutre, repos final.",
+  "prereqs": [
+    "CH01 (interface, objets), notions de keyframes (CH07.02 les approfondit)."
+  ],
+  "objectives": [
+    "Nommer et reconnaître les 12 principes.",
+    "Écraser et étirer à volume constant.",
+    "Placer une anticipation avant un mouvement.",
+    "Choisir le pivot pour qu'un volume se déforme depuis le sol."
+  ],
+  "competences": [
+    [
+      "C07.01.a",
+      "Identifier les principes",
+      "Quiz + exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Les douze principes",
+      "3 h"
+    ],
+    [
+      "L2",
+      "La balle qui saute : squash, stretch, anticipation",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_01_principles_starter.blend",
+      "Balle qui saute (position animée), sans déformation"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_01_principles_solution.blend",
+      "Balle avec anticipation, étirement et écrasement"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_01_principles_reference.png",
+      "Neuf images du saut en silhouette (orange : écrasée, vert : étirée)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans déformation, sans anticipation, sans étirement, volume cassé, pivot au centre, sans repos final)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_01.py",
+      "Correcteur (principles)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_01_principles_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_01.py\" -- --exercise principles",
+  "deliverables": [
+    "Saut de balle validé.",
+    "Fiche des 12 principes (une phrase chacun).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.02 — Keyframes et timeline](../CH07_02_KEYFRAMES/README.md)"
+}

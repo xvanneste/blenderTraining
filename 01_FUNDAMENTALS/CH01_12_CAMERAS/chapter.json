@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch01_12_portrait_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch01_12.py", "Correcteur (projection, focale, DOF)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_12_portrait_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_12.py\" --python-exit-code 1 -- --exercise portrait --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_12_portrait_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_12.py\" -- --exercise portrait --render",
   "deliverables": ["ch01_12_portrait_<prenom>_v001.blend validé.", "Mini-projet : trois plans, trois émotions."],
   "next": "[CH01.13 — Éclairage élémentaire](../CH01_13_LIGHTING_BASICS/README.md)"
 }

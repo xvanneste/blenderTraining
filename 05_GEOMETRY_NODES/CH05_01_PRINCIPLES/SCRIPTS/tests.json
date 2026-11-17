@@ -1,0 +1,47 @@
+{
+  "build": "build_ch05_01_files.py",
+  "validator": "validate_ch05_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_01_principles_solution.blend",
+      "exercise": "principles",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_01_principles_starter.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_flat.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_no_smooth.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_no_material.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_coarse.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_huge_amp.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_01_principles_orphan.blend",
+      "exercise": "principles",
+      "expect": false
+    }
+  ]
+}

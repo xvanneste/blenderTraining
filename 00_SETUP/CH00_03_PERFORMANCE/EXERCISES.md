@@ -8,10 +8,10 @@ distincts, RAM, VRAM. Écrivez une phrase : « la principale source de coût est
 
 ## Exercice 2 — Moyen : l'effet de chaque levier ⏱ 20 min
 Sur une copie du starter, appliquez les leviers **un par un** et notez après chacun
-l'estimation de faces et le temps de rendu (GPU, 50 %, 32 échantillons) :
+l’estimation de faces. Si vous rendez les variantes, utilisez le même périphérique, 50 % et 32 échantillons :
 1. Données partagées seulement. 2. + Subdivision 1/2. 3. + Simplify.
 Présentez un tableau et expliquez pourquoi le levier 1 ne change pas l'estimation de
-faces mais réduit la mémoire et la taille du fichier.
+faces. Après réouverture de chaque version, mesurez sa taille de fichier et distinguez cette mesure de la mémoire au rendu.
 
 ## Exercice 3 — Difficile : optimiser sans procédure ⏱ 15 min
 Rendez `ch00_03_heavy_scene_starter.blend` conforme au budget : **< 2 000 000 faces
@@ -20,7 +20,7 @@ conservés**, galets toujours **lisses**. Enregistrez `ch00_03_heavy_scene_<pren
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_03_heavy_scene_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch00_03.py" --python-exit-code 1 -- --exercise optimize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_03.py" -- --exercise optimize --render
 ```
 Barème (12 pts) : 200 galets 2 · maillages partagés 3 · budget de faces 3 · lisses 2 ·
 qualité conservée 1 · rendu 1.

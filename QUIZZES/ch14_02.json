@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.02",
+  "title": "IA en préproduction",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel critère départage deux variantes ?",
+      "type": "mcq",
+      "choices": [
+        "Nombre d’adjectifs",
+        "Lisibilité du choix et coût en plans ou assets",
+        "Longueur des prompts"
+      ],
+      "answer": 1,
+      "explain": "Les contraintes de durée et de moyens permettent de comparer les propositions."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel livrable relie l’action au temps ?",
+      "type": "mcq",
+      "choices": [
+        "Le nom du modèle",
+        "La palette seule",
+        "La liste des plans avec durées"
+      ],
+      "answer": 2,
+      "explain": "La préproduction doit pouvoir transformer une intention textuelle en information filmable."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Combien d’images pour 15 s à 24 i/s ?",
+      "type": "mcq",
+      "choices": [
+        "360",
+        "240",
+        "384"
+      ],
+      "answer": 0,
+      "explain": "Chaque plan doit apporter une information nouvelle. À 24 i/s, ces trois durées correspondent à 360 images."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le pitch est séduisant mais la planche ne montre aucune décision. »",
+      "answer_text": "Le choix reste dans les commentaires du modèle. Redessinez une posture ou une action dont on voit la conséquence."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La variante efficace coûte un lieu et un personnage supplémentaires. Que préserver dans la réécriture ?",
+      "answer_text": "La situation, le choix visible et sa conséquence, en remplaçant ces actifs par un geste dans le décor existant."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel panneau doit montrer le choix du protagoniste ?",
+      "answer_text": "Le plan 020 cadre l’hésitation puis l’appui avant la confirmation du dernier plan."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment vérifier que le carton est dispensable ?",
+      "answer_text": "Présenter planche ou animatique sans texte à quelqu’un et noter si le choix se comprend."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Générer des options » ?",
+      "answer_text": "Trois versions indiquent situation, décision et conséquence."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Trier et réécrire » ?",
+      "answer_text": "La version retenue tient en un décor, un personnage et un objet."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Faire le découpage » ?",
+      "answer_text": "Une planche de trois cadres et une liste de plans de même ordre."
+    }
+  ]
+}

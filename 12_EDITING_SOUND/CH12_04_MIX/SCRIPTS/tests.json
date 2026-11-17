@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_04_files.py",
+  "validator": "validate_ch12_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_04_mix_solution.blend",
+      "exercise": "mix",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_04_mix_starter.blend",
+      "exercise": "mix",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_04_mix_no_duck.blend",
+      "exercise": "mix",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_04_mix_loud_music.blend",
+      "exercise": "mix",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_04_mix_no_pan.blend",
+      "exercise": "mix",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_04_mix_hot_mix.blend",
+      "exercise": "mix",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_04_mix_quiet_mix.blend",
+      "exercise": "mix",
+      "expect": false
+    }
+  ]
+}

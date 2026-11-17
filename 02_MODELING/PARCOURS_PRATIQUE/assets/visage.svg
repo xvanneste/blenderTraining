@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img"><title>Topologie du visage · boucles et zones de transition</title><rect width="900" height="420" fill="#f6f4ef"/><g font-family="Segoe UI, sans-serif" fill="#1d1d1f"><text x="36" y="52" font-size="26" font-weight="700">Topologie du visage · boucles et zones de transition</text><text x="36" y="391" font-size="16">Le flux autour des yeux et de la bouche préserve les ouvertures. Observer la cage en trois-quarts ensuite.</text></g><path d="M437 78 Q292 88 300 224 Q312 306 435 347 Q557 307 571 224 Q578 87 437 78Z" fill="#fedfc8" stroke="#b87961" stroke-width="3"/>
++<g fill="none" stroke="#21586b" stroke-width="3">
++<ellipse cx="374" cy="171" rx="42" ry="23"/><ellipse cx="374" cy="171" rx="58" ry="36"/>
++<ellipse cx="498" cy="171" rx="42" ry="23"/><ellipse cx="498" cy="171" rx="58" ry="36"/>
++<ellipse cx="437" cy="267" rx="42" ry="15"/><ellipse cx="437" cy="267" rx="61" ry="30"/>
++<path d="M429 149 410 220 437 234 463 220 447 149 M363 205 384 239 M512 205 491 239 M302 224 375 254 M569 224 499 254"/>
++</g><path d="M182 151 310 159" fill="none" stroke="#b94010" stroke-width="2"/><text x="64" y="141" fill="#1d1d1f" font-family="Segoe UI, sans-serif" font-size="19" font-weight="650">Orbite</text><path d="M516 279 652 279" fill="none" stroke="#b94010" stroke-width="2"/><text x="659" y="284" fill="#1d1d1f" font-family="Segoe UI, sans-serif" font-size="19" font-weight="650">Boucle labiale</text></svg>

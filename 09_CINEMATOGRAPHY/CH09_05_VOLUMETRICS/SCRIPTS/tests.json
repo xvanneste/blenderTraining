@@ -1,0 +1,36 @@
+{
+  "build": "build_ch09_05_files.py",
+  "validator": "validate_ch09_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_05_volumetrics_solution.blend",
+      "exercise": "volumetrics",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_05_volumetrics_starter.blend",
+      "exercise": "volumetrics",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_05_volumetrics_too_thin.blend",
+      "exercise": "volumetrics",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_05_volumetrics_too_dense.blend",
+      "exercise": "volumetrics",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_05_volumetrics_wide_spot.blend",
+      "exercise": "volumetrics",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_05_volumetrics_no_light.blend",
+      "exercise": "volumetrics",
+      "expect": false
+    }
+  ]
+}

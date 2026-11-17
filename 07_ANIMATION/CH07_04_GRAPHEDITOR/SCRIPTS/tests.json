@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_04_files.py",
+  "validator": "validate_ch07_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_04_graph_solution.blend",
+      "exercise": "graph",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_04_graph_starter.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_linear.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_constant.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_no_cycles.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_no_noise.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_noise_too_strong.blend",
+      "exercise": "graph",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_04_graph_wrong_keys.blend",
+      "exercise": "graph",
+      "expect": false
+    }
+  ]
+}

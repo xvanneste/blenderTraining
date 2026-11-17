@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.07",
+  "title": "Opérateurs et interface",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle méthode contrôle l’accès à la commande ?",
+      "type": "mcq",
+      "choices": [
+        "poll",
+        "draw",
+        "report"
+      ],
+      "answer": 0,
+      "explain": "poll borne le contexte d’usage. execute réalise la modification et RENVOIE un statut."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel ordre permet de retirer le panneau puis l’opérateur ?",
+      "type": "mcq",
+      "choices": [
+        "L’ordre des noms alphabétiques",
+        "L’ordre inverse de register",
+        "L’ordre des objets dans l’Outliner"
+      ],
+      "answer": 1,
+      "explain": "L’opérateur utilise le curseur de la scène et lie le résultat à la collection active."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Où placer l’écriture de la scène ?",
+      "type": "mcq",
+      "choices": [
+        "Dans draw",
+        "Dans le libellé du bouton",
+        "Dans execute"
+      ],
+      "answer": 2,
+      "explain": "Le drapeau UNDO rend l’action annulable. poll évite la création dans un contexte non prévu."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Une deuxième exécution signale que la classe est déjà enregistrée. »",
+      "answer_text": "Le script a appelé register deux fois. Appelez unregister sur les classes existantes ou recommencez dans une session propre."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel état de scène démontre que le bouton agit au bon endroit ?",
+      "answer_text": "Le nouvel Empty a les coordonnées du curseur et figure dans la collection active."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment vérifier un panneau après sa désactivation ?",
+      "answer_text": "La catégorie ou le panneau BCMA disparaît et l’opérateur ne reste pas enregistré."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu’attendez-vous de Ctrl+Z après la création ?",
+      "answer_text": "La création de l’Empty est annulée en une étape et la scène retrouve son état précédent."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Définir la commande » ?",
+      "answer_text": "Dans la vue 3D, N affiche la catégorie BCMA."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Tester le panneau » ?",
+      "answer_text": "Un repère apparaît au curseur et dans la collection active."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Annuler et changer de mode » ?",
+      "answer_text": "Le repère disparaît avec l’annulation et l’action est indisponible en mode Édition."
+    }
+  ]
+}

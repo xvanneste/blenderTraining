@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch01_03_puzzle_solution.blend", "Pièces rangées"],
     ["SCRIPTS/validate_ch01_03.py", "Correcteur (comparaison géométrique au cm)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_03_puzzle_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_03.py\" --python-exit-code 1 -- --exercise puzzle",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_03_puzzle_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_03.py\" -- --exercise puzzle",
   "deliverables": ["ch01_03_puzzle_<prenom>_v001.blend validé.", "Mini-projet : nature morte de primitives rendue."],
   "next": "[CH01.04 — Objets et meshes](../CH01_04_OBJECTS_DATA/README.md)"
 }

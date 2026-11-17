@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.06",
+  "title": "Arcs, overlap, follow-through",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que l'overlap ?",
+      "choices": [
+        "Chaque partie atteint son extrême un peu après la précédente",
+        "Deux objets qui se chevauchent",
+        "Une transition de caméra",
+        "Un modificateur"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : maxima aux images 13, 15, 17, 19 (retards de 2 images)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le follow-through ?",
+      "choices": [
+        "La queue continue quand le corps s'arrête",
+        "Le suivi de la caméra",
+        "Un type de contrainte",
+        "Une interpolation"
+      ],
+      "answer": 0,
+      "explain": "À l'image 26 la base est arrêtée, tail_3 est encore à 7,2°."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle forme prend la trajectoire de la pointe ?",
+      "choices": [
+        "Un arc",
+        "Une droite",
+        "Un carré",
+        "Un point"
+      ],
+      "answer": 0,
+      "explain": "La pointe s'écarte de 51 cm de la droite entre ses positions : trajectoire courbe."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les amplitudes diminuent-elles le long de la chaîne dans l'exercice ?",
+      "answer_text": "18°, 14°, 10° : une pointe plus légère et plus loin se déplace moins par rapport à son parent ; c'est un choix de style, pas une loi."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un retard de 2 images ?",
+      "answer_text": "Entre 1 et 4 images le retard se lit comme une cascade ; au-delà (6 images, contre-exemple) la queue paraît détachée du corps."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que montre un dépassement (overshoot) ?",
+      "choices": [
+        "La pointe passe au-delà du repos avant de s'y stabiliser",
+        "Une erreur de clé",
+        "Un arc",
+        "Un cycle"
+      ],
+      "answer": 0,
+      "explain": "tail_3 descend à −6° (image 35) avant de revenir à 0 (image 44)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quand l'animation est-elle terminée ?",
+      "choices": [
+        "Quand tout est au repos (≤ 1°)",
+        "À la dernière clé de la base",
+        "À l'image 25",
+        "Jamais"
+      ],
+      "answer": 0,
+      "explain": "Le contre-exemple « no_settle » finit à 5° : la queue ne s'arrête pas."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « no_followthrough » ?",
+      "answer_text": "La queue revient au repos en même temps que la base : à l'image 26, tail_3 est à −1,6° au lieu de 7,2° : l'antenne paraît rigide."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi animer les bones enfants avec des clés propres plutôt que copier celles du parent ?",
+      "answer_text": "Une copie donnerait les mêmes images clés (aucun retard) : l'overlap vient du décalage des extrêmes."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Où utiliser overlap et follow-through ?",
+      "answer_text": "Queues, oreilles, cheveux, vêtements, antennes, bras mous ; les simulations (CH08) les produisent automatiquement mais ils se contrôlent aussi à la main."
+    }
+  ]
+}

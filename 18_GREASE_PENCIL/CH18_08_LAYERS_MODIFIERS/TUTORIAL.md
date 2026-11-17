@@ -38,7 +38,11 @@ Enregistrez `ch18_08_layers_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_08_layers_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_08.py" --python-exit-code 1 -- --exercise layers --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_08.py" -- --exercise layers --render
 ```
 Références : `COMPLETED_EXAMPLES/ch18_08_layers_reference.png` (image 60) et
 `ch18_08_layers_build_frame20.png` (image 20 : le Build est en cours).
+
+## Variante de contrôle
+
+Placez un trait témoin sur le calque auquel s’applique le modificateur et une copie ailleurs. Activez puis désactivez le filtre de calque. **Preuve** Le trait témoin et les traits exclus réagissent séparément et le masque se vérifie isolément.

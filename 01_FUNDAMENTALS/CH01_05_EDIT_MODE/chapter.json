@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch01_05_house_solution.blend", "Toit à deux pans et colline"],
     ["SCRIPTS/validate_ch01_05.py", "Correcteur (géométrie)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_05_house_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_05.py\" --python-exit-code 1 -- --exercise house",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_05_house_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_05.py\" -- --exercise house",
   "deliverables": ["ch01_05_house_<prenom>_v001.blend validé.", "Mini-projet : le hameau."],
   "next": "[CH01.06 — Transformations avancées](../CH01_06_TRANSFORMS_ADVANCED/README.md)"
 }

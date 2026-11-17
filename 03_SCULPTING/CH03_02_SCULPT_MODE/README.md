@@ -48,7 +48,7 @@ Premier sculpt : un visage simple sur une sphère dense. Le chapitre présente l
 | Fichier | Rôle |
 |---|---|
 | `STARTER_FILES/ch03_02_face_starter.blend` | Sphère dense, positions d'origine mémorisées |
-| `COMPLETED_EXAMPLES/ch03_02_face_solution.blend` | Visage simple (généré par script) |
+| `COMPLETED_EXAMPLES/ch03_02_face_solution.blend` | Visage simple (sculpté à la brosse, Blender 5.2 via MCP) |
 | `COMPLETED_EXAMPLES/ch03_02_face_reference.png` | Rendu de contrôle |
 | `SCRIPTS/validate_ch03_02.py` | Correcteur (face) |
 
@@ -57,7 +57,7 @@ Premier sculpt : un visage simple sur une sphère dense. Le chapitre présente l
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_02_face_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_02.py" --python-exit-code 1 -- --exercise face --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_02.py" -- --exercise face --render
 ```
 
 ## Livrables attendus

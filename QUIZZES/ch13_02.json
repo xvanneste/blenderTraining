@@ -1,0 +1,112 @@
+{
+  "chapter": "CH13.02",
+  "title": "L’API bpy",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle API retrouve B indépendamment de la sélection ?",
+      "type": "mcq",
+      "choices": [
+        "bpy.data",
+        "bpy.ops",
+        "bpy.context.object"
+      ],
+      "answer": 0,
+      "explain": "Le dictionnaire des objets permet un accès par nom."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "q": "Que renvoie objects.get pour un nom absent ?",
+      "type": "mcq",
+      "choices": [
+        "0",
+        "None",
+        "Un objet vide"
+      ],
+      "answer": 1,
+      "explain": "Vérifiez le résultat avant de lire ses attributs."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "q": "La position est-elle portée par l’objet ou par le maillage ?",
+      "type": "open",
+      "answer_text": "Par l’objet. Deux objets liés peuvent occuper des positions différentes."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "q": "Que fait b.data.copy() ?",
+      "type": "mcq",
+      "choices": [
+        "Copie le maillage",
+        "Copie la scène",
+        "Change la position"
+      ],
+      "answer": 0,
+      "explain": "Réaffectez la copie à b.data pour rendre B indépendant."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "q": "Deux maillages copiés peuvent-ils encore référencer le même matériau ?",
+      "type": "open",
+      "answer_text": "Oui. Les slots du maillage copié peuvent pointer vers le même datablock matériau."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "q": "Quel appel teste si un opérateur est disponible dans le contexte ?",
+      "type": "mcq",
+      "choices": [
+        "poll()",
+        "copy()",
+        "select_set()"
+      ],
+      "answer": 0,
+      "explain": "poll() répond avant l’exécution de l’opérateur."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "q": "Que renvoie un opérateur d’ajout réussi ?",
+      "type": "mcq",
+      "choices": [
+        "L’objet créé",
+        "Son nom",
+        "Un ensemble de statuts"
+      ],
+      "answer": 2,
+      "explain": "Un opérateur renvoie par exemple un ensemble contenant FINISHED."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "q": "Pourquoi récupérer la sphère immédiatement après l’ajout ?",
+      "type": "open",
+      "answer_text": "L’ajout la rend active. Une autre action peut ensuite faire changer l’objet actif."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "q": "Sélectionner un objet suffit-il toujours à le rendre actif ?",
+      "type": "mcq",
+      "choices": [
+        "Oui",
+        "Non"
+      ],
+      "answer": 1,
+      "explain": "Réglez explicitement view_layer.objects.active si votre opération l’exige."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "q": "Pourquoi lier le repère à COL_Props avant de le délier des autres collections ?",
+      "type": "open",
+      "answer_text": "Il reste ainsi accessible dans la scène au cours du déplacement."
+    }
+  ]
+}

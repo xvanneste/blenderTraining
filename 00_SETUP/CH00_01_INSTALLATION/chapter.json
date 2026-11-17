@@ -1,0 +1,29 @@
+{
+  "code": "CH00.01",
+  "title": "Installer, lancer et vérifier Blender",
+  "level": "débutant",
+  "phase_title": "0 — Préparation et installation",
+  "duration": "30 à 60 min pour la première séance, hors installation",
+  "prereqs": [
+    "Savoir copier un fichier et ouvrir un dossier. Aucune connaissance de Blender."
+  ],
+  "objectives": [
+    "Identifier Blender 5.3.",
+    "Rendre la mire en CPU et conserver le PNG et le .blend.",
+    "Comparer un réglage et diagnostiquer un rendu défectueux."
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch00_01_testcard_starter.blend",
+      "Mire à rendre"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch00_01_testcard_reference_render.png",
+      "Rendu de comparaison"
+    ]
+  ],
+  "pass_criteria": [
+    "Deux versions du fichier de travail et leurs PNG relus.",
+    "Approfondissement : comparer les réglages et diagnostiquer la mire cassée."
+  ]
+}

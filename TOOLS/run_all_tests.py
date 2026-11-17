@@ -18,12 +18,15 @@ Usage (Python système) :
 Écrit TOOLS/last_test_results.json. Code de retour 0 si tout passe.
 """
 import glob
+import hashlib
 import json
 import os
 import subprocess
 import sys
 import tempfile
 import time
+
+from academy_status import case_label, extra_label
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_BLENDER = r"C:\Program Files\Blender Foundation\Blender 5.3\blender.exe"
@@ -63,7 +66,10 @@ def main():
         sdir = os.path.dirname(spec_path)
         cdir = os.path.dirname(sdir)
         name = os.path.basename(cdir)
-        spec = json.load(open(spec_path, encoding="utf-8"))
+        with open(spec_path, "rb") as source:
+            spec_bytes = source.read()
+        spec = json.loads(spec_bytes)
+        fingerprint = hashlib.sha256(spec_bytes).hexdigest()
         print(f"\n=== {name} ===")
 
         def record(ok, label, out="", dt=0.0):
@@ -73,29 +79,33 @@ def main():
                 failures += 1
                 tail = "\n".join(out.strip().splitlines()[-15:])
                 print("      " + tail.replace("\n", "\n      "))
-            results.append({"chapter": name, "test": label, "ok": ok, "seconds": round(dt, 1)})
+            results.append({"chapter": name, "test": label, "ok": ok, "seconds": round(dt, 1),
+                            "spec_sha256": fingerprint})
 
         if spec.get("build") and not no_build:
-            code, out, dt = run_blender(blender, ["--python", os.path.join(sdir, spec["build"]),
-                                                  "--python-exit-code", "1"])
+            code, out, dt = run_blender(blender, ["--python-exit-code", "1",
+                                                  "--python", os.path.join(sdir, spec["build"])])
             record(code == 0, f"build {spec['build']}", out, dt)
         for case in spec.get("cases", []):
-            args = [os.path.join(cdir, case["file"]), "--python", os.path.join(sdir, spec["validator"]),
-                    "--python-exit-code", "1", "--", "--exercise", case["exercise"]]
+            args = [os.path.join(cdir, case["file"]), "--python-exit-code", "1",
+                    "--python", os.path.join(sdir, spec["validator"]), "--", "--exercise", case["exercise"]]
             if case.get("render"):
                 args.append("--render")
             code, out, dt = run_blender(blender, args)
-            ok = (code == 0) == case["expect"]
-            record(ok, f"{case['file']} [{case['exercise']}] attendu "
-                       f"{'VALIDÉ' if case['expect'] else 'REFUSÉ'}", out, dt)
+            expected_code = 0 if case["expect"] else 1
+            expected_verdict = "RÉSULTAT : VALIDÉ" if case["expect"] else "RÉSULTAT : À CORRIGER ("
+            verdict = next((line.strip() for line in reversed(out.splitlines())
+                            if line.strip().startswith("RÉSULTAT :")), "")
+            ok = code == expected_code and verdict.startswith(expected_verdict)
+            record(ok, case_label(case), out, dt)
         for ex in spec.get("extra", []):
             args = []
             if ex.get("file"):
                 args.append(os.path.join(cdir, ex["file"]))
-            args += ["--python", os.path.join(sdir, ex["script"]), "--python-exit-code", "1", "--"]
+            args += ["--python-exit-code", "1", "--python", os.path.join(sdir, ex["script"]), "--"]
             args += [a.replace("{tmp}", tmp) for a in ex.get("args", [])]
             code, out, dt = run_blender(blender, args)
-            record(code == 0, f"script {ex['script']}", out, dt)
+            record(code == 0, extra_label(ex), out, dt)
 
     # Fusion avec les résultats précédents : seuls les chapitres testés maintenant sont remplacés.
     res_path = os.path.join(ROOT, "TOOLS", "last_test_results.json")

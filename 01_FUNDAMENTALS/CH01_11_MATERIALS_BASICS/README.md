@@ -59,7 +59,7 @@ La forme dit ce qu'est un objet ; le matériau dit de quoi il est fait. Ce chapi
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_11_house_colors_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_11.py" --python-exit-code 1 -- --exercise colors --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_11.py" -- --exercise colors --render
 ```
 
 ## Livrables attendus

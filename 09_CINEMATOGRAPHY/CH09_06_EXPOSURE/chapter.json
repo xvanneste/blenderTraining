@@ -1,0 +1,68 @@
+{
+  "code": "CH09.06",
+  "title": "Exposition et contraste",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Un rendu produit des valeurs de lumière (linéaires, qui peuvent dépasser 1) ; la gestion des couleurs les transforme en image affichable entre 0 et 1. Trois réglages décident de ce que vous voyez : la vue (View Transform : Standard, AgX, Filmic, Khronos PBR Neutral…), l'exposition (Exposure, en diaphragmes) et le look (contraste, saturation). Une vue qui écrête (Standard) brûle les hautes lumières ; une vue « filmique » les comprime en gardant du détail. Ce chapitre apprend à lire une image par trois nombres : le pourcentage de pixels brûlés, la luminance moyenne et l'écart p95 − p5 (contraste).",
+  "prereqs": [
+    "CH09.01 (mesure par rendu), CH01 (rendu de base)."
+  ],
+  "objectives": [
+    "Choisir une vue adaptée à une scène à forte dynamique.",
+    "Régler l'exposition au diaphragme près.",
+    "Lire un histogramme et des pourcentages de pixels.",
+    "Expliquer l'effet d'un Look."
+  ],
+  "competences": [
+    [
+      "C09.06.a",
+      "Exposer juste",
+      "Exercice 2 (correcteur) + histogrammes"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Vue et exposition",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Contraste et lecture",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_06_exposure_starter.blend",
+      "Vue Standard, Exposure 0 : la sphère émissive brûle (4,4 % de pixels brûlés)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_06_exposure_solution.blend",
+      "Vue AgX, Look None, Exposure +0,5 : 0 % brûlés, moyenne 0,42, contraste 0,64"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_06_exposure_reference.png",
+      "Rendu Standard (à gauche) et solution AgX +0,5 (à droite) avec leurs histogrammes de luminance"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (vue qui brûle, trop sombre, trop clair, look trop sombre)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_06.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_06_exposure_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_06.py\" -- --exercise exposure",
+  "deliverables": [
+    "Exposition validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.07 — Composition](../CH09_07_COMPOSITION/README.md)"
+}

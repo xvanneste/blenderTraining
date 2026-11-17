@@ -36,6 +36,10 @@ Blender se pilote à deux mains : une sur la souris, une sur le clavier. Selon v
 | L1 | Souris et clavier | 25 min |
 | L2 | Trackpad, tablette, souris 3D | 25 min |
 
+## Premier passage
+
+Choisissez d’abord votre voie dans le [jalon de navigation](TUTORIAL.md#premier-jalon--revenir-à-une-vue-connue). Retrouvez les vues par les menus avec le matériel dont vous disposez.
+
 ## Parcours conseillé
 
 1. Lire [LESSON.md](LESSON.md) leçon par leçon ; chaque leçon renvoie vers [THEORY.md](THEORY.md) (comprendre) et [TUTORIAL.md](TUTORIAL.md) (reproduire).

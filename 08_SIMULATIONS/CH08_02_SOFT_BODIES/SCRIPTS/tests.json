@@ -1,0 +1,41 @@
+{
+  "build": "build_ch08_02_files.py",
+  "validator": "validate_ch08_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_02_softbody_solution.blend",
+      "exercise": "softbody",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_02_softbody_starter.blend",
+      "exercise": "softbody",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_02_softbody_no_goal.blend",
+      "exercise": "softbody",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_02_softbody_no_group.blend",
+      "exercise": "softbody",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_02_softbody_soft_edges.blend",
+      "exercise": "softbody",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_02_softbody_heavy_mass.blend",
+      "exercise": "softbody",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_02_softbody_no_edges.blend",
+      "exercise": "softbody",
+      "expect": false
+    }
+  ]
+}

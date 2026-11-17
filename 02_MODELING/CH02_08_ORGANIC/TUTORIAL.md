@@ -5,8 +5,9 @@ Ouvrez `STARTER_FILES/ch02_08_tree_starter.blend`. `GEO_Tree` ne contient qu'un 
 ## Tutoriel 1 — Le squelette
 1. Sélectionnez `GEO_Tree`, `Tab`, mode sommet (`1`), `A`.
 2. Tronc : `E` `Z` `0.8` `Entrée`, puis `E` `Z` `0.7` `Entrée` (sommet du haut à 1,5 m).
-3. Branches : sélectionnez le sommet du haut ; `E` puis déplacez en diagonale (vue de face `Num 1`
-   puis de côté `Num 3`), ≈ 0,8 m ; continuez avec 1 ou 2 extrusions pour courber la branche.
+3. Branches : sélectionnez le sommet du haut ; `E` puis déplacez en diagonale en vue de
+   face (`Numpad 1`), ≈ 0,8 m. Vérifiez de droite (`Numpad 3`) et déplacez la pointe
+   en Y pour donner de la profondeur. Poursuivez avec une ou deux extrusions.
    Revenez au sommet du haut et recommencez dans 2 autres directions, plus une flèche centrale.
 4. Racines : sélectionnez le sommet de la base, 3 extrusions courtes (≈ 35 cm) presque à plat.
 5. Vous avez un squelette d'arêtes, sans faces.
@@ -25,9 +26,14 @@ Ouvrez `STARTER_FILES/ch02_08_tree_starter.blend`. `GEO_Tree` ne contient qu'un 
 4. `Tab`, *Object → Shade Smooth*.
 
 ## Tutoriel 4 — Vérifier
-Comparez avec `ch02_08_tree_reference.png` et le squelette `ch02_08_tree_skeleton.png`.
+Comparez le [volume rendu](COMPLETED_EXAMPLES/ch02_08_tree_reference.png) et le
+[squelette éditable en filaire](COMPLETED_EXAMPLES/ch02_08_tree_skeleton.png).
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_08_tree_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_08.py" --python-exit-code 1 -- --exercise tree --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_08.py" -- --exercise tree --render
 ```
+
+## Variante de contrôle
+
+Comparez un squelette à une branche et le même volume avec une jonction à plusieurs branches. En Edit Mode, ajustez le rayon près de la jonction et inspectez la subdivision en filaire. **Preuve** La silhouette est régulière dans deux vues. Pour un personnage animé, servez-vous de cette forme pour étudier les masses, puis contrôlez la cage aux articulations.

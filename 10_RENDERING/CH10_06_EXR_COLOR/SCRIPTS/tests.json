@@ -1,0 +1,36 @@
+{
+  "build": "build_ch10_06_files.py",
+  "validator": "validate_ch10_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_06_exr_solution.blend",
+      "exercise": "exr",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_06_exr_starter.blend",
+      "exercise": "exr",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_06_exr_half_float.blend",
+      "exercise": "exr",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_06_exr_lossy_codec.blend",
+      "exercise": "exr",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_06_exr_single_layer.blend",
+      "exercise": "exr",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_06_exr_no_z_pass.blend",
+      "exercise": "exr",
+      "expect": false
+    }
+  ]
+}

@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_13_library_reference.png", "Rendu de la bibliothèque"],
     ["SCRIPTS/validate_ch02_13.py", "Correcteur (marquage, catalogues, métadonnées)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"ASSETS\\ch02_13_library_<prenom>.blend\" `\n  --python \"02_MODELING\\CH02_13_ASSETS\\SCRIPTS\\validate_ch02_13.py\" --python-exit-code 1 -- --exercise library --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"ASSETS\\ch02_13_library_<prenom>.blend\" `\n  --python-exit-code 1 --python \"02_MODELING\\CH02_13_ASSETS\\SCRIPTS\\validate_ch02_13.py\" -- --exercise library --render",
   "deliverables": ["Bibliothèque validée.", "Auto-évaluation ≥ 14/20.", "Projet P2."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Bibliothèque validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[Projet P2 — Décor + 10 props](../README.md)"

@@ -54,6 +54,8 @@ Préfixes de type : `GEO` mesh · `CRV` courbe · `CAM` caméra · `LGT` lumièr
   avec traduction à la première occurrence : *Outliner (l'arborescence de la scène)*.
 
 ## 7. Raccourcis
-Notation : `Ctrl+Alt+S`, `Shift+A`, `Num 1` (pavé numérique), `MMB` (bouton du milieu),
+Notation : `Ctrl+Alt+S`, `Shift+A`, `Numpad 1` (pavé numérique), `MMB` (bouton du milieu),
 `LMB`/`RMB` (gauche/droit). Keymap de référence : **Blender par défaut**, sélection au
 clic gauche.
+
+Pour un geste sensible au contexte, indiquez le mode, l’éditeur et où placer le pointeur. Distinguez les chiffres de la rangée principale du pavé numérique. Donnez une voie par menu lorsque l’émulation ou une configuration de clavier peut modifier le raccourci. Le [glossaire](GLOSSAIRE_BLENDER.md) relie les noms d’interface aux notions en français.

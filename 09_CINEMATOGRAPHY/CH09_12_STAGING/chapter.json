@@ -1,0 +1,68 @@
+{
+  "code": "CH09.12",
+  "title": "Mise en scène",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "La mise en scène règle où se placent les acteurs, les objets et la caméra, et comment tout cela bouge. Le blocking est ce plan de placement : un triangle de personnages se lit mieux qu'une file, des distances différentes à la caméra créent des plans (avant, milieu, fond), et la continuité garantit que rien ne saute entre deux plans (le raccord). Ce chapitre fait corriger le blocking d'une scène de trois personnages et d'une tasse : le correcteur évalue la scène image par image et rend le moment clé.",
+  "prereqs": [
+    "CH07 (clés de position), CH09.07 (composition), CH09.10 (découpage)."
+  ],
+  "objectives": [
+    "Disposer trois personnages en triangle.",
+    "Étager les personnages en profondeur.",
+    "Assurer la continuité d'un raccord.",
+    "Contrôler une animation image par image."
+  ],
+  "competences": [
+    [
+      "C09.12.a",
+      "Régler une mise en scène continue",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Blocking et profondeur",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Continuité et raccord",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_12_staging_starter.blend",
+      "Trois personnages presque alignés au même niveau à l'image 36, A saute de 2,5 m au raccord, la tasse change de place (23/62)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_12_staging_solution.blend",
+      "À l'image 36 : A (−2, −1,5), B (2, 0,5), C (0, 3) : triangle de 7 m², angle minimal 39°, étagement 4,5 m ; raccord sans saut ; tasse immobile"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_12_staging_reference.png",
+      "Vue de dessus à l'image 36 : départ (gauche, personnages alignés) et solution (droite, triangle) ; la caméra est le trait blanc en bas"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (alignés, sans profondeur, téléportation, tasse déplacée, trop rapide, caché, collision)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_12.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_12_staging_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_12.py\" -- --exercise staging",
+  "deliverables": [
+    "Blocking validé image par image.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[Projet P9 — Cinq plans, cinq émotions](../PROJECT_P9/README.md)"
+}

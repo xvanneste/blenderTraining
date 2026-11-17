@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.07",
+  "title": "Technical Director",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle preuve avant une correction ?",
+      "type": "mcq",
+      "choices": [
+        "Un nouveau nom pour chaque bone",
+        "Une manipulation reproductible qui échoue",
+        "Un rendu neutre seul"
+      ],
+      "answer": 1,
+      "explain": "Une panne reproductible sépare symptôme, cause probable et preuve. Conservez une bonne scène pour le diagnostic."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que suivre entre commande et mesh ?",
+      "type": "mcq",
+      "choices": [
+        "Ordre alphabétique des contrôles",
+        "Nombre d’images exportées",
+        "Dépendances et résultat de déformation évalué"
+      ],
+      "answer": 2,
+      "explain": "Un contrôle peut bouger tout en ne pilotant plus le bone de déformation. Le diagnostic suit le chemin des dépendances."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Pourquoi tester une réouverture ?",
+      "type": "mcq",
+      "choices": [
+        "Pour vérifier la persistance des réglages et des liens",
+        "Pour recalculer les ombres uniquement",
+        "Pour renommer les poses"
+      ],
+      "answer": 0,
+      "explain": "Le rig livré doit préserver les plans existants. Le test de régression vérifie les comportements connus."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le contrôleur se sélectionne mais le pied ne suit pas. »",
+      "answer_text": "La cible ou l’influence de la contrainte IK est invalide. Inspectez la contrainte, rétablissez son lien et vérifiez le mouvement dans une pose de test."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le contrôleur bouge mais le pied reste en place. Quelle donnée évaluée observer ?",
+      "answer_text": "La transformation du bone qui déforme le pied après évaluation des contraintes."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment éviter de réintroduire la panne en corrigeant un autre plan ?",
+      "answer_text": "Versionner le rig et rejouer le même test de pose sur les scènes dépendantes."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que doit contenir une note de migration de rig ?",
+      "answer_text": "Référence de départ, changement, réglages à préserver et test de réouverture."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Reproduire » vérifiable ?",
+      "answer_text": "La version de défaut échoue à une action que la référence réalise."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Localiser » vérifiable ?",
+      "answer_text": "Vous identifiez le lien rompu et éliminez une autre cause par une preuve."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Corriger et livrer » vérifiable ?",
+      "answer_text": "Une fiche donne avant/après, procédure de migration et résultat de quatre tests."
+    }
+  ]
+}

@@ -23,7 +23,7 @@
     ["COMPLETED_EXAMPLES/ch18_14_layout_contact.png", "Planche contact du layout"],
     ["SCRIPTS/validate_ch18_14.py", "Correcteur (animatic, layout)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_14_animatic_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_14.py\" --python-exit-code 1 -- --exercise animatic --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_14_animatic_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_14.py\" -- --exercise animatic --render",
   "deliverables": ["Animatique 2D validée.", "Animatique 3D validée.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Les deux exercices validés par le correcteur."],
   "next": "[CH18.15 — Son, rythme, transitions, export, révision](../CH18_15_SOUND_EXPORT/README.md)"

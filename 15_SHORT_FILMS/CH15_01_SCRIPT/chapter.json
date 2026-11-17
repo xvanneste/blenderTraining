@@ -1,0 +1,43 @@
+{
+  "code": "CH15.01",
+  "title": "De l’idée au scénario",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Écrire un microcourt de 15 secondes dont le choix du protagoniste se comprend sans dialogue.",
+  "prereqs": [
+    "CH14.07"
+  ],
+  "objectives": [
+    "Un lecteur peut répondre à qui agit, pourquoi et face à quoi.",
+    "Trois actions visibles avec une direction du regard ou une réaction physique.",
+    "Une page courte, trois segments et une durée cible de 15 secondes."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Logline",
+      ""
+    ],
+    [
+      "L2",
+      "Action visible",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/sur_le_quai.md",
+      "Brief et scénario de référence"
+    ],
+    [
+      "../ASSETS_ATELIERS/plans.csv",
+      "Découpage associé"
+    ]
+  ],
+  "pass_criteria": [
+    "Un lecteur peut répondre à qui agit, pourquoi et face à quoi.",
+    "Trois actions visibles avec une direction du regard ou une réaction physique.",
+    "Une page courte, trois segments et une durée cible de 15 secondes."
+  ]
+}

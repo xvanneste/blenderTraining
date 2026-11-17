@@ -4,5 +4,8 @@
   "cases": [
     {"file": "COMPLETED_EXAMPLES/ch02_01_topology_solution.blend", "exercise": "clinic", "expect": true, "render": true},
     {"file": "STARTER_FILES/ch02_01_topology_starter.blend", "exercise": "clinic", "expect": false}
+  ],
+  "extra": [
+    {"script": "verifier_diagnostic.py", "file": "STARTER_FILES/ch02_01_topology_starter.blend"}
   ]
 }

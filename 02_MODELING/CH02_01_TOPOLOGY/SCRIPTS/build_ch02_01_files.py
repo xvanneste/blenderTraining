@@ -9,7 +9,7 @@ build_ch02_01_files.py — « La clinique de la topologie » (CH02.01).
       GEO_Poles   : cube subdivisé à diagnostiquer (compter les pôles) ;
       Texte DIAGNOSTIC (Text Editor) à compléter : « POLES = ? ».
   COMPLETED_EXAMPLES/ch02_01_topology_solution.blend (+ _reference.png avec fil de fer)
-Usage : blender -b --factory-startup --python build_ch02_01_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_01_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

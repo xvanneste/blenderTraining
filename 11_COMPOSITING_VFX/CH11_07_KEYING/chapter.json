@@ -1,0 +1,68 @@
+{
+  "code": "CH11.07",
+  "title": "Keying",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Le keying (incrustation) remplace un fond de couleur uniforme, souvent vert ou bleu, par une autre image. Il demande trois choses : un matte (un masque du sujet, avec des bords doux), un nettoyage (le contour garde une trace du fond) et une correction de la contamination (spill : le vert du fond se reflète sur le sujet). Ce chapitre incruste un sujet sur un nouveau fond bleu à partir d'une image générée pour l'occasion ; le correcteur mesure la couleur des coins, du centre du sujet et d'un anneau contaminé.",
+  "prereqs": [
+    "CH11.01 (compositeur), CH11.03 (masques)."
+  ],
+  "objectives": [
+    "Extraire un sujet d'un fond vert avec le nœud Keying.",
+    "Retirer la contamination verte.",
+    "Composer le sujet sur un nouveau fond (Alpha Over).",
+    "Mesurer la qualité d'une incrustation."
+  ],
+  "competences": [
+    [
+      "C11.07.a",
+      "Réaliser une incrustation",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Matte et nettoyage",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Spill et composition",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_07_keying_starter.blend",
+      "Image → Group Output : le fond vert (écart des coins au bleu 0,44) et la contamination (+0,130) ; 18/34"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_07_keying_solution.blend",
+      "Image → Keying (Key Color vert) → Color Spill → Alpha Over sur un fond bleu : écart des coins 0,006, sujet 0,001, contamination −0,028 ; 34/34. Variante vérifiée : Keying sans Color Spill (le nœud Keying corrige déjà la contamination) : 34/34"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_07_keying_reference.png",
+      "Départ (gauche : sujet sur fond vert) et solution (droite : sujet sur fond bleu)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans keying, mauvaise couleur de clé, sans correction de contamination, sans nouveau fond)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_07.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_07_keying_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_07.py\" -- --exercise keying",
+  "deliverables": [
+    "Arbre d'incrustation commenté.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.08 — Tracking et matchmoving](../CH11_08_TRACKING/README.md)"
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.15",
+  "title": "Scène dialoguée",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le blocking ?",
+      "choices": [
+        "Les poses clés principales, souvent en Constant",
+        "Le rendu final",
+        "Un type de caméra",
+        "Un shape key"
+      ],
+      "answer": 0,
+      "explain": "Sept poses aux images 1, 13, 25, 37, 49, 61, 73."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi l'interpolation Constant en blocking ?",
+      "choices": [
+        "On juge les poses sans les mouvements entre elles",
+        "Elle est plus rapide à rendre",
+        "Elle supprime les clés",
+        "Elle évite les marqueurs"
+      ],
+      "answer": 0,
+      "explain": "Le regard saute de pose en pose : on lit l'histoire."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi servent les marqueurs ?",
+      "choices": [
+        "Baliser les moments clés de la scène",
+        "Changer la couleur",
+        "Animer la caméra",
+        "Supprimer des clés"
+      ],
+      "answer": 0,
+      "explain": "beat_1 à beat_7 aux images des poses (touche M)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi garder BLOCK intacte ?",
+      "answer_text": "Pour comparer, corriger les poses sans perdre le splining, et revenir au blocking si le polish dérive."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les poses sont-elles 0, +40, +40, −30, −30, 0, 0 ?",
+      "answer_text": "Neutre, regarde A, écoute A, regarde B, écoute B, regarde la caméra, maintien final : chaque maintien est une écoute."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un breakdown ?",
+      "choices": [
+        "Une clé entre deux poses qui précise le trajet",
+        "Une panne",
+        "Un marqueur",
+        "Un modificateur"
+      ],
+      "answer": 0,
+      "explain": "Images 7 (+22°), 31 (+5°), 55 (−12°) : ils décident du trajet entre les poses."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que doit-il arriver aux maintiens au splining ?",
+      "choices": [
+        "Rester plats",
+        "Osciller",
+        "Disparaître",
+        "Être raccourcis"
+      ],
+      "answer": 0,
+      "explain": "Deux clés égales en Auto Clamped donnent une valeur plate : 0,0° d'écart mesuré."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « hold_lost » ?",
+      "answer_text": "Un breakdown (25°) dans le maintien : la tête dérive de 15° pendant l'écoute ; le personnage ne tient plus son regard."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les poses ne doivent-elles pas changer au splining ?",
+      "answer_text": "Le blocking a été validé : le splining règle le mouvement, pas l'histoire ; contre-exemple « drift » : +55° au lieu de +40°."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu'ajoute le polish ?",
+      "answer_text": "L'overlap et le follow-through, les détails (clignements, respirations), le timing fin : CH07.06, CH07.10, CH07.11."
+    }
+  ]
+}

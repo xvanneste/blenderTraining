@@ -1,0 +1,43 @@
+{
+  "code": "CH16.05",
+  "title": "Équipes et départements",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Organiser une revue où chaque note de production devient une décision traçable.",
+  "prereqs": [
+    "CH16.04"
+  ],
+  "objectives": [
+    "Chaque note possède auteur, responsable, décideur et échéance.",
+    "Trois notes peuvent être comprises et testées par un artiste absent de la revue.",
+    "La décision et la preuve sont liées à la même version revue."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Répartir",
+      ""
+    ],
+    [
+      "L2",
+      "Faire une revue",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/revue_pilote.md",
+      "Exemple de revue et répartition"
+    ],
+    [
+      "../ASSETS_ATELIERS/plans_pilote.csv",
+      "Plans et responsables du pilote"
+    ]
+  ],
+  "pass_criteria": [
+    "Chaque note possède auteur, responsable, décideur et échéance.",
+    "Trois notes peuvent être comprises et testées par un artiste absent de la revue.",
+    "La décision et la preuve sont liées à la même version revue."
+  ]
+}

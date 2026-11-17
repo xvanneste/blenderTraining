@@ -60,7 +60,7 @@ Une animatique se juge avec le son. Ce chapitre monte, dans le Video Sequencer, 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_15_edit_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_15.py" --python-exit-code 1 -- --exercise edit --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_15.py" -- --exercise edit --render
 ```
 
 ## Livrables attendus

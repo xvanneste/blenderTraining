@@ -1,0 +1,71 @@
+{
+  "code": "CH04.02",
+  "title": "Packing et UDIM",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Une texture 4K ne suffit pas pour un personnage ou un décor détaillé : la production répartit l'objet sur plusieurs tuiles UDIM (un carré UV chacune). Ce chapitre packe le coffre de CH04.01 en deux tuiles : corps et sangles en 1001, couvercle en 1002 avec plus de résolution. Le correcteur vérifie, par tuile, le chevauchement, l'occupation, l'étirement et la densité, qu'aucun îlot n'est à cheval sur deux tuiles et qu'une image UDIM possède bien toutes les tuiles utilisées.",
+  "prereqs": [
+    "CH04.01."
+  ],
+  "objectives": [
+    "Numéroter les tuiles UDIM et placer des îlots dans la bonne tuile.",
+    "Packer chaque groupe dans son carré.",
+    "Créer et brancher une image UDIM avec les tuiles voulues."
+  ],
+  "competences": [
+    [
+      "C04.02.a",
+      "Packer pour la production",
+      "Exercice 2 (correcteur) + grille"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Packing et marges",
+      "2 h"
+    ],
+    [
+      "L2",
+      "UDIM : tuiles et images",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_02_udim_starter.blend",
+      "UV propres mais tout dans la tuile 1001 ; matériau UDIM prêt"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_02_udim_solution.blend",
+      "Deux tuiles : corps 1001, couvercle 1002"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_02_udim_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_02_udim_uv_layout.png",
+      "Deux tuiles côte à côte"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (à cheval, une seule tuile, tuile manquante, chevauchement)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_02.py",
+      "Correcteur (udim)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_02_udim_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_02.py\" -- --exercise udim --render",
+  "deliverables": [
+    "Packing UDIM validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.03 — PBR et Principled BSDF](../CH04_03_PBR_PRINCIPLED/README.md)"
+}

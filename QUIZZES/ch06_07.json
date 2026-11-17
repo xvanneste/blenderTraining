@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.07",
+  "title": "Rig mécanique",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "De combien tourne une roue de rayon r qui roule sans glisser sur une distance d ?",
+      "choices": [
+        "d × r",
+        "d / r radians",
+        "d / (2r) tours exactement",
+        "Toujours 1 tour"
+      ],
+      "answer": 1,
+      "explain": "Arc = rayon × angle, donc angle = d / r (en radians)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Autour de quel axe du bone la roue de l'exercice tourne-t-elle ?",
+      "choices": [
+        "Son axe X",
+        "Son axe Y (l'axe du bone, qui coïncide avec l'axe de la roue)",
+        "Son axe Z",
+        "Un axe monde"
+      ],
+      "answer": 1,
+      "explain": "Le bone wheel_* est dirigé le long de l'essieu : tourner autour de l'axe du bone fait tourner la roue sur elle-même."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type de variable de driver lit la position d'un bone ?",
+      "choices": [
+        "Single Property",
+        "Transform Channel",
+        "Rotational Difference",
+        "Context Property"
+      ],
+      "answer": 1,
+      "explain": "Transform Channel (Location Y, Local Space) lit le déplacement de root."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le signe moins dans l'expression « -d / 0.3 » ?",
+      "answer_text": "Le camion avance vers +Y ; pour que le dessus de la roue avance, la roue tourne dans le sens négatif autour de +X (règle de la main droite)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre le contre-exemple « wrong_radius » ?",
+      "answer_text": "Avec 0,15 au lieu de 0,30, la roue tourne deux fois trop : elle glisse. Le correcteur mesure la rotation des sommets (−1,67 rad attendus pour 0,5 m)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle contrainte fait viser un point à un bone ?",
+      "choices": [
+        "Damped Track",
+        "Copy Location",
+        "Limit Rotation",
+        "Child Of"
+      ],
+      "answer": 0,
+      "explain": "Damped Track oriente l'axe Y du bone vers la cible."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment un vérin télescopique se monte-t-il avec deux bones ?",
+      "answer_text": "Le corps (cyl) part de l'ancrage et vise le point de la benne ; la tige (rod), enfant de ce point, vise l'ancrage : les deux restent alignés et emboîtés."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel Owner Space convient pour limiter la rotation de la benne ?",
+      "choices": [
+        "World Space",
+        "Local Space",
+        "Custom Space",
+        "Pose Space uniquement"
+      ],
+      "answer": 1,
+      "explain": "La limite se rapporte à la rotation propre du bone par rapport à son parent."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il sans Limit Rotation si l'animateur demande 80° ?",
+      "answer_text": "La benne dépasse 45° (le bout monte à 1,79 m au lieu de 1,48 m) et traverse l'objet qui la porte."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer les sommets plutôt que les bones ?",
+      "answer_text": "Les bones peuvent être justes alors que le maillage ne suit pas (poids, parenté) : c'est le résultat visible qui compte."
+    }
+  ]
+}

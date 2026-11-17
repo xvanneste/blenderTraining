@@ -1,0 +1,72 @@
+{
+  "code": "CH04.01",
+  "title": "UV Unwrapping avancé",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Les UV sont le « patron de couture » qui permet de poser une image sur un objet 3D. De mauvaises UV étirent les textures, les font se chevaucher ou gaspillent la résolution. Ce chapitre apprend à couper (seams), déplier (Unwrap), égaliser la densité de texels (Average Islands Scale) et packer, sur un coffre aux UV volontairement mauvaises. Un damier (UV Grid) rend la distorsion visible ; le correcteur la MESURE : étirement, densité, chevauchement, limites, occupation.",
+  "prereqs": [
+    "CH02 (modélisation)",
+    "CH01 (Edit Mode, sélection)."
+  ],
+  "objectives": [
+    "Choisir où couper (seams) sur un objet à arêtes vives et surfaces courbes.",
+    "Déplier sans distorsion et lire un damier.",
+    "Égaliser la densité de texels et packer sans chevauchement dans [0, 1]."
+  ],
+  "competences": [
+    [
+      "C04.01.a",
+      "UV propres",
+      "Exercice 2 (correcteur) + grille"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Seams, îlots, distorsion",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Densité de texels et packing",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_01_chest_starter.blend",
+      "Coffre aux UV mauvaises + damier"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_01_chest_solution.blend",
+      "UV propres (22 îlots)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_01_chest_reference.png",
+      "Deux vues avec damier"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_01_chest_uv_layout.png",
+      "Disposition UV"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (chevauchement, densité inégale, hors limites, trop petit)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_01.py",
+      "Correcteur (uv)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_01_chest_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_01.py\" -- --exercise uv --render",
+  "deliverables": [
+    "UV propres validées.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.02 — Packing et UDIM](../CH04_02_PACKING_UDIM/README.md)"
+}

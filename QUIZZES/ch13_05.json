@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.05",
+  "title": "Rendu par lot",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que représente #### dans le chemin ?",
+      "type": "mcq",
+      "choices": [
+        "Le nombre d’échantillons",
+        "Le numéro d’image complété sur quatre positions",
+        "La cadence"
+      ],
+      "answer": 1,
+      "explain": "Les options sont traitées dans l’ordre. Une option placée après -f ne configure pas le rendu déjà lancé."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Pourquoi check=True ?",
+      "type": "mcq",
+      "choices": [
+        "Éviter toute écriture",
+        "Sélectionner la caméra",
+        "Propager l’échec du processus Blender"
+      ],
+      "answer": 2,
+      "explain": "Une liste d’arguments subprocess traite les chemins qui contiennent des espaces."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que faut-il contrôler en plus du code de sortie ?",
+      "type": "mcq",
+      "choices": [
+        "La présence et la lisibilité du fichier attendu",
+        "Le thème de l’interface",
+        "La taille du fichier .blend seul"
+      ],
+      "answer": 0,
+      "explain": "Un lot doit distinguer échec d’entrée, échec Blender et absence de produit attendu."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le rendu apparaît près du .blend au lieu du dossier demandé. »",
+      "answer_text": "-o arrive après -f ou le chemin contient des espaces mal transmis. Passez les options de sortie avant -f et transmettez les arguments séparément."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi préférer un dossier provisoire sur une relance ?",
+      "answer_text": "L’existence d’un ancien PNG ne doit pas masquer l’absence du nouveau."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu’observez-vous pour distinguer un chemin invalide d’un échec de rendu ?",
+      "answer_text": "La validation du chemin intervient avant Blender. Un fichier valide mais un calcul échoué se voit dans le retour de Blender ou l’absence de PNG."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu’ajouter au journal pour reproduire le lot ?",
+      "answer_text": "Exécutable et version Blender, chemin du .blend, numéros d’images et dossier de sortie."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Commande unitaire » ?",
+      "answer_text": "plan_0001.png ouvre correctement depuis le dossier désigné."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Lot et chemins » ?",
+      "answer_text": "Les PNG 0001 et 0025 sont produits et le programme revient sans erreur."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Panne et reprise » ?",
+      "answer_text": "Le chemin invalide échoue et la reprise produit les deux fichiers dans un dossier séparé."
+    }
+  ]
+}

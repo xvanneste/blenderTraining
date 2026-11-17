@@ -1,0 +1,47 @@
+{
+  "build": "build_ch06_02_files.py",
+  "validator": "validate_ch06_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_02_constraints_solution.blend",
+      "exercise": "constraints",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_02_constraints_starter.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_no_constraints.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_wrong_axis.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_head_full.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_no_limit.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_eye_no_target.blend",
+      "exercise": "constraints",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_02_constraints_order_swapped.blend",
+      "exercise": "constraints",
+      "expect": false
+    }
+  ]
+}

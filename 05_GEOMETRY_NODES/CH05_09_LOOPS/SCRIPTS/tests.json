@@ -1,0 +1,42 @@
+{
+  "build": "build_ch05_09_files.py",
+  "validator": "validate_ch05_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_09_loops_solution.blend",
+      "exercise": "loops",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_09_loops_starter.blend",
+      "exercise": "loops",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_09_loops_fixed_steps.blend",
+      "exercise": "loops",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_09_loops_no_rotation.blend",
+      "exercise": "loops",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_09_loops_no_rise.blend",
+      "exercise": "loops",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_09_loops_no_accumulate.blend",
+      "exercise": "loops",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_09_loops_radius_ignored.blend",
+      "exercise": "loops",
+      "expect": false
+    }
+  ]
+}

@@ -27,11 +27,15 @@
 2. Bouton **Editor Type** (icône tout à gauche de l'en-tête de la Timeline) → **Text
    Editor**. Dans l'en-tête, menu déroulant des textes → `README_EXERCICE` : les consignes
    du chapitre s'affichent. ✅ Gardez-les sous les yeux.
-3. **Diviser** : `RMB` sur la frontière entre la vue 3D et l'éditeur de texte → *Vertical
-   Split* → déplacez la ligne qui apparaît, cliquez. ✅ Deux zones côte à côte.
-4. **Fusionner** : `RMB` sur la nouvelle frontière → *Join Areas* → cliquez la zone à
-   conserver.
+3. **Diviser**. Ouvrez le menu contextuel avec un clic droit sur la frontière entre la vue 3D
+   et l’éditeur de texte. Choisissez *Vertical Split*, placez la ligne dans la vue 3D et
+   cliquez. Vous obtenez deux vues 3D côte à côte. `Échap` annule le placement en cours.
+4. **Réunir**. Sur la frontière entre les deux vues, ouvrez à nouveau le menu contextuel.
+   Choisissez *Join Left* ou *Join Right* selon la direction de fusion voulue. L’aperçu
+   indique la direction. Revenez à une seule vue 3D au-dessus de l’éditeur de texte.
 5. Remettez la Timeline (Editor Type → *Timeline*).
+
+[Manuel Blender 5.3 des zones d’éditeur](https://docs.blender.org/manual/en/5.3/interface/window_system/areas.html)
 
 ## Tutoriel 4 — Trouver une commande avec F3
 1. Souris dans la vue 3D, `F3`.
@@ -49,9 +53,13 @@
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_01_interface_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_01.py" --python-exit-code 1 -- --exercise workspace
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_01.py" -- --exercise workspace
 ```
 ✅ `RÉSULTAT : VALIDÉ`.
 > Les workspaces sont enregistrés **dans le `.blend`** (le *Load UI* de CH00.02 les
 > recharge à l'ouverture). Pour les avoir dans tous vos nouveaux fichiers :
 > *File → Defaults → Save Startup File*.
+
+## Contrôle de transfert
+
+Ouvrez la scène dans Layout. Dans l’Outliner, choisissez GEO_Clue_B. Sans quitter la scène, passez dans Modeling puis revenez dans Layout. Retrouvez le nom et la position dans Object Properties. Ouvrez la région Item avec N lorsque le pointeur est dans la vue 3D, puis déplacez le pointeur vers l’Outliner. Ce test distingue le contexte de l’éditeur du nom de l’objet actif. **Réussite** Même objet et mêmes coordonnées dans les deux espaces de travail. Vous retrouvez les coordonnées sans changer le contenu de la scène.

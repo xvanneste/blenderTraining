@@ -29,7 +29,7 @@ Répétez pour `CAM_01_PE` (A minuscule), `CAM_03_PA` (bas de l'image à mi-cuis
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_10_shots_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_10.py" --python-exit-code 1 -- --exercise shots
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_10.py" -- --exercise shots
 ```
 Le correcteur affiche, pour chaque caméra, la valeur mesurée et la hauteur de coupe.
 
@@ -38,3 +38,7 @@ Le correcteur affiche, pour chaque caméra, la valeur mesurée et la hauteur de 
 2. Dans les 8 cadres : PE, PM, PA, PRT, PRP, GP, TGP, Insert — le même personnage, **coupé par le bord
    du cadre** au bon endroit (dessinez au-delà puis effacez, ou arrêtez le trait au cadre).
 3. Vérification : `-- --exercise board --render`. Référence : `ch18_10_board_reference.png`.
+
+## Variante de contrôle
+
+Cadrez la même action en plan large et en détail en gardant l’axe de regard. Présentez les deux images séparément. **Preuve** Chaque image répond à une question différente et le lecteur peut situer le détail grâce au plan large.

@@ -2,7 +2,7 @@
 final_audit.py — Génère FINAL_AUDIT.md à partir de l'état RÉEL des fichiers.
 
 Rien n'est déclaratif : statuts calculés par academy_status (documents, quiz, tests passants),
-registre d'assets vérifié, présence des livrables globaux exigés par la mission.
+nombre d'entrées du registre d'assets et présence des livrables globaux.
 Statuts : Terminé et vérifié / Terminé mais non vérifié / Partiellement terminé / Bloqué /
 Non commencé.
 
@@ -20,6 +20,7 @@ import academy_status as S  # noqa: E402
 GLOBAL = [
     ("README.md", "Présentation"), ("START_HERE.md", "Démarrage"), ("CURRICULUM.md", "Programme 19 phases"),
     ("ROADMAP.md", "Feuilles de route 5/10/20 h"), ("PROGRESS.md", "Suivi apprenant"),
+    ("DOCUMENTATION/PARCOURS_PREMIER_PLAN.md", "Parcours du premier plan animé"),
     ("CLAUDE.md", "Instructions de reprise"), ("PROJECT_STATE.md", "État et décisions"),
     ("TASKS.md", "Inventaire des tâches (généré)"), ("ASSET_MANIFEST.json", "Registre des ressources"),
     ("DOCUMENTATION/CONVENTIONS.md", "Conventions"), ("DOCUMENTATION/VERSION_COMPATIBILITY.md", "Compatibilité"),
@@ -35,12 +36,15 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8")
     chapters = S.curriculum_chapters()
     tests = S.last_results()
-    rows, count = [], {}
+    count = {}
+    documentary = 0
     by_phase = {}
     for ph, num, title in chapters:
         st, d, missing = S.chapter_status(ph, num, tests)
         label = st.split(" ", 1)[1]
         count[label] = count.get(label, 0) + 1
+        if d and label == "Terminé et vérifié" and not os.path.isfile(os.path.join(d, "SCRIPTS", "tests.json")):
+            documentary += 1
         by_phase.setdefault(ph, []).append((f"CH{ph:02d}.{num:02d}", title, label, missing))
     res = json.load(open(os.path.join(ROOT, "TOOLS", "last_test_results.json"), encoding="utf-8"))["results"]
     n_ok = sum(1 for r in res if r["ok"])
@@ -57,18 +61,21 @@ def main():
     L.append("> Ce document est recalculé à partir des fichiers : il ne peut pas annoncer comme terminé un")
     L.append("> chapitre dont un document, le quiz ou les tests manquent.")
     L.append("")
-    L.append("## Verdict")
+    L.append("## Couverture du catalogue")
     L.append("")
-    verdict = "TERMINÉE" if done == total else "NON TERMINÉE"
-    L.append(f"**La formation est {verdict}** : {done} chapitres sur {total} sont terminés et vérifiés "
-             f"({100 * done / total:.0f} %).")
+    verdict = "CATALOGUE COMPLET" if done == total else "CATALOGUE INCOMPLET"
+    L.append(f"**{done} chapitres sur {total} ont le statut publié.** "
+             f"{done - documentary} ont des contrôles techniques enregistrés. "
+             f"{documentary} reposent sur des supports documentaires et une évaluation par revue.")
+    if os.path.isfile(os.path.join(ROOT, "SUIVI_REFONTE_BLENDER.md")):
+        L.append("Le [suivi de la refonte](SUIVI_REFONTE_BLENDER.md) indique la portée des relectures et les vérifications encore ouvertes.")
     L.append("")
     L.append("| Statut | Chapitres |")
     L.append("|---|---|")
     for k in ("Terminé et vérifié", "Terminé mais non vérifié", "Partiellement terminé", "Bloqué", "Non commencé"):
         L.append(f"| {k} | {count.get(k, 0)} |")
     L.append("")
-    L.append(f"Tests automatiques (dernière exécution enregistrée) : **{n_ok} / {len(res)} réussis**. "
+    L.append(f"Résultats des dernières exécutions par chapitre : **{n_ok} / {len(res)} tests réussis**. "
              f"Ressources enregistrées dans ASSET_MANIFEST.json : **{len(assets)}**.")
     L.append("")
     L.append("## Par phase")
@@ -92,7 +99,10 @@ def main():
     L.append("## Exigences de la mission non encore satisfaites")
     L.append("")
     missing_phases = [ph for ph in sorted(by_phase) if any(i[2] != "Terminé et vérifié" for i in by_phase[ph])]
-    L.append(f"- Chapitres restants : {total - done} (phases incomplètes : {', '.join(str(p) for p in missing_phases)}).")
+    if missing_phases:
+        L.append(f"- Chapitres restants : {total - done} (phases incomplètes : {', '.join(str(p) for p in missing_phases)}).")
+    else:
+        L.append("- Les 19 phases du cursus sont couvertes. Aucun chapitre du programme ne reste à produire.")
     gp = by_phase.get(18, [])
     proj = next((i for i in gp if i[0] == "CH18.22"), None)
     L.append(f"- Phase 18 : 7 projets obligatoires (CH18.22) — statut : {proj[2] if proj else 'inconnu'}.")
@@ -114,11 +124,14 @@ def main():
     L.append("")
     L.append("## Méthode de vérification")
     L.append("")
-    L.append("- Chaque `.blend` est généré par script, chaque solution est acceptée et chaque fichier de départ "
-             "refusé par le correcteur du chapitre (`TOOLS/run_all_tests.py`).")
-    L.append("- Chaque solution est rendue en image de référence, et l'image est regardée (pas seulement le score).")
-    L.append("- Les libellés d'interface sont vérifiés dans les sources `bl_ui` et la keymap de Blender 5.3.0.")
-    L.append("- Les comportements surprenants sont mesurés (voir CLAUDE.md, « Pièges »), puis enseignés.")
+    L.append("- Le statut combine la présence des supports, du quiz et les résultats enregistrés des tests déclarés. "
+             "Les chapitres déclarés documentaires peuvent être vérifiés sans test Blender.")
+    L.append("- Les tests ciblent les cas déclarés par chaque chapitre. Les revues visuelles, les essais en interface "
+             "et les limites connues sont à consulter dans les corrigés et le journal de production.")
+    L.append("- Le registre recense les ressources. Vérifiez leurs chemins et leurs empreintes séparément avec "
+             "`python TOOLS/check_manifest.py`.")
+    L.append("- La validation pédagogique demande de refaire un geste sans aide sur une variante. Le parcours du "
+             "premier plan propose ces variantes. Le statut de production ne mesure pas leur réussite par un débutant.")
     open(os.path.join(ROOT, "FINAL_AUDIT.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
     print(f"[audit] {done}/{total} chapitres vérifiés ; tests {n_ok}/{len(res)} ; verdict : {verdict}")
 

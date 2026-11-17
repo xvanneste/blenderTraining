@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_11_files.py",
+  "validator": "validate_ch07_11.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_11_lipsync_solution.blend",
+      "exercise": "lipsync",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_11_lipsync_starter.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_late.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_mouth_open_on_m.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_no_variety.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_popping.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_no_blink.blend",
+      "exercise": "lipsync",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_11_lipsync_slow_blink.blend",
+      "exercise": "lipsync",
+      "expect": false
+    }
+  ]
+}

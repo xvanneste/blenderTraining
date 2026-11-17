@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch01_01_interface_solution.blend", "Fichier contenant un workspace BCMA_Study"],
     ["SCRIPTS/validate_ch01_01.py", "Correcteur de l'exercice 3"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_01_interface_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_01.py\" --python-exit-code 1 -- --exercise workspace",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_01_interface_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_01.py\" -- --exercise workspace",
   "deliverables": ["Réponses de la chasse au trésor.", "ch01_01_interface_<prenom>_v001.blend validé.", "Capture annotée « Mon atelier »."],
   "next": "[CH01.02 — Navigation 3D](../CH01_02_NAVIGATION/README.md)"
 }

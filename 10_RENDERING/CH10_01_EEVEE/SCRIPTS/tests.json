@@ -1,0 +1,41 @@
+{
+  "build": "build_ch10_01_files.py",
+  "validator": "validate_ch10_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_01_eevee_solution.blend",
+      "exercise": "eevee",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_01_eevee_starter.blend",
+      "exercise": "eevee",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_01_eevee_no_shadows.blend",
+      "exercise": "eevee",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_01_eevee_no_raytracing.blend",
+      "exercise": "eevee",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_01_eevee_samples_low.blend",
+      "exercise": "eevee",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_01_eevee_samples_high.blend",
+      "exercise": "eevee",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_01_eevee_cycles.blend",
+      "exercise": "eevee",
+      "expect": false
+    }
+  ]
+}

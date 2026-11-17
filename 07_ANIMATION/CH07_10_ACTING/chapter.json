@@ -1,0 +1,68 @@
+{
+  "code": "CH07.10",
+  "title": "Acting",
+  "phase_title": "7 — Animation 3D",
+  "level": "expert",
+  "duration": "10 h",
+  "intro": "Animer, ce n'est pas bouger un personnage : c'est lui donner une intention. Une pensée se lit dans le temps : une remarque est rapide, la réflexion qui suit est un MAINTIEN, la décision est précédée d'une ANTICIPATION, et le corps réagit en cascade (la tête d'abord, puis le buste, puis les hanches). Ce chapitre construit un plan d'acting muet de 72 images : le personnage remarque quelque chose sur sa gauche, y réfléchit, se prépare à agir. Le correcteur mesure le lacet de la tête, du buste et des hanches et l'inclinaison de la colonne.",
+  "prereqs": [
+    "CH07.05 (timing), CH07.06 (overlap), CH07.07 (posing)."
+  ],
+  "objectives": [
+    "Construire une scène en temps : idle, remarque, maintien, anticipation, action.",
+    "Faire mener la tête et suivre le corps.",
+    "Maintenir pour laisser lire une pensée.",
+    "Préparer une action par une anticipation."
+  ],
+  "competences": [
+    [
+      "C07.10.a",
+      "Plan d'acting muet",
+      "Exercice 2 (correcteur) + courbes de la scène"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "L'intention et le temps",
+      "5 h"
+    ],
+    [
+      "L2",
+      "Construire la scène",
+      "5 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_10_acting_starter.blend",
+      "Mannequin FK immobile, sans animation"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_10_acting_solution.blend",
+      "Scène muette de 72 images : idle, remarque, maintien, anticipation, action"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_10_acting_reference.png",
+      "Lacet de la tête (orange), du buste (vert), des hanches (bleu) et inclinaison de la colonne (blanc)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (pas de maintien, pas de retard, pas d'anticipation, pas d'idle, remarque trop lente, tour de tête trop petit)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_10.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_10_acting_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_10.py\" -- --exercise acting",
+  "deliverables": [
+    "Plan d'acting validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.11 — Animation faciale et lip sync](../CH07_11_FACIAL/README.md)"
+}

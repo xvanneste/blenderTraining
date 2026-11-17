@@ -22,7 +22,7 @@
     ["COMPLETED_EXAMPLES/ch18_08_layers_build_frame20.png", "Rendu image 20 (Build en cours)"],
     ["SCRIPTS/validate_ch18_08.py", "Correcteur (modificateurs et filtres, masque, fusion, transformation, intégrité)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_08_layers_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_08.py\" --python-exit-code 1 -- --exercise layers --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_08_layers_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_08.py\" -- --exercise layers --render",
   "deliverables": ["Scène validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : une pièce éclairée."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Scène validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.09 — Dessin dans l'espace 3D et organisation](../CH18_09_DRAWING_IN_3D/README.md)"

@@ -1,0 +1,46 @@
+{
+  "build": "build_ch10_04_files.py",
+  "validator": "validate_ch10_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_04_passes_solution.blend",
+      "exercise": "passes",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_04_passes_starter.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_no_normal.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_no_lightgroups.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_no_aov.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_wrong_index.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_no_bg_layer.blend",
+      "exercise": "passes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_04_passes_png_output.blend",
+      "exercise": "passes",
+      "expect": false
+    }
+  ]
+}

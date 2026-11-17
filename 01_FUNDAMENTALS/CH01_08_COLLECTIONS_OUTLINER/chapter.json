@@ -19,7 +19,7 @@
     ["COMPLETED_EXAMPLES/ch01_08_living_room_solution.blend", "Salon rangé, HELPERS hors rendu, lampe parentée"],
     ["SCRIPTS/validate_ch01_08.py", "Correcteur (23 points + rendu)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_08_living_room_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_08.py\" --python-exit-code 1 -- --exercise organize --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_08_living_room_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_08.py\" -- --exercise organize --render",
   "deliverables": ["ch01_08_living_room_<prenom>_v001.blend validé.", "Mini-projet : un de vos fichiers remis au propre."],
   "next": "[CH01.09 — Éditeur de propriétés](../CH01_09_PROPERTIES_EDITOR/README.md)"
 }

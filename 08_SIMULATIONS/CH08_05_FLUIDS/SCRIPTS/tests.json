@@ -1,0 +1,36 @@
+{
+  "build": "build_ch08_05_files.py",
+  "validator": "validate_ch08_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_05_fluid_solution.blend",
+      "exercise": "fluid",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_05_fluid_starter.blend",
+      "exercise": "fluid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_05_fluid_no_flow.blend",
+      "exercise": "fluid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_05_fluid_gas_flow.blend",
+      "exercise": "fluid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_05_fluid_low_res.blend",
+      "exercise": "fluid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_05_fluid_short_cache.blend",
+      "exercise": "fluid",
+      "expect": false
+    }
+  ]
+}

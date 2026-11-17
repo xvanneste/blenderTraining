@@ -1,0 +1,68 @@
+{
+  "code": "CH07.09",
+  "title": "Course, saut, interactions",
+  "phase_title": "7 — Animation 3D",
+  "level": "avancé",
+  "duration": "10 h",
+  "intro": "La course et le saut sont des mouvements balistiques : pendant le vol, le corps n'a plus d'appui et obéit à la gravité. Ce chapitre présente la course (un cycle comme la marche, avec une phase aérienne), puis fabrique un saut crédible en 40 images : ANTICIPATION (flexion), IMPULSION, VOL parabolique, RÉCEPTION amortie, retour debout. Les interactions (pousser, tirer) sont présentées en théorie. Le correcteur mesure les hanches et les chevilles sur les 40 images : flexion, durée du vol, hauteur, gravité, amortissement, pieds plantés.",
+  "prereqs": [
+    "CH07.05 (timing et gravité), CH07.07 (posing), CH07.08 (marche)."
+  ],
+  "objectives": [
+    "Distinguer course et marche.",
+    "Construire un saut en quatre phases.",
+    "Faire obéir le vol à la gravité (parabole).",
+    "Amortir une réception."
+  ],
+  "competences": [
+    [
+      "C07.09.a",
+      "Saut crédible",
+      "Exercice 2 (correcteur) + courbes de hauteur"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Course et phase aérienne",
+      "5 h"
+    ],
+    [
+      "L2",
+      "Le saut",
+      "5 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_09_jump_starter.blend",
+      "Mannequin FK debout, sans animation"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_09_jump_solution.blend",
+      "Saut sur place de 40 images : flexion, impulsion, vol parabolique, réception amortie"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_09_jump_reference.png",
+      "Hauteur des hanches (orange) et de la cheville gauche (bleu) sur 40 images"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans anticipation, sans réception, vol flottant, saut trop bas, pieds qui glissent, sans retour debout)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_09.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_09_jump_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_09.py\" -- --exercise jump",
+  "deliverables": [
+    "Saut validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.10 — Acting](../CH07_10_ACTING/README.md)"
+}

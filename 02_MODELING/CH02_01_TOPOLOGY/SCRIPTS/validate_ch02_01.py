@@ -1,6 +1,6 @@
 """
 validate_ch02_01.py — Correcteur de « La clinique de la topologie » (CH02.01).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_01.py --python-exit-code 1 -- --exercise clinic [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_01.py -- --exercise clinic [--render]
 Tout est mesuré sur la géométrie (bmesh) : aucune valeur codée en dur sauf les seuils.
 Testé avec : Blender 5.3.0.
 """

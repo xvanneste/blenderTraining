@@ -1,0 +1,68 @@
+{
+  "code": "CH08.07",
+  "title": "Destruction",
+  "phase_title": "8 — Physique et simulations",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Détruire un décor, c'est faire éclater un objet en morceaux qui tiennent ensemble jusqu'au choc. Avec les corps rigides (CH08.01), on obtient cela en reliant des pièces voisines par des contraintes Fixed cassables : tant que la force reste sous le seuil, la pièce tient ; au-dessus, la liaison saute. Ce chapitre construit un mur de 24 briques frappé par un boulet de 40 kg. Une précision d'honnêteté importante : l'extension Cell Fracture (qui découpe un maillage en éclats) n'est PAS livrée avec Blender 5.3 (le dossier des extensions de base ne la contient pas ; elle serait à télécharger) : nous partons donc de pièces déjà séparées, ce qui est aussi la méthode des films quand le décor a été fracturé à l'avance.",
+  "prereqs": [
+    "CH08.01 (corps rigides, monde, Animated)."
+  ],
+  "objectives": [
+    "Relier des corps rigides par des contraintes Fixed (opérateur Connect).",
+    "Rendre une contrainte cassable et choisir son seuil.",
+    "Mesurer une destruction par les liaisons cassées.",
+    "Reconnaître une simulation instable (mur qui explose)."
+  ],
+  "competences": [
+    [
+      "C08.07.a",
+      "Destruction",
+      "Exercice 2 (correcteur) + vue de dessus des briques"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Contraintes et seuil de rupture",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Mesurer et stabiliser",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_07_destruction_starter.blend",
+      "Sol, 24 briques actives, boulet animé et monde réglé ; aucune contrainte (le mur est simplement empilé)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_07_destruction_solution.blend",
+      "38 contraintes Fixed cassables (seuil 1) : le mur se fracture (13 liaisons sur 38 cassées) sans tout disperser"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_07_destruction_reference.png",
+      "Vue de dessus à l'image 120 : à gauche la solution (mur fracturé, trou du boulet), à droite un seuil de 20 (mur poussé d'un bloc) ; gris = position de départ"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (contraintes non cassables, seuil trop haut, sans contraintes, sol sans physique)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_07.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_07_destruction_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_07.py\" -- --exercise destruction",
+  "deliverables": [
+    "Mur cassable validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.08 — Cheveux et fourrure](../CH08_08_HAIR_FUR/README.md)"
+}

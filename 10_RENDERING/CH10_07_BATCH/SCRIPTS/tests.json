@@ -1,0 +1,46 @@
+{
+  "build": "build_ch10_07_files.py",
+  "validator": "validate_ch10_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_07_batch_solution.blend",
+      "exercise": "batch",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_07_batch_starter.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_wrong_order.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_gap.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_overlap.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_one_chunk.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_no_placeholders.blend",
+      "exercise": "batch",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_07_batch_forbidden_flag.blend",
+      "exercise": "batch",
+      "expect": false
+    }
+  ]
+}

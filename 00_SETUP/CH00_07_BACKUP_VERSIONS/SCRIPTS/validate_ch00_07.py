@@ -1,7 +1,7 @@
 """
 validate_ch00_07.py — Correcteur de l'exercice de récupération (CH00.07).
 Usage :
-  blender -b --factory-startup <votre_v002.blend> --python validate_ch00_07.py --python-exit-code 1 -- --exercise recover
+  blender -b --factory-startup <votre_v002.blend> --python-exit-code 1 --python validate_ch00_07.py -- --exercise recover
 Testé avec : Blender 5.3.0.
 """
 import os

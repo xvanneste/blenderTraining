@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.09",
+  "title": "Profondeur de champ",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel F-Stop donne la plus faible profondeur de champ ?",
+      "choices": [
+        "Le plus petit (grande ouverture)",
+        "Le plus grand",
+        "Aucun",
+        "Il n'a pas d'effet"
+      ],
+      "answer": 0,
+      "explain": "f/1,0 : solution (pic lointain 0,31) ; f/16 : tout net (0,97)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Focus Distance ?",
+      "choices": [
+        "La distance du plan net",
+        "La focale",
+        "La taille du capteur",
+        "L'exposition"
+      ],
+      "answer": 0,
+      "explain": "5 m dans l'exercice (distance de Near)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où se trouve la case d'activation ?",
+      "choices": [
+        "Camera > Depth of Field",
+        "Render > Color",
+        "World > Mist",
+        "Object > Relations"
+      ],
+      "answer": 0,
+      "explain": "Propriété `Camera.dof.use_dof` (API ; libellé non relu à l'écran)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que se passe-t-il si F-Stop est petit mais Depth of Field désactivée ?",
+      "answer_text": "Rien : tout est net (contre-exemple no_dof_bad_fstop, pics 1,00 et 1,00)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le flou augmente-t-il avec la distance à la mise au point ?",
+      "answer_text": "Le cercle de confusion croît avec l'écart à la distance nette : la barre à 30 m est bien plus floue que celle à 12 m quand on vise 5 m."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que vaut le pic d'une barre nette ?",
+      "choices": [
+        "1,0",
+        "0",
+        "0,5",
+        "10"
+      ],
+      "answer": 0,
+      "explain": "Maximum moins le fond, sur une barre émissive de luminance 1."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi le correcteur utilise-t-il une barre fine ?",
+      "choices": [
+        "Un objet large reste net en son centre même flou",
+        "Pour le style",
+        "Pour la vitesse",
+        "Pour la couleur"
+      ],
+      "answer": 0,
+      "explain": "Essai mesuré : barre de 20 cm de large, pic 0,91 floue ; barre de 6 cm, pic 0,31."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder la focale et la position de la caméra ?",
+      "answer_text": "Le flou dépend aussi de la focale et des distances : les changer fausserait la comparaison ; le correcteur les vérifie."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre focus_far ?",
+      "answer_text": "La mise au point sur le fond rend le sujet proche flou (0,70) : le flou existe aussi AVANT le plan net."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Rendu Cycles à 32 échantillons, deux barres émissives, pas de bokeh à lames ni de profondeur de champ en post ; Workbench n'a pas montré de flou lors de l'essai."
+    }
+  ]
+}

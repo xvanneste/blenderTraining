@@ -1,0 +1,68 @@
+{
+  "code": "CH11.01",
+  "title": "Compositor",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Le compositeur retouche l'image après le rendu, par un graphe de nœuds : Render Layers fournit l'image rendue, des nœuds de traitement la transforment (exposition, flou, couleur…), une sortie la livre. Dans Blender 5.3, ce graphe est un groupe de nœuds de la scène (`scene.compositing_node_group`) dont la sortie est un nœud Group Output, et les réglages d'un nœud sont ses prises d'entrée (par exemple « Exposure » ou « Size »). Ce chapitre construit le premier arbre : Render Layers → Exposure → Blur → Group Output, et le correcteur mesure l'image rendue avec le compositeur : luminance, bruit, lisibilité.",
+  "prereqs": [
+    "CH10.02–CH10.04 (rendu Cycles, passes)."
+  ],
+  "objectives": [
+    "Lire et construire un arbre de compositing.",
+    "Régler l'exposition d'un rendu en post.",
+    "Réduire le bruit par un flou, sans effacer le sujet.",
+    "Reconnaître un nœud orphelin."
+  ],
+  "competences": [
+    [
+      "C11.01.a",
+      "Construire un arbre de compositing",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Le graphe de nœuds",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Exposition et flou",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_01_compositor_starter.blend",
+      "Render Layers → Group Output : image sombre (luminance 0,277) et bruitée (0,019) ; 29/45"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_01_compositor_solution.blend",
+      "Render Layers → Exposure (+1,5) → Blur (3, 3) → Group Output : luminance 0,459, bruit 0,0063, lisibilité 0,81 ; 45/45"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_01_compositor_reference.png",
+      "Départ (gauche, sombre et granuleux) et solution (droite, plus clair et lissé)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans exposition, sans flou, flou excessif, nœud orphelin, compositing désactivé)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_01.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_01_compositor_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_01.py\" -- --exercise compositor",
+  "deliverables": [
+    "Arbre de compositing commenté.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.02 — Compositing multipasse](../CH11_02_MULTIPASS/README.md)"
+}

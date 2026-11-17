@@ -17,7 +17,8 @@ votre personnage et la forme dominante (cercle, carré, triangle).
 ## Tutoriel 3 — Creuser les orbites (Boolean)
 1. Deux sphères de 3 cm de rayon à l'emplacement des yeux, enfoncées dans le visage.
 2. `SCULPT_Bust` : *Add Modifier > Generate > Boolean* : *Difference*, *Object* : la première
-   sphère ; *Apply* (Ctrl+A sur le modificateur). Idem pour la seconde. Supprimez les sphères.
+   sphère, puis **Apply** dans le menu du modificateur. Refaites l’opération pour la seconde,
+   puis masquez les deux sphères pour inspecter les creux. Gardez-les dans une version de travail.
 3. Voxel Remesh de nouveau : arêtes adoucies, volume régulier.
    *Variante métaballes* : bloquez avec *Add > Metaball*, deux éléments *Negative* pour les orbites,
    puis *Object > Convert > Mesh*.
@@ -27,13 +28,18 @@ Edit Mode, A, *Mesh > Bisect* : tracez une ligne horizontale au ras du bas en vu
 de l'opérateur : *Clear Inner* et *Fill* cochés. Object Mode : placez le socle à z = 0.
 
 ## Tutoriel 5 — Sculpter les plans
-Sculpt Mode, Mirror X : Clay Strips (C) pour les pommettes et les arcades, Scrape/Fill pour des
-plans nets, Pinch (P) pour affirmer l'arête du nez. Vérifiez la silhouette de face et de profil.
+En mode Sculpture, activez la symétrie X. Dans l’étagère, choisissez *Clay Strips* pour
+donner du volume aux pommettes et aux arcades, puis *Scrape/Fill* pour lisser les plans.
+Observez de profil que l’arête du nez et le front restent lisibles après chaque correction.
 
 ## Tutoriel 6 — Vérifier
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_04_bust_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_04.py" --python-exit-code 1 -- --exercise bust --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_04.py" -- --exercise bust --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch03_04_bust_reference.png` (face, 3/4, profil).
+
+## Variante de contrôle
+
+Préparez une miniature neutre à face et trois-quarts. Réduisez une forme secondaire pour retrouver le point focal. **Preuve** La silhouette reste reconnaissable sans les détails et vous pouvez nommer les deux règles de simplification appliquées.

@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.08",
+  "title": "Extensions Blender",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel fichier décrit l’identifiant et la version ?",
+      "type": "mcq",
+      "choices": [
+        "preferences.blend",
+        "blender_manifest.toml",
+        "studio.json"
+      ],
+      "answer": 1,
+      "explain": "L’identifiant stabilise l’installation. La version et la version minimale sont deux propriétés distinctes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel fichier contient register et unregister ?",
+      "type": "mcq",
+      "choices": [
+        "blender_manifest.toml",
+        ".blend1",
+        "__init__.py"
+      ],
+      "answer": 2,
+      "explain": "La validation détecte les problèmes de manifeste avant l’installation."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelle action vérifie le cycle complet ?",
+      "type": "mcq",
+      "choices": [
+        "Installer, activer, utiliser puis désactiver",
+        "Renommer le ZIP",
+        "Ouvrir seulement le manifeste"
+      ],
+      "answer": 0,
+      "explain": "Le scénario d’installation doit couvrir l’enregistrement et le retrait des classes."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « L’installation échoue alors que les sources fonctionnent via Run Script. »",
+      "answer_text": "Le manifeste se trouve dans un sous-dossier de l’archive manuelle. Utilisez la commande extension build et contrôlez la racine de l’archive."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles pièces doivent figurer à la racine du ZIP d’exercice ?",
+      "answer_text": "Le manifeste et __init__.py."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi construire une version 1.0.1 après un changement de libellé ?",
+      "answer_text": "Une différence de version identifie précisément la modification et le fichier à réinstaller."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La construction passe. Quelle validation reste à faire dans Blender ?",
+      "answer_text": "Installer la version obtenue, l’activer, utiliser le bouton puis vérifier que la désactivation retire le panneau."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Préparer le paquet » ?",
+      "answer_text": "Les deux fichiers sont à la racine du dossier de construction."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Valider puis construire » ?",
+      "answer_text": "Blender crée bcma_reperes-1.0.0.zip et signale la construction."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Installer localement » ?",
+      "answer_text": "Le panneau est utilisable après activation et disparaît après désactivation."
+    }
+  ]
+}

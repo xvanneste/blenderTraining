@@ -20,15 +20,18 @@
 <!-- QUIZ_ANSWERS_END -->
 
 ## Exercice 3
-`Tab` → `3` → clic sur la face du haut → `E 1 Entrée` → `S X 0 Entrée` → `Tab`.
-Fichier : `COMPLETED_EXAMPLES/ch01_05_house_solution.blend` (12 sommets : les 4 du haut
-sont superposés deux à deux sur le faîtage — *Merge by Distance* (`M` → *By Distance*) les
-fusionnerait en 10 sommets, ce qui est plus propre ; le correcteur accepte les deux).
+En mode Édition, pressez `3` pour sélectionner la face du haut, puis `E`, `1`, `Entrée`.
+Alignez le faîtage sur X avec `S`, `X`, `0`, `Entrée`. Passez en sélection de sommets (`1`)
+sans étendre la sélection et fusionnez les paires superposées avec `M → By Distance`.
+Sélectionnez tout, recalculez les normales avec `Shift+N`, puis revenez en mode Objet.
+Le [corrigé](COMPLETED_EXAMPLES/ch01_05_house_solution.blend) possède 10 sommets et 9 faces.
+Le [contre-exemple](COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch01_05_house_degenerate_roof.blend)
+montre le résultat avant la fusion. Le contrôle de topologie le refuse.
 
 ## Défi 2
-Toit en croupe : au lieu de `S X 0`, mettre à l'échelle la face extrudée sur X **et** Y
-dans des proportions différentes, par ex. `S X 0` puis `S Y 0.4` → faîtage plus court que
-la maison, quatre pans inclinés.
+Pour un toit en croupe, gardez `S X 0`, puis appliquez `S Y 0.4` sur le faîtage avant la
+fusion. Il devient plus court que la maison. Vérifiez de dessus que ses deux extrémités
+sont en retrait des murs et orbitez pour compter quatre pans inclinés.
 
 ## Exercice 1 (e)
 `A`, puis `Shift+Alt+LMB` sur une arête de bordure retire la boucle de bordure de la

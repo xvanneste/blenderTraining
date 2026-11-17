@@ -1,0 +1,63 @@
+{
+  "build": "build_ch03_06_files.py",
+  "validator": "validate_ch03_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_06_face_solution.blend",
+      "exercise": "face",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_06_smile_solution.blend",
+      "exercise": "face",
+      "expect": true
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_06_smile_solution.blend",
+      "exercise": "smile",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_06_face_solution.blend",
+      "exercise": "smile",
+      "expect": false
+    },
+    {
+      "file": "STARTER_FILES/ch03_06_face_starter.blend",
+      "exercise": "face",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_06_face_no_lids.blend",
+      "exercise": "face",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_06_face_no_nostrils.blend",
+      "exercise": "face",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_06_face_no_mouth.blend",
+      "exercise": "face",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_06_face_no_ears.blend",
+      "exercise": "face",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_06_face_frown.blend",
+      "exercise": "smile",
+      "expect": false
+    },
+    {
+      "file": "../CH03_05_REALISTIC/COMPLETED_EXAMPLES/ch03_05_bust_solution.blend",
+      "exercise": "face",
+      "expect": false
+    }
+  ]
+}

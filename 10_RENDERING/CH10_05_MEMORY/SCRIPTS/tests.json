@@ -1,0 +1,36 @@
+{
+  "build": "build_ch10_05_files.py",
+  "validator": "validate_ch10_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_05_memory_solution.blend",
+      "exercise": "memory",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_05_memory_starter.blend",
+      "exercise": "memory",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_05_memory_unique_meshes.blend",
+      "exercise": "memory",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_05_memory_high_poly.blend",
+      "exercise": "memory",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_05_memory_big_texture.blend",
+      "exercise": "memory",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_05_memory_few_rocks.blend",
+      "exercise": "memory",
+      "expect": false
+    }
+  ]
+}

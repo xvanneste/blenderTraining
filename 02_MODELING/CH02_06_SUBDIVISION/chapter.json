@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_06_subdiv_reference.png", "Rendu après"],
     ["SCRIPTS/validate_ch02_06.py", "Correcteur (forme évaluée, crease, niveaux)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_06_subdiv_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_06.py\" --python-exit-code 1 -- --exercise subdiv --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_06_subdiv_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_06.py\" -- --exercise subdiv --render",
   "deliverables": ["Trois cubes validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la souris d'ordinateur."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Cubes validés.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.07 — Booléens et non destructif](../CH02_07_BOOLEANS/README.md)"

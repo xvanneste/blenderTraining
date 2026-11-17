@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.08",
+  "title": "Livraison et archivage",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que prouve un hash SHA-256 correspondant ?",
+      "type": "mcq",
+      "choices": [
+        "Les octets concordent avec la valeur du manifeste",
+        "La couleur est nécessairement correcte",
+        "Le montage est approuvé"
+      ],
+      "answer": 0,
+      "explain": "Le master conserve la qualité de travail. Les dérivés répondent à un usage. Les sous-titres suivent le montage et la langue convenus."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que tester dans un autre dossier ?",
+      "type": "mcq",
+      "choices": [
+        "Seulement le nom du ZIP",
+        "Les références relatives et la réouverture",
+        "Le thème utilisateur"
+      ],
+      "answer": 1,
+      "explain": "Un hash permet de détecter une modification. La réouverture confirme que les dépendances sont localisées."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quand refaire la synchro du SRT ?",
+      "type": "mcq",
+      "choices": [
+        "Seulement lors d’un changement de codec",
+        "Après avoir renommé la souris",
+        "Après une modification de montage"
+      ],
+      "answer": 2,
+      "explain": "Une livraison passe du point de vue du destinataire. Il faut vérifier image, son, sous-titres et possibilité de reprendre le projet."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le master ouvre mais le plan de reprise a des médias manquants. »",
+      "answer_text": "Les sources étaient liées par des chemins locaux non livrés. Reliez à des médias inclus et testez le dossier extrait sur une autre racine."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un export modifié garde le même nom et arrive après approbation. Comment le détecter ?",
+      "answer_text": "Comparer son empreinte au manifeste et demander la version et une nouvelle preuve de validation."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le WAV joue mais le VSE n’ouvre plus ses plans. Que tester ?",
+      "answer_text": "Les chemins relatifs des strips et la présence des images avec le .blend dans un dossier neuf."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le dernier cue se termine à 15,050 s dans un film de 15 s. Que corriger ?",
+      "answer_text": "Rabattre ou redécouper la fin sur la durée réelle et refaire le contrôle de synchronisation."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Fabriquer les éléments » vérifiable ?",
+      "answer_text": "Les durées, la cadence, le plan de couleur et les canaux audio sont documentés."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Placer dans l’archive » vérifiable ?",
+      "answer_text": "Le manifeste connaît chaque pièce et un dossier différent permet de tout rouvrir."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Recevoir et contrôler » vérifiable ?",
+      "answer_text": "Le rapport de réception liste format observé, pièce de preuve et verdict par fichier."
+    }
+  ]
+}

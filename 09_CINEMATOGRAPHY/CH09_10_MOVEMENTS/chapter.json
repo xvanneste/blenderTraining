@@ -1,0 +1,68 @@
+{
+  "code": "CH09.10",
+  "title": "Mouvements et grammaire",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "La grammaire du plan est l'ensemble des règles qui rendent un découpage lisible : l'échelle de plans (large, moyen, gros plan), la ligne d'action (la droite qui relie deux personnages : on ne la traverse pas, sinon la gauche et la droite s'inversent à l'écran) et le mouvement de caméra (un travelling avant resserre le plan). Ce chapitre fait corriger une séquence de trois plans : le correcteur rend chaque plan, mesure la taille et la position des personnages, et vérifie les repères de timeline liés aux caméras.",
+  "prereqs": [
+    "CH07 (timeline, clés), CH09.07 (composition), CH09.08 (focales)."
+  ],
+  "objectives": [
+    "Choisir l'échelle d'un plan (large, moyen, gros plan).",
+    "Respecter la ligne d'action.",
+    "Lier des caméras à des repères de timeline.",
+    "Animer un travelling avant."
+  ],
+  "competences": [
+    [
+      "C09.10.a",
+      "Découper une séquence cohérente",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Plans et ligne d'action",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Repères et travelling",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_10_movements_starter.blend",
+      "Gros plan de l'autre côté de la ligne (A passe à droite de B), aucun repère, CAM_MED fixe"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_10_movements_solution.blend",
+      "CAM_CLOSE en (0, −4, 0,9), repères aux images 1 / 25 / 49, travelling de CAM_MED de y = −8 à −6 (hauteur de A 58 % → 78 %)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_10_movements_reference.png",
+      "Les quatre images contrôlées (large, moyen au début et à la fin du travelling, gros plan) : départ en haut (gros plan inversé), solution en bas"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (ligne traversée, sans repères, ordre inversé, plan fixe, recul, pas de progression)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_10.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_10_movements_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_10.py\" -- --exercise movements",
+  "deliverables": [
+    "Séquence de trois plans cohérente.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.11 — Couleur et émotion](../CH09_11_COLOR_EMOTION/README.md)"
+}

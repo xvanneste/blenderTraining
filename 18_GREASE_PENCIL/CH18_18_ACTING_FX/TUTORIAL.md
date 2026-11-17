@@ -26,6 +26,10 @@ Ouvrez `STARTER_FILES/ch18_18_shot_starter.blend` ; lisez le texte `SCENARIO` (T
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_18_shot_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_18.py" --python-exit-code 1 -- --exercise shot --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_18.py" -- --exercise shot --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_18_shot_contact.png` (images 10, 38, 44, 48, 50, 58, 66, 100).
+
+## Variante de contrôle
+
+Isolez l’acting puis l’effet. Retardez l’effet de deux images et contrôlez le regard du spectateur avec la version originale. **Preuve** Le personnage reste compréhensible et l’effet renforce le moment prévu plutôt que de le couvrir.

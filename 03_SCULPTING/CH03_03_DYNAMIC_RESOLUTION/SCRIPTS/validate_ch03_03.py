@@ -1,10 +1,10 @@
 """
 validate_ch03_03.py — Correcteur « Choisir sa résolution » (CH03.03).
-Usage : … --python validate_ch03_03.py --python-exit-code 1 -- --exercise remesh|multires|decide [--render]
+Usage : … --python-exit-code 1 --python validate_ch03_03.py -- --exercise remesh|multires|decide [--render]
   remesh   : un seul objet SCULPT_Body (plus de MASS_*), UN seul morceau, fermé (aucune arête non
              manifold), ≥ 99 % de quads, densité régulière (arête moyenne 0,5–3 cm), taille 1,6–1,9 m.
   multires : SCULPT_HeadBase garde une base légère (≤ 2 000 faces) et porte un Multiresolution de
-             ≥ 4 niveaux, Sculpt = niveau max, Render = niveau max, Viewport ≤ Sculpt, non appliqué.
+             ≥ 4 niveaux, Sculpt = niveau max, Render = niveau max, Viewport ≤ Sculpt, non appliqué, ET détail réellement sculpté au niveau max (relief local ≥ 0,01 mm).
   decide   : texte DECISIONS : la bonne méthode (VOXEL, DYNTOPO, MULTIRES) pour les 5 situations.
 Testé avec : Blender 5.3.0.
 """
@@ -15,7 +15,8 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "SCRIPTS"))
 import bcma_lib as L  # noqa: E402
 import bmesh  # noqa: E402
-import bpy  # noqa: E402
+import bpy
+import numpy as np  # noqa: E402
 
 ANSWERS = {1: "VOXEL", 2: "DYNTOPO", 3: "MULTIRES", 4: "VOXEL", 5: "MULTIRES"}
 WHY = {1: "boules jointes → un volume unique et régulier", 2: "densité locale ajoutée là où l'on sculpte",
@@ -68,6 +69,9 @@ def remesh(r):
     bm.free()
 
 
+SCULPT_MIN = 0.01     # mm — calibré : solution sculptée 0,029 ; Multires jamais sculpté 0,002
+
+
 def multires(r):
     ob = bpy.data.objects.get("SCULPT_HeadBase")
     if not r.check(ob is not None and ob.type == "MESH", "Objet SCULPT_HeadBase présent", "Repartez du starter.", 1):
@@ -82,6 +86,30 @@ def multires(r):
             f"Sculpt {mr.sculpt_levels} et Render {mr.render_levels} au niveau max ({mr.total_levels})", "", 2)
     r.check(mr.levels <= mr.sculpt_levels and mr.levels < mr.total_levels,
             f"Viewport {mr.levels} plus bas que Sculpt (fluidité)", "Levels Viewport plus bas que Sculpt.", 1)
+    # détail sculpté au niveau max : rugosité locale (écart d'un sommet à la moyenne de ses voisins) de l'évaluation au niveau max
+    keep = mr.levels
+    mr.levels = mr.total_levels
+    dg = bpy.context.evaluated_depsgraph_get()
+    ev = ob.evaluated_get(dg)
+    me = ev.to_mesh()
+    n = len(me.vertices)
+    P = np.empty(n * 3, np.float32)
+    me.vertices.foreach_get("co", P)
+    P = P.reshape(n, 3).astype(float)
+    E = np.empty(len(me.edges) * 2, np.int32)
+    me.edges.foreach_get("vertices", E)
+    a_, b_ = E[0::2], E[1::2]
+    deg = np.bincount(np.concatenate([a_, b_]), minlength=n).astype(float)
+    deg[deg == 0] = 1
+    acc = np.zeros_like(P)
+    np.add.at(acc, a_, P[b_])
+    np.add.at(acc, b_, P[a_])
+    lap = 1000.0 * np.linalg.norm(acc / deg[:, None] - P, axis=1)
+    ev.to_mesh_clear()
+    mr.levels = keep
+    rel = float(np.percentile(lap, 99.5))
+    r.check(rel >= SCULPT_MIN, f"Détail sculpté au niveau {mr.total_levels} : relief local {rel:.3f} mm (99,5ᵉ centile ; ≥ {SCULPT_MIN})",
+            "Sculptez au niveau max (Sculpt Mode : Multires Level Sculpt = max) : la base reste légère, le détail est dans le Multires.", 3)
 
 
 def decide(r):

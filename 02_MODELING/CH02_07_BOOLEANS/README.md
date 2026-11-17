@@ -59,7 +59,7 @@ Percer, découper, fusionner des volumes sans jamais perdre la possibilité de r
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_07_plate_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_07.py" --python-exit-code 1 -- --exercise plate --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_07.py" -- --exercise plate --render
 ```
 
 ## Livrables attendus

@@ -1,4 +1,6 @@
 # PHASE 17 — EXPERTISE ET SPÉCIALISATIONS ⏱ 200 h+ · E
+
+[Jalons et pièces originales de spécialisation](ASSETS_ATELIERS/REVUE_PORTFOLIO.md)
 Parcours au choix (chacun ≈ 40–80 h). Chaque parcours contient études de cas, projets
 complexes, exercices de résolution de problèmes et optimisation avancée.
 
@@ -19,16 +21,16 @@ complexes, exercices de résolution de problèmes et optimisation avancée.
 
 | Chapitre | Statut |
 |---|---|
-| CH17.01 Character Artist | ⬜ Non commencé |
-| CH17.02 Environment Artist | ⬜ Non commencé |
-| CH17.03 Technical Artist | ⬜ Non commencé |
-| CH17.04 Animator | ⬜ Non commencé |
-| CH17.05 Lighting Artist | ⬜ Non commencé |
-| CH17.06 VFX Artist | ⬜ Non commencé |
-| CH17.07 Technical Director | ⬜ Non commencé |
-| CH17.08 Pipeline Developer | ⬜ Non commencé |
-| CH17.09 CG Supervisor | ⬜ Non commencé |
-| CH17.10 Réalisateur d'animation | ⬜ Non commencé |
+| [CH17.01 Character Artist](CH17_01_CHARACTER_ARTIST/README.md) | ✅ Terminé et vérifié |
+| [CH17.02 Environment Artist](CH17_02_ENVIRONMENT_ARTIST/README.md) | ✅ Terminé et vérifié |
+| [CH17.03 Technical Artist](CH17_03_TECHNICAL_ARTIST/README.md) | ✅ Terminé et vérifié |
+| [CH17.04 Animator](CH17_04_ANIMATOR/README.md) | ✅ Terminé et vérifié |
+| [CH17.05 Lighting Artist](CH17_05_LIGHTING_ARTIST/README.md) | ✅ Terminé et vérifié |
+| [CH17.06 VFX Artist](CH17_06_VFX_ARTIST/README.md) | ✅ Terminé et vérifié |
+| [CH17.07 Technical Director](CH17_07_TECHNICAL_DIRECTOR/README.md) | ✅ Terminé et vérifié |
+| [CH17.08 Pipeline Developer](CH17_08_PIPELINE_DEVELOPER/README.md) | ✅ Terminé et vérifié |
+| [CH17.09 CG Supervisor](CH17_09_CG_SUPERVISOR/README.md) | ✅ Terminé et vérifié |
+| [CH17.10 Réalisateur d'animation](CH17_10_DIRECTOR/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre a son sous-dossier `CH17_MM_NOM/` conforme à

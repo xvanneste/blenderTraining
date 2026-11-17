@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_14_files.py",
+  "validator": "validate_ch07_14.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_14_mocap_solution.blend",
+      "exercise": "mocap",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_14_mocap_starter.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_not_cleaned.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_over_smoothed.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_kept_spikes.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_too_many_keys.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_linear_keys.blend",
+      "exercise": "mocap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_14_mocap_raw_modified.blend",
+      "exercise": "mocap",
+      "expect": false
+    }
+  ]
+}

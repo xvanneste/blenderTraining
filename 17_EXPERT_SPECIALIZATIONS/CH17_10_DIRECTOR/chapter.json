@@ -1,0 +1,43 @@
+{
+  "code": "CH17.10",
+  "title": "Réalisateur d’animation",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Construire une vision, donner des notes réalisables et défendre un projet devant une équipe.",
+  "prereqs": [
+    "CH17.09"
+  ],
+  "objectives": [
+    "Vous pouvez montrer trois conséquences sur un storyboard ou une animatique.",
+    "Chaque note indique un critère de lecture et une preuve qui permettra de la fermer.",
+    "Dossier de réalisation, animatique annotée, liste de décisions et un prochain jalon chiffré."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Formuler la vision",
+      ""
+    ],
+    [
+      "L2",
+      "Diriger la révision",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../16_FEATURE_FILMS/CH16_01_DEVELOPMENT/DOSSIER_EXEMPLE.md",
+      "Dossier de développement des Veilleurs du quai"
+    ],
+    [
+      "../../15_SHORT_FILMS/ASSETS_ATELIERS/sur_le_quai_animatique_0001-0360.mp4",
+      "Animatique sonore de référence"
+    ]
+  ],
+  "pass_criteria": [
+    "Vous pouvez montrer trois conséquences sur un storyboard ou une animatique.",
+    "Chaque note indique un critère de lecture et une preuve qui permettra de la fermer.",
+    "Dossier de réalisation, animatique annotée, liste de décisions et un prochain jalon chiffré."
+  ]
+}

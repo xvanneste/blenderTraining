@@ -9,7 +9,7 @@ build_ch01_14_files.py — Le premier rendu final (CH01.14).
       PNG RGB 8 bits, AgX + Look « AgX - Medium High Contrast », sortie //renders/.
   COMPLETED_EXAMPLES/renders/ch01_14_final.png       rendu final Cycles (1920×1080)
   COMPLETED_EXAMPLES/renders/ch01_14_eevee.png       même plan en EEVEE (comparaison)
-Usage : blender -b --factory-startup --python build_ch01_14_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_14_files.py
         (le rendu utilise OptiX/CUDA si disponible, sinon le CPU)
 Testé avec : Blender 5.3.0 (RTX 3080, OptiX).
 """

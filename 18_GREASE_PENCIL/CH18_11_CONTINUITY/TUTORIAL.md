@@ -27,7 +27,11 @@ personnage. A toujours à gauche, B toujours à droite.
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_11_dialogue_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_11.py" --python-exit-code 1 -- --exercise dialogue
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_11.py" -- --exercise dialogue
 ```
 Puis la planche : `-- --exercise board --render`. Références : `ch18_11_dialogue_contact.png`,
 `ch18_11_board_reference.png`.
+
+## Variante de contrôle
+
+Repérez la direction du regard aux deux bords d’une coupe. Testez une coupe qui change d’axe sur une copie. **Preuve** Vous pouvez expliquer la nouvelle lecture et proposer un plan de transition lorsque celle-ci devient confuse.

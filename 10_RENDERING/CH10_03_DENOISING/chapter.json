@@ -1,0 +1,68 @@
+{
+  "code": "CH10.03",
+  "title": "Bruit et débruitage",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Le bruit est le grain d'un rendu Cycles qui manque d'échantillons. On peut le combattre en calculant plus (long) ou en débruitant : un algorithme (OpenImageDenoise sur CPU, OptiX sur certaines cartes NVIDIA) devine l'image propre à partir de l'image bruitée et de passes d'aide (couleur de surface, normale). Bien réglé, le débruitage rapproche un rendu à très peu d'échantillons d'une référence très échantillonnée sans lisser le détail. Le correcteur compare le rendu de l'élève à une référence de 256 échantillons sur un damier fin.",
+  "prereqs": [
+    "CH10.02 (Cycles, échantillons)."
+  ],
+  "objectives": [
+    "Activer et régler OpenImageDenoise.",
+    "Mesurer l'écart à une référence.",
+    "Reconnaître un débruitage inutile (préfiltre None) ou excessif.",
+    "Rester dans un budget d'échantillons."
+  ],
+  "competences": [
+    [
+      "C10.03.a",
+      "Débruiter sans perte",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Le bruit et le débruiteur",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Mesurer la perte",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_03_denoising_starter.blend",
+      "4 échantillons, débruitage désactivé : EQM 0,073, contraste du damier 1,12 (bruit) ; 17/33"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_03_denoising_solution.blend",
+      "4 échantillons, OpenImageDenoise, Albedo+Normal, préfiltre Accurate : EQM 0,056, contraste 1,07 ; 33/33"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_03_denoising_reference.png",
+      "Départ (gauche, bruité), solution (milieu, débruité) et référence de 256 échantillons (droite)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans débruitage, préfiltre None, un seul échantillon, trop d'échantillons)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_03.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_03_denoising_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_03.py\" -- --exercise denoising",
+  "deliverables": [
+    "Réglages de débruitage justifiés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.04 — Passes, AOV, View Layers](../CH10_04_PASSES/README.md)"
+}

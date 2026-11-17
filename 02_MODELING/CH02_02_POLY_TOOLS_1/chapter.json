@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_02_stool_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch02_02.py", "Correcteur (dimensions, pieds, traverses, chanfrein, creux, fermeture)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_02_stool_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_02.py\" --python-exit-code 1 -- --exercise stool --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_02_stool_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_02.py\" -- --exercise stool --render",
   "deliverables": ["Tabouret validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : trois props de la pièce."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Tabouret validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.03 — Outils polygonaux II](../CH02_03_POLY_TOOLS_2/README.md)"

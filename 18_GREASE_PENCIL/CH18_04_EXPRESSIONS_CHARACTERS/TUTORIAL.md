@@ -37,6 +37,10 @@ Enregistrez `ch18_04_expressions_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_04_expressions_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_04.py" --python-exit-code 1 -- --exercise expressions --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_04.py" -- --exercise expressions --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_04_expressions_reference.png`.
+
+## Variante de contrôle
+
+Dessinez une même expression sur tête de face et de trois-quarts. Gardez les axes du crâne et contrôlez la position relative des yeux et de la bouche. **Preuve** Le lecteur identifie l’expression et la direction du visage dans les deux vues.

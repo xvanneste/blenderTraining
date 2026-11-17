@@ -9,7 +9,7 @@ build_ch01_06_files.py — Le déménagement (CH01.06 : appliquer, orientations,
   COMPLETED_EXAMPLES/ch01_06_moving_solution.blend
       Échelle de la caisse appliquée, livre posé sur la table, étagère contre le mur,
       planche avancée de 1 m dans sa direction locale X.
-Usage : blender -b --factory-startup --python build_ch01_06_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_06_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

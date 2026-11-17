@@ -9,7 +9,7 @@ build_ch01_03_files.py — Le puzzle des transformations (CH01.03).
         D Suzanne : déplacement + rotation 45° sur Z + échelle 0,5
       + 30 « cailloux » GEO_Pebble_* pour s'entraîner aux sélections (box, cercle, lasso).
   COMPLETED_EXAMPLES/ch01_03_puzzle_solution.blend
-Usage : blender -b --factory-startup --python build_ch01_03_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_03_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

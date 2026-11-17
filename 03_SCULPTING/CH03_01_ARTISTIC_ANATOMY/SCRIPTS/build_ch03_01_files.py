@@ -11,7 +11,7 @@ build_ch03_01_files.py — « Les masses du corps et le canon » (CH03.01, anato
   COMPLETED_EXAMPLES/ch03_01_child_solution.blend  enfant d'environ 5 têtes (1,10 m).
   COMPLETED_EXAMPLES/ch03_01_gesture_solution.blend (+ _reference.png)
       Contrapposto : bassin et cage inclinés en sens opposés, tête au-dessus du pied d'appui.
-Usage : blender -b --factory-startup --python build_ch03_01_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch03_01_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

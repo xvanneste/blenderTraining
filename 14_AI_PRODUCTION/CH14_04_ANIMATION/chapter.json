@@ -1,0 +1,43 @@
+{
+  "code": "CH14.04",
+  "title": "IA pour l’animation",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Contrôler et nettoyer un mouvement avant de le considérer comme un plan montable.",
+  "prereqs": [
+    "CH14.03"
+  ],
+  "objectives": [
+    "Un tableau par pied associe trois événements aux images de la timeline.",
+    "Le glissement est visible en vue latérale et mesurable sur deux images de l’appui.",
+    "Le glissement baisse et le genou ne saute pas au raccord."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Référence de mouvement",
+      ""
+    ],
+    [
+      "L2",
+      "Retargeting et appuis",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../PROPOSITIONS/RECONSTRUCTION_2_VUES/personnage_marche.blend",
+      "Personnage avec marche et appuis"
+    ],
+    [
+      "../../PROPOSITIONS/RECONSTRUCTION_2_VUES/marche_personnage_0001-0096.mp4",
+      "Exemple Blender de marche"
+    ]
+  ],
+  "pass_criteria": [
+    "Un tableau par pied associe trois événements aux images de la timeline.",
+    "Le glissement est visible en vue latérale et mesurable sur deux images de l’appui.",
+    "Le glissement baisse et le genou ne saute pas au raccord."
+  ]
+}

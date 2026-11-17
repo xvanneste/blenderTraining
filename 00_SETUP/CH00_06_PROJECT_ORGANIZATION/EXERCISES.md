@@ -18,7 +18,7 @@ fichier de layout au bon endroit avec le bon nom.
 Rendez `ch00_06_messy_scene_starter.blend` conforme : objets préfixés et parlants, aucun
 `.001`, collections `SET/PROPS/LIGHTS/CAMERAS`, matériaux `MAT_`, texture en relatif.
 Enregistrez `ch00_06_messy_scene_<prenom>_v001.blend` et validez :
-`… --python "SCRIPTS\validate_ch00_06.py" --python-exit-code 1 -- --exercise naming`
+`… --python-exit-code 1 --python "SCRIPTS\validate_ch00_06.py" -- --exercise naming`
 Barème (15 pts) : objets conservés 1 · objets 3 · collections 3 · matériaux 3 · images 3 ·
 collections requises 2.
 

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.04",
+  "title": "Dramatique et stylisé",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui caractérise le low-key ?",
+      "choices": [
+        "Image sombre à fort contraste",
+        "Image claire sans ombre",
+        "Image sans couleur",
+        "Image floue"
+      ],
+      "answer": 0,
+      "explain": "Solution : ratio 8,8 ; moyenne 0,057."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui caractérise le high-key ?",
+      "choices": [
+        "Image claire, ombres ouvertes",
+        "Image sombre",
+        "Une seule lampe",
+        "Une lampe rouge"
+      ],
+      "answer": 0,
+      "explain": "Solution : ratio 0,9 ; moyenne 0,60."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment obtient-on un fort contraste ?",
+      "choices": [
+        "Fill très faible",
+        "Fill égale à la Key",
+        "Key éteinte",
+        "Lampe plus proche"
+      ],
+      "answer": 0,
+      "explain": "Fill de 0,5 W."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un fort ratio ne suffit-il pas pour le low-key ?",
+      "answer_text": "Il faut aussi une image globalement sombre : « low_not_dark » a ratio 9 mais une moyenne de 0,20 (Key 250 W) : contraste sans ambiance."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « high_dark » ?",
+      "answer_text": "Ratio 0,83 (contraste doux) mais moyenne 0,15 : trop sombre pour du high-key : l'ambiance dépend de la quantité de lumière, pas seulement du ratio."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelles couleurs sont complémentaires ?",
+      "choices": [
+        "Orange et bleu-vert",
+        "Rouge et orange",
+        "Vert et jaune",
+        "Gris et blanc"
+      ],
+      "answer": 0,
+      "explain": "Teintes 28° et 203° : écart 175°."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi une Rim de couleur différente de la Key ?",
+      "choices": [
+        "Elle sépare le sujet du fond par la couleur",
+        "Elle éclaire plus",
+        "Elle réduit le bruit",
+        "Elle ralentit le rendu"
+      ],
+      "answer": 0,
+      "explain": "Contraste de température : chaud/froid."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il l'écart de teinte ?",
+      "answer_text": "Il convertit la couleur de chaque lampe en HSV et compare les teintes (écart ≥ 120°) ; il vérifie aussi une saturation d'au moins 0,3."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment deux scènes partagent-elles le sujet ?",
+      "answer_text": "Le même objet Subject est lié à la collection des deux scènes ; seules les lampes diffèrent (LOW_*, HIGH_*)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle limite a ce chapitre ?",
+      "answer_text": "Une sphère unie sans fond ni décor : on mesure l'ambiance du modelé, pas celle d'un plan complet (couleur du fond, composition)."
+    }
+  ]
+}

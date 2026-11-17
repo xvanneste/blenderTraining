@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.07",
+  "title": "Décors et végétation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment obtient-on l'inclinaison du terrain en un point ?",
+      "choices": [
+        "Avec la composante Z de la normale (Normal Z) : 1 = plat, 0 = vertical",
+        "Avec Position X",
+        "Avec Index",
+        "Avec Random Value"
+      ],
+      "answer": 0,
+      "explain": "Pour une normale unitaire, Normal Z = cos(angle de pente)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi comparer Normal Z à cos(Max Slope) ?",
+      "choices": [
+        "Pour trier les arbres",
+        "Une pente ≤ Max Slope équivaut à Normal Z ≥ cos(Max Slope)",
+        "Pour colorer",
+        "Pour lisser"
+      ],
+      "answer": 1,
+      "explain": "Math : Radians → Cosine → Greater Than avec Normal Z → Density Factor (0 ou 1)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Sur quelle géométrie le masque de pente est-il évalué ?",
+      "choices": [
+        "Sur le terrain déplacé fourni à Distribute",
+        "Sur le plan d'entrée",
+        "Sur les arbres",
+        "Sur le monde"
+      ],
+      "answer": 0,
+      "explain": "La normale doit être celle du terrain après Set Position : on distribue sur le terrain déplacé."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le correcteur mesure-t-il l'écart vertical entre arbre et surface ?",
+      "answer_text": "Pour vérifier que les arbres sont posés sur le terrain (points issus de Distribute) et pas translatés ; 0,003 m mesurés dans la solution."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que contrôle Max Slope 10 dans le test ?",
+      "answer_text": "Qu'en réduisant la pente maximale à 10°, le nombre d'arbres baisse (123 au lieu de 187) et qu'aucun arbre n'est sur une pente supérieure à 13°."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud transforme plusieurs géométries en une liste d'instances à choisir ?",
+      "choices": [
+        "Join Geometry",
+        "Geometry to Instance",
+        "Realize Instances",
+        "Set Position"
+      ],
+      "answer": 1,
+      "explain": "Geometry to Instance reçoit plusieurs géométries (multi-entrée) et les range comme instances numérotées."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Pick Instance ?",
+      "choices": [
+        "Il choisit l'une des instances de l'entrée Instance selon Instance Index (champ) pour chaque point",
+        "Il supprime les instances",
+        "Il colore",
+        "Il subdivise"
+      ],
+      "answer": 0,
+      "explain": "Avec Pick Instance activé, Instance Index (ici Random Value entier 0–2) choisit la variante de chaque arbre."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le nœud Cone ne nécessite-t-il pas de Transform pour poser sa base ?",
+      "answer_text": "Contrairement au Cylinder (centré), le Cone du nœud a sa base à z = 0 (mesuré : z de 0 à Depth) : un Transform de Depth ÷ 2 le ferait flotter (contre-exemple « floating »)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que prouve le test de Seed ?",
+      "answer_text": "Que Seed est branché à Distribute : avec Seed 7, ≤ 20 % des arbres coïncident avec ceux du réglage par défaut (1 % mesuré) ; sans branchement, 100 % coïncident."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment ajouter une clairière à cet outil ?",
+      "answer_text": "Multiplier le masque de pente par un second masque (distance au centre > rayon de la clairière) avant Density Factor."
+    }
+  ]
+}

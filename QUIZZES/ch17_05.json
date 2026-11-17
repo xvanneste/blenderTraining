@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.05",
+  "title": "Lighting Artist",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que verrouiller pour comparer deux images ?",
+      "type": "mcq",
+      "choices": [
+        "Toutes les positions de caméra",
+        "Le seul nom de la scène",
+        "La chaîne couleur et les témoins"
+      ],
+      "answer": 2,
+      "explain": "Le lookdev se compare avec une chaîne couleur stable. Une modification de la lumière doit être distinguée de l’affichage."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quand une rupture de lumière est-elle motivée ?",
+      "type": "mcq",
+      "choices": [
+        "Lorsqu’un événement visible la justifie",
+        "Lorsque les échantillons sont différents",
+        "Quand il reste du temps de calcul"
+      ],
+      "answer": 0,
+      "explain": "Une exception d’éclairage est lisible quand elle découle d’un événement. Les raccords proches exigent une direction crédible."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Pourquoi regarder en niveaux de gris ?",
+      "type": "mcq",
+      "choices": [
+        "Remplacer les passes de rendu",
+        "Contrôler le contraste sans dépendre de la teinte",
+        "Augmenter la luminance du signal"
+      ],
+      "answer": 1,
+      "explain": "La revue de séquence révèle les ruptures que des images isolées cachent. Une mesure doit comparer le même contenu."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Les valeurs sautent entre deux caméras malgré des lampes identiques. »",
+      "answer_text": "L’exposition, l’affichage ou la distance de l’objet à la lumière diffèrent. Vérifiez la chaîne couleur avant de corriger la lumière puis comparez les témoins."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Deux valeurs changent surtout après le passage en AgX. Quelle expérience isole le problème ?",
+      "answer_text": "Comparer les mêmes témoins avec exposition et transformation d’affichage identiques."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi sert une exception de couleur au dernier plan ?",
+      "answer_text": "À marquer un événement motivé, comme l’allumage, tout en laissant lisible la silhouette."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi comparer le temps entre deux budgets dans le même cadre ?",
+      "answer_text": "Pour attribuer l’écart aux échantillons et à leurs effets visibles sur le même contenu."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Références et lookdev » vérifiable ?",
+      "answer_text": "Deux témoins visibles dans les rendus de test et une configuration de couleur notée."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Continuité et exception » vérifiable ?",
+      "answer_text": "Le changement de luminance est narratif, tandis que la silhouette et le fond restent comparables."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Dailies et coût » vérifiable ?",
+      "answer_text": "Une planche avec trois fenêtres, une recommandation de budget et un défaut résolu."
+    }
+  ]
+}

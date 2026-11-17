@@ -1,6 +1,6 @@
 """
 validate_ch18_12.py — Correcteur de « La planche normée » (CH18.12).
-Usage : … --python validate_ch18_12.py --python-exit-code 1 -- --exercise board [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_12.py -- --exercise board [--render]
 Vérifie : dessin dans chacune des 6 cases, ≥ 3 flèches, 6 annotations conformes à la norme
 « SQnnn_SHnnnn · valeur · mouvement · durée » placées sous des cases différentes, un en-tête de page.
 Testé avec : Blender 5.3.0.

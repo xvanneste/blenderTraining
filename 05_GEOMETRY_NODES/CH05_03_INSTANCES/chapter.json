@@ -1,0 +1,68 @@
+{
+  "code": "CH05.03",
+  "title": "Instances",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Une instance est une copie d'une même géométrie placée en un point : elle ne duplique pas les sommets, d'où des milliers de copies à bas coût. Ce chapitre disperse 441 piquets sur une grille avec Instance on Points, en variant la rotation et l'échelle de chacun par des Random Value. Le correcteur énumère les instances réellement évaluées (nombre, emprise, échelles, orientations, base à z = 0, matériau) et vérifie que l'arbre n'a pas réalisé les instances.",
+  "prereqs": [
+    "CH05.01–02."
+  ],
+  "objectives": [
+    "Distinguer instance et copie réalisée.",
+    "Utiliser Instance on Points (Points, Instance, Rotation, Scale).",
+    "Varier chaque instance avec Random Value.",
+    "Savoir quand réaliser les instances, et pourquoi l'éviter ici."
+  ],
+  "competences": [
+    [
+      "C05.03.a",
+      "Disperser des instances",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Instance on Points",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Variation, coût et Realize Instances",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_03_instances_starter.blend",
+      "Arbre avec le seul piquet"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_03_instances_solution.blend",
+      "441 piquets instanciés"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_03_instances_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (réalisé, sans aléa, enfoncé, trop clairsemé, trop dense, sans matériau)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_03.py",
+      "Correcteur (instances)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_03_instances_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_03.py\" -- --exercise instances --render",
+  "deliverables": [
+    "Champ d'instances validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.04 — Distribution](../CH05_04_DISTRIBUTION/README.md)"
+}

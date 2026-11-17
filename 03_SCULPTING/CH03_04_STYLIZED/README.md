@@ -57,7 +57,7 @@ Styliser, c'est choisir : une intention, une forme dominante (cercle, carré, tr
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_04_bust_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_04.py" --python-exit-code 1 -- --exercise bust --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_04.py" -- --exercise bust --render
 ```
 
 ## Livrables attendus

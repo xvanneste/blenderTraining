@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.05",
+  "title": "Textures procédurales",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le principal avantage d'une texture procédurale ?",
+      "choices": [
+        "Elle est toujours plus rapide",
+        "Elle n'a pas de résolution fixe et ne dépend pas des UV",
+        "Elle remplace le modélisme",
+        "Elle fonctionne sans lumière"
+      ],
+      "answer": 1,
+      "explain": "Calculée à la volée à n'importe quelle échelle ; avec les coordonnées Object ou Generated, aucun UV n'est nécessaire."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle est une limite des textures procédurales ?",
+      "choices": [
+        "Elles sont floues",
+        "Difficile d'obtenir une apparence précise dessinée à la main (logo, usure localisée)",
+        "Elles exigent des UV",
+        "Elles ne marchent pas en Cycles"
+      ],
+      "answer": 1,
+      "explain": "Pour un logo ou une usure placée à la main, on peint une image (CH04.06)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle sortie de Texture Coordinate évite les UV pour un objet rigide ?",
+      "choices": [
+        "UV",
+        "Object",
+        "Normal",
+        "Reflection"
+      ],
+      "answer": 1,
+      "explain": "Object (coordonnées locales) : la texture suit l'objet sans UV. Generated est une autre option, liée à la boîte englobante."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi appliquer l'échelle dans la géométrie (échelle objet = 1) avant d'utiliser Object ?",
+      "answer_text": "Les coordonnées Object sont locales : une échelle d'objet non uniforme étire la texture. Le mur est donc construit à sa taille réelle dans le maillage."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Dites une situation où on préfère une image à une texture procédurale.",
+      "answer_text": "Un visage peint, une étiquette, un logo, des taches d'usure précises : des détails que l'artiste place à la main."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "À quoi servent Color1 et Color2 de la Brick Texture ?",
+      "choices": [
+        "À colorier le joint",
+        "À faire varier la couleur d'une brique à l'autre",
+        "À définir le relief",
+        "À régler l'échelle"
+      ],
+      "answer": 1,
+      "explain": "Elles alternent de façon pseudo-aléatoire entre briques ; Mortar colore le joint."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel réglage décale les rangées d'une demi-brique ?",
+      "choices": [
+        "Mortar Size",
+        "Offset (0,5)",
+        "Scale",
+        "Bias"
+      ],
+      "answer": 1,
+      "explain": "Offset (propriété du nœud) vaut 0,5 par défaut : les joints verticaux ne s'alignent pas d'une rangée à l'autre."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi relier la sortie Fac de la Brick à Bump [Height] ?",
+      "answer_text": "Fac vaut 1 sur le mortier et 0 sur la brique. Activez Invert sur Bump pour obtenir des joints en creux."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que donne un Mortar de même couleur que les briques ?",
+      "answer_text": "Les briques se fondent : le motif disparaît ; le correcteur exige un joint plus clair d'au moins 0,15 en luminance."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il avec Scale = 100 ?",
+      "answer_text": "Briques minuscules (de l'ordre du millimètre à l'écran) : aspect de bruit gris et moirage ; le correcteur exige 3–12."
+    }
+  ]
+}

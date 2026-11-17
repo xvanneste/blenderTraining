@@ -27,6 +27,10 @@ sous chaque case. `Num 0`.
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_12_board_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_12.py" --python-exit-code 1 -- --exercise board --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_12.py" -- --exercise board --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_12_board_reference.png`.
+
+## Variante de contrôle
+
+Pour un même groupe de six plans, comparez l’information sur le cadre, le mouvement et l’action aux flèches dessinées. **Preuve** Un autre lecteur peut suivre la trajectoire sans confondre mouvement de caméra et mouvement du personnage.

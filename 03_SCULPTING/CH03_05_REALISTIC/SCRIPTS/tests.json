@@ -1,0 +1,16 @@
+{
+  "build": "build_ch03_05_files.py",
+  "validator": "validate_ch03_05.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch03_05_bust_solution.blend", "exercise": "bust", "expect": true, "render": true},
+    {"file": "COMPLETED_EXAMPLES/ch03_05_bust_learner.blend", "exercise": "bust", "expect": true},
+    {"file": "STARTER_FILES/ch03_05_bust_starter.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_smooth.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_no_tertiary.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_no_secondary.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_eyes_high.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_lopsided.blend", "exercise": "bust", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_05_bust_tiny.blend", "exercise": "bust", "expect": false},
+    {"file": "../CH03_04_STYLIZED/COMPLETED_EXAMPLES/ch03_04_bust_solution.blend", "exercise": "bust", "expect": false}
+  ]
+}

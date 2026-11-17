@@ -23,7 +23,7 @@
     ["COMPLETED_EXAMPLES/ch18_15_edit_contact.png", "Images 140, 354, 446"],
     ["SCRIPTS/validate_ch18_15.py", "Correcteur (--render : export réel et contrôle du son)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_15_edit_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_15.py\" --python-exit-code 1 -- --exercise edit --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_15_edit_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_15.py\" -- --exercise edit --render",
   "deliverables": ["Montage validé.", "Vidéo v001 exportée + notes de révision.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Montage validé avec --render."],
   "next": "[CH18.16 — Animation 2D : principes et image par image](../CH18_16_2D_ANIMATION/README.md)"

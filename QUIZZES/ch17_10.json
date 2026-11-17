@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.10",
+  "title": "Réalisateur d’animation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel exemple rend une vision opératoire ?",
+      "type": "mcq",
+      "choices": [
+        "Un adjectif générique",
+        "Une règle qui change un cadre ou un geste",
+        "Le seul nombre de vues"
+      ],
+      "answer": 1,
+      "explain": "La vision est opératoire quand elle entraîne un choix observable de rythme, de cadre ou de jeu."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que demander lors d’une projection d’essai ?",
+      "type": "mcq",
+      "choices": [
+        "Si le spectateur connaît déjà le budget",
+        "Quel codec il préfère",
+        "Ce qui a été perçu avant d’expliquer l’intention"
+      ],
+      "answer": 2,
+      "explain": "Une note de direction explique ce que le spectateur doit percevoir. L’artiste conserve des marges pour proposer la solution."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que livrer avec le pitch ?",
+      "type": "mcq",
+      "choices": [
+        "Une preuve visuelle et la prochaine décision",
+        "Un titre sans animatique",
+        "Seulement le planning technique"
+      ],
+      "answer": 0,
+      "explain": "Une présentation efficace relie l’ambition artistique aux moyens et aux décisions à prendre."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « L’équipe reçoit « rendez le plan plus intense » sans indication de lecture. »",
+      "answer_text": "La note prescrit une sensation générale sans la situer. Citez le moment, la réaction attendue, le problème observé et la possibilité de tester la révision."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le lecteur ne voit pas que Mina choisit d’agir. Quelle note donner ?",
+      "answer_text": "Nommer la coupe et le geste attendus puis demander une hésitation lisible avant le contact."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel passage montrer lors de la défense du projet ?",
+      "answer_text": "Le passage qui teste le risque de lecture et la comparaison avant/après de sa révision."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi montrer un périmètre chiffré avec la vision ?",
+      "answer_text": "L’équipe doit décider quel jalon fabriquer pour éprouver l’intention sans s’engager sur tout le film."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Formuler la vision » vérifiable ?",
+      "answer_text": "Vous pouvez montrer trois conséquences sur un storyboard ou une animatique."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Diriger la révision » vérifiable ?",
+      "answer_text": "Chaque note indique un critère de lecture et une preuve qui permettra de la fermer."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Présenter et décider » vérifiable ?",
+      "answer_text": "Dossier de réalisation, animatique annotée, liste de décisions et un prochain jalon chiffré."
+    }
+  ]
+}

@@ -16,7 +16,7 @@ memory »).
 | Tâche | CPU | GPU | RAM | VRAM |
 |---|---|---|---|---|
 | Affichage de l'interface et de la vue 3D | faible | **fort** | faible | moyen |
-| Modificateurs, Geometry Nodes, déformations d'animation | **fort** (souvent 1 cœur par objet) | — (sauf *GPU Subdivision* au viewport) | moyen | — |
+| Modificateurs, Geometry Nodes, déformations d'animation | **fort** selon le graphe et l’évaluation | — (sauf *GPU Subdivision* au viewport) | moyen | — |
 | Simulations (fluides, tissus, fumée) | **fort** | — | **fort** | — |
 | Rendu EEVEE | faible | **fort** | moyen | **fort** |
 | Rendu Cycles CPU | **fort** (tous les cœurs) | — | **fort** | — |
@@ -37,7 +37,7 @@ reste disponible.
 - Ce que ça ne change pas : le rendu **Cycles** (qui utilise CUDA/OptiX/HIP/oneAPI).
 
 ## 4. Cycles : périphériques et mémoire
-- CUDA / OptiX / HIP / oneAPI → CH00.01.
+- CUDA, OptiX, HIP, oneAPI ou Metal selon le poste. Voir CH00.01.
 - **La scène doit tenir en VRAM** pour un rendu GPU efficace. Ce qui remplit la VRAM :
   la géométrie (faces après subdivision !), les textures (une texture 8K RGBA en 32 bits
   ≈ 1 Go), les volumes (fumée), les caches.
@@ -58,9 +58,7 @@ Barre d'état (*Interface → Status Bar → Scene Statistics*, CH00.02) ou over
 | Memory | RAM utilisée par Blender | < 50 % de la RAM |
 | VRAM | mémoire graphique utilisée | < 80 % de la VRAM |
 
-⚠️ Les statistiques montrent la géométrie **du viewport**. Une Subdivision « Levels
-Viewport 1 / Render 5 » affiche peu… et rend 256 fois plus de faces (4⁴). Le script
-`bcma_scene_cost.py` estime le coût **au rendu**.
+⚠️ Les statistiques décrivent la vue 3D. Pour la grille de quads de cet atelier, le niveau 5 produit 256 fois plus de faces que le niveau 1, puisque quatre niveaux les multiplient par quatre à chaque étape. Ce calcul explique l’écart entre les niveaux Viewport et Render. Le script estime les faces à partir du maillage de base et des niveaux de subdivision. Il ne mesure ni le temps, ni la mémoire, ni les sorties d’autres modificateurs comme Geometry Nodes.
 
 ## 6. Les cinq leviers d'optimisation (à connaître dès maintenant)
 | Levier | Principe | Où |
@@ -68,12 +66,12 @@ Viewport 1 / Render 5 » affiche peu… et rend 256 fois plus de faces (4⁴). L
 | **1. Partager les données** | 200 copies d'un même galet peuvent partager **un seul** maillage (duplication liée, `Alt+D`, ou `Ctrl+L` → *Link Object Data*) : mémoire divisée, fichier plus léger | Object → Link/Transfer Data |
 | **2. Subdivision raisonnable** | Chaque niveau multiplie les faces par 4. Niveau 5 = ×1024 | Modificateur *Subdivision* : Levels Viewport / Render |
 | **3. Simplify** | Plafond global, sans toucher aux objets : *Max Subdivision*, limites de particules, de textures (Cycles) | Properties → Render → Simplify |
-| **4. Instances** | Geometry Nodes / collections instanciées : 1 million d'arbres pour le coût de quelques-uns | Phase 5 |
+| **4. Instances** | Geometry Nodes / collections instanciées : réutiliser la géométrie de référence et mesurer séparément le nombre d’instances | Phase 5 |
 | **5. Textures adaptées** | Résolution selon la taille à l'écran (2K suffit souvent) | Phase 4 et 10 |
 
 **Mesure réelle (poste de référence, RTX 3080, OptiX, 50 %, 32 échantillons)** : la scène
 lourde du chapitre (16,4 M de faces estimées) se rend en 8,1 s ; la version optimisée
-(0,26 M) en 5,5 s, avec une image identique à l'œil. Le gain semble modeste ici, car une
+(0,26 M) en 5,5 s sur le poste de référence. Comparez bord, ombre et reflet au cadrage de livraison pour décider si la différence est acceptable. Le gain semble modeste ici, car une
 RTX 3080 absorbe 16 M de faces, mais : (a) le fichier et la mémoire ont fondu ; (b) sur un
 plan réel avec personnages, décors et textures, ces 16 M s'ajoutent à tout le reste ; (c)
 multipliez par 2 000 images d'un court-métrage.
@@ -86,6 +84,12 @@ multipliez par 2 000 images d'un court-métrage.
 | Undo Memory Limit | System → Memory & Limits | Plafond de RAM pour l'historique d'annulation (0 = illimité) |
 | Memory Cache Limit | System → Video Sequencer | Cache d'images du montage (phase 12) |
 | Hardware Raytracing | Viewport → Quality | Ombres ray-tracées matérielles au viewport (selon GPU/backend) |
+
+## À retenir
+
+- Lier les données réduit le nombre de maillages distincts. Les 200 objets restent distincts, avec leur transformation et leur modificateur.
+- Baisser Render Levels réduit l’estimation de faces. Baisser Viewport Levels agit sur la navigation. Simplify ajoute un plafond global qui peut réduire la qualité d’un autre objet.
+- Un temps et une mémoire se mesurent avec un protocole. À scène, caméra et paramètres identiques, comparez au moins deux essais pour observer le coût de démarrage. Le contrôle visuel décide si le compromis convient au plan.
 
 ## 8. En production
 - Chaque département a un **budget** (triangles par personnage, Go de textures par

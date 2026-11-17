@@ -7,7 +7,7 @@ build_ch18_07_files.py — Feuille « brushes, traits, remplissages, matériaux 
       USER_Lines : vide — 3 × 5 traits avec 3 pinceaux différents.
       USER_Fills : vide — aplats de couleur dans les formes du dessin guide (outil Fill).
   COMPLETED_EXAMPLES/ch18_07_brushes_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch18_07_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_07_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

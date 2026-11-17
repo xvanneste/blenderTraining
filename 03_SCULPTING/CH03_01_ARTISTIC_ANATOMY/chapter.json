@@ -22,7 +22,7 @@
     ["COMPLETED_EXAMPLES/ch03_01_adult_reference.png", "Face + profil"],
     ["SCRIPTS/validate_ch03_01.py", "Correcteur (adult, child, gesture)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_01_proportions_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_01.py\" --python-exit-code 1 -- --exercise adult --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_01_proportions_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_01.py\" -- --exercise adult --render",
   "deliverables": ["Adulte et enfant validés.", "Contrapposto validé.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercices 2 et 3 validés."],
   "next": "[CH03.02 — Sculpt Mode](../CH03_02_SCULPT_MODE/README.md)"

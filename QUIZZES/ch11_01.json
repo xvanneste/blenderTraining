@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.01",
+  "title": "Compositor",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert le nœud Render Layers ?",
+      "choices": [
+        "À fournir l'image rendue (et ses passes) à l'arbre",
+        "À rendre l'image",
+        "À enregistrer le fichier",
+        "À créer une lampe"
+      ],
+      "answer": 0,
+      "explain": "Prises : Image, Alpha, plus les passes activées."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où se trouve la sortie de l'arbre en 5.3 ?",
+      "choices": [
+        "Dans un nœud Group Output (prise « Image »)",
+        "Dans un nœud Composite",
+        "Dans l'Outliner",
+        "Dans le Timeline"
+      ],
+      "answer": 0,
+      "explain": "Le nœud Composite n'existe plus dans la liste des nœuds : constaté par l'API."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment règle-t-on l'exposition d'un nœud Exposure ?",
+      "choices": [
+        "Par sa prise « Exposure » (en diaphragmes)",
+        "Par un curseur caché",
+        "Par la caméra",
+        "Par un script obligatoire"
+      ],
+      "answer": 0,
+      "explain": "Dans 5.3 les réglages des nœuds sont des prises."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un nœud orphelin ?",
+      "answer_text": "Un nœud qui ne mène pas à la sortie : il ne change pas l'image et encombre l'arbre."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un arbre ne sert-il à rien si le compositing de rendu est désactivé ?",
+      "answer_text": "Le rendu ignore l'arbre : mesuré, l'image est identique au rendu brut (compositing_off)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait +1,5 diaphragme ?",
+      "choices": [
+        "Multiplie la lumière par 2^1,5 ≈ 2,8",
+        "Ajoute 1,5 à chaque pixel",
+        "Double le contraste",
+        "Divise par deux"
+      ],
+      "answer": 0,
+      "explain": "Luminance moyenne 0,277 → 0,459 (après l'affichage Standard)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi un flou réduit-il le bruit ?",
+      "choices": [
+        "Il moyenne les pixels voisins",
+        "Il supprime les lampes",
+        "Il augmente les échantillons",
+        "Il change la graine"
+      ],
+      "answer": 0,
+      "explain": "Bruit 0,029 (exposition seule) → 0,0063 avec Blur (3, 3)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel est le prix d'un flou trop fort ?",
+      "answer_text": "Le sujet disparaît dans le fond : avec 60 pixels la lisibilité tombe de 0,81 à 0,47."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il le bruit ?",
+      "answer_text": "Deux rendus avec deux graines : la différence ne contient que du bruit ; écart-type / √2."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un flou n'est pas un débruitage (voir le nœud Denoise) : il lisse aussi les détails ; scène simple ; la création de l'arbre depuis l'interface n'est pas vérifiée."
+    }
+  ]
+}

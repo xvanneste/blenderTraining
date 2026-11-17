@@ -22,6 +22,8 @@
 Construction (script `build_ch03_04_files.py`) : 10 ellipsoïdes qui se chevauchent (poitrine, cou, tête,
 crâne, nez, arcades, menton, oreilles, mèche) → Join → Voxel Remesh 5 mm → orbites creusées par deux
 Boolean Difference (solveur Exact) → Voxel Remesh → Bisect au ras du bas avec remplissage.
+**Plans sculptés à la brosse** (Blender 5.2 via MCP, sur le blocage voxel-remeshé, Mirror X) : plans de joue (*Clay Strips*), arête du nez (*Pinch/Magnify*), arcades (*Draw*), menton (*Clay Strips*),
+front lissé (*Smooth*) : 2 291 sommets déplacés, jusqu'à 16,6 mm. Le blocage lui-même reste scripté (ellipsoïdes, Boolean, Bisect : opérations non interactives).
 Mesures du correcteur : 1 volume fermé, 24 144 faces, hauteur 0,45 m, socle 714 cm², cou 12,2 cm
 (tête 28,6, épaules 41,8), tête 75 % de la hauteur, contraste ×1,46, nez +4,3 cm, symétrie 100 %.
 Note honnête : un premier essai en métaballes (rayons pris pour des dimensions) a donné des volumes

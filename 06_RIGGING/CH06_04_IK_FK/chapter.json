@@ -1,0 +1,68 @@
+{
+  "code": "CH06.04",
+  "title": "IK/FK",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "En cinématique directe (FK) on tourne chaque os ; en cinématique inverse (IK) on place l'extrémité et le solveur calcule les rotations. Un bon rig de bras propose les deux et permet de basculer. Ce chapitre construit un bras IK/FK : contrainte IK sur l'avant-bras avec une cible (ik_hand) et un pôle (ik_pole) qui choisit le côté du coude, et un interrupteur (propriété ik_fk d'un bone switch) qui pilote l'influence de l'IK par un driver. Le correcteur déplace les contrôleurs et mesure : le bout atteint la cible, les longueurs ne changent pas, le coude suit le pôle, le bras se tend sans s'étirer hors de portée, et le mode FK rend le bras à la rotation.",
+  "prereqs": [
+    "CH06.01–02."
+  ],
+  "objectives": [
+    "Poser une contrainte IK avec cible et pôle.",
+    "Régler Pole Angle et Chain Length.",
+    "Éviter l'étirement et la singularité du bras droit.",
+    "Commuter IK/FK par une propriété et un driver."
+  ],
+  "competences": [
+    [
+      "C06.04.a",
+      "Bras IK/FK",
+      "Exercice 2 (correcteur) + croquis des quatre poses"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "IK, cible et pôle",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Commutation IK/FK par driver",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_04_ikfk_starter.blend",
+      "Bras et contrôleurs, sans IK ni driver"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_04_ikfk_solution.blend",
+      "Bras IK/FK à commutateur"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_04_ikfk_reference.png",
+      "Quatre poses : IK pôle haut, IK pôle bas, IK hors de portée, FK"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans pôle, sans driver, avec étirement, chaîne d'un os, sans IK)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_04.py",
+      "Correcteur (ikfk)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_04_ikfk_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_04.py\" -- --exercise ikfk",
+  "deliverables": [
+    "Bras IK/FK validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.05 — Rig humanoïde](../CH06_05_HUMANOID/README.md)"
+}

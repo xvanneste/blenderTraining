@@ -1,0 +1,95 @@
+{
+  "chapter": "CH15.02",
+  "title": "Storyboard et animatique",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Où débute le plan S030 ?",
+      "type": "mcq",
+      "choices": [
+        "Image 216",
+        "Image 240",
+        "Image 217"
+      ],
+      "answer": 2,
+      "explain": "Le storyboard fixe la hiérarchie visuelle et la continuité avant l’animation."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel livrable prouve le rythme ?",
+      "type": "mcq",
+      "choices": [
+        "L’animatique jouée à la bonne cadence",
+        "Une seule image de couverture",
+        "Les noms des dessins"
+      ],
+      "answer": 0,
+      "explain": "Les plages sont inclusives dans la feuille de plans. Le montage doit couvrir chaque image une seule fois hors transitions prévues."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que tester avant l’ajout du son ?",
+      "type": "mcq",
+      "choices": [
+        "Le débit d’encodage",
+        "La compréhension de la bascule visuelle",
+        "La version du pack d’icônes"
+      ],
+      "answer": 1,
+      "explain": "Le son guide l’attention et peut aussi masquer une faiblesse visuelle."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Une image noire apparaît à la coupe. »",
+      "answer_text": "Un strip se termine avant le début du suivant. Zoomez sur la timeline et vérifiez les bornes en pas image par image."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un plan commence à 121 et se termine à 216 inclus. Quelle est sa durée ?",
+      "answer_text": "96 images, soit 4 secondes à 24 i/s."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La lecture sans son est confuse mais le clic sauve le montage. Quel contrôle refaire ?",
+      "answer_text": "Clarifier le passage main-bouton-signal, puis reprendre la lecture muette et sonore."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faire en décalant la coupe de 12 images ?",
+      "answer_text": "Retirer les 12 images au plan voisin si on les ajoute à l’autre et conserver 360 images continues."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Panneaux » ?",
+      "answer_text": "Les silhouettes et l’objet restent lisibles en miniature."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Assemblage » ?",
+      "answer_text": "Aucun trou entre les plans et le dernier cadre est 360."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Écoute » ?",
+      "answer_text": "La bascule est intelligible sans son, puis renforcée par le clic."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.05",
+  "title": "Timing et spacing",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que désigne le timing ?",
+      "choices": [
+        "Le nombre d'images entre deux événements",
+        "La couleur",
+        "La forme du maillage",
+        "La caméra"
+      ],
+      "answer": 0,
+      "explain": "Contacts aux images 19, 44, 62 : c'est le timing de la balle."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que désigne le spacing ?",
+      "choices": [
+        "La distance parcourue entre deux images",
+        "La taille de l'image",
+        "Le nombre de clés",
+        "L'écart entre deux objets"
+      ],
+      "answer": 0,
+      "explain": "Il augmente quand l'objet accélère (chute), diminue quand il ralentit (montée)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À 24 images par seconde, que vaut g en m/image² ?",
+      "choices": [
+        "0,01703",
+        "9,81",
+        "0,5",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "9,81 / 24² = 0,01703."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle hauteur pour un vol de 25 images ?",
+      "answer_text": "h = g·T²/8 avec T = 25/24 s : 9,81 × 1,085 / 8 = 1,33 m."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les durées de vol diminuent-elles à chaque rebond ?",
+      "answer_text": "La vitesse de rebond est multipliée par le coefficient de restitution (≈ 0,7) : le vol dure 0,7 fois moins longtemps (25 puis 18 images) et monte 0,5 fois moins haut."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle poignée au contact donne une arrivée rapide ?",
+      "choices": [
+        "Vector ou raide",
+        "Auto Clamped (horizontale)",
+        "Aucune",
+        "Constant"
+      ],
+      "answer": 0,
+      "explain": "Auto Clamped aplatit la courbe au contact : la balle flotte (espacement −0,006 au lieu de −0,017)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle poignée au sommet ?",
+      "choices": [
+        "Horizontale (Auto Clamped)",
+        "Verticale",
+        "Vector",
+        "Linéaire"
+      ],
+      "answer": 0,
+      "explain": "Au sommet la vitesse verticale est nulle : tangente horizontale."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une chronophotographie ?",
+      "answer_text": "Un point par image montre le spacing : points serrés au sommet, écartés près du sol ; une balle linéaire montre des points équidistants."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « below_floor » ?",
+      "answer_text": "Les contacts à −12 cm : la balle s'enfonce dans le sol ; le correcteur exige Z ≥ −0,02 m."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi limiter à 12 clés ?",
+      "answer_text": "Pour travailler avec des poses clés lisibles et laisser la courbe faire les intervalles ; une animation bakée image par image est difficile à corriger."
+    }
+  ]
+}

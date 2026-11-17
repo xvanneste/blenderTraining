@@ -1,0 +1,69 @@
+{
+  "code": "CH07.05",
+  "title": "Timing et spacing",
+  "phase_title": "7 — Animation 3D",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Le TIMING, c'est le nombre d'images entre deux événements ; le SPACING, c'est la distance parcourue d'une image à l'autre. Ensemble, ils donnent le poids et la vitesse. La balle rebondissante est l'exercice fondamental : une balle lâchée de 2,76 m doit rebondir trois fois puis s'arrêter, avec une gravité crédible. Le correcteur lit la hauteur de la balle à chaque image : contacts, décroissance, cohérence avec la gravité, espacement parabolique, repos final.",
+  "prereqs": [
+    "CH07.01 (principes), CH07.04 (Graph Editor)."
+  ],
+  "objectives": [
+    "Distinguer timing et spacing.",
+    "Calculer hauteurs et durées d'une balle qui obéit à la gravité.",
+    "Poser des clés et des poignées qui produisent une parabole.",
+    "Vérifier l'espacement par chronophotographie."
+  ],
+  "competences": [
+    [
+      "C07.05.a",
+      "Balle rebondissante crédible",
+      "Exercice 2 (correcteur) + chronophotographie"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Timing, spacing et gravité",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Poser la balle dans le Graph Editor",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_05_bounce_starter.blend",
+      "Balle à deux clés (lâcher à 2,759 m, repos à l'image 72) : elle flotte jusqu'au sol"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_05_bounce_solution.blend",
+      "Balle rebondissante : 7 clés, poignées exactes (sommets horizontaux, contacts raides)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_05_bounce_reference.png",
+      "Courbe de hauteur et chronophotographie (un carré par image) : espacement parabolique"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (linéaire, flottante, sans décroissance, durées égales, sans repos, sous le sol)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_05.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_05_bounce_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_05.py\" -- --exercise bounce",
+  "deliverables": [
+    "Balle rebondissante validée.",
+    "Chronophotographie annotée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.06 — Arcs, overlap, follow-through](../CH07_06_OVERLAP/README.md)"
+}

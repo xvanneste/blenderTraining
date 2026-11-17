@@ -1,0 +1,46 @@
+{
+  "build": "build_ch08_01_files.py",
+  "validator": "validate_ch08_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_01_rigid_solution.blend",
+      "exercise": "rigid",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_01_rigid_starter.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_no_ground.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_passive_bricks.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_light_ball.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_no_release.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_low_friction.blend",
+      "exercise": "rigid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_01_rigid_no_world_frames.blend",
+      "exercise": "rigid",
+      "expect": false
+    }
+  ]
+}

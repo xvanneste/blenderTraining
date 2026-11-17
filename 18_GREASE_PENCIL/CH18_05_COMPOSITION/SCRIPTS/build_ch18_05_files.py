@@ -8,7 +8,7 @@ build_ch18_05_files.py — Feuille « composition et dessin cinématographique �
       USER_Values     : vide — une vignette en 3 valeurs (clair / moyen / sombre) au trait.
       USER_Planes     : vide — un décor en 3 plans (premier plan, plan moyen, arrière-plan).
   COMPLETED_EXAMPLES/ch18_05_composition_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch18_05_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_05_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,43 @@
+{
+  "code": "CH15.03",
+  "title": "Direction artistique",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Faire évoluer la palette et l’éclairage tout en gardant une identité cohérente pour les trois plans.",
+  "prereqs": [
+    "CH15.02"
+  ],
+  "objectives": [
+    "Trois échantillons avec leur rôle et une forme interdite, motivée par la lecture.",
+    "Trois vignettes colorées et leurs versions en niveaux de gris.",
+    "Le visage ou la main reste identifiable et le signal domine seulement au plan final."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Règles visuelles",
+      ""
+    ],
+    [
+      "L2",
+      "Color script",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/sur_le_quai.md",
+      "Bible courte et états du signal"
+    ],
+    [
+      "../../09_CINEMATOGRAPHY/README.md",
+      "Cours d’éclairage et de cadrage"
+    ]
+  ],
+  "pass_criteria": [
+    "Trois échantillons avec leur rôle et une forme interdite, motivée par la lecture.",
+    "Trois vignettes colorées et leurs versions en niveaux de gris.",
+    "Le visage ou la main reste identifiable et le signal domine seulement au plan final."
+  ]
+}

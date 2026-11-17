@@ -6,5 +6,5 @@
   *Remesh*.
 - Liens : CH18.03 (silhouettes), CH03.01 (proportions), CH03.03 (remesh), CH03.05 (réaliste).
 
-Ressources produites (licence BCMA) : starter avec planche de design, buste généré par script (flux
+Ressources produites (licence BCMA) : starter avec planche de design, blocage scripté + plans sculptés à la brosse (Blender 5.2 via MCP) (flux
 expliqué dans SOLUTIONS.md), rendu 3 vues regardé, correcteur renforcé avec contre-épreuve.

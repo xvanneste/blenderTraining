@@ -62,7 +62,7 @@ Le Grease Pencil prend toute sa puissance quand on dessine dans l'espace : un d√
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_09_set_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_09.py" --python-exit-code 1 -- --exercise set --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_09.py" -- --exercise set --render
 ```
 
 ## Livrables attendus

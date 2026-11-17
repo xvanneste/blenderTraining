@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch02_03_cutting_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch02_03.py", "Correcteur (cote, fermeture, faces, secteurs, doublons, modificateur, diagonale)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_03_cutting_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_03.py\" --python-exit-code 1 -- --exercise atelier --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_03_cutting_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_03.py\" -- --exercise atelier --render",
   "deliverables": ["Atelier validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : lampe de chevet tournée."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Atelier validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.04 — Normales](../CH02_04_NORMALS/README.md)"

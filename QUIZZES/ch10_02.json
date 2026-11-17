@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.02",
+  "title": "Cycles en profondeur",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Max Bounces > Diffuse ?",
+      "choices": [
+        "Le nombre de rebonds de la lumière sur les surfaces mates",
+        "La taille de l'image",
+        "Le nombre de lampes",
+        "Le moteur"
+      ],
+      "answer": 0,
+      "explain": "Départ : 0 → plafond à 0,01 ; solution : 4 → 0,33."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi le plafond est-il noir avec 0 rebond ?",
+      "choices": [
+        "La lampe éclaire vers le bas : le plafond n'est atteint que par la lumière indirecte",
+        "Le plafond est noir",
+        "La caméra est cassée",
+        "Le monde est blanc"
+      ],
+      "answer": 0,
+      "explain": "Sans rebond diffus, il ne reçoit que du bruit résiduel."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où règle-t-on les rebonds diffus ?",
+      "choices": [
+        "Render Properties > Light Paths > Max Bounces > Diffuse",
+        "Object > Visibility",
+        "World > Settings",
+        "Output > Format"
+      ],
+      "answer": 0,
+      "explain": "Panneau relu dans addons_core/cycles/ui.py."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un intérieur demande-t-il plus de rebonds qu'un extérieur ?",
+      "answer_text": "Dans une pièce fermée la lumière du jour ou d'une lampe n'arrive que par rebonds : trop peu de rebonds laisse des zones noires."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre no_indirect ?",
+      "answer_text": "Un plafond à 0,013 au lieu de 0,33 : la lumière indirecte disparaît sans rien changer d'autre."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait l'échantillonnage adaptatif ?",
+      "choices": [
+        "Il arrête les pixels déjà propres et continue sur les pixels bruités",
+        "Il supprime les lampes",
+        "Il baisse la résolution",
+        "Il change la focale"
+      ],
+      "answer": 0,
+      "explain": "Case dans l'en-tête de Sampling > Render ; seuil : Noise Threshold."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Un seuil de bruit plus bas donne…",
+      "choices": [
+        "Moins de bruit et plus de temps",
+        "Plus de bruit",
+        "Aucun changement",
+        "Un fichier plus petit"
+      ],
+      "answer": 0,
+      "explain": "Seuil 0,5 : bruit 0,0138 ; seuil 0,02 : 0,0097 (64 échantillons maximum)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il le bruit ?",
+      "answer_text": "Il rend deux fois avec deux graines (Seed) et prend l'écart-type de la différence sur le mur, divisé par √2."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi 4 096 échantillons maximum est-il refusé ?",
+      "answer_text": "C'est un plafond de coût, pas un gain de qualité : le correcteur limite Max Samples à 256 ; les contre-exemples montrent que 64 suffisent ici (bruit 0,0097)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une pièce simple, un patch de mur, CPU et sans débruitage ; Light Tree, caustiques et rebonds glossy ne sont pas mesurés ; le temps de rendu n'est pas évalué."
+    }
+  ]
+}

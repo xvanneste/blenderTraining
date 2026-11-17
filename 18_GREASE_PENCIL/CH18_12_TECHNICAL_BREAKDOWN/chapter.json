@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch18_12_board_reference.png", "Rendu de la planche"],
     ["SCRIPTS/validate_ch18_12.py", "Correcteur (dessin par case, flèches, notes normées, en-tête)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_12_board_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_12.py\" --python-exit-code 1 -- --exercise board --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_12_board_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_12.py\" -- --exercise board --render",
   "deliverables": ["Planche validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : deux pages."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Planche validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.13 — Storyboards d'action, d'émotion, complexes](../CH18_13_COMPLEX_BOARDS/README.md)"

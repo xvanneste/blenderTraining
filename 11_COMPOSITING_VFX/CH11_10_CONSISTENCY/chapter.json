@@ -1,0 +1,68 @@
+{
+  "code": "CH11.10",
+  "title": "Cohérence visuelle",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Une intégration réussie ne se voit pas. Même avec la bonne ombre (CH11.09), un élément 3D se trahit s'il est trop clair, de la mauvaise couleur ou trop propre à côté d'une plaque granuleuse. Le contrôle qualité compare l'élément à la plaque sur trois critères mesurables : l'exposition (rapport de luminance), la dominante de couleur (écart de rouge moins bleu) et le grain (bruit). Ce chapitre fait corriger un cube posé sur une plaque : exposition par un nœud Exposure, dominante par un Color Balance, grain par le nombre d'échantillons de Cycles.",
+  "prereqs": [
+    "CH11.06 (étalonnage), CH11.09 (intégration)."
+  ],
+  "objectives": [
+    "Mesurer l'écart d'exposition, de couleur et de grain entre un rendu et une plaque.",
+    "Corriger un élément 3D seul dans le compositeur.",
+    "Régler le grain avec les échantillons.",
+    "Écrire un contrôle qualité mesurable."
+  ],
+  "competences": [
+    [
+      "C11.10.a",
+      "Vérifier une intégration",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Exposition et couleur",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Grain et contrôle qualité",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_10_consistency_starter.blend",
+      "Intégration sans correction, 128 échantillons : rapport 1,86, dominante −0,20, bruit 0,003 ; 15/39"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_10_consistency_solution.blend",
+      "Exposure −2, Color Balance Gain (1,3 ; 1,0 ; 0,6), 2 échantillons : rapport 1,01, dominante +0,007, bruit 0,012 (plaque 0,011) ; 39/39"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_10_consistency_reference.png",
+      "La plaque (gauche), le départ (milieu : cube blanc et propre) et la solution (droite : cube raccordé en luminosité, couleur et grain)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (exposition seule, couleur seule, cube trop propre)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_10.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_10_consistency_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_10.py\" -- --exercise consistency",
+  "deliverables": [
+    "Contrôle qualité chiffré de votre intégration.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[Projet P11 — Intégration d'un élément 3D dans une prise de vue](../PROJECT_P11/README.md)"
+}

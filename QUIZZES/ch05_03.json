@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.03",
+  "title": "Instances",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une instance ?",
+      "choices": [
+        "Une copie complète de la géométrie",
+        "Une référence à une géométrie partagée, placée par une matrice",
+        "Un modificateur",
+        "Un matériau"
+      ],
+      "answer": 1,
+      "explain": "Les instances partagent la même géométrie : seule leur transformation diffère, d'où un coût mémoire très faible."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que reçoit l'entrée Points d'Instance on Points ?",
+      "choices": [
+        "Une couleur",
+        "Un maillage ou un nuage de points : une instance par sommet",
+        "Un matériau",
+        "Une image"
+      ],
+      "answer": 1,
+      "explain": "Chaque sommet de la géométrie reçue devient la position d'une instance."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi translater le piquet de z = 0,5 avant d'instancier ?",
+      "choices": [
+        "Pour le rendre plus grand",
+        "Le Cylinder est centré : son origine doit être à sa base pour qu'il se pose sur le point",
+        "Pour le colorer",
+        "Pour le lisser"
+      ],
+      "answer": 1,
+      "explain": "Le point d'instance est l'origine de la géométrie : elle doit se trouver au pied du piquet."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Combien d'instances produit une Grid de 21 × 21 sommets ?",
+      "answer_text": "441 (21 × 21), une par sommet."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelles entrées d'Instance on Points pilotent la variation ?",
+      "answer_text": "Rotation, Scale (et Pick Instance / Instance Index pour choisir parmi plusieurs géométries)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment rendre la rotation aléatoire autour de Z ?",
+      "choices": [
+        "Random Value (Vector, Max z = 6,283) → Rotation",
+        "Math → Scale",
+        "Set Position",
+        "Realize Instances"
+      ],
+      "answer": 0,
+      "explain": "2π radians = un tour complet ; chaque instance reçoit un angle différent."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est le défaut de Realize Instances ici ?",
+      "choices": [
+        "Il lisse",
+        "Il transforme chaque instance en géométrie propre : 441 fois les sommets, plus de partage",
+        "Il supprime le matériau",
+        "Il colore"
+      ],
+      "answer": 1,
+      "explain": "Le correcteur exige de garder des instances ; réaliser ne se justifie que si l'on doit modifier la géométrie par la suite."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi borner le nombre d'instances (100–1 600) ?",
+      "answer_text": "Trop peu : pas un champ ; trop (3 600 ici) : coût inutile dans l'exercice. Dans un vrai décor on règle la densité selon la caméra."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il les orientations réparties ?",
+      "answer_text": "Il calcule la longueur du vecteur moyen des angles de lacet : proche de 0 pour des angles uniformément répartis (0,06 mesuré), proche de 1 si tous identiques."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quand faut-il réaliser les instances ?",
+      "answer_text": "Quand on doit déformer ou fusionner chaque copie (Set Position sur la géométrie réalisée, export, booléens) ; sinon on garde les instances."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.03",
+  "title": "Naturel et HDRI",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que signifie HDRI ?",
+      "choices": [
+        "Image à grande plage dynamique",
+        "Image haute définition",
+        "Image holographique",
+        "Image de dôme"
+      ],
+      "answer": 0,
+      "explain": "High Dynamic Range Image : valeurs bien au-delà de 1."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi un soleil de 8 bits ne projette-t-il pas d'ombre nette ?",
+      "choices": [
+        "Sa valeur est écrêtée à 1",
+        "Il est trop petit",
+        "Il est trop bleu",
+        "La caméra est au zénith"
+      ],
+      "answer": 0,
+      "explain": "Dans l'exercice le soleil vaut 1 500 en flottant, 1 en 8 bits (contre-exemple ldr_image)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud lit l'image d'environnement ?",
+      "choices": [
+        "Environment Texture",
+        "Image Texture",
+        "Sky Texture",
+        "Wave Texture"
+      ],
+      "answer": 0,
+      "explain": "Branché sur Background > Color."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi l'ombre est-elle bleue ?",
+      "answer_text": "Elle n'est plus éclairée par le soleil (chaud) mais seulement par le ciel (bleu) : bleu / rouge = 1,68 mesuré."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que faut-il pour une ombre nette ?",
+      "answer_text": "Une source très lumineuse et petite dans l'image (le disque de soleil de 2,5°) ; un soleil flou donnerait une ombre douce."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment tourner le soleil autour de la scène ?",
+      "choices": [
+        "Rotation Z du nœud Mapping",
+        "Déplacer la caméra",
+        "Changer Strength",
+        "Scale du Mapping"
+      ],
+      "answer": 0,
+      "explain": "180° amène le soleil à gauche : l'ombre part vers +X."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel réglage fait varier l'exposition globale ?",
+      "choices": [
+        "Background > Strength",
+        "Rotation Z",
+        "Resolution",
+        "Nombre de lampes"
+      ],
+      "answer": 0,
+      "explain": "Strength 1 : sol à 0,59 ; 0,3 : 0,18 ; 3 : 1,77 (proportionnel)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « wrong_rotation » ?",
+      "answer_text": "Avec 90° l'ombre part vers +Y (angle 90° mesuré) : l'orientation est visible dans l'image, pas dans la valeur Strength."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur utilise-t-il une caméra orthographique au zénith ?",
+      "answer_text": "Sans perspective, la direction de l'ombre se lit comme un angle dans l'image (0° = vers +X) et sa longueur comme une distance."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la longueur attendue de l'ombre ?",
+      "answer_text": "1 m / tan(20°) = 2,75 m ; mesuré 2,56 m (pointe floue). Le correcteur ne mesure que la direction (au moins 30 pixels)."
+    }
+  ]
+}

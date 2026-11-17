@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.06",
+  "title": "VFX Artist",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Pourquoi cuire le cache avant le rendu ?",
+      "type": "mcq",
+      "choices": [
+        "Stabiliser les événements de simulation",
+        "Modifier la cadence automatiquement",
+        "Éviter tout contrôle d’alpha"
+      ],
+      "answer": 0,
+      "explain": "Le cache découple les choix de vue du calcul. La taille du domaine et la résolution influencent coût et détail."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que comparer pour diagnostiquer un halo ?",
+      "type": "mcq",
+      "choices": [
+        "Seulement le nom du cache",
+        "Le canal alpha et la composition sur deux fonds",
+        "La taille du clavier"
+      ],
+      "answer": 1,
+      "explain": "Un bon effet partage la profondeur, l’éclairage et la perspective du plan. Un bon contour ne suffit pas."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelle preuve conserve la simulation ?",
+      "type": "mcq",
+      "choices": [
+        "Un MP4 muet seul",
+        "Une miniature de viewport",
+        "Version du cache, plage et essai rouvert"
+      ],
+      "answer": 2,
+      "explain": "Une livraison VFX doit être refaisable ou réutilisable. Les médias intermédiaires ont une version propre."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le composite présente un halo sombre autour de la fumée ou de l’objet. »",
+      "answer_text": "Un désaccord alpha prémultiplié ou un mélange incorrect colore les bords. Contrôlez le type d’alpha et testez sur fond clair puis foncé."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La caméra est retouchée après cuisson. Que peut-on garder ?",
+      "answer_text": "Le cache si ni le domaine ni les paramètres de simulation n’ont changé."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un plan est bon sur fond noir mais montre un halo sur fond clair. Qu’examiner ?",
+      "answer_text": "Le type d’alpha, la couleur de bord et la chaîne de composition sur les deux fonds."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve montre qu’un budget de cache suffit ?",
+      "answer_text": "Un comparatif à plusieurs images de livraison avec le temps et la taille du cache."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Isoler puis mettre en cache » vérifiable ?",
+      "answer_text": "Le plan relu après réouverture montre les mêmes événements aux images choisies."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Intégrer » vérifiable ?",
+      "answer_text": "Trois preuves montrent avant, effets isolés et composition finale."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Versionner et livrer » vérifiable ?",
+      "answer_text": "L’effet passe la réouverture et une mutation contrôlée est relevée."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "code": "CH05.08",
+  "title": "Architecture procédurale",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Un bâtiment est une grille : des étages, des travées, des fenêtres régulières. Ce chapitre construit un outil « Immeuble » à cinq paramètres (étages, travées, hauteur d'étage, largeur de travée, profondeur) où la façade se recompose toute seule : le corps est un cube dimensionné par les paramètres, les fenêtres sont des instances posées au centre de chaque travée et de chaque étage par une Grid. Le correcteur règle l'outil sur deux configurations différentes et mesure le nombre de fenêtres, les dimensions du corps et la régularité de la façade.",
+  "prereqs": [
+    "CH05.03",
+    "CH05.06."
+  ],
+  "objectives": [
+    "Traduire des dimensions réelles en nœuds mathématiques.",
+    "Placer des éléments sur une grille régulière (Grid centrée sur les travées).",
+    "Garder un modèle cohérent quand les paramètres changent.",
+    "Valider un outil architectural par mesures."
+  ],
+  "competences": [
+    [
+      "C05.08.a",
+      "Générer un bâtiment",
+      "Exercice 2 (correcteur) + rendu des deux réglages"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "De la grille au bâtiment",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Façade paramétrique",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_08_architecture_starter.blend",
+      "Immeuble 5 × 4 en dur, sans interface"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_08_architecture_solution.blend",
+      "Outil « Immeuble » à cinq paramètres"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_08_architecture_reference.png",
+      "Deux immeubles : défaut (bas) et 7 étages × 3 travées (haut)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (nombre de fenêtres fixe, hauteur du corps fixe, espacement faux, fenêtres hors façade)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_08.py",
+      "Correcteur (architecture)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_08_architecture_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_08.py\" -- --exercise architecture --render",
+  "deliverables": [
+    "Outil « Immeuble » validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.09 — Boucles et simulation](../CH05_09_LOOPS/README.md)"
+}

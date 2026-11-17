@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.06",
+  "title": "Paramètres et interfaces",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où apparaissent les entrées d'un arbre Geometry Nodes ?",
+      "choices": [
+        "Dans le Spreadsheet",
+        "Dans le modificateur, sous le sélecteur de l'arbre",
+        "Dans le matériau",
+        "Dans l'Outliner"
+      ],
+      "answer": 1,
+      "explain": "Chaque entrée de l'interface devient un champ du modificateur Nodes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quels réglages porte une entrée Float ?",
+      "choices": [
+        "Défaut, minimum, maximum, description",
+        "Seulement un nom",
+        "Un matériau",
+        "Un domaine"
+      ],
+      "answer": 0,
+      "explain": "Ces réglages se règlent dans l'interface de l'arbre : ils bornent la valeur et documentent l'entrée (infobulle)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert un panneau ?",
+      "choices": [
+        "À regrouper des entrées sous un titre repliable",
+        "À colorer",
+        "À instancier",
+        "À baker"
+      ],
+      "answer": 0,
+      "explain": "Les panneaux (« Dimensions », « Layout ») rendent un outil de dizaines d'entrées lisible."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi écrire une description pour chaque entrée ?",
+      "answer_text": "Elle devient l'infobulle de l'outil : l'utilisateur (ou vous dans six mois) comprend l'unité et l'effet sans ouvrir l'arbre."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi borner Count à 1–50 ?",
+      "answer_text": "Pour empêcher une valeur absurde (100 000 piliers) qui bloquerait Blender ; une borne est une protection autant qu'une indication."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Height doit-il être branché à une seule entrée ?",
+      "choices": [
+        "Oui : Cylinder Depth",
+        "Non : Depth ET la translation z (Height ÷ 2), sinon les piliers flottent ou s'enfoncent",
+        "Non : à Count",
+        "Non : à Material"
+      ],
+      "answer": 1,
+      "explain": "Le Cylinder est centré : pour poser sa base sur le sol il faut le monter de Height ÷ 2."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur vérifie-t-il qu'une entrée est vraiment utilisée ?",
+      "choices": [
+        "Il regarde la couleur du nœud",
+        "Il change sa valeur dans le modificateur et mesure la géométrie évaluée",
+        "Il lit le nom",
+        "Il rend l'image"
+      ],
+      "answer": 1,
+      "explain": "Une entrée non branchée, ou une valeur codée en dur, laisse la géométrie inchangée : le test échoue."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « hardcoded » ?",
+      "answer_text": "L'entrée Height existe mais le nœud garde 2,0 en dur : changer Height à 3,5 laisse la hauteur à 2,0 m, ce que seul un test de comportement détecte."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment changer un paramètre du modificateur par script en 5.3 ?",
+      "answer_text": "Avec `modifier.properties.inputs[identifiant][\"value\"] = valeur` (l'ancienne écriture `modifier[identifiant]` n'est plus disponible)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'étendue attendue vaut-elle 8,4 m par défaut ?",
+      "answer_text": "8 piliers espacés de 1,2 m : 7 intervalles × 1,2 = 8,4 m entre le premier et le dernier."
+    }
+  ]
+}

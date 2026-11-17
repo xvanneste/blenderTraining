@@ -1,0 +1,43 @@
+{
+  "code": "CH17.01",
+  "title": "Character Artist",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Préparer un personnage de portfolio dont le sculpt, les vêtements et la déformation sont vérifiables.",
+  "prereqs": [
+    "CH16.08"
+  ],
+  "objectives": [
+    "Trois vues neutres avant/après et une cage conservée.",
+    "Au moins une correction vérifiée sur deux poses et visible dans le filaire.",
+    "Un turntable de 4 s, trois vues fixes, une image de pose et une fiche de contribution."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Sculpt et silhouette",
+      ""
+    ],
+    [
+      "L2",
+      "Vêtement et cheveux",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../02_MODELING/PARCOURS_PRATIQUE/assets/projet_humain/personnage_source.blend",
+      "Personnage éditable"
+    ],
+    [
+      "../../03_SCULPTING/CH03_08_CLOTHING/README.md",
+      "Atelier vêtements et plis"
+    ]
+  ],
+  "pass_criteria": [
+    "Trois vues neutres avant/après et une cage conservée.",
+    "Au moins une correction vérifiée sur deux poses et visible dans le filaire.",
+    "Un turntable de 4 s, trois vues fixes, une image de pose et une fiche de contribution."
+  ]
+}

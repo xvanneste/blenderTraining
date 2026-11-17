@@ -60,7 +60,7 @@ Un personnage plie aux articulations : sa topologie doit le permettre. Ce chapit
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_12_arm_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_12.py" --python-exit-code 1 -- --exercise arm --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_12.py" -- --exercise arm --render
 ```
 
 ## Livrables attendus

@@ -1,0 +1,41 @@
+{
+  "build": "build_ch11_05_files.py",
+  "validator": "validate_ch11_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_05_glare_solution.blend",
+      "exercise": "glare",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_05_glare_starter.blend",
+      "exercise": "glare",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_05_glare_no_glare.blend",
+      "exercise": "glare",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_05_glare_bloom_strong.blend",
+      "exercise": "glare",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_05_glare_ghosts.blend",
+      "exercise": "glare",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_05_glare_no_distortion.blend",
+      "exercise": "glare",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_05_glare_over_distortion.blend",
+      "exercise": "glare",
+      "expect": false
+    }
+  ]
+}

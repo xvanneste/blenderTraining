@@ -1,6 +1,6 @@
 """
 validate_ch18_08.py — Correcteur CH18.08 (calques, masques, modificateurs non destructifs).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch18_08.py --python-exit-code 1 -- --exercise layers [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch18_08.py -- --exercise layers [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

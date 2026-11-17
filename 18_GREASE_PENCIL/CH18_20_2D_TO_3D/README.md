@@ -57,7 +57,7 @@ Storyboarder directement à travers les caméras d'un décor 3D, puis réutilise
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_20_layout_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_20.py" --python-exit-code 1 -- --exercise layout --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_20.py" -- --exercise layout --render
 ```
 
 ## Livrables attendus

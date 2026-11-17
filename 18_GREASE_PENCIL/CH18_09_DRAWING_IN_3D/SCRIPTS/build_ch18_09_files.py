@@ -8,7 +8,7 @@ build_ch18_09_files.py — Scène « dessin dans l'espace 3D et organisation » 
   COMPLETED_EXAMPLES/ch18_09_set_solution.blend (+ _reference.png, + _top.png vue de dessus)
       Décor dessiné sur 4 profondeurs : montagnes (Y≈14), maison et arbres (Y≈3), arbre et
       buissons de premier plan (Y≈-5), route et herbes dessinées À PLAT sur le sol (plan Top).
-Usage : blender -b --factory-startup --python build_ch18_09_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_09_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

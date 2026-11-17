@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_01_topology_reference.png", "Rendu avec fil de fer"],
     ["SCRIPTS/validate_ch02_01.py", "Correcteur (mesures bmesh : côtés des faces, doublons, non-manifold, pôles)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_01_topology_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_01.py\" --python-exit-code 1 -- --exercise clinic --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_01_topology_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_01.py\" -- --exercise clinic --render",
   "deliverables": ["Clinique validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : checklist de validation d'un asset."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Clinique validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.02 — Outils polygonaux I](../CH02_02_POLY_TOOLS_1/README.md)"

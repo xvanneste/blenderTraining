@@ -1,6 +1,6 @@
 """
 validate_ch01_04.py — Correcteur de la ferme (CH01.04).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_04.py --python-exit-code 1 -- --exercise farm
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_04.py -- --exercise farm
 Testé avec : Blender 5.3.0.
 """
 import os

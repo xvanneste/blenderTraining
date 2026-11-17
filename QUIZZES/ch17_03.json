@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.03",
+  "title": "Technical Artist",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que tester avant de publier l’outil ?",
+      "type": "mcq",
+      "choices": [
+        "Valeurs limites, défauts et reproductibilité",
+        "Uniquement la valeur maximale",
+        "La couleur de chaque nœud"
+      ],
+      "answer": 0,
+      "explain": "Une interface résiste aux valeurs limites et communique l’unité, la valeur par défaut et l’effet attendu."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que communiquer avec un gain de vitesse ?",
+      "type": "mcq",
+      "choices": [
+        "Uniquement le meilleur temps",
+        "Conditions de mesure et rapport qualité",
+        "Le nom de l’auteur seul"
+      ],
+      "answer": 1,
+      "explain": "Un test isolé renseigne sur la causalité. Un paramètre peut changer aspect ou géométrie, deux effets à mesurer séparément."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que garder fixe pour un comparatif shader ?",
+      "type": "mcq",
+      "choices": [
+        "Toutes les valeurs du shader",
+        "L’instance la plus proche uniquement",
+        "Cadrage et lumière"
+      ],
+      "answer": 2,
+      "explain": "Les mesures d’échauffement diffèrent des suivantes. Un rapport reproductible donne méthode et conditions."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Une valeur extrême rend la navigation très lente. »",
+      "answer_text": "La densité et le nombre de points ont crû sans borne opérationnelle. Exposez une plage testée, simplifiez la géométrie et comparez à sortie équivalente."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La collection source est vide. Que doit faire un outil publié ?",
+      "answer_text": "Rester évaluable, donner un résultat clairement prévu et permettre à l’utilisateur de fournir un asset."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Une texture varie après chaque lecture du fichier. Quelle entrée stabiliser ?",
+      "answer_text": "La graine et toutes les dépendances du graphe utilisées dans le test."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À densité égale, pourquoi mesurer trois essais ?",
+      "answer_text": "Pour limiter l’influence d’un lancement atypique et rapporter une médiane et le contexte de calcul."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Contrat d’interface » vérifiable ?",
+      "answer_text": "Un utilisateur peut relancer le même résultat sans ouvrir l’arbre."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Sondes visuelles » vérifiable ?",
+      "answer_text": "Deux rendus et un graphe montrent la chaîne de données jusqu’au matériau."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Profilage et diffusion » vérifiable ?",
+      "answer_text": "L’outil a un budget défini, un cas limite documenté et un rapport de trois mesures par cas."
+    }
+  ]
+}

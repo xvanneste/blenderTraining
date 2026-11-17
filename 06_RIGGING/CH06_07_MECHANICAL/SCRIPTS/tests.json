@@ -1,0 +1,46 @@
+{
+  "build": "build_ch06_07_files.py",
+  "validator": "validate_ch06_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_07_truck_solution.blend",
+      "exercise": "truck",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_07_truck_starter.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_no_drivers.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_wrong_radius.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_wrong_axis.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_unparented_wheels.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_no_track.blend",
+      "exercise": "truck",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_07_truck_no_limit.blend",
+      "exercise": "truck",
+      "expect": false
+    }
+  ]
+}

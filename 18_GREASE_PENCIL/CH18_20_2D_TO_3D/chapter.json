@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch18_20_layout_contact.png", "Les 3 plans, board superposé"],
     ["SCRIPTS/validate_ch18_20.py", "Correcteur (layout)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_20_layout_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_20.py\" --python-exit-code 1 -- --exercise layout --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_20_layout_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_20.py\" -- --exercise layout --render",
   "deliverables": ["Blocking validé.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
   "next": "[CH18.21 — IA pour le storyboard](../CH18_21_AI_STORYBOARD/README.md)"

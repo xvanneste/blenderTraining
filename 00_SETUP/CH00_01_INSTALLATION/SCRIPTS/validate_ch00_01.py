@@ -6,16 +6,18 @@ Vérifie un fichier .blend rendu par l'apprenant et affiche une note détaillée
 Usage :
   blender -b --factory-startup <votre_fichier.blend> --python validate_ch00_01.py -- --exercise EX
 avec EX parmi :
-  testcard  Exercice 1 (facile) et 2 (moyen) : mire réglée pour Cycles GPU
+  testcard      Configuration Cycles GPU
+  testcard_cpu  Configuration Cycles CPU
   broken    Exercice 3 (difficile) : les 5 pannes de rendu sont-elles réparées ?
 
 Option : --render   effectue en plus un mini-rendu (25 %, 8 échantillons) et vérifie
                     que l'image n'est pas noire.
 Code de retour : 0 si toutes les vérifications obligatoires passent, 1 sinon
-(ajoutez --python-exit-code 1 pour que Blender le transmette).
+(placez --python-exit-code 1 avant --python pour signaler aussi une exception Python).
 
 Testé avec : Blender 5.3.0.
 """
+import argparse
 import os
 import re
 import sys
@@ -26,8 +28,10 @@ import bpy
 
 def args():
     argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
-    ex = argv[argv.index("--exercise") + 1] if "--exercise" in argv else "testcard"
-    return ex, "--render" in argv
+    parser = argparse.ArgumentParser(description="Correcteur CH00.01")
+    parser.add_argument("--exercise", choices=("testcard", "testcard_cpu", "broken"), default="testcard")
+    parser.add_argument("--render", action="store_true")
+    return parser.parse_args(argv)
 
 
 class Report:
@@ -67,19 +71,22 @@ def quick_render(scene):
     scene.cycles.samples = 8
     scene.cycles.use_denoising = False
     scene.cycles.device = "CPU"  # rendu de contrôle portable, indépendant du GPU
-    path = os.path.join(tempfile.gettempdir(), "bcma_validate_ch00_01.png")
-    scene.render.filepath = path
-    scene.render.image_settings.file_format = "PNG"
-    bpy.ops.render.render(write_still=True)
-    return image_mean_luminance(path)
+    with tempfile.TemporaryDirectory(prefix="bcma_ch00_01_") as directory:
+        path = os.path.join(directory, "controle.png")
+        scene.render.filepath = path
+        scene.render.image_settings.media_type = "IMAGE"
+        scene.render.image_settings.file_format = "PNG"
+        bpy.ops.render.render(write_still=True)
+        return image_mean_luminance(path)
 
 
-def validate_testcard(r, scene):
+def validate_testcard(r, scene, device="GPU"):
     fname = os.path.basename(bpy.data.filepath)
     r.check(scene.render.engine == "CYCLES", "Moteur de rendu = Cycles",
             "Properties > Render > Render Engine > Cycles", 2)
-    r.check(scene.cycles.device == "GPU", "Périphérique = GPU Compute",
-            "Properties > Render > Device > GPU Compute (après avoir activé CUDA/OptiX dans les Preferences)", 2)
+    label = "GPU Compute" if device == "GPU" else "CPU"
+    r.check(scene.cycles.device == device, f"Périphérique = {label}",
+            f"Render Properties > Device > {label}", 2)
     r.check(32 <= scene.cycles.samples <= 512, f"Échantillons de rendu raisonnables ({scene.cycles.samples})",
             "Render > Sampling > Render > Max Samples entre 32 et 512 pour un test", 1)
     r.check(scene.cycles.use_denoising, "Débruitage activé au rendu",
@@ -115,7 +122,8 @@ def validate_broken(r, scene):
 
 
 def main():
-    exercise, do_render = args()
+    options = args()
+    exercise = options.exercise
     scene = bpy.context.scene
     r = Report()
     if not bpy.data.filepath:
@@ -125,8 +133,8 @@ def main():
     if exercise == "broken":
         validate_broken(r, scene)
     else:
-        validate_testcard(r, scene)
-    if do_render:
+        validate_testcard(r, scene, device="CPU" if exercise == "testcard_cpu" else "GPU")
+    if options.render:
         lum = quick_render(scene)
         r.check(lum > 0.02, f"Rendu de contrôle non noir (luminance moyenne {lum:.3f})",
                 "L'image est (presque) noire : lumières, monde, caméra ou collections ?", 2)

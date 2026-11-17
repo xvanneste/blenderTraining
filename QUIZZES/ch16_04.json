@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.04",
+  "title": "Pipelines de rendu",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel est l’avantage principal d’images numérotées ?",
+      "type": "mcq",
+      "choices": [
+        "Garantir seul le rendu final",
+        "Éliminer les contrôles de couleur",
+        "Reprendre les frames manquantes"
+      ],
+      "answer": 2,
+      "explain": "Un worker traite une plage dans un environnement identifié. Les images de coupe doivent rester distinctes des plages locales avec poignées."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que vérifier après le code de retour ?",
+      "type": "mcq",
+      "choices": [
+        "Plage, fichiers, dimensions, version",
+        "Seulement le temps annoncé",
+        "Le nom du worker seul"
+      ],
+      "answer": 0,
+      "explain": "Un processus peut finir sans fournir toutes les images. La présence seule ne valide ni dimensions ni provenance."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Pourquoi isoler les versions ?",
+      "type": "mcq",
+      "choices": [
+        "Rendre les PNG opaques",
+        "Éviter de mélanger des images de calculs différents",
+        "Modifier automatiquement le montage"
+      ],
+      "answer": 1,
+      "explain": "L’isolation des versions protège les images approuvées et permet un retour arrière."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le montage montre un mélange de contrastes après la reprise. »",
+      "answer_text": "Le nouveau rendu a écrasé seulement quelques images de l’ancienne version. Vérifiez version, transformation de couleur et réglages par lot, puis republiez depuis un dossier cohérent."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un lot de 96 images a trois blocs égaux. Le second échoue. Quels numéros locaux reprendre si le lot commence à 1 ?",
+      "answer_text": "Les images 33 à 64 du lot et leurs vérifications avant publication."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le lot sort en 320 × 180 à la place de 640 × 360. Pourquoi la présence des fichiers ne suffit pas ?",
+      "answer_text": "Des PNG valides peuvent avoir la mauvaise définition. Comparez IHDR et spécification du lot."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment justifier des poignées ?",
+      "answer_text": "Indiquer les images locales supplémentaires utilisées pour un raccord ou une transition, en plus de la partie montée."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Préparer le lot » vérifiable ?",
+      "answer_text": "Chaque lot indique plage, version et chemin complet de sortie."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Distinguer retour et résultat » vérifiable ?",
+      "answer_text": "L’inventaire détecte l’image manquante par son numéro."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Reprendre et publier » vérifiable ?",
+      "answer_text": "La nouvelle version contient toutes ses images attendues et l’ancienne reste consultable."
+    }
+  ]
+}

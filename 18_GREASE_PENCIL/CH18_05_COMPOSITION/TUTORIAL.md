@@ -31,6 +31,10 @@ Enregistrez `ch18_05_composition_<prenom>_v001.blend` puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_05_composition_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_05.py" --python-exit-code 1 -- --exercise composition --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_05.py" -- --exercise composition --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_05_composition_reference.png`.
+
+## Variante de contrôle
+
+Comparez six cadres à leur taille de miniature. Choisissez trois valeurs, puis déplacez un objet secondaire dans une copie pour tester la lecture du sujet. **Preuve** La nouvelle vignette améliore le point focal sans modifier le récit.

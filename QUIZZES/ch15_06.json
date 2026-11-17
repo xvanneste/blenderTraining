@@ -1,0 +1,95 @@
+{
+  "chapter": "CH15.06",
+  "title": "Finition",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle preuve après export ?",
+      "type": "mcq",
+      "choices": [
+        "Rouvrir et vérifier image, son et durée",
+        "Lire uniquement le nom du fichier",
+        "Se fier au pourcentage de rendu"
+      ],
+      "answer": 0,
+      "explain": "La conformation remplace les références tout en préservant la structure de montage."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel format pour la revue de cet atelier ?",
+      "type": "mcq",
+      "choices": [
+        "Fichier .blend seul",
+        "MP4 H.264 avec AAC",
+        "Une image de couverture"
+      ],
+      "answer": 1,
+      "explain": "Une correction de teinte ou de son se juge à la coupe et au niveau du film entier."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quel actif conserver pour refaire le montage ?",
+      "type": "mcq",
+      "choices": [
+        "Le cache temporaire seul",
+        "Uniquement le fichier de revue",
+        "Les plans sources et le mix WAV"
+      ],
+      "answer": 2,
+      "explain": "La réouverture détecte les mauvais chemins, canaux audio absents et erreurs de cadence."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La lecture web démarre avec une seconde de noir. »",
+      "answer_text": "La plage de rendu commence avant le premier strip. Alignez le début de plage et inspectez la première puis la dernière image."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le film dure 15 secondes mais l’ambiance disparaît au dernier plan. Que vérifier ?",
+      "answer_text": "Durée du strip audio, mute et plage du mix, puis réouvrir le fichier exporté."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle différence entre les pièces sources et la copie web ?",
+      "answer_text": "Les plans sources et le mix WAV servent à reprendre. Le MP4 compressé sert à la revue."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi faire une lecture muette et une écoute seule ?",
+      "answer_text": "Elles isolent les défauts de compréhension visuelle et les défauts de son que le film complet peut masquer."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Conformer » ?",
+      "answer_text": "Le film complet couvre 360 images et les raccords gardent leur intention."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Équilibrer » ?",
+      "answer_text": "La balise garde sa teinte et le clic reste perceptible sans saturation."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Livrer et réouvrir » ?",
+      "answer_text": "Image et son démarrent ensemble, la durée cible vaut 15 secondes et les crédits du dossier correspondent aux ressources utilisées."
+    }
+  ]
+}

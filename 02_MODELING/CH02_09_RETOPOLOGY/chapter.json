@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_09_retopo_wire.png", "Rendu fil de fer"],
     ["SCRIPTS/validate_ch02_09.py", "Correcteur (densité, quads, écart et couverture BVH)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_09_retopo_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_09.py\" --python-exit-code 1 -- --exercise retopo --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_09_retopo_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_09.py\" -- --exercise retopo --render",
   "deliverables": ["Cage validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : retopologie de la créature."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Cage validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.10 — Optimisation](../CH02_10_OPTIMIZATION/README.md)"

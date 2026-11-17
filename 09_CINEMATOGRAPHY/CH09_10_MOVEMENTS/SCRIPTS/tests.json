@@ -1,0 +1,46 @@
+{
+  "build": "build_ch09_10_files.py",
+  "validator": "validate_ch09_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_10_movements_solution.blend",
+      "exercise": "movements",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_10_movements_starter.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_cross_line.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_no_markers.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_wrong_order.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_static_med.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_dolly_out.blend",
+      "exercise": "movements",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_10_movements_no_progression.blend",
+      "exercise": "movements",
+      "expect": false
+    }
+  ]
+}

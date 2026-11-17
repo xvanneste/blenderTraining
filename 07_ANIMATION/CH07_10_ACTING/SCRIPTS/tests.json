@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_10_files.py",
+  "validator": "validate_ch07_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_10_acting_solution.blend",
+      "exercise": "acting",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_10_acting_starter.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_no_hold.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_no_lag.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_no_anticipation.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_no_idle.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_too_slow.blend",
+      "exercise": "acting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_10_acting_small_turn.blend",
+      "exercise": "acting",
+      "expect": false
+    }
+  ]
+}

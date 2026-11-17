@@ -1,0 +1,43 @@
+{
+  "code": "CH13.07",
+  "title": "Opérateurs et interface",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h 30",
+  "intro": "Créer une commande Blender visible dans la barre latérale et annulable.",
+  "prereqs": [
+    "CH13.06"
+  ],
+  "objectives": [
+    "Dans la vue 3D, N affiche la catégorie BCMA.",
+    "Un repère apparaît au curseur et dans la collection active.",
+    "Le repère disparaît avec l’annulation et l’action est indisponible en mode Édition."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Définir la commande",
+      ""
+    ],
+    [
+      "L2",
+      "Tester le panneau",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/__init__.py",
+      "Code du panneau et de l’opérateur"
+    ],
+    [
+      "../ASSETS_ATELIERS/presentoir_plans.blend",
+      "Scène pour l’essai"
+    ]
+  ],
+  "pass_criteria": [
+    "Dans la vue 3D, N affiche la catégorie BCMA.",
+    "Un repère apparaît au curseur et dans la collection active.",
+    "Le repère disparaît avec l’annulation et l’action est indisponible en mode Édition."
+  ]
+}

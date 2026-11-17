@@ -1,0 +1,41 @@
+{
+  "build": "build_ch06_04_files.py",
+  "validator": "validate_ch06_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_04_ikfk_solution.blend",
+      "exercise": "ikfk",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_04_ikfk_starter.blend",
+      "exercise": "ikfk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_04_ikfk_no_pole.blend",
+      "exercise": "ikfk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_04_ikfk_no_driver.blend",
+      "exercise": "ikfk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_04_ikfk_stretch.blend",
+      "exercise": "ikfk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_04_ikfk_chain_one.blend",
+      "exercise": "ikfk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_04_ikfk_no_ik.blend",
+      "exercise": "ikfk",
+      "expect": false
+    }
+  ]
+}

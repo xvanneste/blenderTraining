@@ -1,0 +1,69 @@
+{
+  "code": "CH06.10",
+  "title": "Contrôleurs et ergonomie",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Un rig que l'animateur ne comprend pas est un mauvais rig. Ce chapitre rend lisible un rig déjà fonctionnel : trois collections de bones (Controls, Deform, Mechanism) dont deux masquées, des formes personnalisées sur les contrôleurs, des couleurs par côté, des verrous qui empêchent les gestes interdits, et une séparation nette entre les bones qui déforment et ceux qui se manipulent. Le correcteur vérifie la structure ET que le rig fonctionne toujours : tourner un contrôleur doit faire tourner le bon bone de déformation.",
+  "prereqs": [
+    "CH06.01–02 (armatures, contraintes), CH06.07 (Limit)."
+  ],
+  "objectives": [
+    "Organiser des bones en collections.",
+    "Créer des formes personnalisées.",
+    "Coder les côtés par la couleur.",
+    "Verrouiller les canaux inutiles.",
+    "Vérifier que l'ergonomie ne casse pas le rig."
+  ],
+  "competences": [
+    [
+      "C06.10.a",
+      "Rig agréable pour l'animateur",
+      "Exercice 2 (correcteur) + croquis"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Organiser : collections et déformation",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Formes, couleurs et verrous",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_10_controls_starter.blend",
+      "Rig fonctionnel mais illisible"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_10_controls_solution.blend",
+      "Rig organisé : collections, formes, couleurs, verrous"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_10_controls_reference.png",
+      "Formes colorées en projection oblique, bones de déformation en gris"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans collections, non masquées, sans formes, sans couleurs, sans verrous, lien cassé, déformation sur les contrôleurs)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_10.py",
+      "Correcteur (controls)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_10_controls_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_10.py\" -- --exercise controls",
+  "deliverables": [
+    "Rig organisé validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.11 — Rigging avancé et réutilisation](../CH06_11_ADVANCED/README.md)"
+}

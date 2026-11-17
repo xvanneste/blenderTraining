@@ -15,24 +15,24 @@
 | CH09.11 Couleur et émotion | Palettes, color script | C09.11.a color script |
 | CH09.12 Mise en scène | Blocking acteurs/caméra, continuité | C09.12.a mise en scène |
 
-**Projet P9 :** cinq plans exprimant cinq émotions différentes (joie, peur, solitude, tension, émerveillement).
+**Projet P9 :** [cinq plans, cinq émotions](PROJECT_P9/README.md) (joie, tristesse, colère, calme, peur) : lumière, couleur et cadrage mesurés par rendu.
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH09.01 Théorie de la lumière | ⬜ Non commencé |
-| CH09.02 Trois points et variantes | ⬜ Non commencé |
-| CH09.03 Naturel et HDRI | ⬜ Non commencé |
-| CH09.04 Dramatique et stylisé | ⬜ Non commencé |
-| CH09.05 Volumétrie | ⬜ Non commencé |
-| CH09.06 Exposition et contraste | ⬜ Non commencé |
-| CH09.07 Composition | ⬜ Non commencé |
-| CH09.08 Objectifs et focales | ⬜ Non commencé |
-| CH09.09 Profondeur de champ | ⬜ Non commencé |
-| CH09.10 Mouvements et grammaire | ⬜ Non commencé |
-| CH09.11 Couleur et émotion | ⬜ Non commencé |
-| CH09.12 Mise en scène | ⬜ Non commencé |
+| [CH09.01 Théorie de la lumière](CH09_01_LIGHT_THEORY/README.md) | ✅ Terminé et vérifié |
+| [CH09.02 Trois points et variantes](CH09_02_THREE_POINT/README.md) | ✅ Terminé et vérifié |
+| [CH09.03 Naturel et HDRI](CH09_03_NATURAL_HDRI/README.md) | ✅ Terminé et vérifié |
+| [CH09.04 Dramatique et stylisé](CH09_04_DRAMATIC/README.md) | ✅ Terminé et vérifié |
+| [CH09.05 Volumétrie](CH09_05_VOLUMETRICS/README.md) | ✅ Terminé et vérifié |
+| [CH09.06 Exposition et contraste](CH09_06_EXPOSURE/README.md) | ✅ Terminé et vérifié |
+| [CH09.07 Composition](CH09_07_COMPOSITION/README.md) | ✅ Terminé et vérifié |
+| [CH09.08 Objectifs et focales](CH09_08_LENSES/README.md) | ✅ Terminé et vérifié |
+| [CH09.09 Profondeur de champ](CH09_09_DEPTH_OF_FIELD/README.md) | ✅ Terminé et vérifié |
+| [CH09.10 Mouvements et grammaire](CH09_10_MOVEMENTS/README.md) | ✅ Terminé et vérifié |
+| [CH09.11 Couleur et émotion](CH09_11_COLOR_EMOTION/README.md) | ✅ Terminé et vérifié |
+| [CH09.12 Mise en scène](CH09_12_STAGING/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH09_MM_NOM/` conforme à

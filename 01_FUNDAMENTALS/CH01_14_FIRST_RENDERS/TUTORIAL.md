@@ -1,14 +1,14 @@
 # CH01.14 — Tutoriels pas à pas
 
 Ouvrez `STARTER_FILES/ch01_14_final_render_starter.blend` et enregistrez-le tout de suite
-sous `ch01_14_final_render_<prenom>_v001.blend` (le dossier `renders` sera créé à côté).
+sous `ch01_14_final_render_<prenom>_v001.blend`.
 
 ## Tutoriel 1 — Un premier rendu EEVEE
 1. `F12`. Une fenêtre de rendu s'ouvre. Lisez *Time* en haut.
 2. Fermez la fenêtre (ou `Échap`).
 
 ## Tutoriel 2 — Passer en Cycles et régler la qualité
-1. *Render → Render Engine* : **Cycles** ; *Device* : **GPU Compute**.
+1. *Render → Render Engine* : **Cycles** ; *Device* : **CPU**, ou **GPU Compute** si votre GPU est configuré et compatible.
 2. *Sampling → Render* : *Noise Threshold* **0.02**, *Max Samples* **128**, **Denoise** coché.
 3. *Output → Format* : 1920 × 1080, **100 %**.
 4. *Output → Output* : chemin `//renders/ch01_14_final_`, *File Format* **PNG**, *Color*
@@ -31,6 +31,10 @@ sous `ch01_14_final_render_<prenom>_v001.blend` (le dossier `renders` sera cré�
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_14_final_render_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_14.py" --python-exit-code 1 -- --exercise final
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_14.py" -- --exercise final
 ```
 Référence : `COMPLETED_EXAMPLES/renders/ch01_14_final.png` (et `ch01_14_eevee.png`).
+
+## Contrôle de transfert
+
+Rendez une image de comparaison à résolution réduite avant la sortie 1920 × 1080. L’option Noise Threshold agit sur l’arrêt adaptatif et Max Samples est un plafond. Comparez les bruits dans une ombre avant et après débruitage. Après F12, enregistrez le PNG et rouvrez-le, puis rouvrez le fichier .blend. **Réussite** Nom exact, cadre, résolution, moteur, échantillons et périphérique sont vérifiables. Le mode CPU convient si le GPU Cycles est indisponible.

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.12",
+  "title": "Mise en scène",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi préfère-t-on un triangle à une file de personnages ?",
+      "choices": [
+        "Il crée de la profondeur et des lignes de regard variées",
+        "Il est plus rapide à animer",
+        "Il consomme moins de mémoire",
+        "Il est imposé par Blender"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : triangle de 7 m² et angle minimal 39° contre une aire de 0,3 m² au départ."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que l'étagement en profondeur ?",
+      "choices": [
+        "Placer les sujets à des distances différentes de la caméra",
+        "Empiler des calques",
+        "Ajouter des marches",
+        "Baisser l'exposition"
+      ],
+      "answer": 0,
+      "explain": "Solution : 7,5 m, 9,5 m et 12 m de la caméra."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi vérifier la visibilité par le rendu ?",
+      "choices": [
+        "Un personnage peut être caché par un autre depuis la caméra",
+        "Pour le son",
+        "Pour la couleur",
+        "Pour la taille du fichier"
+      ],
+      "answer": 0,
+      "explain": "Contre-exemple occluded : C vaut 0 pixel."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la profondeur est-elle mesurée selon y ?",
+      "answer_text": "La caméra regarde vers +Y : la distance utile le long de l'axe de visée est y − (−9) ; le correcteur utilise cette différence."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce que le moment clé ?",
+      "answer_text": "Le dernier instant du plan 1 (image 36) où le blocking doit être lisible."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un faux raccord de position ?",
+      "choices": [
+        "Un objet ou un acteur qui change de place entre deux plans",
+        "Une couleur différente",
+        "Un son décalé",
+        "Une focale différente"
+      ],
+      "answer": 0,
+      "explain": "Départ : A saute de 2,55 m, la tasse de 60 cm."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle vitesse maximale le correcteur accepte-t-il ?",
+      "choices": [
+        "0,15 m par image (≈ 3,6 m/s à 24 i/s)",
+        "2 m par image",
+        "Aucune",
+        "0,001 m par image"
+      ],
+      "answer": 0,
+      "explain": "Solution : 0,09 m par image au plus (B)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi 0,6 m minimum entre deux personnages ?",
+      "answer_text": "Les cylindres ont un rayon de 0,25 m : moins de 0,5 m ils se traversent ; 0,6 m laisse une marge."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi évaluer image par image ?",
+      "answer_text": "Un défaut peut n'exister qu'à une image (le saut du raccord) : frame_set sur 72 images détecte ce que l'image 36 seule ne montre pas."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Des cylindres sans regard, sans acting ni lumière ; elle valide la géométrie du blocking et la continuité de position, pas la qualité dramatique."
+    }
+  ]
+}

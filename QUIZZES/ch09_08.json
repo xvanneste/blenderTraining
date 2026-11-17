@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.08",
+  "title": "Objectifs et focales",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait une focale plus longue à distance égale ?",
+      "choices": [
+        "Elle agrandit les objets et réduit le champ de vision",
+        "Elle élargit le champ",
+        "Elle éclaire plus",
+        "Elle change la couleur"
+      ],
+      "answer": 0,
+      "explain": "Hauteur apparente ∝ focale / distance."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le champ horizontal d'une focale de 144 mm sur un capteur de 36 mm ?",
+      "choices": [
+        "Environ 14°",
+        "Environ 54°",
+        "Environ 90°",
+        "Environ 2°"
+      ],
+      "answer": 0,
+      "explain": "2 × atan(18 / 144) = 14,25° (mesuré : 14,3°)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'appelle-t-on grand angle ?",
+      "choices": [
+        "Une focale courte (champ large)",
+        "Une focale longue",
+        "Un capteur noir",
+        "Une lampe"
+      ],
+      "answer": 0,
+      "explain": "35 mm : champ de 54° sur 36 mm de capteur."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la hauteur apparente est-elle proportionnelle à 1 / distance ?",
+      "answer_text": "Les rayons convergent vers le centre optique : un objet deux fois plus loin couvre un angle deux fois plus petit (pour de petits angles)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quel capteur le fichier utilise-t-il ?",
+      "answer_text": "Largeur 36 mm, Sensor Fit Auto : en 16:9 la hauteur du capteur utile est 36 × 9 / 16 = 20,25 mm."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pour que le fond paraisse 80 % aussi grand que le sujet (distances 8 m et 16 m), de combien reculer ?",
+      "choices": [
+        "24 m (rapport 32/40)",
+        "2 m",
+        "8 m",
+        "Il suffit de zoomer"
+      ],
+      "answer": 0,
+      "explain": "(8 + c) / (16 + c) = 0,8 → c = 16 minimum pour 0,75."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Zoomer sans reculer compresse-t-il la perspective ?",
+      "choices": [
+        "Non : le rapport des distances ne change pas",
+        "Oui",
+        "Seulement la nuit",
+        "Seulement en Cycles"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : focale 70 sans reculer → rapport 48 %, comme au départ."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder le sujet à 40 % de la hauteur en reculant ?",
+      "answer_text": "Pour comparer deux focales à cadrage égal : seule la perspective change, pas la taille du sujet. Hauteur = 1,8 × f / ((8 + c) × 20,25)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il le rapport ?",
+      "answer_text": "Il segmente le rouge et le vert, prend l'étendue verticale de chacun et divise ; la quantification à 90 lignes donne 0,46 pour une valeur théorique de 0,5."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Deux cylindres, un fond uni, un rendu Workbench : elle ne juge ni la distorsion des bords (grand angle) ni le rendu des visages ; elle vérifie le calcul de la compression."
+    }
+  ]
+}

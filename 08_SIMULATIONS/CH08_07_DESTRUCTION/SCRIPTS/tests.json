@@ -1,0 +1,36 @@
+{
+  "build": "build_ch08_07_files.py",
+  "validator": "validate_ch08_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_07_destruction_solution.blend",
+      "exercise": "destruction",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_07_destruction_starter.blend",
+      "exercise": "destruction",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_07_destruction_no_breaking.blend",
+      "exercise": "destruction",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_07_destruction_high_threshold.blend",
+      "exercise": "destruction",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_07_destruction_no_constraints.blend",
+      "exercise": "destruction",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_07_destruction_no_ground.blend",
+      "exercise": "destruction",
+      "expect": false
+    }
+  ]
+}

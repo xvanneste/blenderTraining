@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.10",
+  "title": "Matériaux de personnages",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi la peau a-t-elle besoin de sous-surface ?",
+      "choices": [
+        "Pour briller",
+        "La lumière pénètre la peau, diffuse et ressort : sans cela elle paraît en plastique",
+        "Pour changer l'IOR",
+        "Pour le bump"
+      ],
+      "answer": 1,
+      "explain": "La diffusion sous la surface adoucit les ombres et donne la teinte chaude."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel Subsurface Radius pour la peau ?",
+      "choices": [
+        "(1 ; 1 ; 1)",
+        "(1 ; 0,2 ; 0,1)",
+        "(0,1 ; 0,2 ; 1)",
+        "(0 ; 0 ; 0)"
+      ],
+      "answer": 1,
+      "explain": "Le rouge diffuse beaucoup plus loin que le bleu : rayon R > V > B."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que donne un Coat net sur l'œil ?",
+      "choices": [
+        "La cornée humide brillante",
+        "Un iris plus foncé",
+        "Une sclère rouge",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Coat Weight 1 et Coat Roughness bas ajoutent le reflet net de la cornée."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment l'iris est-il distingué de la sclère dans la solution ?",
+      "answer_text": "Une Gradient Texture linéaire (via Mapping) passe dans une Color Ramp à interpolation constante : sclère claire jusqu'à un seuil, puis iris brun (écart de luminance ≥ 0,3)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "À quoi servent les pores en bump sur la peau ?",
+      "answer_text": "Un Noise très fin (échelle 250) en Bump casse l'aspect lisse et accroche la lumière sans polygone."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud sert à rendre des cheveux ?",
+      "choices": [
+        "Principled BSDF",
+        "Principled Hair BSDF",
+        "Glass BSDF",
+        "Emission"
+      ],
+      "answer": 1,
+      "explain": "Le Principled Hair BSDF modélise la diffusion de la lumière dans une fibre."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Sheen ?",
+      "choices": [
+        "Il rend le matériau métallique",
+        "Il ajoute un liseré clair en bordure, comme les fibres d'un tissu",
+        "Il rend transparent",
+        "Il change le bump"
+      ],
+      "answer": 1,
+      "explain": "Sheen Weight modélise la diffusion rétro-réfléchissante des fibres ; Sheen Roughness en règle l'étalement."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le tissu a-t-il Roughness ≥ 0,6 ?",
+      "answer_text": "Un tissu est mat : pas de reflet net ; la rugosité forte reste cohérente avec Sheen."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les cheveux ne sont-ils pas des Principled BSDF ?",
+      "answer_text": "Un Principled sur une surface donne un aspect de plastique ; le nœud dédié reproduit les reflets décalés (primaire, secondaire) d'une fibre."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle limite a l'essai de cheveux sur une sphère ?",
+      "answer_text": "Le shader de cheveux est conçu pour des courbes (cheveux, fibres) ; sur une sphère il donne un aspect à points. La solution valide le matériau, pas la coiffure."
+    }
+  ]
+}

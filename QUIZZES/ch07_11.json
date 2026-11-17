@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.11",
+  "title": "Animation faciale et lip sync",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un visème ?",
+      "choices": [
+        "La forme de bouche associée à un groupe de phonèmes",
+        "Un type de caméra",
+        "Un son",
+        "Un shape key de couleur"
+      ],
+      "answer": 0,
+      "explain": "Plusieurs phonèmes partagent la même forme : on anime des visèmes, pas des lettres."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle forme pour M, B, P ?",
+      "choices": [
+        "Bouche fermée",
+        "Grande ouverture",
+        "Sourire",
+        "Lèvres arrondies"
+      ],
+      "answer": 0,
+      "explain": "Les lèvres se joignent : mâchoire à 0° dans l'exercice."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quand la bouche atteint-elle sa forme, par rapport au son ?",
+      "choices": [
+        "Une image avant",
+        "Une image après",
+        "Exactement au son",
+        "Trois images après"
+      ],
+      "answer": 0,
+      "explain": "Le son est perçu comme synchrone quand l'image précède légèrement ; le correcteur vérifie aux images f − 1 et f."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi animer des visèmes et non des lettres ?",
+      "answer_text": "Peu de formes suffisent (fermée, ouverte, arrondie, étirée) ; animer chaque lettre produit une bouche qui papillonne."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi tenir la forme sur deux images ?",
+      "answer_text": "Une forme tenue (images f − 1 et f) se lit mieux qu'une pose fugitive : l'œil la voit."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle est la durée d'un clignement naturel ?",
+      "choices": [
+        "Quelques images (ici 3 à 8)",
+        "Une seconde",
+        "Une image",
+        "Dix secondes"
+      ],
+      "answer": 0,
+      "explain": "Dans la solution : départ à l'image 20, 3 images au-dessus de 5 mm."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi éviter l'interpolation Constant ?",
+      "choices": [
+        "La bouche saute d'une forme à l'autre",
+        "Elle est plus lente",
+        "Elle supprime les clés",
+        "Elle change la couleur"
+      ],
+      "answer": 0,
+      "explain": "Saut de 12° de la mâchoire d'une image à l'autre (contre-exemple « popping »)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « mouth_open_on_m » ?",
+      "answer_text": "Une bouche entrouverte (−4°) sur M : le spectateur ne lit pas la consonne ; M doit fermer les lèvres."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les voyelles A, O, E doivent-elles différer ?",
+      "answer_text": "Chacune a sa forme : A grande ouverture (−12°), O arrondie (−7°), E étirée avec sourire (−4° et 0,04 m)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi placer un clignement dans une phrase ?",
+      "answer_text": "Un visage qui ne cligne jamais paraît mort ; le clignement ponctue le regard et marque les pensées."
+    }
+  ]
+}

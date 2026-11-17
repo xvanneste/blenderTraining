@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.07",
+  "title": "Pipeline hybride",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quels temps additionner ?",
+      "type": "mcq",
+      "choices": [
+        "Préparation, production, correction et vérification",
+        "Génération seule",
+        "Export seul"
+      ],
+      "answer": 0,
+      "explain": "Inclure la correction évite de compter seulement les minutes de génération."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Pourquoi partir du même brief ?",
+      "type": "mcq",
+      "choices": [
+        "Pour rendre les plans identiques au pixel",
+        "Pour comparer des résultats équivalents",
+        "Pour éviter toute décision artistique"
+      ],
+      "answer": 1,
+      "explain": "Les deux versions partent du même brief et respectent les mêmes conditions."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que doit prévoir la reprise ?",
+      "type": "mcq",
+      "choices": [
+        "Le nom d’un compte sans les sorties",
+        "Un rendu fixe seul",
+        "Des fichiers versionnés et une alternative exploitable"
+      ],
+      "answer": 2,
+      "explain": "Une méthode hybride gagne si le résultat est exploitable dans le budget et révisable."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le chiffrage indique un gain sans compter la retouche. »",
+      "answer_text": "Le relevé commence au prompt et s’arrête à la première sortie. Ajoutez vérification, rejet, correction et export avant le calcul."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le rendu assisté prend moins de temps au début mais impose de retoucher le décor. Comment quantifier l’écart ?",
+      "answer_text": "Additionner préparation, fabrication, retouche et validation avant de comparer."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faire si la version rapide ne passe pas le critère visuel ?",
+      "answer_text": "Corriger puis mesurer à nouveau ou choisir l’autre version avec la raison et les visuels."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu’indique une comparaison faite avec des propositions fictives ?",
+      "answer_text": "Elle exerce le protocole. Les temps obtenus ne mesurent pas un vrai service."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Définir la mesure » ?",
+      "answer_text": "Un protocole prévoit les mêmes livrables dans les deux essais."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Produire deux versions » ?",
+      "answer_text": "Deux prévisualisations Blender et un journal de leurs différences."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Arbitrer » ?",
+      "answer_text": "Le choix final s’appuie sur une image, un temps réel et un coût de correction."
+    }
+  ]
+}

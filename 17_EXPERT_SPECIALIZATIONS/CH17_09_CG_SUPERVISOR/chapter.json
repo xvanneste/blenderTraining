@@ -1,0 +1,43 @@
+{
+  "code": "CH17.09",
+  "title": "CG Supervisor",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "5 h",
+  "intro": "Arbitrer anomalie, risque et qualité à l’échelle de trois plans dont les dépendances sont partagées.",
+  "prereqs": [
+    "CH17.08"
+  ],
+  "objectives": [
+    "Chaque anomalie a un critère, un propriétaire et un état de vérification.",
+    "Un tableau relie versions, conséquences et circuit de validation.",
+    "Le plan de suivi contient priorités, dépendances et un verdict pour chaque plan."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Fixer les standards",
+      ""
+    ],
+    [
+      "L2",
+      "Mener les dailies",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../16_FEATURE_FILMS/ASSETS_ATELIERS/revue_pilote.md",
+      "Revue et états versionnés"
+    ],
+    [
+      "../../15_SHORT_FILMS/ASSETS_ATELIERS/plans.csv",
+      "Feuille du court"
+    ]
+  ],
+  "pass_criteria": [
+    "Chaque anomalie a un critère, un propriétaire et un état de vérification.",
+    "Un tableau relie versions, conséquences et circuit de validation.",
+    "Le plan de suivi contient priorités, dépendances et un verdict pour chaque plan."
+  ]
+}

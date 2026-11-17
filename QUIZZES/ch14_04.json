@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.04",
+  "title": "IA pour l’animation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Dans quel repère juger le pied planté ?",
+      "type": "mcq",
+      "choices": [
+        "Les coordonnées monde",
+        "Les pixels du portrait uniquement",
+        "Le nom du bone"
+      ],
+      "answer": 0,
+      "explain": "Un résultat vidéo-vers-animation doit être ramené à la cadence et aux unités de la scène cible."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel contrôle lancer après la correction d’un pied ?",
+      "type": "mcq",
+      "choices": [
+        "Supprimer tous les marqueurs",
+        "Vérifier genou, bassin et sortie de l’appui",
+        "Changer de texture"
+      ],
+      "answer": 1,
+      "explain": "Les axes locaux et la pose de repos influencent la reprise des rotations. Un pied planté doit rester stable en monde."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Qu’aligner avant de transférer des rotations ?",
+      "type": "mcq",
+      "choices": [
+        "Le libellé de la caméra",
+        "Le fond d’écran",
+        "La pose de repos et les axes"
+      ],
+      "answer": 2,
+      "explain": "Le verrouillage d’appui doit préserver le mouvement du corps et rester raccord avec le pas suivant."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Les pieds semblent stables en vue caméra et glissent de profil. »",
+      "answer_text": "La perspective masque le déplacement sur l’axe du mouvement. Observez deux vues fixes et mesurez la position mondiale du contact."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La pose de repos source est en T et la cible est en A. Que contrôler avant de transférer ?",
+      "answer_text": "Les axes et orientations de repos des os correspondants. Comparer ensuite une pose simple avant tout le cycle."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un pied saccade dès le décollement après correction. Quelle zone revoir ?",
+      "answer_text": "Les clés à la sortie de l’appui et leurs interpolations, puis le bassin et le genou."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi relever la cadence du clip d’origine ?",
+      "answer_text": "Pour faire coïncider les événements dans le temps quand la scène cible utilise une autre cadence."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Référence de mouvement » ?",
+      "answer_text": "Un tableau par pied associe trois événements aux images de la timeline."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Retargeting et appuis » ?",
+      "answer_text": "Le glissement est visible en vue latérale et mesurable sur deux images de l’appui."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Nettoyer » ?",
+      "answer_text": "Le glissement baisse et le genou ne saute pas au raccord."
+    }
+  ]
+}

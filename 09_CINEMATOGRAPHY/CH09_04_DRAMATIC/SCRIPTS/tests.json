@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_04_files.py",
+  "validator": "validate_ch09_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_04_dramatic_solution.blend",
+      "exercise": "dramatic",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_04_dramatic_starter.blend",
+      "exercise": "dramatic",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_04_dramatic_low_not_dark.blend",
+      "exercise": "dramatic",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_04_dramatic_low_low_ratio.blend",
+      "exercise": "dramatic",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_04_dramatic_mono_color.blend",
+      "exercise": "dramatic",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_04_dramatic_high_too_contrasty.blend",
+      "exercise": "dramatic",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_04_dramatic_high_dark.blend",
+      "exercise": "dramatic",
+      "expect": false
+    }
+  ]
+}

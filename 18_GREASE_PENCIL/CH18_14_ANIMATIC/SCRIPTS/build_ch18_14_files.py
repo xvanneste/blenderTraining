@@ -17,7 +17,7 @@ build_ch18_14_files.py — « Du scénario à l'animatique » (CH18.14, phase 18
       6 caméras dont la valeur de plan mesurée (bcma_shots.classify) correspond à la liste,
       6 marqueurs liés aux caméras aux images calculées depuis les durées.
 Dépend de : COMPLETED_EXAMPLES de CH18.13 (planche source) et du script de CH18.11 (décor).
-Usage : blender -b --factory-startup --python build_ch18_14_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_14_files.py
 Testé avec : Blender 5.3.0.
 """
 import importlib.util

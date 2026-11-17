@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.03",
+  "title": "IA pour les assets",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel outil révèle les étirements UV ?",
+      "type": "mcq",
+      "choices": [
+        "Le volume sonore",
+        "Le nom du fichier",
+        "Un damier régulier"
+      ],
+      "answer": 2,
+      "explain": "Même une paire synthétique peut contenir des incohérences entre vues."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quelle vérification rend un asset utilisable en animation ?",
+      "type": "mcq",
+      "choices": [
+        "Inspecter une déformation réelle sur une articulation",
+        "Augmenter le contraste",
+        "Exporter la miniature"
+      ],
+      "answer": 0,
+      "explain": "Un modèle d’apparence terminée peut s’avérer difficile à modifier ou déformer."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que décider si la silhouette dévie entre les vues ?",
+      "type": "mcq",
+      "choices": [
+        "Moyenner toutes les valeurs sans contrôle",
+        "Documenter des repères et corriger la géométrie",
+        "Masquer le profil"
+      ],
+      "answer": 1,
+      "explain": "Une image de matériau doit être séparée de l’éclairage et la topologie doit répondre au besoin d’animation."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La texture semble correcte malgré des étirements. »",
+      "answer_text": "Les motifs projetés masquent la déformation UV. Assignez un damier neutre et comparez la taille des cases."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La silhouette de profil et la face donnent deux hauteurs de bassin. Comment trancher ?",
+      "answer_text": "Revérifier alignement et pose, retenir le repère le plus fiable et documenter l’écart."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le GLB semble joli. Que devez-vous encore ouvrir à l’écran ?",
+      "answer_text": "Filaire et UV, puis un test de déformation avec des positions différentes des articulations."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut de texture distinguer d’un problème de matériau ?",
+      "answer_text": "Une lumière déjà peinte peut rester visible sur le matériau neutre alors qu’elle devrait venir de la scène."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Évaluer la référence » ?",
+      "answer_text": "Une fiche de repères identifie lequel suivre lorsqu’ils diffèrent."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Contrôler le modèle » ?",
+      "answer_text": "La fiche rapporte la hauteur, les textures embarquées et la déformation observée sur une image de pose."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Texture et retopo » ?",
+      "answer_text": "Deux captures montrent le damier et la boucle, avec une décision garder ou reprendre."
+    }
+  ]
+}

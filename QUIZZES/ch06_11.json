@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.11",
+  "title": "Rigging avancé et réutilisation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait le réglage Segments d'un bone ?",
+      "choices": [
+        "Il le duplique",
+        "Il le découpe en segments qui peuvent se courber (Bendy Bones)",
+        "Il change sa longueur",
+        "Il le colore"
+      ],
+      "answer": 1,
+      "explain": "Avec Segments > 1, le bone se courbe en arche lisse ; avec 1 il est rigide."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui se passe si Segments = 1 et qu'on règle Curve In X ?",
+      "choices": [
+        "Le tube se courbe",
+        "Rien : le bone est rigide",
+        "Le tube s'étire",
+        "Erreur"
+      ],
+      "answer": 1,
+      "explain": "Mesuré : le milieu du tube est décalé de 0,0 cm avec 1 segment."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi 8 segments plutôt que 2 ?",
+      "choices": [
+        "Pour le rendu",
+        "La courbe est plus lisse : 5,6° contre 17° de virage entre anneaux",
+        "C'est une règle",
+        "Pour réduire le poids"
+      ],
+      "answer": 1,
+      "explain": "Avec 2 segments, la courbe est faite de deux morceaux presque droits."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quels éléments doivent être présents pour que le tube se courbe ?",
+      "answer_text": "Un bone avec Segments ≥ 6, use_deform actif, un modificateur Armature sur le tube, des poids sur le bone."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où trouve-t-on Curve In X dans l'interface ?",
+      "answer_text": "Bone properties > Bendy Bones (non relu dans l'interface 5.3 ; vérifié par l'API : propriété bbone_curveinx)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle différence entre Link et Append ?",
+      "choices": [
+        "Aucune",
+        "Link garde une référence à la bibliothèque ; Append fait une copie locale",
+        "Append est plus rapide",
+        "Link supprime la source"
+      ],
+      "answer": 1,
+      "explain": "Le contre-exemple « appended » n'a aucune bibliothèque : le rig est une copie, les mises à jour de la bibliothèque ne l'atteignent plus."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi un library override ?",
+      "choices": [
+        "Pour modifier la bibliothèque",
+        "Pour modifier localement un rig lié sans toucher à l'original",
+        "Pour compresser",
+        "Pour exporter"
+      ],
+      "answer": 1,
+      "explain": "Un lien nu n'est pas éditable ; l'override est la copie éditable qui garde le lien avec la bibliothèque."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un chemin RELATIF ?",
+      "answer_text": "Le projet reste déplaçable : le plan retrouve la bibliothèque tant que les deux dossiers gardent leur position relative ; un chemin absolu casse sur une autre machine."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la pose du rig overridé est-elle posée par keyframe ?",
+      "answer_text": "Mesuré en 5.3 : une rotation de bone saisie sans Action n'est pas conservée à la réouverture du plan (0° mesuré) ; une Action est conservée (30° mesurés)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu'est-ce qu'un override « système » et pourquoi l'éviter ici ?",
+      "answer_text": "Un override créé seulement pour porter la hiérarchie, non éditable par l'utilisateur ; on utilise do_fully_editable = True (Make > Selected & Content) pour pouvoir poser le rig."
+    }
+  ]
+}

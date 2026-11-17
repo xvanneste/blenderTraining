@@ -9,7 +9,7 @@ build_ch02_10_files.py — « Alléger sans abîmer » (CH02.10, optimisation).
   COMPLETED_EXAMPLES/ch02_10_optim_solution.blend (+ _reference.png)
       GEO_Statue : Decimate Collapse 0,2 ; GEO_Statue_LOD1 (0,08) et GEO_Statue_LOD2 (0,015) en
       copies LIÉES (Alt+D) dans la collection LOD ; GEO_Imported nettoyé (By Distance, Delete Loose).
-Usage : blender -b --factory-startup --python build_ch02_10_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_10_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

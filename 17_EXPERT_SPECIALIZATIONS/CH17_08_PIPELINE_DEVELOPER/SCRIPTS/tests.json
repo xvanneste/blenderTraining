@@ -1,0 +1,14 @@
+{
+  "cases": [],
+  "extra": [
+    {
+      "script": "../../../16_FEATURE_FILMS/ASSETS_ATELIERS/verifier_pipeline.py",
+      "args": [
+        "plans"
+      ]
+    },
+    {
+      "script": "../../ASSETS_ATELIERS/test_publication.py"
+    }
+  ]
+}

@@ -24,11 +24,11 @@ une caméra `CAM_Shot`, un soleil. Aucun objet Grease Pencil.
 5. Cadenas sur `SKETCH` (après y avoir esquissé, voir tutoriel 4) ; baissez son **Opacity** à 0,3.
 
 ## Tutoriel 4 — Dessiner dans la scène
-1. `Num 0` (vue caméra). `Ctrl+Tab` → **Draw Mode**.
+1. `Numpad 0` (vue caméra). Sélectionnez `GP_Character` et choisissez **Draw Mode** dans le sélecteur de modes de la vue 3D.
 2. En-tête : vérifiez **Stroke Placement : Origin** et **Drawing Plane : View**.
 3. Calque `SKETCH` : grande ellipse de gestuelle. Puis calque `LINE` : le personnage (mannequin
    CH18.03), au moins 6 traits. Calque `COLOR` : quelques hachures ou aplats.
-4. Orbitez (molette) : le dessin est un plan dans l'espace, devant la maison.
+4. Sortez de la vue caméra, puis orbitez avec le bouton central maintenu. Vérifiez de côté que le dessin est devant la maison. Revenez en vue caméra pour contrôler le cadrage.
 
 ## Tutoriel 5 — Le fond derrière la maison
 1. `Ctrl+Tab` → Object Mode. **Add → Grease Pencil → Blank**, `F2` → `GP_Background`.
@@ -44,5 +44,9 @@ Enregistrez `ch18_06_gp_scene_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_06_gp_scene_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_06.py" --python-exit-code 1 -- --exercise organize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_06.py" -- --exercise organize --render
 ```
+
+## Variante de contrôle
+
+Créez un objet Grease Pencil, ajoutez un calque et dessinez un trait court sur une image de contrôle. En changeant de mode, comparez modification des points et déplacement de l’objet. **Preuve** Vous retrouvez objet, calque et dessin dans les éditeurs appropriés.

@@ -1,7 +1,6 @@
 # CH00.01 — Dépannage
 
-Format : **Symptôme → causes probables → solution**. Commencez toujours par générer le
-rapport système (`SCRIPTS/bcma_system_report.py`) : il répond à la moitié des questions.
+Identifiez le symptôme. Si Blender s’ouvre et qu’un rendu CPU fonctionne, vous pouvez réaliser le premier jalon. Le rapport système aide ensuite à diagnostiquer le matériel et les préférences.
 
 ## 1. Blender ne démarre pas / se ferme immédiatement
 | Cause probable | Solution |
@@ -18,7 +17,7 @@ Pour voir les messages d'erreur : `blender_debug_log.cmd` (dans le dossier d'ins
 ## 2. Mon GPU n'apparaît pas dans *Cycles Render Devices*
 | Cause probable | Solution |
 |---|---|
-| Mauvais onglet sélectionné | NVIDIA : onglets **CUDA** ou **OptiX** ; AMD : **HIP** ; Intel Arc : **oneAPI**. |
+| Mauvais onglet sélectionné | NVIDIA : onglets **CUDA** ou **OptiX** ; AMD : **HIP** ; Intel compatible : **oneAPI**. Apple compatible : **Metal**. |
 | Pilote trop ancien | Mettre à jour ; les fonctions récentes (OptiX, DLSS) exigent des pilotes récents. |
 | GPU non supporté (trop ancien) | Consulter la page *GPU Rendering* du manuel officiel ; rendre sur CPU. |
 | PC portable avec deux GPU | Forcer Blender sur le GPU dédié (*Paramètres Windows → Affichage → Graphiques*). |
@@ -26,7 +25,7 @@ Pour voir les messages d'erreur : `blender_debug_log.cmd` (dans le dossier d'ins
 
 ## 3. *Device → GPU Compute* est grisé ou absent
 Le GPU n'est pas activé dans les **préférences** (tutoriel 3). Le menu *Device* n'existe
-qu'avec le moteur **Cycles** (pas en EEVEE, qui utilise toujours le GPU).
+qu’avec le moteur **Cycles**. Pour la première mire, choisissez CPU et conservez le même objectif d’image.
 
 ## 4. Le rendu GPU est plus lent que prévu
 - Premier rendu de la session : chargement des *kernels* → refaire la mesure.

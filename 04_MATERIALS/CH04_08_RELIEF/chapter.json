@@ -1,0 +1,69 @@
+{
+  "code": "CH04.08",
+  "title": "Relief : bump, normal map, displacement",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Trois techniques donnent du relief à une surface : le bump (hauteur → normale perturbée), la normal map (normales stockées, CH04.07) et le displacement (la géométrie est réellement déplacée). Ce chapitre compare leurs usages puis réalise un vrai displacement : un sol de terrain rendu en Cycles, dont la silhouette ondule. Le correcteur contrôle le moteur, le branchement du nœud Displacement, l'amplitude, le réglage du matériau et la subdivision du maillage.",
+  "prereqs": [
+    "CH04.04–05 (nœuds, textures procédurales)",
+    "CH04.07."
+  ],
+  "objectives": [
+    "Choisir entre bump, normal map et displacement selon le besoin.",
+    "Brancher un Displacement et régler Scale et Midlevel.",
+    "Régler la méthode de displacement du matériau et subdiviser le maillage.",
+    "Reconnaître les limites de chaque technique (silhouette, coût)."
+  ],
+  "competences": [
+    [
+      "C04.08.a",
+      "Choisir et régler la technique de relief",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Bump, normal map, displacement",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Un vrai displacement avec Cycles",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_08_relief_starter.blend",
+      "Plan 6 x 6 m, Principled seul, EEVEE"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_08_relief_solution.blend",
+      "Sol en displacement (Cycles)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_08_relief_reference.png",
+      "Deux vues Cycles, soleil rasant"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (méthode Bump, sans subdivision, échelle excessive, hauteur constante, non relié, EEVEE)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_08.py",
+      "Correcteur (relief)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_08_relief_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_08.py\" -- --exercise relief",
+  "deliverables": [
+    "Sol en displacement validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.09 — Matériaux types](../CH04_09_TYPICAL_MATERIALS/README.md)"
+}

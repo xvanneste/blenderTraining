@@ -19,7 +19,7 @@
     ["COMPLETED_EXAMPLES/ch01_06_moving_solution.blend", "Tout posé et aligné"],
     ["SCRIPTS/validate_ch01_06.py", "Correcteur (18 points)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_06_moving_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_06.py\" --python-exit-code 1 -- --exercise moving",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_06_moving_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_06.py\" -- --exercise moving",
   "deliverables": ["ch01_06_moving_<prenom>_v001.blend validé.", "Mini-projet : la chambre rangée."],
   "next": "[CH01.07 — Origines, pivots, curseur 3D](../CH01_07_ORIGINS_PIVOTS/README.md)"
 }

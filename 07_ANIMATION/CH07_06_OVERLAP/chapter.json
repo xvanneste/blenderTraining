@@ -1,0 +1,68 @@
+{
+  "code": "CH07.06",
+  "title": "Arcs, overlap, follow-through",
+  "phase_title": "7 — Animation 3D",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Un corps souple ne bouge pas d'un bloc : quand la base s'arrête, la pointe continue (FOLLOW-THROUGH), chaque partie atteint son extrême un peu après la précédente (OVERLAP), et la pointe décrit une courbe (ARC). Ces trois principes donnent vie aux queues, antennes, cheveux, vêtements. Ce chapitre les applique à une antenne de quatre bones en chaîne : retard de 2 images par bone, suite du mouvement après l'arrêt de la base, dépassement du repos puis stabilisation. Le correcteur lit les angles évalués image par image.",
+  "prereqs": [
+    "CH07.04 (Graph Editor), CH07.05 (timing)."
+  ],
+  "objectives": [
+    "Décaler les clés le long d'une chaîne (overlap).",
+    "Prolonger le mouvement après l'arrêt du parent (follow-through).",
+    "Ajouter un dépassement et une stabilisation.",
+    "Vérifier un arc sur la trajectoire de la pointe."
+  ],
+  "competences": [
+    [
+      "C07.06.a",
+      "Overlap convaincant",
+      "Exercice 2 (correcteur) + courbes d'angle"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Overlap et arcs",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Follow-through et dépassement",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_06_overlap_starter.blend",
+      "Antenne de quatre bones : seule la base est animée (aller-retour de 25°)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_06_overlap_solution.blend",
+      "Overlap de 2 images par bone, follow-through, dépassement de −6°, repos final"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_06_overlap_reference.png",
+      "Courbes d'angle des quatre bones (cascade) et trajectoire de la pointe (arc)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans overlap, retards trop longs, sans follow-through, sans dépassement, sans repos, queue raide)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_06.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_06_overlap_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_06.py\" -- --exercise overlap",
+  "deliverables": [
+    "Antenne souple validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.07 — Posing et silhouette](../CH07_07_POSING/README.md)"
+}

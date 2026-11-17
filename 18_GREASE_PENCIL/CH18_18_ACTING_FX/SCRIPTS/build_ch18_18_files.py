@@ -9,7 +9,7 @@ build_ch18_18_files.py — « Le plan animé de 5 s : acting, effet, caméra » 
       anticipation (44), sursaut écrasé/étiré (49–51), surprise tenue (53–79), retour (81–89),
       soulagement tenu (91–120). USER_FX : éclair (48–50, en un), fumée qui grossit et monte (52–70,
       en deux), clé vide en 72 (l'effet disparaît). Caméra : tremblement amorti 48–58.
-Usage : blender -b --factory-startup --python build_ch18_18_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_18_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

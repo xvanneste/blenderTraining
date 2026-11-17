@@ -1,0 +1,22 @@
+{
+  "build": "build_ch03_07_files.py",
+  "validator": "validate_ch03_07.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch03_07_hand_solution.blend", "exercise": "hand", "expect": true, "render": true},
+    {"file": "COMPLETED_EXAMPLES/ch03_07_foot_solution.blend", "exercise": "foot", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch03_07_hand_starter.blend", "exercise": "hand", "expect": false},
+    {"file": "STARTER_FILES/ch03_07_foot_starter.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_hand_fused_fingers.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_hand_four_fingers.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_hand_equal_fingers.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_hand_no_thumb.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_hand_tiny.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_foot_fused_toes.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_foot_four_toes.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_foot_flat_foot.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_foot_short_big_toe.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_07_foot_tiny.blend", "exercise": "foot", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch03_07_foot_solution.blend", "exercise": "hand", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/ch03_07_hand_solution.blend", "exercise": "foot", "expect": false}
+  ]
+}

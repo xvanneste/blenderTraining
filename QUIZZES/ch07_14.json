@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.14",
+  "title": "Motion capture",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un fichier BVH ?",
+      "choices": [
+        "Une hiérarchie de joints et une suite de poses par image",
+        "Un maillage",
+        "Une texture",
+        "Un son"
+      ],
+      "answer": 0,
+      "explain": "Squelette (HIERARCHY) puis valeurs de canaux par image (MOTION)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi nettoyer une mocap ?",
+      "choices": [
+        "Elle contient du bruit, des glitches et trop de clés",
+        "Elle est trop lente",
+        "Elle est trop colorée",
+        "Pour la rendre plus petite en pixels"
+      ],
+      "answer": 0,
+      "explain": "Bruit de 1° et glitches de 9° dans l'exercice."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Combien de clés par courbe après l'import ?",
+      "choices": [
+        "Une par image (96)",
+        "Deux",
+        "Dix",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "15 courbes de 96 clés."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un glitch ?",
+      "answer_text": "Une valeur aberrante isolée (mauvaise lecture d'un marqueur) : ici +9° aux images 21, 48 et 72 ; un lissage seul la répartit sur ses voisines au lieu de la supprimer."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi garder une copie brute ?",
+      "answer_text": "Pour comparer, recommencer et ne jamais perdre la capture d'origine ; le correcteur s'en sert de référence."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle est la bonne suite d'opérations ?",
+      "choices": [
+        "Retirer les glitches, lisser, décimer",
+        "Décimer, lisser, retirer les glitches",
+        "Lisser, décimer, ajouter du bruit",
+        "Décimer seulement"
+      ],
+      "answer": 0,
+      "explain": "Décimer d'abord garderait les glitches comme des clés."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel risque d'un lissage trop fort ?",
+      "choices": [
+        "Perdre l'amplitude du mouvement",
+        "Gagner des clés",
+        "Ajouter du bruit",
+        "Aucun"
+      ],
+      "answer": 0,
+      "explain": "σ = 6 images : amplitude conservée à 28 % seulement."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi décimer ?",
+      "answer_text": "Pour garder 28 à 32 clés au lieu de 96 sur les courbes importantes : le mouvement reste éditable à la main."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi des clés en Bezier après décimation ?",
+      "answer_text": "Les clés restantes sont espacées : en Linear la courbe est anguleuse, en Bezier elle reste lisse (fidélité similaire, aspect meilleur)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faire d'une courbe qui ne contient que du bruit ?",
+      "answer_text": "La réduire à quelques clés (ici ≤ 32 clés au plus, souvent 2) : il n'y a pas de mouvement utile."
+    }
+  ]
+}

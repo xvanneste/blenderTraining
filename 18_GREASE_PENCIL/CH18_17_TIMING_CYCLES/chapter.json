@@ -22,7 +22,7 @@
     ["COMPLETED_EXAMPLES/ch18_17_walk_reference.png", "Planche des 12 dessins"],
     ["SCRIPTS/validate_ch18_17.py", "Correcteur (xsheet, walk)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_17_walk_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_17.py\" --python-exit-code 1 -- --exercise walk --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_17_walk_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_17.py\" -- --exercise walk --render",
   "deliverables": ["Feuille d'exposition appliquée.", "Cycle de marche validé.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercices 1 et 2 validés."],
   "next": "[CH18.18 — Personnages, expressions, effets, caméra](../CH18_18_ACTING_FX/README.md)"

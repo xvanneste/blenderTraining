@@ -58,7 +58,7 @@ Premier pas de l'animation 2D dans Grease Pencil : la balle rebondissante, exerc
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_16_bounce_<prenom>_v002.blend" `
-  --python "SCRIPTS\validate_ch18_16.py" --python-exit-code 1 -- --exercise bounce --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_16.py" -- --exercise bounce --render
 ```
 
 ## Livrables attendus

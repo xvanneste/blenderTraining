@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.05",
+  "title": "Volumétrie",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi un faisceau est-il invisible dans l'air pur ?",
+      "choices": [
+        "Rien ne diffuse la lumière vers la caméra",
+        "La lumière est trop faible",
+        "Il est trop large",
+        "La caméra est mal placée"
+      ],
+      "answer": 0,
+      "explain": "Il faut des particules (brume, poussière)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud crée un brouillard ?",
+      "choices": [
+        "Principled Volume relié à Volume",
+        "Principled BSDF",
+        "Emission",
+        "Mix Shader"
+      ],
+      "answer": 0,
+      "explain": "Material Output > Volume."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel réglage donne plus de brouillard ?",
+      "choices": [
+        "Density",
+        "Anisotropy",
+        "Roughness",
+        "IOR"
+      ],
+      "answer": 0,
+      "explain": "Density 0,08 dans l'exercice."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « too_thin » ?",
+      "answer_text": "Density 0,004 : la luminance du centre tombe à 0,007 (contre 0,088) : le faisceau est presque invisible."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le starter ne montre-t-il aucun faisceau ?",
+      "answer_text": "Density 0 : aucune particule ne diffuse la lumière ; on ne voit que la tache sur le sol."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que se passe-t-il avec un brouillard trop dense ?",
+      "choices": [
+        "La lumière est absorbée et l'image devient opaque",
+        "Le faisceau devient plus net",
+        "Le rendu est plus rapide",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Density 1,5 : centre à 0,0007."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que règle Anisotropy ?",
+      "choices": [
+        "La direction préférée de la diffusion",
+        "La densité",
+        "La couleur",
+        "La taille du cube"
+      ],
+      "answer": 0,
+      "explain": "0 = uniforme ; > 0 = vers l'avant."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un spot trop large supprime-t-il l'effet de faisceau ?",
+      "answer_text": "Avec 150° le brouillard est éclairé partout : le centre vaut 0,59 et le faisceau ne se distingue plus du reste."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le brouillard est-il un cube en fil de fer ?",
+      "answer_text": "C'est un volume délimité : le maillage sert de frontière ; son affichage en filaire évite de le confondre avec un objet solide."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle limite a la mesure ?",
+      "answer_text": "Elle lit la luminance du centre et le contraste avec les bords : elle ne juge ni la forme du faisceau, ni le bruit, ni l'esthétique."
+    }
+  ]
+}

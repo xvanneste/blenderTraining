@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch03_04_bust_reference.png", "Face, 3/4, profil"],
     ["SCRIPTS/validate_ch03_04.py", "Correcteur (bust)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_04_bust_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_04.py\" --python-exit-code 1 -- --exercise bust --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_04_bust_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_04.py\" -- --exercise bust --render",
   "deliverables": ["Buste stylisé validé.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
   "next": "[CH03.05 — Sculpture réaliste](../CH03_05_REALISTIC/README.md)"

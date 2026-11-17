@@ -1,23 +1,24 @@
 # FINAL_AUDIT — Audit de l'académie (généré, état réel)
 
-**Généré le :** 15/11/2026 par `python TOOLS/final_audit.py` · Blender de référence : 5.3.0
+**Généré le :** 17/11/2026 par `python TOOLS/final_audit.py` · Blender de référence : 5.3.0
 
 > Ce document est recalculé à partir des fichiers : il ne peut pas annoncer comme terminé un
 > chapitre dont un document, le quiz ou les tests manquent.
 
-## Verdict
+## Couverture du catalogue
 
-**La formation est NON TERMINÉE** : 61 chapitres sur 199 sont terminés et vérifiés (31 %).
+**199 chapitres sur 199 ont le statut publié.** 177 ont des contrôles techniques enregistrés. 22 reposent sur des supports documentaires et une évaluation par revue.
+Le [suivi de la refonte](SUIVI_REFONTE_BLENDER.md) indique la portée des relectures et les vérifications encore ouvertes.
 
 | Statut | Chapitres |
 |---|---|
-| Terminé et vérifié | 61 |
+| Terminé et vérifié | 199 |
 | Terminé mais non vérifié | 0 |
 | Partiellement terminé | 0 |
 | Bloqué | 0 |
-| Non commencé | 138 |
+| Non commencé | 0 |
 
-Tests automatiques (dernière exécution enregistrée) : **221 / 221 réussis**. Ressources enregistrées dans ASSET_MANIFEST.json : **362**.
+Résultats des dernières exécutions par chapitre : **946 / 946 tests réussis**. Ressources enregistrées dans ASSET_MANIFEST.json : **1786**.
 
 ## Par phase
 
@@ -26,21 +27,21 @@ Tests automatiques (dernière exécution enregistrée) : **221 / 221 réussis**.
 | 0 — 00_SETUP | 8 | 8 | Terminé et vérifié |
 | 1 — 01_FUNDAMENTALS | 14 | 14 | Terminé et vérifié |
 | 2 — 02_MODELING | 13 | 13 | Terminé et vérifié |
-| 3 — 03_SCULPTING | 4 | 10 | Partiellement terminé |
-| 4 — 04_MATERIALS | 0 | 11 | Non commencé |
-| 5 — 05_GEOMETRY_NODES | 0 | 10 | Non commencé |
-| 6 — 06_RIGGING | 0 | 11 | Non commencé |
-| 7 — 07_ANIMATION | 0 | 15 | Non commencé |
-| 8 — 08_SIMULATIONS | 0 | 10 | Non commencé |
-| 9 — 09_CINEMATOGRAPHY | 0 | 12 | Non commencé |
-| 10 — 10_RENDERING | 0 | 7 | Non commencé |
-| 11 — 11_COMPOSITING_VFX | 0 | 10 | Non commencé |
-| 12 — 12_EDITING_SOUND | 0 | 6 | Non commencé |
-| 13 — 13_PYTHON_AUTOMATION | 0 | 9 | Non commencé |
-| 14 — 14_AI_PRODUCTION | 0 | 7 | Non commencé |
-| 15 — 15_SHORT_FILMS | 0 | 6 | Non commencé |
-| 16 — 16_FEATURE_FILMS | 0 | 8 | Non commencé |
-| 17 — 17_EXPERT_SPECIALIZATIONS | 0 | 10 | Non commencé |
+| 3 — 03_SCULPTING | 10 | 10 | Terminé et vérifié |
+| 4 — 04_MATERIALS | 11 | 11 | Terminé et vérifié |
+| 5 — 05_GEOMETRY_NODES | 10 | 10 | Terminé et vérifié |
+| 6 — 06_RIGGING | 11 | 11 | Terminé et vérifié |
+| 7 — 07_ANIMATION | 15 | 15 | Terminé et vérifié |
+| 8 — 08_SIMULATIONS | 10 | 10 | Terminé et vérifié |
+| 9 — 09_CINEMATOGRAPHY | 12 | 12 | Terminé et vérifié |
+| 10 — 10_RENDERING | 7 | 7 | Terminé et vérifié |
+| 11 — 11_COMPOSITING_VFX | 10 | 10 | Terminé et vérifié |
+| 12 — 12_EDITING_SOUND | 6 | 6 | Terminé et vérifié |
+| 13 — 13_PYTHON_AUTOMATION | 9 | 9 | Terminé et vérifié |
+| 14 — 14_AI_PRODUCTION | 7 | 7 | Terminé et vérifié |
+| 15 — 15_SHORT_FILMS | 6 | 6 | Terminé et vérifié |
+| 16 — 16_FEATURE_FILMS | 8 | 8 | Terminé et vérifié |
+| 17 — 17_EXPERT_SPECIALIZATIONS | 10 | 10 | Terminé et vérifié |
 | 18 — 18_GREASE_PENCIL | 22 | 22 | Terminé et vérifié |
 
 ## Livrables globaux exigés
@@ -52,6 +53,7 @@ Tests automatiques (dernière exécution enregistrée) : **221 / 221 réussis**.
 | Programme 19 phases | `CURRICULUM.md` | oui |
 | Feuilles de route 5/10/20 h | `ROADMAP.md` | oui |
 | Suivi apprenant | `PROGRESS.md` | oui |
+| Parcours du premier plan animé | `DOCUMENTATION/PARCOURS_PREMIER_PLAN.md` | oui |
 | Instructions de reprise | `CLAUDE.md` | oui |
 | État et décisions | `PROJECT_STATE.md` | oui |
 | Inventaire des tâches (généré) | `TASKS.md` | oui |
@@ -66,7 +68,7 @@ Tests automatiques (dernière exécution enregistrée) : **221 / 221 réussis**.
 
 ## Exigences de la mission non encore satisfaites
 
-- Chapitres restants : 138 (phases incomplètes : 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17).
+- Les 19 phases du cursus sont couvertes. Aucun chapitre du programme ne reste à produire.
 - Phase 18 : 7 projets obligatoires (CH18.22) — statut : Terminé et vérifié.
 - Passerelles du pipeline obligatoires en phases 15 et 16 : documentées dans `DOCUMENTATION/PIPELINE_BRIDGES.md` ; leur mise en pratique dépend des chapitres des phases 15–16.
 - Parcours de logiciels complémentaires : guide et plans de cours produits ; chapitres détaillés en attente de l'installation des logiciels **par l'utilisateur** (aucune installation sans accord).
@@ -78,7 +80,7 @@ Tests automatiques (dernière exécution enregistrée) : **221 / 221 réussis**.
 
 ## Méthode de vérification
 
-- Chaque `.blend` est généré par script, chaque solution est acceptée et chaque fichier de départ refusé par le correcteur du chapitre (`TOOLS/run_all_tests.py`).
-- Chaque solution est rendue en image de référence, et l'image est regardée (pas seulement le score).
-- Les libellés d'interface sont vérifiés dans les sources `bl_ui` et la keymap de Blender 5.3.0.
-- Les comportements surprenants sont mesurés (voir CLAUDE.md, « Pièges »), puis enseignés.
+- Le statut combine la présence des supports, du quiz et les résultats enregistrés des tests déclarés. Les chapitres déclarés documentaires peuvent être vérifiés sans test Blender.
+- Les tests ciblent les cas déclarés par chaque chapitre. Les revues visuelles, les essais en interface et les limites connues sont à consulter dans les corrigés et le journal de production.
+- Le registre recense les ressources. Vérifiez leurs chemins et leurs empreintes séparément avec `python TOOLS/check_manifest.py`.
+- La validation pédagogique demande de refaire un geste sans aide sur une variante. Le parcours du premier plan propose ces variantes. Le statut de production ne mesure pas leur réussite par un débutant.

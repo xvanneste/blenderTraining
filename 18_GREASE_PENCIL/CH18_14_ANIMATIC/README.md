@@ -60,7 +60,7 @@ L'animatique est le premier film complet : les images du storyboard montées à 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_14_animatic_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_14.py" --python-exit-code 1 -- --exercise animatic --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_14.py" -- --exercise animatic --render
 ```
 
 ## Livrables attendus

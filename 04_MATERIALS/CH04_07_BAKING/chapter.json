@@ -1,0 +1,69 @@
+{
+  "code": "CH04.07",
+  "title": "Baking",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Le baking transfère de l'information calculée dans une image : ici le relief d'un rocher de 20 480 faces (HIGH_Rock) est « cuit » dans une normal map appliquée à un rocher de 320 faces (LOW_Rock). Le moteur temps réel et les jeux utilisent cette méthode, et les films l'utilisent pour alléger des assets. La solution a été produite avec l'opérateur réel `object.bake` (Cycles, Selected to Active). Le correcteur analyse les pixels baké (couverture du relief, validité des normales), l'espace colorimétrique, le branchement Normal Map et l'intégrité des maillages.",
+  "prereqs": [
+    "CH04.01–02 (UV)",
+    "CH04.04 (nœuds)."
+  ],
+  "objectives": [
+    "Expliquer le rôle d'une normal map et ce que « bake » signifie.",
+    "Régler un bake Selected to Active (Cycles).",
+    "Brancher correctement l'image : Non-Color, Normal Map (Tangent), Normal.",
+    "Vérifier un bake par mesure des pixels."
+  ],
+  "competences": [
+    [
+      "C04.07.a",
+      "Baker une normal map haute → basse définition",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Comprendre le baking",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Baker et brancher une normal map",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_07_baking_starter.blend",
+      "HIGH + LOW, image plate branchée, rien de baké"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_07_baking_solution.blend",
+      "Normal map bakée (Cycles)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_07_baking_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (non baké, sRGB, sans Normal Map, bake partiel, Normal Map sur Base Color)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_07.py",
+      "Correcteur (baking)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_07_baking_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_07.py\" -- --exercise baking --render",
+  "deliverables": [
+    "Rocher baké validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.08 — Relief et displacement](../CH04_08_RELIEF/README.md)"
+}

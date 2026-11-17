@@ -1,0 +1,36 @@
+{
+  "build": "build_ch11_08_files.py",
+  "validator": "validate_ch11_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_08_tracking_solution.blend",
+      "exercise": "tracking",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_08_tracking_starter.blend",
+      "exercise": "tracking",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_08_tracking_short_tracks.blend",
+      "exercise": "tracking",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_08_tracking_wrong_focal.blend",
+      "exercise": "tracking",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_08_tracking_not_solved.blend",
+      "exercise": "tracking",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_08_tracking_few_tracks.blend",
+      "exercise": "tracking",
+      "expect": false
+    }
+  ]
+}

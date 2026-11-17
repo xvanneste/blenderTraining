@@ -1,0 +1,43 @@
+{
+  "code": "CH13.09",
+  "title": "Débogage et performance",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h 15",
+  "intro": "Comprendre un traceback, comparer deux algorithmes et vérifier le résultat avant de retenir un gain.",
+  "prereqs": [
+    "CH13.08"
+  ],
+  "objectives": [
+    "Vous identifiez l’accès qui échoue et un jeu de données reproductible.",
+    "Le message contient le plan absent et le chemin nominal est toujours correct.",
+    "Le compte rendu donne taille, machine, version, temps et égalité du résultat."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Reproduire",
+      ""
+    ],
+    [
+      "L2",
+      "Corriger",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/mesurer.py",
+      "Exemple chronométrable"
+    ],
+    [
+      "../ASSETS_ATELIERS/controler_scene.py",
+      "Exemple de parcours de scène"
+    ]
+  ],
+  "pass_criteria": [
+    "Vous identifiez l’accès qui échoue et un jeu de données reproductible.",
+    "Le message contient le plan absent et le chemin nominal est toujours correct.",
+    "Le compte rendu donne taille, machine, version, temps et égalité du résultat."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "build": "build_ch04_05_files.py",
+  "validator": "validate_ch04_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_05_procedural_solution.blend",
+      "exercise": "procedural",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_05_procedural_starter.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_no_bump.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_bump_unlinked.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_flat_colors.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_mortar_same.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_huge_scale.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_no_stagger.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_05_procedural_raised_mortar.blend",
+      "exercise": "procedural",
+      "expect": false
+    }
+  ]
+}

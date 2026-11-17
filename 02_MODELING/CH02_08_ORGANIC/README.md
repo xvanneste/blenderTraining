@@ -59,7 +59,7 @@ Arbres, rochers, créatures : les formes organiques se pensent en volumes et en 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_08_tree_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_08.py" --python-exit-code 1 -- --exercise tree --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_08.py" -- --exercise tree --render
 ```
 
 ## Livrables attendus

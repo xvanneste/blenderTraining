@@ -1,6 +1,6 @@
 """
 validate_ch01_06.py — Correcteur du déménagement (CH01.06).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_06.py --python-exit-code 1 -- --exercise moving
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_06.py -- --exercise moving
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.06",
+  "title": "Fumée et feu",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type de domaine pour fumée et feu ?",
+      "choices": [
+        "Gas",
+        "Liquid",
+        "Particles",
+        "Mesh"
+      ],
+      "answer": 0,
+      "explain": "Domain Type Gas ; Liquid pour l'eau (CH08.05)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle option du Flow produit des flammes ?",
+      "choices": [
+        "Flow Type Fire (ou Fire + Smoke)",
+        "Smoke seul",
+        "Liquid",
+        "Geometry"
+      ],
+      "answer": 0,
+      "explain": "Fire + Smoke (BOTH) : flammes et fumée."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Flow Behavior Inflow ?",
+      "choices": [
+        "Alimente le domaine en continu",
+        "Remplit une fois le volume",
+        "Absorbe",
+        "Cache"
+      ],
+      "answer": 0,
+      "explain": "Le foyer produit du gaz à chaque image."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la fumée monte-t-elle ?",
+      "answer_text": "La température crée de la flottabilité : le gaz chaud monte (paramètres Buoyancy du domaine)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « smoke_only » ?",
+      "answer_text": "Un foyer de fumée sans flammes : le cache grossit (111 Ko) mais moins qu'avec le feu (165 Ko) ; la configuration exige du feu."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud affiche la fumée ?",
+      "choices": [
+        "Principled Volume relié à la sortie Volume",
+        "Principled BSDF",
+        "Emission surface",
+        "Mix Shader"
+      ],
+      "answer": 0,
+      "explain": "Material Output > Volume."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le shader lit-il la densité ?",
+      "choices": [
+        "Par un nœud Attribute « density »",
+        "Par une texture image",
+        "Par un UV",
+        "Il ne la lit pas"
+      ],
+      "answer": 0,
+      "explain": "Attribute « density » vers Density ; « flame » vers Emission Strength."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer la taille du cache ?",
+      "answer_text": "Elle croît avec la quantité de gaz : 62 Ko à l'image 1, 165 Ko à l'image 30 ; sans foyer, 17 Ko constants : la simulation n'a rien produit."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « low_res » ?",
+      "answer_text": "À la résolution 8 le cache reste à 54 Ko (croissance de 1 %) : la grille est trop grossière pour représenter la colonne."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un cache modulaire de 1 à 30 ?",
+      "answer_text": "Le mode Modular cuit chaque image dans un fichier ; un cache de 1 à 10 ne donne que 10 fichiers."
+    }
+  ]
+}

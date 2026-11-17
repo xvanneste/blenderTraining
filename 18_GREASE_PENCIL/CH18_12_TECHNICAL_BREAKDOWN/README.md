@@ -58,7 +58,7 @@ Un storyboard professionnel est un document technique : cases au format de l'ima
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_12_board_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_12.py" --python-exit-code 1 -- --exercise board --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_12.py" -- --exercise board --render
 ```
 
 ## Livrables attendus

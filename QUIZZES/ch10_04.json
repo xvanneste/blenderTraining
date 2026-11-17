@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.04",
+  "title": "Passes, AOV, View Layers",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une passe de rendu ?",
+      "choices": [
+        "Une image d'une propriété de la scène (profondeur, normales, couleur…)",
+        "Un mot de passe",
+        "Une lampe",
+        "Un modificateur"
+      ],
+      "answer": 0,
+      "explain": "Le départ n'écrit que Combined ; la solution écrit 39 canaux."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert la passe Depth (Z) ?",
+      "choices": [
+        "Donner la distance à la caméra de chaque pixel",
+        "Éclairer",
+        "Colorer",
+        "Flouter"
+      ],
+      "answer": 0,
+      "explain": "Canal FG.Depth.Z."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un light group ?",
+      "choices": [
+        "Une couche qui ne contient que la lumière de certaines lampes",
+        "Un groupe d'objets",
+        "Un calque",
+        "Un matériau"
+      ],
+      "answer": 0,
+      "explain": "Canaux FG.Combined_key et FG.Combined_fill."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi créer un light group par lampe ?",
+      "answer_text": "On peut ensuite doser chaque lampe en compositing sans refaire le rendu."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un AOV ?",
+      "answer_text": "Une sortie personnalisée d'un matériau (ici « tint » via un nœud Shader AOV Output) écrite comme un canal supplémentaire."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un View Layer ?",
+      "choices": [
+        "Un rendu séparé du même décor avec ses propres collections et passes",
+        "Un calque de dessin",
+        "Un onglet",
+        "Une résolution"
+      ],
+      "answer": 0,
+      "explain": "FG exclut Backdrop ; BG exclut Hero."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur sait-il ce que contient l'EXR ?",
+      "choices": [
+        "Il lit les noms de canaux dans l'en-tête du fichier rendu",
+        "Il devine",
+        "Il lit le nom du fichier",
+        "Il ouvre Photoshop"
+      ],
+      "answer": 0,
+      "explain": "Le format multi-parties répète un en-tête par calque."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi 16 bits et non 32 ?",
+      "answer_text": "16 bits flottants suffisent pour la couleur et divisent la taille par deux ; la profondeur Z demande souvent 32 bits (voir CH10.06)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'index d'objet s'appelle-t-il Pass Index ?",
+      "answer_text": "C'est la propriété Object Properties > Relations > Pass Index : un entier par objet, écrit dans la passe Object Index pour fabriquer des masques."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Le correcteur vérifie la présence des canaux et des réglages, pas leur contenu de pixels ; les canaux Z et Normal d'un rendu à 1 échantillon ne prouvent pas leur justesse."
+    }
+  ]
+}

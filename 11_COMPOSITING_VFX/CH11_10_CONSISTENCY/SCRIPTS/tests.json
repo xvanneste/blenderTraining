@@ -1,0 +1,31 @@
+{
+  "build": "build_ch11_10_files.py",
+  "validator": "validate_ch11_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_10_consistency_solution.blend",
+      "exercise": "consistency",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_10_consistency_starter.blend",
+      "exercise": "consistency",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_10_consistency_exposure_only.blend",
+      "exercise": "consistency",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_10_consistency_warm_only.blend",
+      "exercise": "consistency",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_10_consistency_clean_cube.blend",
+      "exercise": "consistency",
+      "expect": false
+    }
+  ]
+}

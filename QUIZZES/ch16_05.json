@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.05",
+  "title": "Équipes et départements",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel format rend une note vérifiable ?",
+      "type": "mcq",
+      "choices": [
+        "Plan, version, image, effet et critère",
+        "Un adjectif seul",
+        "Un avis sans référence"
+      ],
+      "answer": 0,
+      "explain": "Plusieurs métiers peuvent contribuer. Une décision unique et attribuée évite des demandes opposées sur le même plan."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Qui ferme la note ?",
+      "type": "mcq",
+      "choices": [
+        "Toute personne qui voit la note",
+        "Le décideur convenu sur la preuve de la version revue",
+        "Le rendu automatique"
+      ],
+      "answer": 1,
+      "explain": "Une note exploitable distingue observation et intention. Dire « améliorer » laisse le critère indéterminé."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que faire avec deux demandes incompatibles ?",
+      "type": "mcq",
+      "choices": [
+        "Les appliquer simultanément",
+        "Les supprimer du suivi",
+        "Faire arbitrer en fonction de l’intention et du coût"
+      ],
+      "answer": 2,
+      "explain": "Une note se ferme sur une preuve. Une note reportée garde sa place dans l’historique."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Un artiste réouvre une note déjà approuvée en utilisant une capture ancienne. »",
+      "answer_text": "La revue citait le plan sans numéro de version. Ajoutez version exacte, image et lien vers le rendu avec chaque note."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Une note demande « plus de contraste ». Comment la rendre testable ?",
+      "answer_text": "Donner plan, version, image, zones qui se confondent et comparaison attendue en niveaux de gris."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi séparer responsable et décideur ?",
+      "answer_text": "Le responsable fabrique et le décideur ferme la note sur la preuve selon l’arbitrage convenu."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "N-016 concerne un actif partagé. Que faire avant de la fermer ?",
+      "answer_text": "Relier la publication approuvée et rouvrir au moins les deux plans représentatifs."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Répartir » vérifiable ?",
+      "answer_text": "Chaque note possède auteur, responsable, décideur et échéance."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Faire une revue » vérifiable ?",
+      "answer_text": "Trois notes peuvent être comprises et testées par un artiste absent de la revue."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Fermer la boucle » vérifiable ?",
+      "answer_text": "La décision et la preuve sont liées à la même version revue."
+    }
+  ]
+}

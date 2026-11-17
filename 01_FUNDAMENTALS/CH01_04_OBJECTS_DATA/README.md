@@ -58,7 +58,7 @@ Dans Blender, un objet n'est pas sa forme : c'est un conteneur placé dans la sc
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_04_farm_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_04.py" --python-exit-code 1 -- --exercise farm
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_04.py" -- --exercise farm
 ```
 
 ## Livrables attendus

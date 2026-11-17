@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch18_19_hybrid_reference.png", "Rendu final (occlusion visible)"],
     ["SCRIPTS/validate_ch18_19.py", "Correcteur (hybrid)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_19_hybrid_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_19.py\" --python-exit-code 1 -- --exercise hybrid --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_19_hybrid_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_19.py\" -- --exercise hybrid --render",
   "deliverables": ["Scène hybride validée.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
   "next": "[CH18.20 — Workflow 2D → 3D](../CH18_20_2D_TO_3D/README.md)"

@@ -1,6 +1,6 @@
 """
 validate_ch03_04.py — Correcteur « Le buste stylisé » (CH03.04).
-Usage : … --python validate_ch03_04.py --python-exit-code 1 -- --exercise bust [--render]
+Usage : … --python-exit-code 1 --python validate_ch03_04.py -- --exercise bust [--render]
 SCULPT_Bust : un seul volume fermé ; socle plat ; buste 0,3–0,9 m ; cou repéré (largeur minimale) ;
 stylisation : tête ≥ 45 % de la hauteur OU contraste tête/épaules ≥ 25 % ; nez en relief sur le profil
 (saillie ≥ 2 cm par rapport au profil voisin), cou marqué ; symétrie X (surface miroir à moins de 1 cm).

@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.09",
+  "title": "CG Supervisor",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que désigner comme bloquant ?",
+      "type": "mcq",
+      "choices": [
+        "Un échec qui empêche une livraison ou une dépendance essentielle",
+        "Toute différence esthétique",
+        "Une note qui contient un adjectif"
+      ],
+      "answer": 0,
+      "explain": "La différence entre gravité et urgence évite de traiter toutes les notes comme bloquantes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Qu’inspecter lors d’un changement partagé ?",
+      "type": "mcq",
+      "choices": [
+        "Seulement le fichier source",
+        "Tous les plans qui utilisent la version modifiée",
+        "Le nombre de cameras inactives"
+      ],
+      "answer": 1,
+      "explain": "Une correction d’asset partagé a des effets interplans qu’il faut évaluer avant publication."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelle référence joindre à un accord ?",
+      "type": "mcq",
+      "choices": [
+        "Une opinion sans fichier",
+        "Les préférences de l’auteur",
+        "La version et la preuve revue"
+      ],
+      "answer": 2,
+      "explain": "Le rôle de supervision protège la cohérence et l’effort de fabrication. L’acceptation doit s’appuyer sur une version précise."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Une amélioration d’asset ruine le cadrage d’un plan déjà validé. »",
+      "answer_text": "La propagation n’a pas été revue dans les plans utilisateurs. Reprenez une branche de test, comparez les plans dépendants et validez avant diffusion."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quand approuver une correction d’un asset partagé ?",
+      "answer_text": "Quand la version exacte a passé les contrôles dans les plans utilisateurs ciblés."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder une dérogation locale documentée ?",
+      "answer_text": "Elle peut préserver l’intention d’un plan sans changer les autres et reste explicable après livraison."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faire si un plan déjà accepté bloque la nouvelle version ?",
+      "answer_text": "Revenir à la publication approuvée, isoler le changement puis revoir les plans et l’impact sur le calendrier."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Fixer les standards » vérifiable ?",
+      "answer_text": "Chaque anomalie a un critère, un propriétaire et un état de vérification."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Mener les dailies » vérifiable ?",
+      "answer_text": "Un tableau relie versions, conséquences et circuit de validation."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Planifier et accepter » vérifiable ?",
+      "answer_text": "Le plan de suivi contient priorités, dépendances et un verdict pour chaque plan."
+    }
+  ]
+}

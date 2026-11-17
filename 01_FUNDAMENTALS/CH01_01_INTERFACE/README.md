@@ -59,7 +59,7 @@ Blender n'a pas une interface figée : c'est un atelier que l'on reconfigure sel
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_01_interface_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_01.py" --python-exit-code 1 -- --exercise workspace
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_01.py" -- --exercise workspace
 ```
 
 ## Livrables attendus

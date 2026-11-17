@@ -63,7 +63,7 @@ Les films terminés sont ceux dont l'organisation permet d'avancer sans friction
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_06_messy_scene_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch00_06.py" --python-exit-code 1 -- --exercise naming
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_06.py" -- --exercise naming
 ```
 
 ## Livrables attendus

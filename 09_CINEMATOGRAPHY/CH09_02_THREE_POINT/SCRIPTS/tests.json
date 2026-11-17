@@ -1,0 +1,36 @@
+{
+  "build": "build_ch09_02_files.py",
+  "validator": "validate_ch09_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_02_three_point_solution.blend",
+      "exercise": "three_point",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_02_three_point_starter.blend",
+      "exercise": "three_point",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_02_three_point_flat.blend",
+      "exercise": "three_point",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_02_three_point_no_fill.blend",
+      "exercise": "three_point",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_02_three_point_no_rim.blend",
+      "exercise": "three_point",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_02_three_point_key_on_right.blend",
+      "exercise": "three_point",
+      "expect": false
+    }
+  ]
+}

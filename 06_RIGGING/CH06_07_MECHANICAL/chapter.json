@@ -1,0 +1,68 @@
+{
+  "code": "CH06.07",
+  "title": "Rig mécanique",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Un rig mécanique obéit à des lois, pas à une anatomie : une roue qui roule sans glisser tourne de distance / rayon, un vérin hydraulique reste aligné entre ses deux points d'attache, une benne a une course limitée. Ce chapitre rigge un camion-benne : (1) quatre DRIVERS qui font tourner les roues d'après le déplacement de la racine, (2) un vérin à deux bones qui se visent (Damped Track), (3) une benne bornée par Limit Rotation. Le correcteur avance le camion, lève la benne et mesure les sommets évalués.",
+  "prereqs": [
+    "CH06.02 (contraintes), CH06.04 (driver sur influence)."
+  ],
+  "objectives": [
+    "Écrire un driver Scripted Expression à partir d'un Transform Channel.",
+    "Faire rouler une roue sans glissement.",
+    "Monter un vérin télescopique avec Damped Track.",
+    "Limiter une articulation avec Limit Rotation."
+  ],
+  "competences": [
+    [
+      "C06.07.a",
+      "Rig de véhicule",
+      "Exercice 2 (correcteur) + croquis de profil"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Drivers : les roues",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Vérin et benne",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_07_truck_starter.blend",
+      "Camion et armature sans driver ni contrainte"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_07_truck_solution.blend",
+      "Camion complet : drivers, Damped Track, Limit Rotation"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_07_truck_reference.png",
+      "Profil : repos, camion avancé de 0,5 m (roues tournées), benne levée de 35° (vérin aligné)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans drivers, mauvais rayon, mauvais axe, roues non parentées, sans Damped Track, sans limite)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_07.py",
+      "Correcteur (truck)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_07_truck_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_07.py\" -- --exercise truck",
+  "deliverables": [
+    "Rig de camion validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.08 — Shape keys et drivers](../CH06_08_SHAPEKEYS/README.md)"
+}

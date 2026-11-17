@@ -1,6 +1,6 @@
 """
 validate_ch02_06.py — Correcteur « Garder la forme sous la subdivision » (CH02.06).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_06.py --python-exit-code 1 -- --exercise subdiv [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_06.py -- --exercise subdiv [--render]
 Mesures sur le maillage ÉVALUÉ (après subdivision). Testé avec : Blender 5.3.0.
 """
 import os

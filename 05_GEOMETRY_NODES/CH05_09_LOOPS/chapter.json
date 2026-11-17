@@ -1,0 +1,68 @@
+{
+  "code": "CH05.09",
+  "title": "Boucles et simulation",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "avancé",
+  "duration": "5 h",
+  "intro": "Certaines constructions dépendent de l'étape précédente : un escalier en colimaçon, une fractale, une croissance. La zone de répétition (Repeat Zone) exécute un groupe de nœuds plusieurs fois en passant l'état d'une itération à la suivante. Ce chapitre construit un escalier en colimaçon marche par marche, avec quatre paramètres (nombre de marches, angle, hauteur, rayon). Le correcteur règle l'outil sur deux configurations et mesure les marches : nombre, contremarche, angle entre marches, rayon. Les zones Simulation et For Each sont présentées dans le cours mais ne sont pas évaluées par le correcteur.",
+  "prereqs": [
+    "CH05.06."
+  ],
+  "objectives": [
+    "Construire une Repeat Zone : Iterations, état, Iteration.",
+    "Accumuler la géométrie d'une itération à l'autre avec Join Geometry.",
+    "Utiliser le numéro d'itération pour placer chaque élément.",
+    "Situer les zones Simulation et For Each Element par rapport à Repeat."
+  ],
+  "competences": [
+    [
+      "C05.09.a",
+      "Utiliser une zone",
+      "Exercice 2 (correcteur) + rendu des deux réglages"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "La zone de répétition",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Un escalier paramétrique ; Simulation et For Each",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_09_loops_starter.blend",
+      "Une seule marche, sans zone ni interface"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_09_loops_solution.blend",
+      "Outil « Escalier en colimaçon »"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_09_loops_reference.png",
+      "Deux réglages (bas : défaut ; haut : 30 marches, 15°, 0,12 m, rayon 2 m)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (nombre d'itérations fixe, sans rotation, sans montée, sans accumulation, rayon codé en dur)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_09.py",
+      "Correcteur (loops)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_09_loops_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_09.py\" -- --exercise loops --render",
+  "deliverables": [
+    "Escalier en colimaçon validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.10 — Optimisation et outils](../CH05_10_TOOLS/README.md)"
+}

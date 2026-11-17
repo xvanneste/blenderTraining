@@ -1,0 +1,68 @@
+{
+  "code": "CH05.06",
+  "title": "Paramètres et interfaces",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Un arbre qui ne se règle qu'en rouvrant ses nœuds n'est pas un outil. L'interface de l'arbre expose des entrées (hauteur, rayon, nombre, espacement) qui apparaissent dans le modificateur, avec des bornes, des descriptions et des panneaux. Ce chapitre transforme une rangée de piliers en outil. Le correcteur ne se contente pas de lire l'interface : il CHANGE les paramètres du modificateur et vérifie que la géométrie suit (nombre de piliers, hauteur, largeur, étendue).",
+  "prereqs": [
+    "CH05.02–03."
+  ],
+  "objectives": [
+    "Créer des entrées (Float, Integer…) avec défaut, minimum, maximum et description.",
+    "Ranger les entrées dans des panneaux.",
+    "Brancher chaque entrée aux nœuds concernés.",
+    "Vérifier qu'un outil réagit à ses paramètres."
+  ],
+  "competences": [
+    [
+      "C05.06.a",
+      "Créer un outil paramétrable",
+      "Exercice 2 (correcteur) + rendu des deux réglages"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "L'interface de l'arbre",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Brancher et tester les paramètres",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_06_parameters_starter.blend",
+      "Arbre fonctionnel mais sans interface (valeurs en dur)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_06_parameters_solution.blend",
+      "Outil « Rangée de piliers » à quatre paramètres"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_06_parameters_reference.png",
+      "Deux réglages : défaut (haut), Height 3,5 / Count 12 / Radius 0,3 / Spacing 1,0 (bas)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans panneaux, sans descriptions, entrée inutilisée, valeur codée en dur, bornes absurdes)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_06.py",
+      "Correcteur (parameters)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_06_parameters_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_06.py\" -- --exercise parameters --render",
+  "deliverables": [
+    "Outil paramétrable validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.07 — Décors et végétation](../CH05_07_SCATTERING/README.md)"
+}

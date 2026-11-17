@@ -1,0 +1,11 @@
+{
+  "cases": [],
+  "extra": [
+    {
+      "script": "../../ASSETS_ATELIERS/verifier_quai.py",
+      "args": [
+        "export"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """
 validate_ch18_13.py — Correcteur « Storyboard d'action et d'émotion » (CH18.13 ; projet n° 1 de la phase 18).
-Usage : … --python validate_ch18_13.py --python-exit-code 1 -- --exercise action [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_13.py -- --exercise action [--render]
 Lecture de la planche par SCRIPTS/bcma_board.py ; vérifie dessin, flèches, notes normées, variété des
 valeurs, présence d'insert et de gros plan, rythme (durées).
 Testé avec : Blender 5.3.0.

@@ -1,6 +1,6 @@
 """
 validate_ch01_11.py — Correcteur « la maison en couleurs » (CH01.11).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_11.py --python-exit-code 1 -- --exercise colors [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_11.py -- --exercise colors [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

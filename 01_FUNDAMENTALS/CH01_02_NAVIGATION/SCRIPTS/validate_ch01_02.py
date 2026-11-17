@@ -1,6 +1,6 @@
 """
 validate_ch01_02.py — Correcteur de l'exercice 3 de CH01.02 (trois caméras orthographiques).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_02.py --python-exit-code 1 -- --exercise cameras
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_02.py -- --exercise cameras
 Testé avec : Blender 5.3.0.
 """
 import os

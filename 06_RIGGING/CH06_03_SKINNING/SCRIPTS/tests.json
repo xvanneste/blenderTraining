@@ -1,0 +1,47 @@
+{
+  "build": "build_ch06_03_files.py",
+  "validator": "validate_ch06_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_03_skinning_solution.blend",
+      "exercise": "skinning",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_03_skinning_starter.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_unweighted.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_unnormalized.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_rigid.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_swapped.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_too_many.blend",
+      "exercise": "skinning",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_03_skinning_no_modifier.blend",
+      "exercise": "skinning",
+      "expect": false
+    }
+  ]
+}

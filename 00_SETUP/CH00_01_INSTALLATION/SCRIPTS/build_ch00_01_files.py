@@ -8,7 +8,7 @@ Fichiers produits :
   COMPLETED_EXAMPLES/ch00_01_broken_render_solution.blend  Scène réparée
 
 Usage (depuis n'importe quel dossier) :
-  blender -b --factory-startup --python build_ch00_01_files.py --python-exit-code 1
+  blender -b --factory-startup --python-exit-code 1 --python build_ch00_01_files.py
 
 Testé avec : Blender 5.3.0 (Windows 11).
 """

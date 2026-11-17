@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_08_tree_skeleton.png", "Rendu du squelette seul"],
     ["SCRIPTS/validate_ch02_08.py", "Correcteur (squelette, embranchements, pile, rayons, fermeture)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_08_tree_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_08.py\" --python-exit-code 1 -- --exercise tree --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_08_tree_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_08.py\" -- --exercise tree --render",
   "deliverables": ["Arbre validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la créature."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Arbre validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.09 — Retopologie](../CH02_09_RETOPOLOGY/README.md)"

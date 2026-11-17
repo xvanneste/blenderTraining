@@ -57,7 +57,7 @@ L'IA peut proposer des références, des découpages, des variantes ou des scrip
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_21_assist_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_21.py" --python-exit-code 1 -- --exercise assist --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_21.py" -- --exercise assist --render
 ```
 
 ## Livrables attendus

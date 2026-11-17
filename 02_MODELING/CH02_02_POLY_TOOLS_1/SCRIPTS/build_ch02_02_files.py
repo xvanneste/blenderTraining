@@ -7,7 +7,7 @@ build_ch02_02_files.py — « Le tabouret » (CH02.02, outils polygonaux I).
       Assise découpée (Loop Cut ×2 dans chaque sens, écartées à ±15 cm), 4 pieds extrudés
       (en 3 tronçons), 4 traverses (Bridge Edge Loops entre faces en vis-à-vis), arête supérieure
       chanfreinée (Bevel 2 segments), dessus creusé (Inset + léger enfoncement).
-Usage : blender -b --factory-startup --python build_ch02_02_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_02_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

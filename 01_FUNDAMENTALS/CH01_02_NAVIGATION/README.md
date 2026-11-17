@@ -60,7 +60,7 @@ Naviguer dans l'espace 3D doit devenir aussi naturel que tourner la tête. Ce ch
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_02_museum_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_02.py" --python-exit-code 1 -- --exercise cameras
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_02.py" -- --exercise cameras
 ```
 
 ## Livrables attendus

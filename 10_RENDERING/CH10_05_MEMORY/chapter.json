@@ -1,0 +1,68 @@
+{
+  "code": "CH10.05",
+  "title": "Mémoire et optimisation",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Une scène lourde ne se rend pas parce que sa mémoire est pleine : trop de maillages différents, trop de triangles évalués, des textures plus grandes que nécessaire. Trois leviers répondent à ces trois problèmes : partager les données (maillage unique, instances de collection), réduire la géométrie évaluée (niveau de Subdivision Surface, instances) et limiter les textures (Simplify > Texture Limit). Le correcteur n'estime pas : il compte les maillages, les triangles évalués dans le graphe de dépendances et les mégaoctets de textures effectifs d'une scène de 200 rochers.",
+  "prereqs": [
+    "CH02 (modificateurs), CH10.02 (Cycles)."
+  ],
+  "objectives": [
+    "Compter les triangles évalués d'une scène.",
+    "Partager un maillage ou instancier une collection.",
+    "Limiter la taille des textures au rendu.",
+    "Choisir parmi plusieurs optimisations."
+  ],
+  "competences": [
+    [
+      "C10.05.a",
+      "Rendre une scène lourde",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Partager et instancier",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Triangles et textures",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_05_memory_starter.blend",
+      "200 rochers avec 200 maillages différents, Subdivision Surface niveau 2 (384 000 triangles évalués), texture 4 096 × 4 096 sans limite (64 Mo) ; 10/34"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_05_memory_solution.blend",
+      "Instances de collection (un seul rocher évalué : 1 920 triangles, 1 maillage) et Texture Limit 1024 (4 Mo) ; 34/34. Variante acceptée : 200 objets partageant un maillage au niveau 0 (16 000 triangles)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_05_memory_reference.png",
+      "Les 200 rochers de la solution (EEVEE)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (maillages multipliés, triangles trop nombreux, texture trop lourde, rochers supprimés)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_05.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_05_memory_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_05.py\" -- --exercise memory",
+  "deliverables": [
+    "Rapport avant / après (maillages, triangles, Mo).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.06 — EXR et couleur](../CH10_06_EXR_COLOR/README.md)"
+}

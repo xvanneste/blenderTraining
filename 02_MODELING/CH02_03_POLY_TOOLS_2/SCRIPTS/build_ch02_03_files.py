@@ -9,7 +9,7 @@ build_ch02_03_files.py — « L'atelier de découpe » (CH02.03, outils polygona
       GEO_Spring  (x = 2,8)  : petit cercle décalé → modificateur Screw (ressort) ;
       GEO_Tile    (x = 4,2)  : carreau (une face) → Knife d'un coin à l'autre.
   COMPLETED_EXAMPLES/ch02_03_cutting_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch02_03_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_03_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

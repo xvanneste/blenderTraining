@@ -1,0 +1,22 @@
+{
+  "before": {
+    "triangles": 384000,
+    "meshes": 200,
+    "texture_mb": 64.0,
+    "seconds_per_frame": 2.38
+  },
+  "after": {
+    "triangles": 1920,
+    "meshes": 1,
+    "texture_mb": 4.0,
+    "seconds_per_frame": 0.29
+  },
+  "notes": [
+    "Le départ évalue 384 000 triangles (200 maillages de 1 920 triangles) : le poids vient de la Subdivision Surface appliquée à chaque objet.",
+    "Les instances de collection évaluent la source une seule fois : 1 920 triangles et un seul maillage pour 200 accessoires.",
+    "La texture de 4 096 pixels pèse 64 Mo ; la limite de texture de Simplify à 1 024 la ramène à 4 Mo effectifs.",
+    "Avec 32 échantillons et OpenImageDenoise, l'image reste proche d'une référence de 256 échantillons (EQM mesurée par le correcteur).",
+    "Les temps par image sont mesurés à 160 × 90 sur la machine de développement : ils changent avec la machine et ne se comparent qu'entre eux.",
+    "Le rendu final en EXR multicouche conserve les passes pour le compositing : profondeur, normales, index d'objet, Cryptomatte et light group sun."
+  ]
+}

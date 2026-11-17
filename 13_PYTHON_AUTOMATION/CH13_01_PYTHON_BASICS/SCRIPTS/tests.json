@@ -1,0 +1,41 @@
+{
+  "build": "build_ch13_01_files.py",
+  "validator": "validate_ch13_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch13_01_python_solution.blend",
+      "exercise": "python",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch13_01_python_starter.blend",
+      "exercise": "python",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_01_python_clamp_swapped.blend",
+      "exercise": "python",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_01_python_average_crash.blend",
+      "exercise": "python",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_01_python_grid_swapped.blend",
+      "exercise": "python",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_01_python_names_nopad.blend",
+      "exercise": "python",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_01_python_cubes_origin.blend",
+      "exercise": "python",
+      "expect": false
+    }
+  ]
+}

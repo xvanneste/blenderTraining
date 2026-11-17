@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.02",
+  "title": "Montage narratif",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un jump cut ?",
+      "choices": [
+        "Une coupe entre deux plans trop semblables (même échelle, même axe)",
+        "Un fondu",
+        "Un effet sonore",
+        "Une transition"
+      ],
+      "answer": 0,
+      "explain": "SH3_close → SH5_close : deux gros plans de suite."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait un rythme qui accélère ?",
+      "choices": [
+        "Des plans de plus en plus courts augmentent la tension",
+        "Il ralentit l'action",
+        "Il change la couleur",
+        "Il supprime le son"
+      ],
+      "answer": 0,
+      "explain": "30, 24, 18, 12, 12 images."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi un dernier plan plus long ?",
+      "choices": [
+        "Il résout : le spectateur reprend son souffle",
+        "Pour le bruit",
+        "Pour la couleur",
+        "Par hasard"
+      ],
+      "answer": 0,
+      "explain": "28 images ≥ 2 × 12."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi alterner les échelles ?",
+      "answer_text": "Un changement net d'échelle et d'angle rend la coupe invisible ; deux plans proches donnent un saut."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre slow_rhythm ?",
+      "answer_text": "Un plan central qui s'allonge (30 images) casse l'accélération : 30, 24, 18, 30, 12."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quand utiliser un fondu enchaîné ?",
+      "choices": [
+        "Pour marquer un passage (temps, lieu) ; la coupe sèche reste la règle",
+        "Pour chaque coupe",
+        "Jamais",
+        "Pour cacher un faux raccord"
+      ],
+      "answer": 0,
+      "explain": "Ici un seul fondu : SH5 → SH6."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le fondu est-il fabriqué dans le VSE ?",
+      "choices": [
+        "SH6 sur un autre canal, en recouvrement, plus un strip Crossfade (type CROSS) aux entrées SH5 et SH6",
+        "Un nœud de compositeur",
+        "Un modificateur",
+        "Une lampe"
+      ],
+      "answer": 0,
+      "explain": "Add > Transition > Crossfade ; API : `strips.new_effect(type='CROSS', input1=…, input2=…)`."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que vaut la couleur au milieu du fondu ?",
+      "answer_text": "La moyenne à 50 % : (0 ; 0,5 ; 1) pour du cyan (0, 1, 1) et du bleu (0, 0, 1) : mesuré (0 ; 0,6 ; 1) avant conversion d'affichage."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la plage de la scène doit-elle finir au dernier plan ?",
+      "answer_text": "Sinon le rendu contient des images noires après le montage (no_crossfade, frame_end)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Elle mesure des durées et des noms : pas la qualité narrative, le contenu des plans ni le son."
+    }
+  ]
+}

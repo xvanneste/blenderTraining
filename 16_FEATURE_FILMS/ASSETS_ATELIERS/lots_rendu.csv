@@ -1,0 +1,3 @@
+lot,plan,version,debut_local,fin_locale,attendue,moteur,sortie
+TEST_QUAI_010,SQ020_SH020,v001,1,1,1,Cycles,RENDUS_TEST/v001/plan_0001.png
+TEST_QUAI_020,SQ020_SH020,v001,25,25,1,Cycles,RENDUS_TEST/v001/plan_0025.png

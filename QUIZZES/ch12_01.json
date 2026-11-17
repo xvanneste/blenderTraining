@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.01",
+  "title": "Video Sequencer",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un strip ?",
+      "choices": [
+        "Une bande de la ligne de temps : image, vidéo, son, couleur, effet",
+        "Un objet 3D",
+        "Une lampe",
+        "Un matériau"
+      ],
+      "answer": 0,
+      "explain": "Ici quatre strips COLOR (Add > Color)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que contient un canal ?",
+      "choices": [
+        "Des strips qui se suivent ; des canaux superposés se recouvrent à l'image",
+        "Un fichier",
+        "Une couleur",
+        "Une piste de caméra"
+      ],
+      "answer": 0,
+      "explain": "Le canal le plus haut recouvre les autres."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que vaut `frame_final_duration` ?",
+      "choices": [
+        "Le nombre d'images visibles du strip",
+        "Sa couleur",
+        "Son canal",
+        "Sa vitesse"
+      ],
+      "answer": 0,
+      "explain": "24, 30, 18 et 24 dans la solution."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi A_red 1–24 mais `frame_final_end` vaut-il 25 ?",
+      "answer_text": "La fin d'un strip est exclusive : un strip de 24 images qui commence à 1 finit avant l'image 25 ; le suivant commence à 25."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle différence entre durée du strip et plage de la scène ?",
+      "answer_text": "La plage de la scène (Frame End) borne ce qui est rendu ; les strips au-delà ne sont pas exportés : starter 1–139, solution 1–96."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment éliminer un trou ?",
+      "choices": [
+        "Déplacer le strip suivant pour qu'il commence à la fin du précédent",
+        "Ajouter un strip noir obligatoirement",
+        "Changer la focale",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Contre-exemple gap : débuts [1, 30, 60, 78]."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi un rendu de contrôle ?",
+      "choices": [
+        "Les données peuvent être justes et l'image fausse (canal, ordre)",
+        "Pour l'esthétique",
+        "Pour le son",
+        "Par habitude"
+      ],
+      "answer": 0,
+      "explain": "Le correcteur lit la couleur du pixel central aux images 12, 40, 63, 85."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre wrong_channel ?",
+      "answer_text": "C_blue sur le canal 2 : le rendu est correct à l'image 63 (il recouvre le canal 1) mais le montage n'est pas sur une seule piste : le correcteur le refuse."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi servent les proxies ?",
+      "answer_text": "Ce sont des copies légères de vidéos lourdes pour monter fluidement ; non mesurés ici (strips de couleur)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Des strips de couleur : pas de vidéo, de son, de transition ni d'effet ; le montage narratif (rythme) est traité en CH12.02."
+    }
+  ]
+}

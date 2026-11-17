@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.04",
+  "title": "Distribution",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Distribute Points on Faces ?",
+      "choices": [
+        "Il subdivise les faces",
+        "Il crée des points sur les faces d'un maillage",
+        "Il instancie des objets",
+        "Il lisse"
+      ],
+      "answer": 1,
+      "explain": "Il sort un nuage de points (avec Normal et Rotation) à instancier ensuite avec Instance on Points."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle méthode garantit une distance minimale entre points ?",
+      "choices": [
+        "Random",
+        "Poisson Disk",
+        "Aucune",
+        "Selection"
+      ],
+      "answer": 1,
+      "explain": "Poisson Disk écarte les points d'au moins Distance Min ; Random les tire sans contrainte (des paquets se forment)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quels sont les réglages d'un Poisson Disk ?",
+      "choices": [
+        "Distance Min, Density Max, Density Factor, Seed",
+        "Density seul",
+        "Scale",
+        "Index"
+      ],
+      "answer": 0,
+      "explain": "En mode Random, Distance Min et Density Factor disparaissent et Density règle le nombre."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi connecter Distribute [Rotation] à Instance on Points [Rotation] ?",
+      "answer_text": "Chaque point reçoit une orientation alignée sur la normale de la face : les instances suivent la surface (ici un sol plat : verticales)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quel est le rôle du Seed ?",
+      "answer_text": "Changer le tirage aléatoire : même densité, répartition différente, sans autre changement."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment masquer la moitié x < 0 ?",
+      "choices": [
+        "Density Factor = (Position X > 0)",
+        "Delete Geometry",
+        "Scale",
+        "Realize"
+      ],
+      "answer": 0,
+      "explain": "Le facteur de densité vaut 1 ou 0 selon la position : aucun point là où il vaut 0."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle distance minimale entre arbres mesure-t-on dans la solution ?",
+      "choices": [
+        "0,02 m",
+        "≈ 0,50 m",
+        "2 m",
+        "0 m"
+      ],
+      "answer": 1,
+      "explain": "0,503 m : le Poisson Disk respecte Distance Min = 0,5 (0,024 m seulement en méthode Random)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur tolère-t-il 95 % et non 100 % des arbres sur x > 0 ?",
+      "answer_text": "Une tolérance évite d'être trop strict pour les points proches de x = 0 ; dans la solution, 100 % sont du bon côté."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que donne un Density Max de 0,1 ?",
+      "answer_text": "Environ 7 arbres sur la moitié du sol (au lieu de 73) : trop clairsemé pour un bois ; le correcteur exige 40–400."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment obtenir moins d'arbres dans une clairière ?",
+      "answer_text": "Multiplier le masque par un champ de bruit ou de distance au centre : Density Factor décroît vers 0 dans la clairière (CH05.07)."
+    }
+  ]
+}

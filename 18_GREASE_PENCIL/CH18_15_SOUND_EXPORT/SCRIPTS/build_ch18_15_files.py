@@ -16,7 +16,7 @@ build_ch18_15_files.py — « Son, rythme, transitions, export, révision » (CH
       plans, fondu enchaîné SH0110 → SH0120, fondu au noir final, incrustation, sortie MPEG-4
       H.264 + AAC, 4 notes de révision ; vidéo exportée réellement (640 × 360).
 Dépend de : COMPLETED_EXAMPLES de CH18.14 (animatique source).
-Usage : blender -b --factory-startup --python build_ch18_15_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_15_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

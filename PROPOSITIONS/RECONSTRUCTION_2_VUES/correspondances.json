@@ -1,0 +1,661 @@
+{
+  "image": "planche_source.png",
+  "origine_px": {
+    "face_x": 383.5,
+    "profil_x": 1151.0,
+    "sol_y": 962.5
+  },
+  "metres_par_pixel": 0.0019771863117870724,
+  "reperes": [
+    {
+      "repere": "Sommet du crâne",
+      "face_px": [
+        384,
+        42
+      ],
+      "profil_px": [
+        1161,
+        42
+      ],
+      "position_m": [
+        0.00099,
+        0.01977,
+        1.82
+      ],
+      "sommet": 17221,
+      "ecart_mm": 4.3,
+      "projection_face_px": [
+        382.2,
+        43.1
+      ],
+      "projection_profil_px": [
+        1161.8,
+        43.1
+      ]
+    },
+    {
+      "repere": "Arête du nez",
+      "face_px": [
+        383,
+        104
+      ],
+      "profil_px": [
+        1107,
+        104
+      ],
+      "position_m": [
+        -0.00099,
+        -0.087,
+        1.69741
+      ],
+      "sommet": 17125,
+      "ecart_mm": 11.2,
+      "projection_face_px": [
+        382.2,
+        103.0
+      ],
+      "projection_profil_px": [
+        1101.5,
+        103.0
+      ]
+    },
+    {
+      "repere": "Pointe du nez",
+      "face_px": [
+        383,
+        115
+      ],
+      "profil_px": [
+        1095,
+        115
+      ],
+      "position_m": [
+        -0.00099,
+        -0.11072,
+        1.67567
+      ],
+      "sommet": 17112,
+      "ecart_mm": 7.3,
+      "projection_face_px": [
+        382.2,
+        113.2
+      ],
+      "projection_profil_px": [
+        1098.2,
+        113.2
+      ]
+    },
+    {
+      "repere": "Milieu de la bouche",
+      "face_px": [
+        384,
+        128
+      ],
+      "profil_px": [
+        1104,
+        128
+      ],
+      "position_m": [
+        0.00099,
+        -0.09293,
+        1.64996
+      ],
+      "sommet": 17122,
+      "ecart_mm": 4.3,
+      "projection_face_px": [
+        382.2,
+        126.8
+      ],
+      "projection_profil_px": [
+        1104.2,
+        126.8
+      ]
+    },
+    {
+      "repere": "Menton",
+      "face_px": [
+        383,
+        152
+      ],
+      "profil_px": [
+        1113,
+        152
+      ],
+      "position_m": [
+        -0.00099,
+        -0.07513,
+        1.60251
+      ],
+      "sommet": 17145,
+      "ecart_mm": 2.5,
+      "projection_face_px": [
+        382.2,
+        151.7
+      ],
+      "projection_profil_px": [
+        1113.9,
+        151.7
+      ]
+    },
+    {
+      "repere": "Creux de gorge",
+      "face_px": [
+        383,
+        172
+      ],
+      "profil_px": [
+        1136,
+        172
+      ],
+      "position_m": [
+        -0.00099,
+        -0.02966,
+        1.56297
+      ],
+      "sommet": 17191,
+      "ecart_mm": 2.2,
+      "projection_face_px": [
+        382.2,
+        171.8
+      ],
+      "projection_profil_px": [
+        1135.2,
+        171.8
+      ]
+    },
+    {
+      "repere": "Oreille D",
+      "face_px": [
+        348,
+        104
+      ],
+      "profil_px": [
+        1173,
+        104
+      ],
+      "position_m": [
+        -0.07019,
+        0.0435,
+        1.69741
+      ],
+      "sommet": 11559,
+      "ecart_mm": 8.7,
+      "projection_face_px": [
+        343.7,
+        104.2
+      ],
+      "projection_profil_px": [
+        1173.9,
+        104.2
+      ]
+    },
+    {
+      "repere": "Oreille G",
+      "face_px": [
+        420,
+        104
+      ],
+      "profil_px": [
+        1173,
+        104
+      ],
+      "position_m": [
+        0.07217,
+        0.0435,
+        1.69741
+      ],
+      "sommet": 22854,
+      "ecart_mm": 6.5,
+      "projection_face_px": [
+        422.4,
+        104.2
+      ],
+      "projection_profil_px": [
+        1175.2,
+        104.2
+      ]
+    },
+    {
+      "repere": "Épaule D",
+      "face_px": [
+        278,
+        216
+      ],
+      "profil_px": [
+        1183,
+        216
+      ],
+      "position_m": [
+        -0.20859,
+        0.06327,
+        1.47597
+      ],
+      "sommet": 2794,
+      "ecart_mm": 12.0,
+      "projection_face_px": [
+        274.7,
+        211.0
+      ],
+      "projection_profil_px": [
+        1183.8,
+        211.0
+      ]
+    },
+    {
+      "repere": "Épaule G",
+      "face_px": [
+        488,
+        216
+      ],
+      "profil_px": [
+        1183,
+        216
+      ],
+      "position_m": [
+        0.20662,
+        0.06327,
+        1.47597
+      ],
+      "sommet": 31697,
+      "ecart_mm": 12.0,
+      "projection_face_px": [
+        490.1,
+        210.5
+      ],
+      "projection_profil_px": [
+        1184.6,
+        210.5
+      ]
+    },
+    {
+      "repere": "Coude D",
+      "face_px": [
+        249,
+        350
+      ],
+      "profil_px": [
+        1181,
+        350
+      ],
+      "position_m": [
+        -0.26593,
+        0.05932,
+        1.21103
+      ],
+      "sommet": 1502,
+      "ecart_mm": 25.1,
+      "projection_face_px": [
+        239.3,
+        347.7
+      ],
+      "projection_profil_px": [
+        1188.9,
+        347.7
+      ]
+    },
+    {
+      "repere": "Coude G",
+      "face_px": [
+        519,
+        350
+      ],
+      "profil_px": [
+        1181,
+        350
+      ],
+      "position_m": [
+        0.26791,
+        0.05932,
+        1.21103
+      ],
+      "sommet": 33079,
+      "ecart_mm": 23.3,
+      "projection_face_px": [
+        527.3,
+        346.9
+      ],
+      "projection_profil_px": [
+        1188.8,
+        346.9
+      ]
+    },
+    {
+      "repere": "Poignet D",
+      "face_px": [
+        211,
+        476
+      ],
+      "profil_px": [
+        1148,
+        476
+      ],
+      "position_m": [
+        -0.34106,
+        -0.00593,
+        0.9619
+      ],
+      "sommet": 431,
+      "ecart_mm": 23.1,
+      "projection_face_px": [
+        206.8,
+        472.3
+      ],
+      "projection_profil_px": [
+        1137.8,
+        472.3
+      ]
+    },
+    {
+      "repere": "Poignet G",
+      "face_px": [
+        556,
+        476
+      ],
+      "profil_px": [
+        1148,
+        476
+      ],
+      "position_m": [
+        0.34106,
+        -0.00593,
+        0.9619
+      ],
+      "sommet": 34129,
+      "ecart_mm": 23.0,
+      "projection_face_px": [
+        562.6,
+        472.9
+      ],
+      "projection_profil_px": [
+        1138.9,
+        472.9
+      ]
+    },
+    {
+      "repere": "Bout du majeur D",
+      "face_px": [
+        201,
+        583
+      ],
+      "profil_px": [
+        1142,
+        583
+      ],
+      "position_m": [
+        -0.36084,
+        -0.01779,
+        0.75034
+      ],
+      "sommet": 315,
+      "ecart_mm": 7.7,
+      "projection_face_px": [
+        202.2,
+        579.8
+      ],
+      "projection_profil_px": [
+        1143.8,
+        579.8
+      ]
+    },
+    {
+      "repere": "Bout du majeur G",
+      "face_px": [
+        565,
+        583
+      ],
+      "profil_px": [
+        1142,
+        583
+      ],
+      "position_m": [
+        0.35886,
+        -0.01779,
+        0.75034
+      ],
+      "sommet": 34258,
+      "ecart_mm": 7.6,
+      "projection_face_px": [
+        566.2,
+        579.8
+      ],
+      "projection_profil_px": [
+        1143.8,
+        579.8
+      ]
+    },
+    {
+      "repere": "Entrejambe",
+      "face_px": [
+        383,
+        508
+      ],
+      "profil_px": [
+        1149,
+        508
+      ],
+      "position_m": [
+        -0.00099,
+        -0.00395,
+        0.89863
+      ],
+      "sommet": 17225,
+      "ecart_mm": 40.1,
+      "projection_face_px": [
+        383.3,
+        515.5
+      ],
+      "projection_profil_px": [
+        1167.8,
+        515.5
+      ]
+    },
+    {
+      "repere": "Genou D",
+      "face_px": [
+        329,
+        685
+      ],
+      "profil_px": [
+        1155,
+        685
+      ],
+      "position_m": [
+        -0.10776,
+        0.00791,
+        0.54867
+      ],
+      "sommet": 4969,
+      "ecart_mm": 52.0,
+      "projection_face_px": [
+        302.8,
+        684.8
+      ],
+      "projection_profil_px": [
+        1152.8,
+        684.8
+      ]
+    },
+    {
+      "repere": "Genou G",
+      "face_px": [
+        439,
+        685
+      ],
+      "profil_px": [
+        1155,
+        685
+      ],
+      "position_m": [
+        0.10973,
+        0.00791,
+        0.54867
+      ],
+      "sommet": 29179,
+      "ecart_mm": 46.8,
+      "projection_face_px": [
+        462.6,
+        684.8
+      ],
+      "projection_profil_px": [
+        1152.8,
+        684.8
+      ]
+    },
+    {
+      "repere": "Cheville D",
+      "face_px": [
+        321,
+        884
+      ],
+      "profil_px": [
+        1160,
+        884
+      ],
+      "position_m": [
+        -0.12357,
+        0.01779,
+        0.15521
+      ],
+      "sommet": 5008,
+      "ecart_mm": 41.4,
+      "projection_face_px": [
+        300.5,
+        887.2
+      ],
+      "projection_profil_px": [
+        1157.2,
+        887.2
+      ]
+    },
+    {
+      "repere": "Cheville G",
+      "face_px": [
+        447,
+        884
+      ],
+      "profil_px": [
+        1160,
+        884
+      ],
+      "position_m": [
+        0.12555,
+        0.01779,
+        0.15521
+      ],
+      "sommet": 30082,
+      "ecart_mm": 37.6,
+      "projection_face_px": [
+        465.7,
+        886.4
+      ],
+      "projection_profil_px": [
+        1157.2,
+        886.4
+      ]
+    },
+    {
+      "repere": "Pointe chaussure D",
+      "face_px": [
+        317,
+        950
+      ],
+      "profil_px": [
+        1066,
+        950
+      ],
+      "position_m": [
+        -0.13148,
+        -0.16806,
+        0.02471
+      ],
+      "sommet": 7776,
+      "ecart_mm": 4.6,
+      "projection_face_px": [
+        317.7,
+        952.0
+      ],
+      "projection_profil_px": [
+        1065.0,
+        952.0
+      ]
+    },
+    {
+      "repere": "Pointe chaussure G",
+      "face_px": [
+        449,
+        950
+      ],
+      "profil_px": [
+        1066,
+        950
+      ],
+      "position_m": [
+        0.12951,
+        -0.16806,
+        0.02471
+      ],
+      "sommet": 26516,
+      "ecart_mm": 2.5,
+      "projection_face_px": [
+        449.8,
+        949.6
+      ],
+      "projection_profil_px": [
+        1065.1,
+        949.6
+      ]
+    },
+    {
+      "repere": "Semelle D",
+      "face_px": [
+        318,
+        961
+      ],
+      "profil_px": [
+        1120,
+        961
+      ],
+      "position_m": [
+        -0.12951,
+        -0.06129,
+        0.00297
+      ],
+      "sommet": 7938,
+      "ecart_mm": 4.5,
+      "projection_face_px": [
+        319.2,
+        962.4
+      ],
+      "projection_profil_px": [
+        1121.2,
+        962.4
+      ]
+    },
+    {
+      "repere": "Semelle G",
+      "face_px": [
+        448,
+        961
+      ],
+      "profil_px": [
+        1120,
+        961
+      ],
+      "position_m": [
+        0.12753,
+        -0.06129,
+        0.00297
+      ],
+      "sommet": 26658,
+      "ecart_mm": 5.1,
+      "projection_face_px": [
+        449.8,
+        962.4
+      ],
+      "projection_profil_px": [
+        1121.2,
+        962.4
+      ]
+    }
+  ]
+}

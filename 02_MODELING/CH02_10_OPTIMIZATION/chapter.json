@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch02_10_optim_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch02_10.py", "Correcteur (triangles, écart BVH, LOD liés, nettoyage)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_10_optim_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_10.py\" --python-exit-code 1 -- --exercise optim --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_10_optim_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_10.py\" -- --exercise optim --render",
   "deliverables": ["Fichier validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : budget de scène."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Fichier validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.11 — UV fondamentaux](../CH02_11_UV_BASICS/README.md)"

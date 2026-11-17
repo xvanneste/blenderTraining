@@ -1,0 +1,68 @@
+{
+  "code": "CH10.07",
+  "title": "Rendu distribué",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Une ferme de rendu fait rendre à plusieurs machines des morceaux d'une animation. Le principe est simple : une ligne de commande Blender par morceau (blender -b fichier -s début -e fin -a), des réglages qui évitent les collisions (pas d'écrasement, des placeholders), et une orchestration (à la main, par script, ou avec un gestionnaire comme Flamenco). Ce chapitre se concentre sur la base : le correcteur EXÉCUTE réellement vos commandes (liste blanche d'options) et compte les images produites.",
+  "prereqs": [
+    "CH10.04 (sortie), CH13 non requis."
+  ],
+  "objectives": [
+    "Écrire une commande Blender de rendu en arrière-plan.",
+    "Découper une animation sans trou ni recouvrement.",
+    "Respecter l'ordre des arguments (-a en dernier).",
+    "Régler Overwrite et Placeholders pour une ferme."
+  ],
+  "competences": [
+    [
+      "C10.07.a",
+      "Rendre en batch",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "La ligne de commande",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Morceaux et ferme",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_07_batch_starter.blend",
+      "Première commande avec « -a » avant « -s » (rend les 24 images), l'image 17 manque, Overwrite activé, Placeholders désactivé ; 13/39"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_07_batch_solution.blend",
+      "Trois commandes 1–8, 9–16, 17–24 avec « -a » en dernier ; Overwrite désactivé, Placeholders activé ; 39/39"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_07_batch_reference.png",
+      "Trois images de la solution (4, 12, 20), une par morceau"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (-a trop tôt, trou, recouvrement, un seul morceau, réglages de ferme, option interdite)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_07.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_07_batch_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_07.py\" -- --exercise batch",
+  "deliverables": [
+    "Plan de rendu en trois commandes exécutées.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[Projet P10 — Scène optimisée en EXR multicouche](../PROJECT_P10/README.md)"
+}

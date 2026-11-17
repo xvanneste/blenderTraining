@@ -7,7 +7,7 @@ build_ch01_12_files.py — Le portrait du gardien (CH01.12 : caméras).
   COMPLETED_EXAMPLES/ch01_12_portrait_solution.blend
       CAM_Shot : 50 mm, à hauteur d'œil, tête du gardien sur le tiers supérieur gauche,
       profondeur de champ activée (Focus on Object = EMP_Head, f/2.8), guides des tiers.
-Usage : blender -b --factory-startup --python build_ch01_12_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_12_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

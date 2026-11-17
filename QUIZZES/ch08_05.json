@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.05",
+  "title": "Fluides (Mantaflow)",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un domaine de fluide ?",
+      "choices": [
+        "La boîte qui contient la simulation",
+        "Un matériau",
+        "Une lumière",
+        "Un os"
+      ],
+      "answer": 0,
+      "explain": "FLUID_Domain : cube de 2 m ; tout ce qui sort est perdu."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert un objet Flow ?",
+      "choices": [
+        "À alimenter le domaine en liquide ou en gaz",
+        "À le colorer",
+        "À le cacher",
+        "À le déplacer"
+      ],
+      "answer": 0,
+      "explain": "FLUID_Source : Flow Type Liquid, Behavior Geometry."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Flow Behavior Geometry ?",
+      "choices": [
+        "Remplit le volume de l'objet avec du liquide",
+        "Émet en continu",
+        "Efface",
+        "Colorie"
+      ],
+      "answer": 0,
+      "explain": "Le cube de 0,6 m devient du liquide à l'image 1."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la résolution compte-t-elle ?",
+      "answer_text": "Elle fixe la finesse de la grille : à 8 le liquide est un maillage grossier (380 sommets à l'image 20) ; à 32, 18 594 sommets."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que se passe-t-il avec une source de fumée dans un domaine liquide ?",
+      "answer_text": "Aucun liquide n'est créé : le domaine reste vide (contre-exemple « gas_flow »)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que cuit-on, et dans quel ordre ?",
+      "choices": [
+        "Les données puis le maillage",
+        "Le maillage puis les données",
+        "Le rendu",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "bake_data puis bake_mesh : 20 fichiers de maillage."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Où sont stockés les résultats ?",
+      "choices": [
+        "Dans un dossier de cache du domaine",
+        "Dans le fichier .blend",
+        "Dans le matériau",
+        "Nulle part"
+      ],
+      "answer": 0,
+      "explain": "Cache modulaire : data/ (.vdb), mesh/ (.bobj.gz), config/."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que mesure-t-on pour vérifier la chute ?",
+      "answer_text": "Le z minimal de la surface à l'image 20 : −0,475 m (le fond du domaine en repère local) ; à l'image 1 : −0,056 m."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un cache de 1 à 5 est-il insuffisant ?",
+      "answer_text": "Le liquide n'a pas le temps de tomber (z minimal −0,15 m) ni de s'étaler (0,34 m)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur cuit-il dans un dossier temporaire ?",
+      "answer_text": "Pour ne pas modifier le fichier de l'apprenant ni dépendre d'un cache déjà cuit."
+    }
+  ]
+}

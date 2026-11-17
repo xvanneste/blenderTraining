@@ -5,16 +5,14 @@
 2. Lancez l'audit (tutoriel 6) avec `--strict`.
 **Réussi si :** code de retour 0, aucun `✘` dans le rapport.
 
-## Exercice 2 — Moyen : mesurer le gain de navigation ⏱ cible 15 min
-1. Lancez Blender avec les réglages d'usine : raccourci *blender_factory_startup.cmd* du
-   dossier d'installation (ou `blender --factory-startup`).
-2. Ouvrez la ville. Chronométrez-vous : trouver `GEO_Needle` **sans** l'Outliner, jusqu'à
-   ce qu'elle occupe le quart de la vue. Notez le temps T1.
-3. Relancez Blender normalement (vos préférences). Même exercice, toujours sans
-   l'Outliner. Temps T2.
-4. Troisième essai avec l'Outliner + `.`. Temps T3.
-5. Notez T1, T2, T3 dans PROGRESS.md et écrivez en 2 phrases ce que vous en concluez.
-**Réussi si :** trois temps notés, T3 < 15 s.
+## Exercice 2 — Consolider le cadrage avec et sans pavé numérique
+
+1. Ouvrez la ville sur une copie. Cherchez l’aiguille en observant la scène, puis notez le point où elle devient difficile à repérer.
+2. Revenez à la vue d’ensemble. Sélectionnez GEO_Needle par l’Outliner et utilisez **View → Frame Selected**.
+3. Revenez à la vue d’ensemble et recommencez avec GEO_FarBeacon. Si vous disposez d’un pavé numérique, comparez le menu avec son raccourci.
+4. Vérifiez que les objets n’ont pas changé de position et expliquez la différence entre cadrage de la vue et cadrage de la caméra.
+
+**Réussi si** vous pouvez retrouver les deux objets sans déplacer leur géométrie et expliquer votre méthode à quelqu’un. Le chronomètre est facultatif. Des essais répétés sur le même objet entraînent aussi la mémoire de sa position.
 
 ## Exercice 3 — Difficile : cadrer l'aiguille (SANS procédure) ⏱ cible 10 min
 Dans la ville, faites de `CAM_Needle` la caméra active et placez-la pour que l'aiguille
@@ -23,17 +21,15 @@ sous `ch00_02_navigation_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_02_navigation_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch00_02.py" --python-exit-code 1 -- --exercise needle --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_02.py" -- --exercise needle --render
 ```
 **Barème (10 pts)** : objets présents 1 · caméra active 2 · distance < 3 m 2 · aiguille
 dans le cadre 2 · gros plan 2 · rendu non noir 1. **Réussi si :** VALIDÉ.
 
 ## Exercice 4 — Difficile : la restauration (SANS procédure) ⏱ cible 10 min
-Scénario : « J'ai tout cassé : thème illisible, plus d'orbite autour de la sélection, et
-un fichier de démarrage rempli de cubes. » Remettez votre poste **exactement** dans l'état
-de votre sauvegarde du tutoriel 1, sans réinstaller Blender.
-**Réussi si :** l'audit `--strict` passe et *File → New → General* montre la scène
-habituelle (cube, caméra, lumière).
+Dans le profil de test, désactivez un réglage d’orbite et changez l’échelle de l’interface. Restaurez ensuite l’archive. Comparez les deux valeurs et vérifiez aussi le fichier de démarrage si votre archive en contenait un. Le profil recommandé par l’académie et votre sauvegarde personnelle peuvent avoir des valeurs différentes.
+
+**Réussi si** les deux valeurs reviennent à leur état archivé après fermeture et relance. L’audit strict sert uniquement à vérifier le profil recommandé.
 
 ## Défis avancés
 - **Défi 1 :** ajoutez au script `bcma_prefs_profile.py` deux réglages de votre choix

@@ -17,7 +17,9 @@ Ouvrez `STARTER_FILES/ch01_10_bridge_starter.blend`.
 
 ## Tutoriel 3 — Bevel : le pilier
 1. `GEO_Pillar` → **Add Modifier → Generate → Bevel** → *Amount* `0.02`, *Segments* `3`.
-2. Vue rapprochée en *Material Preview* (`Z` → 2) : un liseré de lumière apparaît sur les arêtes.
+2. Cadrez le pilier puis ouvrez le menu `Z` et choisissez *Material Preview*. Orbitez pour
+   retrouver un angle où la lumière révèle le liseré sur les arêtes. L’icône d’affichage du
+   modificateur dans la vue permet de comparer les deux états au même cadrage.
 
 ## Tutoriel 4 — Solidify puis Subdivision : le seau
 1. `GEO_Bucket` → **Add Modifier → Generate → Solidify** → *Thickness* `0.02`.
@@ -32,6 +34,10 @@ Enregistrez `ch01_10_bridge_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_10_bridge_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_10.py" --python-exit-code 1 -- --exercise bridge --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_10.py" -- --exercise bridge --render
 ```
-Rendu de référence : `COMPLETED_EXAMPLES/ch01_10_bridge_reference.png`.
+[Rendu de référence du pont](COMPLETED_EXAMPLES/ch01_10_bridge_reference.png)
+
+## Contrôle de transfert
+
+Affichez d’abord l’Array du tablier puis entrez en mode Édition. Vérifiez que les sommets éditables se limitent à la planche source. Désactivez un instant l’affichage du modificateur dans la vue pour distinguer source et copies. Sur le seau, comparez l’ordre Solidify puis Subdivision à l’ordre inverse sur deux copies. **Réussite** Vous reconnaissez le maillage de base et indiquez la différence de bord produite par l’ordre.

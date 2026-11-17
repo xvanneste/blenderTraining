@@ -1,0 +1,68 @@
+{
+  "code": "CH03.09",
+  "title": "Retopologie personnage",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Un sculpt à 75 000 faces ne s'anime pas : il faut une topologie légère, tout en quads, dont les boucles suivent les muscles qui bougent — des anneaux autour des yeux et de la bouche. Ce chapitre fait la retopologie du visage de CH03.06 : une grille de quads resserrée autour des yeux et de la bouche (Inset Faces), des ouvertures aux bons endroits, collée au sculpt par Shrinkwrap. Le correcteur mesure la topologie (quads, valence, trous, densité) et l'adhérence à la surface.",
+  "prereqs": [
+    "CH03.06 (le visage).",
+    "CH03.03 (densité)."
+  ],
+  "objectives": [
+    "Construire une topologie de quads avec des boucles autour des yeux et de la bouche.",
+    "Coller un maillage léger à un sculpt (Shrinkwrap, Snap).",
+    "Contrôler une retopologie par des mesures (quads, pôles, densité, adhérence)."
+  ],
+  "competences": [
+    [
+      "C03.09.a",
+      "Retopologie d'un personnage",
+      "Exercice 2 (correcteur) + grille"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Principes : quads, boucles, pôles, budget",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Construire et coller la retopo",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch03_09_retopo_starter.blend",
+      "Visage sculpté de CH03.06 + yeux, sans retopo"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_09_retopo_solution.blend",
+      "RETOPO_Face (404 quads) sur SCULPT_Bust"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_09_retopo_reference.png",
+      "Face, 3/4, profil (retopo en fil de fer)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (grille uniforme, triangulée, flottante, trop dense, boucles décalées)"
+    ],
+    [
+      "SCRIPTS/validate_ch03_09.py",
+      "Correcteur (retopo)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_09_retopo_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_09.py\" -- --exercise retopo --render",
+  "deliverables": [
+    "Retopologie validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH03.10 — Préparation au rigging](../CH03_10_RIG_READY/README.md)"
+}

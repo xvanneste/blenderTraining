@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.01",
+  "title": "Rigid Bodies",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle différence entre actif et passif ?",
+      "choices": [
+        "L'actif obéit à la physique, le passif est un obstacle fixe",
+        "Aucune",
+        "Le passif est plus lourd",
+        "L'actif est invisible"
+      ],
+      "answer": 0,
+      "explain": "Sol Passive, briques et boule Active."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle la friction ?",
+      "choices": [
+        "La résistance au glissement au contact",
+        "La couleur",
+        "La masse",
+        "La forme"
+      ],
+      "answer": 0,
+      "explain": "Friction 0,05 : les briques glissent sans fin (710 mm de déplacement entre les images 140 et 150)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle forme de collision pour une brique ?",
+      "choices": [
+        "Box",
+        "Mesh toujours",
+        "Sphere",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "La boîte épouse la brique et coûte peu."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "À quoi sert la marge de collision ?",
+      "answer_text": "Elle épaissit la forme de collision ; sur de petits objets elle les fait se chevaucher : on la met à 0 pour des briques de 0,3 m."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une masse de 1 kg pour les briques ?",
+      "answer_text": "Une valeur réaliste et cohérente entre corps ; la boule de 20 kg est assez lourde pour les disperser (une boule de 0,3 kg n'en déplace aucune)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait la case Animated (Dynamics) ?",
+      "choices": [
+        "Le corps suit son animation au lieu de la physique",
+        "Elle accélère la simulation",
+        "Elle supprime la masse",
+        "Elle change la forme"
+      ],
+      "answer": 0,
+      "explain": "Cochée à l'image 1 puis décochée à l'image 21 : la boule suit sa trajectoire puis est lâchée."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi avancer la simulation image par image ?",
+      "choices": [
+        "La physique dépend de l'état de l'image précédente",
+        "Pour le rendu",
+        "Pour la couleur",
+        "Pour le son"
+      ],
+      "answer": 0,
+      "explain": "Sauter directement à l'image 150 ne simule rien (mesuré en arrière-plan)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « no_ground » ?",
+      "answer_text": "Sans sol rigide, le mur tombe à travers : z minimal de −174 m après 150 images."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « no_world_frames » ?",
+      "answer_text": "Le cache du monde s'arrête à l'image 60 : la simulation se fige (9 briques déplacées au lieu de 21)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment vérifier la stabilité d'un mur avant l'impact ?",
+      "answer_text": "Mesurer le déplacement des briques avant l'arrivée de la boule : 8 mm au plus à l'image 12 dans la solution."
+    }
+  ]
+}

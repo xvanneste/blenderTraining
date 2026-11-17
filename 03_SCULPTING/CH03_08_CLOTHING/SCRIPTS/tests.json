@@ -1,0 +1,37 @@
+{
+  "build": "build_ch03_08_files.py",
+  "validator": "validate_ch03_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_08_poncho_solution.blend",
+      "exercise": "poncho",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_08_poncho_starter.blend",
+      "exercise": "poncho",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_08_poncho_penetrating.blend",
+      "exercise": "poncho",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_08_poncho_smoothed.blend",
+      "exercise": "poncho",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_08_poncho_stretched.blend",
+      "exercise": "poncho",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_08_poncho_tiny.blend",
+      "exercise": "poncho",
+      "expect": false
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """
 validate_ch02_04.py — Correcteur « Les ombrages ratés » (CH02.04).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_04.py --python-exit-code 1 -- --exercise normals [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_04.py -- --exercise normals [--render]
 Mesure les normales de coin (corner normals) du maillage ÉVALUÉ : c'est ce qu'utilise le rendu.
 Testé avec : Blender 5.3.0.
 """

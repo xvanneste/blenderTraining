@@ -38,5 +38,9 @@ Enregistrez `ch18_07_brushes_<prenom>_v001.blend`, puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_07_brushes_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_07.py" --python-exit-code 1 -- --exercise brushes --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_07.py" -- --exercise brushes --render
 ```
+
+## Variante de contrôle
+
+Utilisez deux matériaux et le même trait sur une copie. Faites varier couleur ou contour avec un seul changement à la fois. **Preuve** Vous distinguez le réglage du pinceau du matériau affecté aux traits après réouverture.

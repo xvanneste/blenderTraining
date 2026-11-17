@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.09",
+  "title": "Rig facial",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel outil pour ouvrir une mâchoire ?",
+      "choices": [
+        "Un shape key",
+        "Un bone (rotation autour d'une charnière)",
+        "Un driver seul",
+        "Un modificateur Mirror"
+      ],
+      "answer": 1,
+      "explain": "Un grand mouvement de rotation se fait par bone ; les shape keys servent aux formes fines."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi les poids de la mâchoire doivent-ils être lisses ?",
+      "choices": [
+        "Pour le rendu",
+        "Pour éviter une cassure : une coupure binaire étire les arêtes",
+        "Pour la couleur",
+        "Ce n'est pas nécessaire"
+      ],
+      "answer": 1,
+      "explain": "Mesure : étirement d'arête max 1,45 fois (lisse) contre 2,92 (coupure binaire)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que la diaphonie (crosstalk) ?",
+      "choices": [
+        "Un bruit sonore",
+        "Une commande qui agit sur une zone qui n'est pas la sienne",
+        "Un type de shape key",
+        "Un bone caché"
+      ],
+      "answer": 1,
+      "explain": "Contre-exemple : le sourire qui baisse aussi les paupières (12 mm mesurés)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment isole-t-on un shape key dans sa zone ?",
+      "answer_text": "Par un groupe de sommets à poids dégradés (Vertex Group du shape key), nul en dehors de la zone."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un sommet central pèse-t-il 1 dans le groupe ?",
+      "answer_text": "Pour que le déplacement maximal soit exactement celui voulu (12 mm) ; sans normalisation, le sommet le plus proche du centre ne pesait que 0,6 et le sourire montait de 7,6 mm seulement."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "À quoi sert Limit Location sur une glissière ?",
+      "choices": [
+        "À la rendre invisible",
+        "À borner sa course (ici X de 0 à 0,05 m)",
+        "À la copier",
+        "À la verrouiller en rotation"
+      ],
+      "answer": 1,
+      "explain": "Sans limite, l'animateur peut tirer la glissière à 0,20 m ; la valeur du key est bornée par le curseur, mais la glissière part ailleurs."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle expression relie la glissière (0 à 0,05 m) à la valeur 0–1 ?",
+      "choices": [
+        "x * 0.05",
+        "x / 0.05",
+        "x + 0.05",
+        "x - 0.05"
+      ],
+      "answer": 1,
+      "explain": "0,05 m → 1 ; 0,025 m → 0,5."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « weak_driver » ?",
+      "answer_text": "Avec x / 0.1, la valeur n'atteint que 0,5 à fond : le sourire ne monte que de 6 mm au lieu de 12."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi tester à 0,20 m alors que le curseur du key est borné à 1 ?",
+      "answer_text": "Pour vérifier que la glissière elle-même est bornée : la valeur du key reste à 1 dans les deux cas, seul le déplacement effectif (50 mm) distingue le rig avec limite."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Donnez une expression faciale mieux faite par bone et une mieux faite par shape key.",
+      "answer_text": "Bone : mâchoire, yeux (rotation). Shape key : plis du front, sourire, paupières, lèvres."
+    }
+  ]
+}

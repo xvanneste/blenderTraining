@@ -19,13 +19,17 @@
 
 ## Exercice 2
 `COMPLETED_EXAMPLES/ch03_02_face_solution.blend` (+ `_reference.png`).
-**Comment elle a été produite (important)** : en arrière-plan, les opérateurs de sculpture de Blender
-5.3 font planter le logiciel ; la solution n'a donc PAS été sculptée à la brosse. Elle a été générée par
-script : déplacements le long de la normale (bosses gaussiennes équivalentes à Draw / Clay Strips, et
-négatives pour creuser), masque et Face Sets écrits directement dans les attributs `.sculpt_mask` et
-`.sculpt_face_set` que le Sculpt Mode utilise. Le résultat est un repère de forme et de mesure, pas un
-exemple de geste de sculpteur.
-Mesures du correcteur : 24 578 sommets conservés, nez +13,5 cm, orbites −4,6 cm, symétrie 100 %,
-arrière masqué (1,00) et intact (0 mm), 3 Face Sets, Mirror X activé.
+**Comment elle a été produite (important)** : la solution est **réellement sculptée à la brosse**, dans Blender 5.2 LTS en interface, pilotée via le MCP
+(les opérateurs de sculpt plantent en 5.3 en arrière-plan ; la 5.2 en interface les exécute). Gestes réalisés : Mirror X ; **masque** de l'arrière du crâne
+(brosse *Mask*, vue arrière, 3 passes) ; **volumes** du front, des joues, du menton (*Inflate/Deflate*, gros rayon) ; **nez** (*Inflate* en colonne puis bout) ;
+**arcades** (*Draw*) ; **orbites** (*Inflate/Deflate* inversé) ; pommettes ; sillon de bouche ; **lissage** (*Smooth*) ; **Face Sets** créés depuis le masque
+(*Sculpt > Face Sets > Create Face Set > From Masked*, opérateur `sculpt.face_sets_create`). Le fichier est enregistré par la 5.2 ; le correcteur 5.3 le valide.
+Le style est doux (« visage lunaire ») : c'est ce que donnent des brosses larges sans retouche fine.
+Mesures du correcteur : 24 578 sommets conservés, nez +6,8 cm, orbites −2,5 cm, symétrie 100 %, 5,2 % des sommets déplacés de plus de 5 mm,
+arrière masqué (0,90) et intact (0 mm), 2 Face Sets, Mirror X activé. Score 23/23.
+**Ce que l'essai a appris** : (1) la position d'un trait (`sculpt.brush_stroke`) est en coordonnées LOCALES de l'objet ; (2) le rayon effectif d'une brosse est environ le tiers
+du réglage (rayon 0,25 → ≈ 8 cm d'effet), il faut des rayons ~3× plus grands pour des volumes ; (3) des touches répétées au même point font des pointes, un trait long de
+*Draw* fait des crêtes, un gribouillis fait des anneaux : *Inflate/Deflate* au gros rayon donne les volumes, *Draw* les arêtes, *Smooth* fond le tout ;
+(4) un correcteur vert ne suffisait pas : deux premières versions le satisfaisaient avec des formes laides (barres, boudins), seul le rendu regardé les a refusées.
 Contre-épreuve : masque supprimé, côté droit du visage et arrière modifiés → refusé (12/22 : orbite,
 symétrie, masque, zone protégée).

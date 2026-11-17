@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.05",
+  "title": "Titres et sous-titres",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un strip de texte ?",
+      "choices": [
+        "Un strip (type TEXT) qui affiche un texte pendant une durée",
+        "Un objet 3D",
+        "Un nœud",
+        "Un fichier SRT"
+      ],
+      "answer": 0,
+      "explain": "Add > Text ; API : `strips.new_effect(type='TEXT')`."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle valeur de `location` place un texte au centre ?",
+      "choices": [
+        "(0,5 ; 0,5)",
+        "(0 ; 0)",
+        "(1 ; 1)",
+        "(0,5 ; 0,9)"
+      ],
+      "answer": 0,
+      "explain": "Coordonnées relatives à l'image ; (0,5 ; 0,1) pour un sous-titre en bas."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où place-t-on les sous-titres ?",
+      "choices": [
+        "Dans le tiers inférieur de l'image",
+        "En haut",
+        "Au centre",
+        "N'importe où"
+      ],
+      "answer": 0,
+      "explain": "Rendu : centre vertical à 0,90 de la hauteur (depuis le haut)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un titre trop petit est-il refusé ?",
+      "answer_text": "Un titre de taille 12 ne fait que 310 pixels clairs au lieu de 5 686 : illisible ; le correcteur exige ≥ 1 500."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre title_off_center ?",
+      "answer_text": "Le titre est assez grand mais en bas à gauche (centre 0,28 / 0,76) : un titre se centre."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce que le format SRT ?",
+      "choices": [
+        "Un fichier texte : numéro, temps début --> fin, texte",
+        "Un format vidéo",
+        "Un format audio",
+        "Une image"
+      ],
+      "answer": 0,
+      "explain": "Exemple : 00:00:02,000 --> 00:00:03,500."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment Blender exporte-t-il les sous-titres ?",
+      "choices": [
+        "Sequencer > Export Subtitles (bpy.ops.sequencer.export_subtitles) : tous les strips de texte",
+        "Il ne le peut pas",
+        "Par un nœud",
+        "Par un modificateur"
+      ],
+      "answer": 0,
+      "explain": "Constaté : il exporte aussi le titre ; le correcteur l'ignore."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel est l'écart de temps toléré ?",
+      "answer_text": "2 images à 24 i/s, soit 0,0833 s : late_sub (+0,5 s) est refusé."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le point final compte-t-il ?",
+      "answer_text": "La référence est « Bonjour. » : une faute de frappe ou de ponctuation est une erreur de sous-titre : typo est refusé."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "La police par défaut ; pas de style (boîte, ombre, contour), ni de retour à la ligne, ni de langues multiples ; le SRT n'est pas importé dans Blender (non trouvé en 5.3)."
+    }
+  ]
+}

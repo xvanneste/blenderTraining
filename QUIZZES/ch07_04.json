@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.04",
+  "title": "Graph Editor",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que montre le Graph Editor ?",
+      "choices": [
+        "La valeur d'une propriété en fonction du temps",
+        "Le maillage",
+        "Le shading",
+        "Les collections"
+      ],
+      "answer": 0,
+      "explain": "Une courbe par propriété animée ; la pente est la vitesse."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que représente la pente d'une courbe ?",
+      "choices": [
+        "La vitesse de changement de la valeur",
+        "La couleur",
+        "Le nombre de clés",
+        "Le nom"
+      ],
+      "answer": 0,
+      "explain": "Pente nulle = valeur constante à cet instant ; pente forte = changement rapide."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle touche règle le type de poignée dans le Graph Editor (keymap par défaut) ?",
+      "choices": [
+        "V",
+        "T",
+        "S",
+        "M"
+      ],
+      "answer": 0,
+      "explain": "V : types de poignée (Auto Clamped...) ; T : interpolation."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi des poignées Auto Clamped aux extrémités du pendule ?",
+      "answer_text": "Elles aplatissent la courbe à l'extrémité : vitesse quasi nulle (0,31 °/image mesurés) et pas de dépassement ; le pendule ralentit en haut et accélère au milieu."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle est la vitesse d'un aller-retour linéaire de 60° en 12 images ?",
+      "answer_text": "5 °/image, constante ; la solution en Bezier atteint 7,5 °/image au milieu."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait un modificateur Cycles ?",
+      "choices": [
+        "Répète la courbe avant et après ses clés",
+        "Ajoute du bruit",
+        "Inverse la courbe",
+        "Supprime les clés"
+      ],
+      "answer": 0,
+      "explain": "Cycles répète l'aller-retour : 30° à l'image 37, −30° à 49, 30° à 61."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait un modificateur Noise ?",
+      "choices": [
+        "Ajoute une variation pseudo-aléatoire lisse à la valeur",
+        "Répète",
+        "Aplanit",
+        "Inverse"
+      ],
+      "answer": 0,
+      "explain": "Strength règle l'amplitude, Scale la durée des ondulations (en images)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi préférer un modificateur à des dizaines de clés ?",
+      "answer_text": "Il se règle en deux nombres, reste modifiable et ne gonfle pas l'action."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « noise_too_strong » ?",
+      "answer_text": "Avec Strength 0,5, Z varie de 20 cm crête à crête : le pendule saute au lieu de frémir."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la plage de la scène est-elle 1–48 ?",
+      "answer_text": "Pour lire deux aller-retours : un par les clés, un par le modificateur Cycles."
+    }
+  ]
+}

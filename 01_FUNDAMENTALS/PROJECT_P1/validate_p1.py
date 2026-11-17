@@ -1,6 +1,6 @@
 """
 validate_p1.py — Correcteur du projet de phase P1 « Nature morte ».
-Usage : blender -b --factory-startup <votre_fichier.blend> --python validate_p1.py --python-exit-code 1
+Usage : blender -b --factory-startup <votre_fichier.blend> --python-exit-code 1 --python validate_p1.py
 Testé avec : Blender 5.3.0 (sur la solution de CH01.14 adaptée et sur un fichier vide).
 """
 import os
@@ -22,10 +22,15 @@ def main():
     props = bpy.data.collections.get("PROPS")
     objs = [o for o in props.all_objects if o.type == "MESH"] if props else []
     r.check(len(objs) >= 8, f"≥ 8 objets dans PROPS ({len(objs)})", "", 2)
-    shared = any(o.data.users >= 2 for o in objs)
-    r.check(shared, "Au moins une duplication liée (Alt+D)", "", 1)
+    shared = len({o.data for o in objs}) < len(objs)
+    r.check(shared, "Au moins deux objets de PROPS partagent un maillage (Alt+D)", "", 1)
     r.check(any(len(o.modifiers) >= 2 for o in objs), "Un objet avec ≥ 2 modificateurs", "", 1)
-    r.check(any(len({p.material_index for p in o.data.polygons}) >= 2 for o in objs), "Un objet multi-matériaux (par faces)", "", 1)
+    def face_materials(obj):
+        slots = obj.material_slots
+        return {slots[index].material for index in {p.material_index for p in obj.data.polygons}
+                if index < len(slots) and slots[index].material is not None}
+
+    r.check(any(len(face_materials(o)) >= 2 for o in objs), "Un objet multi-matériaux (par faces)", "", 1)
     bad = [o.name for o in sc.objects if o.type == "MESH" and o.parent is None and any(abs(s - 1) > 1e-4 for s in o.scale)]
     r.check(not bad, f"Échelles appliquées ({len(bad)} à appliquer : {', '.join(bad[:4])})", "Ctrl+A > Scale.", 2)
     cam = sc.camera

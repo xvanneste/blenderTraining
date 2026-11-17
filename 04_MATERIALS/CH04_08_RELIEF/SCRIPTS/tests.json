@@ -1,0 +1,46 @@
+{
+  "build": "build_ch04_08_files.py",
+  "validator": "validate_ch04_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_08_relief_solution.blend",
+      "exercise": "relief",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_08_relief_starter.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_method_bump.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_no_subdiv.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_huge_scale.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_const_height.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_unlinked.blend",
+      "exercise": "relief",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_08_relief_eevee.blend",
+      "exercise": "relief",
+      "expect": false
+    }
+  ]
+}

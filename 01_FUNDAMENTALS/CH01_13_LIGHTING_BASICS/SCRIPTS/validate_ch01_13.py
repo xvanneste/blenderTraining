@@ -2,7 +2,7 @@
 validate_ch01_13.py — Correcteur de l'éclairage trois points (CH01.13).
 Analyse le placement et la puissance des lumières, puis (avec --render) l'exposition de
 l'image (luminance moyenne entre 0,08 et 0,6) avec un rendu EEVEE rapide.
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_13.py --python-exit-code 1 -- --exercise threepoint [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_13.py -- --exercise threepoint [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

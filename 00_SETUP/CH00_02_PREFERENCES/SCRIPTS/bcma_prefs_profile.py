@@ -98,20 +98,28 @@ def audit(prefs):
 
 
 def apply(prefs):
-    for path, prop, value, _m, why in PROFILE:
-        setattr(section(prefs, path), prop, value)
+    for path, prop, value, mandatory, _ in PROFILE:
+        settings = section(prefs, path)
+        if settings.is_property_readonly(prop):
+            if mandatory and getattr(settings, prop) != value:
+                raise RuntimeError(f"Réglage obligatoire en lecture seule : {path}.{prop}")
+            print(f"[BCMA] ignoré dans ce contexte (lecture seule) : {path}.{prop}")
+            continue
+        setattr(settings, prop, value)
         print(f"[BCMA] appliqué : {path}.{prop} = {value}")
 
 
 def main():
     prefs = bpy.context.preferences
     if "--apply" in ARGS:
+        if "--save" in ARGS and bpy.app.factory_startup:
+            print("[BCMA] REFUS : --save interdit avec --factory-startup.")
+            return 1
         apply(prefs)
         if "--save" in ARGS:
-            if bpy.app.factory_startup:
-                print("[BCMA] REFUS : --save interdit avec --factory-startup.")
+            if bpy.ops.wm.save_userpref() != {"FINISHED"}:
+                print("[BCMA] Blender n’a pas enregistré les préférences.")
                 return 1
-            bpy.ops.wm.save_userpref()
             print("[BCMA] Préférences enregistrées (userpref.blend).")
     diffs = audit(prefs)
     if "--strict" in ARGS and any(d[3] for d in diffs):

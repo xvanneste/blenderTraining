@@ -1,7 +1,7 @@
 """
 validate_ch01_10.py — Correcteur du petit pont (CH01.10).
 Vérifie la présence, les réglages et l'ORDRE des modificateurs, et la géométrie évaluée.
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_10.py --python-exit-code 1 -- --exercise bridge [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_10.py -- --exercise bridge [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

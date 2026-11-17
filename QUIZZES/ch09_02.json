@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.02",
+  "title": "Trois points et variantes",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le rôle de la Key ?",
+      "choices": [
+        "Modeler le volume (lumière principale)",
+        "Déboucher l'ombre",
+        "Détacher le sujet du fond",
+        "Éclairer le fond"
+      ],
+      "answer": 0,
+      "explain": "Elle définit la direction et le caractère."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le rôle de la Fill ?",
+      "choices": [
+        "Déboucher l'ombre sans l'effacer",
+        "Remplacer la Key",
+        "Créer un contre-jour",
+        "Colorer le fond"
+      ],
+      "answer": 0,
+      "explain": "Plus faible que la Key, de l'autre côté."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où place-t-on la Rim ?",
+      "choices": [
+        "Derrière et au-dessus du sujet",
+        "À côté de la caméra",
+        "Sous le sujet",
+        "Devant"
+      ],
+      "answer": 0,
+      "explain": "Elle dessine le bord."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la Rim de la première version n'éclairait-elle presque pas la sphère ?",
+      "answer_text": "À (0, 3, 3) elle éclairait seulement la toute dernière frange du bord visible (angle rasant, contribution 1 %) ; remontée à (0, 1,5, 4,5) elle apporte 29 % du bord haut."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « flat » ?",
+      "answer_text": "Fill de 150 W pour une Key de 250 W : ratio 0,9, pas de modelé : l'image est plate."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel ratio donne un portrait classique ?",
+      "choices": [
+        "Environ 2 : 1 à 5 : 1",
+        "1 : 1",
+        "20 : 1",
+        "0,5 : 1"
+      ],
+      "answer": 0,
+      "explain": "Solution : 2,9 : 1."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment isoler la contribution d'une lampe ?",
+      "choices": [
+        "Rendre avec et sans cette lampe et comparer",
+        "Regarder son Power",
+        "Mesurer sa distance",
+        "Changer sa couleur"
+      ],
+      "answer": 0,
+      "explain": "Par exemple Rim : bande du haut avec 0,747 contre 0,527 sans."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le ratio dépend-il aussi de la Key sur le flanc d'ombre ?",
+      "answer_text": "La Key éclaire aussi un peu l'ombre (0,05 sans Fill) : le ratio sans Fill est 10,4 et non l'infini."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « key_on_right » ?",
+      "answer_text": "Key à droite et Fill à gauche : ratio 0,35 (le flanc de gauche est dans l'ombre) : positions refusées."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle limite a la mesure par zones ?",
+      "answer_text": "Elle suppose un sujet sphérique centré : un visage a des plans multiples ; elle ne juge ni l'esthétique ni la couleur."
+    }
+  ]
+}

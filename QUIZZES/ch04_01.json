@@ -1,0 +1,105 @@
+{
+  "chapter": "CH04.01",
+  "title": "UV Unwrapping avancé",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait un seam ?",
+      "choices": [
+        "Il fusionne deux sommets",
+        "Il indique où couper la surface 3D pour la déplier à plat",
+        "Il lisse les normales",
+        "Il crée un matériau"
+      ],
+      "answer": 1,
+      "explain": "Comme les coutures d'un vêtement : on coupe pour pouvoir aplatir sans déchirer ni étirer."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où place-t-on les seams sur un objet comme le coffre ?",
+      "answer_text": "Sur les arêtes vives (angle > 50° ici) et à des endroits peu visibles ; une surface courbe développable (couvercle) peut rester d'un seul tenant."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que montre un damier (UV Grid) bien déplié ?",
+      "choices": [
+        "Des carrés réguliers de même taille partout",
+        "Des bandes étirées",
+        "Des carrés de tailles variées",
+        "Rien de particulier"
+      ],
+      "answer": 0,
+      "explain": "Des bandes ou des carrés étirés = distorsion (starter du chapitre : étirement moyen 1,59)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelles méthodes d'Unwrap propose la 5.3 ?",
+      "answer_text": "Unwrap Angle Based, Unwrap Conformal, Unwrap Minimum Stretch (menu UV > Unwrap), plus Smart UV Project, Follow Active Quads, Cube Projection."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment le correcteur mesure-t-il la distorsion ?",
+      "answer_text": "Par triangle, le rapport des valeurs singulières du jacobien 3D→UV (1 = aucune distorsion) ; moyenne pondérée par l'aire ≤ 1,15 et 95ᵉ centile ≤ 1,6."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "À quoi sert Average Islands Scale ?",
+      "choices": [
+        "À agrandir tout le dépliage",
+        "À donner la même densité de texels à tous les îlots",
+        "À supprimer les seams",
+        "À tourner les îlots"
+      ],
+      "answer": 1,
+      "explain": "Sans lui, une face de 1 m peut avoir autant de pixels qu'une de 10 cm : texture floue ici, nette là."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi éviter le chevauchement d'îlots ?",
+      "answer_text": "Deux faces qui partagent les mêmes pixels partagent la même peinture ; incompatible avec le baking et la peinture. (Exception volontaire : miroir de parties symétriques.)"
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Dans quel intervalle doivent se trouver les UV pour une texture simple ?",
+      "choices": [
+        "[0, 1] × [0, 1]",
+        "[-1, 1]",
+        "[0, 100]",
+        "Aucune contrainte"
+      ],
+      "answer": 0,
+      "explain": "Hors du carré, la texture se répète (ou tombe dans une autre tuile UDIM : CH04.02)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la valeur d'occupation de l'espace UV de la solution, et pourquoi la viser haut ?",
+      "answer_text": "68 % ; un espace UV perdu est une résolution de texture perdue (le correcteur exige ≥ 50 %)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle option règle l'écart entre les îlots dans Pack Islands ?",
+      "answer_text": "Margin (avec Margin Method : Scaled, Add ou Fraction) ; une marge trop faible fait « baver » un îlot sur l'autre au mip-mapping et au baking."
+    }
+  ]
+}

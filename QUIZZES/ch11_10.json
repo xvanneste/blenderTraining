@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.10",
+  "title": "Cohérence visuelle",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que mesure le rapport 1,86 du départ ?",
+      "choices": [
+        "Le dessus du cube est presque deux fois plus lumineux que le sol de la plaque (en luminance affichée)",
+        "La taille",
+        "La couleur",
+        "Le bruit"
+      ],
+      "answer": 0,
+      "explain": "Avec Exposure −2 : 1,01."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi −2 diaphragmes et non −1 ?",
+      "choices": [
+        "La luminance affichée est comprimée par l'encodage sRGB : −1 donne encore 1,37",
+        "Par hasard",
+        "Pour le bruit",
+        "Pour la couleur"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : −1 → 1,37 ; −2 → 1,01 (rapport sur les valeurs affichées)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que mesure la dominante ?",
+      "choices": [
+        "L'écart de (rouge − bleu) entre le cube et le sol de la plaque",
+        "La saturation",
+        "La luminosité",
+        "Le grain"
+      ],
+      "answer": 0,
+      "explain": "Départ −0,20 : cube plus bleu que la plaque ; solution +0,007."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi corriger le cube seul et non l'image composée ?",
+      "answer_text": "La plaque est déjà juste : corriger l'image entière la fausserait ; on raccorde l'élément 3D à la plaque."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre exposure_only ?",
+      "answer_text": "Un cube à la bonne luminosité mais neutre : écart de dominante −0,169 : un seul critère juste ne suffit pas."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur mesure-t-il le grain ?",
+      "choices": [
+        "Deux rendus à graines différentes : écart-type de la différence / √2",
+        "À l'œil",
+        "Par la taille du fichier",
+        "Par la couleur"
+      ],
+      "answer": 0,
+      "explain": "Bruit du cube 0,012 (2 échantillons) contre 0,011 pour la plaque."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi baisser les échantillons au lieu d'ajouter du bruit ?",
+      "choices": [
+        "Il n'y a pas de nœud de grain dédié trouvé en 5.3 : on s'appuie sur le bruit naturel de Cycles non débruité",
+        "Pour la vitesse seulement",
+        "C'est interdit d'ajouter du bruit",
+        "Par habitude"
+      ],
+      "answer": 0,
+      "explain": "Solution : 2 échantillons sans débruitage."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une plage de 0,008 à 0,025 et non une valeur exacte ?",
+      "answer_text": "Le bruit varie avec la graine et le patch ; la plaque mesure 0,011 : on accepte un facteur de l'ordre de 2 autour de cette valeur."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que manque-t-il à ce contrôle qualité ?",
+      "answer_text": "Noirs, flou de mouvement, distorsion, reflets du sol sur l'objet, netteté : le chapitre n'en mesure que trois critères."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un patch sur le dessus d'un cube gris : pas de matériaux complexes ni de texture ; l'exposition est comparée en valeurs affichées, pas en lumière."
+    }
+  ]
+}

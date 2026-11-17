@@ -1,0 +1,68 @@
+{
+  "code": "CH06.03",
+  "title": "Skinning",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Le skinning relie un maillage à une armature : chaque sommet reçoit des poids qui disent quels bones l'entraînent. Ce chapitre lie un bras-tube à une armature de deux bones par Automatic Weights, puis contrôle la qualité des poids : sommets tous pesés, poids normalisés, au plus quatre influences, groupes nommés comme les bones. Le correcteur plie réellement le coude de 90° et mesure : racine immobile, bout solidaire de l'avant-bras, coude sans déchirure.",
+  "prereqs": [
+    "CH06.01."
+  ],
+  "objectives": [
+    "Lier un maillage à une armature (Automatic Weights).",
+    "Lire et contrôler les poids (groupes de sommets, normalisation, influences).",
+    "Évaluer un skinning par un test de pliage.",
+    "Reconnaître les défauts typiques : poids binaires, groupes mal nommés, sommets non pesés."
+  ],
+  "competences": [
+    [
+      "C06.03.a",
+      "Skinning propre",
+      "Exercice 2 (correcteur) + croquis des poids et du pliage"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Lier et lire les poids",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Contrôler par le mouvement",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_03_skinning_starter.blend",
+      "Tube et armature non liés"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_03_skinning_solution.blend",
+      "Tube lié par Automatic Weights, poids normalisés"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_03_skinning_reference.png",
+      "Gauche : poids (rouge = upper, bleu = fore) ; droite : coude plié de 90°"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sommets non pesés, poids non normalisés, poids binaires, groupes inversés, trop d'influences, sans modificateur)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_03.py",
+      "Correcteur (skinning)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_03_skinning_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_03.py\" -- --exercise skinning",
+  "deliverables": [
+    "Skinning validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.04 — IK/FK](../CH06_04_IK_FK/README.md)"
+}

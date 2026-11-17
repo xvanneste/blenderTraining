@@ -1,0 +1,69 @@
+{
+  "code": "CH05.05",
+  "title": "Attributs",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Un attribut est une donnée portée par la géométrie (par point, face, arête…) : position, normale, couleur, ou un nom que vous choisissez. Geometry Nodes peut en calculer et les stocker (Store Named Attribute) ; un shader peut les lire (nœud Attribute). Ce chapitre colorie le terrain de CH05.01 selon sa hauteur : l'arbre stocke « height » sur les points, le matériau lit « height » et choisit la couleur. Le correcteur vérifie l'attribut dans la géométrie évaluée (domaine, type, valeurs = z) et la cohérence du nom entre l'arbre et le shader.",
+  "prereqs": [
+    "CH05.01",
+    "CH04.04 (nœuds de shader)."
+  ],
+  "objectives": [
+    "Distinguer domaine (point, arête, face, coin…) et type de données d'un attribut.",
+    "Stocker un champ avec Store Named Attribute.",
+    "Lire l'attribut dans un shader avec le nœud Attribute.",
+    "Contrôler l'attribut dans le Spreadsheet et par script."
+  ],
+  "competences": [
+    [
+      "C05.05.a",
+      "Piloter un shader par un attribut",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Attributs, domaines et types",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Stocker dans l'arbre, lire dans le shader",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_05_attributes_starter.blend",
+      "Terrain déplacé sans attribut ; matériau gris uni"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_05_attributes_solution.blend",
+      "Terrain colorié par la hauteur"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_05_attributes_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans stockage, mauvais nom, mauvais domaine, shader non relié, valeur constante, nœud orphelin)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_05.py",
+      "Correcteur (attributes)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_05_attributes_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_05.py\" -- --exercise attributes --render",
+  "deliverables": [
+    "Terrain colorié par attribut validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.06 — Paramètres et interfaces](../CH05_06_PARAMETERS/README.md)"
+}

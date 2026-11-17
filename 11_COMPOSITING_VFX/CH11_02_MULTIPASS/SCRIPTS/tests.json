@@ -1,0 +1,41 @@
+{
+  "build": "build_ch11_02_files.py",
+  "validator": "validate_ch11_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_02_multipass_solution.blend",
+      "exercise": "multipass",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_02_multipass_starter.blend",
+      "exercise": "multipass",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_02_multipass_no_relight.blend",
+      "exercise": "multipass",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_02_multipass_too_strong.blend",
+      "exercise": "multipass",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_02_multipass_reversed.blend",
+      "exercise": "multipass",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_02_multipass_missing_fill.blend",
+      "exercise": "multipass",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_02_multipass_image_only.blend",
+      "exercise": "multipass",
+      "expect": false
+    }
+  ]
+}

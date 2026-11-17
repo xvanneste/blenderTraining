@@ -9,7 +9,7 @@ build_ch01_01_files.py — Fichiers du chapitre CH01.01 (interface).
 Note technique : en mode arrière-plan, Blender ne permet pas de diviser des zones ; la
 solution renomme donc un workspace existant qui possède déjà ces éditeurs. À la main,
 l'apprenant construit le sien (voir SOLUTIONS.md).
-Usage : blender -b --factory-startup --python build_ch01_01_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_01_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

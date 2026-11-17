@@ -7,7 +7,7 @@ build_ch00_07_files.py — Scénario de récupération (CH00.07).
       La copie de sauvegarde automatique (Save Versions) : elle contient encore GEO_Hero.
   COMPLETED_EXAMPLES/ch00_07_hero_scene_v002.blend
       Version récupérée et ré-enregistrée en v002.
-Usage : blender -b --factory-startup --python build_ch00_07_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch00_07_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_06_files.py",
+  "validator": "validate_ch07_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_06_overlap_solution.blend",
+      "exercise": "overlap",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_06_overlap_starter.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_no_overlap.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_too_late.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_no_followthrough.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_no_overshoot.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_no_settle.blend",
+      "exercise": "overlap",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_06_overlap_stiff.blend",
+      "exercise": "overlap",
+      "expect": false
+    }
+  ]
+}

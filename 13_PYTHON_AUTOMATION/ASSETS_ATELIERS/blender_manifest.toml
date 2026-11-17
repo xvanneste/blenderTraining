@@ -1,0 +1,12 @@
+schema_version = "1.0.0"
+id = "bcma_reperes"
+version = "1.0.0"
+name = "Repères de plan"
+tagline = "Place un repère au curseur 3D"
+maintainer = "Blender Cinema Master Academy"
+type = "add-on"
+blender_version_min = "5.3.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[build]
+paths = ["__init__.py"]

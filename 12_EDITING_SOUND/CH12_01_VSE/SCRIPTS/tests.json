@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_01_files.py",
+  "validator": "validate_ch12_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_01_vse_solution.blend",
+      "exercise": "vse",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_01_vse_starter.blend",
+      "exercise": "vse",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_01_vse_gap.blend",
+      "exercise": "vse",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_01_vse_wrong_durations.blend",
+      "exercise": "vse",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_01_vse_wrong_order.blend",
+      "exercise": "vse",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_01_vse_wrong_channel.blend",
+      "exercise": "vse",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_01_vse_frame_end.blend",
+      "exercise": "vse",
+      "expect": false
+    }
+  ]
+}

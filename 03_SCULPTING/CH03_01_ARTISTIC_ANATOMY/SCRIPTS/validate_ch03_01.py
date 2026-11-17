@@ -1,6 +1,6 @@
 """
 validate_ch03_01.py — Correcteur « Les masses du corps et le canon » (CH03.01).
-Usage : … --python validate_ch03_01.py --python-exit-code 1 -- --exercise adult|child|gesture [--render]
+Usage : … --python-exit-code 1 --python validate_ch03_01.py -- --exercise adult|child|gesture [--render]
 Mesure les boîtes englobantes (monde) des 16 masses MASS_* :
   adult   : taille 1,6–1,9 m, pieds au sol, canon 6,8–8,2 têtes, repères (menton, entrejambe, genoux,
             coudes, bout des doigts) à ± 4–5 % de la taille, carrure 1,6–2,5 têtes, symétrie G/D,

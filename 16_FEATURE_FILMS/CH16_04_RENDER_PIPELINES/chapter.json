@@ -1,0 +1,43 @@
+{
+  "code": "CH16.04",
+  "title": "Pipelines de rendu",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Découper un rendu en lots vérifiables, rejouer un lot en échec et conserver les bons produits.",
+  "prereqs": [
+    "CH16.03"
+  ],
+  "objectives": [
+    "Chaque lot indique plage, version et chemin complet de sortie.",
+    "L’inventaire détecte l’image manquante par son numéro.",
+    "La nouvelle version contient toutes ses images attendues et l’ancienne reste consultable."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Préparer le lot",
+      ""
+    ],
+    [
+      "L2",
+      "Distinguer retour et résultat",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/lots_rendu.csv",
+      "Lots de démonstration, plages locales"
+    ],
+    [
+      "../ASSETS_ATELIERS/controle_pipeline.py",
+      "Contrôles exécutables"
+    ]
+  ],
+  "pass_criteria": [
+    "Chaque lot indique plage, version et chemin complet de sortie.",
+    "L’inventaire détecte l’image manquante par son numéro.",
+    "La nouvelle version contient toutes ses images attendues et l’ancienne reste consultable."
+  ]
+}

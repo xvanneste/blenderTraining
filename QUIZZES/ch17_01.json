@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.01",
+  "title": "Character Artist",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Dans quelle vue évaluer une correction anatomique ?",
+      "type": "mcq",
+      "choices": [
+        "Seulement le portrait éclairé",
+        "Plusieurs vues neutres et une pose",
+        "Uniquement le damier UV"
+      ],
+      "answer": 1,
+      "explain": "Une silhouette s’évalue par masses et profils avant le détail. Un sculpt dense exige une cage destinée au rig."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que vérifier pour une manche ?",
+      "type": "mcq",
+      "choices": [
+        "Le nombre de noms du fichier",
+        "Le codec final",
+        "L’espace et la déformation en flexion"
+      ],
+      "answer": 2,
+      "explain": "La géométrie de vêtement doit tenir à distance du corps là où il se plie. Les cheveux se lisent d’abord comme une masse."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelle durée pour 96 images à 24 i/s ?",
+      "type": "mcq",
+      "choices": [
+        "4 s",
+        "3 s",
+        "5 s"
+      ],
+      "answer": 0,
+      "explain": "Une présentation crédible montre les choix de surface et les limites du rig. Une rotation révèle ce que le portrait de trois-quarts masque."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le coude est beau en neutre et pénètre la manche en flexion. »",
+      "answer_text": "La draperie a été ajustée dans une seule pose. Testez les extrêmes de pose, puis corrigez les poids ou le volume local du vêtement."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel indice montre qu’une correction du genou marche en film ?",
+      "answer_text": "Elle reste crédible dans au moins deux poses et dans la silhouette pendant la transition."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment montrer la contribution d’un modèle issu d’une base fournie ?",
+      "answer_text": "Citer la base et présenter précisément les zones modifiées, leurs vues et leurs validations."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel test faire avant de considérer le LOD acceptable ?",
+      "answer_text": "Comparer silhouette et déformations à la distance de caméra prévue, en mesurant le coût."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Sculpt et silhouette » vérifiable ?",
+      "answer_text": "Trois vues neutres avant/après et une cage conservée."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Vêtement et cheveux » vérifiable ?",
+      "answer_text": "Au moins une correction vérifiée sur deux poses et visible dans le filaire."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Portfolio et livraison » vérifiable ?",
+      "answer_text": "Un turntable de 4 s, trois vues fixes, une image de pose et une fiche de contribution."
+    }
+  ]
+}

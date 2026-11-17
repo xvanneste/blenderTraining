@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_03_files.py",
+  "validator": "validate_ch07_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_03_dopesheet_solution.blend",
+      "exercise": "dopesheet",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_03_dopesheet_starter.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_not_retimed.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_wrong_pivot.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_shared_action.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_late_not_shifted.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_no_range.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_03_dopesheet_wrong_values.blend",
+      "exercise": "dopesheet",
+      "expect": false
+    }
+  ]
+}

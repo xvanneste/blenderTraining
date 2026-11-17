@@ -60,7 +60,7 @@ En cinéma 3D, rien n'existe hors du cadre : la caméra est le regard du spectat
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_12_portrait_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_12.py" --python-exit-code 1 -- --exercise portrait --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_12.py" -- --exercise portrait --render
 ```
 
 ## Livrables attendus

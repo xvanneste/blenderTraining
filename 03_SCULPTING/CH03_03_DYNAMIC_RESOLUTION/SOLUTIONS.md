@@ -28,8 +28,9 @@ Note : lors d'un essai, le sol du studio, resté sélectionné, a été joint au
 
 ## Exercice 2
 `COMPLETED_EXAMPLES/ch03_03_multires_solution.blend` : Multires 5 niveaux (Catmull-Clark), Levels
-Viewport 3, Sculpt 5, Render 5 ; base de 384 faces intacte. (Aucun sculpt dans l'exemple : les
-opérateurs de sculpture plantent en arrière-plan, voir CH03.02.)
+Viewport 3, Sculpt 5, Render 5 ; base de 384 faces intacte. **Sculptée à la brosse au niveau 5** dans Blender 5.2 via MCP (*Inflate/Deflate* pour nez, pommettes, orbites et bouche, *Draw* pour les arcades, *Smooth*) :
+2 043 sommets déplacés, jusqu'à 9,7 mm, la base de 384 faces reste intacte (le détail vit dans le Multires). Le correcteur mesure le relief local au niveau max :
+0,029 mm (solution) contre 0,002 mm pour `COUNTER_EXAMPLES/ch03_03_multires_nosculpt.blend` (Multires bien réglé mais jamais sculpté : refusé).
 
 ## Exercice 3 — réponses de DECISIONS
 1 VOXEL (fusion de boules) · 2 DYNTOPO (densité locale) · 3 MULTIRES (base légère conservée) ·

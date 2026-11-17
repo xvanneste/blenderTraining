@@ -9,7 +9,7 @@ build_ch01_08_files.py — Le grand rangement (CH01.08 : collections, Outliner, 
   COMPLETED_EXAMPLES/ch01_08_living_room_solution.blend
       Collections SET / PROPS / LIGHTS / CAMERAS / HELPERS (HELPERS désactivée au rendu),
       abat-jour parenté au pied de lampe sans avoir bougé.
-Usage : blender -b --factory-startup --python build_ch01_08_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_08_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

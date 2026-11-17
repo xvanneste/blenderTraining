@@ -2,10 +2,24 @@
   "build": "build_ch00_07_files.py",
   "validator": "validate_ch00_07.py",
   "cases": [
-    {"file": "COMPLETED_EXAMPLES/ch00_07_hero_scene_v002.blend", "exercise": "recover", "expect": true},
-    {"file": "STARTER_FILES/ch00_07_recovery/ch00_07_hero_scene_v001.blend", "exercise": "recover", "expect": false}
+    {
+      "file": "COMPLETED_EXAMPLES/ch00_07_hero_scene_v002.blend",
+      "exercise": "recover",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch00_07_recovery/ch00_07_hero_scene_v001.blend",
+      "exercise": "recover",
+      "expect": false
+    }
   ],
   "extra": [
-    {"script": "test_backup.py", "args": []}
+    {
+      "script": "test_backup.py",
+      "args": []
+    },
+    {
+      "script": "verifier_echanges.py"
+    }
   ]
 }

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.06",
+  "title": "Rig quadrupède",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Combien de segments a la patte d'un quadrupède dans le méta-rig ?",
+      "choices": [
+        "Deux",
+        "Quatre : cuisse, jambe, pied, orteils (avec épaule devant)",
+        "Un",
+        "Six"
+      ],
+      "answer": 1,
+      "explain": "thigh, shin, foot, toe (front_ pour l'avant, plus shoulder) : le « genou » arrière est en réalité le jarret."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel axe suit la colonne du méta-rig quadrupède ?",
+      "choices": [
+        "X",
+        "Y (tête vers −Y, queue vers +Y)",
+        "Z",
+        "Aucun"
+      ],
+      "answer": 1,
+      "explain": "Le méta-rig est orienté comme les personnages : la face regarde −Y."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quels autres méta-rigs Rigify propose-t-on pour des créatures ?",
+      "choices": [
+        "Cat, Horse, Wolf, Bird, Shark",
+        "Seulement Human",
+        "Aucun",
+        "Dragon"
+      ],
+      "answer": 0,
+      "explain": "Les opérateurs d'ajout existent : armature_cat_metarig_add, horse, wolf, bird, shark, basic_quadruped."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le méta-rig doit-il être à l'échelle 1 et à la position 0 pour cette créature ?",
+      "answer_text": "La créature a été construite autour du méta-rig d'origine : tout écart d'échelle ou de position désaligne les os et les volumes (écarts de 22 à 44 cm mesurés avec une échelle de 1,4)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment ajuster un méta-rig à une créature différente ?",
+      "answer_text": "Échelle globale, puis ajustement des os en Edit Mode (X-Ray) : colonne, épaules, genoux/jarrets, pieds, queue ; avant de générer."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel contrôleur lève la patte avant gauche ?",
+      "choices": [
+        "front_foot_ik.L",
+        "root",
+        "head",
+        "tail"
+      ],
+      "answer": 0,
+      "explain": "Contrôleur IK du pied avant ; foot_ik.L est celui de la patte arrière gauche."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Combien de bones a le rig généré ?",
+      "choices": [
+        "34",
+        "283",
+        "706",
+        "1 000"
+      ],
+      "answer": 1,
+      "explain": "34 bones de méta-rig donnent 283 bones générés (DEF-, ORG-, MCH-, contrôleurs)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que mesure le correcteur sur les trois autres pattes ?",
+      "answer_text": "Qu'elles restent immobiles (≤ 10 mm) quand la patte avant gauche est levée de 0,15 m : pas de poids parasites entre pattes."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le contre-exemple « offset » a-t-il une patte qui ne monte pas ?",
+      "answer_text": "Le rig est à 0,5 m de la créature : les poids Automatic Weights sont calculés entre des objets qui ne coïncident pas ; la patte du maillage ne suit pas son os."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quels pièges propres à un quadrupède ?",
+      "answer_text": "Pattes arrière à jarret (articulation inversée), queue et cou à plusieurs os (spine.00x), épaules mobiles (shoulder.L/.R), poids entre pattes voisines."
+    }
+  ]
+}

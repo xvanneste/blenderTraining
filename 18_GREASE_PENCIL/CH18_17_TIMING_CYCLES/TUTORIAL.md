@@ -33,6 +33,10 @@ Insérer un dessin : *Draw > Animation > Insert Blank Keyframe (Active Layer)* (
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_17_walk_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_17.py" --python-exit-code 1 -- --exercise walk --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_17.py" -- --exercise walk --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_17_walk_reference.png` (les 12 dessins, ligne 1 = pas droit).
+
+## Variante de contrôle
+
+Construisez un tableau d’exposition de deux sections, l’une régulière, l’autre avec accélération. Faites boucler les dessins et inspectez le raccord fin-début. **Preuve** Le cycle se répète sans double pose ambiguë et la cadence annoncée correspond à la lecture.

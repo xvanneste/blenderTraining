@@ -1,0 +1,13 @@
+{
+  "build": "build_ch04_03_files.py",
+  "validator": "validate_ch04_03.py",
+  "cases": [
+    {"file": "COMPLETED_EXAMPLES/ch04_03_pbr_solution.blend", "exercise": "pbr", "expect": true, "render": true},
+    {"file": "STARTER_FILES/ch04_03_pbr_starter.blend", "exercise": "pbr", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_03_pbr_metal_dark.blend", "exercise": "pbr", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_03_pbr_mixed_metal.blend", "exercise": "pbr", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_03_pbr_glass_opaque.blend", "exercise": "pbr", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_03_pbr_white_wax.blend", "exercise": "pbr", "expect": false},
+    {"file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_03_pbr_shared_material.blend", "exercise": "pbr", "expect": false}
+  ]
+}

@@ -9,7 +9,7 @@ build_ch18_20_files.py — « Du board au layout 3D » (CH18.20, phase 18 module
   COMPLETED_EXAMPLES/ch18_20_layout_solution.blend (+ _contact.png : rendu des 3 plans, boards visibles)
       Blocking : CHR_A animé (Location, interpolation Constant) aux images 1, 73, 121 pour coïncider avec
       la silhouette du board de chaque plan ; caméras inchangées ; boards exclus du rendu final.
-Usage : blender -b --factory-startup --python build_ch18_20_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_20_files.py
 Testé avec : Blender 5.3.0.
 """
 import json

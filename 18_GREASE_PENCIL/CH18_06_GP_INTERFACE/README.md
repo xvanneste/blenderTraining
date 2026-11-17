@@ -59,7 +59,7 @@ Le Grease Pencil n'est pas un logiciel de dessin plat : chaque trait est une sui
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_06_gp_scene_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_06.py" --python-exit-code 1 -- --exercise organize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_06.py" -- --exercise organize --render
 ```
 
 ## Livrables attendus

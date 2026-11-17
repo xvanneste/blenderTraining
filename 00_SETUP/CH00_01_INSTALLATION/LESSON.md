@@ -1,5 +1,7 @@
 # CH00.01 — Leçons
 
+Pour une première séance, installez Blender si nécessaire et ouvrez le [premier jalon](TUTORIAL.md#premier-jalon--rendre-et-conserver-une-image). Les leçons ci-dessous approfondissent la préparation d’un poste.
+
 Chaque leçon suit le modèle **A. Comprendre → I. Livrables**. La théorie longue est dans
 [THEORY.md](THEORY.md), les manipulations détaillées dans [TUTORIAL.md](TUTORIAL.md).
 
@@ -14,7 +16,7 @@ Chaque leçon suit le modèle **A. Comprendre → I. Livrables**. La théorie lo
 - **À quoi ça sert dans ce cursus :** c'est l'outil central. Les autres logiciels
   (DaVinci Resolve, Audacity, outils IA…) viendront s'y brancher.
 - **Pourquoi c'est important de connaître sa licence et son cycle de versions :** pour
-  savoir ce que vous pouvez faire de vos œuvres (tout, elles vous appartiennent) et pour
+  distinguer la licence du logiciel des droits sur les œuvres et les ressources, et pour
   choisir **la bonne version au bon moment** (stable pour apprendre, LTS pour une
   production longue, jamais une daily build pour un vrai projet).
 - **Analogie :** une version de Blender, c'est comme une édition d'un manuel scolaire.
@@ -58,7 +60,7 @@ version choisie et justification (stable ou LTS).
 Quiz Q1 à Q5.
 
 ### H. Consolider
-- Blender = libre (GPL), gratuit, vos créations vous appartiennent.
+- Blender est libre et gratuit. Les ressources utilisées dans un projet ont leurs propres conditions.
 - Stable ≈ tous les 3–4 mois · LTS = 2 ans de corrections · Daily = tests uniquement.
 - On gèle la version d'un projet jusqu'à sa livraison.
 

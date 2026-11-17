@@ -13,22 +13,22 @@
 | CH11.09 Intégration 3D/réel | Shadow catcher, éclairage HDRI capturé, grain | C11.09.a intégrer un objet |
 | CH11.10 Cohérence visuelle | Atmosphère, contrôle qualité | C11.10.a vérifier une intégration |
 
-**Projet P11 :** intégration d'un élément 3D réaliste dans une prise de vue réelle.
+**Projet P11 :** [intégration d'un élément 3D dans une prise de vue](PROJECT_P11/README.md) : ombre, sol invisible, exposition, couleur et grain mesurés, avec rapport de contrôle qualité.
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH11.01 Compositor | ⬜ Non commencé |
-| CH11.02 Compositing multipasse | ⬜ Non commencé |
-| CH11.03 Masques et Cryptomatte | ⬜ Non commencé |
-| CH11.04 Depth, defocus, motion blur | ⬜ Non commencé |
-| CH11.05 Glare et effets | ⬜ Non commencé |
-| CH11.06 Color grading | ⬜ Non commencé |
-| CH11.07 Keying | ⬜ Non commencé |
-| CH11.08 Tracking et matchmoving | ⬜ Non commencé |
-| CH11.09 Intégration 3D/réel | ⬜ Non commencé |
-| CH11.10 Cohérence visuelle | ⬜ Non commencé |
+| [CH11.01 Compositor](CH11_01_COMPOSITOR/README.md) | ✅ Terminé et vérifié |
+| [CH11.02 Compositing multipasse](CH11_02_MULTIPASS/README.md) | ✅ Terminé et vérifié |
+| [CH11.03 Masques et Cryptomatte](CH11_03_MASKS/README.md) | ✅ Terminé et vérifié |
+| [CH11.04 Depth, defocus, motion blur](CH11_04_DEPTH_FX/README.md) | ✅ Terminé et vérifié |
+| [CH11.05 Glare et effets](CH11_05_GLARE/README.md) | ✅ Terminé et vérifié |
+| [CH11.06 Color grading](CH11_06_GRADING/README.md) | ✅ Terminé et vérifié |
+| [CH11.07 Keying](CH11_07_KEYING/README.md) | ✅ Terminé et vérifié |
+| [CH11.08 Tracking et matchmoving](CH11_08_TRACKING/README.md) | ✅ Terminé et vérifié |
+| [CH11.09 Intégration 3D/réel](CH11_09_INTEGRATION/README.md) | ✅ Terminé et vérifié |
+| [CH11.10 Cohérence visuelle](CH11_10_CONSISTENCY/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH11_MM_NOM/` conforme à

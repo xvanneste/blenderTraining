@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.09",
+  "title": "Boucles et simulation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que contient une zone de répétition ?",
+      "choices": [
+        "Un groupe de nœuds exécuté plusieurs fois, avec un état transmis d'une itération à la suivante",
+        "Un matériau",
+        "Un modificateur",
+        "Un attribut"
+      ],
+      "answer": 0,
+      "explain": "Repeat Input → nœuds → Repeat Output : l'état (ici la géométrie) bouclé n fois."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que donne la sortie Iteration du Repeat Input ?",
+      "choices": [
+        "Le nombre total d'itérations",
+        "Le numéro de l'itération en cours (0, 1, 2…)",
+        "Un booléen",
+        "Une géométrie"
+      ],
+      "answer": 1,
+      "explain": "On s'en sert pour placer chaque élément : rotation = Iteration × Angle."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment accumuler les marches ?",
+      "choices": [
+        "Join Geometry reçoit l'état précédent ET la nouvelle marche",
+        "Realize Instances",
+        "Set Position",
+        "Transform"
+      ],
+      "answer": 0,
+      "explain": "Sans l'état précédent dans le Join, chaque itération remplace la précédente (1 seule marche)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la géométrie de départ de la zone est-elle laissée vide ?",
+      "answer_text": "Pour que l'escalier ne contienne que les marches : le plan d'entrée ne s'y ajoute pas ; la zone part d'une géométrie vide."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle est la hauteur de la 10ᵉ marche (Iteration 9) avec Rise 0,18 ?",
+      "answer_text": "0,05 + 9 × 0,18 = 1,67 m (centre de la marche)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi translater (x = Radius) AVANT de tourner ?",
+      "choices": [
+        "L'ordre n'a pas d'importance",
+        "Une rotation tourne autour de l'origine : la translation préalable place la marche à distance de l'axe, puis la rotation la fait tourner autour",
+        "Pour économiser un nœud",
+        "Pour la couleur"
+      ],
+      "answer": 1,
+      "explain": "D'où deux Transform : (1) Translation x = Radius ; (2) Rotation z puis Translation z."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur compte-t-il les marches ?",
+      "choices": [
+        "Par composantes connexes de la géométrie évaluée",
+        "Par les noms d'objets",
+        "Par le Spreadsheet",
+        "Par le rendu"
+      ],
+      "answer": 0,
+      "explain": "Chaque marche est une pièce séparée : le nombre de composantes vaut Steps."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « no_accumulate » ?",
+      "answer_text": "Un Join sans l'état précédent : une seule marche (la dernière) au lieu de Steps ; on voit que la zone existe et tourne mais ne conserve rien."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la différence entre Repeat Zone et Simulation Zone ?",
+      "answer_text": "Repeat boucle un nombre fixe de fois dans une même image ; Simulation fait évoluer l'état image après image (cache, bake) : on y programme particules, croissance… Elle n'est pas évaluée ici."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi sert For Each Element ?",
+      "answer_text": "À exécuter des nœuds pour chaque élément d'un domaine (point, face, instance…) avec accès à ses valeurs : un traitement par élément plutôt que par champ."
+    }
+  ]
+}

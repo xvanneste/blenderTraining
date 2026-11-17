@@ -1,0 +1,68 @@
+{
+  "code": "CH08.05",
+  "title": "Fluides (Mantaflow)",
+  "phase_title": "8 — Physique et simulations",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Mantaflow simule les fluides dans un DOMAINE : une boîte qui contient le liquide (ou le gaz), alimentée par des objets FLOW (sources) et délimitée par des obstacles (EFFECTOR). La simulation est cuite (bake) : d'abord les données du fluide, puis le maillage de sa surface. Ce chapitre fait tomber un cube de liquide de 0,6 m dans un domaine de 2 m : il tombe sur le fond et s'étale. Le correcteur cuit lui-même la simulation en arrière-plan (dossier temporaire) et lit les maillages du liquide dans le cache : présence, chute, étalement, richesse du maillage.",
+  "prereqs": [
+    "CH08.01–04 (simulations pas à pas)."
+  ],
+  "objectives": [
+    "Créer un domaine de liquide et une source (Flow).",
+    "Régler la résolution et le cache.",
+    "Cuire données puis maillage.",
+    "Lire la surface du liquide dans le cache."
+  ],
+  "competences": [
+    [
+      "C08.05.a",
+      "Liquide simple",
+      "Exercice 2 (correcteur) + profils du liquide"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Domaine et source",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Cuire et mesurer",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_05_fluid_starter.blend",
+      "Domaine et source comme simples maillages, sans physique"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_05_fluid_solution.blend",
+      "Domaine liquide (résolution 32, cache 1–20, maillage) et source Flow liquide : le cube tombe et s'étale"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_05_fluid_reference.png",
+      "Surface du liquide lue dans le cache aux images 1, 10 et 20 (boîte englobante)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (source absente, source de gaz, résolution trop basse, cache trop court)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_05.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_05_fluid_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_05.py\" -- --exercise fluid",
+  "deliverables": [
+    "Liquide simple validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.06 — Fumée et feu](../CH08_06_SMOKE_FIRE/README.md)"
+}

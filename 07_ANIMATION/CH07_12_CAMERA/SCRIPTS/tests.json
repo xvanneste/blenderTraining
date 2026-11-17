@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_12_files.py",
+  "validator": "validate_ch07_12.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_12_camera_solution.blend",
+      "exercise": "camera",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_12_camera_starter.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_no_tracking.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_linear_dolly.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_too_shaky.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_no_handheld.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_rolled.blend",
+      "exercise": "camera",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_12_camera_short_dolly.blend",
+      "exercise": "camera",
+      "expect": false
+    }
+  ]
+}

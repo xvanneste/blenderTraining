@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_03_files.py",
+  "validator": "validate_ch09_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_03_natural_hdri_solution.blend",
+      "exercise": "hdri",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_03_natural_hdri_starter.blend",
+      "exercise": "hdri",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_03_natural_hdri_wrong_rotation.blend",
+      "exercise": "hdri",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_03_natural_hdri_too_dark.blend",
+      "exercise": "hdri",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_03_natural_hdri_too_bright.blend",
+      "exercise": "hdri",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_03_natural_hdri_no_hdri.blend",
+      "exercise": "hdri",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_03_natural_hdri_ldr_image.blend",
+      "exercise": "hdri",
+      "expect": false
+    }
+  ]
+}

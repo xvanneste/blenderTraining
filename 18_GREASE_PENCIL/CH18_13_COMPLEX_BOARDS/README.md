@@ -57,7 +57,7 @@ Raconter une action en images, c'est maîtriser la clarté (une idée par case),
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_13_action_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_13.py" --python-exit-code 1 -- --exercise action --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_13.py" -- --exercise action --render
 ```
 
 ## Livrables attendus

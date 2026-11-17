@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch01_04_farm_solution.blend", "Clôture liée, piquet cassé unique, table jointe, rochers séparés"],
     ["SCRIPTS/validate_ch01_04.py", "Correcteur (17 points)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_04_farm_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_04.py\" --python-exit-code 1 -- --exercise farm",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_04_farm_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_04.py\" -- --exercise farm",
   "deliverables": ["ch01_04_farm_<prenom>_v001.blend validé.", "Mini-projet : le potager."],
   "next": "[CH01.05 — Modes Object et Edit](../CH01_05_EDIT_MODE/README.md)"
 }

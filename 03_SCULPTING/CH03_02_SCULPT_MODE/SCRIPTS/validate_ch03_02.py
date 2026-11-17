@@ -1,6 +1,6 @@
 """
 validate_ch03_02.py — Correcteur « Premier sculpt : un visage simple » (CH03.02).
-Usage : … --python validate_ch03_02.py --python-exit-code 1 -- --exercise face [--render]
+Usage : … --python-exit-code 1 --python validate_ch03_02.py -- --exercise face [--render]
 Compare chaque sommet de SCULPT_Head à sa position d'origine (attribut « bcma_orig ») :
 déplacement le long de la normale d'origine. Vérifie : topologie conservée (pas de remesh), nez en
 relief, deux orbites creusées, symétrie X, arrière du crâne masqué (.sculpt_mask) ET intact, ≥ 2 Face

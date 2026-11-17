@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.03",
+  "title": "Skinning",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que contient un groupe de sommets pour le skinning ?",
+      "choices": [
+        "Les poids : l'influence du bone du même nom sur chaque sommet",
+        "Les UV",
+        "Les normales",
+        "Les matériaux"
+      ],
+      "answer": 0,
+      "explain": "Le groupe « upper » donne, pour chaque sommet, l'influence du bone upper ; le modificateur Armature l'utilise."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle commande lie un maillage à une armature avec des poids calculés ?",
+      "choices": [
+        "Ctrl+P > With Automatic Weights",
+        "Ctrl+J",
+        "Ctrl+A",
+        "Shift+D"
+      ],
+      "answer": 0,
+      "explain": "Parent With Automatic Weights (`parent_set(type='ARMATURE_AUTO')`) : maillage sélectionné, armature active."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle somme de poids par sommet pour un skinning normalisé ?",
+      "choices": [
+        "0",
+        "0,5",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explain": "La somme vaut 1 : les influences se répartissent 100 %."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi limiter à 4 influences par sommet ?",
+      "answer_text": "Les moteurs temps réel et le skinning GPU n'acceptent que 4 influences ; au-delà, les poids sont tronqués ou renormalisés (Weights > Limit Total)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un groupe nommé comme un bone ?",
+      "answer_text": "Le modificateur Armature associe un groupe à un bone par le nom : un groupe sans bone ne déforme rien (les groupes « extra » du contre-exemple)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que donnent des poids binaires (0 ou 1) au coude ?",
+      "choices": [
+        "Un pli propre",
+        "Une cassure : arêtes étirées jusqu'à ×4,3 au coude",
+        "Un volume conservé",
+        "Rien"
+      ],
+      "answer": 1,
+      "explain": "Une coupure nette des poids déchire la surface ; la transition doit être progressive."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi tester en pliant plutôt qu'en regardant les poids ?",
+      "choices": [
+        "Pour aller plus vite",
+        "Les poids semblent corrects à l'œil mais seul le mouvement montre les défauts (racine qui bouge, coude déchiré)",
+        "C'est obligatoire",
+        "Pour le rendu"
+      ],
+      "answer": 1,
+      "explain": "Le correcteur plie de 90° et mesure déplacement de la racine, solidarité du bout et allongement des arêtes."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « swapped » ?",
+      "answer_text": "Les noms des groupes upper et fore sont inversés : la racine suit l'avant-bras et inversement (430 mm d'erreur) bien que les poids existent."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les poids de l'Automatic Weights ont-ils été normalisés ?",
+      "answer_text": "La somme mesurée valait 0,978 par endroits : Weights > Normalize All (`vertex_group_normalize_all`) ramène la somme à 1."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment corriger un coude qui se plie mal ?",
+      "answer_text": "Weight Paint : brosse Smooth/Blur sur la zone du coude pour étaler la transition entre upper et fore, puis Normalize All."
+    }
+  ]
+}

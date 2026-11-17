@@ -1,0 +1,68 @@
+{
+  "code": "CH10.06",
+  "title": "EXR et couleur",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "OpenEXR est le format de l'image de rendu « scientifique » : valeurs linéaires sans limite à 1,0 (un soleil vaut 1000, pas 1), plusieurs couches dans un fichier, flottants de 16 ou 32 bits, plusieurs codecs de compression. Un mauvais réglage ne se voit pas à l'œil : il déforme les valeurs. Le correcteur écrit réellement des fichiers EXR avec vos réglages et relit la valeur d'un pixel de 1000,7 : 32 bits sans perte la restitue, 16 bits la déforme de 0,2, et le codec DWAA de plus de 0,8.",
+  "prereqs": [
+    "CH10.04 (passes, multicouche), CH09.06 (exposition)."
+  ],
+  "objectives": [
+    "Choisir entre EXR 16 et 32 bits.",
+    "Choisir un codec sans perte pour les données.",
+    "Produire un EXR multicouche avec une passe Z.",
+    "Mesurer la fidélité d'un fichier écrit."
+  ],
+  "competences": [
+    [
+      "C10.06.a",
+      "Sortie EXR correcte",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Bits et codecs",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Mesurer un EXR",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_06_exr_starter.blend",
+      "EXR monocouche, 16 bits, codec DWAA, sans passe Z : valeur relue 1001,5 au lieu de 1000,7 ; 5/32"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_06_exr_solution.blend",
+      "EXR multicouche, 32 bits, ZIP, passe Z : valeur relue 1000,700 ; 32/32"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_06_exr_reference.png",
+      "Erreur mesurée sur la valeur 1000,7 pour cinq réglages (de haut en bas : 32 bits ZIP, 32 bits PIZ, 32 bits PXR24 (0,003), 16 bits ZIP (0,2), 32 bits DWAA (0,8)) ; vert = acceptée (≤ 0,05)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (16 bits, codec avec perte, monocouche, sans passe Z)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_06.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_06_exr_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_06.py\" -- --exercise exr",
+  "deliverables": [
+    "EXR master avec ses réglages justifiés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.07 — Rendu distribué](../CH10_07_BATCH/README.md)"
+}

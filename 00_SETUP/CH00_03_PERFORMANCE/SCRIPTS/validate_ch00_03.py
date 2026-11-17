@@ -2,7 +2,7 @@
 validate_ch00_03.py — Correcteur de l'exercice « optimiser la scène lourde » (CH00.03).
 
 Usage :
-  blender -b --factory-startup <fichier.blend> --python validate_ch00_03.py --python-exit-code 1 -- --exercise optimize [--render]
+  blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch00_03.py -- --exercise optimize [--render]
 Testé avec : Blender 5.3.0.
 """
 import os
@@ -16,11 +16,22 @@ import bcma_scene_cost as C  # noqa: E402
 import bpy  # noqa: E402
 
 
+def enabled_objects(layer_collection):
+    if layer_collection.exclude or layer_collection.collection.hide_render:
+        return set()
+    enabled = {obj for obj in layer_collection.collection.objects if not obj.hide_render}
+    for child in layer_collection.children:
+        enabled.update(enabled_objects(child))
+    return enabled
+
+
 def main():
     r = L.Report("CH00.03 — Optimiser la scène lourde")
-    pebbles = [o for o in bpy.context.scene.objects if o.name.startswith("GEO_Pebble_")]
-    r.check(len(pebbles) == 200, f"200 galets toujours présents ({len(pebbles)})",
-            "Optimiser ne veut pas dire supprimer : gardez les 200 galets.", 2)
+    pebbles = [o for o in bpy.context.scene.objects if o.type == "MESH" and o.name.startswith("GEO_Pebble_")]
+    enabled = enabled_objects(bpy.context.view_layer.layer_collection)
+    r.check(len(pebbles) == 200 and all(obj in enabled for obj in pebbles),
+            f"200 galets présents et activés pour le rendu ({sum(obj in enabled for obj in pebbles)})",
+            "Gardez chaque galet et activez son rendu ainsi que celui de sa collection.", 2)
     meshes = {o.data.name for o in pebbles}
     r.check(len(meshes) <= 5, f"Maillages partagés ({len(meshes)} maillage(s) distinct(s) ≤ 5)",
             "Sélectionnez tous les galets, puis le galet de référence en dernier (actif), Ctrl+L > Link Object Data.", 3)

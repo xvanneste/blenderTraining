@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.07",
+  "title": "Composition",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que divise la règle des tiers ?",
+      "choices": [
+        "L'image en 9 par 2 lignes horizontales et 2 verticales",
+        "L'image en 3 bandes égales de couleurs",
+        "La durée du plan",
+        "Le son"
+      ],
+      "answer": 0,
+      "explain": "Les intersections sont des points forts."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où place-t-on l'horizon de préférence ?",
+      "choices": [
+        "Sur un tiers horizontal",
+        "Exactement au milieu",
+        "Hors cadre",
+        "Sur le sujet"
+      ],
+      "answer": 0,
+      "explain": "Le milieu coupe l'image en deux moitiés égales : statique."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi garder une marge autour du sujet ?",
+      "choices": [
+        "Pour éviter un cadrage qui coupe le sujet par accident",
+        "Pour le rendu",
+        "Pour la couleur",
+        "Pour la lumière"
+      ],
+      "answer": 0,
+      "explain": "Marge ≥ 3 % dans le correcteur."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi l'horizon au tiers bas coupait-il les pieds du sujet ?",
+      "answer_text": "À 67 % de la hauteur le cadre descend de 0,17 : les pieds, déjà à 85 %, sortent du cadre : l'horizon haut convient mieux avec une caméra à 1,6 m."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « centered » ?",
+      "answer_text": "Sujet à 50 % et horizon à 51 % : tout est symétrique : le plan est stable mais statique."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Shift X ?",
+      "choices": [
+        "Décale le cadre horizontalement sans tourner la caméra",
+        "Tourne la caméra",
+        "Change la focale",
+        "Déplace le sujet"
+      ],
+      "answer": 0,
+      "explain": "Positif : le sujet se déplace vers la gauche dans l'image (mesuré : +0,167 → 33 %)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel Shift Y fait monter l'horizon dans l'image ?",
+      "choices": [
+        "Négatif",
+        "Positif",
+        "Zéro",
+        "Aucun"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : −0,1 → horizon à 33 % depuis le haut ; +0,1 → 69 %."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi utiliser Shift plutôt que la rotation de la caméra ?",
+      "answer_text": "Le décalage garde les verticales parallèles (pas de perspective ascendante) : le cylindre reste vertical dans l'image."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur trouve-t-il l'horizon ?",
+      "answer_text": "Il segmente le ciel (bleu), prend pour chaque colonne sans sujet la dernière ligne de ciel et en fait la moyenne."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite d'une composition mesurée ?",
+      "answer_text": "Elle suppose un sujet unique et simple ; elle ne juge ni l'équilibre des masses ni la direction du regard (lead room)."
+    }
+  ]
+}

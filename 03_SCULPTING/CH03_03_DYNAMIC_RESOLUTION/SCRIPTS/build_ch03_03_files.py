@@ -11,7 +11,7 @@ build_ch03_03_files.py — « Choisir sa résolution : Voxel Remesh, DynTopo, Mu
   COMPLETED_EXAMPLES/ch03_03_multires_solution.blend
       Modificateur Multiresolution subdivisé 5 fois (Subdivide), Sculpt = 5, Viewport = 3, Render = 5 ;
       base inchangée ; DECISIONS complété.
-Usage : blender -b --factory-startup --python build_ch03_03_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch03_03_files.py
 Testé avec : Blender 5.3.0.
 """
 import importlib.util
@@ -163,7 +163,11 @@ def main():
     multires(False)
     L.save(os.path.join(CH, "STARTER_FILES", "ch03_03_multires_starter.blend"))
     multires(True)
-    L.save(os.path.join(out, "ch03_03_multires_solution.blend"))
+    L.save(os.path.join(out, "COUNTER_EXAMPLES", "ch03_03_multires_nosculpt.blend"))      # Multires bien réglé mais JAMAIS sculpté
+    if os.path.exists(os.path.join(out, ".sculpted_with_mcp")):
+        print("[BCMA] solution Multires sculptée à la brosse (Blender 5.2 via MCP) conservée : non régénérée")
+    else:
+        L.save(os.path.join(out, "ch03_03_multires_solution.blend"))                   # repli scripté (sans sculpt)
 
 
 if __name__ == "__main__":

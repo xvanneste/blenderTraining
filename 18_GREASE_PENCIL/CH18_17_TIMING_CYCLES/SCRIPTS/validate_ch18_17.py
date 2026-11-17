@@ -1,6 +1,6 @@
 """
 validate_ch18_17.py — Correcteur « Timing, exposition, cycle de marche » (CH18.17).
-Usage : … --python validate_ch18_17.py --python-exit-code 1 -- --exercise xsheet|walk [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_17.py -- --exercise xsheet|walk [--render]
   xsheet : chaque dessin A…H (reconnu par sa signature) commence à l'image indiquée par le texte
            XSHEET ; ordre conservé ; fin de scène = FIN.
   walk   : cycle de 16 à 32 images (pair), dessins en un ou en deux, contacts au début et à la moitié

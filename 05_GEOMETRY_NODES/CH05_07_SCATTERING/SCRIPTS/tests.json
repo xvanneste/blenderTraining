@@ -1,0 +1,42 @@
+{
+  "build": "build_ch05_07_files.py",
+  "validator": "validate_ch05_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_07_scattering_solution.blend",
+      "exercise": "scattering",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_07_scattering_starter.blend",
+      "exercise": "scattering",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_07_scattering_no_slope.blend",
+      "exercise": "scattering",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_07_scattering_no_variation.blend",
+      "exercise": "scattering",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_07_scattering_seed_unused.blend",
+      "exercise": "scattering",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_07_scattering_no_scale.blend",
+      "exercise": "scattering",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_07_scattering_floating.blend",
+      "exercise": "scattering",
+      "expect": false
+    }
+  ]
+}

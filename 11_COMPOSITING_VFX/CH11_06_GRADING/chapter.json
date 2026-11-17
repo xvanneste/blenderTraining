@@ -1,0 +1,68 @@
+{
+  "code": "CH11.06",
+  "title": "Color grading",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "L'étalonnage donne à un film sa couleur : on pousse les ombres vers une teinte et les hautes lumières vers une autre, sans changer l'exposition. Le nœud Color Balance en mode Lift/Gamma/Gain agit sur trois zones de tons : Lift sur les ombres, Gamma sur les tons moyens, Gain sur les hautes lumières. Ce chapitre étalonne une rampe de gris en « ombres froides, hautes lumières chaudes » ; le correcteur mesure la teinte de chaque zone et vérifie que la luminosité globale n'a pas bougé.",
+  "prereqs": [
+    "CH09.11 (couleur et émotion), CH11.01 (compositeur)."
+  ],
+  "objectives": [
+    "Régler Lift, Gamma et Gain d'un nœud Color Balance.",
+    "Pousser les ombres et les hautes lumières vers deux teintes.",
+    "Conserver l'exposition.",
+    "Mesurer un étalonnage."
+  ],
+  "competences": [
+    [
+      "C11.06.a",
+      "Étalonner une image",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Lift, Gamma, Gain",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Étalonner et mesurer",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_06_grading_starter.blend",
+      "Render Layers → Group Output : rampe de gris neutre (ombres 0,00, hautes lumières 0,00) ; 20/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_06_grading_solution.blend",
+      "Color Balance Lift/Gamma/Gain : Lift (0,96 ; 1,0 ; 1,04), Gain (1,08 ; 1,0 ; 0,92) : ombres +0,111 bleu−rouge, hautes lumières +0,060 rouge−bleu, écart de luminance −0,001 ; 36/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_06_grading_reference.png",
+      "Rampe de départ (haut, grise) et étalonnée (bas : ombres bleutées, hautes lumières chaudes)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (tout chaud, tout froid, inversé, trop clair, sans étalonnage)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_06.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_06_grading_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_06.py\" -- --exercise grading",
+  "deliverables": [
+    "Étalonnage commenté (valeurs).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.07 — Keying](../CH11_07_KEYING/README.md)"
+}

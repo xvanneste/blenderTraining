@@ -1,0 +1,13 @@
+plan,debut,fin,attente,lieu,actifs,responsable
+SQ010_SH010,1,264,Etablir les deux quais séparés,A01,A01+A02+N01,Réalisation
+SQ010_SH020,265,456,Mina voit le signal défaillant,A01,A02+A03,Layout
+SQ010_SH030,457,696,Noé essaie de se repérer,A06,A06+A05,Animation
+SQ010_SH040,697,960,Mina comprend la dérive du bateau,A01,A01+A02+N01,Animation
+SQ020_SH010,961,1176,Relier les regards malgré la brume,A01,A02+A03+FX01,Layout
+SQ020_SH020,1177,1416,La main atteint la balise,A01,A02+A03,Animation
+SQ020_SH030,1417,1680,Noé interprète le premier flash,A06,A05+FX01,Animation
+SQ020_SH040,1681,1920,Mina répète pour confirmer,A01,A02+A03,Lumière
+SQ030_SH010,1921,2112,Le second flash permet le changement de cap,A06,A05+FX01,Lumière
+SQ030_SH020,2113,2376,Montrer la trajectoire corrigée,A06,A06+N01,Layout
+SQ030_SH030,2377,2592,Les deux rives retrouvent leur visibilité,A01,A01+A03+FX01,Lumière
+SQ030_SH040,2593,2880,Mina quitte le cadre le signal reste,A01,A01+A02+A03,Montage

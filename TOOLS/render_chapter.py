@@ -39,7 +39,8 @@ def render(cdir):
     L += ["", "## Parcours conseillé", "",
           "1. Lire [LESSON.md](LESSON.md) leçon par leçon ; chaque leçon renvoie vers "
           "[THEORY.md](THEORY.md) (comprendre) et [TUTORIAL.md](TUTORIAL.md) (reproduire).",
-          "2. Faire les exercices de [EXERCISES.md](EXERCISES.md) dans l'ordre : facile → moyen → difficile.",
+          "2. " + meta.get("exercise_path",
+                          "Faire les exercices de [EXERCISES.md](EXERCISES.md) dans l'ordre : facile → moyen → difficile."),
           "3. Répondre au [QUIZ.md](QUIZ.md), puis corriger avec [SOLUTIONS.md](SOLUTIONS.md).",
           "4. En cas de blocage : [TROUBLESHOOTING.md](TROUBLESHOOTING.md). Sources : [RESOURCES.md](RESOURCES.md).",
           "5. Mettre à jour [PROGRESS.md](../../PROGRESS.md).", ""]

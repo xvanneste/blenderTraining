@@ -1,0 +1,42 @@
+{
+  "build": "build_ch05_06_files.py",
+  "validator": "validate_ch05_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_06_parameters_solution.blend",
+      "exercise": "parameters",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_06_parameters_starter.blend",
+      "exercise": "parameters",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_06_parameters_no_panels.blend",
+      "exercise": "parameters",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_06_parameters_no_description.blend",
+      "exercise": "parameters",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_06_parameters_unused_input.blend",
+      "exercise": "parameters",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_06_parameters_hardcoded.blend",
+      "exercise": "parameters",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_06_parameters_bad_range.blend",
+      "exercise": "parameters",
+      "expect": false
+    }
+  ]
+}

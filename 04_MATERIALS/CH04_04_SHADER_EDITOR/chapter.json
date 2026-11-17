@@ -1,0 +1,68 @@
+{
+  "code": "CH04.04",
+  "title": "Shader Editor et nœuds",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Un matériau réaliste n'est jamais une couleur unie : il varie dans l'espace. Le Shader Editor permet de construire cette variation avec des nœuds. Ce chapitre construit un acier rouillé : un bruit, passé dans une rampe de couleurs, pilote en même temps la couleur, le caractère métallique et la rugosité. Le correcteur lit le graphe de nœuds lui-même : liens, types en amont de chaque entrée, nœuds orphelins, valeurs clés.",
+  "prereqs": [
+    "CH04.03."
+  ],
+  "objectives": [
+    "Lire et construire un graphe de nœuds (liens, flux de gauche à droite).",
+    "Utiliser Texture Coordinate, Mapping, Noise Texture, Color Ramp, Mix et Map Range.",
+    "Piloter plusieurs entrées du Principled BSDF avec un même masque.",
+    "Garder un graphe propre : pas de nœud orphelin."
+  ],
+  "competences": [
+    [
+      "C04.04.a",
+      "Construire un graphe de matériau",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Lire un graphe de nœuds",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Un masque, plusieurs entrées",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_04_nodes_starter.blend",
+      "Sphère SPH_Rust, Principled BSDF par défaut"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_04_nodes_solution.blend",
+      "Acier rouillé par nœuds"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_04_nodes_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (orphelin, Metallic constant, sans Mapping, sortie non reliée, rampe plate, échelle excessive)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_04.py",
+      "Correcteur (nodes)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_04_nodes_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_04.py\" -- --exercise nodes --render",
+  "deliverables": [
+    "Graphe de rouille validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.05 — Textures procédurales](../CH04_05_PROCEDURAL_TEXTURES/README.md)"
+}

@@ -60,7 +60,7 @@ Storyboarder ne demande pas d'être illustrateur : il faut des traits assurés, 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_01_volumes_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_01.py" --python-exit-code 1 -- --exercise volumes --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_01.py" -- --exercise volumes --render
 ```
 
 ## Livrables attendus

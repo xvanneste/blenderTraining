@@ -9,18 +9,18 @@
 | CH12.05 Titres et sous-titres | Text strips, génériques, SRT | C12.05.a titrer |
 | CH12.06 Export et livraison | Codecs, conteneurs, résolutions, OpenTimelineIO, outils complémentaires (DaVinci Resolve, Audacity/Reaper, FFmpeg) | C12.06.a livrer un master |
 
-**Projet P12 :** séquence finalisée (image, montage, son, titres, export master + web).
+**Projet P12 :** [séquence finalisée](PROJECT_P12/README.md) (image, montage, son, titres, export master + web).
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH12.01 Video Sequencer | ⬜ Non commencé |
-| CH12.02 Montage narratif | ⬜ Non commencé |
-| CH12.03 Son | ⬜ Non commencé |
-| CH12.04 Mixage | ⬜ Non commencé |
-| CH12.05 Titres et sous-titres | ⬜ Non commencé |
-| CH12.06 Export et livraison | ⬜ Non commencé |
+| [CH12.01 Video Sequencer](CH12_01_VSE/README.md) | ✅ Terminé et vérifié |
+| [CH12.02 Montage narratif](CH12_02_EDITING/README.md) | ✅ Terminé et vérifié |
+| [CH12.03 Son](CH12_03_SOUND/README.md) | ✅ Terminé et vérifié |
+| [CH12.04 Mixage](CH12_04_MIX/README.md) | ✅ Terminé et vérifié |
+| [CH12.05 Titres et sous-titres](CH12_05_TITLES/README.md) | ✅ Terminé et vérifié |
+| [CH12.06 Export et livraison](CH12_06_EXPORT/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH12_MM_NOM/` conforme à

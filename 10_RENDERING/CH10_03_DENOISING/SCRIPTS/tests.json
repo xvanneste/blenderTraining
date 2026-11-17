@@ -1,0 +1,36 @@
+{
+  "build": "build_ch10_03_files.py",
+  "validator": "validate_ch10_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_03_denoising_solution.blend",
+      "exercise": "denoising",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_03_denoising_starter.blend",
+      "exercise": "denoising",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_03_denoising_no_denoise.blend",
+      "exercise": "denoising",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_03_denoising_no_prefilter.blend",
+      "exercise": "denoising",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_03_denoising_one_sample.blend",
+      "exercise": "denoising",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_03_denoising_too_many_samples.blend",
+      "exercise": "denoising",
+      "expect": false
+    }
+  ]
+}

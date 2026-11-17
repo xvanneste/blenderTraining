@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_07_plate_moved.png", "Même fichier, cutter déplacé"],
     ["SCRIPTS/validate_ch02_07.py", "Correcteur (cutters, pile, trous traversants par Euler)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_07_plate_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_07.py\" --python-exit-code 1 -- --exercise plate --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_07_plate_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_07.py\" -- --exercise plate --render",
   "deliverables": ["Platine validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la grille d'aération."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Platine validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.08 — Modélisation organique](../CH02_08_ORGANIC/README.md)"

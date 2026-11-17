@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.06",
+  "title": "EXR et couleur",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi l'EXR peut-il stocker un pixel de valeur 1000 ?",
+      "choices": [
+        "C'est un format flottant linéaire sans limite à 1,0",
+        "Il compresse les couleurs",
+        "Il est en 8 bits",
+        "Il ignore les lampes"
+      ],
+      "answer": 0,
+      "explain": "Le PNG écrête à 1,0 (blanc)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle valeur relit-on pour 1000,7 en 16 bits flottants ?",
+      "choices": [
+        "1000,5 (arrondi du demi-flottant)",
+        "1000,7",
+        "1000",
+        "0,7"
+      ],
+      "answer": 0,
+      "explain": "Un demi-flottant a un pas de 0,5 près de 1000."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait le codec DWAA ?",
+      "choices": [
+        "Compression avec perte : valeurs modifiées (1001,5 mesuré)",
+        "Compression sans perte",
+        "Rien",
+        "Il ajoute du bruit au rendu"
+      ],
+      "answer": 0,
+      "explain": "DWAA/DWAB sont destinés à l'image finale, pas aux données ni aux masters."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quels codecs sont sans perte ?",
+      "answer_text": "ZIP, ZIPS, PIZ, RLE (et NONE) : mesuré à 1000,700. PXR24 perd un peu en 32 bits (1000,703) : erreur de 0,003."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi changer de type de média remet-il la profondeur à zéro ?",
+      "answer_text": "Constaté à la construction : passer de multicouche à monocouche réinitialise la profondeur et le codec ; on les réapplique avant d'écrire. Le correcteur le fait."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur contrôle-t-il le format 32 bits d'un multicouche ?",
+      "choices": [
+        "Il lit le type du canal Combined.R dans l'en-tête (FLOAT = 2, HALF = 1)",
+        "Il regarde l'extension",
+        "Il demande à l'élève",
+        "Il mesure la taille"
+      ],
+      "answer": 0,
+      "explain": "Avec 16 bits le canal Combined.R est HALF."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi contrôle-t-il la valeur dans un EXR monocouche ?",
+      "choices": [
+        "Blender relit les pixels d'un monocouche ; un multicouche n'a pas de pixels lisibles ainsi",
+        "Par habitude",
+        "Pour la taille",
+        "Par erreur"
+      ],
+      "answer": 0,
+      "explain": "En 5.3 `images.load` d'un multicouche a renvoyé aucune donnée."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La passe Depth est-elle écrite en 16 bits quand la couleur l'est ?",
+      "answer_text": "Non : constaté, le canal Depth.Z est toujours FLOAT (32 bits), seule la couleur passe en HALF."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "L'espace colorimétrique de l'EXR est-il vérifié ?",
+      "answer_text": "Non : en relisant les pixels aucune différence n'apparaît entre Linear Rec.709 et ACEScg ; le chapitre ne l'évalue pas et recommande de garder l'espace par défaut (Linear Rec.709)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un pixel, une valeur, un rendu de 16 × 16 ; pas de lecture des couches de profondeur ni de Cryptomatte, pas de mesure de taille ni de vitesse d'écriture."
+    }
+  ]
+}

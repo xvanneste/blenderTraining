@@ -57,7 +57,7 @@ Un studio ne remodélise jamais deux fois la même chaise : il la publie dans un
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "ASSETS\ch02_13_library_<prenom>.blend" `
-  --python "02_MODELING\CH02_13_ASSETS\SCRIPTS\validate_ch02_13.py" --python-exit-code 1 -- --exercise library --render
+  --python-exit-code 1 --python "02_MODELING\CH02_13_ASSETS\SCRIPTS\validate_ch02_13.py" -- --exercise library --render
 ```
 
 ## Livrables attendus

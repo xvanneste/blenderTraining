@@ -1,0 +1,52 @@
+{
+  "build": "build_ch05_10_files.py",
+  "validator": "validate_ch05_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_10_tools_solution.blend",
+      "exercise": "tools",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_10_tools_starter.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_heavy_cone.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_realized.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_unbounded.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_not_asset.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_no_catalog.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_not_modifier.blend",
+      "exercise": "tools",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_10_tools_ignores_input.blend",
+      "exercise": "tools",
+      "expect": false
+    }
+  ]
+}

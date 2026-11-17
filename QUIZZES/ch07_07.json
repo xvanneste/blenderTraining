@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.07",
+  "title": "Posing et silhouette",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le contrapposto ?",
+      "choices": [
+        "Épaules et hanches inclinées en sens opposés",
+        "Une marche",
+        "Un type de caméra",
+        "Un modificateur"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : épaules +10°, hanches −8° dans la solution."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle jambe porte le poids ?",
+      "choices": [
+        "Celle dont le genou est tendu, sous les hanches",
+        "Celle qui est pliée",
+        "Les deux pliées",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "L'appui : cheville au sol à moins de 15 cm sous le centre des hanches."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que décrit la ligne d'action ?",
+      "choices": [
+        "La courbe principale de la pose, souvent en C ou en S",
+        "Le trajet d'une caméra",
+        "Une courbe de rendu",
+        "Un cycle"
+      ],
+      "answer": 0,
+      "explain": "Solution : colonne et haut du corps forment 18°."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi compenser la bascule des hanches par les cuisses ?",
+      "answer_text": "Sinon les jambes basculent avec les hanches et les pieds quittent le sol : le poids n'est plus posé."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la hanche de la jambe d'appui est-elle plus haute ?",
+      "answer_text": "Elle porte le poids : l'autre hanche, libérée, tombe ; les épaules compensent en sens inverse."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une bonne silhouette ?",
+      "choices": [
+        "Lisible en aplat noir, sans détail",
+        "Colorée",
+        "Détaillée",
+        "Symétrique"
+      ],
+      "answer": 0,
+      "explain": "Test : tout remplir en blanc sur noir et voir si la pose se lit."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que mesure la solidité ?",
+      "choices": [
+        "Aire de la silhouette / aire de son enveloppe convexe",
+        "Le poids",
+        "Le nombre de sommets",
+        "La taille"
+      ],
+      "answer": 0,
+      "explain": "Bras collés : 0,64 ; pose ouverte : 0,37 ; limite du correcteur 0,50."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les bras collés au corps gênent-ils ?",
+      "answer_text": "Ils se fondent dans le torse : on ne lit plus ni les bras, ni les mains, ni l'attitude ; l'enveloppe est pleine."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « both_bent » ?",
+      "answer_text": "Deux genoux pliés (28°) : aucune jambe ne soutient, les deux pieds sont au-dessus du sol : pose flottante."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi juger une pose de face et de profil ?",
+      "answer_text": "Une pose lisible de face peut s'écraser de profil ; le correcteur du chapitre mesure la face ; en production on contrôle deux vues."
+    }
+  ]
+}

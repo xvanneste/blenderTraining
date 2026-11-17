@@ -30,6 +30,10 @@ ce que vous avez **refusé** ou **corrigé** et pourquoi, l'origine des éventue
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_21_assist_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_21.py" --python-exit-code 1 -- --exercise assist --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_21.py" -- --exercise assist --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_21_assist_contact.png` (les 6 plans générés).
+
+## Variante de contrôle
+
+Choisissez un panneau proposé et listez trois incohérences observables, costume, direction ou place de l’objet. Corrigez d’abord celle qui change le raccord. **Preuve** Les versions et entrées sont documentées et la planche retouchée respecte les repères du récit.

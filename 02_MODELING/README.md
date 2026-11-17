@@ -1,5 +1,9 @@
 # PHASE 2 — MODÉLISATION PROFESSIONNELLE ⏱ 85 h · D→I
 
+[Suivre le parcours de modélisation pratique](../SITE/index.html#atelier) · [Supports et ordre des ateliers](PARCOURS_PRATIQUE/README.md)
+
+Travaillez dans Blender à chaque étape, de la caisse au personnage humain. Les chapitres ci-dessous approfondissent les outils et les méthodes de production.
+
 | Chapitre | Leçons | Compétences |
 |---|---|---|
 | CH02.01 Topologie | Quads/tris/n-gons, edge flow, pôles, densité | C02.01.a diagnostiquer une topologie |

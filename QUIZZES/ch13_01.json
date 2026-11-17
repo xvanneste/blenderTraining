@@ -1,0 +1,112 @@
+{
+  "chapter": "CH13.01",
+  "title": "Python pour artistes",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que renvoie une fonction qui ne contient que « pass » ?",
+      "choices": [
+        "None",
+        "0",
+        "Une liste vide",
+        "Une erreur"
+      ],
+      "answer": 0,
+      "explain": "Sans return, Python renvoie None : c'est l'état du starter."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel code donne les numéros 1, 2, 3 ?",
+      "choices": [
+        "range(1, 4)",
+        "range(3)",
+        "range(1, 3)",
+        "range(4)"
+      ],
+      "answer": 0,
+      "explain": "range(début, fin) exclut la fin : range(1, count + 1) pour count éléments à partir de 1."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que donne f\"{7:03d}\" ?",
+      "choices": [
+        "007",
+        "7",
+        "0007",
+        "7.0"
+      ],
+      "answer": 0,
+      "explain": "03d : entier sur 3 chiffres complété par des zéros."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi average([]) doit-elle être traitée à part ?",
+      "answer_text": "Parce que sum([]) / len([]) divise par zéro (ZeroDivisionError) ; on teste « if not valeurs » et on renvoie 0.0."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Dans grid_positions, quelle boucle est à l'intérieur : x ou y ?",
+      "answer_text": "x : il varie d'abord (ligne par ligne) ; y est la boucle extérieure, qui varie le plus lentement."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment obtenir l'objet que bpy.ops.mesh.primitive_cube_add vient de créer ?",
+      "choices": [
+        "bpy.context.object",
+        "bpy.data.cubes[0]",
+        "bpy.ops.last()",
+        "bpy.cube"
+      ],
+      "answer": 0,
+      "explain": "Le nouvel objet devient l'objet actif ; on le renomme avec ob.name."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment placer le cube à la création ?",
+      "choices": [
+        "location=position dans l'opérateur",
+        "bpy.move(cube)",
+        "Le cube se place seul",
+        "size=position"
+      ],
+      "answer": 0,
+      "explain": "primitive_cube_add(size=1.0, location=p)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « cubes_origin » ?",
+      "answer_text": "Les cubes sont créés mais tous à l'origine : il manque location=p ; seul le contrôle de position échoue (les noms et le nombre sont justes)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi tester une fonction avec des cas limites (liste vide, 0 élément) ?",
+      "answer_text": "Les erreurs se cachent dans les cas limites : division par zéro, boucle qui ne tourne jamais ; un test qui ne couvre que le cas normal les rate."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que lit-on dans une erreur Python ?",
+      "answer_text": "La dernière ligne donne le type et le message (ZeroDivisionError : division by zero) ; les lignes au-dessus donnent l'endroit (fichier, ligne)."
+    }
+  ]
+}

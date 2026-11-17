@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch18_16_bounce_reference.png", "Superposition de toutes les images"],
     ["SCRIPTS/validate_ch18_16.py", "Correcteur (keys, bounce)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_16_bounce_<prenom>_v002.blend\" `\n  --python \"SCRIPTS\\validate_ch18_16.py\" --python-exit-code 1 -- --exercise bounce --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_16_bounce_<prenom>_v002.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_16.py\" -- --exercise bounce --render",
   "deliverables": ["Poses clés validées.", "Balle complète validée.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercices 1 et 2 validés."],
   "next": "[CH18.17 — Timing, spacing, cycles](../CH18_17_TIMING_CYCLES/README.md)"

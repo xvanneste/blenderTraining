@@ -1,0 +1,42 @@
+{
+  "build": "build_ch04_10_files.py",
+  "validator": "validate_ch04_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_10_character_solution.blend",
+      "exercise": "character",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_10_character_starter.blend",
+      "exercise": "character",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_10_character_skin_opaque.blend",
+      "exercise": "character",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_10_character_skin_uniform_radius.blend",
+      "exercise": "character",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_10_character_eye_dry.blend",
+      "exercise": "character",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_10_character_hair_principled.blend",
+      "exercise": "character",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_10_character_cloth_no_sheen.blend",
+      "exercise": "character",
+      "expect": false
+    }
+  ]
+}

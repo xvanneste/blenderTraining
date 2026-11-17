@@ -6,5 +6,5 @@
 - Liens : CH03.01 (proportions), CH03.03 (densité : DynTopo, Remesh, Multires), CH03.04 (buste stylisé).
 
 Ressources produites (licence BCMA) : sphère de départ avec positions d'origine mémorisées, solution
-générée par script (méthode expliquée dans SOLUTIONS.md), rendu de contrôle regardé, correcteur avec
+sculptée à la brosse en Blender 5.2 via MCP (méthode dans SOLUTIONS.md), rendu de contrôle regardé, correcteur avec
 contre-épreuve.

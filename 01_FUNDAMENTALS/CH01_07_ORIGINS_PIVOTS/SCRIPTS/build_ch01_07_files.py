@@ -9,7 +9,7 @@ build_ch01_07_files.py — La porte et la roue (CH01.07 : origines, pivots, curs
   COMPLETED_EXAMPLES/ch01_07_door_solution.blend
       Origine de la porte placée sur la charnière (-0,45 ; 0 ; 0), porte ouverte de 90° ;
       boulons tournés de 45° autour du CENTRE DE LA ROUE (pivot = 3D Cursor).
-Usage : blender -b --factory-startup --python build_ch01_07_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_07_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

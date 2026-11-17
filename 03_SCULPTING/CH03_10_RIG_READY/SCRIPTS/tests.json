@@ -1,0 +1,52 @@
+{
+  "build": "build_ch03_10_files.py",
+  "validator": "validate_ch03_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_10_char_solution.blend",
+      "exercise": "rigready",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_tpose_ok.blend",
+      "exercise": "rigready",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_10_char_starter.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_wrong_scale.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_bad_name.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_origin_off.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_arms_down.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_asymmetric.blend",
+      "exercise": "rigready",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_10_char_floating.blend",
+      "exercise": "rigready",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.06",
+  "title": "Exposition et contraste",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un pixel « brûlé » ?",
+      "choices": [
+        "Un pixel écrêté à la valeur maximale",
+        "Un pixel noir",
+        "Un pixel rouge",
+        "Un pixel bruité"
+      ],
+      "answer": 0,
+      "explain": "Luminance ≥ 0,99 : le détail est perdu."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle vue écrête les hautes lumières ?",
+      "choices": [
+        "Standard",
+        "AgX",
+        "Filmic",
+        "Khronos PBR Neutral"
+      ],
+      "answer": 0,
+      "explain": "Standard : 4,4 % de pixels brûlés dans la scène."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Exposure +1 ?",
+      "choices": [
+        "Double la lumière (un diaphragme)",
+        "Ajoute 1 à chaque pixel",
+        "Change la vue",
+        "Ajoute du bruit"
+      ],
+      "answer": 0,
+      "explain": "L'échelle est logarithmique : +1 = ×2."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi AgX garde-t-il du détail sur la sphère émissive ?",
+      "answer_text": "Il comprime les valeurs au-delà de 1 vers une courbe douce au lieu de les couper : la sphère reste lisible (0 % brûlés)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « too_bright » ?",
+      "answer_text": "Exposure +3 avec AgX : moyenne 0,66 et 3,4 % de pixels brûlés : même une vue filmique sature si on sur-expose."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que mesure p95 − p5 ?",
+      "choices": [
+        "L'étendue des tons (contraste)",
+        "La couleur",
+        "Le bruit",
+        "La netteté"
+      ],
+      "answer": 0,
+      "explain": "Solution 0,64 ; image écrasée 0,41."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un Look ?",
+      "choices": [
+        "Un réglage de contraste et de couleur après la vue",
+        "Une lampe",
+        "Un filtre de rendu",
+        "Un matériau"
+      ],
+      "answer": 0,
+      "explain": "Exemples : AgX - Punchy, AgX - High Contrast."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi « punchy_dark » est-il refusé ?",
+      "answer_text": "Le look Punchy assombrit et contraste : moyenne 0,279 (< 0,3) : il faut compenser par l'exposition."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesure-t-on le PNG et non l'EXR ?",
+      "answer_text": "Le PNG est l'image affichée, après la vue et l'exposition ; l'EXR est linéaire, avant ces réglages."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle limite a ce chapitre ?",
+      "answer_text": "Une seule scène : les seuils sont calibrés sur elle ; une autre scène demanderait d'autres valeurs ; la mesure ne juge pas l'esthétique."
+    }
+  ]
+}

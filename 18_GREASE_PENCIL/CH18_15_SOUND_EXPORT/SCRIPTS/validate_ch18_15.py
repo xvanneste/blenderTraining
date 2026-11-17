@@ -1,6 +1,6 @@
 """
 validate_ch18_15.py — Correcteur « Son, rythme, transitions, export, révision » (CH18.15).
-Usage : … --python validate_ch18_15.py --python-exit-code 1 -- --exercise edit [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_15.py -- --exercise edit [--render]
 Vérifie dans le Video Sequencer : plans intacts (durée 456), musique avec fondus d'entrée et de
 sortie, bruitages et réplique calés sur les marqueurs des plans, fondu enchaîné SH0110 → SH0120,
 fondu au noir final, réglages d'export (MPEG-4, H.264, AAC), incrustation, notes de révision.

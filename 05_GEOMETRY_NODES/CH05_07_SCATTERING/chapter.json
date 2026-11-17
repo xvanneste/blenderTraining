@@ -1,0 +1,68 @@
+{
+  "code": "CH05.07",
+  "title": "Décors et végétation",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Une forêt crédible n'est ni une grille ni un tapis uniforme : les arbres évitent les pentes raides, diffèrent par la forme et la taille, et se répartissent de manière contrôlable. Ce chapitre assemble tout ce qui précède (terrain, distribution, instances, attributs, interface) en un outil « Forêt » : trois variantes d'arbres, échelle aléatoire, contrainte de pente et trois paramètres (Seed, Density, Max Slope). Le correcteur règle ces paramètres et mesure le résultat : arbres sur la surface, pentes respectées, variantes, effet de chaque paramètre.",
+  "prereqs": [
+    "CH05.03–06."
+  ],
+  "objectives": [
+    "Contraindre une distribution par la pente (Normal Z).",
+    "Mélanger plusieurs variantes avec Geometry to Instance et Pick Instance.",
+    "Varier l'échelle et la rotation.",
+    "Exposer et tester Seed, Density et Max Slope."
+  ],
+  "competences": [
+    [
+      "C05.07.a",
+      "Générer une forêt",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Contraintes de pente et masques",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Variantes, variation et paramètres",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_07_scattering_starter.blend",
+      "Terrain déplacé, interface vide, arbres non dispersés"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_07_scattering_solution.blend",
+      "Outil « Forêt » complet"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_07_scattering_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans contrainte de pente, sans variantes, Seed non branché, sans échelle aléatoire, arbres flottants)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_07.py",
+      "Correcteur (scattering)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_07_scattering_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_07.py\" -- --exercise scattering --render",
+  "deliverables": [
+    "Outil « Forêt » validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.08 — Architecture procédurale](../CH05_08_ARCHITECTURE/README.md)"
+}

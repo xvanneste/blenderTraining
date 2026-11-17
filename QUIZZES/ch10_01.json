@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.01",
+  "title": "EEVEE en profondeur",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'EEVEE ?",
+      "choices": [
+        "Le moteur de rendu temps réel de Blender",
+        "Un format de fichier",
+        "Un modificateur",
+        "Un éditeur de nœuds"
+      ],
+      "answer": 0,
+      "explain": "Il rend la scène de test en moins d'une seconde dans nos mesures."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait la case de l'en-tête du panneau Shadows (Sampling) ?",
+      "choices": [
+        "Active les ombres portées",
+        "Active le bruit",
+        "Change la focale",
+        "Cache le sol"
+      ],
+      "answer": 0,
+      "explain": "Rapport ombre / lumière : 0,96 sans, 0,70 avec."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que change le Raytracing dans cette scène ?",
+      "choices": [
+        "La sphère chromée reflète le sol, le mur et la boule",
+        "La couleur du ciel",
+        "La résolution",
+        "La position de la caméra"
+      ],
+      "answer": 0,
+      "explain": "Écart-type de la luminance de la sphère : 0,008 sans, 0,081 avec."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la sphère chromée est-elle un bon test ?",
+      "answer_text": "Un métal parfait n'a pas de couleur propre : il ne montre que ce qu'il reflète ; sans ray tracing il reflète seulement le monde (image plate)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Le ray tracing d'EEVEE est-il physiquement exact ?",
+      "answer_text": "Non : approximation en espace écran : ce qui n'est pas visible à l'image ne peut pas être reflété ; le reflet n'est pas celui de Cycles."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Où règle-t-on le nombre d'échantillons de rendu ?",
+      "choices": [
+        "Render Properties > Sampling > Render > Samples",
+        "Object > Visibility",
+        "World > Surface",
+        "Output > Format"
+      ],
+      "answer": 0,
+      "explain": "Panneau relu dans bl_ui/properties_render.py (taa_render_samples)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle plage le correcteur accepte-t-il ?",
+      "choices": [
+        "16 à 128",
+        "1 à 4",
+        "512 à 4096",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "Contre-exemples : 8 et 512."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi 1 échantillon avec ray tracing donne-t-il une sphère chromée mauvaise ?",
+      "answer_text": "Mesuré : avec Raytracing et 1 échantillon l'écart-type n'est que de 0,022 (bruit non lissé) contre 0,081 à 64 : le ray tracing a besoin de plusieurs échantillons pour converger."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garde-t-on Fast GI Approximation hors de cet exercice ?",
+      "answer_text": "Je n'ai pas réussi à mesurer son effet sur cette scène : l'activer ne changeait aucune zone mesurée ; le chapitre le dit au lieu de l'inventer."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une scène, trois zones fixes de l'image ; la mesure vérifie la présence d'un effet, pas sa qualité ni son temps de rendu."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """
 validate_ch02_09.py — Correcteur « Retopologiser un rocher » (CH02.09).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_09.py --python-exit-code 1 -- --exercise retopo [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_09.py -- --exercise retopo [--render]
 Écarts mesurés avec des arbres BVH (mathutils.bvhtree) entre la cage évaluée et la sculpture.
 Testé avec : Blender 5.3.0.
 """

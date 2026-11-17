@@ -1,0 +1,68 @@
+{
+  "code": "CH12.04",
+  "title": "Mixage",
+  "phase_title": "12 — Montage, son et finition",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Mixer, c'est équilibrer les sons pour que le spectateur entende ce qu'il doit entendre. Trois gestes de base : régler les niveaux (la voix domine, la musique reste en dessous), baisser la musique pendant la voix (ducking : le volume est animé) et placer les sons dans l'espace stéréo (panoramique). Enfin le niveau global ne doit ni être trop faible ni approcher le maximum. Le correcteur mixe chaque strip seul puis l'ensemble, et mesure le RMS par fenêtres d'images, la balance gauche/droite et la crête.",
+  "prereqs": [
+    "CH12.03 (son)."
+  ],
+  "objectives": [
+    "Régler les niveaux de trois sons.",
+    "Animer le volume d'un strip (ducking).",
+    "Placer un son à gauche ou à droite (pan).",
+    "Contrôler un mixage par des mesures."
+  ],
+  "competences": [
+    [
+      "C12.04.a",
+      "Mixer",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Niveaux et ducking",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Panoramique et niveau global",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch12_04_mix_starter.blend",
+      "Tous les sons à volume 1 et au centre : la musique écrase la voix (voix 0,137 pour musique 0,156), RMS global 0,157 ; 14/56"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_04_mix_solution.blend",
+      "MUSIC volume 0,3 avec ducking (0,1 pendant la réplique), VOICE 1, HIT pan −1 à 0,8 : musique 0,040, ducking 0,40, voix 8,7 × la musique, pan gauche, RMS 0,077, crête 0,60 ; 56/56"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_04_mix_reference.png",
+      "Enveloppes par strip : départ (haut : musique bleue forte sous la voix jaune) et solution (bas : musique basse, voix dominante)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans ducking, musique trop forte, sans pan, mixage trop chaud, mixage trop faible)"
+    ],
+    [
+      "SCRIPTS/validate_ch12_04.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch12_04_mix_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch12_04.py\" -- --exercise mix",
+  "deliverables": [
+    "Fiche de mixage (volumes, pan, ducking).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH12.05 — Titres et sous-titres](../CH12_05_TITLES/README.md)"
+}

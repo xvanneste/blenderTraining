@@ -1,0 +1,43 @@
+{
+  "code": "CH16.03",
+  "title": "Gestion des assets",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Réutiliser une balise liée dans deux plans et gérer une mise à jour sans perdre une adaptation locale.",
+  "prereqs": [
+    "CH16.02"
+  ],
+  "objectives": [
+    "La collection source est identifiable et ses pièces utilisent des noms distincts.",
+    "Le plan conserve la bibliothèque et la position du modèle diffère du placement source.",
+    "Une table indique source, version testée, propriétés locales et décision par plan."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Publier l’asset",
+      ""
+    ],
+    [
+      "L2",
+      "Lier et adapter",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/A03_Balise_v001.blend",
+      "Bibliothèque source v001"
+    ],
+    [
+      "../ASSETS_ATELIERS/SQ020_SH020_override.blend",
+      "Plan avec override vérifié"
+    ]
+  ],
+  "pass_criteria": [
+    "La collection source est identifiable et ses pièces utilisent des noms distincts.",
+    "Le plan conserve la bibliothèque et la position du modèle diffère du placement source.",
+    "Une table indique source, version testée, propriétés locales et décision par plan."
+  ]
+}

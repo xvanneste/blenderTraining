@@ -25,7 +25,7 @@
     ["../../SCRIPTS/bcma_backup.py", "Sauvegarde zip datée, vérifiée, avec rotation"],
     ["SCRIPTS/validate_ch00_07.py", "Correcteur de l'exercice 3"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"<dossier>\\ch00_07_hero_scene_v002.blend\" `\n  --python \"SCRIPTS\\validate_ch00_07.py\" --python-exit-code 1 -- --exercise recover",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"<dossier>\\ch00_07_hero_scene_v002.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch00_07.py\" -- --exercise recover",
   "deliverables": ["ch00_07_hero_scene_v002.blend validé.", "Sauvegarde 3-2-1 en place, restauration testée.", "Fiche de poste §8 (plan de continuité)."],
   "next": "[CH00.08 — Introduction au pipeline cinéma](../CH00_08_PIPELINE_INTRO/README.md)"
 }

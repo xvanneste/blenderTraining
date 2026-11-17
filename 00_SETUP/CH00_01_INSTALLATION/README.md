@@ -2,21 +2,14 @@
 
 **Phase :** 0 — Préparation et installation
 **Niveau :** débutant absolu
-**Durée estimée :** 2 h à 2 h 30 (théorie 40 min · pratique 70 min · évaluation 20 min)
+**Durée indicative** Première séance de 30 à 60 min si Blender est installé. Le chapitre complet se poursuit sur plusieurs séances.
 **Version :** Blender 5.3.0 (testé le 14/11/2026 sous Windows 11, i9-10900, RTX 3080, 64 Go)
 
-## Introduction
-Avant de modéliser un seul cube, un studio s'assure d'une chose : **tout le monde travaille
-sur la même version de Blender, configurée de la même manière, sur une machine dont on
-connaît les performances**. Un rendu qui sort noir, un fichier qui ne s'ouvre plus, une
-carte graphique ignorée… ces problèmes coûtent des jours en production et viennent presque
-toujours d'une installation mal comprise.
+## Première séance
 
-Dans ce chapitre, vous allez découvrir d'où vient Blender, l'installer proprement, faire
-cohabiter plusieurs versions, le lancer en ligne de commande, vérifier que votre carte
-graphique est bien utilisée et générer le **rapport système** de votre poste. Vous
-terminerez par un exercice de « dépannage » sur une scène volontairement cassée — votre
-premier réflexe de technicien.
+Ouvrez la mire, rendez-la en Cycles sur CPU, puis enregistrez un PNG et votre scène. [Faire la première image](TUTORIAL.md#premier-jalon--rendre-et-conserver-une-image)
+
+Au retour, choisissez une voie. Pour apprendre à déplacer et cadrer les objets, poursuivez vers [le premier plan](../../DOCUMENTATION/PARCOURS_PREMIER_PLAN.md). Pour préparer un poste de production, continuez ce chapitre avec le choix de version, le rendu en ligne de commande et le dépannage.
 
 ## Prérequis
 - Savoir utiliser l'explorateur de fichiers Windows (copier, décompresser un zip, créer un dossier).
@@ -29,7 +22,7 @@ premier réflexe de technicien.
 2. Choisir entre installeur, zip, version portable, Microsoft Store et Steam.
 3. Faire cohabiter plusieurs versions sans conflit et savoir où sont leurs préférences.
 4. Lancer Blender en ligne de commande (mode arrière-plan, réglages d'usine, script Python).
-5. Vérifier que Cycles voit votre GPU (CUDA / OptiX / HIP / oneAPI) et mesurer le gain de vitesse.
+5. Vérifier les périphériques Cycles disponibles. Comparer CPU et GPU lorsque le matériel le permet.
 6. Diagnostiquer les 5 causes les plus courantes d'un rendu noir ou vide.
 
 ## Compétences évaluées
@@ -81,7 +74,8 @@ premier réflexe de technicien.
 3. Votre rapport système (`system_report_<date>.md`) et votre benchmark (`benchmark_<date>.md`).
 4. Votre fiche de poste remplie (mini-projet).
 
-## Critères pour passer au chapitre suivant
-- Quiz ≥ 16/20.
+## Vérifier les acquis
+- **Premier passage** Deux PNG lisibles et deux copies versionnées du fichier de départ.
+- **Approfondissement** Quiz ≥ 16/20.
 - Exercice 3 validé par le correcteur **sans avoir lu la solution**.
 - Rapport système généré sur **votre** machine.

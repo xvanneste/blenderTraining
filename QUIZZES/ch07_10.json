@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.10",
+  "title": "Acting",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que l'intention d'un personnage ?",
+      "choices": [
+        "Ce qu'il veut ou ressent, et que le mouvement doit montrer",
+        "Sa vitesse",
+        "Sa couleur",
+        "Son rig"
+      ],
+      "answer": 0,
+      "explain": "On anime une intention, pas des bones."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment se lit une pensée ?",
+      "choices": [
+        "Dans l'immobilité d'un maintien",
+        "Dans un mouvement continu",
+        "Dans la caméra",
+        "Dans le son seul"
+      ],
+      "answer": 0,
+      "explain": "La tête reste à 55° de l'image 27 à 45 : variation 0,0° dans la solution."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qui mène un mouvement de regard ?",
+      "choices": [
+        "Les yeux et la tête, puis le corps",
+        "Les hanches",
+        "Les pieds",
+        "Tout en même temps"
+      ],
+      "answer": 0,
+      "explain": "Retard mesuré : buste 6 images après la tête, hanches 6 images après le buste."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une remarque est-elle rapide ?",
+      "answer_text": "Un événement soudain provoque une réaction rapide (5 images pour 90 % du tour de tête) ; une réaction lente se lit comme de l'indifférence."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un « beat » ?",
+      "answer_text": "Un moment d'intention dans la scène : remarquer, hésiter, décider, agir ; chaque beat a son timing."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle est la fonction de l'anticipation avant l'action ?",
+      "choices": [
+        "Préparer et annoncer l'action",
+        "Allonger la scène",
+        "Corriger un défaut",
+        "Régler la caméra"
+      ],
+      "answer": 0,
+      "explain": "Recul de 8° avant l'avance de 14°."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait l'idle ?",
+      "choices": [
+        "Établit le calme avant la réaction (immobile ≤ 2°)",
+        "Remplace l'anticipation",
+        "Boucle",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Sans idle (la tête part à l'image 5) la remarque n'est pas lisible."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le buste commence-t-il après la tête ?",
+      "answer_text": "Chaque segment lourd réagit avec un retard : la chaîne tête, buste, hanches donne l'impression d'un corps réel (overlap)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « no_hold » ?",
+      "answer_text": "Si la tête continue de bouger pendant la réflexion (14,9° de variation), le spectateur n'a pas le temps de lire la pensée."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une remarque de 20° est-elle insuffisante ?",
+      "answer_text": "Un tour de tête trop petit ne se lit pas comme un regard vers un objet ; 40° à 70° le rend lisible."
+    }
+  ]
+}

@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch18_18_shot_contact.png", "8 images clés du plan"],
     ["SCRIPTS/validate_ch18_18.py", "Correcteur (shot)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_18_shot_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_18.py\" --python-exit-code 1 -- --exercise shot --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_18_shot_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_18.py\" -- --exercise shot --render",
   "deliverables": ["Plan de 5 s validé.", "Planche d'expressions.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Plan validé par le correcteur."],
   "next": "[CH18.19 — Dessiner dans et sur la 3D](../CH18_19_DRAW_ON_3D/README.md)"

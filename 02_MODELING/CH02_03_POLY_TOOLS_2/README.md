@@ -57,7 +57,7 @@ Après les outils qui ajoutent de la matière, voici ceux qui découpent, font t
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_03_cutting_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_03.py" --python-exit-code 1 -- --exercise atelier --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_03.py" -- --exercise atelier --render
 ```
 
 ## Livrables attendus

@@ -13,7 +13,9 @@ Statuts :
 
 Usage : python TOOLS/academy_status.py
 """
+from collections import Counter
 import glob
+import hashlib
 import json
 import os
 import re
@@ -51,8 +53,35 @@ def last_results():
     data = json.load(open(p, encoding="utf-8"))
     res = {}
     for r in data["results"]:
-        res.setdefault(r["chapter"], []).append(r["ok"])
+        res.setdefault(r["chapter"], []).append(r)
     return res
+
+
+def case_label(case):
+    verdict = "VALIDÉ" if case["expect"] else "REFUSÉ"
+    return f"{case['file']} [{case['exercise']}] attendu {verdict}"
+
+
+def extra_label(extra):
+    return f"script {extra['script']}"
+
+
+def evidence_gaps(spec_bytes, recorded):
+    spec = json.loads(spec_bytes)
+    expected = Counter(case_label(case) for case in spec.get("cases", ()))
+    expected.update(extra_label(extra) for extra in spec.get("extra", ()))
+    if not expected:
+        return ["aucun scénario déclaré"]
+    got = Counter(row["test"] for row in recorded)
+    gaps = []
+    if expected - got:
+        gaps.append(f"{sum((expected - got).values())} résultat(s) déclaré(s) manquant(s)")
+    if any(not row["ok"] for row in recorded):
+        gaps.append("au moins un contrôle enregistré en échec")
+    fingerprint = hashlib.sha256(spec_bytes).hexdigest()
+    if any(row.get("spec_sha256", fingerprint) != fingerprint for row in recorded):
+        gaps.append("spécification modifiée depuis les résultats")
+    return gaps
 
 
 def chapter_status(ph, num, tests):
@@ -71,9 +100,11 @@ def chapter_status(ph, num, tests):
     name = os.path.basename(d)
     if os.path.exists(spec):
         r = tests.get(name)
-        if r and all(r):
+        with open(spec, "rb") as source:
+            gaps = evidence_gaps(source.read(), r or [])
+        if r and not gaps:
             return "✅ Terminé et vérifié", d, []
-        return "🟦 Terminé mais non vérifié", d, ["tests non exécutés ou en échec"]
+        return "🟦 Terminé mais non vérifié", d, gaps
     if os.path.exists(os.path.join(d, "DOC_ONLY")):
         return "✅ Terminé et vérifié", d, []
     return "🟦 Terminé mais non vérifié", d, ["pas de tests.json"]

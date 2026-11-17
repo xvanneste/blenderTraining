@@ -12,7 +12,7 @@ Tout ce que vous avez appris dans la phase 1 converge ici : produire une image f
 ## Prérequis
 
 - CH01.11 à CH01.13 (matériaux, caméra, éclairage).
-- CH00.01 (GPU).
+- Premier rendu de CH00.01. Le GPU est facultatif.
 
 ## Objectifs pédagogiques
 
@@ -61,7 +61,7 @@ Tout ce que vous avez appris dans la phase 1 converge ici : produire une image f
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_14_final_render_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_14.py" --python-exit-code 1 -- --exercise final
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_14.py" -- --exercise final
 ```
 
 ## Livrables attendus

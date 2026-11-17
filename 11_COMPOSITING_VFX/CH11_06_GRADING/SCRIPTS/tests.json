@@ -1,0 +1,41 @@
+{
+  "build": "build_ch11_06_files.py",
+  "validator": "validate_ch11_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_06_grading_solution.blend",
+      "exercise": "grading",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_06_grading_starter.blend",
+      "exercise": "grading",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_06_grading_all_warm.blend",
+      "exercise": "grading",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_06_grading_all_cool.blend",
+      "exercise": "grading",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_06_grading_swapped.blend",
+      "exercise": "grading",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_06_grading_too_bright.blend",
+      "exercise": "grading",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_06_grading_no_grade.blend",
+      "exercise": "grading",
+      "expect": false
+    }
+  ]
+}

@@ -36,9 +36,7 @@ Auto Perspective ✔, Undo Steps 64, Auto-Save ✔ (2 min), Save Versions 2, Rel
 Status Bar : Scene Statistics, System Memory, Video Memory, Blender Version.
 
 ## Exercice 2
-Valeurs typiques observées : T1 1–5 min, T2 30 s–2 min, T3 < 10 s. Conclusion attendue :
-les préférences rendent la navigation plus prévisible, mais **sélectionner puis cadrer**
-est la vraie accélération.
+Sélectionnez GEO_Needle puis GEO_FarBeacon dans l’Outliner et utilisez View → Frame Selected dans la vue 3D. La vue se centre sur l’objet sélectionné. Les transformations et le cadrage caméra restent inchangés. Si le second geste est plus rapide, tenez compte de la mémorisation du décor.
 
 ## Exercice 3
 Fichier de référence : `COMPLETED_EXAMPLES/ch00_02_navigation_solution.blend`.
@@ -47,12 +45,6 @@ Fichier de référence : `COMPLETED_EXAMPLES/ch00_02_navigation_solution.blend`.
   *Track To* vers `EMP_NeedleTarget` (facultative : `Ctrl+Alt+Num 0` suffit).
 - L'aiguille mesure 25 cm : à 50 mm de focale il faut être à moins de ~1 m.
 
-## Exercice 4 — procédure de restauration
-1. Fermer Blender.
-2. Renommer `%APPDATA%\Blender Foundation\Blender\5.3\config` en `config_casse`.
-3. Décompresser `config_5.3_<date>.zip` à la place (dossier `config`).
-4. Relancer Blender, lancer l'audit `--strict`.
-5. Si le fichier de démarrage reste mauvais : *File → Defaults → Load Factory Settings*
-   puis *File → Defaults → Save Startup File* (ou restaurer `startup.blend` de l'archive).
-Variante sans archive : *File → Defaults → Load Factory Settings* puis
-`bcma_prefs_profile.py --apply --save`.
+## Exercice 4 — Vérifier une restauration
+
+Dans un profil isolé, notez deux valeurs avant modification, par exemple la rotation autour de la sélection et l’échelle d’affichage. Sauvegardez cette configuration. Modifiez les deux valeurs et vérifiez que le profil d’essai les a retenues. Fermez Blender, remettez la copie du dossier config dans le profil d’essai et relancez sans paramètres d’usine. La restauration réussit si les deux valeurs correspondent de nouveau au point de départ. Si un fichier startup.blend faisait partie de l’archive, comparez aussi sa scène de démarrage.

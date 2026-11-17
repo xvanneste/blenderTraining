@@ -59,7 +59,7 @@ La subdivision transforme une cage légère en surface parfaitement lisse : c'es
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_06_subdiv_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_06.py" --python-exit-code 1 -- --exercise subdiv --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_06.py" -- --exercise subdiv --render
 ```
 
 ## Livrables attendus

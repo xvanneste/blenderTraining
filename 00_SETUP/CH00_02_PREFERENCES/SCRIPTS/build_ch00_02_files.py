@@ -9,7 +9,7 @@ build_ch00_02_files.py — Génère le terrain d'entraînement à la navigation 
   COMPLETED_EXAMPLES/ch00_02_navigation_solution.blend
      Même scène ; la caméra CAM_Needle cadre l'aiguille (résultat de l'exercice 3).
 
-Usage : blender -b --factory-startup --python build_ch00_02_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch00_02_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

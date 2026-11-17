@@ -1,6 +1,6 @@
 """
 validate_ch01_01.py — Correcteur de l'exercice 3 de CH01.01 (workspace personnalisé).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_01.py --python-exit-code 1 -- --exercise workspace
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_01.py -- --exercise workspace
 Testé avec : Blender 5.3.0.
 """
 import os

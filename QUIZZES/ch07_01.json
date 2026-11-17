@@ -1,0 +1,119 @@
+{
+  "chapter": "CH07.01",
+  "title": "Les 12 principes",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel principe consiste à déformer un objet selon son mouvement ?",
+      "choices": [
+        "Anticipation",
+        "Squash & stretch",
+        "Staging",
+        "Appeal"
+      ],
+      "answer": 1,
+      "explain": "Écrasement et étirement donnent poids et souplesse."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "L'anticipation, c'est…",
+      "choices": [
+        "Un mouvement préparatoire en sens inverse",
+        "Une pause finale",
+        "Un changement de caméra",
+        "Une texture"
+      ],
+      "answer": 0,
+      "explain": "Avant de sauter, on plie les genoux : le spectateur comprend l'action."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel principe règle la lecture claire d'une idée dans le plan ?",
+      "choices": [
+        "Staging (mise en scène)",
+        "Arcs",
+        "Timing",
+        "Exaggeration"
+      ],
+      "answer": 0,
+      "explain": "La mise en scène dirige le regard vers l'essentiel."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "« Pose to pose » s'oppose à…",
+      "choices": [
+        "Straight ahead",
+        "Arcs",
+        "Squash",
+        "Follow through"
+      ],
+      "answer": 0,
+      "explain": "Straight ahead : image après image ; pose to pose : poses clés puis intervalles."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Citez les 12 principes.",
+      "answer_text": "Squash & stretch, anticipation, staging, straight ahead et pose to pose, follow through et overlapping action, slow in et slow out, arcs, secondary action, timing, exaggeration, solid drawing, appeal."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi le volume doit-il rester constant ?",
+      "choices": [
+        "Pour le rendu",
+        "Une balle écrasée s'élargit : elle ne perd pas de matière",
+        "Pour la lumière",
+        "C'est un réglage de Blender"
+      ],
+      "answer": 1,
+      "explain": "Mesuré : Scale X = Scale Y = 1/√(Scale Z) donne un écart de volume maximal de 0,088 entre les clés."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi l'origine de la balle est-elle à sa base ?",
+      "choices": [
+        "Par hasard",
+        "L'échelle part de l'origine : la balle se déforme depuis le sol sans flotter",
+        "Pour l'éclairage",
+        "Pour les UV"
+      ],
+      "answer": 1,
+      "explain": "Contre-exemple « floating » : origine au centre, le bas de la balle est à 20 cm du sol au contact."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quelles images placez-vous les clés d'échelle du saut ?",
+      "answer_text": "1 (repos), 5 (anticipation, écrasée), 8 (décollage, étirée), 13 et 23 (en vol, étirée), 18 (sommet, neutre), 28 (contact, écrasée), 32 (rebond), 40 (repos)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la balle est-elle neutre au sommet ?",
+      "answer_text": "Au sommet, la vitesse est quasi nulle : plus d'étirement ; la forme neutre marque le temps suspendu avant la chute."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « volume_break » ?",
+      "answer_text": "On a écrasé seulement Z : la balle perd 40 % de volume à l'écrasement ; elle paraît aplatie comme un ballon qui se dégonfle."
+    }
+  ]
+}

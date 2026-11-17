@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.04",
+  "title": "IK/FK",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle est la différence entre FK et IK ?",
+      "choices": [
+        "FK : on tourne chaque os ; IK : on place l'extrémité et le solveur calcule les rotations",
+        "FK est plus rapide à rendre",
+        "IK ne s'anime pas",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "FK convient aux gestes en arc (balancement) ; IK aux contacts (main posée sur un objet, pied au sol)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert le Pole Target ?",
+      "choices": [
+        "À choisir de quel côté le coude (ou le genou) se plie",
+        "À colorer",
+        "À limiter la rotation",
+        "À étirer"
+      ],
+      "answer": 0,
+      "explain": "Le pôle oriente le plan de la chaîne : coude vers le haut ou vers le bas."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que signifie Chain Length 2 ?",
+      "choices": [
+        "Deux os sont affectés (fore et son parent upper)",
+        "Deux cibles",
+        "Deux contraintes",
+        "Deux pôles"
+      ],
+      "answer": 0,
+      "explain": "Le solveur remonte la hiérarchie sur le nombre d'os indiqué ; 0 = jusqu'à la racine."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le bras du fichier est-il pré-fléchi de 10° ?",
+      "answer_text": "Une chaîne parfaitement droite est une singularité : le solveur ne sait pas de quel côté plier et le bras reste droit (coude à 0,0 mesuré). Une légère pré-flexion vers le pôle lève l'ambiguïté."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi ik_stretch = 0 ?",
+      "answer_text": "Avec un étirement non nul, les os s'allongent quand la cible est hors de portée (0,29 m au lieu de 0,30 m au repos et 0,45 m en tension dans le contre-exemple) ; on garde des os de longueur constante."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment commuter IK et FK ?",
+      "choices": [
+        "Un driver relie l'influence de la contrainte IK à une propriété personnalisée (ik_fk)",
+        "En supprimant la contrainte",
+        "En changeant de fichier",
+        "Par un matériau"
+      ],
+      "answer": 0,
+      "explain": "Influence 1 = IK, 0 = FK ; la propriété ik_fk sert d'interrupteur animable."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que doit faire le bras en mode FK ?",
+      "choices": [
+        "Suivre ses rotations (tourner upper entraîne fore) et ignorer la cible",
+        "Suivre la cible",
+        "Se figer",
+        "Disparaître"
+      ],
+      "answer": 0,
+      "explain": "Avec l'influence à 0, la contrainte n'agit plus : seules les rotations des os comptent."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « no_driver » ?",
+      "answer_text": "L'influence de l'IK reste à 1 : le bras ne passe jamais en FK (le bout reste sur la cible : écart de 352 mm au lieu de 0 à l'attendu pour un FK)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi tester une cible hors de portée ?",
+      "answer_text": "Pour vérifier que le bras se tend sans s'étirer : longueurs conservées (0,300 m) et bout à 0,59–0,60 m de l'épaule."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur remet-il les contrôleurs à leur place ?",
+      "answer_text": "Pour ne pas modifier le fichier de l'apprenant : il déplace les contrôleurs, mesure, puis restaure l'état de départ (pose, propriété ik_fk)."
+    }
+  ]
+}

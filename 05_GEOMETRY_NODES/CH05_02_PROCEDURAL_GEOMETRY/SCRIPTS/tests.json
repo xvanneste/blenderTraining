@@ -1,0 +1,42 @@
+{
+  "build": "build_ch05_02_files.py",
+  "validator": "validate_ch05_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_02_procedural_solution.blend",
+      "exercise": "procedural",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_02_procedural_starter.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_02_procedural_no_join.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_02_procedural_no_ring.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_02_procedural_floating.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_02_procedural_short.blend",
+      "exercise": "procedural",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_02_procedural_off_center.blend",
+      "exercise": "procedural",
+      "expect": false
+    }
+  ]
+}

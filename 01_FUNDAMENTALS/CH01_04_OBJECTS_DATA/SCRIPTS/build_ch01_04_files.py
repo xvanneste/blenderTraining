@@ -8,7 +8,7 @@ build_ch01_04_files.py — La ferme : objets, données, duplication, jointure (C
       8 piquets GEO_Post_01..08 partageant le même maillage (Alt+D) sauf GEO_Post_08
       rendu unique et modifié (piquet cassé) ; table jointe en un objet GEO_Table ;
       rochers séparés en deux objets GEO_Rock_A et GEO_Rock_B.
-Usage : blender -b --factory-startup --python build_ch01_04_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_04_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

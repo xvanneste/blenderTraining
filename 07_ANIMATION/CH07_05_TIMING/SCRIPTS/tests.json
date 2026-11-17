@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_05_files.py",
+  "validator": "validate_ch07_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_05_bounce_solution.blend",
+      "exercise": "bounce",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_05_bounce_starter.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_linear.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_floaty.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_no_decay.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_same_time.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_no_rest.blend",
+      "exercise": "bounce",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_05_bounce_below_floor.blend",
+      "exercise": "bounce",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_01_files.py",
+  "validator": "validate_ch07_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_01_principles_solution.blend",
+      "exercise": "principles",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_01_principles_starter.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_no_squash.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_no_anticipation.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_no_stretch.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_volume_break.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_floating.blend",
+      "exercise": "principles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_01_principles_no_settle.blend",
+      "exercise": "principles",
+      "expect": false
+    }
+  ]
+}

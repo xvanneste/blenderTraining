@@ -1,9 +1,9 @@
 # CH00.04 — Exercices
 
-## Exercice 1 — Facile : le parcours des vues ⏱ cible 20 s
+## Exercice 1 — Facile : retrouver des vues repères
 Scène par défaut. Enchaînez : face → droite → dessus → arrière → gauche → dessous → vue
 caméra → perspective utilisateur, en annonçant à voix haute le nom affiché en haut à gauche
-de la vue. Recommencez jusqu'à tenir 20 s sans erreur.
+de la vue. **Réussite** Les huit vues sont retrouvées et la caméra a gardé son emplacement. La vitesse est facultative.
 
 ## Exercice 2 — Moyen : calibrer la pression (tablette) ⏱ 10 min
 Workspace *2D Animation*. Dessinez 5 traits : très léger → très appuyé. Ajustez *Max
@@ -11,8 +11,8 @@ Threshold* jusqu'à ce que le 5ᵉ trait atteigne l'épaisseur maximale sans for
 Sans tablette : faites l'exercice à la souris et constatez qu'aucune variation n'existe —
 notez ce que cela implique pour les phases 3, 4 et 18.
 
-## Exercice 3 — Difficile : navigation « handicapée » (SANS procédure) ⏱ 10 min
-Débranchez la souris (ou interdisez-vous le bouton du milieu) et le pavé numérique.
+## Exercice 3 — Difficile : navigation sans pavé ni bouton du milieu ⏱ 10 min
+Gardez votre matériel branché et choisissez des commandes qui ne requièrent ni pavé numérique ni bouton du milieu.
 Avec les seuls trackpad/clic gauche/clavier principal, réalisez : orbite autour du cube,
 vue de dessus, cadrage du cube, vue caméra, retour en perspective. Notez quels réglages et
 quels éléments d'interface vous ont permis d'y arriver.

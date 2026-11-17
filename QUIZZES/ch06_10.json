@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.10",
+  "title": "Contrôleurs et ergonomie",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle famille de bones déforme le maillage ?",
+      "choices": [
+        "Les contrôleurs",
+        "Les bones DEF-",
+        "Les bones MCH-",
+        "Tous"
+      ],
+      "answer": 1,
+      "explain": "Seuls les DEF- ont use_deform ; les contrôleurs et le mécanisme ne déforment pas."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi masquer les collections Deform et Mechanism ?",
+      "choices": [
+        "Pour le rendu",
+        "L'animateur n'a jamais à les toucher ; moins de bruit à l'écran",
+        "C'est obligatoire",
+        "Pour accélérer"
+      ],
+      "answer": 1,
+      "explain": "Les masquer évite les erreurs et allège la vue."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment les DEF- suivent-ils les contrôleurs dans l'exercice ?",
+      "choices": [
+        "Par parenté simple",
+        "Par Copy Transforms (World → World)",
+        "Par un shape key",
+        "Par un modificateur"
+      ],
+      "answer": 1,
+      "explain": "Chaque DEF- copie la transformation de son contrôleur."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un contrôleur ne doit-il pas déformer ?",
+      "answer_text": "Il pourrait peser sur le maillage (poids automatiques) et le déformer en double ; la séparation contrôle/déformation garde le rig propre et réutilisable."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que mesure le correcteur sur le comportement ?",
+      "answer_text": "Que tourner ctl_arm.L de 30° fait tourner DEF-arm.L de 30° sans toucher au bras droit, et que tourner ctl_spine de 20° entraîne les deux bras."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Où range-t-on les objets WGT_ ?",
+      "choices": [
+        "Dans la scène visible",
+        "Dans une collection masquée",
+        "Dans l'armature",
+        "Nulle part"
+      ],
+      "answer": 1,
+      "explain": "Les formes personnalisées sont des objets ordinaires : on les range dans une collection masquée (WIDGETS)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est l'intérêt de verrouiller Location et Scale d'un contrôleur de bras ?",
+      "choices": [
+        "Il devient invisible",
+        "L'animateur ne peut que le tourner : aucun geste interdit",
+        "Il ne se déforme plus",
+        "Il se copie"
+      ],
+      "answer": 1,
+      "explain": "Les verrous empêchent des erreurs de manipulation (déplacer ou étirer un bras par accident)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une couleur différente à gauche et à droite ?",
+      "answer_text": "Pour repérer le côté d'un coup d'œil, en particulier en pose de profil ou avec des contrôleurs qui se superposent."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quels sont les verrous de l'exercice ?",
+      "answer_text": "ctl_arm.L/.R : Location et Scale verrouillés (rotation seule) ; ctl_spine : Scale verrouillé."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi tester le comportement après avoir organisé le rig ?",
+      "answer_text": "Parce que ranger des bones, changer des formes ou des verrous peut casser un lien ; le contre-exemple « broken_link » est vert sur toute la structure mais le bras ne suit plus."
+    }
+  ]
+}

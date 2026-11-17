@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.09",
+  "title": "Forces",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Selon quel axe un champ Wind souffle-t-il ?",
+      "choices": [
+        "L'axe Z local de l'objet",
+        "L'axe X global",
+        "Vers la caméra",
+        "Vers le bas"
+      ],
+      "answer": 0,
+      "explain": "Rotation de 90° autour de Y : vers +X ; −90° : vers −X (mesuré)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où choisit-on les champs écoutés par un système ?",
+      "choices": [
+        "Field Weights",
+        "Collision",
+        "Cache",
+        "Render"
+      ],
+      "answer": 0,
+      "explain": "Poids par type de champ (wind, turbulence, gravity…)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel champ ajoute des tourbillons ?",
+      "choices": [
+        "Turbulence",
+        "Wind",
+        "Force",
+        "Boid"
+      ],
+      "answer": 0,
+      "explain": "Turbulence : bruit de force (Strength, Size)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que se passe-t-il si Field Weights wind = 0 ?",
+      "answer_text": "Le système ignore le vent : le nuage ne dérive pas (contre-exemple ignore_wind : x moyen 0,15 m)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi tourner le vent plutôt que le déplacer ?",
+      "answer_text": "La direction vient de la rotation (axe local Z) ; la position ne compte que pour les champs à falloff."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que mesure l'écart-type en y ?",
+      "choices": [
+        "Le brassage latéral",
+        "La dérive",
+        "La hauteur",
+        "La vitesse"
+      ],
+      "answer": 0,
+      "explain": "Sans turbulence 0,15 m ; avec 0,30 m ; turbulence seule 0,48 m."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle dérive donne le vent de force 5 à l'image 60 ?",
+      "choices": [
+        "Environ 4 m",
+        "0,1 m",
+        "40 m",
+        "Négative"
+      ],
+      "answer": 0,
+      "explain": "x moyen 4,06 m (vent seul) ; 3,9 m avec turbulence."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la turbulence réduit-elle un peu la dérive ?",
+      "answer_text": "Elle disperse les particules : la moyenne en x passe de 4,06 à 3,9 m."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « weak_wind » ?",
+      "answer_text": "Un vent de force 0,3 : x moyen 0,14 m : la gravité à 20 % et l'impulsion initiale dominent."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi lire les images dans l'ordre ?",
+      "answer_text": "Les particules sont une simulation : positions calculées image par image depuis l'image 1."
+    }
+  ]
+}

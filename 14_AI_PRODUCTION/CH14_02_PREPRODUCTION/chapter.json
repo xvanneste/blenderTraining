@@ -1,0 +1,43 @@
+{
+  "code": "CH14.02",
+  "title": "IA en préproduction",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Passer de trois propositions écrites à un dossier de préproduction dont chaque plan a un rôle.",
+  "prereqs": [
+    "CH14.01"
+  ],
+  "objectives": [
+    "Trois versions indiquent situation, décision et conséquence.",
+    "La version retenue tient en un décor, un personnage et un objet.",
+    "Une planche de trois cadres et une liste de plans de même ordre."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Générer des options",
+      ""
+    ],
+    [
+      "L2",
+      "Trier et réécrire",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/cas_hybride.md",
+      "Brief, prompts et réponses de simulation"
+    ],
+    [
+      "../../18_GREASE_PENCIL/CH18_14_ANIMATIC/README.md",
+      "Guide animatique Grease Pencil"
+    ]
+  ],
+  "pass_criteria": [
+    "Trois versions indiquent situation, décision et conséquence.",
+    "La version retenue tient en un décor, un personnage et un objet.",
+    "Une planche de trois cadres et une liste de plans de même ordre."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "code": "CH03.10",
+  "title": "Préparation au rigging",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Avant d'être riggé, un personnage doit être « rig-ready » : bien nommé, à l'échelle réelle, transformations appliquées, origine au sol entre les pieds, face vers −Y, symétrique, en pose A ou T avec les jambes écartées, maillage propre. Ce chapitre part d'un mannequin volontairement sale (nom « Mannequin.001 », échelle 100 non appliquée, origine au centre, penché de 4°) et le livre propre. Le correcteur vérifie chaque point par mesure.",
+  "prereqs": [
+    "CH03.01 à CH03.09.",
+    "CH01 (transformations, origine, collections)."
+  ],
+  "objectives": [
+    "Nommer, ranger et appliquer les transformations d'un personnage.",
+    "Fixer l'origine, l'échelle et l'orientation.",
+    "Choisir et contrôler une pose de rig (A ou T) et la symétrie."
+  ],
+  "competences": [
+    [
+      "C03.10.a",
+      "Livrer un personnage rig-ready",
+      "Exercice 2 (correcteur) + grille"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Conventions : nom, échelle, origine, orientation",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Pose, symétrie, propreté",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch03_10_char_starter.blend",
+      "Mannequin sale à nettoyer"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_10_char_solution.blend",
+      "CHR_Hero_Body prêt pour le rig (pose A)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_10_char_reference.png",
+      "Face, profil"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (échelle, nom, origine, bras le long du corps, asymétrie, flottant) + une pose en T VALIDE"
+    ],
+    [
+      "SCRIPTS/validate_ch03_10.py",
+      "Correcteur (rigready)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_10_char_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_10.py\" -- --exercise rigready --render",
+  "deliverables": [
+    "Personnage rig-ready validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[Phase 4 — UV, matériaux, textures](../../04_MATERIALS/README.md)"
+}

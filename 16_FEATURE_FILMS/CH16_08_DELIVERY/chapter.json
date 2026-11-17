@@ -1,0 +1,43 @@
+{
+  "code": "CH16.08",
+  "title": "Livraison et archivage",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Livrer et rouvrir un paquet traçable, avec un master de travail, une copie de revue et des sous-titres.",
+  "prereqs": [
+    "CH16.07"
+  ],
+  "objectives": [
+    "Les durées, la cadence, le plan de couleur et les canaux audio sont documentés.",
+    "Le manifeste connaît chaque pièce et un dossier différent permet de tout rouvrir.",
+    "Le rapport de réception liste format observé, pièce de preuve et verdict par fichier."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Fabriquer les éléments",
+      ""
+    ],
+    [
+      "L2",
+      "Placer dans l’archive",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/livraison_demo.zip",
+      "Paquet portable de démonstration 15 s"
+    ],
+    [
+      "../ASSETS_ATELIERS/controle_pipeline.py",
+      "Vérification d’intégrité et de sous-titres"
+    ]
+  ],
+  "pass_criteria": [
+    "Les durées, la cadence, le plan de couleur et les canaux audio sont documentés.",
+    "Le manifeste connaît chaque pièce et un dossier différent permet de tout rouvrir.",
+    "Le rapport de réception liste format observé, pièce de preuve et verdict par fichier."
+  ]
+}

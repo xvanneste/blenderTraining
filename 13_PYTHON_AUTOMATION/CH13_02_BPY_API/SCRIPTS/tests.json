@@ -1,0 +1,36 @@
+{
+  "build": "build_ch13_02_files.py",
+  "validator": "validate_ch13_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch13_02_bpy_solution.blend",
+      "exercise": "bpy",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch13_02_bpy_starter.blend",
+      "exercise": "bpy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_02_bpy_shared_mesh.blend",
+      "exercise": "bpy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_02_bpy_missing_marker.blend",
+      "exercise": "bpy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_02_bpy_marker_high.blend",
+      "exercise": "bpy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_02_bpy_wrong_active.blend",
+      "exercise": "bpy",
+      "expect": false
+    }
+  ]
+}

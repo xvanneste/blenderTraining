@@ -7,9 +7,9 @@ build_ch01_05_files.py — De la boîte à la maison (CH01.05, Edit Mode).
       proportionnelle.
   COMPLETED_EXAMPLES/ch01_05_house_solution.blend
       GEO_House avec un toit à deux pans : face du haut extrudée de 1 m puis mise à
-      l'échelle 0 sur X (faîtage parallèle à Y à z = 3) ; GEO_Practice avec une « colline »
+      l'échelle 0 sur X et fusionnée (faîtage parallèle à Y à z = 3) ; GEO_Practice avec une « colline »
       (sommet central monté de 1 m en édition proportionnelle).
-Usage : blender -b --factory-startup --python build_ch01_05_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_05_files.py
 Testé avec : Blender 5.3.0.
 """
 import os
@@ -26,7 +26,8 @@ GEO_House (Tab pour entrer en Edit Mode) :
 1. Mode face (3), cliquez la face du haut.
 2. E (extruder) puis 1 Entrée : la face monte de 1 m.
 3. S X 0 Entrée : la face s'écrase en une arête -> un toit à deux pans, faîtage à z = 3.
-4. Tab pour revenir en Object Mode.
+4. Mode sommet, M > By Distance pour fusionner les sommets du faîtage. A puis Shift+N.
+5. Tab pour revenir en Object Mode.
 GEO_Practice (grille) : sélectionnez le sommet central, activez l'édition proportionnelle
 (O), G Z 1 Entrée en réglant le rayon à la molette pendant le déplacement -> une colline.
 """
@@ -45,10 +46,13 @@ def build(solution):
         top = [f for f in bm.faces if f.normal.z > 0.9][0]
         res = bmesh.ops.extrude_face_region(bm, geom=[top])
         verts = [e for e in res["geom"] if isinstance(e, bmesh.types.BMVert)]
+        if top.is_valid:
+            bmesh.ops.delete(bm, geom=[top], context="FACES_ONLY")
         for v in verts:
             v.co.z += 1.0
             v.co.x = 0.0
-        bm.normal_update()
+        bmesh.ops.remove_doubles(bm, verts=verts, dist=0.0001)
+        bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
         bm.to_mesh(house.data)
         bm.free()
         # colline : sommet central +1 m, voisins atténués (édition proportionnelle, lissage)

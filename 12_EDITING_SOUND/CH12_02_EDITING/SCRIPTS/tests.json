@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_02_files.py",
+  "validator": "validate_ch12_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_02_editing_solution.blend",
+      "exercise": "editing",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_02_editing_starter.blend",
+      "exercise": "editing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_02_editing_jump_cut.blend",
+      "exercise": "editing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_02_editing_slow_rhythm.blend",
+      "exercise": "editing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_02_editing_no_resolution.blend",
+      "exercise": "editing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_02_editing_no_crossfade.blend",
+      "exercise": "editing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_02_editing_frame_end.blend",
+      "exercise": "editing",
+      "expect": false
+    }
+  ]
+}

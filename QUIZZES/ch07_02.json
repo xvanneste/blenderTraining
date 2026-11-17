@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.02",
+  "title": "Keyframes et timeline",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une clé ?",
+      "choices": [
+        "Une valeur de propriété à une image donnée",
+        "Un objet",
+        "Un marqueur",
+        "Un matériau"
+      ],
+      "answer": 0,
+      "explain": "Entre deux clés, Blender interpole la valeur."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle touche insère une clé en vue 3D (keymap par défaut) ?",
+      "choices": [
+        "I",
+        "K",
+        "Tab",
+        "M"
+      ],
+      "answer": 0,
+      "explain": "I insère une clé (anim.keyframe_insert) ; K ouvre le menu de Keying Set."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle cadence le chapitre utilise-t-il ?",
+      "choices": [
+        "24 i/s",
+        "1 i/s",
+        "1000 i/s",
+        "Toujours 60"
+      ],
+      "answer": 0,
+      "explain": "Le chapitre fixe 24 images par seconde ; d'autres cadences existent selon la diffusion."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que règle la plage de la timeline ?",
+      "answer_text": "Les images de début et de fin de l'animation (ici 1 à 72) : ce que Blender lit et rend."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi poser les clés de position et de rotation séparément ?",
+      "answer_text": "Pour contrôler indépendamment le timing de chaque canal : ici la rotation se fait pendant que la position est maintenue."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment obtient-on un maintien ?",
+      "choices": [
+        "Deux clés consécutives de même valeur",
+        "Une clé unique",
+        "Un marqueur",
+        "Un driver"
+      ],
+      "answer": 0,
+      "explain": "Avec des poignées Auto Clamped, deux clés égales donnent une valeur constante entre elles (X = 4 de l'image 24 à 48)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle interpolation donne une vitesse constante ?",
+      "choices": [
+        "Constant",
+        "Linear",
+        "Bezier (par défaut)",
+        "Aucune"
+      ],
+      "answer": 1,
+      "explain": "Linear : 22,5° à l'image 30 ; Bezier par défaut : 14,1° (mesuré)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Où change-t-on l'interpolation des clés (keymap par défaut) ?",
+      "answer_text": "Dope Sheet ou Graph Editor : T (interpolation_type), puis Linear."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder des poignées « Auto Clamped » ?",
+      "answer_text": "Elles évitent les dépassements : X reste entre 0 et 4 ; avec d'autres poignées la courbe peut sortir de l'intervalle des clés."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi servent des marqueurs ?",
+      "answer_text": "À repérer des moments clés (arrive, turn_end) ; M les ajoute en timeline, F2 ouvre le nom du marqueur (keymap par défaut)."
+    }
+  ]
+}

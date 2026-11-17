@@ -1,6 +1,6 @@
 """
 validate_ch18_14.py — Correcteur « Du scénario à l'animatique » (CH18.14).
-Usage : … --python validate_ch18_14.py --python-exit-code 1 -- --exercise animatic|layout [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_14.py -- --exercise animatic|layout [--render]
   animatic : liste SHOTLIST → images de début ; une image clé GP (≥ 3 traits) par plan sur USER_Panels,
              dessins différents d'un plan à l'autre ; un marqueur nommé par plan à la bonne image ;
              fin de scène = durée totale ; caméra animée dans le dernier plan ; incrustation Marker/Frame.

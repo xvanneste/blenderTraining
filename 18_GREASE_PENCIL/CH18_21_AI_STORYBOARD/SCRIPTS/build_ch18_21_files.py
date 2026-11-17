@@ -10,7 +10,7 @@ build_ch18_21_files.py — « Storyboard assisté, contrôlé » (CH18.21, phase
       SHOTLIST corrigée, plans générés par shot_prep.py (6 caméras, marqueurs, boards, notes),
       AI_LOG complété (outil, demandes, ce qui a été accepté / refusé / corrigé).
 Dépend de : SCRIPTS/build_ch18_11_files.py (décor).
-Usage : blender -b --factory-startup --python build_ch18_21_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_21_files.py
 Testé avec : Blender 5.3.0.
 """
 import importlib.util

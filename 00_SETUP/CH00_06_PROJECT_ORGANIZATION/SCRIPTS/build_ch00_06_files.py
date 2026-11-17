@@ -8,7 +8,7 @@ build_ch00_06_files.py — Scène « en désordre » à remettre aux normes (CH0
   COMPLETED_EXAMPLES/ch00_06_messy_scene_solution.blend
       Même scène conforme : GEO_/CAM_/LGT_, collections SET/PROPS/LIGHTS/CAMERAS, MAT_,
       chemin relatif.
-Usage : blender -b --factory-startup --python build_ch00_06_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch00_06_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

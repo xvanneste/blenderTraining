@@ -1,0 +1,68 @@
+{
+  "code": "CH09.03",
+  "title": "Naturel et HDRI",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Pour un extérieur crédible, on n'éclaire pas avec une lampe de studio : on utilise le monde. Une image d'environnement HDRI (High Dynamic Range Image) enregistre toute la lumière autour d'un point : un ciel bleu doux ET un soleil mille fois plus lumineux. C'est cette énorme différence de valeurs qui crée une ombre nette sous un ciel qui remplit l'ombre de bleu. Ce chapitre utilise une HDRI générée par script (un coucher de soleil simplifié : ce n'est pas une photo) : vous orientez l'environnement pour que le soleil vienne du bon côté, vous réglez l'exposition, et le correcteur lit l'ombre d'un poteau sur un rendu vu du dessus.",
+  "prereqs": [
+    "CH09.01 (mesure par rendu), CH04 (nœuds de matériaux)."
+  ],
+  "objectives": [
+    "Construire un monde à Environment Texture et Mapping.",
+    "Orienter un HDRI par la rotation Z.",
+    "Régler l'exposition par Strength.",
+    "Expliquer pourquoi une image 8 bits ne donne pas d'ombre nette."
+  ],
+  "competences": [
+    [
+      "C09.03.a",
+      "Extérieur crédible",
+      "Exercice 2 (correcteur) + vue du dessus"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "HDRI et monde",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Orientation et exposition",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_03_natural_hdri_starter.blend",
+      "Le monde est déjà relié à la HDRI (rotation 0°, Strength 0,3) : soleil du mauvais côté, image sombre"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_03_natural_hdri_solution.blend",
+      "Mapping Rotation Z 180°, Strength 1 : l'ombre part vers +X, sol à 0,59"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_03_natural_hdri_reference.png",
+      "Vue du dessus : solution (ombre vers la droite) et rotation de 90° (ombre vers le haut)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (mauvaise rotation, trop sombre, trop clair, sans HDRI, image 8 bits)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_03.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_03_natural_hdri_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_03.py\" -- --exercise hdri",
+  "deliverables": [
+    "Éclairage HDRI validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.04 — Dramatique et stylisé](../CH09_04_DRAMATIC/README.md)"
+}

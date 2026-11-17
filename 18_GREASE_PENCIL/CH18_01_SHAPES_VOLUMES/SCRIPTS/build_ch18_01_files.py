@@ -13,7 +13,7 @@ build_ch18_01_files.py — Feuilles d'exercices « formes et volumes » (CH18.01
       Exemple de feuille complétée (dessin généré par script, à titre de référence technique ;
       votre dessin à main levée sera différent et c'est normal).
   COMPLETED_EXAMPLES/ch18_01_volumes_reference.png   rendu de la solution
-Usage : blender -b --factory-startup --python build_ch18_01_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_01_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,66 @@
+{
+  "build": "build_ch06_11_files.py",
+  "validator": "validate_ch06_11.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_11_bendy_solution.blend",
+      "exercise": "bendy",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_11_bendy_starter.blend",
+      "exercise": "bendy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_bendy_segments_1.blend",
+      "exercise": "bendy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_bendy_few_segments.blend",
+      "exercise": "bendy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_bendy_no_modifier.blend",
+      "exercise": "bendy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_bendy_no_deform.blend",
+      "exercise": "bendy",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_11_shot_solution.blend",
+      "exercise": "override",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_11_shot_starter.blend",
+      "exercise": "override",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_shot_linked_only.blend",
+      "exercise": "override",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_shot_appended.blend",
+      "exercise": "override",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_shot_absolute_path.blend",
+      "exercise": "override",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_11_shot_not_posed.blend",
+      "exercise": "override",
+      "expect": false
+    }
+  ]
+}

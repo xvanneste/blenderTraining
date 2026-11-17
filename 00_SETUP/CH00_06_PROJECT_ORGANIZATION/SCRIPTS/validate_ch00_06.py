@@ -1,7 +1,7 @@
 """
 validate_ch00_06.py — Correcteur « scène en désordre » (CH00.06).
 Usage :
-  blender -b --factory-startup <fichier.blend> --python validate_ch00_06.py --python-exit-code 1 -- --exercise naming
+  blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch00_06.py -- --exercise naming
 Testé avec : Blender 5.3.0.
 """
 import os

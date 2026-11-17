@@ -1,0 +1,95 @@
+{
+  "chapter": "CH15.04",
+  "title": "Planification",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Qu’est-ce qui prouve un jalon ?",
+      "type": "mcq",
+      "choices": [
+        "Une échéance tout court",
+        "Un livrable vérifiable approuvé",
+        "Un nom de dossier"
+      ],
+      "answer": 1,
+      "explain": "Un actif réutilisé se fabrique une fois puis se vérifie dans chaque plan qui en dépend."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quelle est la réserve initiale ?",
+      "type": "mcq",
+      "choices": [
+        "4 h",
+        "10 h",
+        "6 h"
+      ],
+      "answer": 2,
+      "explain": "Une réserve a un but explicite. Les estimations se mesurent en temps de travail."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que protéger en cas de réduction ?",
+      "type": "mcq",
+      "choices": [
+        "Les informations indispensables à l’histoire",
+        "Toutes les variantes d’éclairage",
+        "La résolution maximale avant la lisibilité"
+      ],
+      "answer": 0,
+      "explain": "Le planning dépend de validations, pas seulement de dates. Un plan bloqué doit rendre sa dépendance visible."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le budget double-compte le quai pour S010 et S030. »",
+      "answer_text": "La feuille de plans confond l’effort d’actif et l’effort de plan. Pointez vers un actif commun et estimez séparément ses adaptations."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Deux plans utilisent le même quai. Comment estimer les coûts ?",
+      "answer_text": "Compter le décor comme actif commun puis estimer les adaptations par plan."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Vous perdez 8 heures. Quelle décision justifier d’abord ?",
+      "answer_text": "Supprimer des variantes coûteuses qui ne changent pas le récit et garder le contact et le signal."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment lier une échéance à un vrai jalon ?",
+      "answer_text": "Nommer le livrable attendu, le critère de validation et le responsable de la décision."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Inventaire » ?",
+      "answer_text": "Les trois plans pointent vers des actifs existants."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Budget » ?",
+      "answer_text": "Le total de production vaut 34 h et le total avec réserve vaut 40 h."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Dépendances » ?",
+      "answer_text": "Chaque jalon possède un critère observable et une personne responsable."
+    }
+  ]
+}

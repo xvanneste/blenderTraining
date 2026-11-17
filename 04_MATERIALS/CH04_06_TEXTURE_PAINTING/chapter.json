@@ -1,0 +1,68 @@
+{
+  "code": "CH04.06",
+  "title": "Texture Painting",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Quand le détail doit être placé à la main (une bande, un logo, de l'usure), on peint directement sur l'objet : Blender projette le pinceau sur la surface et écrit dans l'image, via les UV. Ce chapitre peint une boîte de conserve en Texture Paint : une bande rouge qui fait le tour, des pastilles bleues. La solution a été réellement peinte à la brosse (Blender 5.2 piloté par le MCP, opérateur de peinture d'image). Le correcteur analyse les pixels de l'image : couverture, couleurs, peinture hors des îlots UV, et que l'image est empaquetée.",
+  "prereqs": [
+    "CH04.01 (UV propres : la peinture passe par les UV)."
+  ],
+  "objectives": [
+    "Passer en Texture Paint, choisir un pinceau et une couleur.",
+    "Peindre en vue orthographique sur plusieurs côtés d'un objet.",
+    "Empaqueter l'image : sans cela la peinture est perdue.",
+    "Vérifier une peinture par mesure des pixels."
+  ],
+  "competences": [
+    [
+      "C04.06.a",
+      "Peindre une texture sur un objet",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Principes de la peinture de texture",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Peindre, empaqueter, vérifier",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_06_painting_starter.blend",
+      "Boîte PROP_Can, image T_Can crème branchée"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_06_painting_solution.blend",
+      "Peinte au pinceau (Texture Paint, Blender 5.2)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_06_painting_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (vierge, une couleur, tout repeint, peinture hors UV, image non branchée)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_06.py",
+      "Correcteur (painting)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_06_painting_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_06.py\" -- --exercise painting --render",
+  "deliverables": [
+    "Boîte peinte et validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.07 — Baking](../CH04_07_BAKING/README.md)"
+}

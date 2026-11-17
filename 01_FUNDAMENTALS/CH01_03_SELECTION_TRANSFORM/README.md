@@ -57,7 +57,7 @@ Sélectionner et transformer, c'est 80 % des gestes d'un artiste 3D. Ce chapitre
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_03_puzzle_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_03.py" --python-exit-code 1 -- --exercise puzzle
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_03.py" -- --exercise puzzle
 ```
 
 ## Livrables attendus

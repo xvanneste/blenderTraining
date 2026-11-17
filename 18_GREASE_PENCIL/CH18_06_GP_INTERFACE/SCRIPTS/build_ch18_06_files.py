@@ -6,7 +6,7 @@ build_ch18_06_files.py — Scène « Grease Pencil : interface et objets » (CH1
   COMPLETED_EXAMPLES/ch18_06_gp_scene_solution.blend (+ _reference.png)
       Collection DRAWINGS avec GP_Character (calques LINE, COLOR dans le groupe CHAR ; SKETCH
       verrouillé) devant la maison, et GP_Background (collines) derrière la maison.
-Usage : blender -b --factory-startup --python build_ch18_06_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_06_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.07",
+  "title": "Destruction",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type de contrainte maintient deux briques ensemble ?",
+      "choices": [
+        "Fixed",
+        "Hinge",
+        "Motor",
+        "Point"
+      ],
+      "answer": 0,
+      "explain": "Fixed bloque tous les degrés de liberté."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle option rend une contrainte cassable ?",
+      "choices": [
+        "Breaking",
+        "Disable Collisions",
+        "Override Iterations",
+        "Spring"
+      ],
+      "answer": 0,
+      "explain": "Panneau Settings : Breaking et Threshold."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait un seuil plus haut ?",
+      "choices": [
+        "La liaison résiste à un choc plus fort",
+        "La liaison casse plus tôt",
+        "Rien",
+        "La masse double"
+      ],
+      "answer": 0,
+      "explain": "Au-dessus du seuil la liaison saute."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi relier horizontalement ET verticalement ?",
+      "answer_text": "Pour que chaque brique tienne à tous ses voisins ; avec 38 liaisons, le mur reste une pièce unique tant qu'aucune ne saute."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi n'utilise-t-on pas Cell Fracture ici ?",
+      "answer_text": "L'extension n'est pas fournie avec Blender 5.3 (extensions de base) : nous partons de pièces séparées, sans prétendre que Cell Fracture marche."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel seuil casse une partie du mur dans l'exercice ?",
+      "choices": [
+        "1",
+        "5",
+        "20",
+        "1000"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : seuil ≤ 2 : 12 à 13 liaisons cassées ; seuil ≥ 5 : 0."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur compte-t-il une liaison cassée ?",
+      "choices": [
+        "Distance entre voisines modifiée de plus de 10 cm",
+        "Case Breaking cochée",
+        "Nombre de contraintes",
+        "Couleur"
+      ],
+      "answer": 0,
+      "explain": "L'API ne marque pas la rupture (enabled reste vrai) : on mesure les positions."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il avec un boulet trop rapide ?",
+      "answer_text": "Le mur explose : les briques traversent le sol (mesuré : z jusqu'à −68 m avec 5 m/s et 10 sous-étapes) ; ralentir le boulet et monter les sous-étapes à 30."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « high_threshold » ?",
+      "answer_text": "Un seuil de 20 : aucune liaison ne casse, le mur est poussé d'un bloc (5 m plus loin, à plat) : pas de destruction."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi cuire dans le correcteur plutôt que lire un cache ?",
+      "answer_text": "Les simulations de corps rigides ne s'avancent qu'image par image depuis l'image 1 : le correcteur les rejoue de façon déterministe."
+    }
+  ]
+}

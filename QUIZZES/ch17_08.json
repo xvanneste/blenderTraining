@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.08",
+  "title": "Pipeline Developer",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Pourquoi un emplacement de travail distinct ?",
+      "type": "mcq",
+      "choices": [
+        "Modifier directement les versions revues",
+        "Augmenter la résolution",
+        "Ne publier que les produits complets"
+      ],
+      "answer": 2,
+      "explain": "Une erreur avant lancement évite de gaspiller des ressources et laisse la version approuvée intacte."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que tester avec des mutations ?",
+      "type": "mcq",
+      "choices": [
+        "Le refus des entrées et produits invalides",
+        "Seulement la durée de l’exécution nominale",
+        "La couleur du terminal"
+      ],
+      "answer": 0,
+      "explain": "Une publication offre un point de reprise. Une panne peut laisser un calcul partiel dans le dossier de travail."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que rendre stable entre deux exécutions ?",
+      "type": "mcq",
+      "choices": [
+        "Toujours le chemin absolu de l’auteur",
+        "Identité du lot, version et règles d’acceptation",
+        "L’heure du système"
+      ],
+      "answer": 1,
+      "explain": "Un test de pipeline doit vérifier les refus et le comportement de reprise. Les hypothèses sont explicites et versionnées."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le processus sort sans erreur mais manque un fichier nécessaire. »",
+      "answer_text": "Le script vérifie seulement le code de retour et ignore les produits. Inspectez le manifeste et les fichiers avant d’autoriser la publication."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Deux workers veulent écrire la même version. Que réservez-vous avant leur rendu ?",
+      "answer_text": "Un identifiant ou un dossier propre à chaque worker et une publication réservée en exclusivité."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Un worker a rendu une image mais la seconde manque. Que voit le monteur ?",
+      "answer_text": "La version approuvée précédente, jusqu’à ce qu’un lot complet passe la validation."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle assertion contrôle la reprise ?",
+      "answer_text": "Après échec, la version approuvée est intacte et le nouveau lot peut réussir dans un autre dossier de travail."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Contrat des entrées » vérifiable ?",
+      "answer_text": "Le contrat reçoit un cas valide et refuse chevauchement et doublon."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Publier en deux étapes » vérifiable ?",
+      "answer_text": "Le scénario d’échec conserve le rendu approuvé et le scénario nominal crée une version complète."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Tester et documenter » vérifiable ?",
+      "answer_text": "Une commande refait les tests nominal et négatifs, avec code de sortie et rapport cible."
+    }
+  ]
+}

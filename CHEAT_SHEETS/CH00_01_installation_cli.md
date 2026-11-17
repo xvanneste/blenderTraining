@@ -31,7 +31,7 @@ $B = "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe"
 & $B -b scene.blend -o "//renders/img_####" -f 1       # une image, sans interface
 & $B -b scene.blend -o "//renders/img_####" -a         # toute l'animation
 & $B -b scene.blend -f 1 -- --cycles-device OPTIX      # choisir le périphérique Cycles
-& $B -b --python script.py --python-exit-code 1        # script + code d'erreur
+& $B -b --python-exit-code 1 --python script.py        # script + code d'erreur
 & $B -r                                                # associer les .blend
 ```
 Ordre : **fichier → options de sortie (`-o`, `-E`) → rendu (`-f`/`-a`) → `--` → options Cycles**.

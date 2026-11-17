@@ -1,0 +1,41 @@
+{
+  "build": "build_ch10_02_files.py",
+  "validator": "validate_ch10_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch10_02_cycles_solution.blend",
+      "exercise": "cycles",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch10_02_cycles_starter.blend",
+      "exercise": "cycles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_02_cycles_no_indirect.blend",
+      "exercise": "cycles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_02_cycles_few_samples.blend",
+      "exercise": "cycles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_02_cycles_no_adaptive.blend",
+      "exercise": "cycles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_02_cycles_loose_threshold.blend",
+      "exercise": "cycles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch10_02_cycles_too_many_samples.blend",
+      "exercise": "cycles",
+      "expect": false
+    }
+  ]
+}

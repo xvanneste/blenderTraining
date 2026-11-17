@@ -1,0 +1,43 @@
+{
+  "code": "CH17.04",
+  "title": "Animator",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Créer un plan d’acting, vérifier les appuis et monter un court extrait de reel annoté.",
+  "prereqs": [
+    "CH17.03"
+  ],
+  "objectives": [
+    "Une lecture muette distingue les trois moments et le spectateur identifie le verbe.",
+    "Le contact ne glisse plus pendant sa plage et le bassin ne fait pas de ressaut.",
+    "Un MP4 avec un plan d’acting, une action physique et des contributions claires."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Intention et blocking",
+      ""
+    ],
+    [
+      "L2",
+      "Mécanique et courbes",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../07_ANIMATION/PROJECT_P7/REFERENCE/p7_scene_reference.blend",
+      "Scène animée éditable"
+    ],
+    [
+      "../../PROPOSITIONS/RECONSTRUCTION_2_VUES/personnage_marche.blend",
+      "Marche avec rig et appuis"
+    ]
+  ],
+  "pass_criteria": [
+    "Une lecture muette distingue les trois moments et le spectateur identifie le verbe.",
+    "Le contact ne glisse plus pendant sa plage et le bassin ne fait pas de ressaut.",
+    "Un MP4 avec un plan d’acting, une action physique et des contributions claires."
+  ]
+}

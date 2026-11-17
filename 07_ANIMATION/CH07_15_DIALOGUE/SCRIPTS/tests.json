@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_15_files.py",
+  "validator": "validate_ch07_15.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_15_dialogue_solution.blend",
+      "exercise": "dialogue",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_15_dialogue_starter.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_still_stepped.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_no_breakdowns.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_drift.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_hold_lost.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_no_markers.blend",
+      "exercise": "dialogue",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_15_dialogue_block_active.blend",
+      "exercise": "dialogue",
+      "expect": false
+    }
+  ]
+}

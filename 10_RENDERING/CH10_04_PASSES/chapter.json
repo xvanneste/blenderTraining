@@ -1,0 +1,68 @@
+{
+  "code": "CH10.04",
+  "title": "Passes, AOV, View Layers",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Un rendu n'est pas une seule image : c'est un paquet de couches que le compositing recombine. Les passes (profondeur, normales, couleur diffuse, index d'objet, Cryptomatte), les light groups (une couche par lumière), les AOV (des sorties personnalisées d'un matériau) et les calques de vue (View Layers : des rendus séparés du même décor) sont écrits dans un seul fichier OpenEXR multicouche. Le correcteur rend réellement la scène dans un EXR multicouche et lit les noms de canaux dans son en-tête : ce que le fichier contient vraiment.",
+  "prereqs": [
+    "CH10.02 (Cycles), CH10.03 (débruitage)."
+  ],
+  "objectives": [
+    "Activer les passes utiles au compositing.",
+    "Créer des light groups et un AOV.",
+    "Séparer un plan en deux calques de vue.",
+    "Vérifier le contenu d'un EXR multicouche."
+  ],
+  "competences": [
+    [
+      "C10.04.a",
+      "Produire un rendu multi-passes",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Passes et light groups",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Calques de vue et EXR",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_04_passes_starter.blend",
+      "Un seul calque, seulement Combined, sortie PNG (2/64)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_04_passes_solution.blend",
+      "Calques FG et BG, passes Z, Normal, Diffuse Color, Object Index, Cryptomatte, light groups key et fill, AOV tint, sortie EXR multicouche 16 bits : 39 canaux (69/69)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_04_passes_reference.png",
+      "Les deux calques de la solution rendus séparément : FG (Hero seul, Backdrop exclu) à gauche, BG (Backdrop seul, Hero exclu) à droite"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans Normal, sans light groups, sans AOV, mauvais index, sans calque BG, sortie PNG)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_04.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_04_passes_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_04.py\" -- --exercise passes",
+  "deliverables": [
+    "EXR multicouche avec la liste de ses canaux.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.05 — Mémoire et optimisation](../CH10_05_MEMORY/README.md)"
+}

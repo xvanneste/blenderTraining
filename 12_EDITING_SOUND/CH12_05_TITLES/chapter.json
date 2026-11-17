@@ -1,0 +1,68 @@
+{
+  "code": "CH12.05",
+  "title": "Titres et sous-titres",
+  "phase_title": "12 — Montage, son et finition",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Le Video Sequencer sait écrire : un strip de texte (type TEXT) affiche un texte à une position et une taille données, pendant une durée donnée. Deux usages : le carton-titre (un titre centré, grand, au début du film) et les sous-titres (un texte court en bas de l'image, synchronisé sur la parole). Blender sait aussi exporter les strips de texte au format de sous-titres SRT : le correcteur s'en sert pour comparer vos sous-titres à une référence, texte et temps compris, puis il rend l'image pour vérifier la position et la lisibilité.",
+  "prereqs": [
+    "CH12.01 (VSE), CH12.03 (synchronisation)."
+  ],
+  "objectives": [
+    "Créer un strip de texte et régler son texte, sa taille, sa position.",
+    "Caler des sous-titres sur des temps donnés.",
+    "Exporter des sous-titres en SRT.",
+    "Contrôler la lisibilité par un rendu."
+  ],
+  "competences": [
+    [
+      "C12.05.a",
+      "Titrer une séquence",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Le carton-titre",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Sous-titres et SRT",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch12_05_titles_starter.blend",
+      "Carton « TITRE » minuscule en haut à gauche, sous-titres sans point, mal placés, en haut ; 3/45"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_05_titles_solution.blend",
+      "Titre « LE LONG VOYAGE » centré (taille 56), sous-titres « Bonjour. » 2,000→3,500 et « Il fait nuit. » 3,750→5,000 en bas (taille 30) ; 45/45"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_05_titles_reference.png",
+      "Le titre (image 18), le premier sous-titre (image 66) et le second (image 105)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (faute de frappe, sous-titre en retard, sous-titres en haut, titre minuscule, titre décentré)"
+    ],
+    [
+      "SCRIPTS/validate_ch12_05.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch12_05_titles_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch12_05.py\" -- --exercise titles",
+  "deliverables": [
+    "Fichier SRT exporté.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH12.06 — Export et livraison](../CH12_06_EXPORT/README.md)"
+}

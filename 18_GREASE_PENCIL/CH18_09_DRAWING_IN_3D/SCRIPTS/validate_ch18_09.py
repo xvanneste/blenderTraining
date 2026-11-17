@@ -1,6 +1,6 @@
 """
 validate_ch18_09.py — Correcteur CH18.09 (décor dessiné en profondeur).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch18_09.py --python-exit-code 1 -- --exercise set [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch18_09.py -- --exercise set [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

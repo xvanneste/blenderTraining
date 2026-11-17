@@ -1,0 +1,43 @@
+{
+  "code": "CH14.07",
+  "title": "Pipeline hybride",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Livrer un essai de plan et un journal comparant sa fabrication manuelle et assistée.",
+  "prereqs": [
+    "CH14.06"
+  ],
+  "objectives": [
+    "Un protocole prévoit les mêmes livrables dans les deux essais.",
+    "Deux prévisualisations Blender et un journal de leurs différences.",
+    "Le choix final s’appuie sur une image, un temps réel et un coût de correction."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Définir la mesure",
+      ""
+    ],
+    [
+      "L2",
+      "Produire deux versions",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/cas_hybride.md",
+      "Dossier de départ et grille de décision"
+    ],
+    [
+      "../../13_PYTHON_AUTOMATION/ASSETS_ATELIERS/presentoir_plans.blend",
+      "Scène Blender commune aux deux essais"
+    ]
+  ],
+  "pass_criteria": [
+    "Un protocole prévoit les mêmes livrables dans les deux essais.",
+    "Deux prévisualisations Blender et un journal de leurs différences.",
+    "Le choix final s’appuie sur une image, un temps réel et un coût de correction."
+  ]
+}

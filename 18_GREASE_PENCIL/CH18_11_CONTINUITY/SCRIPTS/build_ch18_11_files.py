@@ -9,7 +9,7 @@ build_ch18_11_files.py — « Le dialogue découpé » (CH18.11, continuité et 
       6 caméras SH010–SH060 (master, amorce sur B, amorce sur A, plan serré B, plan serré A, insert),
       toutes du même côté de l'axe ; 6 marqueurs liés aux caméras (Bind Camera to Markers).
   COMPLETED_EXAMPLES/ch18_11_board_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch18_11_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_11_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

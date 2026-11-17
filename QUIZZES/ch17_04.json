@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.04",
+  "title": "Animator",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle interpolation convient au premier blocking ?",
+      "type": "mcq",
+      "choices": [
+        "Cycles par défaut",
+        "Constant",
+        "Noise"
+      ],
+      "answer": 1,
+      "explain": "L’acting repose sur un changement lisible. Les poses principales doivent porter la décision avant le détail."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel repère pour contrôler un contact au sol ?",
+      "type": "mcq",
+      "choices": [
+        "La rotation locale de la caméra",
+        "Le texte du plan",
+        "Le monde"
+      ],
+      "answer": 2,
+      "explain": "Le transfert de poids précède ou accompagne le pas. Un pieds planté reste au même point dans le repère monde pendant son appui."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quel extrait montrer en premier ?",
+      "type": "mcq",
+      "choices": [
+        "Le plan le plus lisible et abouti",
+        "Toujours le plus ancien",
+        "Une transition d’introduction longue"
+      ],
+      "answer": 0,
+      "explain": "Le reel choisit des preuves observables. Un extrait trop long masque parfois le passage que l’on veut défendre."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le pied reste fixe en X mais glisse malgré tout. »",
+      "answer_text": "La comparaison a été faite dans le repère local ou sur un axe unique. Mesurez la position en coordonnées monde et contrôlez les trois axes pendant l’appui."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le personnage semble glisser alors que le pied est fixe. Quel autre élément inspecter ?",
+      "answer_text": "Le déplacement du bassin et le moment de transfert du poids par rapport à l’appui."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel test départage deux acting avec le même timing ?",
+      "answer_text": "Projeter sans donner les intentions et voir si des lecteurs identifient des actions différentes."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle information associer à un extrait réalisé sur un rig fourni ?",
+      "answer_text": "La contribution d’animation propre et la provenance du rig et des éléments réutilisés."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Intention et blocking » vérifiable ?",
+      "answer_text": "Une lecture muette distingue les trois moments et le spectateur identifie le verbe."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Mécanique et courbes » vérifiable ?",
+      "answer_text": "Le contact ne glisse plus pendant sa plage et le bassin ne fait pas de ressaut."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Reel et retour » vérifiable ?",
+      "answer_text": "Un MP4 avec un plan d’acting, une action physique et des contributions claires."
+    }
+  ]
+}

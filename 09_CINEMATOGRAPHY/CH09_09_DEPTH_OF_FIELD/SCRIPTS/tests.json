@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_09_files.py",
+  "validator": "validate_ch09_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_09_dof_solution.blend",
+      "exercise": "dof",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_09_dof_starter.blend",
+      "exercise": "dof",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_09_dof_dof_off.blend",
+      "exercise": "dof",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_09_dof_focus_far.blend",
+      "exercise": "dof",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_09_dof_small_aperture.blend",
+      "exercise": "dof",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_09_dof_focus_between.blend",
+      "exercise": "dof",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_09_dof_no_dof_bad_fstop.blend",
+      "exercise": "dof",
+      "expect": false
+    }
+  ]
+}

@@ -5,6 +5,8 @@
 > professionnelle demande une pratique prolongée, du feedback et de nombreux projets
 > terminés. Ajustez sans culpabilité.
 
+Le [parcours du premier plan animé](DOCUMENTATION/PARCOURS_PREMIER_PLAN.md) permet de commencer par quatre jalons concrets. Les rythmes ci-dessous couvrent le cursus complet.
+
 ## Règles communes aux trois rythmes
 - **Répétition espacée** : chaque séance commence par 10 min de révision (fiche de
   révision d'un chapitre vu il y a 1 semaine, puis 1 mois, puis 3 mois).

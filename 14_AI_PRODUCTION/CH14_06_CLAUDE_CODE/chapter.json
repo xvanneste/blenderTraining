@@ -1,0 +1,43 @@
+{
+  "code": "CH14.06",
+  "title": "Claude Code et Blender",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Vérifier un script assisté sur un cas nominal et des scènes mutées avant de l’utiliser.",
+  "prereqs": [
+    "CH14.05"
+  ],
+  "objectives": [
+    "Le brief fixe version Blender, périmètre de collection et format d’un message.",
+    "Le diff répond au brief, et vous justifiez chaque API importante.",
+    "Deux journaux permettent de comparer le cas nominal et le cas fautif."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Spécifier",
+      ""
+    ],
+    [
+      "L2",
+      "Inspecter",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../13_PYTHON_AUTOMATION/ASSETS_ATELIERS/controler_scene.py",
+      "Exemple de contrôle Blender autonome"
+    ],
+    [
+      "https://docs.anthropic.com/en/docs/claude-code/cli-usage",
+      "Référence éditeur pour les commandes Claude Code"
+    ]
+  ],
+  "pass_criteria": [
+    "Le brief fixe version Blender, périmètre de collection et format d’un message.",
+    "Le diff répond au brief, et vous justifiez chaque API importante.",
+    "Deux journaux permettent de comparer le cas nominal et le cas fautif."
+  ]
+}

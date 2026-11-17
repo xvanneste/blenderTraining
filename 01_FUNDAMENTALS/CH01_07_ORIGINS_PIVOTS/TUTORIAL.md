@@ -7,8 +7,9 @@
 
 ## Tutoriel 2 — L'origine sur la charnière
 1. `GEO_Door` sélectionnée, `Tab` (Edit Mode), mode sommets (`1`), `Alt+Z` (X-Ray).
-2. Vue de face `Num 1` : sélectionnez au rectangle (`B`) le coin **bas gauche** : cela prend
-   les 2 sommets (avant et arrière).
+2. Vue de face `Numpad 1`. Pressez `Alt+A` pour retirer la sélection héritée. Avec `B`,
+   tracez un petit rectangle sur le coin **bas gauche**. L’option X-Ray permet d’inclure
+   les deux sommets, avant et arrière, qui se recouvrent dans cette vue.
 3. `Shift+S` → **Cursor to Selected** : le curseur 3D se place au milieu de cette arête,
    au sol, sur la charnière.
 4. `Tab` (Object Mode), `Alt+Z`.
@@ -21,9 +22,12 @@
 2. `.` (menu du pivot) → **3D Cursor**.
 3. Sélectionnez les 3 boulons (`Shift`+clic, ou *Select Pattern* `GEO_Bolt_*`).
 4. `R Z 45 Entrée`. ✅ Les boulons tournent ensemble autour du centre de la roue.
-5. Comparez : `Ctrl+Z`, pivot **Median Point**, `R Z 45` : ils tournent autour de **leur**
-   centre moyen (décalé) — faux. Pivot **Individual Origins** : chacun tourne sur lui-même.
-6. Remettez le pivot sur *Median Point* (défaut) en fin d'exercice.
+5. Annulez cette rotation avec `Ctrl+Z`. Choisissez **Median Point** et lancez `R Z 45`
+   sans confirmer. Le groupe pivote autour du centre de ses trois positions. Pressez
+   `Échap`, puis faites le même aperçu avec **Individual Origins**. Les boulons tournent
+   autour de leurs propres centres en conservant leur position.
+6. Annulez l’aperçu et rétablissez le pivot **3D Cursor** pour appliquer la rotation de
+   l’étape 4. Remettez ensuite le pivot sur *Median Point* pour le chapitre suivant.
 
 ## Tutoriel 4 — Remettre le curseur à l'origine du monde
 `Shift+S` → **Cursor to World Origin** (ou `Shift+C`, qui recentre aussi la vue).
@@ -33,5 +37,9 @@ Enregistrez `ch01_07_door_<prenom>_v001.blend` puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_07_door_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_07.py" --python-exit-code 1 -- --exercise door
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_07.py" -- --exercise door
 ```
+
+## Contrôle de transfert
+
+Orientez la porte à 30° puis à 75° autour de Z en repartant de la même version initiale. Posez un repère visuel au niveau de la charnière. Si les rotations déplacent la charnière, vérifiez le point orange de la porte et le pivot de la vue. **Réussite** Le bord de la porte pivote autour d’un même axe, et vous pouvez expliquer pourquoi déplacer l’origine ne déplace pas les sommets à l’écran.

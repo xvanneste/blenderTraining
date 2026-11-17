@@ -5,14 +5,14 @@
   "level": "débutant absolu",
   "duration": "2 h (théorie 35 min · pratique 65 min · évaluation 20 min)",
   "intro": "Les préférences sont le « réglage du siège et des rétroviseurs » avant de conduire. Un artiste qui travaille 2 000 heures dans Blender gagne des dizaines d'heures en réglant une fois pour toutes la navigation, l'interface et la sécurité de ses fichiers. Dans ce chapitre, vous découvrez la fenêtre Preferences, vous appliquez le profil recommandé par l'académie, vous apprenez à revenir en arrière (réglages d'usine) et vous mesurez concrètement le gain de navigation sur une scène d'entraînement : une ville de 400 bâtiments où se cache une aiguille de 25 cm.",
-  "prereqs": ["CH00.01 validé (Blender 5.3 installé, GPU activé).", "Savoir ouvrir un fichier .blend."],
+  "prereqs": ["Blender 5.3 installé. Avoir ouvert et rendu la mire du premier jalon de CH00.01.", "Savoir ouvrir un fichier .blend."],
   "objectives": [
     "Ouvrir, parcourir et rechercher dans la fenêtre Preferences.",
     "Comprendre la différence entre préférences (userpref.blend) et fichier de démarrage (startup.blend).",
     "Régler l'interface : Resolution Scale, thème, langue, barre d'état.",
     "Régler la navigation : Orbit Around Selection, Zoom to Mouse Position, Auto Depth, Auto Perspective, émulations.",
     "Sécuriser son travail : Undo Steps, Save Versions, Auto-Save, chemins relatifs.",
-    "Sauvegarder, annuler et réinitialiser ses préférences sans risque.",
+    "Sauvegarder des préférences et tester leur restauration dans un profil séparé.",
     "Auditer et appliquer un profil de préférences par script."
   ],
   "competences": [
@@ -33,7 +33,7 @@
     ["SCRIPTS/validate_ch00_02.py", "Correcteur de l'exercice 3"],
     ["SCRIPTS/build_ch00_02_files.py", "Régénère les .blend du chapitre"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch00_02_navigation_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch00_02.py\" --python-exit-code 1 -- --exercise needle --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch00_02_navigation_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch00_02.py\" -- --exercise needle --render",
   "deliverables": [
     "Préférences réglées selon le profil (audit sans écart obligatoire).",
     "Sauvegarde zip datée de votre dossier config\\ (préférences).",

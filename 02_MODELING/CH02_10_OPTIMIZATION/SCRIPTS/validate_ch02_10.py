@@ -1,6 +1,6 @@
 """
 validate_ch02_10.py — Correcteur « Alléger sans abîmer » (CH02.10).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_10.py --python-exit-code 1 -- --exercise optim [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_10.py -- --exercise optim [--render]
 L'écart visuel est mesuré entre GEO_Statue évaluée et la référence cachée GEO_Statue_REF (BVH),
 en coordonnées locales (les deux objets ont la même transformation d'origine).
 Testé avec : Blender 5.3.0.

@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch01_09_hunt_solution.blend", "Les 11 consignes réalisées"],
     ["SCRIPTS/validate_ch01_09.py", "Correcteur (13 points)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_09_hunt_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_09.py\" --python-exit-code 1 -- --exercise hunt",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_09_hunt_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_09.py\" -- --exercise hunt",
   "deliverables": ["ch01_09_hunt_<prenom>_v001.blend validé.", "Mini-projet : gabarit de plan dans TEMPLATES/."],
   "next": "[CH01.10 — Modificateurs essentiels](../CH01_10_MODIFIERS/README.md)"
 }

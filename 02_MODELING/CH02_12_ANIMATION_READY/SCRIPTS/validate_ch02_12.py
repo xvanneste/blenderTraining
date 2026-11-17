@@ -1,6 +1,6 @@
 """
 validate_ch02_12.py — Correcteur « Le coude qui plie bien » (CH02.12).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_12.py --python-exit-code 1 -- --exercise arm [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_12.py -- --exercise arm [--render]
 Le correcteur plie lui-même le bras à 90° au coude (déformation linéaire pondérée, comme une
 armature avec des poids lissés sur ±3 cm) et mesure le volume conservé : la topologie seule est jugée.
 Mesures de référence : 4 segments réguliers → 0,875 ; 4 boucles serrées au coude → 0,975.

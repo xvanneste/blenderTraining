@@ -14,23 +14,23 @@
 | CH06.10 Contrôleurs et ergonomie | Custom shapes, bone collections, couleurs, sélecteurs | C06.10.a rig agréable pour l'animateur |
 | CH06.11 Rigging avancé et réutilisation | Bendy bones, rig libraries, link/override | C06.11.a réutiliser un rig dans plusieurs plans |
 
-**Projet P6 :** personnage de la phase 3 entièrement contrôlable (corps + visage).
+**Projet P6 :** [personnage de la phase 3 contrôlable](PROJECT_P6/README.md) (rig Rigify, peau, ergonomie, test de pose ; visage Rigify non testé).
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH06.01 Armatures et bones | ⬜ Non commencé |
-| CH06.02 Contraintes | ⬜ Non commencé |
-| CH06.03 Skinning | ⬜ Non commencé |
-| CH06.04 IK/FK | ⬜ Non commencé |
-| CH06.05 Rig humanoïde | ⬜ Non commencé |
-| CH06.06 Rig quadrupède | ⬜ Non commencé |
-| CH06.07 Rig mécanique | ⬜ Non commencé |
-| CH06.08 Shape Keys et drivers | ⬜ Non commencé |
-| CH06.09 Rig facial | ⬜ Non commencé |
-| CH06.10 Contrôleurs et ergonomie | ⬜ Non commencé |
-| CH06.11 Rigging avancé et réutilisation | ⬜ Non commencé |
+| [CH06.01 Armatures et bones](CH06_01_ARMATURES/README.md) | ✅ Terminé et vérifié |
+| [CH06.02 Contraintes](CH06_02_CONSTRAINTS/README.md) | ✅ Terminé et vérifié |
+| [CH06.03 Skinning](CH06_03_SKINNING/README.md) | ✅ Terminé et vérifié |
+| [CH06.04 IK/FK](CH06_04_IK_FK/README.md) | ✅ Terminé et vérifié |
+| [CH06.05 Rig humanoïde](CH06_05_HUMANOID/README.md) | ✅ Terminé et vérifié |
+| [CH06.06 Rig quadrupède](CH06_06_QUADRUPED/README.md) | ✅ Terminé et vérifié |
+| [CH06.07 Rig mécanique](CH06_07_MECHANICAL/README.md) | ✅ Terminé et vérifié |
+| [CH06.08 Shape Keys et drivers](CH06_08_SHAPEKEYS/README.md) | ✅ Terminé et vérifié |
+| [CH06.09 Rig facial](CH06_09_FACIAL/README.md) | ✅ Terminé et vérifié |
+| [CH06.10 Contrôleurs et ergonomie](CH06_10_CONTROLS/README.md) | ✅ Terminé et vérifié |
+| [CH06.11 Rigging avancé et réutilisation](CH06_11_ADVANCED/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH06_MM_NOM/` conforme à

@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.07",
+  "title": "Solo, indé et studio",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quel levier aide particulièrement en solo ?",
+      "type": "mcq",
+      "choices": [
+        "Multiplier les décors",
+        "Ajouter des métiers en attente",
+        "La réutilisation et la simplification du périmètre"
+      ],
+      "answer": 2,
+      "explain": "Un seul auteur traverse les métiers et ne bénéficie pas du parallélisme théorique du planning."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel coût augmente en équipe ?",
+      "type": "mcq",
+      "choices": [
+        "La coordination et la validation des échanges",
+        "Toujours les heures de chaque plan indépendamment",
+        "La cadence de lecture"
+      ],
+      "answer": 0,
+      "explain": "Une petite équipe parallélise certaines tâches mais multiplie les échanges de fichiers et les revues."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que comparer entre les trois modèles ?",
+      "type": "mcq",
+      "choices": [
+        "Le nom du logiciel seul",
+        "Charge, délai, qualité et risque avec preuves",
+        "Seulement le nombre de personnes"
+      ],
+      "answer": 1,
+      "explain": "La taille permet la spécialisation et ajoute des coûts de coordination. Le pilote valide le pipeline avant la montée en charge."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le planning studio garde les durées solo puis divise chaque poste par le nombre de personnes. »",
+      "answer_text": "Les dépendances et les coûts fixes sont ignorés. Recalculez en distinguant tâches indépendantes, synchronisation et postes sérialisés."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel levier permet de garder le choix central avec moins de temps solo ?",
+      "answer_text": "Conserver le geste et le signal, réutiliser le décor et réduire les variantes caméra."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la parallélisation ne divise-t-elle pas toutes les tâches ?",
+      "answer_text": "Certains postes attendent des jalons, et les échanges et revues ajoutent du travail."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel élément du pilote autorise une décision d’équipe ?",
+      "answer_text": "Une preuve narrative, un chiffrage des plans types et une reprise testée sur des actifs communs."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Scénario solo » vérifiable ?",
+      "answer_text": "Les heures, la durée et les sacrifices visuels sont explicites."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Scénario indé » vérifiable ?",
+      "answer_text": "Un planning montre les livraisons de département et les dépendances critiques."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Scénario studio » vérifiable ?",
+      "answer_text": "Un comparatif justifie le choix pour le pilote, la borne de qualité et les risques de chaque option."
+    }
+  ]
+}

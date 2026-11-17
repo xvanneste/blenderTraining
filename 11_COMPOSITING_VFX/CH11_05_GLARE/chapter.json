@@ -1,0 +1,68 @@
+{
+  "code": "CH11.05",
+  "title": "Glare et effets",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Une caméra réelle ne reproduit pas la lumière comme une simulation idéale : une source très lumineuse déborde en halo (glare) dans l'objectif, et les lignes droites se courbent près des bords (distorsion). Ces défauts, dosés avec goût, donnent du réalisme à une image trop parfaite. Ce chapitre ajoute un halo (nœud Glare) et une légère distorsion (nœud Lens Distortion) à une lampe et à une barre ; le correcteur mesure l'énergie d'un anneau autour de la lampe et la courbure de la barre.",
+  "prereqs": [
+    "CH11.01 (compositeur), CH09.06 (exposition)."
+  ],
+  "objectives": [
+    "Choisir un type de Glare adapté.",
+    "Doser un halo sans noyer l'image.",
+    "Appliquer une distorsion d'objectif.",
+    "Mesurer des effets optiques."
+  ],
+  "competences": [
+    [
+      "C11.05.a",
+      "Finir l'image avec des effets optiques",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Le Glare",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Distorsion et mesure",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_05_glare_starter.blend",
+      "Render Layers → Group Output : lampe nette (anneau 0,0003) et barre droite (courbure 0) ; 21/37"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_05_glare_solution.blend",
+      "Glare Fog Glow (par défaut) puis Lens Distortion 0,3 : anneau 0,0066, champ lointain 0,001, cœur 1,0, courbure +7 pixels ; 37/37"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_05_glare_reference.png",
+      "Départ (gauche) et solution (droite : lampe élargie avec halo, barre courbée)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans halo, Bloom trop fort, Ghosts, sans distorsion, distorsion excessive)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_05.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_05_glare_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_05.py\" -- --exercise glare",
+  "deliverables": [
+    "Réglages Glare et distorsion justifiés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.06 — Color grading](../CH11_06_GRADING/README.md)"
+}

@@ -60,7 +60,7 @@ Avant de sculpter, il faut des proportions justes. Ce chapitre construit un pers
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_01_proportions_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_01.py" --python-exit-code 1 -- --exercise adult --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_01.py" -- --exercise adult --render
 ```
 
 ## Livrables attendus

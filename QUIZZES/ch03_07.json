@@ -1,0 +1,105 @@
+{
+  "chapter": "CH03.07",
+  "title": "Mains et pieds",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Combien de phalanges a chaque doigt long, et le pouce ?",
+      "choices": [
+        "3 et 3",
+        "3 et 2",
+        "2 et 2",
+        "4 et 3"
+      ],
+      "answer": 1,
+      "explain": "Les quatre doigts ont trois phalanges ; le pouce en a deux (plus un métacarpien mobile)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Classez les quatre doigts par longueur.",
+      "answer_text": "Majeur > annulaire ≈ index > auriculaire (solution : index 95 % et annulaire 96 % du majeur)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où part le pouce et jusqu'où va-t-il ?",
+      "answer_text": "Il part du poignet (son métacarpien est dans la paume) et atteint à peu près la première articulation de l'index ; ici ≈ 61 % de la longueur du majeur."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi les doigts sont-ils plus larges à la base qu'au bout ?",
+      "choices": [
+        "Pour économiser des polygones",
+        "Ils s'effilent : phalanges proximales plus épaisses",
+        "Par erreur d'échelle",
+        "Pour la symétrie"
+      ],
+      "answer": 1,
+      "explain": "Mesuré dans la solution : majeur 19,4 mm à la base, 16,9 mm près du bout (×1,15)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi garder les doigts écartés dans la pose de modélisation ?",
+      "answer_text": "Pour sculpter, retopologiser et peindre chaque doigt sans fusion ; on les rapproche ensuite par le rig. Une moufle est impossible à riguer."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce que la voûte plantaire ?",
+      "choices": [
+        "Le dessus du pied",
+        "Le creux sous le milieu du pied qui ne touche pas le sol",
+        "La peau du talon",
+        "L'articulation de la cheville"
+      ],
+      "answer": 1,
+      "explain": "Mesuré dans la solution : le milieu du pied est à 1,2 cm du sol."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel orteil est le plus long dans la solution, et comment décroissent les autres ?",
+      "answer_text": "Le gros orteil, puis le 2ᵉ, 3ᵉ, 4ᵉ et le petit orteil en décroissant (à 2 mm près pour le correcteur) ; les vrais pieds varient, mais le gros orteil est le plus épais."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le talon est-il plus large ou plus étroit que l'avant-pied ?",
+      "answer_text": "Plus étroit : 59 % de la largeur de l'avant-pied dans la solution (le correcteur accepte 50–85 %)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel outil pour boucher proprement une coupe plane (poignet, cheville) ?",
+      "choices": [
+        "Mesh > Bisect avec Fill (ou Fill/Grid Fill)",
+        "Smooth",
+        "Mirror",
+        "Decimate"
+      ],
+      "answer": 0,
+      "explain": "Mesh > Bisect (Clear Inner / Clear Outer + Fill), comme le socle du buste en CH03.04."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur compte-t-il les doigts sur la silhouette de dessus ?",
+      "answer_text": "Parce que les doigts séparés produisent un pic chacun, avec un creux entre eux ; une moufle ou des doigts fusionnés n'en produisent presque pas (moufle de test : 2 pics)."
+    }
+  ]
+}

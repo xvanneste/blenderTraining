@@ -1,6 +1,6 @@
 """
 validate_ch18_01.py — Correcteur CH18.01 (s'appuie sur SCRIPTS/bcma_gp_check.py et gp_spec.json).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch18_01.py --python-exit-code 1 -- --exercise volumes
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch18_01.py -- --exercise volumes
 Vérifie la quantité et l'emplacement du dessin ; la qualité s'auto-évalue avec la grille d'EXERCISES.md.
 Testé avec : Blender 5.3.0.
 """

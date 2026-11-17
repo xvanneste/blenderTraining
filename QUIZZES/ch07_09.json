@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.09",
+  "title": "Course, saut, interactions",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui distingue la course de la marche ?",
+      "choices": [
+        "Une phase aérienne où les deux pieds quittent le sol",
+        "Une caméra",
+        "Un autre rig",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "En marche, un pied touche toujours le sol ; en course il y a un vol."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle est la durée d'un cycle de course (ordre de grandeur) ?",
+      "choices": [
+        "Plus court que celui d'une marche",
+        "Plus long",
+        "Identique",
+        "Infini"
+      ],
+      "answer": 0,
+      "explain": "Un pas de course dure moins longtemps : le cycle est plus rapide (par exemple 16 à 18 images)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un mouvement balistique ?",
+      "choices": [
+        "Un mouvement sans appui soumis à la gravité",
+        "Un mouvement guidé",
+        "Une rotation",
+        "Un cycle"
+      ],
+      "answer": 0,
+      "explain": "Pendant le vol, seule la gravité agit : parabole."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les bras balancent-ils en course ?",
+      "answer_text": "Pour compenser la rotation du bassin et donner de l'élan ; ils s'opposent aux jambes comme en marche, avec plus d'amplitude."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment animer « pousser » un objet lourd ?",
+      "answer_text": "Corps incliné vers l'avant, pieds bas et écartés, mouvement lent, l'objet bouge après le contact de la main (overlap) ; tirer : poids vers l'arrière, bras tendus."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelles sont les quatre phases du saut ?",
+      "choices": [
+        "Anticipation, impulsion, vol, réception",
+        "Départ, milieu, fin, pause",
+        "Montée, descente, montée, descente",
+        "Contact, descente, passage, montée"
+      ],
+      "answer": 0,
+      "explain": "Flexion (hanches 0,65 m), impulsion (décollage), vol parabolique, amortissement (0,68 m)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle forme prend la hauteur des hanches en vol ?",
+      "choices": [
+        "Une parabole",
+        "Une droite",
+        "Une sinusoïde",
+        "Un escalier"
+      ],
+      "answer": 0,
+      "explain": "Accélération constante : −0,0170 m/image² (mesuré)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle hauteur pour un vol de 14 images ?",
+      "answer_text": "h = g·T²/8 avec T = 14/24 s : 9,81 × 0,34 / 8 = 0,417 m au-dessus du décollage."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi amortir la réception ?",
+      "answer_text": "Un corps qui retombe d'un saut absorbe l'énergie en fléchissant ; sans amortissement (0,95 m), le personnage paraît sans poids."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « floaty » ?",
+      "answer_text": "Un vol de 21 images pour la même hauteur : la gravité effective tombe à 0,0069 m/image² : le personnage flotte comme sur la Lune."
+    }
+  ]
+}

@@ -2,7 +2,21 @@
   "build": "build_ch01_14_files.py",
   "validator": "validate_ch01_14.py",
   "cases": [
-    {"file": "COMPLETED_EXAMPLES/ch01_14_final_render_solution.blend", "exercise": "final", "expect": true},
-    {"file": "STARTER_FILES/ch01_14_final_render_starter.blend", "exercise": "final", "expect": false}
+    {
+      "file": "COMPLETED_EXAMPLES/ch01_14_final_render_solution.blend",
+      "exercise": "final",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch01_14_final_render_starter.blend",
+      "exercise": "final",
+      "expect": false
+    }
+  ],
+  "extra": [
+    {
+      "script": "test_rendu_cpu.py",
+      "file": "COMPLETED_EXAMPLES/ch01_14_final_render_solution.blend"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 """
 validate_ch01_14.py — Correcteur du premier rendu final (CH01.14).
 Vérifie les réglages ET la présence de l'image rendue renders/ch01_14_final.png à côté du .blend.
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_14.py --python-exit-code 1 -- --exercise final
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_14.py -- --exercise final
 Testé avec : Blender 5.3.0.
 """
 import os
@@ -16,7 +16,8 @@ def main():
     r = L.Report("CH01.14 — Le premier rendu final")
     sc = bpy.context.scene
     rd, cy, im, vs = sc.render, sc.cycles, sc.render.image_settings, sc.view_settings
-    r.check(rd.engine == "CYCLES" and cy.device == "GPU", "Cycles sur GPU Compute", "Render > Render Engine, Device.", 2)
+    r.check(rd.engine == "CYCLES" and cy.device in {"CPU", "GPU"},
+            f"Cycles, périphérique {cy.device}", "Render Properties > Render Engine > Cycles.", 2)
     r.check(cy.use_adaptive_sampling and abs(cy.adaptive_threshold - 0.02) < 1e-4 and cy.samples == 128,
             f"Échantillonnage : seuil {cy.adaptive_threshold:.3f}, max {cy.samples}",
             "Sampling > Render : Noise Threshold 0.02, Max Samples 128.", 2)

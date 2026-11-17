@@ -12,7 +12,9 @@ vue 3D + **Dope Sheet** en mode *Grease Pencil* en bas.
 
 ## Tutoriel 2 — Les poses clés (exercice « keys »)
 1. Image 1 : dessinez la balle **au sommet** sur le cercle guide (gauche).
-2. Image 13 : Shift+I (*Insert Blank Keyframe*), dessinez la balle **écrasée** posée sur la ligne de sol.
+2. À l’image 13, survolez la vue 3D en mode Draw et faites `Shift+I` pour insérer une image vide
+   sur le calque actif. Dessinez la balle écrasée avec son bord inférieur sur le sol, puis vérifiez
+   dans le Dope Sheet que le dessin se trouve sur la clé de l’image 13.
 3. Sommet du 2ᵉ rebond vers l'image 22 (≈ 60 % de la hauteur), contact suivant vers 32, sommet 39,
    contact 46, sommet 52, contact 57 (avancez régulièrement vers la droite, jusqu'à la zone d'arrivée).
 4. Dope Sheet : sélectionnez les contacts, R > *Keyframe* ; les sommets, R > *Extreme*.
@@ -33,6 +35,10 @@ vue 3D + **Dope Sheet** en mode *Grease Pencil* en bas.
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_16_bounce_<prenom>_v002.blend" `
-  --python "SCRIPTS\validate_ch18_16.py" --python-exit-code 1 -- --exercise bounce --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_16.py" -- --exercise bounce --render
 ```
 - Référence : `COMPLETED_EXAMPLES/ch18_16_bounce_reference.png` (toutes les images superposées).
+
+## Variante de contrôle
+
+Identifiez les deux poses clés qui portent l’intention. Ajoutez un dessin intermédiaire dans une copie et comparez l’arc d’un repère. **Preuve** L’intermédiaire améliore le mouvement sans affaiblir la silhouette des poses clés.

@@ -11,7 +11,7 @@ une Timeline. Puis revenez à la disposition d'origine. Chronométrez-vous.
 ## Exercice 3 — Difficile : workspace BCMA_Study (SANS procédure) ⏱ 5 min
 Créez un workspace **BCMA_Study** contenant au moins 3D Viewport, Outliner, Properties et
 Text Editor, dans le starter, enregistrez en v001 et validez :
-`… --python "SCRIPTS\validate_ch01_01.py" --python-exit-code 1 -- --exercise workspace`
+`… --python-exit-code 1 --python "SCRIPTS\validate_ch01_01.py" -- --exercise workspace`
 Barème (8 pts) : workspace 3 · 4 éditeurs × 1 · scène intacte 1.
 
 ## Défis

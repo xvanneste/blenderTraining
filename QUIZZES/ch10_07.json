@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.07",
+  "title": "Rendu distribué",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait l'option -b ?",
+      "choices": [
+        "Lance Blender en arrière-plan, sans interface",
+        "Cuit une simulation",
+        "Active les ombres",
+        "Change la langue"
+      ],
+      "answer": 0,
+      "explain": "Indispensable sur une machine sans écran."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait -s 9 -e 16 -a ?",
+      "choices": [
+        "Rend les images 9 à 16 en animation",
+        "Rend la scène entière",
+        "Cuit les caches",
+        "Rend l'image 9 seulement"
+      ],
+      "answer": 0,
+      "explain": "« -a » lance le rendu de l'animation avec la plage réglée avant."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi « -a » doit-il venir en dernier ?",
+      "choices": [
+        "Les arguments s'exécutent dans l'ordre : -a lancé trop tôt ignore -s/-e",
+        "Par convention de style",
+        "Pour la couleur",
+        "Il n'y a aucune raison"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : « -a -s 1 -e 2 » rend les 6 images ; « -s 1 -e 2 -a » en rend 2."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que signifie #### dans -o ?",
+      "answer_text": "Le numéro d'image sur 4 chiffres (shot_0001.png)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un dossier de sortie par commande dans le correcteur ?",
+      "answer_text": "Pour savoir quelle commande a produit quelle image et détecter une commande qui rend hors de sa plage."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "À quoi servent Overwrite désactivé et Placeholders activé ?",
+      "choices": [
+        "À ce qu'une machine ne rende pas une image déjà prise par une autre",
+        "À améliorer la couleur",
+        "À réduire le bruit",
+        "À changer la focale"
+      ],
+      "answer": 0,
+      "explain": "Réglages relus dans l'API : RenderSettings.use_overwrite et use_placeholder."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Combien d'images un plan 1–8, 8–16, 17–24 produit-il au total ?",
+      "choices": [
+        "25 (l'image 8 est comptée deux fois)",
+        "24",
+        "23",
+        "16"
+      ],
+      "answer": 0,
+      "explain": "Contre-exemple overlap : couverture fausse."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur refuse-t-il --python-expr ?",
+      "answer_text": "Une ligne de commande qui exécute du code arbitraire n'est pas sûre à lancer : la liste blanche (-b -o -F -s -e -a -x -t) garantit que le correcteur n'exécute que du rendu."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi sert Flamenco ?",
+      "answer_text": "C'est le gestionnaire de ferme de la Blender Foundation : il distribue des tâches de rendu à des workers. Je ne l'ai ni installé ni testé ici : le chapitre se limite à la base (commandes)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une machine, Workbench 64 × 36 : le correcteur ne mesure ni l'équilibrage des morceaux selon le coût réel, ni les erreurs réseau, ni une vraie ferme."
+    }
+  ]
+}

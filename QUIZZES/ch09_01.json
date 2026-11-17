@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.01",
+  "title": "Théorie de la lumière",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Si on double la distance d'une lampe ponctuelle, l'éclairement devient…",
+      "choices": [
+        "4 fois plus faible",
+        "2 fois plus faible",
+        "inchangé",
+        "2 fois plus fort"
+      ],
+      "answer": 0,
+      "explain": "Inverse du carré : 1/d²."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle puissance garde l'exposition en passant de 1 m à 3 m ?",
+      "choices": [
+        "9 fois plus",
+        "3 fois plus",
+        "inchangée",
+        "27 fois plus"
+      ],
+      "answer": 0,
+      "explain": "10 W à 1 m ↔ 90 W à 3 m (100 W avec la couleur chaude de l'exercice)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi mesurer sur un rendu linéaire (EXR) ?",
+      "choices": [
+        "Les valeurs sont proportionnelles à la lumière",
+        "Plus joli",
+        "Plus petit",
+        "Pour la couleur"
+      ],
+      "answer": 0,
+      "explain": "Un PNG est encodé en sRGB (courbe de contraste)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « under_exposed » ?",
+      "answer_text": "10 W à 3 m : luminance 0,012, soit 10 % de la référence 0,119 : 9 fois moins de lumière (inverse du carré), arrondi."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le monde est-il noir dans l'exercice ?",
+      "answer_text": "Un monde de couleur éclaire aussi la scène : le défaut gris du fond (0,05) ajoutait une lumière ambiante et faussait la mesure."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qui adoucit une ombre ?",
+      "choices": [
+        "Une source plus grande (Radius)",
+        "Une lampe plus puissante",
+        "Une lampe plus loin seulement",
+        "Une couleur chaude"
+      ],
+      "answer": 0,
+      "explain": "Pénombre : 3 pixels (Radius 0) → 8 pixels (Radius 0,5)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel rapport traduit une lumière chaude ?",
+      "choices": [
+        "Rouge / bleu > 1",
+        "Rouge / bleu < 1",
+        "Vert / vert",
+        "Puissance / distance"
+      ],
+      "answer": 0,
+      "explain": "Couleur (1 ; 0,85 ; 0,65) : rouge / bleu = 1,54 sur un plan gris."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi « too_close » est-il refusé alors que l'exposition est bonne ?",
+      "answer_text": "44 W à 2 m donne la même exposition (0,113), mais la consigne est une lampe à 3 m : l'exposition seule ne fixe pas la position."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'Occluder est-il invisible à la caméra ?",
+      "answer_text": "La caméra est au-dessus : le cube cacherait son ombre. `visible_camera = False` le garde actif pour les ombres."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite d'une mesure sur un seul pixel central ?",
+      "answer_text": "Elle ne dit rien de l'ensemble de l'image (dégradé, bords) ; ici elle mesure l'éclairement, pas l'ambiance."
+    }
+  ]
+}

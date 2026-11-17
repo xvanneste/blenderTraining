@@ -1,0 +1,11 @@
+{
+  "cases": [],
+  "extra": [
+    {
+      "script": "../../ASSETS_ATELIERS/verifier_pipeline.py",
+      "args": [
+        "lots"
+      ]
+    }
+  ]
+}

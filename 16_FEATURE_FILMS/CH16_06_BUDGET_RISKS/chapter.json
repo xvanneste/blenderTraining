@@ -1,0 +1,43 @@
+{
+  "code": "CH16.06",
+  "title": "Budget, planning et risques",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Calculer un chemin critique et protéger un pilote contre deux événements plausibles.",
+  "prereqs": [
+    "CH16.05"
+  ],
+  "objectives": [
+    "La feuille reproduit 24 jours-activité et 19 jours de délai théorique.",
+    "Le chemin suit DEV, ANIMATIQUE, LAYOUT, ANIM, RENDU, LIVRAISON.",
+    "Le rendu retardé de 2 jours mène à 21 jours. Un jour de retard sur ASSETS ne décale pas le cas nominal."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Estimer la charge",
+      ""
+    ],
+    [
+      "L2",
+      "Trouver le chemin",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/charges_pilote.csv",
+      "Charges et dépendances fictives"
+    ],
+    [
+      "../ASSETS_ATELIERS/controle_pipeline.py",
+      "Calcul des dates au plus tôt"
+    ]
+  ],
+  "pass_criteria": [
+    "La feuille reproduit 24 jours-activité et 19 jours de délai théorique.",
+    "Le chemin suit DEV, ANIMATIQUE, LAYOUT, ANIM, RENDU, LIVRAISON.",
+    "Le rendu retardé de 2 jours mène à 21 jours. Un jour de retard sur ASSETS ne décale pas le cas nominal."
+  ]
+}

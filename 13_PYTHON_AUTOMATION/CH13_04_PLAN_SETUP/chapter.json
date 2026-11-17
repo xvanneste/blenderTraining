@@ -1,0 +1,43 @@
+{
+  "code": "CH13.04",
+  "title": "Collections, caméras et rendus",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h",
+  "intro": "Préparer deux plans reproductibles sur le présentoir de CH13.03.",
+  "prereqs": [
+    "CH13.03"
+  ],
+  "objectives": [
+    "Les deux caméras se trouvent dans COL_Plans et visent le présentoir.",
+    "PLAN_010 est actif en 1 et 24, PLAN_020 en 25 et 48.",
+    "Deux PNG cadrés différemment, aux images 1 et 25."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Origine du cadre",
+      ""
+    ],
+    [
+      "L2",
+      "Raccord de caméra",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/preparer_plans.py",
+      "Script de placement et de réglage"
+    ],
+    [
+      "../ASSETS_ATELIERS/presentoir_plans.blend",
+      "Scène avec les deux plans"
+    ]
+  ],
+  "pass_criteria": [
+    "Les deux caméras se trouvent dans COL_Plans et visent le présentoir.",
+    "PLAN_010 est actif en 1 et 24, PLAN_020 en 25 et 48.",
+    "Deux PNG cadrés différemment, aux images 1 et 25."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "build": "build_ch06_08_files.py",
+  "validator": "validate_ch06_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_08_shapekeys_solution.blend",
+      "exercise": "shapekeys",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_08_shapekeys_starter.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_no_key.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_no_driver.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_always_on.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_weak.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_no_group.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_08_shapekeys_wrong_bone.blend",
+      "exercise": "shapekeys",
+      "expect": false
+    }
+  ]
+}

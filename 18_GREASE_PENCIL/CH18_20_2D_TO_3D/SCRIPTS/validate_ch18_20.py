@@ -1,6 +1,6 @@
 """
 validate_ch18_20.py — Correcteur « Du board au layout 3D » (CH18.20).
-Usage : … --python validate_ch18_20.py --python-exit-code 1 -- --exercise layout [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_20.py -- --exercise layout [--render]
 Pour chaque marqueur lié à une caméra : compare, en coordonnées d'image de cette caméra, la boîte de
 la silhouette dessinée (BOARD_SHxxxx, enfant de la caméra) et celle du mannequin CHR_A évalué à
 l'image du marqueur (recouvrement IoU ≥ 0,5, pieds alignés). Vérifie aussi : caméras inchangées

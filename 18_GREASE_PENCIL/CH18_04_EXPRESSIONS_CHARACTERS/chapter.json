@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch18_04_expressions_reference.png", "Rendu de la référence"],
     ["SCRIPTS/validate_ch18_04.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_04_expressions_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_04.py\" --python-exit-code 1 -- --exercise expressions --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_04_expressions_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_04.py\" -- --exercise expressions --render",
   "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : le casting (3 personnages)."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.05 — Composition et dessin cinématographique](../CH18_05_COMPOSITION/README.md)"

@@ -1,6 +1,6 @@
 """
 validate_ch02_11.py — Correcteur « Déplier une caisse et une boîte de conserve » (CH02.11).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_11.py --python-exit-code 1 -- --exercise uv [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_11.py -- --exercise uv [--render]
 Mesures sur les UV : bornes 0–1, occupation, chevauchement (rasterisation 128 × 128 des triangles UV),
 étirement (dispersion du rapport surface UV / surface 3D, pondérée par la surface).
 Testé avec : Blender 5.3.0.

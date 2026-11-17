@@ -1,0 +1,43 @@
+{
+  "code": "CH14.05",
+  "title": "IA pour la mise en scène",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "2 h 30",
+  "intro": "Comparer trois cadrages de la même action et retenir celui qui raconte le mieux le moment.",
+  "prereqs": [
+    "CH14.04"
+  ],
+  "objectives": [
+    "Trois propositions, chacune résumée par intention, taille de plan et relation sujet-fond.",
+    "Une planche de trois rendus montre clairement l’ocre dans au moins deux versions.",
+    "Un choix et un rejet motivés avec une annotation image par image."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Formuler",
+      ""
+    ],
+    [
+      "L2",
+      "Mettre en scène",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../13_PYTHON_AUTOMATION/ASSETS_ATELIERS/presentoir_plans.blend",
+      "Plateau Blender de comparaison"
+    ],
+    [
+      "../ASSETS_ATELIERS/cas_hybride.md",
+      "Brief et propositions"
+    ]
+  ],
+  "pass_criteria": [
+    "Trois propositions, chacune résumée par intention, taille de plan et relation sujet-fond.",
+    "Une planche de trois rendus montre clairement l’ocre dans au moins deux versions.",
+    "Un choix et un rejet motivés avec une annotation image par image."
+  ]
+}

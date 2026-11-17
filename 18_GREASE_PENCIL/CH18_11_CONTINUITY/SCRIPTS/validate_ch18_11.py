@@ -1,6 +1,6 @@
 """
 validate_ch18_11.py — Correcteur CH18.11 (dialogue découpé).
-Usage : … --python validate_ch18_11.py --python-exit-code 1 -- --exercise dialogue | board
+Usage : … --python-exit-code 1 --python validate_ch18_11.py -- --exercise dialogue | board
 « dialogue » : marqueurs liés aux caméras, règle des 180°, A à gauche / B à droite dans chaque plan,
 variété (master + plans sur A seul + plans sur B seul + insert), durées ≥ 24 images.
 Testé avec : Blender 5.3.0.

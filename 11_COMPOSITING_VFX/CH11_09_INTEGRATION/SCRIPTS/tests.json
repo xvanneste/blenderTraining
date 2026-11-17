@@ -1,0 +1,36 @@
+{
+  "build": "build_ch11_09_files.py",
+  "validator": "validate_ch11_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_09_integration_solution.blend",
+      "exercise": "integration",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_09_integration_starter.blend",
+      "exercise": "integration",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_09_integration_no_catcher.blend",
+      "exercise": "integration",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_09_integration_no_transparent.blend",
+      "exercise": "integration",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_09_integration_wrong_side.blend",
+      "exercise": "integration",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_09_integration_no_composite.blend",
+      "exercise": "integration",
+      "expect": false
+    }
+  ]
+}

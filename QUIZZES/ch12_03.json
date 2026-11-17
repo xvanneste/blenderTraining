@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.03",
+  "title": "Son",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une ambiance ?",
+      "choices": [
+        "Un son continu qui installe le lieu",
+        "Un coup ponctuel",
+        "Une réplique",
+        "Une transition"
+      ],
+      "answer": 0,
+      "explain": "AMB : bruit grave de 4,2 s sous toute la séquence."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un bruitage ?",
+      "choices": [
+        "Un son ponctuel lié à une action visible",
+        "Une musique",
+        "Un silence",
+        "Une voix"
+      ],
+      "answer": 0,
+      "explain": "HIT : le coup sur l'image 49."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où commence le son d'un coup visible à l'image 49 ?",
+      "choices": [
+        "À l'image 49 (à ± 2 images)",
+        "Une seconde plus tôt",
+        "Après la fin du plan",
+        "Sans importance"
+      ],
+      "answer": 0,
+      "explain": "Au-delà de 2 images l'écart se voit : HIT à 53 est refusé."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le son doit-il rester synchrone à quelques images ?",
+      "answer_text": "Le cerveau lie un son et un geste s'ils sont presque simultanés ; un retard de 4 images (0,17 s) paraît faux."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre early_voice ?",
+      "answer_text": "La réplique à l'image 50 chevauche le coup : le silence relatif entre 56 et 59 disparaît (0,153 pour 0,04 exigé)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur « écoute »-t-il ?",
+      "choices": [
+        "Il mixe en WAV et mesure l'énergie (RMS) sur des fenêtres d'images",
+        "Il lit le nom des fichiers",
+        "Il demande à l'élève",
+        "Il regarde la couleur"
+      ],
+      "answer": 0,
+      "explain": "Opérateur `bpy.ops.sound.mixdown` ; solution : coup 0,162, réplique 0,139, ambiance 0,0135."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce que l'écrêtage ?",
+      "choices": [
+        "Un signal qui dépasse le maximum (crête ≥ 1,0) : distorsion",
+        "Un fondu",
+        "Un filtre",
+        "Un format"
+      ],
+      "answer": 0,
+      "explain": "HIT à volume 6 : crête 1,00 ; la solution : 0,55."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une fenêtre 40–47 pour l'ambiance ?",
+      "answer_text": "C'est une zone où rien d'autre ne sonne (avant le coup) : elle sert de référence de niveau."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un strip muet est-il refusé ?",
+      "answer_text": "Un son muet n'existe pas dans le mixage : le coup muet donne un rapport de 1,0."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Des sons synthétiques à attaque nette : un vrai son a une attaque plus floue ; la qualité du son et de la voix ne se mesure pas ici."
+    }
+  ]
+}

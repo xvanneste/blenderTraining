@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.05",
+  "title": "Glare et effets",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait le nœud Glare ?",
+      "choices": [
+        "Ajoute un halo ou des traînées autour des zones très lumineuses",
+        "Ajoute du bruit",
+        "Change la focale",
+        "Cuit les lumières"
+      ],
+      "answer": 0,
+      "explain": "Types : Bloom, Ghosts, Streaks, Fog Glow, Simple Star."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type donne le halo le plus discret ici ?",
+      "choices": [
+        "Fog Glow (anneau 0,0066)",
+        "Bloom (0,88)",
+        "Ghosts (1,0)",
+        "Streaks"
+      ],
+      "answer": 0,
+      "explain": "Bloom et Ghosts noient l'image avec les réglages par défaut."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Threshold ?",
+      "choices": [
+        "La luminosité à partir de laquelle un pixel produit un halo",
+        "La taille de l'image",
+        "La focale",
+        "Le bruit"
+      ],
+      "answer": 0,
+      "explain": "Défaut 1,0 : seules les valeurs supérieures à 1 débordent."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la lampe doit-elle dépasser 1,0 ?",
+      "answer_text": "Une valeur de 30 dans le rendu (HDR) dépasse le seuil : seules les sources réellement plus lumineuses que le blanc font un halo ; la barre (1,0) n'en fait pas."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre ghosts ?",
+      "answer_text": "Des reflets multiples qui remplissent le champ lointain : 0,80 (≤ 0,1 exigé)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Lens Distortion ?",
+      "choices": [
+        "Courbe les lignes droites vers les bords, comme un objectif réel",
+        "Floute l'image",
+        "Change la couleur",
+        "Ajoute un halo"
+      ],
+      "answer": 0,
+      "explain": "Distortion 0,3 : la barre se courbe de +7 pixels."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle plage de Distortion le correcteur attend-il ?",
+      "choices": [
+        "Entre 0,15 et 0,4 environ (courbure +4 à +12 pixels)",
+        "Exactement 1",
+        "Négative uniquement",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "0,1 → +2 pixels ; 0,6 → la barre sort de l'image."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la distorsion agrandit-elle aussi la lampe ?",
+      "answer_text": "Elle grossit le centre : la lampe passe de 11 à environ 16 pixels de rayon ; le correcteur place donc l'anneau de mesure plus loin (rayon 20–30)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi n'y a-t-il pas d'exercice de grain de pellicule ?",
+      "answer_text": "Je n'ai pas trouvé de nœud de grain dédié dans la liste des nœuds du compositeur 5.3 : le grain peut se faire avec du bruit procédural, non traité ici."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une lampe et une barre ; le halo est mesuré par l'énergie d'un anneau, pas par son aspect ; Streaks et Simple Star ne sont pas évalués individuellement."
+    }
+  ]
+}

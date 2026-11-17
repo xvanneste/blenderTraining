@@ -1,0 +1,68 @@
+{
+  "code": "CH08.02",
+  "title": "Soft Bodies",
+  "phase_title": "8 — Physique et simulations",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Un Soft Body est un maillage qui se déforme sous la gravité comme un objet mou : chaque sommet est une masse reliée à ses voisins par des ressorts (les arêtes). Le GOAL fixe tout ou partie des sommets (poids d'un groupe de sommets) : un poids de 1 accroche le sommet, un poids de 0 le libère. Ce chapitre accroche une plaque par un bord et la laisse pendre : goal sur le groupe « pin », arêtes rigides (Pull, Push, Bending), masse modeste. Le correcteur configure ET simule (100 images) : bord accroché immobile, bord libre qui pend, arêtes non étirées.",
+  "prereqs": [
+    "CH08.01 (corps rigides, simulation pas à pas)."
+  ],
+  "objectives": [
+    "Activer un Soft Body.",
+    "Accrocher des sommets par un groupe (Goal).",
+    "Régler les ressorts d'arêtes (Pull, Push, Bending) et la masse.",
+    "Mesurer l'étirement d'une simulation."
+  ],
+  "competences": [
+    [
+      "C08.02.a",
+      "Objet mou",
+      "Exercice 2 (correcteur) + profils de la plaque"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Ressorts et goal",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Régler et mesurer",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_02_softbody_starter.blend",
+      "Plaque de 2 × 2 m à 2 m de haut avec son groupe « pin » (bord gauche), sans modificateur"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_02_softbody_solution.blend",
+      "Soft Body configuré : la plaque pend par son bord et se balance sans s'étirer"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_02_softbody_reference.png",
+      "Profil de la plaque aux images 1, 40 et 100 (vert : bord accroché)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans goal, sans groupe, arêtes molles, masse excessive, sans arêtes)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_02.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_02_softbody_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_02.py\" -- --exercise softbody",
+  "deliverables": [
+    "Plaque en Soft Body validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.03 — Cloth](../CH08_03_CLOTH/README.md)"
+}

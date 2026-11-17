@@ -1,0 +1,68 @@
+{
+  "code": "CH13.01",
+  "title": "Python pour artistes",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "8 h",
+  "intro": "Python est le langage de Blender : tout ce que vous faites avec la souris peut s'écrire en quelques lignes. Ce chapitre pose les bases dont un artiste a besoin : des VARIABLES, des LISTES, des BOUCLES et des FONCTIONS, puis une première scène créée par script (une grille de cubes). Vous écrivez cinq petites fonctions dans un texte « exercise.py » ; le correcteur EXÉCUTE votre texte et teste chaque fonction avec des cas précis, comme le ferait un test automatique.",
+  "prereqs": [
+    "CH01 (interface, objets, Scripting), aucune notion de programmation requise."
+  ],
+  "objectives": [
+    "Utiliser variables, listes, boucles et conditions.",
+    "Écrire et tester une fonction (arguments, valeur renvoyée).",
+    "Créer des objets par script avec bpy.ops et nommer les résultats.",
+    "Lire un message d'erreur (traceback) et corriger."
+  ],
+  "competences": [
+    [
+      "C13.01.a",
+      "Écrire un script simple",
+      "Exercice 2 (correcteur) : 56/56"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Les bases du langage",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Une première scène par script",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch13_01_python_starter.blend",
+      "Texte exercise.py avec cinq fonctions « à compléter » (elles renvoient None) : score 6/56"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch13_01_python_solution.blend",
+      "Les cinq fonctions écrites : 56/56"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch13_01_python_reference.png",
+      "Grille de 5 × 3 cubes créée par la solution (make_cubes(grid_positions(5, 3, 2.0)), vue de dessus)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires : chacun a UNE fonction fausse, et le correcteur la désigne seule"
+    ],
+    [
+      "SCRIPTS/validate_ch13_01.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch13_01_python_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch13_01.py\" -- --exercise python",
+  "deliverables": [
+    "Cinq fonctions écrites et validées.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé (56/56)."
+  ],
+  "next": "[CH13.02 — L'API bpy](../CH13_02_BPY_API/README.md)"
+}

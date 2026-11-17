@@ -1,0 +1,43 @@
+{
+  "code": "CH15.06",
+  "title": "Finition",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Livrer une version web et un master de travail avec une revue image et son.",
+  "prereqs": [
+    "CH15.05"
+  ],
+  "objectives": [
+    "Le film complet couvre 360 images et les raccords gardent leur intention.",
+    "La balise garde sa teinte et le clic reste perceptible sans saturation.",
+    "Image et son démarrent ensemble, la durée cible vaut 15 secondes et les crédits du dossier correspondent aux ressources utilisées."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Conformer",
+      ""
+    ],
+    [
+      "L2",
+      "Équilibrer",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/sur_le_quai.md",
+      "Spécification de livraison du quai"
+    ],
+    [
+      "../../12_EDITING_SOUND/PROJECT_P12/README.md",
+      "Référence production VSE et mixage"
+    ]
+  ],
+  "pass_criteria": [
+    "Le film complet couvre 360 images et les raccords gardent leur intention.",
+    "La balise garde sa teinte et le clic reste perceptible sans saturation.",
+    "Image et son démarrent ensemble, la durée cible vaut 15 secondes et les crédits du dossier correspondent aux ressources utilisées."
+  ]
+}

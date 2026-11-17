@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch18_06_gp_scene_reference.png", "Rendu de la référence (occlusion correcte)"],
     ["SCRIPTS/validate_ch18_06.py", "Correcteur (noms, calques, groupe, profondeurs, cadre, passe Z)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_06_gp_scene_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_06.py\" --python-exit-code 1 -- --exercise organize --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_06_gp_scene_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_06.py\" -- --exercise organize --render",
   "deliverables": ["Scène validée par le correcteur.", "Auto-évaluation ≥ 14/20.", "Mini-projet : un plan en trois profondeurs."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Scène validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.07 — Brushes, traits, remplissages, matériaux](../CH18_07_BRUSHES_MATERIALS/README.md)"

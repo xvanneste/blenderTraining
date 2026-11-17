@@ -7,12 +7,12 @@
 
 ## Introduction
 
-Une scène peut être magnifique et pourtant impossible à produire : trop lente à manipuler, trop lourde pour la mémoire de la carte graphique, trop longue à rendre. Ce chapitre vous apprend à penser en budget : comprendre quelle partie de l'ordinateur travaille pour chaque tâche, lire les statistiques, estimer le coût réel d'une scène au rendu, et appliquer les premiers leviers d'optimisation. Vous optimiserez une scène volontairement trop lourde — 200 galets qui représentent 16 millions de faces au rendu — sans changer son image.
+Une scène peut être magnifique et pourtant impossible à produire : trop lente à manipuler, trop lourde pour la mémoire de la carte graphique, trop longue à rendre. Ce chapitre vous apprend à penser en budget : comprendre quelle partie de l'ordinateur travaille pour chaque tâche, lire les statistiques, estimer le coût réel d'une scène au rendu, et appliquer les premiers leviers d'optimisation. Vous optimiserez une scène volontairement trop lourde de 200 galets. Vous réduirez le coût estimé, puis comparerez les images au cadrage de livraison.
 
 ## Prérequis
 
-- CH00.01 et CH00.02 validés.
-- Statistiques de la barre d'état activées (CH00.02).
+- Savoir enregistrer une copie et retrouver un objet dans l’Outliner. Les premiers jalons de CH00.01 et CH00.02 suffisent.
+- Statistiques activées dans Overlays ou dans la barre d’état. Un GPU Cycles est facultatif.
 
 ## Objectifs pédagogiques
 
@@ -63,7 +63,7 @@ Une scène peut être magnifique et pourtant impossible à produire : trop lente
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_03_heavy_scene_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch00_03.py" --python-exit-code 1 -- --exercise optimize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_03.py" -- --exercise optimize --render
 ```
 
 ## Livrables attendus

@@ -1,0 +1,68 @@
+{
+  "code": "CH12.03",
+  "title": "Son",
+  "phase_title": "12 — Montage, son et finition",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Le son fait au moins la moitié de l'impact d'un film. Trois familles se placent sur l'image : l'ambiance (le décor sonore continu), les bruitages (les sons ponctuels liés à une action visible : un coup, un pas) et la voix (la réplique, calée sur la bouche). La règle : un son synchrone doit commencer sur l'image de l'action, à une ou deux images près. Ce chapitre place trois sons générés sur une séquence de quatre secondes ; le correcteur lit les positions, mixe réellement l'ensemble et mesure l'énergie par fenêtres d'images pour vérifier que le coup et la réplique tombent au bon moment.",
+  "prereqs": [
+    "CH12.01 (VSE), CH12.02 (montage)."
+  ],
+  "objectives": [
+    "Placer un son sur un marqueur de timeline.",
+    "Distinguer ambiance, bruitage et voix.",
+    "Contrôler la synchronisation par un mixage mesuré.",
+    "Éviter l'écrêtage."
+  ],
+  "competences": [
+    [
+      "C12.03.a",
+      "Habiller une séquence",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Ambiance, bruitage, voix",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Synchroniser et mesurer",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch12_03_sound_starter.blend",
+      "HIT à l'image 30 (19 trop tôt), VOICE à 20 (41 trop tôt), AMB 11–59 : le coup et la réplique ne tombent pas sur les marqueurs ; 19/61"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_03_sound_solution.blend",
+      "AMB 1–100, HIT à 49, VOICE à 61 : coup 12 × l'ambiance, réplique 10 ×, crête 0,55 ; 61/61"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch12_03_sound_reference.png",
+      "Enveloppe du mixage : départ (haut) et solution (bas) ; barre jaune = IMPACT (49), barre rose = LINE (61)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (coup en retard, réplique trop tôt, ambiance trop courte, écrêtage, coup muet)"
+    ],
+    [
+      "SCRIPTS/validate_ch12_03.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch12_03_sound_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch12_03.py\" -- --exercise sound",
+  "deliverables": [
+    "Liste de synchronisation (son, image de départ, marqueur).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH12.04 — Mixage](../CH12_04_MIX/README.md)"
+}

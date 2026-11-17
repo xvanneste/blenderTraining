@@ -57,7 +57,7 @@ Grease Pencil dessine en 3D : ce chapitre place un personnage 2D debout dans un 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_19_hybrid_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_19.py" --python-exit-code 1 -- --exercise hybrid --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_19.py" -- --exercise hybrid --render
 ```
 
 ## Livrables attendus

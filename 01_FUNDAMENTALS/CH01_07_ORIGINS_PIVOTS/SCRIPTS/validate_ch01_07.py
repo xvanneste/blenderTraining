@@ -1,6 +1,6 @@
 """
 validate_ch01_07.py — Correcteur « la porte et la roue » (CH01.07).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_07.py --python-exit-code 1 -- --exercise door
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_07.py -- --exercise door
 Testé avec : Blender 5.3.0.
 """
 import math

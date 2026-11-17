@@ -59,7 +59,7 @@ Un storyboard raconte avec des visages. Ce chapitre apprend √† construire une t√
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_04_expressions_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_04.py" --python-exit-code 1 -- --exercise expressions --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_04.py" -- --exercise expressions --render
 ```
 
 ## Livrables attendus

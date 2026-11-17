@@ -1,0 +1,4 @@
+plan,debut,fin,duree_images,actifs,information
+S010,1,120,120,A01+A02+A03,Le signal manque
+S020,121,216,96,A01+A02+A03,Mina choisit d’appuyer
+S030,217,360,144,A01+A02+A03+A04,Le signal répond

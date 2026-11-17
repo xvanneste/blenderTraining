@@ -7,7 +7,7 @@ build_ch02_08_files.py — « L'arbre au modificateur Skin » (CH02.08, modélis
       Squelette de sommets/arêtes (tronc, 3 branches, 3 racines, rameaux), rayons Skin
       décroissants (18 cm à la base → 2,5 cm aux pointes), modificateur Skin puis Subdivision
       (Levels 1 / Render 2), Shade Smooth.
-Usage : blender -b --factory-startup --python build_ch02_08_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_08_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

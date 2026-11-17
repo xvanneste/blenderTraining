@@ -1,5 +1,7 @@
 # PHASE 13 — PYTHON ET AUTOMATISATION ⏱ 75 h · I→A
 
+[Ressources officielles et exercices de préparation par chapitre](RESSOURCES_PHASE_13.md)
+
 | Chapitre | Leçons | Compétences |
 |---|---|---|
 | CH13.01 Python pour artistes | Variables, listes, boucles, fonctions | C13.01.a écrire un script simple |
@@ -18,15 +20,15 @@
 
 | Chapitre | Statut |
 |---|---|
-| CH13.01 Python pour artistes | ⬜ Non commencé |
-| CH13.02 L'API bpy | ⬜ Non commencé |
-| CH13.03 Génération d'objets et matériaux | ⬜ Non commencé |
-| CH13.04 Collections, caméras, rendus | ⬜ Non commencé |
-| CH13.05 Batch rendering | ⬜ Non commencé |
-| CH13.06 Validation | ⬜ Non commencé |
-| CH13.07 Opérateurs et UI | ⬜ Non commencé |
-| CH13.08 Extensions | ⬜ Non commencé |
-| CH13.09 Debugging et performance | ⬜ Non commencé |
+| [CH13.01 Python pour artistes](CH13_01_PYTHON_BASICS/README.md) | ✅ Terminé et vérifié |
+| [CH13.02 L'API bpy](CH13_02_BPY_API/README.md) | ✅ Terminé et vérifié |
+| [CH13.03 Génération d'objets et matériaux](CH13_03_MESH_MATERIALS/README.md) | ✅ Terminé et vérifié |
+| [CH13.04 Collections, caméras, rendus](CH13_04_PLAN_SETUP/README.md) | ✅ Terminé et vérifié |
+| [CH13.05 Batch rendering](CH13_05_BATCH_RENDER/README.md) | ✅ Terminé et vérifié |
+| [CH13.06 Validation](CH13_06_QUALITY_CONTROL/README.md) | ✅ Terminé et vérifié |
+| [CH13.07 Opérateurs et UI](CH13_07_OPERATORS_UI/README.md) | ✅ Terminé et vérifié |
+| [CH13.08 Extensions](CH13_08_EXTENSIONS/README.md) | ✅ Terminé et vérifié |
+| [CH13.09 Debugging et performance](CH13_09_DEBUG_PERFORMANCE/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH13_MM_NOM/` conforme à

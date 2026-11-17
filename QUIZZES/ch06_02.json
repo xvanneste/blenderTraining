@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.02",
+  "title": "Contraintes",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait un Damped Track ?",
+      "choices": [
+        "Il oriente un axe de l'objet vers la cible par la rotation minimale",
+        "Il copie la position de la cible",
+        "Il fixe l'échelle",
+        "Il crée un parent"
+      ],
+      "answer": 0,
+      "explain": "Le bone tourne pour que son axe choisi (Track Axis) pointe vers la cible, sans rotation parasite autour de cet axe."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel Track Axis pour qu'un bone vise avec sa direction (tête → queue) ?",
+      "choices": [
+        "X",
+        "Y",
+        "Z",
+        "−Z"
+      ],
+      "answer": 1,
+      "explain": "L'axe local Y d'un bone est sa direction : Track Axis Y."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où ajoute-t-on une contrainte de bone ?",
+      "choices": [
+        "Pose Mode, onglet Bone Constraints",
+        "Edit Mode, onglet Object Constraints",
+        "Outliner seulement",
+        "Modifier Properties"
+      ],
+      "answer": 0,
+      "explain": "Contraintes de bone : en Pose Mode (`pose.bones[n].constraints`) ; les contraintes d'objet sont dans un autre onglet."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les yeux gardent-ils une erreur de 0° même quand la tête tourne ?",
+      "answer_text": "Leur contrainte est évaluée après le mouvement du parent : elle recalcule l'orientation vers la cible quelle que soit la rotation de la tête."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que signifie Influence 0,5 ?",
+      "choices": [
+        "La contrainte agit à moitié (mélange avec l'orientation sans contrainte)",
+        "Elle dure la moitié du temps",
+        "Elle s'applique à la moitié des bones",
+        "Elle est désactivée"
+      ],
+      "answer": 0,
+      "explain": "L'influence mélange le résultat de la contrainte avec l'état avant elle : 0 = aucun effet, 1 = plein."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Dans quel ordre une pile de contraintes est-elle évaluée ?",
+      "choices": [
+        "De haut en bas",
+        "De bas en haut",
+        "Au hasard",
+        "Par influence décroissante"
+      ],
+      "answer": 0,
+      "explain": "La première (en haut) s'applique d'abord : la limite doit être placée APRÈS le suivi."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Qu'arrive-t-il si on place Limit Rotation avant Damped Track ?",
+      "answer_text": "Le suivi s'applique après la limite et la défait : la tête dépasse le plafond (43° mesurés au lieu de 35°)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'espace du Limit Rotation est-il Local ?",
+      "answer_text": "Pour limiter la rotation par rapport au parent de la tête (le cou), indépendamment de l'orientation du personnage dans le monde."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle rotation de tête mesure-t-on pour une cible à 45° ?",
+      "answer_text": "22,5° (influence 0,5 × 45°) ; pour une cible à 86°, 35° : la limite plafonne (0,5 × 86 = 43 > 35)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur déplace-t-il la cible ?",
+      "answer_text": "Un rig n'est correct que s'il réagit : tester une seule position laisserait passer un œil réglé à la main sans contrainte."
+    }
+  ]
+}

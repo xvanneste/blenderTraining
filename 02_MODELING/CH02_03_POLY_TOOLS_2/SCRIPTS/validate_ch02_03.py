@@ -1,6 +1,6 @@
 """
 validate_ch02_03.py — Correcteur de « L'atelier de découpe » (CH02.03).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_03.py --python-exit-code 1 -- --exercise atelier [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_03.py -- --exercise atelier [--render]
 Mesures en coordonnées LOCALES de chaque objet (géométrie évaluée pour le ressort). Testé avec : Blender 5.3.0.
 """
 import math

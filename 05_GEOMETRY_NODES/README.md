@@ -19,16 +19,16 @@
 
 | Chapitre | Statut |
 |---|---|
-| CH05.01 Principes | ⬜ Non commencé |
-| CH05.02 Géométrie procédurale | ⬜ Non commencé |
-| CH05.03 Instances | ⬜ Non commencé |
-| CH05.04 Distribution | ⬜ Non commencé |
-| CH05.05 Attributs | ⬜ Non commencé |
-| CH05.06 Paramètres et interfaces | ⬜ Non commencé |
-| CH05.07 Décors et végétation | ⬜ Non commencé |
-| CH05.08 Architecture procédurale | ⬜ Non commencé |
-| CH05.09 Boucles et simulation | ⬜ Non commencé |
-| CH05.10 Optimisation et outils | ⬜ Non commencé |
+| [CH05.01 Principes](CH05_01_PRINCIPLES/README.md) | ✅ Terminé et vérifié |
+| [CH05.02 Géométrie procédurale](CH05_02_PROCEDURAL_GEOMETRY/README.md) | ✅ Terminé et vérifié |
+| [CH05.03 Instances](CH05_03_INSTANCES/README.md) | ✅ Terminé et vérifié |
+| [CH05.04 Distribution](CH05_04_DISTRIBUTION/README.md) | ✅ Terminé et vérifié |
+| [CH05.05 Attributs](CH05_05_ATTRIBUTES/README.md) | ✅ Terminé et vérifié |
+| [CH05.06 Paramètres et interfaces](CH05_06_PARAMETERS/README.md) | ✅ Terminé et vérifié |
+| [CH05.07 Décors et végétation](CH05_07_SCATTERING/README.md) | ✅ Terminé et vérifié |
+| [CH05.08 Architecture procédurale](CH05_08_ARCHITECTURE/README.md) | ✅ Terminé et vérifié |
+| [CH05.09 Boucles et simulation](CH05_09_LOOPS/README.md) | ✅ Terminé et vérifié |
+| [CH05.10 Optimisation et outils](CH05_10_TOOLS/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH05_MM_NOM/` conforme à

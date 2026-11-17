@@ -1,0 +1,17 @@
+{
+  "version_blender": "5.3.0",
+  "format": "glTF 2.0 / GLB",
+  "hauteur_source_m": 1.8248,
+  "hauteur_import_m": 1.8248,
+  "maillages_exportes": 19,
+  "maillages_pondérés": 19,
+  "os": 167,
+  "actions": 1,
+  "deplacement_max_m_sur_le_corps": [
+    0.4194,
+    0.4201
+  ],
+  "images_importees": [
+    "atlas_peau_finale_2048"
+  ]
+}

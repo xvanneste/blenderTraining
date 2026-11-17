@@ -58,7 +58,7 @@ La topologie, c'est la façon dont les points d'un maillage sont reliés. Elle d
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_01_topology_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_01.py" --python-exit-code 1 -- --exercise clinic --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_01.py" -- --exercise clinic --render
 ```
 
 ## Livrables attendus

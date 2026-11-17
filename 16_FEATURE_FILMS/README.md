@@ -1,5 +1,7 @@
 # PHASE 16 — PRODUCTION DE LONGS-MÉTRAGES ⏱ 190 h · E
 
+[Cahier du pilote et projet de phase](ASSETS_ATELIERS/PILOTE.md)
+
 | Chapitre | Leçons |
 |---|---|
 | CH16.01 Développement d'un film | Scénario long, bible, animatique complète |
@@ -24,14 +26,14 @@
 
 | Chapitre | Statut |
 |---|---|
-| CH16.01 Développement d'un film | ⬜ Non commencé |
-| CH16.02 Séquences et plans | ⬜ Non commencé |
-| CH16.03 Asset management | ⬜ Non commencé |
-| CH16.04 Pipelines de rendu | ⬜ Non commencé |
-| CH16.05 Équipes et départements | ⬜ Non commencé |
-| CH16.06 Budget, planning, risques | ⬜ Non commencé |
-| CH16.07 Solo vs indé vs studio | ⬜ Non commencé |
-| CH16.08 Livraison | ⬜ Non commencé |
+| [CH16.01 Développement d'un film](CH16_01_DEVELOPMENT/README.md) | ✅ Terminé et vérifié |
+| [CH16.02 Séquences et plans](CH16_02_SHOT_TRACKING/README.md) | ✅ Terminé et vérifié |
+| [CH16.03 Asset management](CH16_03_ASSET_MANAGEMENT/README.md) | ✅ Terminé et vérifié |
+| [CH16.04 Pipelines de rendu](CH16_04_RENDER_PIPELINES/README.md) | ✅ Terminé et vérifié |
+| [CH16.05 Équipes et départements](CH16_05_TEAMS/README.md) | ✅ Terminé et vérifié |
+| [CH16.06 Budget, planning, risques](CH16_06_BUDGET_RISKS/README.md) | ✅ Terminé et vérifié |
+| [CH16.07 Solo vs indé vs studio](CH16_07_PRODUCTION_MODELS/README.md) | ✅ Terminé et vérifié |
+| [CH16.08 Livraison](CH16_08_DELIVERY/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre a son sous-dossier `CH16_MM_NOM/` conforme à

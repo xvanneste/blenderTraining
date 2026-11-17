@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.02",
+  "title": "Géométrie procédurale",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud rassemble plusieurs géométries en une seule ?",
+      "choices": [
+        "Transform",
+        "Join Geometry",
+        "Set Position",
+        "Realize Instances"
+      ],
+      "answer": 1,
+      "explain": "Join Geometry fusionne les géométries reçues en une seule sortie (les pièces restent des composantes séparées)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment décaler la pièce d'un cylindre centré à l'origine de 1,5 m vers le haut ?",
+      "choices": [
+        "Set Position",
+        "Transform avec Translation z = 1,5",
+        "Join",
+        "Cube"
+      ],
+      "answer": 1,
+      "explain": "Transform reçoit une géométrie et applique Translation, Rotation, Scale."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où est centré un Cylinder par défaut ?",
+      "choices": [
+        "Sur sa base",
+        "Au milieu de sa hauteur, sur l'origine",
+        "Au sommet",
+        "À l'infini"
+      ],
+      "answer": 1,
+      "explain": "Le Cylinder est centré sur l'origine : un fût de 2,6 m s'étend de −1,3 à +1,3 ; Translation z = 1,5 le place de 0,2 à 2,8."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le correcteur attend-il 4 composantes connexes ?",
+      "answer_text": "Fût, base, chapiteau et anneau sont quatre pièces fermées qui ne partagent pas de sommets : Join Geometry les met dans un seul maillage sans les souder."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelle est l'étendue en Z du fût dans la solution ?",
+      "answer_text": "2,6 m : de z = 0,2 (sommet de la base) à z = 2,8 (dessous du chapiteau)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Curve to Mesh avec un Profile Curve ?",
+      "choices": [
+        "Il extrude la section le long de la courbe pour produire un maillage",
+        "Il supprime la courbe",
+        "Il crée des UV",
+        "Il subdivise"
+      ],
+      "answer": 0,
+      "explain": "La courbe est le chemin, le profil la section : un cercle de 5 cm le long d'un cercle de 33 cm donne un tore."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi le correcteur teste-t-il « pieds sur z = 0 » ?",
+      "choices": [
+        "Par esthétique",
+        "Un objet posé doit reposer sur le sol : les dimensions sont réelles",
+        "Pour le bake",
+        "Pour le rig"
+      ],
+      "answer": 1,
+      "explain": "Les décors (CH05.07, CH05.08) placent les objets sur le sol à z = 0."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que détecte le test d'emprise et de centrage ?",
+      "answer_text": "Une pièce décalée en X ou Y (chapiteau de +0,2 m) : l'emprise dépasse 1,0 m et le centre sort de l'axe Z."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un fût de 1 m est-il refusé même si la hauteur totale reste 3 m ?",
+      "answer_text": "Il laisserait un trou entre la base et le chapiteau : le correcteur mesure la hauteur de la composante cylindrique (≥ 2,4 m)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel intérêt de construire la colonne par nœuds plutôt qu'en maillage ?",
+      "answer_text": "Les dimensions deviennent des paramètres : hauteur, rayon, résolution se changent sans rien refaire, et l'arbre se réutilise (CH05.06)."
+    }
+  ]
+}

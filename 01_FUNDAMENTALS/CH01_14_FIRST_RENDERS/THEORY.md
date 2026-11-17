@@ -19,7 +19,7 @@ les mêmes matériaux (le Principled BSDF) et les mêmes lumières.
 
 ## 3. Les réglages de Cycles à connaître
 *Properties → Render* :
-- **Device** : *GPU Compute* (CH00.01).
+- **Device**. Choisissez CPU ou GPU Compute selon le périphérique configuré dans CH00.01.
 - **Sampling → Render** : *Noise Threshold* (échantillonnage adaptatif : Cycles s'arrête
   quand un pixel est assez propre ; 0,01 = très propre, 0,05 = plus rapide), *Max Samples*
   (plafond, ex. 128–1024), *Time Limit*.

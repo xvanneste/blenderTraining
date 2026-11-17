@@ -9,10 +9,10 @@ build_ch03_02_files.py — « Premier sculpt : un visage simple » (CH03.02, Scu
       Visage stylisé : nez (relief +12 cm), arcades, orbites creusées (−6 cm), pommettes, sillon de
       bouche ; parfaitement symétrique en X (Mirror X activé) ; arrière du crâne MASQUÉ (.sculpt_mask = 1)
       et intact ; 3 Face Sets (visage, côtés, arrière).
-IMPORTANT : en arrière-plan, les opérateurs de sculpture de Blender 5.3 plantent ; la solution est donc
+NOTE : la solution livrée est sculptée à la brosse (Blender 5.2 via MCP, marqueur .sculpted_with_mcp). Ce script ne produit qu'un repli scripté : en 5.3 -b les opérateurs de sculpture plantent, la version de repli est donc
 générée par des déplacements calculés le long de la normale (équivalents aux brosses Draw / Clay Strips,
 inversées pour creuser) et par écriture directe des attributs de masque et de Face Sets.
-Usage : blender -b --factory-startup --python build_ch03_02_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch03_02_files.py
 Testé avec : Blender 5.3.0.
 """
 import math
@@ -118,7 +118,10 @@ def main():
     out = os.path.join(CH, "COMPLETED_EXAMPLES")
     build(False)
     L.save(os.path.join(CH, "STARTER_FILES", "ch03_02_face_starter.blend"))
-    sc = build(True)
+    if os.path.exists(os.path.join(out, ".sculpted_with_mcp")):
+        print("[BCMA] solution sculptée à la brosse (Blender 5.2 via MCP) conservée : non régénérée")
+        return
+    sc = build(True)          # version SCRIPTÉE (repli) : n'est utilisée que si la solution sculptée est absente
     L.save(os.path.join(out, "ch03_02_face_solution.blend"))
     sc.render.filepath = os.path.join(out, "ch03_02_face_reference.png")
     bpy.ops.render.render(write_still=True)

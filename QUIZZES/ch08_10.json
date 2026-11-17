@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.10",
+  "title": "Caches et baking",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi cuire une simulation ?",
+      "choices": [
+        "Pour la relire dans n'importe quel ordre",
+        "Pour la rendre plus belle",
+        "Pour changer la gravité",
+        "Pour compresser le .blend"
+      ],
+      "answer": 0,
+      "explain": "Sans cache, il faut rejouer depuis l'image 1."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que faut-il faire AVANT de cuire sur disque ?",
+      "choices": [
+        "Enregistrer le fichier",
+        "Fermer Blender",
+        "Supprimer la caméra",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Le dossier blendcache est créé à côté du .blend enregistré."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment s'appelle le dossier de cache de `scene.blend` ?",
+      "choices": [
+        "blendcache_scene",
+        "cache",
+        "scene_cache",
+        "bake"
+      ],
+      "answer": 0,
+      "explain": "`blendcache_<nom du fichier>`."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Cache en mémoire ou sur disque ?",
+      "answer_text": "En mémoire : rapide mais perdu à la fermeture selon les cas et pas de fichiers ; sur disque : fichiers .bphys (61 pour 60 images), gros caches et partage."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que se passe-t-il si on renomme le .blend ?",
+      "answer_text": "Le cache est cherché dans `blendcache_<nouveau nom>` : s'il n'existe pas, il est perdu ; copier le dossier avec le fichier."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle plage cuit un système de particules ici ?",
+      "choices": [
+        "Celle de la scène",
+        "Celle du cache, réglable",
+        "Toujours 250",
+        "Une seule image"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : scène 1–30 pendant la cuisson : 31 fichiers."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur vérifie-t-il la cuisson ?",
+      "choices": [
+        "Fichiers .bphys + relecture identique",
+        "Taille du .blend",
+        "Couleur",
+        "Un rendu"
+      ],
+      "answer": 0,
+      "explain": "Au moins 60 fichiers et positions identiques en sautant 60 → 40 → 60 → 40."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi `is_outdated` ne suffit-il pas ?",
+      "answer_text": "Mesuré : après avoir changé Number à 150, `is_outdated` reste faux ; le correcteur compte donc les particules (150 au lieu de 100)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « memory_only » ?",
+      "answer_text": "Cache cuit (is_baked vrai) mais en mémoire : 0 fichier sur disque ; la consigne exige le disque."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le bake demande-t-il un contexte particulier en script ?",
+      "answer_text": "L'opérateur `ptcache.bake` exige un `point_cache` dans le contexte : `temp_override(point_cache=pc)`."
+    }
+  ]
+}

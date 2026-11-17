@@ -1,6 +1,6 @@
 """
 validate_ch01_09.py — Correcteur de la chasse aux propriétés (CH01.09).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_09.py --python-exit-code 1 -- --exercise hunt
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_09.py -- --exercise hunt
 Testé avec : Blender 5.3.0.
 """
 import os

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.11",
+  "title": "Gestion des couleurs",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel espace pour une image d'albedo (couleur) ?",
+      "choices": [
+        "Non-Color",
+        "sRGB",
+        "Linear Rec.709",
+        "Raw"
+      ],
+      "answer": 1,
+      "explain": "Une image de couleur peinte ou photographiée est encodée en sRGB ; Blender la convertit en linéaire pour le calcul."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel espace pour une carte de rugosité ?",
+      "choices": [
+        "sRGB",
+        "Non-Color",
+        "AgX Base sRGB",
+        "Rec.2020"
+      ],
+      "answer": 1,
+      "explain": "La rugosité est un nombre : Non-Color évite toute conversion qui fausserait la valeur."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que se passe-t-il si une normal map est en sRGB ?",
+      "choices": [
+        "Rien",
+        "Les vecteurs sont décodés avec une courbe qui les déforme : relief faux",
+        "Le moteur plante",
+        "La couleur est plus vive"
+      ],
+      "answer": 1,
+      "explain": "La conversion sRGB→linéaire modifie les composantes : normales incorrectes."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Donnez la règle simple pour décider de l'espace d'une image.",
+      "answer_text": "Si l'image sera VUE comme couleur (albedo, émission) : sRGB. Si ses valeurs sont des DONNÉES (rugosité, métal, normales, hauteur, masques) : Non-Color."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le nom « Non-Color » ?",
+      "answer_text": "Parce que l'image n'est pas une couleur : ses pixels sont lus tels quels, sans transformation."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est le rôle d'un View Transform ?",
+      "choices": [
+        "Changer les UV",
+        "Convertir l'image linéaire de la scène en image affichable en compressant les hautes lumières",
+        "Choisir le moteur",
+        "Baker"
+      ],
+      "answer": 1,
+      "explain": "Les valeurs de la scène dépassent 1 ; le View Transform les ramène dans la plage d'affichage."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi laisser Gamma à 1 ?",
+      "choices": [
+        "C'est faux, il faut 2,2",
+        "La conversion d'affichage est déjà faite par le Display Device ; un gamma supplémentaire délave l'image",
+        "Gamma est désactivé",
+        "Pour baker"
+      ],
+      "answer": 1,
+      "explain": "Un Gamma ≠ 1 ajoute une seconde courbe par-dessus celle du périphérique d'affichage."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre la mesure du panneau lumineux avec Standard et avec AgX ?",
+      "answer_text": "Standard : (1 ; 1 ; 1) — la teinte crème est perdue (écrêtage). AgX : (0,87 ; 0,85 ; 0,82) — la hauteur de la lumière est compressée et la teinte conservée."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une sortie maître en OpenEXR ?",
+      "answer_text": "EXR stocke des flottants linéaires sans écrêtage ni courbe : le grade et la composition peuvent reprendre toute la dynamique ; PNG 8 bits est une livraison finale."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi éviter une exposition de +4 ?",
+      "answer_text": "Elle masque un éclairage mal réglé : on corrige la lumière dans la scène ; une exposition extrême rend le rendu fragile et incohérent entre plans."
+    }
+  ]
+}

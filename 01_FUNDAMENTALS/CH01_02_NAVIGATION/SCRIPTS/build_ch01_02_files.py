@@ -7,7 +7,7 @@ build_ch01_02_files.py — Fichiers de CH01.02 (navigation 3D).
       CAM_Front, CAM_Right, CAM_Top mal placées.
   COMPLETED_EXAMPLES/ch01_02_museum_solution.blend
       Les trois caméras orthographiques cadrent la statue de face, de droite, de dessus.
-Usage : blender -b --factory-startup --python build_ch01_02_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_02_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

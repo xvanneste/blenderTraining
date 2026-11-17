@@ -5,7 +5,8 @@ Ouvrez `STARTER_FILES/ch01_09_hunt_starter.blend`. Les consignes sont dans le Te
 
 ## Tutoriel 1 — Render et Output (consignes 1–2)
 1. Onglet **Render** (dos d'appareil photo) : *Render Engine* → **EEVEE**.
-2. Panneau *Sampling* → sous-panneau *Render* → **Samples** = `32`.
+2. Panneau *Sampling* → sous-panneau *Render* → **Samples** = `32`. Le sous-panneau
+   *Viewport* règle l’aperçu interactif et possède son propre nombre d’échantillons.
 3. Onglet **Output** (imprimante) : *Format* → *Resolution X* `1280`, *Y* `720`, `%` = `100` ;
    *Frame Rate* → **25** ; *Frame Range* → *Start* `1`, *End* `120`.
 
@@ -25,7 +26,7 @@ Ouvrez `STARTER_FILES/ch01_09_hunt_starter.blend`. Les consignes sont dans le Te
 
 ## Tutoriel 5 — Material et propriétés personnalisées (consignes 9–11)
 1. `GEO_Hero` → onglet **Material** (sphère rouge) → *Surface* → *Base Color* → rouge.
-2. Cliquez dans le vide pour garder la scène ; onglet **Scene** → *Custom Properties* →
+2. Dans l’onglet **Scene**, ouvrez *Custom Properties* →
    **New** → ⚙ : *Type* = **String**, *Property Name* = `shot`, *Default Value*/*Value* =
    `sq010_sh0010` → *OK*.
 3. `GEO_Guide` → onglet **Material** : dans la ligne du datablock `MAT_Library_Gold`,
@@ -38,6 +39,12 @@ Enregistrez `ch01_09_hunt_<prenom>_v001.blend` puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_09_hunt_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_09.py" --python-exit-code 1 -- --exercise hunt
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_09.py" -- --exercise hunt
 ```
 ✅ 13/13.
+
+[Manuel Blender 5.3 des échantillons EEVEE](https://docs.blender.org/manual/en/5.3/render/eevee/render_settings/sampling.html)
+
+## Contrôle de transfert
+
+Comparez deux changements distincts. Dans Scene → Units, changez Length en Centimeters et ouvrez Item sur un objet connu. Puis changez la résolution de sortie et constatez que l’objet garde sa taille dans la scène. Notez aussi la cadence et la plage. De 1 à 120 inclus, le rendu contient 120 images, soit 4,8 s à 25 i/s. **Réussite** Vous reliez chaque changement à son niveau réel, unité affichée, image de sortie ou durée.

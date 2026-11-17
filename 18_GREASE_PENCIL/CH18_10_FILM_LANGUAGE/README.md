@@ -62,7 +62,7 @@ Avant de storyboarder, il faut parler la langue du cinéma : valeurs de plans, a
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_10_shots_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_10.py" --python-exit-code 1 -- --exercise shots
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_10.py" -- --exercise shots
 ```
 
 ## Livrables attendus

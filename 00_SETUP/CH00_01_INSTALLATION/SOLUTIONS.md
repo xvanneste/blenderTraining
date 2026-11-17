@@ -42,7 +42,7 @@ $B = "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe"
 & $B -b "ch00_01_testcard_prenom_v002.blend" -o "//renders/ex2_cpu_####" -f 1 -- --cycles-device CPU
 & $B -b "ch00_01_testcard_prenom_v002.blend" -o "//renders/ex2_gpu_####" -f 1 -- --cycles-device OPTIX
 ```
-Accélération = temps CPU ÷ temps GPU. Sur le poste de référence : ≈ ×9.
+Le cas CPU conserve les autres réglages et se valide avec --exercise testcard_cpu. Rejouer le rendu et rouvrir le PNG fait partie du jalon. Si les deux périphériques sont disponibles, calculez temps CPU ÷ temps GPU avec la même scène et les mêmes échantillons. La mesure historique du poste de référence donnait environ ×9.
 `Ctrl+Alt+S` (*Save Incremental*) transforme `…_v001.blend` en `…_v002.blend`.
 
 ## Exercice 3 — les cinq pannes

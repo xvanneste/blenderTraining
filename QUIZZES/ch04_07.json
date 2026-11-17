@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.07",
+  "title": "Baking",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que contient une normal map ?",
+      "choices": [
+        "Des couleurs",
+        "Des directions de normales encodées en RVB (relief simulé)",
+        "Des hauteurs",
+        "Des UV"
+      ],
+      "answer": 1,
+      "explain": "Chaque pixel code un vecteur normal (x, y, z) dans [−1, 1] converti en [0, 1] ; un plat vaut (0,5 ; 0,5 ; 1)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi baker du haute définition vers du basse définition ?",
+      "choices": [
+        "Pour agrandir le maillage",
+        "Pour garder l'apparence du détail avec peu de polygones",
+        "Pour supprimer les UV",
+        "Pour changer le moteur"
+      ],
+      "answer": 1,
+      "explain": "Le détail est stocké dans l'image : la basse définition est légère à rendre."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel espace colorimétrique pour une normal map ?",
+      "choices": [
+        "sRGB",
+        "Non-Color",
+        "Filmic",
+        "Linear Rec.709 affiché"
+      ],
+      "answer": 1,
+      "explain": "C'est une donnée : en sRGB, Blender appliquerait une courbe qui fausse les vecteurs."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le basse définition doit-il avoir des UV propres avant le bake ?",
+      "answer_text": "Le bake écrit dans l'image selon les UV du basse définition : des îlots qui se chevauchent ou sortent de [0,1]² donnent un bake faux."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Dites une différence entre un bump, une normal map et un displacement.",
+      "answer_text": "Bump : hauteur → normale perturbée à la volée ; normal map : normales stockées dans une image ; displacement : déplace réellement la géométrie (CH04.08)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment indique-t-on la cible du bake dans le matériau ?",
+      "choices": [
+        "Image Texture ACTIF et sélectionné dans le matériau du basse définition",
+        "Un nœud Output",
+        "Un modificateur",
+        "Un Driver"
+      ],
+      "answer": 0,
+      "explain": "Le bake écrit dans l'image du nœud Image Texture actif du matériau de l'objet actif."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle option de la section Bake de Cycles bake d'un objet vers un autre ?",
+      "choices": [
+        "Selected to Active",
+        "Clear Image",
+        "Margin",
+        "Space"
+      ],
+      "answer": 0,
+      "explain": "Sélectionner le haute définition puis le basse définition (actif) avec Selected to Active."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il si on branche l'image directement sur Normal sans nœud Normal Map ?",
+      "answer_text": "Blender interprète la couleur comme un vecteur dans l'espace objet sans conversion tangente : l'éclairage est faux ; le correcteur exige Image → Normal Map → Normal."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi sert la marge (Margin) du bake ?",
+      "answer_text": "À étendre les pixels des îlots d'une bande de quelques pixels pour éviter des coutures sombres au filtrage et au mip-mapping."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la couverture du relief mesurée par le correcteur vaut-elle ≈ 99 % et non 100 % ?",
+      "answer_text": "Quelques pixels au bord des îlots ou en zone localement plate ne s'écartent pas de 0,02 du plat ; le seuil de 85 % tolère cela."
+    }
+  ]
+}

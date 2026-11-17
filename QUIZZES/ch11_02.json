@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.02",
+  "title": "Compositing multipasse",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi peut-on additionner les light groups ?",
+      "choices": [
+        "La lumière est additive : la somme des contributions donne l'image complète",
+        "Par convention",
+        "Parce que Blender le force",
+        "Elle ne l'est pas"
+      ],
+      "answer": 0,
+      "explain": "Image ≈ Combined_key + Combined_fill (rendu Cycles, sans passes post)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment s'appellent les prises créées par les light groups « key » et « fill » ?",
+      "choices": [
+        "Combined_key et Combined_fill",
+        "Key et Fill",
+        "Light_key",
+        "Aucune"
+      ],
+      "answer": 0,
+      "explain": "Constaté sur Render Layers : Image, Alpha, Noisy Image, Combined_key, Combined_fill."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud 5.3 additionne deux images ?",
+      "choices": [
+        "Mix (ShaderNodeMix, data_type RGBA, blend_type ADD)",
+        "CompositorNodeMixRGB",
+        "Composite",
+        "Gamma"
+      ],
+      "answer": 0,
+      "explain": "Le nœud MixRGB du compositeur n'existe plus : constaté par l'API."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi ne pas modifier les lampes ?",
+      "answer_text": "Le but du relighting est de changer l'éclairage sans refaire le rendu : le correcteur vérifie que les lampes sont intactes."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre image_only ?",
+      "answer_text": "Si on passe par la prise Image, les light groups sont ignorés : rapport 1,17 comme au départ."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Exposure +1 ?",
+      "choices": [
+        "Multiplie la lumière par 2",
+        "Ajoute 1",
+        "Divise par 2",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "+1 sur KEY et −1 sur FILL : rapport 2 / 0,5 = 4."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi mesurer en luminance linéaire ?",
+      "choices": [
+        "Un rapport de lumière se lit sur des valeurs linéaires ; l'image affichée est en sRGB",
+        "Pour aller plus vite",
+        "Pour la couleur",
+        "Par hasard"
+      ],
+      "answer": 0,
+      "explain": "En sRGB la solution donne 1,94 ; en linéaire 4,28."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder la FILL à quelques diaphragmes sous la KEY ?",
+      "answer_text": "L'éteindre (missing_fill : 0,003) rend l'ombre noire et plate ; le correcteur exige ≥ 0,01."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Combien de diaphragmes séparent un rapport de 4 ?",
+      "answer_text": "Deux (2^2 = 4) : +1 sur la KEY et −1 sur la FILL."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une sphère, deux lampes ponctuelles, deux flancs ; le relighting additif ne change ni les ombres portées ni les réflexions d'objets absents des groupes."
+    }
+  ]
+}

@@ -19,7 +19,7 @@
     ["COMPLETED_EXAMPLES/ch01_07_door_solution.blend", "Porte sur charnière, ouverte ; boulons tournés autour de la roue"],
     ["SCRIPTS/validate_ch01_07.py", "Correcteur (15 points)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_07_door_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_07.py\" --python-exit-code 1 -- --exercise door",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_07_door_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_07.py\" -- --exercise door",
   "deliverables": ["ch01_07_door_<prenom>_v001.blend validé.", "Mini-projet : trois mécanismes prêts à animer."],
   "next": "[CH01.08 — Collections et Outliner](../CH01_08_COLLECTIONS_OUTLINER/README.md)"
 }

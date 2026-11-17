@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.06",
+  "title": "Validation d’une scène",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle opération résout // ?",
+      "type": "mcq",
+      "choices": [
+        "bpy.ops.object.transform_apply",
+        "Path.rename",
+        "bpy.path.abspath"
+      ],
+      "answer": 2,
+      "explain": "Un rapport de production doit préciser son périmètre. Les images intégrées sont disponibles dans le .blend."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Pourquoi répartir les défauts sur plusieurs blocs ?",
+      "type": "mcq",
+      "choices": [
+        "Pour associer chaque message à une cause identifiable",
+        "Pour recalculer l’animation",
+        "Pour réduire le rendu"
+      ],
+      "answer": 0,
+      "explain": "Une mutation volontaire par règle permet d’identifier ce que signale chaque test."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quel contrôle suit une correction ?",
+      "type": "mcq",
+      "choices": [
+        "Retirer le contrôle qui échoue",
+        "Relancer le rapport et comparer la scène visuellement",
+        "Modifier uniquement la couleur de viewport"
+      ],
+      "answer": 1,
+      "explain": "La réparation doit préserver le résultat visuel. Une échelle appliquée modifie les données locales."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Un chemin commençant par // semble absent alors que l’image existe. »",
+      "answer_text": "Le chemin Blender est relatif au fichier ou à sa bibliothèque. Utilisez bpy.path.abspath avec la bibliothèque de l’image avant de vérifier le chemin."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La texture marque IMAGE_ABSENTE après avoir déplacé le projet. Comment choisir entre relier et empaqueter ?",
+      "answer_text": "Relier vers une ressource disponible si le projet partage une bibliothèque. Empaqueter si l’image est autorisée et doit suivre le fichier."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le contrôleur signale une échelle X de 1,2. Comment garder le volume visible ?",
+      "answer_text": "Sur une copie, appliquer l’échelle et comparer visuellement la silhouette avant et après."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi contrôler aussi un projet conforme ?",
+      "answer_text": "Un test qui signale toujours des anomalies détecterait les défauts et refuserait aussi la référence."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Point zéro » ?",
+      "answer_text": "Le terminal affiche zéro anomalie pour la référence."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Défauts contrôlés » ?",
+      "answer_text": "Le rapport contient NOM, ECHELLE et IMAGE_ABSENTE avec les noms concernés."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Réparation » ?",
+      "answer_text": "Le rapport repasse à zéro et une vue de contrôle compare la silhouette."
+    }
+  ]
+}

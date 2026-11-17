@@ -1,0 +1,68 @@
+{
+  "code": "CH11.08",
+  "title": "Tracking et matchmoving",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Pour poser un objet 3D dans une prise de vue réelle, il faut savoir comment la caméra réelle a bougé. Le tracking suit des points de l'image d'une image à l'autre ; le solveur de caméra (matchmoving) en déduit la position et l'orientation de la caméra à chaque image et la position 3D des points. Ce chapitre traite un plan de synthèse (48 points 3D, caméra qui avance en translation, donc avec de la parallaxe) : vous réglez la focale, détectez et suivez des points, résolvez la caméra. Le correcteur relit vos pistes et relance lui-même la résolution.",
+  "prereqs": [
+    "CH11.01 (compositeur), CH09.08 (focale, capteur)."
+  ],
+  "objectives": [
+    "Régler la caméra d'un clip (focale, capteur).",
+    "Détecter et suivre des points.",
+    "Résoudre la caméra et lire l'erreur de reprojection.",
+    "Reconnaître un solveur impossible (peu de pistes)."
+  ],
+  "competences": [
+    [
+      "C11.08.a",
+      "Résoudre un tracking",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Pistes et caméra du clip",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Solveur et erreur",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_08_tracking_starter.blend",
+      "Clip chargé, aucune piste, focale 24 mm ; 6/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_08_tracking_solution.blend",
+      "Focale 35 mm, 15 pistes suivies sur les 40 images, caméra résolue : erreur 0,75 pixel ; 36/36"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_08_tracking_reference.png",
+      "Image 1 du clip avec les pistes (croix rouges) : elles se posent sur les points"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (suivi trop court, mauvaise focale, non résolu, trop peu de pistes)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_08.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_08_tracking_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_08.py\" -- --exercise tracking",
+  "deliverables": [
+    "Pistes et solution commentées (focale, nombre de pistes, erreur).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.09 — Intégration 3D/réel](../CH11_09_INTEGRATION/README.md)"
+}

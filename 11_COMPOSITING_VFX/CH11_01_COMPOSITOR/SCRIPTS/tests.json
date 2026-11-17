@@ -1,0 +1,41 @@
+{
+  "build": "build_ch11_01_files.py",
+  "validator": "validate_ch11_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_01_compositor_solution.blend",
+      "exercise": "compositor",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_01_compositor_starter.blend",
+      "exercise": "compositor",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_01_compositor_no_exposure.blend",
+      "exercise": "compositor",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_01_compositor_no_blur.blend",
+      "exercise": "compositor",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_01_compositor_over_blur.blend",
+      "exercise": "compositor",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_01_compositor_orphan_node.blend",
+      "exercise": "compositor",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_01_compositor_compositing_off.blend",
+      "exercise": "compositor",
+      "expect": false
+    }
+  ]
+}

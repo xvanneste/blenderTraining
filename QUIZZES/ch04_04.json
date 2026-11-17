@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.04",
+  "title": "Shader Editor et nœuds",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Dans quel sens le flux de données circule-t-il dans un graphe de nœuds ?",
+      "choices": [
+        "De droite à gauche",
+        "De gauche à droite : des entrées vers le Material Output",
+        "De haut en bas",
+        "Dans les deux sens"
+      ],
+      "answer": 1,
+      "explain": "Les sorties (à droite d'un nœud) alimentent les entrées (à gauche) du nœud suivant ; le résultat final arrive au Material Output."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert le nœud Mapping ?",
+      "choices": [
+        "Il crée des UV",
+        "Il déplace, tourne et met à l'échelle des coordonnées avant une texture",
+        "Il mélange deux couleurs",
+        "Il rend la scène"
+      ],
+      "answer": 1,
+      "explain": "Mapping transforme le vecteur de coordonnées (Location, Rotation, Scale) transmis à la texture."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle sortie de Texture Coordinate utilise-t-on pour une texture 3D accrochée à l'objet ?",
+      "choices": [
+        "Object",
+        "Window",
+        "Camera",
+        "Reflection"
+      ],
+      "answer": 0,
+      "explain": "La sortie Object donne les coordonnées locales de l'objet : la texture le suit."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un nœud orphelin et pourquoi l'éviter ?",
+      "answer_text": "Un nœud dont aucune sortie n'est reliée : il ne sert à rien, alourdit le graphe et trompe le lecteur ; on le supprime ou on le relie."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les couleurs d'un Mix sont-elles nommées A et B ?",
+      "answer_text": "Le facteur choisit entre A (facteur 0) et B (facteur 1) ; avec un facteur intermédiaire, le résultat est un mélange."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait une Color Ramp placée après un bruit ?",
+      "choices": [
+        "Elle ajoute du flou",
+        "Elle convertit une valeur 0–1 en couleur et durcit la transition entre zones",
+        "Elle remplace le bruit",
+        "Elle crée des UV"
+      ],
+      "answer": 1,
+      "explain": "On resserre les deux stops pour passer de gradients mous à des plaques nettes (ici 0,45 et 0,62)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi relier la Color Ramp à Metallic ?",
+      "choices": [
+        "Pour que le métal apparaisse là où il n'y a pas de rouille",
+        "Pour changer l'IOR",
+        "Pour ajouter de l'émission",
+        "Aucune raison"
+      ],
+      "answer": 0,
+      "explain": "La rouille n'est pas métallique : le même masque pilote la couleur et Metallic, donc ils restent cohérents."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "À quoi sert Map Range avant Roughness ?",
+      "answer_text": "Elle convertit la plage utile du bruit (ici 0,3–0,7) en plage de rugosité voulue (0,25–0,85)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il si Noise Scale vaut 400 ?",
+      "answer_text": "Les taches deviennent minuscules : aspect « sel et poivre », sans zones lisibles ; le correcteur exige 2 à 30."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder le graphe entre 7 et 18 nœuds dans cet exercice ?",
+      "answer_text": "Un graphe court est lisible et maintenable ; au-delà, regrouper en Frame ou Node Group (voir la suite)."
+    }
+  ]
+}

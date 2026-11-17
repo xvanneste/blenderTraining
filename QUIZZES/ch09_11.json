@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.11",
+  "title": "Couleur et émotion",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que décrit la teinte ?",
+      "choices": [
+        "La couleur elle-même, en degrés sur le cercle",
+        "La clarté",
+        "L'intensité",
+        "La netteté"
+      ],
+      "answer": 0,
+      "explain": "Rouge 0°, jaune 60°, vert 120°, cyan 180°, bleu 240°."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que décrit la saturation ?",
+      "choices": [
+        "L'intensité de la couleur (grisé ou vif)",
+        "La clarté",
+        "La teinte",
+        "Le contraste"
+      ],
+      "answer": 0,
+      "explain": "S = 0 : gris ; S = 1 : couleur pure."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que décrit la valeur ?",
+      "choices": [
+        "La clarté (de noir à lumineux)",
+        "La teinte",
+        "La netteté",
+        "Le bruit"
+      ],
+      "answer": 0,
+      "explain": "V = 0 : noir."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la tristesse est-elle froide, terne et sombre dans l'exercice ?",
+      "answer_text": "Convention culturelle courante (bleu-gris, saturation faible, valeur basse) : une convention, pas une loi ; la mesure vérifie la convention choisie."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la peur a-t-elle un fond presque noir et un petit accent clair ?",
+      "answer_text": "Le noir cache l'espace (inquiétude), l'accent vif attire l'œil sur ce qui menace : contraste de valeur."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un color script ?",
+      "choices": [
+        "Une suite de cartes de couleur qui planifie l'émotion du film",
+        "Un script Python",
+        "Un nuanceur",
+        "Un fichier EXR"
+      ],
+      "answer": 0,
+      "explain": "Ici cinq cartes : joie, tristesse, colère, calme, peur."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment un accent se détache-t-il du fond ?",
+      "choices": [
+        "Par la valeur ou par une teinte éloignée d'au moins 120°",
+        "Par un nom différent",
+        "Par la focale",
+        "Par l'ordre des objets"
+      ],
+      "answer": 0,
+      "explain": "JOY : fond jaune (45°), accent bleu ciel (200°) : 155° d'écart malgré des valeurs voisines."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer la couleur AFFICHÉE ?",
+      "answer_text": "Les couleurs d'objet sont linéaires : un gris de 0,5 s'affiche à 0,73. Le correcteur rend l'image et mesure ce que voit le spectateur."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre same_hues ?",
+      "answer_text": "Deux émotions de teintes trop proches (21°) se confondent : le color script perd sa lisibilité."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Elle valide des plages de H, S, V pour une convention occidentale ; elle ne juge ni l'harmonie réelle, ni les contextes culturels, ni la lumière d'une vraie scène."
+    }
+  ]
+}

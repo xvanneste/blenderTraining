@@ -1,0 +1,37 @@
+{
+  "build": "build_ch04_02_files.py",
+  "validator": "validate_ch04_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_02_udim_solution.blend",
+      "exercise": "udim",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_02_udim_starter.blend",
+      "exercise": "udim",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_02_udim_straddle.blend",
+      "exercise": "udim",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_02_udim_single_tile.blend",
+      "exercise": "udim",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_02_udim_missing_tile.blend",
+      "exercise": "udim",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_02_udim_overlap_tile.blend",
+      "exercise": "udim",
+      "expect": false
+    }
+  ]
+}

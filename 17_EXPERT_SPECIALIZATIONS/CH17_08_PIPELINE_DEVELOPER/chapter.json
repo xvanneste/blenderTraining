@@ -1,0 +1,43 @@
+{
+  "code": "CH17.08",
+  "title": "Pipeline Developer",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Assembler un mini-pipeline versionné qui refuse les entrées invalides et peut reprendre un lot.",
+  "prereqs": [
+    "CH17.07"
+  ],
+  "objectives": [
+    "Le contrat reçoit un cas valide et refuse chevauchement et doublon.",
+    "Le scénario d’échec conserve le rendu approuvé et le scénario nominal crée une version complète.",
+    "Une commande refait les tests nominal et négatifs, avec code de sortie et rapport cible."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Contrat des entrées",
+      ""
+    ],
+    [
+      "L2",
+      "Publier en deux étapes",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../16_FEATURE_FILMS/ASSETS_ATELIERS/controle_pipeline.py",
+      "Contrôles du pilote exécutables"
+    ],
+    [
+      "../../13_PYTHON_AUTOMATION/ASSETS_ATELIERS/rendre_lot.py",
+      "Rendu par lot isolé"
+    ]
+  ],
+  "pass_criteria": [
+    "Le contrat reçoit un cas valide et refuse chevauchement et doublon.",
+    "Le scénario d’échec conserve le rendu approuvé et le scénario nominal crée une version complète.",
+    "Une commande refait les tests nominal et négatifs, avec code de sortie et rapport cible."
+  ]
+}

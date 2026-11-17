@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_13_files.py",
+  "validator": "validate_ch07_13.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_13_nla_solution.blend",
+      "exercise": "nla",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_13_nla_starter.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_no_repeat.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_late_spin.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_no_blend.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_active_action.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_missing_spin_track.blend",
+      "exercise": "nla",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_13_nla_wrong_scale.blend",
+      "exercise": "nla",
+      "expect": false
+    }
+  ]
+}

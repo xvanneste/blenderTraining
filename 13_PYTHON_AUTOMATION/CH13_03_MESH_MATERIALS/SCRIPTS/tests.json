@@ -1,0 +1,47 @@
+{
+  "build": "build_ch13_03_files.py",
+  "validator": "validate_ch13_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch13_03_presentoir_solution.blend",
+      "exercise": "presentoir",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch13_03_presentoir_starter.blend",
+      "exercise": "presentoir",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_03_presentoir_bloc_absent.blend",
+      "exercise": "presentoir",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_03_presentoir_hauteur_uniforme.blend",
+      "exercise": "presentoir",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_03_presentoir_biseau_absent.blend",
+      "exercise": "presentoir",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_03_presentoir_materiau_inverse.blend",
+      "exercise": "presentoir",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch13_03_presentoir_bruit_debranche.blend",
+      "exercise": "presentoir",
+      "expect": false
+    }
+  ],
+  "extra": [
+    {
+      "file": "STARTER_FILES/ch13_03_presentoir_starter.blend",
+      "script": "rejouer_tutoriel.py"
+    }
+  ]
+}

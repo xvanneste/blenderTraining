@@ -1,12 +1,17 @@
 # CH00.05 — Tutoriels pas à pas
 
+## Premier jalon — Examiner puis installer un paquet local
+
+Le paquet démo du cours ajoute un panneau dans Blender. Un **add-on** est le code qui ajoute une fonction. Le **paquet d’extension** est l’archive distribuée, avec un manifeste, une version et un éditeur identifiable. Ouvrez le manifeste puis testez uniquement le paquet de l’exercice, dans le [profil isolé de CH00.02](../CH00_02_PREFERENCES/TUTORIAL.md).
+
+**Résultat attendu** Le panneau BCMA apparaît après installation et activation. Il disparaît après désactivation. Vous pouvez refaire tout l’exercice avec le fichier local lorsque l’accès en ligne est désactivé.
+
 ## Tutoriel 1 — Inventaire
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b `
   --python "SCRIPTS\bcma_extensions_report.py"
 ```
-✅ Vous voyez l'état de l'accès en ligne, les dépôts et les add-ons activés (au minimum
-`cycles` et le gestionnaire d'extensions `bl_pkg`).
+✅ Vous voyez l'état de l'accès en ligne, les dépôts et les add-ons activés. Comparez la liste à votre profil et distinguez les modules livrés des modules que vous avez activés.
 
 ## Tutoriel 2 — Activer un add-on livré : Node Wrangler
 1. *Edit → Preferences → Add-ons*.
@@ -29,12 +34,12 @@
 1. Le paquet est prêt : `ASSETS/bcma_hello-1.0.0.zip` (construit par l'outil officiel).
 2. *Preferences → Get Extensions* (ou *Add-ons*) → menu ˅ en haut à droite →
    **Install from Disk…** → choisissez le `.zip`.
-   (Alternative : glissez-déposez le `.zip` dans la fenêtre de Blender.)
+   (Alternative : glissez-déposez le ZIP dans la fenêtre de Blender.) Vérifiez le nom et la version avant de valider. Activez l’extension si la case proposée ne l’est pas.
 3. Dans la vue 3D, ouvrez la sidebar (`N`) → onglet **BCMA**.
    ✅ Le panneau affiche le nombre d'objets. Sélectionnez tout (`A`), cliquez
    *Préfixer les noms (BCMA)* : `Cube` devient `GEO_Cube`, `Camera` → `CAM_Camera`,
    `Light` → `LGT_Light`. `Ctrl+Z` annule.
-4. Désinstallation : *Get Extensions* (ou *Add-ons*) → section *Installed* (ou dépôt
+4. Désactivez l’extension et vérifiez que le panneau a disparu. Réactivez-la avant la désinstallation si vous voulez revoir son effet. Désinstallation : *Get Extensions* (ou *Add-ons*) → section *Installed* (ou dépôt
    *User Default*) → menu de l'extension → **Uninstall**.
 
 ## Tutoriel 5 — Construire et valider une extension (méthode développeur)

@@ -1,0 +1,68 @@
+{
+  "code": "CH03.08",
+  "title": "Vêtements",
+  "phase_title": "3 — Sculpting et personnages",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Un vêtement n'est pas un volume sculpté à la main : c'est un tissu qui tombe. Ce chapitre enseigne le workflow de simulation de tissu — corps simplifié (collider) et sol avec Collision, tissu à maille régulière, modificateur Cloth, simulation, puis application — sur un poncho posé sur les épaules du buste de CH03.05. Le correcteur mesure : pas de pénétration du corps, tissu non étiré, épaules couvertes, plis (rugosité), sol respecté, et que la simulation a bien été appliquée.",
+  "prereqs": [
+    "CH03.05 (le buste).",
+    "CH03.03 (maillage et densité)."
+  ],
+  "objectives": [
+    "Préparer une scène de simulation (collider, sol, tissu à maille régulière).",
+    "Régler un tissu (masse, rigidités, amortissement, collisions) et lire ses défauts.",
+    "Appliquer et contrôler une simulation par des mesures."
+  ],
+  "competences": [
+    [
+      "C03.08.a",
+      "Créer un vêtement",
+      "Exercice 2 (correcteur) + grille"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Préparer la simulation",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Régler, simuler, contrôler",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch03_08_poncho_starter.blend",
+      "Buste + COLLIDER + sol Collision + tissu plat CLOTH_Poncho"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_08_poncho_solution.blend",
+      "Poncho simulé et appliqué"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch03_08_poncho_reference.png",
+      "Face, 3/4, profil"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (pénétrant, lissé, étiré, trop petit)"
+    ],
+    [
+      "SCRIPTS/validate_ch03_08.py",
+      "Correcteur (poncho)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_08_poncho_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_08.py\" -- --exercise poncho --render",
+  "deliverables": [
+    "Poncho validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH03.09 — Retopologie personnage](../CH03_09_RETOPOLOGY/README.md)"
+}

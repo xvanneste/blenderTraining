@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_12_arm_bent_solution.png", "Coude plié, après"],
     ["SCRIPTS/validate_ch02_12.py", "Correcteur (boucles, quads, volume au pli de 90°)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_12_arm_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_12.py\" --python-exit-code 1 -- --exercise arm --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_12_arm_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_12.py\" -- --exercise arm --render",
   "deliverables": ["Bras validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la main."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Bras validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.13 — Assets réutilisables](../CH02_13_ASSETS/README.md)"

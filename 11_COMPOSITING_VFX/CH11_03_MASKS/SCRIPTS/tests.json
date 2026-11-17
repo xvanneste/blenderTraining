@@ -1,0 +1,36 @@
+{
+  "build": "build_ch11_03_files.py",
+  "validator": "validate_ch11_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_03_masks_solution.blend",
+      "exercise": "masks",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_03_masks_starter.blend",
+      "exercise": "masks",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_03_masks_wrong_index.blend",
+      "exercise": "masks",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_03_masks_all_gray.blend",
+      "exercise": "masks",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_03_masks_inverted.blend",
+      "exercise": "masks",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_03_masks_no_mask_node.blend",
+      "exercise": "masks",
+      "expect": false
+    }
+  ]
+}

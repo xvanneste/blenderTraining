@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_02_files.py",
+  "validator": "validate_ch07_02.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_02_keyframes_solution.blend",
+      "exercise": "keyframes",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_02_keyframes_starter.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_wrong_range.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_no_hold.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_bezier_rot.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_no_markers.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_off_frames.blend",
+      "exercise": "keyframes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_02_keyframes_no_rot.blend",
+      "exercise": "keyframes",
+      "expect": false
+    }
+  ]
+}

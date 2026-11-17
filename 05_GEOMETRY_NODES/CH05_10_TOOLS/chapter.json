@@ -1,0 +1,74 @@
+{
+  "code": "CH05.10",
+  "title": "Optimisation et outils",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "avancé",
+  "duration": "5 h",
+  "intro": "Un arbre qui marche chez soi n'est pas encore un outil : il faut le rendre léger (géométrie instanciée minimale, instances conservées, bornes sur les paramètres coûteux), l'utiliser comme modificateur sur n'importe quel maillage, puis le publier comme asset avec ses métadonnées et son catalogue. Ce chapitre part d'un outil lourd (cône de 64 côtés, instances réalisées, densité sans borne) et le transforme en « Scatter Cones » publiable. Le correcteur mesure le budget (sommets par instance, nombre d'instances par défaut et au maximum), vérifie l'absence de Realize Instances et la publication.",
+  "prereqs": [
+    "CH05.03",
+    "CH05.06",
+    "CH02.13 (assets)."
+  ],
+  "objectives": [
+    "Repérer ce qui rend un arbre lourd.",
+    "Appliquer les règles d'optimisation : instances, géométrie minimale, bornes.",
+    "Configurer un arbre comme outil modificateur.",
+    "Publier un arbre comme asset avec description, tags et catalogue."
+  ],
+  "competences": [
+    [
+      "C05.10.a",
+      "Publier un node tool",
+      "Exercice 2 (correcteur) + vérification dans l'Asset Browser"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Mesurer et alléger",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Un outil publiable",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_10_tools_starter.blend",
+      "Outil lourd et non publié"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_10_tools_solution.blend",
+      "Outil allégé et publié (asset)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/blender_assets.cats.txt",
+      "Catalogue « Tools/Scatter »"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_10_tools_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (cône lourd, instances réalisées, densité sans borne, non publié, sans catalogue, pas un modificateur, entrée ignorée)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_10.py",
+      "Correcteur (tools)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_10_tools_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_10.py\" -- --exercise tools --render",
+  "deliverables": [
+    "Outil publié validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "Projet P5 — outil de ville ou de forêt paramétrable (voir PROJECT_P5)"
+}

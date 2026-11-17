@@ -22,7 +22,7 @@
     ["COMPLETED_EXAMPLES/ch03_03_multires_solution.blend", "Multires 5 niveaux + réponses"],
     ["SCRIPTS/validate_ch03_03.py", "Correcteur (remesh, multires, decide)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_03_remesh_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch03_03.py\" --python-exit-code 1 -- --exercise remesh --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch03_03_remesh_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch03_03.py\" -- --exercise remesh --render",
   "deliverables": ["Remesh validé.", "Multires validé.", "Décisions validées."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Les trois exercices validés."],
   "next": "[CH03.04 — Sculpture stylisée](../CH03_04_STYLIZED/README.md)"

@@ -58,7 +58,7 @@ Les normales décident de la façon dont la lumière glisse sur une surface. Une
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_04_normals_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_04.py" --python-exit-code 1 -- --exercise normals --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_04.py" -- --exercise normals --render
 ```
 
 ## Livrables attendus

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.05",
+  "title": "Rig humanoïde",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un méta-rig Rigify ?",
+      "choices": [
+        "Un squelette de description : des os typés (bras, jambe, colonne…) à ajuster au personnage, à partir duquel Rigify génère le rig final",
+        "Un modificateur",
+        "Un matériau",
+        "Un rig prêt à animer"
+      ],
+      "answer": 0,
+      "explain": "On ajuste le méta-rig, puis Generate Rig produit le rig avec contrôleurs, IK/FK, mécanismes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi mettre le méta-rig à l'échelle du corps avant de générer ?",
+      "choices": [
+        "Par esthétique",
+        "Le rig généré reprend les proportions du méta-rig : un méta-rig de 1,98 m donnerait un rig de 1,98 m pour un corps de 1,76 m",
+        "Pour les couleurs",
+        "Pour le rendu"
+      ],
+      "answer": 1,
+      "explain": "Échelle ≈ 0,89 puis Ctrl+A > Scale (échelle de l'objet = 1)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Combien de bones a le rig généré ici ?",
+      "choices": [
+        "25",
+        "159",
+        "706",
+        "5 000"
+      ],
+      "answer": 2,
+      "explain": "Le méta-rig a 159 bones ; le rig généré 706 (DEF-, ORG-, MCH-, contrôleurs, tweaks)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que sont les bones DEF-, ORG- et MCH- ?",
+      "answer_text": "DEF- : os déformants (ceux qui pèsent sur le maillage) ; ORG- : os d'origine copiés du méta-rig ; MCH- : mécanismes (pas pour l'animateur) ; les autres sont des contrôleurs."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le méta-rig humain n'épouse-t-il pas les bras du mannequin ?",
+      "answer_text": "Ses bras sont plus hauts (≈ 29° sous l'horizontale) et plus courts que ceux du mannequin en A (≈ 51°) : on place coude et poignet au milieu du bras en Edit Mode avant de générer (sinon la main du rig est hors du maillage)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quels bones pèsent sur le maillage avec Automatic Weights ?",
+      "choices": [
+        "Les bones déformants (DEF-)",
+        "Tous les bones",
+        "Seulement root",
+        "Les contrôleurs"
+      ],
+      "answer": 0,
+      "explain": "Seuls les bones avec Deform créent des groupes (160 groupes sur le corps)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que prouve le déplacement de la racine de 0,5 m ?",
+      "choices": [
+        "Que la peau couvre tout le corps et suit le rig",
+        "Que le rig est beau",
+        "Que le rendu est correct",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Chaque sommet doit suivre : déplacement moyen 0,500 m ; 100 % à plus de 0,4 m."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi lever le pied gauche et mesurer la tête et le pied droit ?",
+      "answer_text": "Pour vérifier la localité du skinning : le pied gauche monte de 0,243 m, le pied droit et la tête ne bougent pas (0,0 mm)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre le contre-exemple « offset » ?",
+      "answer_text": "Le rig est décalé de 0,5 m du corps : les poids ne correspondent à rien (le pied ne monte pas) et le correcteur signale l'écart de centrage de 50 cm."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel gain apporte Rigify par rapport à CH06.01 à CH06.04 ?",
+      "answer_text": "Un rig complet (IK/FK, colonne souple, visage, doigts, collections de bones) en quelques minutes ; le prix : un rig lourd (706 bones) et des conventions à connaître."
+    }
+  ]
+}

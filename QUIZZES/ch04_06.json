@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.06",
+  "title": "Texture Painting",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui permet à la peinture de 3D d'arriver au bon endroit de l'image ?",
+      "choices": [
+        "Le Mapping",
+        "Les UV",
+        "Le Bump",
+        "L'IOR"
+      ],
+      "answer": 1,
+      "explain": "Le pinceau projeté sur la surface écrit dans l'image aux coordonnées UV de ce point : des UV propres (CH04.01) sont indispensables."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que se passe-t-il si l'image peinte n'est pas empaquetée ni enregistrée ?",
+      "choices": [
+        "Rien",
+        "La peinture est perdue à la fermeture du fichier",
+        "Elle est enregistrée automatiquement",
+        "Elle devient procédurale"
+      ],
+      "answer": 1,
+      "explain": "Une image générée n'existe qu'en mémoire : Image > Pack (ou Save As) avant d'enregistrer le .blend."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi peindre en vue orthographique de plusieurs côtés ?",
+      "choices": [
+        "Pour aller plus vite",
+        "Un trait en vue de face ne couvre qu'une partie de la surface et se déforme près de la silhouette",
+        "C'est obligatoire",
+        "Pour changer de pinceau"
+      ],
+      "answer": 1,
+      "explain": "Près de la silhouette la surface est vue en rasant : on tourne la vue pour garder des traits propres."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une peinture « hors des îlots UV » est-elle perdue ?",
+      "answer_text": "Les pixels hors des îlots ne correspondent à aucun point de l'objet : ils ne sont jamais échantillonnés au rendu."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Dites une différence entre peindre une texture et un matériau procédural (CH04.05).",
+      "answer_text": "La peinture donne un contrôle total au pixel mais a une résolution fixe et dépend des UV ; le procédural est sans résolution mais moins précis pour un détail placé."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est le nom exact de l'action de l'interface pour empaqueter une image ?",
+      "choices": [
+        "Image > Pack",
+        "File > Embed",
+        "Image > Bake",
+        "Texture > Freeze"
+      ],
+      "answer": 0,
+      "explain": "Le menu Image de l'éditeur d'images contient « Pack » (et « Unpack » quand l'image est déjà empaquetée)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment le correcteur reconnaît-il un pixel peint ?",
+      "choices": [
+        "Il le compare à un seuil de luminance",
+        "Écart de plus de 0,08 par canal avec la couleur dominante (le fond)",
+        "Par son alpha",
+        "Par un nom de calque"
+      ],
+      "answer": 1,
+      "explain": "Le fond est la couleur la plus fréquente de l'image ; tout pixel qui s'en écarte nettement est considéré peint."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi exiger au moins deux couleurs peintes ?",
+      "answer_text": "Pour s'assurer d'un vrai travail de peinture (changer de couleur) et pas d'un simple remplissage de l'image avec une seule teinte."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle couverture de la surface dépliée le correcteur accepte-t-il et pourquoi ?",
+      "answer_text": "Entre 3 % et 50 % : en dessous rien n'est peint ; au-dessus le fond a probablement été repeint. La solution en couvre 14,6 %."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la couleur donnée à un pinceau par script n'est-elle pas celle stockée dans l'image ?",
+      "answer_text": "La propriété color du pinceau est en espace linéaire : il faut convertir la couleur voulue (sRGB) en linéaire ; sinon la peinture paraît délavée (0,8 devient ≈ 0,91 dans l'image)."
+    }
+  ]
+}

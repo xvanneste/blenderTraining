@@ -9,7 +9,7 @@ build_ch18_10_files.py — « Les valeurs de plans » (CH18.10, langage cinémat
       Planche GP : 8 cadres 16:9 (calque GUIDE) à remplir sur USER_Shots.
   COMPLETED_EXAMPLES/ch18_10_shots_solution.blend (+ ch18_10_shots_contact.png : planche-contact
       des 12 caméras) ; ch18_10_board_solution.blend (+ _reference.png).
-Usage : blender -b --factory-startup --python build_ch18_10_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_10_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

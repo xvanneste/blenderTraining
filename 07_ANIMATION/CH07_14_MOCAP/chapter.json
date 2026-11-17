@@ -1,0 +1,68 @@
+{
+  "code": "CH07.14",
+  "title": "Motion capture",
+  "phase_title": "7 — Animation 3D",
+  "level": "expert",
+  "duration": "8 h",
+  "intro": "La motion capture enregistre le mouvement d'un acteur : une clé par image sur chaque canal, avec du bruit et des glitches. L'animateur ne la joue pas telle quelle : il la NETTOIE (retirer les aberrations, lisser, décimer) pour garder la forme du mouvement avec peu de clés éditables. Ce chapitre importe un BVH synthétique bruité (bruit de 1°, trois glitches de 9°) et le nettoie dans le Graph Editor. Le correcteur compare l'action nettoyée à la copie brute : rugosité, fidélité de la forme, amplitude, glitches, nombre de clés, interpolation.",
+  "prereqs": [
+    "CH07.04 (Graph Editor), CH07.13 (actions)."
+  ],
+  "objectives": [
+    "Importer un fichier BVH.",
+    "Lisser et supprimer des glitches.",
+    "Décimer sans perdre la forme.",
+    "Garder une copie brute intacte."
+  ],
+  "competences": [
+    [
+      "C07.14.a",
+      "Nettoyer une mocap",
+      "Exercice 2 (correcteur) + courbe de la solution"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Importer et diagnostiquer",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Nettoyer",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_14_mocap_starter.blend",
+      "BVH synthétique importé (RIG_Mocap, action active MOCAP de 15 courbes de 96 clés) + copie brute MOCAP_RAW ; le fichier ch07_14_mocap_noisy.bvh est fourni à côté"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_14_mocap_solution.blend",
+      "Action MOCAP nettoyée : glitches supprimés, lissage gaussien, décimation (≤ 38 clés par courbe), clés Bezier"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_14_mocap_reference.png",
+      "Courbe de rotation Z de Spine : brute (points gris), nettoyée (orange), clés conservées (blanc)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (non nettoyée, sur-lissée, glitches conservés, trop de clés, clés linéaires, copie brute modifiée)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_14.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_14_mocap_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_14.py\" -- --exercise mocap",
+  "deliverables": [
+    "Mocap nettoyée validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.15 — Scène dialoguée](../CH07_15_DIALOGUE/README.md)"
+}

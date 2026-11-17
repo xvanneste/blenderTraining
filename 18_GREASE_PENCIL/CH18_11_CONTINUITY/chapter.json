@@ -23,7 +23,7 @@
     ["COMPLETED_EXAMPLES/ch18_11_board_reference.png", "Rendu de la planche"],
     ["SCRIPTS/validate_ch18_11.py", "Correcteur (marqueurs, 180°, côtés, variété, durées, planche)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_11_dialogue_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_11.py\" --python-exit-code 1 -- --exercise dialogue",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_11_dialogue_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_11.py\" -- --exercise dialogue",
   "deliverables": ["Dialogue et planche validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : la traversée."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Les deux correcteurs validés.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.12 — Cadrage, composition, découpage technique](../CH18_12_TECHNICAL_BREAKDOWN/README.md)"

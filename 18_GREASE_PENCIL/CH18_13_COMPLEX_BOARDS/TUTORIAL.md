@@ -27,6 +27,10 @@ installation (long) → déclencheur → action (courts) → réaction (GP) → 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_13_action_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_13.py" --python-exit-code 1 -- --exercise action --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_13.py" -- --exercise action --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_13_action_reference.png`.
+
+## Variante de contrôle
+
+Sur la planche de douze plans, trouvez une répétition d’intention et remplacez-la par une information nouvelle ou retirez le plan. **Preuve** La scène conserve sa durée cible et le lecteur retrouve le moment du choix sans explication.

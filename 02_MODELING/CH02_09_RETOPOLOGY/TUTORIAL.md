@@ -23,13 +23,21 @@ sélectionnable (Outliner : flèche de sélection désactivée) pour éviter de 
 1. Nouveau plan `GEO_Patch`, `Tab`, supprimez tout sauf une arête.
 2. Activez l'aimant (`Shift+Tab`) ; menu Snapping : *Snap Target for Individual Elements* →
    **Face Project** ; *Target Selection* : décochez **Include Active**.
-3. Outil **Poly Build** (barre d'outils) : clic sur l'arête pour l'extruder, `Ctrl+clic` pour une
-   face, `Shift+clic` pour supprimer. Tracez une bande de quads qui suit une crête du rocher.
+3. Activez **Poly Build** dans la barre d’outils. Glissez une arête pour l’extruder en
+   quad. `Ctrl` et un clic créent un sommet et, lorsque le bord s’y prête, un triangle.
+   `Shift` et un clic dissolvent un sommet ou suppriment une face. Tracez une bande
+   de quads le long d’une crête et inspectez sa profondeur de côté.
+
+[Manuel Blender 5.3 de Poly Build](https://docs.blender.org/manual/en/5.3/modeling/meshes/tools/poly_build.html)
 
 ## Tutoriel 4 — Vérifier
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_09_retopo_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_09.py" --python-exit-code 1 -- --exercise retopo --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_09.py" -- --exercise retopo --render
 ```
 Le correcteur mesure l'écart cage → sculpture et la couverture sculpture → cage (arbres BVH).
+
+## Variante de contrôle
+
+Choisissez une zone convexe et une zone où des surfaces se rapprochent. Comparez la projection dans deux vues éloignées de l’axe d’une seule caméra. Si la retopologie saute sur l’autre paroi, isolez la zone et revoyez la direction de projection ou l’épaisseur. **Preuve** Une tranche ou une vue latérale montre la bonne surface cible et des boucles lisibles.

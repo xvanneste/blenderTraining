@@ -11,7 +11,7 @@ solutions des chapitres (contenu répété ou rallongé) et ne sont PAS des mod�
     ch18_22_p5_animation_example.blend  animation GP de 16 s (cycle de marche CH18.17 répété)
     ch18_22_p7_short_example.blend      montage VSE de 3 min, 45 plans, musique, export, notes
   Projets 1 et 6 : les solutions de CH18.13 et CH18.19 servent d'exemples (voir tests.json).
-Usage : blender -b --factory-startup --python build_ch18_22_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_22_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

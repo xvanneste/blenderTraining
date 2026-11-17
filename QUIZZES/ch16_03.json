@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.03",
+  "title": "Gestion des assets",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que donne la commande Link ?",
+      "type": "mcq",
+      "choices": [
+        "Une copie entièrement indépendante",
+        "Une dépendance vers une bibliothèque Blender",
+        "Un fichier vidéo"
+      ],
+      "answer": 1,
+      "explain": "Une bibliothèque publiée donne une version identifiable et une hiérarchie stable à tous les plans."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que modifier avec un override ?",
+      "type": "mcq",
+      "choices": [
+        "Tous les plans source d’un coup",
+        "L’extension du MP4",
+        "Une propriété locale sur un élément lié"
+      ],
+      "answer": 2,
+      "explain": "Link conserve la dépendance au fichier source. Un override autorise une adaptation locale sur la hiérarchie liée."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Qu’inscrire dans la feuille de dépendances ?",
+      "type": "mcq",
+      "choices": [
+        "Identifiant, version et plan utilisateur",
+        "Seulement le nom visible de l’objet",
+        "Le nombre de tests du cursus"
+      ],
+      "answer": 0,
+      "explain": "Une modification du contenu ou des noms peut nécessiter une resynchronisation. Une version publiée facilite le retour arrière."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le plan ne retrouve plus l’actif après avoir changé de dossier. »",
+      "answer_text": "Le chemin de bibliothèque est enregistré à une adresse indisponible. Remettez la bibliothèque à l’emplacement attendu ou reconnectez le lien, puis réouvrez la scène."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi ne pas publier v002 sous le nom v001 ?",
+      "answer_text": "Une scène déjà approuvée pourrait changer sans décision et le retour arrière deviendrait difficile."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Une pièce d’override reste au mauvais endroit après la mise à jour. Que comparer ?",
+      "answer_text": "La position source et locale, la référence de bibliothèque et la propriété de remplacement dans le plan rouvert."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve distingue Append de Link ?",
+      "answer_text": "Le test avec une bibliothèque modifiée et les datablocks locaux ou liés visibles dans Blender File."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Publier l’asset » vérifiable ?",
+      "answer_text": "La collection source est identifiable et ses pièces utilisent des noms distincts."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Lier et adapter » vérifiable ?",
+      "answer_text": "Le plan conserve la bibliothèque et la position du modèle diffère du placement source."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Réviser sans écraser » vérifiable ?",
+      "answer_text": "Une table indique source, version testée, propriétés locales et décision par plan."
+    }
+  ]
+}

@@ -1,6 +1,15 @@
 {
   "extra": [
-    {"script": "bcma_extensions_report.py", "args": []},
-    {"script": "test_bcma_hello.py", "args": []}
+    {
+      "script": "bcma_extensions_report.py",
+      "args": []
+    },
+    {
+      "script": "test_bcma_hello.py",
+      "args": []
+    },
+    {
+      "script": "test_installation_isolee.py"
+    }
   ]
 }

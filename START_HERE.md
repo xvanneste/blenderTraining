@@ -1,48 +1,32 @@
-# START HERE — Par où commencer ?
+# Par où commencer ?
 
-Bienvenue. Vous n'avez besoin d'aucune connaissance préalable. Suivez ces étapes dans
-l'ordre ; comptez 15 minutes avant d'ouvrir le premier chapitre.
+## Deux façons de lire le cours
 
-## 1. Choisissez votre rythme (2 min)
-Lisez [ROADMAP.md](ROADMAP.md) et choisissez **5, 10 ou 20 heures par semaine**.
-Notez-le dans [PROGRESS.md](PROGRESS.md) (tableau de bord). Mieux vaut 5 heures tenues
-toute l'année que 20 heures abandonnées au bout d'un mois.
+- **Parcours débutant.** Trois projets suffisent pour amorcer la pratique. Rendez une première image, créez une caisse et son rendu, puis composez une petite nature morte. Pour chaque projet, gardez un livrable et refaites un geste seul. Le site suit les trois validations dans ce navigateur. [Ouvrir le parcours](SITE/index.html#parcours)
+- **Bibliothèque.** Consultez les 199 chapitres par phase ou cherchez un sujet, un nom de commande ou un code de chapitre. Ouvrez directement le tutoriel, le corrigé ou la fiche que vous cherchez. [Ouvrir la bibliothèque](SITE/index.html#bibliotheque)
 
-## 2. Comprenez comment fonctionne un chapitre (5 min)
-Chaque chapitre est un dossier qui contient :
-1. `README.md` — à lire en premier : objectifs, durée, livrables.
-2. `LESSON.md` — les leçons, chacune en 9 étapes : **Comprendre → Observer → Reproduire →
-   Pratiquer → Produire → Optimiser → Évaluer → Consolider → Livrer**.
-3. `THEORY.md` et `TUTORIAL.md` — le cours détaillé et les pas à pas, appelés par les leçons.
-4. `EXERCISES.md` — trois niveaux (facile, moyen, difficile), des défis, un mini-projet et
-   des tests chronométrés.
-5. `QUIZ.md` puis `SOLUTIONS.md` — **dans cet ordre**.
-6. `TROUBLESHOOTING.md` — quand ça ne marche pas.
-7. `STARTER_FILES/` (fichiers de départ) et `COMPLETED_EXAMPLES/` (corrigés).
-8. `SCRIPTS/` — dont un **correcteur automatique** qui note vos fichiers.
+## Première séance
 
-## 3. Adoptez la méthode de travail (3 min)
-- **Une séance type** : 10–15 min de révision espacée → leçon → exercices → mini-projet.
-- **Faites, ne lisez pas seulement.** Chaque leçon se termine par une production.
-- **L'exercice difficile se fait sans tutoriel.** C'est lui qui prouve la compétence.
-- **Notez vos temps.** La vitesse fait partie de la maîtrise (tests chronométrés).
-- **Révisez à J+7, J+30, J+90** avec les fiches de `CHEAT_SHEETS/`.
-- **Remplissez PROGRESS.md** à la fin de chaque séance (2 minutes).
+1. **Installer et ouvrir.** Si vous débutez, choisissez Blender 5.3 et ouvrez la mire. Gardez l’interface anglaise si vous voulez retrouver les menus à l’identique. Les explications du cours sont en français. [Installer Blender](00_SETUP/CH00_01_INSTALLATION/README.md)
+2. **Rendre et conserver.** Travaillez sur une copie. Lancez le rendu de la mire en CPU, enregistrez le PNG et rouvrez-le. Refaire l’image avec 64 échantillons vous donnera un premier repère pour les réglages. [Première image](00_SETUP/CH00_01_INSTALLATION/TUTORIAL.md#premier-jalon--rendre-et-conserver-une-image)
+3. **Choisir la suite.** Pour construire une scène, l’animer et la livrer, suivez le parcours du premier plan. Pour apprendre à construire des formes, suivez le parcours de modélisation. [Premier plan animé](DOCUMENTATION/PARCOURS_PREMIER_PLAN.md) · [Modélisation pratique](SITE/index.html#atelier)
 
-## 4. Respectez les conventions dès le premier jour (5 min)
-Lisez [DOCUMENTATION/CONVENTIONS.md](DOCUMENTATION/CONVENTIONS.md) : nommage des fichiers
-(`…_v001.blend`), des objets (`GEO_`, `CAM_`, `LGT_`…), chemins relatifs, unités en
-mètres. Ces habitudes vous feront gagner des centaines d'heures.
+La première étape se valide avec votre scène enregistrée et un PNG lisible. Le GPU, le benchmark et la ligne de commande s’ajoutent quand vous avez besoin de comparer ou d’automatiser un rendu.
 
-## 5. Ouvrez l'application (facultatif)
-`SITE/index.html` réunit tout le contenu (navigation, quiz, recherche, progression). Elle se
-régénère avec `python TOOLSuild_site.py`.
+## Lire un chapitre
 
-## 6. Ouvrez le premier chapitre
-👉 [00_SETUP/CH00_01_INSTALLATION/README.md](00_SETUP/CH00_01_INSTALLATION/README.md)
+| Support | Quand l’utiliser |
+|---|---|
+| Présentation et leçons | Repérer les objectifs, les prérequis et la durée indicative. |
+| Théorie et tutoriel | Comprendre une opération, puis la refaire dans l’éditeur et le mode indiqués. |
+| Exercices et corrigés | Produire une preuve guidée, puis essayer une variante avant d’ouvrir le corrigé. |
+| Quiz et dépannage | Vérifier ce que vous pouvez expliquer et retrouver une cause quand le résultat diffère. |
+| Ressources | Ouvrir une scène, un rendu de comparaison ou un document officiel. Certains chapitres utilisent les fichiers d’un projet commun. |
 
-## Besoin d'aide ?
-- `TROUBLESHOOTING.md` du chapitre.
-- Le manuel officiel : *Help → Manual* dans Blender.
-- Claude Code dans ce dossier : il connaît l'architecture grâce à `CLAUDE.md` et peut
-  expliquer une notion, corriger un fichier ou générer un exercice supplémentaire.
+Un correcteur Blender, lorsqu’il est fourni, examine des propriétés du résultat. Les projets de production utilisent aussi des preuves à relire. Pour suivre vos acquis, notez le fichier obtenu, le geste refait seul et le prochain point à travailler. Le site permet de retrouver chapitres, quiz, recherche, favoris et progression mémorisée dans le navigateur. [Ouvrir l’application](SITE/index.html) · [Fiche de progression](PROGRESS.md)
+
+## Organiser sa pratique
+
+Choisissez un rythme après les premiers essais. Alternez une séance guidée et un court retour sans le tutoriel. Gardez les exercices chronométrés pour la consolidation. Les fiches de révision permettent de retrouver un outil à J+7, J+30 ou J+90. [Feuilles de route](ROADMAP.md) · [Programme complet](CURRICULUM.md)
+
+Enregistrez chaque jalon sous une nouvelle version et apprenez progressivement les noms d’objets, chemins relatifs et conventions d’échelle à mesure qu’ils servent. Si un geste ne fonctionne pas, commencez par le dépannage du chapitre, puis le manuel officiel de Blender 5.3. [Conventions](DOCUMENTATION/CONVENTIONS.md) · [Glossaire Blender](DOCUMENTATION/GLOSSAIRE_BLENDER.md) · [Manuel Blender 5.3](https://docs.blender.org/manual/en/5.3/)

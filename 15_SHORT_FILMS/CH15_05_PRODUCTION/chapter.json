@@ -1,0 +1,43 @@
+{
+  "code": "CH15.05",
+  "title": "Fabrication",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Faire franchir au plan S020 les étapes du layout, du blocking, de l’animation puis du rendu.",
+  "prereqs": [
+    "CH15.04"
+  ],
+  "objectives": [
+    "La main et la balise sont dans le champ aux deux moments critiques.",
+    "Trois poses reconnaissables et une capture de contrôle.",
+    "Au moins une pose avant le contact, une au contact et une après sont rendues."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Layout",
+      ""
+    ],
+    [
+      "L2",
+      "Blocking",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/sur_le_quai.md",
+      "Shot bible et limites de l’exercice"
+    ],
+    [
+      "../../07_ANIMATION/CH07_02_KEYFRAMES/README.md",
+      "Rappel sur les clés et la timeline"
+    ]
+  ],
+  "pass_criteria": [
+    "La main et la balise sont dans le champ aux deux moments critiques.",
+    "Trois poses reconnaissables et une capture de contrôle.",
+    "Au moins une pose avant le contact, une au contact et une après sont rendues."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "build": "build_ch05_03_files.py",
+  "validator": "validate_ch05_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_03_instances_solution.blend",
+      "exercise": "instances",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_03_instances_starter.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_realized.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_no_random.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_sunk.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_sparse.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_too_dense.blend",
+      "exercise": "instances",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_03_instances_no_material.blend",
+      "exercise": "instances",
+      "expect": false
+    }
+  ]
+}

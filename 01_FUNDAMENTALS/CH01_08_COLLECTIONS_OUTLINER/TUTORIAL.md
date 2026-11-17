@@ -7,7 +7,8 @@
    ✅ Chaque ligne affiche maintenant ses icônes de visibilité.
 
 ## Tutoriel 2 — Créer les collections et ranger
-1. Sélectionnez `GEO_Floor`, `GEO_Wall_Back`, `GEO_Wall_Left` (`Ctrl`+clic dans l'Outliner).
+1. Dans l’Outliner, cliquez `GEO_Floor`, puis ajoutez `GEO_Wall_Back` et `GEO_Wall_Left`
+   avec `Ctrl` et un clic sur chaque nom. Vérifiez la sélection dans la vue 3D.
 2. Souris dans la vue 3D, `M` → **+ New Collection** → nom `SET` → *OK*.
 3. Sélectionnez les 7 objets de mobilier (`GEO_Sofa` … `GEO_Shelf`), `M` → *+ New Collection* → `PROPS`.
 4. Idem : `LGT_Key`, `LGT_Window` → `LIGHTS` ; `CAM_Main`, `EMP_CamTarget` → `CAMERAS` ;
@@ -22,14 +23,21 @@
 ## Tutoriel 4 — Parenter l'abat-jour
 1. Cliquez `GEO_LampShade`, puis `Ctrl`+clic (ou `Shift`+clic dans la vue) sur `GEO_LampBase` :
    le pied est **actif** (dernier sélectionné).
-2. `Ctrl+P` → **Object**.
+2. Replacez le pointeur dans la vue 3D. Pressez `Ctrl+P`, puis choisissez
+   **Object (Keep Transform)** pour préserver la position visible de l’abat-jour.
    ✅ Dans l'Outliner, l'abat-jour apparaît sous le pied ; une ligne pointillée les relie dans la vue.
 3. Test : sélectionnez le pied seul, `G X 1` : l'abat-jour suit. `Échap`.
+
+[Manuel Blender 5.3 des commandes de l’Outliner](https://docs.blender.org/manual/en/5.3/editors/outliner/interface.html)
 
 ## Tutoriel 5 — Vérifier
 Enregistrez `ch01_08_living_room_<prenom>_v001.blend` puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_08_living_room_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_08.py" --python-exit-code 1 -- --exercise organize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_08.py" -- --exercise organize --render
 ```
+
+## Contrôle de transfert
+
+Dans l’Outliner, testez séparément l’œil de visibilité dans la vue et l’appareil photo de rendu sur HELPERS. Faites un F12 de comparaison à résolution réduite. Si la boîte de debug reste visible au rendu, vérifiez si elle est liée à une autre collection. **Réussite** Les repères restent accessibles pour le travail et disparaissent de l’image. Vous pouvez expliquer quel interrupteur agit dans quel contexte.

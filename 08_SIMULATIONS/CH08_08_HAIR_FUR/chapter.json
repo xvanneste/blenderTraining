@@ -1,0 +1,68 @@
+{
+  "code": "CH08.08",
+  "title": "Cheveux et fourrure",
+  "phase_title": "8 — Physique et simulations",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Les cheveux et la fourrure sont des milliers de brins : on en simule quelques centaines (les parents) et on en déduit des milliers d'autres (les enfants) qui les suivent. Ce chapitre utilise le système de particules de type Hair, qui existe toujours dans Blender 5.3 : racines sur un groupe de sommets, longueur, enfants interpolés, mèches (Clumping) et Hair Dynamics (pesanteur et rigidité). Une précision d'honnêteté : Blender 5.3 propose aussi le nouvel objet Curves (opérateurs `object.curves_empty_hair_add`, `curves.convert_from_particle_system`) et des outils de nœuds pour les cheveux ; nous n'avons pas testé ces outils ici : le correcteur mesure les particules Hair.",
+  "prereqs": [
+    "CH08.04 (particules), CH08.03 (tissu : la dynamique de cheveux réutilise le moteur de tissu)."
+  ],
+  "objectives": [
+    "Créer un système de cheveux sur une zone choisie.",
+    "Régler longueur, enfants et mèches.",
+    "Activer la dynamique et vérifier que les cheveux retombent.",
+    "Mesurer des cheveux sans les rendre."
+  ],
+  "competences": [
+    [
+      "C08.08.a",
+      "Coiffure par particules",
+      "Exercice 2 (correcteur) + vue de face aux images 1 et 30"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Parents, enfants et mèches",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Dynamique et mesure",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_08_hair_starter.blend",
+      "La tête (sphère de 1 m) et son groupe de sommets « scalp » ; aucun système de particules"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_08_hair_solution.blend",
+      "Hair 300 × 0,5 m, densité « scalp », enfants interpolés ×10, Clumping 0,5, Hair Dynamics"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_08_hair_reference.png",
+      "Les 300 cheveux parents vus de face : image 1 (dressés) et image 30 (retombés)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans groupe, sans enfants, sans mèches, sans dynamique, trop courts, trop peu nombreux)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_08.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_08_hair_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_08.py\" -- --exercise hair",
+  "deliverables": [
+    "Chevelure validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.09 — Forces](../CH08_09_FORCES/README.md)"
+}

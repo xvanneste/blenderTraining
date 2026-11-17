@@ -1,0 +1,52 @@
+{
+  "build": "build_ch06_01_files.py",
+  "validator": "validate_ch06_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_01_armature_solution.blend",
+      "exercise": "armature",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_01_armature_starter.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_missing_right.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_bad_names.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_asymmetric.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_unparented.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_disconnected.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_pose_dirty.blend",
+      "exercise": "armature",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_01_armature_deform_root.blend",
+      "exercise": "armature",
+      "expect": false
+    }
+  ]
+}

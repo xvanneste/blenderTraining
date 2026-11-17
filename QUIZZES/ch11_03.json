@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.03",
+  "title": "Masques et Cryptomatte",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le Pass Index d'un objet ?",
+      "choices": [
+        "Un entier propre à l'objet, écrit dans la passe Object Index",
+        "Son nom",
+        "Sa couleur",
+        "Son poids"
+      ],
+      "answer": 0,
+      "explain": "Object Properties > Relations > Pass Index : A = 1, B = 2, C = 3."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que produit le nœud ID Mask ?",
+      "choices": [
+        "Un masque (alpha) des pixels dont l'index vaut la valeur choisie",
+        "Une image couleur",
+        "Un maillage",
+        "Une passe"
+      ],
+      "answer": 0,
+      "explain": "Entrées : ID value (la prise Object Index), Index, Anti-Alias."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment s'appelle la prise d'index sur Render Layers en 5.3 ?",
+      "choices": [
+        "Object Index",
+        "IndexOB",
+        "ID",
+        "Mask"
+      ],
+      "answer": 0,
+      "explain": "Constaté : les prises dépendent des passes activées ; Cycles seulement."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les prises de passes disparaissent-elles avec EEVEE ?",
+      "answer_text": "L'index d'objet est une passe Cycles : avec un autre moteur la prise n'est pas créée (constaté)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre wrong_index ?",
+      "answer_text": "Index 1 : c'est la sphère rouge qui reste en couleur : le masque suit l'index, pas la position."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel avantage a Cryptomatte sur l'index ?",
+      "choices": [
+        "On choisit par nom, et les bords sont anti-aliasés (transparence, flou de mouvement)",
+        "Il est plus rapide à rendre",
+        "Il n'a pas besoin de passe",
+        "Il ne fonctionne qu'avec EEVEE"
+      ],
+      "answer": 0,
+      "explain": "Variante vérifiée : matte_id « Sphere_B », prise Matte."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait un Mix avec un masque comme Factor ?",
+      "choices": [
+        "Prend B là où le masque vaut 1 et A là où il vaut 0",
+        "Additionne A et B",
+        "Multiplie A et B",
+        "Ne fait rien"
+      ],
+      "answer": 0,
+      "explain": "A = image désaturée, B = image d'origine."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer la saturation et non regarder l'image ?",
+      "answer_text": "La saturation HSV d'un patch donne un nombre contrôlable : 0,59 en couleur, 0,00 en gris."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre inverted ?",
+      "answer_text": "Le masque inversé donne l'effet inverse : B grise, A et C en couleur : il faut vérifier le sens du masque."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Trois sphères nettes, pas de transparence ni de mouvement : le bord anti-aliasé de Cryptomatte n'est pas mesuré."
+    }
+  ]
+}

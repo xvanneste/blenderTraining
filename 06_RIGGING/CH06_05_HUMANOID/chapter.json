@@ -1,0 +1,70 @@
+{
+  "code": "CH06.05",
+  "title": "Rig humanoïde",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Rigify construit un rig humanoïde complet (IK/FK, colonne, visage, doigts, contrôleurs) à partir d'un méta-rig que l'on ajuste au personnage. Ce chapitre rigge le personnage du projet P3 : on ajoute le méta-rig humain, on le met à l'échelle du corps, on génère le rig (706 bones), puis on lie le corps par Automatic Weights. Le correcteur vérifie le rig généré, l'ajustement et la peau, puis DÉPLACE le rig : la racine entraîne tout le corps, le pied gauche levé n'entraîne que le pied gauche.",
+  "prereqs": [
+    "CH06.01",
+    "CH06.03–04",
+    "P3 (personnage)."
+  ],
+  "objectives": [
+    "Ajouter, ajuster et générer un méta-rig Rigify.",
+    "Lier le corps au rig généré (bones DEF-).",
+    "Contrôler un rig par le mouvement.",
+    "Ajuster le méta-rig au personnage (bras en A) et le vérifier."
+  ],
+  "competences": [
+    [
+      "C06.05.a",
+      "Rig humanoïde complet",
+      "Exercice 2 (correcteur) + croquis du rig et de la jambe levée"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Méta-rig et génération",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Peau et contrôle du rig",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_05_humanoid_starter.blend",
+      "Corps de P3 et méta-rig non ajusté (1,98 m)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_05_humanoid_solution.blend",
+      "Rig généré et corps lié"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_05_humanoid_reference.png",
+      "Croquis de face : bones DEF sur le corps, puis pied gauche levé de 0,25 m"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (rig non généré, corps non lié, méta-rig non mis à l'échelle, sans modificateur, poids partiels, rig décalé)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_05.py",
+      "Correcteur (humanoid)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_05_humanoid_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_05.py\" -- --exercise humanoid",
+  "deliverables": [
+    "Rig humanoïde validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.06 — Rig quadrupède](../CH06_06_QUADRUPED/README.md)"
+}

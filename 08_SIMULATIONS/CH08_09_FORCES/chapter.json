@@ -1,0 +1,68 @@
+{
+  "code": "CH08.09",
+  "title": "Forces",
+  "phase_title": "8 — Physique et simulations",
+  "level": "avancé",
+  "duration": "8 h",
+  "intro": "Les champs de force (Force Fields) sont des objets invisibles qui poussent, tordent ou brassent tout ce qui les écoute : particules, tissu, corps souples. Le vent (Wind) pousse selon l'axe local Z de l'objet ; la turbulence (Turbulence) ajoute des tourbillons ; chaque système choisit son degré d'écoute par ses Field Weights. Ce chapitre fait dériver un nuage de 300 particules vers +X avec un vent de force 5, puis le brasse avec une turbulence. Le correcteur simule 60 images et mesure la dérive moyenne et la dispersion latérale.",
+  "prereqs": [
+    "CH08.04 (particules)."
+  ],
+  "objectives": [
+    "Ajouter et orienter un champ Wind.",
+    "Ajouter une Turbulence et régler sa taille.",
+    "Utiliser les Field Weights.",
+    "Mesurer l'effet d'une force sur un nuage."
+  ],
+  "competences": [
+    [
+      "C08.09.a",
+      "Utiliser les forces",
+      "Exercice 2 (correcteur) + vue de dessus"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Wind, Turbulence et poids",
+      "4 h"
+    ],
+    [
+      "L2",
+      "Mesurer une force",
+      "4 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_09_forces_starter.blend",
+      "L'émetteur de 300 particules seul (aucun champ)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_09_forces_solution.blend",
+      "Wind de force 5 vers +X + Turbulence de force 5, taille 0,5"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_09_forces_reference.png",
+      "Vue de dessus à l'image 60 : sans force, vent seul, vent + turbulence"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans vent, vent à l'envers, vent faible, sans turbulence, vent ignoré par les poids)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_09.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_09_forces_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_09.py\" -- --exercise forces",
+  "deliverables": [
+    "Forces validées.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.10 — Caches et baking](../CH08_10_CACHES/README.md)"
+}

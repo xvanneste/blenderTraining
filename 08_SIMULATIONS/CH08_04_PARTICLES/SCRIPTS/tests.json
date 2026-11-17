@@ -1,0 +1,46 @@
+{
+  "build": "build_ch08_04_files.py",
+  "validator": "validate_ch08_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_04_particles_solution.blend",
+      "exercise": "particles",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_04_particles_starter.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_no_floor.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_short_life.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_no_gravity.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_too_few.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_burst.blend",
+      "exercise": "particles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_04_particles_static.blend",
+      "exercise": "particles",
+      "expect": false
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """
 validate_ch02_07.py — Correcteur de « La platine percée » (CH02.07).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_07.py --python-exit-code 1 -- --exercise plate [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_07.py -- --exercise plate [--render]
 Le nombre de trous traversants est mesuré par la caractéristique d'Euler du résultat évalué :
 pour une surface fermée d'un seul tenant, V − E + F = 2 − 2g (g = nombre de trous traversants).
 Testé avec : Blender 5.3.0.

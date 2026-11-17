@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.03",
+  "title": "PBR et Principled BSDF",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle valeur de Metallic pour un métal ?",
+      "choices": [
+        "0",
+        "0,5",
+        "Proche de 1",
+        "Peu importe"
+      ],
+      "answer": 2,
+      "explain": "Un matériau est métallique ou non : Metallic vaut 0 ou 1 ; l'intermédiaire ne sert qu'aux transitions (rouille, peinture écaillée)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que représente Base Color pour un métal ?",
+      "choices": [
+        "La couleur diffuse",
+        "La couleur de la réflexion",
+        "Le sous-surface",
+        "Rien"
+      ],
+      "answer": 1,
+      "explain": "Un métal n'a pas de diffus : Base Color est la teinte de sa réflexion (or ≈ 1 ; 0,77 ; 0,34)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Un métal avec Base Color presque noir donne…",
+      "choices": [
+        "Un acier sombre réaliste",
+        "Un miroir qui ne réfléchit presque rien : faux",
+        "Un verre",
+        "Du caoutchouc"
+      ],
+      "answer": 1,
+      "explain": "Les métaux réfléchissent 60–100 % : la Base Color d'un métal n'est jamais sombre (le correcteur exige une luminance ≥ 0,5)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi éviter l'albedo 1,0 (blanc pur) et 0,0 (noir pur) pour un diélectrique ?",
+      "answer_text": "Un diélectrique réel absorbe et réfléchit : la neige fraîche ≈ 0,9, le charbon ≈ 0,02–0,04. Les extrêmes donnent un rendu irréaliste et cassent l'éclairage."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que fait Roughness ?",
+      "answer_text": "Elle étale le reflet : 0 = miroir net, 1 = reflet très diffus. Un caoutchouc mat est autour de 0,7–0,8, un métal poli de 0,1–0,4."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel input rend le verre transparent ?",
+      "choices": [
+        "Metallic",
+        "Transmission Weight",
+        "Subsurface Weight",
+        "Coat Weight"
+      ],
+      "answer": 1,
+      "explain": "Transmission Weight = 1 laisse passer la lumière (réfractée selon l'IOR)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "IOR typique du verre ?",
+      "choices": [
+        "1,0",
+        "≈ 1,45–1,55",
+        "3,0",
+        "0,5"
+      ],
+      "answer": 1,
+      "explain": "Le verre courant est entre 1,45 et 1,55 ; le correcteur accepte 1,3–1,7."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la cire utilise-t-elle Subsurface avec un rayon R > V > B ?",
+      "answer_text": "La lumière pénètre et ressort ailleurs ; le rouge diffuse plus loin que le bleu : le rayon par canal (R, V, B) donne la teinte chaude des ombres douces d'une cire ou d'une peau."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un rendu mettant le même matériau sur les quatre sphères est-il refusé ?",
+      "answer_text": "Le correcteur exige quatre matériaux distincts : chaque sphère a son MAT_ ; partager un matériau modifie tous les objets à la fois."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel rôle joue l'environnement (World) dans le rendu d'un métal ?",
+      "answer_text": "Un métal reflète son environnement : sur un fond noir il paraît noir. Un monde clair (ici gris-bleu) est nécessaire pour qu'il ait quelque chose à refléter."
+    }
+  ]
+}

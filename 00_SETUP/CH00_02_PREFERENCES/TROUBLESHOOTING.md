@@ -13,3 +13,7 @@
 | `bcma_prefs_profile.py` affiche « lancé avec --factory-startup » | Vous auditez les réglages d'usine | Relancer sans `--factory-startup` pour auditer **vos** réglages |
 | File → New montre une scène inattendue | Fichier de démarrage personnalisé | *File → Defaults → Load Factory Settings* puis *Save Startup File* |
 | Le correcteur dit « Aiguille dans le cadre » ✘ alors qu'on la voit dans la vue | Vous avez cadré la **vue**, pas la **caméra** | `Ctrl+Alt+Num 0` pour aligner la caméra active sur la vue, vérifier avec `Num 0` |
+
+## L’audit indique que Video Memory est en lecture seule
+
+Blender peut rendre cette préférence indisponible en arrière-plan. Le profil applique les réglages disponibles et signale ce point facultatif. Vérifiez la barre d’état depuis l’interface si votre matériel expose la mesure.

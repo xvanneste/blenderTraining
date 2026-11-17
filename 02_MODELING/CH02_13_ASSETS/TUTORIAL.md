@@ -23,14 +23,24 @@ Ouvrez `STARTER_FILES/ch02_13_library_starter.blend` : vos 6 props des chapitres
 3. `Ctrl+S` : `blender_assets.cats.txt` apparaît à côté du fichier.
 
 ## Tutoriel 4 — Utiliser la bibliothèque ailleurs
-1. *Edit → Preferences → Asset Libraries* → **+** → dossier de votre bibliothèque.
-2. Nouveau fichier : Asset Browser → votre bibliothèque → glissez le tabouret dans la scène.
-3. Testez *Link* puis *Append* (menu déroulant d'import de l'Asset Browser, ou *File → Link… /
-   Append…*) et comparez dans l'Outliner (icône de lien).
+1. *Edit → Preferences → Asset Libraries* → **+**. Sélectionnez le dossier contenant
+   le `.blend` enregistré et le fichier de catalogues. Donnez un nom reconnaissable à
+   la bibliothèque dans les préférences.
+2. Dans un nouveau `.blend`, ouvrez l’Asset Browser et choisissez cette bibliothèque.
+   Glissez le tabouret dans la scène après avoir choisi *Link* comme méthode d’import.
+3. Recommencez dans une deuxième scène avec *Append*. Comparez dans l’Outliner la
+   référence liée et la copie locale. Enregistrez et rouvrez chaque scène avec la
+   bibliothèque à la même place pour vérifier qu’elle reste utilisable.
+
+[Manuel Blender 5.3 des bibliothèques d’assets](https://docs.blender.org/manual/en/5.3/editors/preferences/asset_libraries.html)
 
 ## Tutoriel 5 — Vérifier
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "ASSETS\ch02_13_library_<prenom>.blend" `
-  --python "02_MODELING\CH02_13_ASSETS\SCRIPTS\validate_ch02_13.py" --python-exit-code 1 -- --exercise library --render
+  --python-exit-code 1 --python "02_MODELING\CH02_13_ASSETS\SCRIPTS\validate_ch02_13.py" -- --exercise library --render
 ```
+
+## Variante de contrôle
+
+Ouvrez une seconde scène et utilisez un seul asset depuis la bibliothèque prévue. Rouvrez la scène enregistrée et vérifiez la provenance du datablock. Comparez Link, qui garde une dépendance, et une copie locale adaptée à l’exercice. **Preuve** Identifiant, fichier source, emplacement dans le catalogue et comportement à la réouverture.

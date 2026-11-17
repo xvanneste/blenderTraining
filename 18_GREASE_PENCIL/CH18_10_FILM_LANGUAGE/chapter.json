@@ -24,7 +24,7 @@
     ["COMPLETED_EXAMPLES/ch18_10_board_reference.png", "Rendu de la planche"],
     ["SCRIPTS/validate_ch18_10.py", "Correcteur (valeurs mesurées, angles, 180°, planche)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_10_shots_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_10.py\" --python-exit-code 1 -- --exercise shots",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_10_shots_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_10.py\" -- --exercise shots",
   "deliverables": ["Caméras et planche validées.", "Auto-évaluation ≥ 14/20.", "Mini-projet : un dialogue en 8 plans."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Les deux correcteurs validés.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.11 — Continuité et dialogue](../CH18_11_CONTINUITY/README.md)"

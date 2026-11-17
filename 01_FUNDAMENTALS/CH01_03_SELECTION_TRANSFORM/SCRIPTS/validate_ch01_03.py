@@ -2,7 +2,7 @@
 validate_ch01_03.py — Correcteur du puzzle (CH01.03).
 Compare la forme de chaque pièce, en coordonnées du monde, à sa silhouette cible
 (tolérance 2 cm : les symétries d'un cube ou d'un cylindre sont acceptées).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_03.py --python-exit-code 1 -- --exercise puzzle
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_03.py -- --exercise puzzle
 Testé avec : Blender 5.3.0.
 """
 import os

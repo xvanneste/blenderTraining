@@ -9,7 +9,7 @@ build_ch18_02_files.py — Feuille « perspective à 1, 2 et 3 points » (CH18.0
       Calques de travail vides : USER_OnePoint, USER_TwoPoint, USER_ThreePoint.
   COMPLETED_EXAMPLES/ch18_02_perspective_solution.blend (+ _reference.png)
       Couloir avec portes, rue de bâtiments-boîtes, tour en contre-plongée (générés par script).
-Usage : blender -b --factory-startup --python build_ch18_02_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_02_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

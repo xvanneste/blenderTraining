@@ -39,7 +39,11 @@ Regardez la vidéo une fois sans vous arrêter, puis une seconde fois en notant 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_15_edit_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_15.py" --python-exit-code 1 -- --exercise edit --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_15.py" -- --exercise edit --render
 ```
 `--render` exporte réellement une vidéo de contrôle (dossier temporaire) et vérifie qu'elle contient
 456 images et une piste son audible.
+
+## Variante de contrôle
+
+Déplacez un événement sonore dans une copie et comparez à la version où il renforce la coupe. Ouvrez également le MP4 exporté. **Preuve** Le départ de l’image et du son ainsi que la durée survivent à la réouverture.

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.07",
+  "title": "Keying",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un matte ?",
+      "choices": [
+        "Un masque qui sépare le sujet du fond",
+        "Une lampe",
+        "Un filtre de couleur",
+        "Un format"
+      ],
+      "answer": 0,
+      "explain": "Sortie Matte du nœud Keying."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi un fond vert ?",
+      "choices": [
+        "Sa couleur est éloignée des tons de peau",
+        "Il est plus lumineux",
+        "Il est moins cher",
+        "Par tradition seulement"
+      ],
+      "answer": 0,
+      "explain": "Le vert ressort loin du rouge de la peau : la clé est plus propre."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Key Color ?",
+      "choices": [
+        "La couleur à retirer",
+        "La couleur du nouveau fond",
+        "La couleur du sujet",
+        "La lumière"
+      ],
+      "answer": 0,
+      "explain": "Ici (0,10 ; 0,80 ; 0,15) ; avec un bleu : le fond reste (écart 0,46)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un bord doux ?",
+      "answer_text": "Un détourage dur donne des bords crénelés ; le matte garde une transition d'environ 4 pixels que l'Alpha Over respecte."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre no_key ?",
+      "answer_text": "Sans keying, l'Alpha Over ne trouve pas de matte : le fond vert reste (écart 0,44)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce que la contamination (spill) ?",
+      "choices": [
+        "Le vert du fond qui se reflète sur le sujet",
+        "Un bruit",
+        "Une ombre",
+        "Un halo"
+      ],
+      "answer": 0,
+      "explain": "Mesurée : vert − (rouge + bleu)/2 = +0,130 sur l'anneau avant correction."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud retire la contamination ?",
+      "choices": [
+        "Color Spill (et le nœud Keying lui-même la corrige déjà)",
+        "Blur",
+        "Glare",
+        "Denoise"
+      ],
+      "answer": 0,
+      "explain": "Chroma Matte ne la corrige pas : no_spill reste à +0,130."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi comparer à la valeur AFFICHÉE du bleu ?",
+      "answer_text": "Le nœud RGB est linéaire (0,10 ; 0,20 ; 0,80) ; à l'écran il devient (0,35 ; 0,48 ; 0,91) : le correcteur convertit."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite d'un fond d'exemple généré ?",
+      "answer_text": "Il est uniforme et éclairé parfaitement : un vrai écran vert est inégal, avec des plis, des ombres et des cheveux fins."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un sujet convexe, un anneau, quatre coins : elle ne juge ni les cheveux, ni la transparence, ni le flou de mouvement."
+    }
+  ]
+}

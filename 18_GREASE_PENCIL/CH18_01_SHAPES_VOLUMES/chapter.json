@@ -22,7 +22,7 @@
     ["SCRIPTS/gp_spec.json", "Spécification de correction (quantités, zones, remplissages)"],
     ["SCRIPTS/validate_ch18_01.py", "Correcteur (via SCRIPTS/bcma_gp_check.py)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_01_volumes_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_01.py\" --python-exit-code 1 -- --exercise volumes --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_01_volumes_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_01.py\" -- --exercise volumes --render",
   "deliverables": ["Feuille complétée et validée.", "Grille d'auto-évaluation ≥ 14/20.", "Carnet de 7 jours (mini-projet)."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée par le correcteur.", "Auto-évaluation ≥ 14/20 (refaite à J+7)."],
   "next": "[CH18.02 — Perspective](../CH18_02_PERSPECTIVE/README.md)"

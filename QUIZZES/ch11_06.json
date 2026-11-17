@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.06",
+  "title": "Color grading",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle zone de tons règle Lift ?",
+      "choices": [
+        "Les ombres",
+        "Les hautes lumières",
+        "Les tons moyens",
+        "Toute l'image"
+      ],
+      "answer": 0,
+      "explain": "Lift teinté bleu : ombres bleutées (+0,111 bleu−rouge)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle zone règle Gain ?",
+      "choices": [
+        "Les hautes lumières",
+        "Les ombres",
+        "Les tons moyens",
+        "Le fond"
+      ],
+      "answer": 0,
+      "explain": "Gain teinté orange : hautes lumières chaudes (+0,060 rouge−bleu)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Gamma ?",
+      "choices": [
+        "Les tons moyens (et la luminosité globale)",
+        "Le noir",
+        "Le blanc",
+        "Le grain"
+      ],
+      "answer": 0,
+      "explain": "Gamma 2,0 neutre éclaircit trop : +0,125 de luminance."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les sockets sont-ils dédoublés (facteur + couleur) ?",
+      "answer_text": "Le nœud 5.3 expose un facteur et une couleur par zone ; on règle la couleur (les prises 4, 6, 8) pour teinter."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre swapped ?",
+      "answer_text": "Une inversion : ombres chaudes et hautes lumières froides : l'étalonnage « orange et teal » à l'envers."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi garder l'exposition ?",
+      "choices": [
+        "Pour que la teinte seule change : on étalonne la couleur, pas la luminosité",
+        "Pour la vitesse",
+        "Par habitude",
+        "Pour la taille"
+      ],
+      "answer": 0,
+      "explain": "Écart de luminance −0,001 : la solution ne change que la couleur."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi mesurer les teintes sur deux bandes ?",
+      "choices": [
+        "Pour vérifier séparément ombres et hautes lumières",
+        "Pour réduire le temps",
+        "Pour la couleur du fond",
+        "Par erreur"
+      ],
+      "answer": 0,
+      "explain": "Colonnes 4–31 (ombres) et 128–155 (hautes lumières)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi les hautes lumières saturent-elles à blanc ?",
+      "answer_text": "Le bout de la rampe vaut 1,0 : un Gain trop fort écrête tous les canaux au blanc et la teinte disparaît : mesuré, un Gain de 1,7/1,55/1,4 donnait 0 de chaleur."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi des valeurs aussi petites (0,96 / 1,04) ?",
+      "answer_text": "Un étalonnage subtil change la couleur sans rendre l'image artificielle ; ces écarts de 4 % suffisent à passer les seuils."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une rampe de gris : pas de peau, de ciel ni de saturation ; le goût de l'étalonnage n'est pas mesuré."
+    }
+  ]
+}

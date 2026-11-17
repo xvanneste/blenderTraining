@@ -1,0 +1,17 @@
+{
+  "chapter": "CH03.05",
+  "title": "Sculpture réaliste",
+  "pass_score": 8,
+  "questions": [
+    {"id": "Q1", "lesson": "L1", "type": "mcq", "q": "Où passe la ligne des yeux sur une tête humaine adulte ?", "choices": ["Au tiers supérieur de la tête", "À peu près à la moitié de la hauteur de la tête", "Au quart inférieur", "Sur la ligne des sourcils exactement"], "answer": 1, "explain": "Erreur classique du débutant : placer les yeux trop haut. Menton → couronne, les yeux sont vers 50 %."},
+    {"id": "Q2", "lesson": "L1", "type": "open", "q": "Quels sont les trois « tiers » du visage ?", "answer_text": "Racine des cheveux → sourcils, sourcils → base du nez, base du nez → menton : trois hauteurs à peu près égales."},
+    {"id": "Q3", "lesson": "L1", "type": "open", "q": "Pourquoi sculpter à l'échelle réelle (tête ≈ 23 cm) ?", "answer_text": "Pour que les outils (rayon de brosse, voxel, Multires), les rendus et les mesures aient un sens, et que le buste s'importe sans mise à l'échelle dans un décor ou un rig."},
+    {"id": "Q4", "lesson": "L1", "type": "mcq", "q": "À quoi sert une transition entre deux plans ?", "choices": ["À cacher une erreur de proportion", "À raccorder les plans en douceur pour que la forme soit crédible", "À augmenter le nombre de faces", "À activer la symétrie"], "answer": 1, "explain": "Des blocs juxtaposés se lisent comme des morceaux collés ; la transition les fait lire comme une seule forme."},
+    {"id": "Q5", "lesson": "L2", "type": "open", "q": "Donnez un exemple de détail primaire, secondaire et tertiaire sur un visage.", "answer_text": "Primaire : la masse du crâne, le nez, la mâchoire. Secondaire : plis naso-géniens, sillon entre les lèvres, poches sous les yeux. Tertiaire : rides fines du front, pores, grain de peau."},
+    {"id": "Q6", "lesson": "L2", "type": "mcq", "q": "Dans quel ordre travaille-t-on ?", "choices": ["Tertiaire, secondaire, primaire", "Secondaire, primaire, tertiaire", "Primaire, secondaire, tertiaire", "Peu importe"], "answer": 2, "explain": "Les détails fins sont détruits par toute modification des grandes masses : on les ajoute en dernier."},
+    {"id": "Q7", "lesson": "L2", "type": "mcq", "q": "Quels sont les raccourcis exacts de Blender 5.3 pour Clay Strips et Smooth en Sculpt Mode ?", "choices": ["C et S", "X et Shift+S", "B et V", "Ctrl+C et Ctrl+S"], "answer": 0, "explain": "C = Clay Strips, S = Smooth ; Shift maintenu pendant un trait = Smooth temporaire, Ctrl = inverser."},
+    {"id": "Q8", "lesson": "L2", "type": "open", "q": "Quelles brosses 5.3 pour creuser un pli net, et pour adoucir ses bords ?", "answer_text": "Crease Sharp ou Draw Sharp pour le pli (Ctrl maintenu inverse le sens du trait) ; Crease Polish (Shift+C) ou Smooth pour adoucir. Il n'existe pas de brosse nommée simplement « Crease » dans les brosses essentielles 5.3."},
+    {"id": "Q9", "lesson": "L2", "type": "open", "q": "Votre maillage a des arêtes de 2,5 mm : pouvez-vous sculpter des pores de 0,3 mm de large ? Que faire ?", "answer_text": "Non : le détail ne peut pas être plus fin que la densité. Il faut subdiviser (Multires, niveaux supérieurs) ou refaire un Voxel Remesh avec un Voxel Size plus petit, en gardant une copie du niveau précédent."},
+    {"id": "Q10", "lesson": "L2", "type": "open", "q": "Un Boolean Exact renvoie un objet vide. Que tenter ?", "answer_text": "Essayer le solveur Manifold (mesuré dans ce chapitre : Exact vide, Manifold correct), vérifier que le maillage est fermé (Voxel Remesh avant), puis contrôler le résultat avant d'appliquer."}
+  ]
+}

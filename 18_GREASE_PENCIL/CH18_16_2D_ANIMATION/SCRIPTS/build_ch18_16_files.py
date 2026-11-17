@@ -12,7 +12,7 @@ build_ch18_16_files.py — « La balle rebondissante 2D » (CH18.16, phase 18 mo
       près des sommets, espacés près du sol, étirement avant/après contact, écrasement au contact,
       type Breakdown pour les intervalles ; maintien final.
 Physique : chute libre (g constant), restitution 0,6 de la hauteur à chaque rebond.
-Usage : blender -b --factory-startup --python build_ch18_16_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_16_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,68 @@
+{
+  "code": "CH06.02",
+  "title": "Contraintes",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Une contrainte impose à un objet ou à un bone un comportement calculé : viser une cible, copier une rotation, limiter un angle. Elles sont la base des mécanismes d'un rig. Ce chapitre construit un rig de regard : deux yeux qui visent exactement une cible (Damped Track), une tête qui la suit à moitié (Damped Track à 50 %) puis qui est limitée à ± 35° (Limit Rotation). L'ordre de la pile compte. Le correcteur DÉPLACE la cible à trois endroits et mesure l'erreur de visée des yeux et la rotation de la tête.",
+  "prereqs": [
+    "CH06.01."
+  ],
+  "objectives": [
+    "Ajouter des contraintes de bone et régler cible, axe, influence.",
+    "Comprendre l'ordre d'évaluation d'une pile de contraintes.",
+    "Combiner suivi et limite.",
+    "Valider un mécanisme en déplaçant sa cible."
+  ],
+  "competences": [
+    [
+      "C06.02.a",
+      "Construire un mécanisme par contraintes",
+      "Exercice 2 (correcteur) + croquis du regard"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Suivre une cible",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Piles, influence et limites",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_02_constraints_starter.blend",
+      "Armature de regard et cible, sans contraintes"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_02_constraints_solution.blend",
+      "Rig de regard à contraintes"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_02_constraints_reference.png",
+      "Croquis vue de dessus : trois positions de la cible (rouge) ; tête en jaune, yeux en orange"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans contraintes, mauvais axe, tête à 100 %, sans limite, œil sans cible, ordre inversé)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_02.py",
+      "Correcteur (constraints)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_02_constraints_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_02.py\" -- --exercise constraints",
+  "deliverables": [
+    "Rig de regard validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.03 — Skinning](../CH06_03_SKINNING/README.md)"
+}

@@ -1,0 +1,42 @@
+{
+  "build": "build_ch04_09_files.py",
+  "validator": "validate_ch04_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_09_materials_solution.blend",
+      "exercise": "materials",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_09_materials_starter.blend",
+      "exercise": "materials",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_09_materials_wood_flat.blend",
+      "exercise": "materials",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_09_materials_stone_no_bump.blend",
+      "exercise": "materials",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_09_materials_steel_isotropic.blend",
+      "exercise": "materials",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_09_materials_not_marked.blend",
+      "exercise": "materials",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_09_materials_plastic_matte.blend",
+      "exercise": "materials",
+      "expect": false
+    }
+  ]
+}

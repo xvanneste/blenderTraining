@@ -1,0 +1,43 @@
+{
+  "code": "CH15.02",
+  "title": "Storyboard et animatique",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "4 h",
+  "intro": "Transformer le scénario du quai en trois plans montés, avec un repère sonore de bascule.",
+  "prereqs": [
+    "CH15.01"
+  ],
+  "objectives": [
+    "Les silhouettes et l’objet restent lisibles en miniature.",
+    "Aucun trou entre les plans et le dernier cadre est 360.",
+    "La bascule est intelligible sans son, puis renforcée par le clic."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Panneaux",
+      ""
+    ],
+    [
+      "L2",
+      "Assemblage",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/plans.csv",
+      "Plans et durées de l’exercice"
+    ],
+    [
+      "../../18_GREASE_PENCIL/CH18_14_ANIMATIC/README.md",
+      "Atelier Blender Grease Pencil et VSE"
+    ]
+  ],
+  "pass_criteria": [
+    "Les silhouettes et l’objet restent lisibles en miniature.",
+    "Aucun trou entre les plans et le dernier cadre est 360.",
+    "La bascule est intelligible sans son, puis renforcée par le clic."
+  ]
+}

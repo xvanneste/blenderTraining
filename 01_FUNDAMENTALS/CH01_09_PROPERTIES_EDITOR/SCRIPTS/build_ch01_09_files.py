@@ -6,7 +6,7 @@ build_ch01_09_files.py — La chasse aux propriétés (CH01.09).
       10 onglets différents de l'éditeur Properties (liste dans README_EXERCICE).
   COMPLETED_EXAMPLES/ch01_09_hunt_solution.blend
       Tous les réglages faits.
-Usage : blender -b --factory-startup --python build_ch01_09_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_09_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

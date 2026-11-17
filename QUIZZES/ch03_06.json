@@ -1,0 +1,105 @@
+{
+  "chapter": "CH03.06",
+  "title": "Visages",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait la paupière haute d'un œil au repos ?",
+      "choices": [
+        "Elle laisse tout l'iris visible",
+        "Elle recouvre le haut de l'iris",
+        "Elle recouvre la pupille entière",
+        "Elle n'existe pas sur un visage neutre"
+      ],
+      "answer": 1,
+      "explain": "Les yeux « ronds et blancs » viennent d'une paupière trop haute ; le haut de l'iris est légèrement masqué."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment placer la largeur de la bouche ?",
+      "answer_text": "Environ la largeur de l'écart entre les pupilles (ici ≈ 6,4 cm mesurés pour 6,4 cm d'écart) ; ce sont des repères moyens, pas des lois."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Entre quelles lignes se situe une oreille ?",
+      "answer_text": "À peu près entre la ligne des sourcils et la base du nez."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que sont l'hélix et la conque ?",
+      "choices": [
+        "Deux muscles du sourire",
+        "Le bord enroulé de l'oreille et son creux central",
+        "Deux os du nez",
+        "Les deux narines"
+      ],
+      "answer": 1,
+      "explain": "Hélix = bord ; conque = creux près du conduit."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une narine est-elle un creux et non un trou percé ?",
+      "answer_text": "On sculpte un creux qui se referme vers l'intérieur ; une ouverture traversante casse le volume fermé et complique remesh et rig."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qui change le plus entre un visage neutre et un sourire ?",
+      "choices": [
+        "La hauteur des yeux",
+        "Les commissures de la bouche (relevées) et les plis naso-géniens (plus marqués)",
+        "La largeur du crâne",
+        "La taille du nez"
+      ],
+      "answer": 1,
+      "explain": "Mesuré dans la solution : commissures +5,3 mm ; le neutre est à ≈ 0 mm ; la moue à −12,4 mm."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment distinguer un vrai sourire d'une grimace ?",
+      "answer_text": "Le sourire sincère engage aussi les yeux (joues remontées, œil légèrement plissé) ; relever seulement la bouche donne un sourire de façade."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer « par rapport à une copie cachée » plutôt que dans l'absolu ?",
+      "answer_text": "Les détails (1–5 mm) sont petits devant la forme de base ; seule la différence avant/après isole ce que le travail a ajouté. Une mesure autonome sur ces détails confond anatomie de base et sculpture."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle brosse (raccourci 5.3) pour affirmer une arête comme celle de l'aile du nez ?",
+      "choices": [
+        "Pinch/Magnify (P)",
+        "Grab (G)",
+        "Mask (M)",
+        "Snake Hook (K)"
+      ],
+      "answer": 0,
+      "explain": "P = Pinch/Magnify ; G = Grab ; M = Mask ; K = Snake Hook."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faire si le correcteur dit que REF_Base est manquant ?",
+      "answer_text": "Ne pas supprimer REF_Base (copie cachée du buste de départ) ; la récupérer depuis le fichier de départ (Append > Object) si elle a été effacée."
+    }
+  ]
+}

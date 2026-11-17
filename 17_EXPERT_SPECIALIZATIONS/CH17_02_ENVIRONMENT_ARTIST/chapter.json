@@ -1,0 +1,43 @@
+{
+  "code": "CH17.02",
+  "title": "Environment Artist",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Assembler un environnement lisible avec un kit réutilisable, du scattering et un budget mesuré.",
+  "prereqs": [
+    "CH17.01"
+  ],
+  "objectives": [
+    "Quatre modules et deux assemblages qui se raccordent sans interstice.",
+    "Une vue d’ensemble montre le chemin, le principal point focal et le masque.",
+    "Un tableau chiffre deux versions et justifie laquelle garder."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Kit modulaire",
+      ""
+    ],
+    [
+      "L2",
+      "Distribution et histoire",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../05_GEOMETRY_NODES/PROJECT_P5/REFERENCE/p5_tool_reference.blend",
+      "Modèle de ville paramétrique"
+    ],
+    [
+      "../../15_SHORT_FILMS/ASSETS_ATELIERS/sur_le_quai_layout.blend",
+      "Layout de quai"
+    ]
+  ],
+  "pass_criteria": [
+    "Quatre modules et deux assemblages qui se raccordent sans interstice.",
+    "Une vue d’ensemble montre le chemin, le principal point focal et le masque.",
+    "Un tableau chiffre deux versions et justifie laquelle garder."
+  ]
+}

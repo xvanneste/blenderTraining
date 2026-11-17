@@ -1,0 +1,43 @@
+{
+  "code": "CH15.04",
+  "title": "Planification",
+  "phase_title": "15 — Réalisation de courts-métrages",
+  "level": "avancé",
+  "duration": "2 h 30",
+  "intro": "Chiffrer un court de 15 secondes en reliant plans, actifs, dépendances et jalons.",
+  "prereqs": [
+    "CH15.03"
+  ],
+  "objectives": [
+    "Les trois plans pointent vers des actifs existants.",
+    "Le total de production vaut 34 h et le total avec réserve vaut 40 h.",
+    "Chaque jalon possède un critère observable et une personne responsable."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Inventaire",
+      ""
+    ],
+    [
+      "L2",
+      "Budget",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/plans.csv",
+      "Feuille de plans"
+    ],
+    [
+      "../ASSETS_ATELIERS/sur_le_quai.md",
+      "Périmètre et exemple de budget"
+    ]
+  ],
+  "pass_criteria": [
+    "Les trois plans pointent vers des actifs existants.",
+    "Le total de production vaut 34 h et le total avec réserve vaut 40 h.",
+    "Chaque jalon possède un critère observable et une personne responsable."
+  ]
+}

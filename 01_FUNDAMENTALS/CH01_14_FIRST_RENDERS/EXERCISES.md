@@ -11,7 +11,7 @@ débruitage. Tableau temps/qualité ; quel réglage choisiriez-vous pour une ani
 
 ## Exercice 3 — Difficile : le premier rendu final (SANS procédure) ⏱ 10 min (hors temps de calcul)
 Les consignes du `README_EXERCICE`, validez (`--exercise final`).
-Barème (14 pts + bonus) : Cycles GPU 2 · échantillonnage 2 · débruitage 1 · résolution 1 ·
+Barème (14 pts + bonus) : Cycles sur CPU ou GPU 2 · échantillonnage 2 · débruitage 1 · résolution 1 ·
 format 1 · chemin 1 · couleurs 2 · image présente 3 · exposition 1 · bonus EEVEE 1.
 
 ## Défis

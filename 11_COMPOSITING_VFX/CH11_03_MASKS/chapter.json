@@ -1,0 +1,68 @@
+{
+  "code": "CH11.03",
+  "title": "Masques et Cryptomatte",
+  "phase_title": "11 — Compositing et VFX",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Pour corriger une seule partie de l'image — l'objet seul, le fond seul — il faut un masque : une image en noir et blanc qui dit où agir. Deux familles : l'index d'objet (chaque objet porte un entier, le nœud ID Mask isole un entier) et Cryptomatte (chaque objet, matériau ou asset est identifié par un nom haché, on le choisit par son nom, avec des bords anti-aliasés propres). Ce chapitre garde en couleur une sphère verte et grise le reste ; le correcteur mesure la saturation sur chaque sphère.",
+  "prereqs": [
+    "CH10.04 (passes), CH11.01–02 (compositeur)."
+  ],
+  "objectives": [
+    "Isoler un objet avec un nœud ID Mask.",
+    "Isoler un objet avec Cryptomatte.",
+    "Combiner un masque et un Mix.",
+    "Mesurer l'effet d'un masque."
+  ],
+  "competences": [
+    [
+      "C11.03.a",
+      "Isoler un objet",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Index d'objet et ID Mask",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Cryptomatte et mesure",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch11_03_masks_starter.blend",
+      "Render Layers → Group Output : trois sphères en couleur (saturations 0,47 / 0,59 / 0,42) ; 27/41"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_03_masks_solution.blend",
+      "Image désaturée + ID Mask (Index 2) + Mix : B en couleur (0,59), A et C en gris (0,00) ; 41/41. Variante vérifiée : Cryptomatte V2 (matte_id « Sphere_B ») à la place de l'ID Mask : 41/41"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch11_03_masks_reference.png",
+      "Départ (haut : trois sphères en couleur) et solution (bas : seule la sphère verte reste en couleur)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (mauvais index, pas de masque, masque inversé, nœud de masque absent)"
+    ],
+    [
+      "SCRIPTS/validate_ch11_03.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch11_03_masks_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch11_03.py\" -- --exercise masks",
+  "deliverables": [
+    "Arbre de masquage commenté.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH11.04 — Depth, defocus, motion blur](../CH11_04_DEPTH_FX/README.md)"
+}

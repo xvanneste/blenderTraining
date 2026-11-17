@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.12",
+  "title": "Animation de caméra",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un travelling ?",
+      "choices": [
+        "Un déplacement de la caméra dans l'espace",
+        "Un changement d'objectif",
+        "Une rotation sur place",
+        "Une coupure"
+      ],
+      "answer": 0,
+      "explain": "Ici, la caméra avance de 4 m sur l'axe Y."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un panoramique ?",
+      "choices": [
+        "Une rotation de la caméra sur place",
+        "Un déplacement latéral",
+        "Un zoom",
+        "Un cut"
+      ],
+      "answer": 0,
+      "explain": "La Track To fait pivoter la caméra pour suivre le sujet, sans la déplacer."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle contrainte fait suivre un sujet à la caméra ?",
+      "choices": [
+        "Track To",
+        "Child Of",
+        "Limit Rotation",
+        "Copy Scale"
+      ],
+      "answer": 0,
+      "explain": "Track To : axe de visée −Z, haut Y : écart de visée maximal 0,03° dans la solution."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un départ et une arrivée doux ?",
+      "answer_text": "Un mouvement de caméra qui démarre à pleine vitesse paraît mécanique ; en Bezier la vitesse aux extrémités est de 11 % du maximum (9 mm/image pour 84)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Qu'est-ce qu'un mouvement de caméra « motivé » ?",
+      "answer_text": "Un mouvement qui a une raison dans l'histoire : suivre le sujet, révéler un détail, accentuer une émotion ; pas un mouvement gratuit."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment obtient-on une caméra à l'épaule ?",
+      "choices": [
+        "Un modificateur Noise sur la position",
+        "Un autre objectif",
+        "Un matériau",
+        "Une lumière"
+      ],
+      "answer": 0,
+      "explain": "Noise sur X et Z Location : écart-type 6 mm, maximum 12 mm dans la solution."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi ne pas mettre de bruit sur Y ?",
+      "choices": [
+        "Pour garder le travelling propre",
+        "Y est interdit",
+        "Le bruit n'y fonctionne pas",
+        "Par hasard"
+      ],
+      "answer": 0,
+      "explain": "Le bruit sur Y bousculerait la vitesse du travelling."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder l'horizon horizontal ?",
+      "answer_text": "Un horizon penché se lit comme un effet voulu (angle hollandais) : s'il est accidentel, il gêne ; le contre-exemple « rolled » penche de 8°."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « too_shaky » ?",
+      "answer_text": "Avec Strength 0,5, l'écart-type du tremblé atteint 32 mm : la caméra paraît secouée, plus à l'épaule."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi des phases différentes pour X et Z ?",
+      "answer_text": "Avec la même phase, X et Z tremblent à l'identique (mouvement diagonal artificiel) ; la solution met 1 et 5."
+    }
+  ]
+}

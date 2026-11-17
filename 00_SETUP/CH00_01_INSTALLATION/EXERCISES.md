@@ -1,9 +1,6 @@
 # CH00.01 — Exercices
 
-Avant de commencer : copiez les fichiers de `STARTER_FILES/` dans un dossier de travail
-(ou travaillez directement dedans, les originaux se régénèrent avec
-`SCRIPTS/build_ch00_01_files.py`). Nommez **toujours** vos fichiers selon
-`DOCUMENTATION/CONVENTIONS.md`.
+Créez un dossier de travail et ouvrez les scènes fournies comme point de départ. Enregistrez chaque exercice sous un autre nom. [Conventions de nommage](../../DOCUMENTATION/CONVENTIONS.md).
 
 ---
 
@@ -13,12 +10,12 @@ Avant de commencer : copiez les fichiers de `STARTER_FILES/` dans un dossier de 
 1. Ouvrez `STARTER_FILES/ch00_01_testcard_starter.blend`.
 2. Enregistrez-le immédiatement sous `ch00_01_testcard_<prenom>_v001.blend`
    (**File → Save As**, `Shift+Ctrl+S`).
-3. *Properties → Render* : **Render Engine = Cycles**, **Device = GPU Compute**.
+3. *Properties → Render* : **Render Engine = Cycles**, **Device = CPU** pour le premier essai. Si vous avez validé un GPU compatible, essayez **GPU Compute** sur une copie.
 4. *Render → Sampling → Render* : **Max Samples = 128**, **Denoise** coché.
 5. *Properties → Output → Format* : **Resolution % = 100**.
 6. Vérifiez que *Output* (le chemin) commence par `//`.
-7. Enregistrez (`Ctrl+S`) puis rendez (`F12`). Notez le temps affiché.
-8. Lancez le correcteur (TUTORIAL.md, tutoriel 6) avec `--exercise testcard --render`.
+7. Enregistrez la scène, puis rendez avec F12. Depuis **Image → Save As**, enregistrez mire_v001.png en PNG et ouvrez-le dans un lecteur.
+8. Lancez le correcteur (TUTORIAL.md, tutoriel 6) avec `--exercise testcard_cpu --render` sur CPU ou `--exercise testcard --render` sur GPU.
 
 **Réussi si :** le correcteur affiche `RÉSULTAT : VALIDÉ`.
 
@@ -30,14 +27,10 @@ Avant de commencer : copiez les fichiers de `STARTER_FILES/` dans un dossier de 
 Sans procédure détaillée, à partir de votre fichier de l'exercice 1 :
 1. Créez une **v002** du fichier avec *File → Save Incremental* (`Ctrl+Alt+S`).
 2. Dans la v002, réglez Max Samples à 64.
-3. Depuis PowerShell, rendez l'image 1 de la v002 **sans interface**, dans
-   `//renders/ex2_####`, une fois avec le CPU, une fois avec votre GPU
-   (`-- --cycles-device …`).
-4. Notez les deux temps (ligne `Time:` dans le terminal) et calculez l'accélération.
+3. Depuis PowerShell, rendez l’image 1 de la v002 en mode arrière-plan. Utilisez un préfixe ex2_cpu_. Si vous avez un GPU compatible, relancez avec le préfixe ex2_gpu_ et le périphérique correspondant.
+4. Ouvrez chaque PNG. Confirmez même cadre, résolution et échantillons. Notez les mesures et calculez le rapport de temps uniquement si les deux périphériques ont rendu le même cas. Sur CPU seul, comparez plutôt 64 et 128 échantillons à taille identique, en nommant les deux sorties.
 
-**Réussi si :** deux images `ex2_0001.png` ont été produites (renommez la première avant la
-seconde, ou utilisez deux préfixes), et vous avez calculé l'accélération. Le correcteur
-doit valider la v002.
+**Réussi si** chaque rendu demandé a un nom distinct et le fichier v002 passe le correcteur de sa configuration. Notez ce que le test mesure et les différences visibles.
 
 ---
 
@@ -107,7 +100,7 @@ Seuils : < 50 à refaire · 50–69 à consolider · 70–84 acquis · ≥ 85 ma
 ## Tests chronométrés (à refaire en révision espacée J+7, J+30)
 | Test | Temps cible | Critère |
 |---|---|---|
-| T1 : ouvrir la mire, passer en Cycles GPU, 128 échantillons, 100 %, enregistrer en v001 | **2 min** | Correcteur VALIDÉ |
+| T1 : ouvrir la mire, régler Cycles CPU ou GPU, 128 échantillons, 100 %, enregistrer en v001 | **2 min** | Correcteur VALIDÉ |
 | T2 : retrouver la version exacte de Blender par 2 méthodes | **1 min** | Les deux concordent |
 | T3 : réparer la scène cassée (après l'avoir déjà faite une fois) | **5 min** | 12/12 |
 | T4 : rendre l'image 1 d'un fichier en ligne de commande, de mémoire | **2 min** | Image produite |

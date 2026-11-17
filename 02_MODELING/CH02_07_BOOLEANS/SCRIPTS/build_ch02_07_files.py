@@ -8,7 +8,7 @@ build_ch02_07_files.py — « La platine percée » (CH02.07, booléens non dest
       affichés en fil de fer, désactivés au rendu ; GEO_Plate : Boolean (Collection CUTTERS,
       Difference, Exact) → Bevel (Angle 30°, 1,5 mm, 2 segments, Harden Normals), Shade Smooth.
       _moved.png : même fichier après déplacement d'un cutter (preuve du non destructif).
-Usage : blender -b --factory-startup --python build_ch02_07_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_07_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

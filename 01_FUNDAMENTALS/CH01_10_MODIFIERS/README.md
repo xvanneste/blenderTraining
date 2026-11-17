@@ -58,7 +58,7 @@ Les modificateurs sont le cœur du travail non destructif : ils répètent, sym�
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_10_bridge_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_10.py" --python-exit-code 1 -- --exercise bridge --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_10.py" -- --exercise bridge --render
 ```
 
 ## Livrables attendus

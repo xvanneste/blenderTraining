@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch18_07_brushes_reference.png", "Rendu de la référence"],
     ["SCRIPTS/validate_ch18_07.py", "Correcteur (via bcma_gp_check + gp_spec.json : traits, aplats, matériaux)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_07_brushes_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_07.py\" --python-exit-code 1 -- --exercise brushes --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_07_brushes_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_07.py\" -- --exercise brushes --render",
   "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : personnage encré et mis en couleur."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.08 — Calques, modificateurs, transformations](../CH18_08_LAYERS_MODIFIERS/README.md)"

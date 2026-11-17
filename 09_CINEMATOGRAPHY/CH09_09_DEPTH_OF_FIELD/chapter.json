@@ -1,0 +1,68 @@
+{
+  "code": "CH09.09",
+  "title": "Profondeur de champ",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "La profondeur de champ est la zone de l'espace qui paraît nette. Une grande ouverture (petit F-Stop) la réduit : le sujet reste net et le reste se fond. C'est l'outil de base pour diriger le regard. Ce chapitre active la profondeur de champ d'une caméra Cycles, règle la distance de mise au point et l'ouverture, et le correcteur mesure le résultat par rendu : le pic d'une barre lumineuse nette vaut 1, celui d'une barre floue s'effondre.",
+  "prereqs": [
+    "CH09.08 (focale, distance), CH10 non requis (Cycles de base)."
+  ],
+  "objectives": [
+    "Activer la profondeur de champ d'une caméra.",
+    "Régler Focus Distance et F-Stop.",
+    "Prévoir le sens du flou (avant et arrière-plan).",
+    "Mesurer la netteté sur un rendu."
+  ],
+  "competences": [
+    [
+      "C09.09.a",
+      "Diriger le regard par la profondeur de champ",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Ouverture et mise au point",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Mesurer le flou",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_09_dof_starter.blend",
+      "Profondeur de champ désactivée : les deux barres sont nettes (pics 1,00 et 1,00)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_09_dof_solution.blend",
+      "Depth of Field activée, Focus Distance 5 m, F-Stop 1,0 : barre proche nette (1,00), barre lointaine floue (0,31)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_09_dof_reference.png",
+      "Rendu de départ (gauche) et solution (droite) : la barre lointaine devient une tache floue"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (DOF désactivée, mauvaise distance, petite ouverture, mise au point intermédiaire, F-Stop sans DOF)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_09.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_09_dof_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_09.py\" -- --exercise dof",
+  "deliverables": [
+    "Réglage justifié (distance, ouverture).",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.10 — Mouvements et grammaire](../CH09_10_MOVEMENTS/README.md)"
+}

@@ -1,0 +1,8 @@
+item,version,parents,responsable
+A01,v001,,Décors
+A02,v002,,Personnages
+A03,v001,A01,Décors
+A05,v001,,Personnages
+A06,v001,A01,Décors
+N01,v001,,Props
+FX01,v003,A01+A06,VFX

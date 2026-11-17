@@ -2,7 +2,26 @@
   "build": "build_ch01_05_files.py",
   "validator": "validate_ch01_05.py",
   "cases": [
-    {"file": "COMPLETED_EXAMPLES/ch01_05_house_solution.blend", "exercise": "house", "expect": true},
-    {"file": "STARTER_FILES/ch01_05_house_starter.blend", "exercise": "house", "expect": false}
+    {
+      "file": "COMPLETED_EXAMPLES/ch01_05_house_solution.blend",
+      "exercise": "house",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch01_05_house_starter.blend",
+      "exercise": "house",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch01_05_house_degenerate_roof.blend",
+      "exercise": "house",
+      "expect": false
+    }
+  ],
+  "extra": [
+    {
+      "script": "verifier_toit.py",
+      "file": "STARTER_FILES/ch01_05_house_starter.blend"
+    }
   ]
 }

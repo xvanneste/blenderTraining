@@ -58,7 +58,7 @@ Chaque triangle coûte en mémoire, en affichage et en rendu. Ce chapitre appren
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_10_optim_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_10.py" --python-exit-code 1 -- --exercise optim --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_10.py" -- --exercise optim --render
 ```
 
 ## Livrables attendus

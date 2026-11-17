@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch01_13_bust_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch01_13.py", "Correcteur (placement, ratio, exposition mesurée)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_13_bust_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_13.py\" --python-exit-code 1 -- --exercise threepoint --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_13_bust_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_13.py\" -- --exercise threepoint --render",
   "deliverables": ["ch01_13_bust_<prenom>_v001.blend validé.", "Mini-projet : trois portraits lumineux."],
   "next": "[CH01.14 — Premiers rendus](../CH01_14_FIRST_RENDERS/README.md)"
 }

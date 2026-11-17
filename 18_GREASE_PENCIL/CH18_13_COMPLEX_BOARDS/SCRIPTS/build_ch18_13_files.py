@@ -5,7 +5,7 @@ C'est aussi le PROJET OBLIGATOIRE n° 1 de la phase 18 (planche de 12 cases).
   STARTER_FILES/ch18_13_action_starter.blend — gabarit 12 cases (4 × 3), calques USER_Drawing / USER_Arrows.
   COMPLETED_EXAMPLES/ch18_13_action_solution.blend (+ _reference.png) — séquence complète, 12 notes
       normées, en-tête ; rythme : plans courts pendant l'action, longs à l'installation et à la fin.
-Usage : blender -b --factory-startup --python build_ch18_13_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_13_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

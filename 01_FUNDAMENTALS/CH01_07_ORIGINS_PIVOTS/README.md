@@ -57,7 +57,7 @@ Une porte dont l'origine est au milieu ne s'ouvrira jamais correctement : elle t
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_07_door_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_07.py" --python-exit-code 1 -- --exercise door
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_07.py" -- --exercise door
 ```
 
 ## Livrables attendus

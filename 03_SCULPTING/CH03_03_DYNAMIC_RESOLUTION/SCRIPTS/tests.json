@@ -2,11 +2,41 @@
   "build": "build_ch03_03_files.py",
   "validator": "validate_ch03_03.py",
   "cases": [
-    {"file": "COMPLETED_EXAMPLES/ch03_03_remesh_solution.blend", "exercise": "remesh", "expect": true, "render": true},
-    {"file": "STARTER_FILES/ch03_03_remesh_starter.blend", "exercise": "remesh", "expect": false},
-    {"file": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend", "exercise": "multires", "expect": true},
-    {"file": "STARTER_FILES/ch03_03_multires_starter.blend", "exercise": "multires", "expect": false},
-    {"file": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend", "exercise": "decide", "expect": true},
-    {"file": "STARTER_FILES/ch03_03_multires_starter.blend", "exercise": "decide", "expect": false}
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_03_remesh_solution.blend",
+      "exercise": "remesh",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_03_remesh_starter.blend",
+      "exercise": "remesh",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend",
+      "exercise": "multires",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_03_multires_starter.blend",
+      "exercise": "multires",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_03_multires_solution.blend",
+      "exercise": "decide",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_03_multires_starter.blend",
+      "exercise": "decide",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_03_multires_nosculpt.blend",
+      "exercise": "multires",
+      "expect": false
+    }
   ]
 }

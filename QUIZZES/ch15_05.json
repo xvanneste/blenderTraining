@@ -1,0 +1,95 @@
+{
+  "chapter": "CH15.05",
+  "title": "Fabrication",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que doit valider le blocking ?",
+      "type": "mcq",
+      "choices": [
+        "Le grain du rendu final",
+        "Le niveau sonore d’export",
+        "La lisibilité des poses et du moment de contact"
+      ],
+      "answer": 2,
+      "explain": "Le layout règle l’échelle, l’axe et le champ de la caméra avant d’investir dans le détail."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que garder avant interpolation continue ?",
+      "type": "mcq",
+      "choices": [
+        "Une version du blocking",
+        "Seulement une miniature",
+        "Tous les fichiers temporaires d’encodage"
+      ],
+      "answer": 0,
+      "explain": "Les poses clés permettent de valider la narration avant le travail d’interpolation."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quelles images rendre d’abord ?",
+      "type": "mcq",
+      "choices": [
+        "Trois images prises au hasard",
+        "Avant contact, contact, après contact",
+        "Uniquement la dernière"
+      ],
+      "answer": 1,
+      "explain": "L’animation et l’éclairage se vérifient sur des images représentatives avant le calcul complet."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La main traverse la balise après passage en interpolation continue. »",
+      "answer_text": "L’interpolation fait overshoot entre deux poses correctes. Ajoutez un breakdown ou adaptez les poignées, puis contrôlez les images intermédiaires."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Les poses clés sont bonnes mais la main traverse entre deux clés. Où regarder ?",
+      "answer_text": "Le Graph Editor et les images intermédiaires. Ajouter un breakdown ou corriger les poignées."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montrer au jalon layout ?",
+      "answer_text": "Cadre caméra, direction du geste, position de la balise et moments clés dans le champ."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder des images avant et après le contact ?",
+      "answer_text": "Pour juger l’hésitation et la réaction par rapport à la pose exacte du contact."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Layout » ?",
+      "answer_text": "La main et la balise sont dans le champ aux deux moments critiques."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Blocking » ?",
+      "answer_text": "Trois poses reconnaissables et une capture de contrôle."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Animation et rendu » ?",
+      "answer_text": "Au moins une pose avant le contact, une au contact et une après sont rendues."
+    }
+  ]
+}

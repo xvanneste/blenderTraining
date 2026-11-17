@@ -1,0 +1,105 @@
+{
+  "chapter": "CH03.09",
+  "title": "Retopologie personnage",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi refaire une topologie au lieu d'animer le sculpt ?",
+      "choices": [
+        "Pour changer la forme",
+        "Le sculpt est trop dense et désordonné : il faut un maillage léger, de quads, qui se déforme bien",
+        "Pour supprimer les yeux",
+        "Pour la symétrie"
+      ],
+      "answer": 1,
+      "explain": "Le sculpt a ≈ 75 000 faces ; la retopo en a 404 ici."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi des quads plutôt que des triangles ?",
+      "answer_text": "Les quads forment des boucles et des anneaux qui suivent les muscles, se subdivisent proprement (Subdivision Surface) et se déforment de façon prévisible ; les triangles cassent ces boucles."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Où doivent passer les boucles du visage ?",
+      "answer_text": "Des anneaux concentriques autour des yeux et de la bouche (là où les muscles circulaires plissent la peau), des boucles pour les plis naso-géniens et le front."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un pôle et pourquoi les limiter ?",
+      "choices": [
+        "Un sommet de valence 4",
+        "Un sommet de valence ≠ 4 (3, 5…) qui tord les boucles et les déformations",
+        "Un bord du maillage",
+        "Un matériau"
+      ],
+      "answer": 1,
+      "explain": "Mesuré dans la solution : 96 % des sommets intérieurs sont de valence 4."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi un budget de faces ?",
+      "answer_text": "Un maillage léger se rigge, se simule et se déforme vite ; trop dense, ce n'est plus une retopo (ici 300–2 500 faces ; la solution en a 404)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel modificateur colle un maillage à un autre ?",
+      "choices": [
+        "Mirror",
+        "Shrinkwrap (Wrap Method : Project / Nearest Surface Point)",
+        "Solidify",
+        "Bevel"
+      ],
+      "answer": 1,
+      "explain": "Libellés vérifiés en 5.3 : Wrap Method, Project, axes X/Y/Z, Negative/Positive, Offset."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel outil de la barre d'outils permet de construire la retopo face par face ?",
+      "answer_text": "Poly Build (Edit Mode), avec l'accrochage (Snap) sur les faces du sculpt ; l'overlay Retopology aide à voir le maillage devant le sculpt."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que renvoie Inset Region dans bmesh, et quelle erreur cela provoque-t-il ?",
+      "answer_text": "Les faces de l'anneau créé ; les faces d'origine deviennent le centre. En supprimant l'anneau au lieu du centre, on laisse des îlots flottants au milieu des yeux (bug rencontré dans ce chapitre)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi des sommets non projetés étirent-ils des quads ?",
+      "answer_text": "Un sommet qui ne touche aucune surface reste sur le plan de départ alors que ses voisins collent au crâne : le quad qui les relie est énorme. On retire ces faces avant le Shrinkwrap."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle opération convertit des triangles en quads ?",
+      "choices": [
+        "Mesh > Faces > Tris to Quads",
+        "Mesh > Delete",
+        "Object > Join",
+        "Modifiers > Decimate"
+      ],
+      "answer": 0,
+      "explain": "L'opérateur mesh.tris_convert_to_quads existe en 5.3 ; il ne remplace pas une vraie retopo."
+    }
+  ]
+}

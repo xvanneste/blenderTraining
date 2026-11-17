@@ -1,0 +1,46 @@
+{
+  "build": "build_ch06_09_files.py",
+  "validator": "validate_ch06_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_09_facial_solution.blend",
+      "exercise": "facial",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_09_facial_starter.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_no_drivers.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_crosstalk.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_no_limit.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_weak_driver.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_no_jaw_weights.blend",
+      "exercise": "facial",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_09_facial_jaw_rigid.blend",
+      "exercise": "facial",
+      "expect": false
+    }
+  ]
+}

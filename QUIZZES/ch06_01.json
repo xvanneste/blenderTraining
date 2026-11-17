@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.01",
+  "title": "Armatures et bones",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelles sont les trois informations de position d'un bone ?",
+      "choices": [
+        "Tête, queue et roll",
+        "Nom, parent, couleur",
+        "Longueur seulement",
+        "Matrice seulement"
+      ],
+      "answer": 0,
+      "explain": "Head (tête), tail (queue) et roll (rotation autour de l'axe du bone)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que signifie « Connected » ?",
+      "choices": [
+        "Le bone est sélectionné",
+        "La tête du bone est collée à la queue de son parent",
+        "Le bone déforme",
+        "Le bone est masqué"
+      ],
+      "answer": 1,
+      "explain": "use_connect : la tête suit la queue du parent ; typique d'une chaîne (cuisse, tibia, pied)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi l'épaule n'est-elle pas connectée à la colonne ?",
+      "choices": [
+        "Par oubli",
+        "Elle part du côté de la colonne, pas de sa queue : sa tête ne coïncide pas avec la queue du parent",
+        "Elle déforme",
+        "Elle est symétrique"
+      ],
+      "answer": 1,
+      "explain": "Une connexion force la tête sur la queue du parent : shoulder et thigh partent d'un autre point."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les suffixes .L et .R ?",
+      "answer_text": "Blender (miroir en Pose Mode, Symmetrize, X-Axis Mirror, Auto-Weights symétriques) reconnaît ces suffixes pour associer un bone à son jumeau ; un nom comme « Bone.001 » ne dit rien du côté."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que représente le root ?",
+      "answer_text": "Un bone racine au sol, parent de tout : on déplace tout le personnage en le bougeant ; il ne déforme pas la peau (use_deform = False)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment obtenir une symétrie exacte ?",
+      "choices": [
+        "Construire un côté puis Symmetrize (Armature > Symmetrize)",
+        "Copier à l'œil",
+        "Dupliquer l'objet",
+        "Échelle −1 de l'objet"
+      ],
+      "answer": 0,
+      "explain": "Symmetrize crée/aligne les bones du côté opposé selon les suffixes .L/.R."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que contrôle le correcteur « pose de repos propre » ?",
+      "choices": [
+        "Qu'aucun bone n'est transformé en Pose Mode (position, rotation, échelle à l'identité)",
+        "La couleur des bones",
+        "Le nom de l'objet",
+        "Le nombre de bones"
+      ],
+      "answer": 0,
+      "explain": "La pose de repos doit être neutre : les animations partent de là."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut a un contre-exemple « asymétrique » ?",
+      "answer_text": "L'épaule gauche est décalée de 5 cm : l'écart avec l'image miroir de l'épaule droite (≈ 5,8 cm) dépasse 2 mm ; le miroir de pose et l'auto-weights seront faux."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi vérifier que les pieds sont à z = 0 ?",
+      "answer_text": "Le personnage doit être posé sur le sol : la queue de toe à z = 0 ± 2 cm ; sinon il flotte ou s'enfonce dès le rig."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Où régle-t-on l'option Deform d'un bone ?",
+      "answer_text": "Dans les propriétés du bone (Bone Properties > Deform) ; en script, `bone.use_deform`."
+    }
+  ]
+}

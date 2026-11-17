@@ -57,7 +57,7 @@ Une scène de film contient des centaines d'objets : sans organisation, impossib
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_08_living_room_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_08.py" --python-exit-code 1 -- --exercise organize --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_08.py" -- --exercise organize --render
 ```
 
 ## Livrables attendus

@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch01_11_house_colors_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch01_11.py", "Correcteur (affectation par face, réglages)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_11_house_colors_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_11.py\" --python-exit-code 1 -- --exercise colors --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_11_house_colors_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_11.py\" -- --exercise colors --render",
   "deliverables": ["ch01_11_house_colors_<prenom>_v001.blend validé.", "Mini-projet : le village coloré."],
   "next": "[CH01.12 — Caméras](../CH01_12_CAMERAS/README.md)"
 }

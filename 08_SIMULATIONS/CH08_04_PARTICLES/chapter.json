@@ -1,0 +1,68 @@
+{
+  "code": "CH08.04",
+  "title": "Particules et distribution",
+  "phase_title": "8 — Physique et simulations",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Un système de particules émet des milliers de petits points qui obéissent à des règles : où et quand ils naissent, à quelle vitesse, combien de temps ils vivent, quelles forces les poussent, quels obstacles ils rencontrent. Ce chapitre fabrique une fontaine : 200 particules émises sur 30 images depuis les faces d'une grille, lancées vers le haut, soumises à la gravité, qui rebondissent sur un sol (Collision) et meurent à la fin de leur vie. Le correcteur configure ET simule : étalement de l'émission, hauteur, absence de traversée du sol, durée de vie.",
+  "prereqs": [
+    "CH08.01 (simulation pas à pas), CH05.04 (distribution par Geometry Nodes)."
+  ],
+  "objectives": [
+    "Créer un système de particules émettrices.",
+    "Régler nombre, durée d'émission, vie et vitesse.",
+    "Ajouter la gravité et un obstacle.",
+    "Mesurer émission, hauteur et durée de vie."
+  ],
+  "competences": [
+    [
+      "C08.04.a",
+      "Émission de particules",
+      "Exercice 2 (correcteur) + nuage de la solution"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Émettre",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Forces, obstacles, mesures",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_04_particles_starter.blend",
+      "Émetteur (grille à 1 m de haut) et sol, sans physique"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_04_particles_solution.blend",
+      "Fontaine de 200 particules émises de 1 à 30, vie 60, gravité, collision du sol"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_04_particles_reference.png",
+      "Nuage de particules vu de côté aux images 10, 20, 40 et 60"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans collision du sol, vie trop courte, sans gravité, trop peu de particules, émission en rafale, sans vitesse)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_04.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_04_particles_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_04.py\" -- --exercise particles",
+  "deliverables": [
+    "Fontaine de particules validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.05 — Fluides (Mantaflow)](../CH08_05_FLUIDS/README.md)"
+}

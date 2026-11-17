@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.01",
+  "title": "Développement d’un film",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que doit démontrer le prototype ?",
+      "type": "mcq",
+      "choices": [
+        "Le film entier terminé",
+        "Une réduction d’incertitude ciblée",
+        "La couleur du logo"
+      ],
+      "answer": 1,
+      "explain": "Une promesse précise aide à choisir ce qui mérite un essai de développement."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que comparer dans les hypothèses budgétaires ?",
+      "type": "mcq",
+      "choices": [
+        "Deux nombres sans détail",
+        "Le nombre de pages du dossier seul",
+        "Les mêmes postes avec des périmètres explicites"
+      ],
+      "answer": 2,
+      "explain": "Un prototype doit réduire une incertitude nommée. Il ne prédit pas à lui seul le coût du film entier."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quel est le résultat du jalon ?",
+      "type": "mcq",
+      "choices": [
+        "Une décision argumentée avec critères et responsables",
+        "Un engagement sans critères",
+        "Une exportation de la liste des noms"
+      ],
+      "answer": 0,
+      "explain": "Une décision de développement compare des hypothèses de périmètre et leur coût."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le budget du film est obtenu en multipliant celui du court par la durée. »",
+      "answer_text": "La réutilisation des actifs, les itérations, l’équipe et les contraintes varient avec le périmètre. Chiffrez séparément actifs, plans types, coordination, révisions et livraison."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que peut tester un prototype de 90 secondes à lui seul ?",
+      "answer_text": "Une incertitude ciblée, par exemple la lisibilité spatiale. Le coût global demande d’autres hypothèses."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi chiffrer séparément actifs et plans ?",
+      "answer_text": "Les actifs sont réutilisés. Les plans, les révisions et la coordination ont des coûts qui ne suivent pas linéairement la durée."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle décision prendre si la lecture échoue et le coût reste inconnu ?",
+      "answer_text": "Réviser la géographie du prototype et mesurer à nouveau les critères avant d’engager la fabrication."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Promesse du film » ?",
+      "answer_text": "Une nouvelle situation de long métrage complète le court et précise l’arc du personnage."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Prototype ciblé » ?",
+      "answer_text": "Le dossier formule une question observable et trois preuves pour y répondre."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Bornes et décision » ?",
+      "answer_text": "Un lecteur peut choisir de poursuivre, réviser ou suspendre et expliquer le premier jalon."
+    }
+  ]
+}

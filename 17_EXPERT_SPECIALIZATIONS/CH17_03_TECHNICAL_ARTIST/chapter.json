@@ -1,0 +1,43 @@
+{
+  "code": "CH17.03",
+  "title": "Technical Artist",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Livrer un outil Geometry Nodes paramétrable et un shader avec des limites mesurées.",
+  "prereqs": [
+    "CH17.02"
+  ],
+  "objectives": [
+    "Un utilisateur peut relancer le même résultat sans ouvrir l’arbre.",
+    "Deux rendus et un graphe montrent la chaîne de données jusqu’au matériau.",
+    "L’outil a un budget défini, un cas limite documenté et un rapport de trois mesures par cas."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Contrat d’interface",
+      ""
+    ],
+    [
+      "L2",
+      "Sondes visuelles",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../05_GEOMETRY_NODES/PROJECT_P5/REFERENCE/p5_tool_reference.blend",
+      "Outil de référence éditable"
+    ],
+    [
+      "../../04_MATERIALS/CH04_05_PROCEDURAL_TEXTURES/README.md",
+      "Rappel sur les textures procédurales"
+    ]
+  ],
+  "pass_criteria": [
+    "Un utilisateur peut relancer le même résultat sans ouvrir l’arbre.",
+    "Deux rendus et un graphe montrent la chaîne de données jusqu’au matériau.",
+    "L’outil a un budget défini, un cas limite documenté et un rapport de trois mesures par cas."
+  ]
+}

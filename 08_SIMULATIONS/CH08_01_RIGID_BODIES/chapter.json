@@ -1,0 +1,68 @@
+{
+  "code": "CH08.01",
+  "title": "Rigid Bodies",
+  "phase_title": "8 — Physique et simulations",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Les corps rigides (Rigid Bodies) simulent des objets indéformables qui tombent, se heurtent et s'empilent. Un corps ACTIF obéit à la physique ; un corps PASSIF (le sol) sert d'obstacle. Ce chapitre rend physique un mur de 30 briques et une boule lancée contre lui : sol passif, briques actives (masse, friction, forme de collision, marge), boule lourde lâchée par l'option Animated, monde réglé sur 150 images. Le correcteur configure ET simule la scène, image après image, et mesure la stabilité avant l'impact, l'effondrement, la chute sous le sol et le repos final.",
+  "prereqs": [
+    "CH07.02 (clés), CH07.03 (actions)."
+  ],
+  "objectives": [
+    "Distinguer corps actif et passif.",
+    "Régler masse, friction, forme et marge.",
+    "Lancer un corps par une trajectoire animée puis le lâcher (Animated).",
+    "Régler le monde (cache, sous-étapes) et mesurer une simulation."
+  ],
+  "competences": [
+    [
+      "C08.01.a",
+      "Effondrement",
+      "Exercice 2 (correcteur) + vue de dessus de la solution"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Actif, passif, paramètres",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Lancer, simuler, mesurer",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch08_01_rigid_starter.blend",
+      "Sol, 30 briques et boule (trajectoire animée), sans physique"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_01_rigid_solution.blend",
+      "Corps rigides configurés : mur stable, effondrement à l'impact (21 briques déplacées de plus de 0,6 m)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch08_01_rigid_reference.png",
+      "Vue de dessus : mur à l'image 1 (gauche), briques dispersées à l'image 150 (droite), boule en bleu"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans sol, briques passives, boule légère, boule non lâchée, friction nulle, cache trop court)"
+    ],
+    [
+      "SCRIPTS/validate_ch08_01.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch08_01_rigid_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch08_01.py\" -- --exercise rigid",
+  "deliverables": [
+    "Simulation de corps rigides validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH08.02 — Soft Bodies](../CH08_02_SOFT_BODIES/README.md)"
+}

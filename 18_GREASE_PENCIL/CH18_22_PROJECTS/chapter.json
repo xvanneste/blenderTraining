@@ -23,7 +23,7 @@
     ["COMPLETED_EXAMPLES/ch18_22_p7_short_example.blend", "Exemple technique projet 7"],
     ["SCRIPTS/validate_ch18_22.py", "Correcteur des 7 projets"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"MES_PROJETS\\...\\mon_projet_v001.blend\" `\n  --python \"18_GREASE_PENCIL\\CH18_22_PROJECTS\\SCRIPTS\\validate_ch18_22.py\" --python-exit-code 1 -- --exercise p5",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"MES_PROJETS\\...\\mon_projet_v001.blend\" `\n  --python-exit-code 1 --python \"18_GREASE_PENCIL\\CH18_22_PROJECTS\\SCRIPTS\\validate_ch18_22.py\" -- --exercise p5",
   "deliverables": ["7 projets validés (correcteur + grille).", "Dossiers de projet organisés et versionnés."],
   "pass_criteria": ["Quiz ≥ 8/10.", "7 projets validés."],
   "next": "Phase 18 terminée. Suite : phase 15 (courts métrages) — le projet 7 y est repris."

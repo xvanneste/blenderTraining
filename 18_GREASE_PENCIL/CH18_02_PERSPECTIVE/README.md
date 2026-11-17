@@ -58,7 +58,7 @@ La perspective place le spectateur dans l'espace : elle dit à quelle hauteur et
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_02_perspective_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_02.py" --python-exit-code 1 -- --exercise perspective --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_02.py" -- --exercise perspective --render
 ```
 
 ## Livrables attendus

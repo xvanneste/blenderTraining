@@ -1,8 +1,8 @@
 """
 validate_ch18_10.py — Correcteur CH18.10 (valeurs de plans).
 Usage :
-  … ch18_10_shots_<prenom>.blend --python validate_ch18_10.py --python-exit-code 1 -- --exercise shots
-  … ch18_10_board_<prenom>.blend --python validate_ch18_10.py --python-exit-code 1 -- --exercise board
+  … ch18_10_shots_<prenom>.blend --python-exit-code 1 --python validate_ch18_10.py -- --exercise shots
+  … ch18_10_board_<prenom>.blend --python-exit-code 1 --python validate_ch18_10.py -- --exercise board
 « shots » : chaque caméra est classée par bcma_shots.classify (hauteur du corps au bord bas de l'image).
 « board » : quantité de dessin par le correcteur générique (gp_spec.json).
 Testé avec : Blender 5.3.0.

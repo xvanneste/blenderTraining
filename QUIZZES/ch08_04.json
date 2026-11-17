@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.04",
+  "title": "Particules et distribution",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un système de particules ?",
+      "choices": [
+        "Des points émis selon des règles (naissance, vitesse, vie, forces)",
+        "Un maillage",
+        "Un matériau",
+        "Une caméra"
+      ],
+      "answer": 0,
+      "explain": "Ici 200 particules, émises de l'image 1 à 30."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle Lifetime ?",
+      "choices": [
+        "La durée de vie en images",
+        "La vitesse",
+        "Le nombre",
+        "La taille"
+      ],
+      "answer": 0,
+      "explain": "Vie 60 : la dernière née (image 30) meurt à l'image 90."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que signifie Emit From Faces ?",
+      "choices": [
+        "Les particules naissent sur les faces de l'émetteur",
+        "Seulement aux sommets",
+        "À l'origine de l'objet",
+        "Dans un volume"
+      ],
+      "answer": 0,
+      "explain": "Faces de la grille de 0,5 m."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi étaler l'émission sur 30 images ?",
+      "answer_text": "Une émission continue donne un jet ; tout émettre en une fois (5 images) donne une rafale (200 nées à l'image 15 au lieu de 97)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "À quoi sert la vitesse normale ?",
+      "answer_text": "Elle lance les particules dans la direction de la normale des faces : 3 donne un sommet de 1,46 m ; 0 les laisse tomber de l'émetteur."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait la gravité des Field Weights ?",
+      "choices": [
+        "Elle tire les particules vers le bas",
+        "Elle les colore",
+        "Elle les supprime",
+        "Elle les multiplie"
+      ],
+      "answer": 0,
+      "explain": "À 0 les particules montent jusqu'à 8,2 m."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment faire rebondir les particules sur un sol ?",
+      "choices": [
+        "Modificateur Collision sur le sol",
+        "Le colorer",
+        "Le mettre en Rigid Body Active",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Sans Collision elles tombent à −20 m."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un rendu « None » ?",
+      "answer_text": "Pendant le test on ne veut que la simulation ; l'apparence (objet, halo) se règle ensuite."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment lire la position des particules par script ?",
+      "answer_text": "Sur l'objet évalué : `ev.particle_systems[0].particles`, avec `alive_state` et `location`, en avançant image par image."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Particules ou Geometry Nodes ?",
+      "answer_text": "Particules pour la simulation (forces, collisions, vie) ; Geometry Nodes pour la distribution paramétrique (CH05.04) sans simulation."
+    }
+  ]
+}

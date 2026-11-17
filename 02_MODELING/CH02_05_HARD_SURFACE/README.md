@@ -59,7 +59,7 @@ Un objet manufacturé se lit par ses arêtes et ses reflets. Ce chapitre install
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_05_device_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_05.py" --python-exit-code 1 -- --exercise device --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_05.py" -- --exercise device --render
 ```
 
 ## Livrables attendus

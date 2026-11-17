@@ -62,7 +62,7 @@ Tout le monde perd un jour du travail : plantage, mauvaise manipulation, disque 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "<dossier>\ch00_07_hero_scene_v002.blend" `
-  --python "SCRIPTS\validate_ch00_07.py" --python-exit-code 1 -- --exercise recover
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_07.py" -- --exercise recover
 ```
 
 ## Livrables attendus

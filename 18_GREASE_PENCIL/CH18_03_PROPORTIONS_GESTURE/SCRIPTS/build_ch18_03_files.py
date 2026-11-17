@@ -8,7 +8,7 @@ build_ch18_03_files.py — Feuille « proportions, silhouettes, gestuelle » (CH
       USER_Mannequins  : vide — 8 mannequins dans 8 poses différentes.
       USER_Silhouettes : vide — 4 silhouettes noires remplies, lisibles sans détail.
   COMPLETED_EXAMPLES/ch18_03_gesture_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch18_03_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_03_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

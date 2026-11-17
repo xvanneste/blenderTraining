@@ -58,7 +58,7 @@ Six outils suffisent à modéliser la majorité des objets d'un décor : Loop Cu
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_02_stool_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_02.py" --python-exit-code 1 -- --exercise stool --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_02.py" -- --exercise stool --render
 ```
 
 ## Livrables attendus

@@ -5,7 +5,8 @@ gauche, repères nommés à droite), caméras de face et de profil, collection `
 dans l'Outliner : les nouveaux objets y seront créés).
 
 ## Tutoriel 1 — La tête et le canon
-1. Num 1 (vue de face), Num 5 si besoin (orthographique).
+1. `Numpad 1`. Vérifiez que l’étiquette de la vue indique *Front Orthographic*. Si elle
+   indique *Front Perspective*, pressez `Numpad 5` pour changer de projection.
 2. *Add > Mesh > UV Sphere* ; renommez **MASS_Head** (F2).
 3. Sidebar (N) > *Item* : *Dimensions* X 0,16, Y 0,20, Z **0,233** (une tête = 1,75 / 7,5) ;
    *Location* Z = 1,75 − 0,117 = 1,633. Le menton tombe sur le repère « Menton 0,87 H ».
@@ -23,9 +24,12 @@ dans l'Outliner : les nouveaux objets y seront créés).
 Astuce : *Snap* (Shift+Tab) sur *Increment*, ou saisie directe des valeurs dans la Sidebar.
 
 ## Tutoriel 4 — Le côté droit par symétrie
-1. Sélectionnez les 6 masses _L, Shift+D puis Échap (copie en place), puis **Ctrl+M**, **X**, Entrée :
-   miroir sur X par rapport au point de pivot (réglez le pivot sur *3D Cursor* au centre du monde).
+1. Placez le curseur à l’origine mondiale via `Shift+S → Cursor to World Origin`, puis choisissez
+   *3D Cursor* comme pivot (`.`). Sélectionnez les six masses `_L`. Faites `Shift+D`, `Échap`
+   pour copier sur place, puis `Ctrl+M`, `X`, `Entrée` dans l’orientation *Global*.
 2. Renommez en _R (Ctrl+F2 *Batch Rename* : Find `_L.001`, Replace `_R`).
+3. Rétablissez *Median Point* comme pivot. Vérifiez de face que les chevilles ont des X opposés
+   et qu’en profil les jambes se superposent dans cette pose de départ.
 
 ## Tutoriel 5 — Le contrapposto (exercice « gesture »)
 1. Enregistrez une copie `…_gesture_v001.blend`.
@@ -39,6 +43,10 @@ Astuce : *Snap* (Shift+Tab) sur *Increment*, ou saisie directe des valeurs dans 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_01_proportions_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_01.py" --python-exit-code 1 -- --exercise adult --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_01.py" -- --exercise adult --render
 ```
 Références : `COMPLETED_EXAMPLES/ch03_01_adult_reference.png`, `…_gesture_reference.png` (face + profil).
+
+## Variante de contrôle
+
+Tracez sur deux vues les repères du bassin, du thorax et de la tête. En silhouette, identifiez quelle masse est inclinée par rapport à une autre. Corrigez une inclinaison à la fois. **Preuve** Une annotation explique le changement observé de face et de profil.

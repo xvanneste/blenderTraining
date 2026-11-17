@@ -8,7 +8,7 @@ build_ch18_12_files.py — « La planche normée » (CH18.12, cadrage et découp
   COMPLETED_EXAMPLES/ch18_12_board_solution.blend (+ _reference.png)
       Séquence « La tasse » en 6 plans : dessins coupés par les cases, flèches (travelling,
       panoramique, déplacement), 6 annotations normées (objets texte) et un en-tête de page.
-Usage : blender -b --factory-startup --python build_ch18_12_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_12_files.py
 Testé avec : Blender 5.3.0.
 """
 import json

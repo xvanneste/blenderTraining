@@ -1,0 +1,67 @@
+{
+  "code": "CH04.09",
+  "title": "Matériaux types",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Une bibliothèque de base évite de réinventer le même matériau à chaque plan. Ce chapitre construit cinq matériaux de référence — bois, pierre, plastique, verre, acier brossé — chacun avec la recette qui le rend crédible (texture qui varie, bump, vernis, anisotropie), puis les marque comme assets pour l'Asset Browser. Le correcteur contrôle les graphes et les valeurs de chaque matériau et la présence des métadonnées d'asset.",
+  "prereqs": [
+    "CH04.03–05 (Principled, nœuds, textures procédurales)."
+  ],
+  "objectives": [
+    "Reconnaître la recette d'un matériau courant.",
+    "Construire bois, pierre, plastique, verre et acier brossé.",
+    "Marquer des matériaux comme assets avec une description."
+  ],
+  "competences": [
+    [
+      "C04.09.a",
+      "Constituer une bibliothèque de matériaux de base",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Recettes de matériaux",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Construire et publier la bibliothèque",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_09_materials_starter.blend",
+      "Cinq sphères, matériaux par défaut"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_09_materials_solution.blend",
+      "Cinq matériaux, marqués assets"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_09_materials_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (bois uni, pierre sans bump, acier isotrope, matériau non marqué, plastique mat)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_09.py",
+      "Correcteur (materials)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_09_materials_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_09.py\" -- --exercise materials --render",
+  "deliverables": [
+    "Bibliothèque de cinq matériaux validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.10 — Matériaux de personnages](../CH04_10_CHARACTER_MATERIALS/README.md)"
+}

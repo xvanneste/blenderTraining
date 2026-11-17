@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.03",
+  "title": "Cloth",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que Cloth simule ?",
+      "choices": [
+        "Un tissu : arêtes élastiques, flexion, collisions",
+        "Un liquide",
+        "Un os",
+        "Une lumière"
+      ],
+      "answer": 0,
+      "explain": "Chaque arête résiste à l'étirement et à la flexion."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert Collision sur un objet ?",
+      "choices": [
+        "Le déclarer comme obstacle pour les tissus et particules",
+        "L'animer",
+        "Le colorer",
+        "Le cacher"
+      ],
+      "answer": 0,
+      "explain": "COL_Ball et COL_Floor portent un modificateur Collision."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que se passe-t-il si la sphère n'a pas de Collision ?",
+      "choices": [
+        "Le drap tombe au sol à travers elle",
+        "Rien",
+        "Le drap flotte",
+        "Le drap se déchire"
+      ],
+      "answer": 0,
+      "explain": "Sommet central à z = −0,475 m au lieu de 0,525 m."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la grille est-elle fine (40 × 40) ?",
+      "answer_text": "Un tissu a besoin de sommets pour former des plis ; une grille grossière donne un drap raide et anguleux."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi désactiver l'auto-collision ici ?",
+      "answer_text": "Elle coûte cher et fait vibrer ; le drap ne se replie pas sur lui-même dans cet exercice."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que règle la Distance de collision ?",
+      "choices": [
+        "L'écart entre le tissu et l'obstacle",
+        "La couleur",
+        "La masse",
+        "Le nombre d'images"
+      ],
+      "answer": 0,
+      "explain": "5 mm : le drap épouse la sphère ; 50 mm avec Quality 1 : instable."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est l'effet de Quality ?",
+      "choices": [
+        "Nombre de pas de calcul par image : plus haut = plus stable et plus lent",
+        "Résolution du rendu",
+        "Taille des plis",
+        "Aucun"
+      ],
+      "answer": 0,
+      "explain": "Quality 1 : drap non stabilisé (42 mm de mouvement entre les images 110 et 120)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un sol plus grand que le drap ?",
+      "answer_text": "Le drap tombe de part et d'autre de la sphère et doit reposer sur le sol : sans collision, il le traverse (−0,84 m)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer le repos ?",
+      "answer_text": "Un tissu qui vibre encore à l'image 120 serait inutilisable dans un plan : 10 mm de mouvement entre les images 110 et 120 dans la solution."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Cloth ou Soft Body pour un drap ?",
+      "answer_text": "Cloth : il gère la flexion, les plis et les collisions de façon bien meilleure ; Soft Body pour des volumes mous."
+    }
+  ]
+}

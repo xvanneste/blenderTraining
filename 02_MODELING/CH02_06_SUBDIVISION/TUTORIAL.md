@@ -4,7 +4,7 @@ Ouvrez `STARTER_FILES/ch02_06_subdiv_starter.blend` : trois cubes de 80 cm deven
 le modificateur Subdivision Surface (Levels 2). Comparez avec `ch02_06_subdiv_starter_view.png`.
 
 ## Tutoriel 1 — Boucles de maintien (GEO_Support)
-1. Sélectionnez `GEO_Support`, `Tab`, vue de face (`Num 1`), fil de fer (`Z` → Wireframe).
+1. Sélectionnez `GEO_Support`, `Tab`, vue de face (`Numpad 1`), fil de fer (`Z` → Wireframe).
 2. `Ctrl+R` en survolant une arête **verticale** (les coupes seront horizontales) : molette →
    **2 coupes**, clic gauche puis clic droit.
 3. Les deux boucles sont sélectionnées, à ±13,3 cm du centre (coupes au tiers). Pour les placer à
@@ -24,11 +24,17 @@ le modificateur Subdivision Surface (Levels 2). Comparez avec `ch02_06_subdiv_st
 
 ## Tutoriel 3 — Optimiser (GEO_Pebble)
 1. Properties → Modifiers → Subdivision : **Levels Viewport 1**, **Render 3**.
-2. Statistics : le nombre de faces à l'écran est divisé par 16 ; le rendu `F12` reste lisse.
+2. Isolez le galet en vue locale pour lire ses statistiques en mode Objet. En passant
+   du niveau 2 au niveau 1, le nombre de faces évaluées est divisé par 4 sur ce maillage
+   en quads. Le nombre de faces de la cage reste constant. Le rendu utilise le niveau 3.
 
 ## Tutoriel 4 — Vérifier
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_06_subdiv_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_06.py" --python-exit-code 1 -- --exercise subdiv --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_06.py" -- --exercise subdiv --render
 ```
+
+## Variante de contrôle
+
+Sur GEO_Support, comparez deux distances entre la boucle de soutien et le bord sans changer Levels Viewport. Approcher la boucle concentre la transition près du bord. Regardez le bord et l’intérieur du volume en silhouette. **Preuve** Vous choisissez une distance en fonction de l’arrondi attendu et retrouvez le maillage de base.

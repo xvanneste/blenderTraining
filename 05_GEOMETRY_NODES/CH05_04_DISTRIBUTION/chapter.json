@@ -1,0 +1,68 @@
+{
+  "code": "CH05.04",
+  "title": "Distribution",
+  "phase_title": "5 — Geometry Nodes",
+  "level": "intermédiaire",
+  "duration": "5 h",
+  "intro": "Disperser des objets sur une surface demande de décider combien, où et à quelle distance les uns des autres. Distribute Points on Faces répond à ces trois questions : méthode (Random ou Poisson Disk), densité et masque. Ce chapitre plante des arbres sur la moitié d'un sol : méthode Poisson (distance minimale de 0,5 m), densité 3 par m², masque donné par un champ (Position → X > 0). Le correcteur lit le graphe et mesure les instances évaluées : nombre, proportion du bon côté, distance minimale entre arbres.",
+  "prereqs": [
+    "CH05.03."
+  ],
+  "objectives": [
+    "Distribuer des points sur des faces avec Distribute Points on Faces.",
+    "Choisir entre Random et Poisson Disk.",
+    "Piloter la densité par un masque (champ).",
+    "Mesurer une distribution (nombre, distance minimale)."
+  ],
+  "competences": [
+    [
+      "C05.04.a",
+      "Distribuer avec contrôle",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Distribute Points on Faces",
+      "2 h 30"
+    ],
+    [
+      "L2",
+      "Masques et distance minimale",
+      "2 h 30"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch05_04_distribution_starter.blend",
+      "Sol et arbre, sans distribution"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_04_distribution_solution.blend",
+      "73 arbres sur la moitié x > 0"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch05_04_distribution_reference.png",
+      "Deux vues (de face et du dessus)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans masque, méthode Random, trop clairsemé, mauvais côté, nœud orphelin)"
+    ],
+    [
+      "SCRIPTS/validate_ch05_04.py",
+      "Correcteur (distribution)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch05_04_distribution_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch05_04.py\" -- --exercise distribution --render",
+  "deliverables": [
+    "Distribution maîtrisée validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH05.05 — Attributs](../CH05_05_ATTRIBUTES/README.md)"
+}

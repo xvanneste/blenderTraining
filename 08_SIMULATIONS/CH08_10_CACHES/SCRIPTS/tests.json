@@ -1,0 +1,36 @@
+{
+  "build": "build_ch08_10_files.py",
+  "validator": "validate_ch08_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_10_caches_solution.blend",
+      "exercise": "caches",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_10_caches_starter.blend",
+      "exercise": "caches",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_10_caches_no_bake.blend",
+      "exercise": "caches",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_10_caches_short_range.blend",
+      "exercise": "caches",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_10_caches_memory_only.blend",
+      "exercise": "caches",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_10_caches_outdated.blend",
+      "exercise": "caches",
+      "expect": false
+    }
+  ]
+}

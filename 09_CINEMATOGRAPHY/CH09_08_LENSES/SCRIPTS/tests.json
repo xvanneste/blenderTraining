@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_08_files.py",
+  "validator": "validate_ch09_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_08_lenses_solution.blend",
+      "exercise": "lenses",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_08_lenses_starter.blend",
+      "exercise": "lenses",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_08_lenses_wide.blend",
+      "exercise": "lenses",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_08_lenses_moved_only.blend",
+      "exercise": "lenses",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_08_lenses_zoomed_only.blend",
+      "exercise": "lenses",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_08_lenses_short_lens.blend",
+      "exercise": "lenses",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_08_lenses_subject_moved.blend",
+      "exercise": "lenses",
+      "expect": false
+    }
+  ]
+}

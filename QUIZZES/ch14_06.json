@@ -1,0 +1,95 @@
+{
+  "chapter": "CH14.06",
+  "title": "Claude Code et Blender",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Qu’exige un test négatif ?",
+      "type": "mcq",
+      "choices": [
+        "Une seconde référence identique",
+        "Un screenshot de code",
+        "Une mutation qui doit être détectée"
+      ],
+      "answer": 2,
+      "explain": "Les entrées, sorties et refus attendus rendent le code proposé testable."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Qu’interdire dans le brief de ce contrôle ?",
+      "type": "mcq",
+      "choices": [
+        "La modification et l’enregistrement de la scène",
+        "L’inspection des noms",
+        "La création d’un rapport"
+      ],
+      "answer": 0,
+      "explain": "Un correcteur de lecture seule peut inspecter les datablocks sans appeler d’édition ni de réseau."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Qu’est-ce qui prouve l’exécution ?",
+      "type": "mcq",
+      "choices": [
+        "Le message de l’assistant",
+        "La sortie Blender capturée pour les deux scènes",
+        "La présence d’un fichier Python"
+      ],
+      "answer": 1,
+      "explain": "Un bon résultat sur un seul fichier ne montre pas que le défaut peut être détecté."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « L’assistant annonce que le contrôle passe mais aucun journal Blender n’existe. »",
+      "answer_text": "La proposition a été relue sans exécution. Lancez les deux fichiers de test et conservez les résultats."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que conserver d’une correction proposée par un assistant ?",
+      "answer_text": "Le diff relu, l’objectif, le test nominal, le contre-exemple et les journaux Blender correspondants."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le script appelle save_as_mainfile. Pourquoi le signaler ?",
+      "answer_text": "L’écriture du .blend ne correspond pas au périmètre du contrôle en lecture seule."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Votre script local suffit. Que vérifier avant d’ajouter une connexion MCP ?",
+      "answer_text": "Le serveur autorisé, la scène de test, les actions réellement utiles et les permissions en lecture."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Spécifier » ?",
+      "answer_text": "Le brief fixe version Blender, périmètre de collection et format d’un message."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Inspecter » ?",
+      "answer_text": "Le diff répond au brief, et vous justifiez chaque API importante."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Tester » ?",
+      "answer_text": "Deux journaux permettent de comparer le cas nominal et le cas fautif."
+    }
+  ]
+}

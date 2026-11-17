@@ -1,0 +1,112 @@
+{
+  "chapter": "CH12.04",
+  "title": "Mixage",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que mesure le RMS ?",
+      "choices": [
+        "L'énergie moyenne d'un signal sur une fenêtre",
+        "Sa couleur",
+        "Sa durée",
+        "Son nom"
+      ],
+      "answer": 0,
+      "explain": "Musique à 0,3 : 0,040 ; voix : 0,137."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le ducking ?",
+      "choices": [
+        "Baisser la musique pendant la voix",
+        "Monter la voix",
+        "Couper l'ambiance",
+        "Inverser un son"
+      ],
+      "answer": 0,
+      "explain": "Volume animé : 0,3 → 0,1 → 0,3."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment anime-t-on le volume d'un strip ?",
+      "choices": [
+        "Des clés sur la propriété Volume du strip (I sur le champ)",
+        "Un nœud de compositeur",
+        "Un modificateur",
+        "Impossible"
+      ],
+      "answer": 0,
+      "explain": "Chemin d'animation : `sequence_editor.strips_all[\"MUSIC\"].volume` (vérifié par l'API)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la voix doit-elle dominer la musique ?",
+      "answer_text": "Pour l'intelligibilité : mesuré, voix 8,7 fois la musique pendant la réplique ; au départ 0,9 (la musique dominait)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre no_duck ?",
+      "answer_text": "Une musique constante à 0,3 : le rapport entre pendant et avant vaut 1,19 : pas de ducking ; la voix est quand même audible (2,9 ×) mais le ducking est exigé."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que fait Pan −1 ?",
+      "choices": [
+        "Place le son à gauche (le canal droit est nul)",
+        "Baisse le volume",
+        "Inverse la phase",
+        "Coupe le son"
+      ],
+      "answer": 0,
+      "explain": "HIT : gauche 0,129, droite 0,000."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi limiter la crête à 0,9 ?",
+      "choices": [
+        "Pour garder une marge avant l'écrêtage à 1,0",
+        "Par esthétique",
+        "Pour la durée",
+        "Par convention de couleur"
+      ],
+      "answer": 0,
+      "explain": "hot_mix : crête 1,00 (écrêtage) ; solution 0,60."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mixer chaque strip seul pour mesurer ?",
+      "answer_text": "Dans le mixage complet on ne peut pas séparer la musique de la voix : on coupe les autres strips (mute temporaire) pour mesurer chacun."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le RMS est-il une mesure de loudness (LUFS) ?",
+      "answer_text": "Non : le RMS brut n'est pas pondéré par l'oreille ; le chapitre utilise un RMS borné, pas une norme de diffusion (LUFS) : voir CH12.06."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Sons synthétiques simples, un seul pan, un ducking par volume ; ni compresseur, ni égaliseur, ni normalisation de loudness."
+    }
+  ]
+}

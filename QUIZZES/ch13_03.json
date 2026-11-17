@@ -1,0 +1,119 @@
+{
+  "chapter": "CH13.03",
+  "title": "Génération d’objets et matériaux",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelles données sont transmises à from_pydata ?",
+      "type": "mcq",
+      "choices": [
+        "Sommets, arêtes, faces",
+        "Positions de caméra et lumière",
+        "Matrice, matériau, objet"
+      ],
+      "answer": 0,
+      "explain": "Chaque face référence des indices de sommets."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "q": "Que modifie le réglage bloc.location.x ?",
+      "type": "mcq",
+      "choices": [
+        "La connectivité du mesh",
+        "La position de l’objet",
+        "Le sens des normales"
+      ],
+      "answer": 1,
+      "explain": "Les huit sommets gardent leurs coordonnées locales."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "q": "Combien de faces partagent une arête sur le bloc fermé ?",
+      "type": "mcq",
+      "choices": [
+        "Une",
+        "Trois",
+        "Deux"
+      ],
+      "answer": 2,
+      "explain": "Une seule face caractériserait ici une bordure ouverte."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "q": "Pourquoi appeler bm.free() ?",
+      "type": "mcq",
+      "choices": [
+        "Pour ouvrir le volume",
+        "Pour libérer la structure temporaire",
+        "Pour appliquer le Bevel"
+      ],
+      "answer": 1,
+      "explain": "Le maillage Blender a déjà reçu les données via bm.to_mesh(mesh)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "q": "Pourquoi le biseau apparaît-il alors que le maillage de base conserve huit sommets ?",
+      "type": "open",
+      "answer_text": "Le modificateur ajoute des faces dans le résultat évalué et laisse le datablock d’origine éditable."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "q": "Quel socket du Noise est raccordé à Map Range ?",
+      "type": "mcq",
+      "choices": [
+        "Color",
+        "Fac",
+        "Roughness"
+      ],
+      "answer": 1,
+      "explain": "Le tutoriel remappe un facteur scalaire."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "q": "Quelle entrée du Principled reçoit la valeur remappée ?",
+      "type": "mcq",
+      "choices": [
+        "Base Color",
+        "Metallic",
+        "Roughness"
+      ],
+      "answer": 2,
+      "explain": "La valeur pilote la rugosité locale du reflet."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "q": "Dans le placement de la grille, que règle la colonne ?",
+      "type": "mcq",
+      "choices": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "answer": 0,
+      "explain": "X dépend de la colonne et Y de la rangée."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "q": "Que se passe-t-il si on change un nombre dans le tableau des hauteurs ?",
+      "type": "open",
+      "answer_text": "Le bloc à cet indice change de dimension verticale et conserve sa position au sol."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "q": "Comment montrer que le script est reproductible ?",
+      "type": "open",
+      "answer_text": "Repartir d’une copie propre du starter, lancer le même texte et retrouver les six objets, leurs positions et leur matériau."
+    }
+  ]
+}

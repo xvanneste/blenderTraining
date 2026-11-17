@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_08_files.py",
+  "validator": "validate_ch07_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_08_walk_solution.blend",
+      "exercise": "walk",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_08_walk_starter.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_no_loop.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_uneven_stance.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_no_bob.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_same_side_arm.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_shuffle.blend",
+      "exercise": "walk",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_08_walk_short_stride.blend",
+      "exercise": "walk",
+      "expect": false
+    }
+  ]
+}

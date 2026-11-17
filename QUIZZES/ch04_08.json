@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.08",
+  "title": "Relief : bump, normal map, displacement",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle technique de relief modifie réellement la silhouette ?",
+      "choices": [
+        "Bump",
+        "Normal map",
+        "Displacement",
+        "Aucune"
+      ],
+      "answer": 2,
+      "explain": "Seul le displacement déplace la géométrie ; bump et normal map ne changent que l'ombrage."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle technique est la moins coûteuse en géométrie pour du détail fin lointain ?",
+      "choices": [
+        "Displacement",
+        "Normal map ou bump",
+        "Sculpt à 10 M de faces",
+        "Aucune"
+      ],
+      "answer": 1,
+      "explain": "Elles ne demandent pas de polygones supplémentaires."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que convertit le nœud Bump ?",
+      "choices": [
+        "Une normale en hauteur",
+        "Une hauteur en normale perturbée",
+        "Une image en UV",
+        "Une couleur en métal"
+      ],
+      "answer": 1,
+      "explain": "Bump dérive une normale d'un champ de hauteur (CH04.05)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une normal map ne suffit-elle pas pour une falaise vue de profil ?",
+      "answer_text": "Elle ne déplace pas les sommets : la silhouette reste celle du maillage, le relief disparaît de profil."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Donnez un avantage du bump sur la normal map.",
+      "answer_text": "Pas d'image ni de bake : il se dérive directement d'une texture procédurale ou d'une image de hauteur ; réglage immédiat."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que vaut Midlevel pour un Height qui varie de 0 à 1 autour de 0,5 ?",
+      "choices": [
+        "0,5 : la surface reste en moyenne à sa place",
+        "0 : tout monte",
+        "1 : tout descend",
+        "Sans effet"
+      ],
+      "answer": 0,
+      "explain": "Le déplacement vaut (Height − Midlevel) × Scale : au niveau moyen il est nul."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel réglage du matériau active le vrai déplacement des sommets ?",
+      "choices": [
+        "Displacement : Displacement Only ou Displacement and Bump",
+        "Backface Culling",
+        "Emission Sampling",
+        "Thickness"
+      ],
+      "answer": 0,
+      "explain": "Material Properties > Settings > Displacement (propriété displacement_method) ; par défaut c'est Bump Only."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un plan d'une seule face ne se déforme-t-il pas ?",
+      "answer_text": "Le déplacement agit sur les sommets : il faut des sommets en nombre suffisant, donc une subdivision (adaptive ou niveaux de rendu élevés)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il avec un Scale de 3 m pour le sol de 6 m ?",
+      "answer_text": "Le relief dépasse la moitié de la largeur : le sol devient montagneux et l'échelle est absurde ; le correcteur exige 0,02–0,3 m."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi ce chapitre exige-t-il Cycles ?",
+      "answer_text": "Le vrai displacement (Displacement Only) y est pris en charge ; dans les sources de l'interface 5.3, ce mode est signalé « Unsupported displacement method » pour EEVEE. Nous utilisons donc Cycles pour la solution."
+    }
+  ]
+}

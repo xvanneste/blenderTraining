@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.08",
+  "title": "Tracking et matchmoving",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une piste (track) ?",
+      "choices": [
+        "La position d'un même point de l'image suivie d'image en image",
+        "Un fichier audio",
+        "Un objet 3D",
+        "Une lampe"
+      ],
+      "answer": 0,
+      "explain": "Chaque piste contient un marqueur par image suivie."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi régler la focale du clip ?",
+      "choices": [
+        "Le solveur en a besoin pour relier points 2D et rayons 3D",
+        "Pour l'esthétique",
+        "Pour la couleur",
+        "Elle n'est pas utilisée"
+      ],
+      "answer": 0,
+      "explain": "Focale 35 mm, capteur 36 mm dans l'exercice."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle commande trouve automatiquement des points à suivre ?",
+      "choices": [
+        "Detect Features (clip.detect_features)",
+        "Solve Camera Motion",
+        "Render Animation",
+        "Clean Tracks"
+      ],
+      "answer": 0,
+      "explain": "À l'image 1 : 8 à 28 pistes selon les réglages."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi suivre sur toute la séquence ?",
+      "answer_text": "Le solveur compare des points visibles sur plusieurs images : les pistes courtes ne donnent pas de mouvement (suivi de 8 images : aucune piste de 30 marqueurs, résolution impossible)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi sélectionner les pistes avant Track Markers ?",
+      "answer_text": "L'opérateur suit les pistes sélectionnées ; sans sélection rien n'est suivi."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi faut-il de la parallaxe ?",
+      "choices": [
+        "Sans mouvement de translation, le solveur ne sait pas séparer profondeur et mouvement",
+        "Pour la netteté",
+        "Pour la couleur",
+        "Pour la vitesse"
+      ],
+      "answer": 0,
+      "explain": "La caméra avance de −1 à +1 m : les points proches bougent plus."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que mesure l'erreur de reprojection ?",
+      "choices": [
+        "L'écart en pixels entre un point suivi et le point 3D reconstruit reprojeté",
+        "Le temps",
+        "La taille du fichier",
+        "Le bruit"
+      ],
+      "answer": 0,
+      "explain": "0,75 pixel pour la solution ; le correcteur exige ≤ 1,0."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi wrong_focal est-il accepté par le solveur ?",
+      "answer_text": "La résolution a réussi (0,75 px) avec 100 mm : le solveur s'adapte ; mais la caméra reconstruite aurait une mauvaise perspective : c'est pourquoi la focale est contrôlée par le correcteur."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre not_solved ?",
+      "answer_text": "Des pistes valides mais aucune reconstruction enregistrée : le correcteur la détecte et refait la résolution pour montrer qu'elle est possible."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un plan synthétique sans flou, sans bruit ni occlusion, avec des points parfaits : un vrai plan demande du nettoyage de pistes et de la calibration d'objectif ; l'alignement de la scène 3D (setup tracking scene) n'est pas évalué."
+    }
+  ]
+}

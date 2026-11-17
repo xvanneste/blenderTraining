@@ -5,12 +5,12 @@
 | Élément | Valeur constatée | Méthode de vérification |
 |---|---|---|
 | Blender cible | **5.3.0** — build `02f0899d78e3`, branche `blender-v5.3-release`, compilé le 10/11/2026 | `blender.exe --version` |
-| Statut officiel | Version stable publiée (annoncée le 10–11/11/2026) | Presse spécialisée (CG Channel, Phoronix, 80.lv) + notes développeur `developer.blender.org/docs/release_notes/5.3/` |
+| Statut officiel | Blender 5.3.0, version stable publiée le 10 novembre 2026 | [Publication Blender 5.3](https://www.blender.org/releases/5-3/) |
 | Python embarqué | 3.13.13 | `sys.version` dans Blender |
 | Moteur par défaut | `BLENDER_EEVEE` | `scene.render.engine` |
 | Transformation de vue par défaut | `AgX` | `scene.view_settings.view_transform` |
 | Périphériques Cycles détectés | CUDA + OptiX (RTX 3080), CPU | `preferences.addons['cycles'].preferences.devices` |
-| Formats image de sortie | AVIF, JPEG, OPEN_EXR, OPEN_EXR_MULTILAYER, PNG, WEBP, TIFF, HDR, DPX, … , FFMPEG | énumération RNA |
+| Sortie d’image et de vidéo | Image fixe de démarrage : IMAGE et PNG. Vidéo : media_type VIDEO, puis format et codecs dans render.ffmpeg. | Binaire 5.3.0. Voir [CH12.06](../12_EDITING_SOUND/CH12_06_EXPORT/README.md). |
 | Accès en ligne (extensions) | désactivé par défaut (`bpy.app.online_access = False` en `--factory-startup`) | `bpy.app.online_access` |
 
 Autres versions installées sur ce poste : **3.6, 4.4, 5.0, 5.2** (dossier
@@ -19,8 +19,8 @@ a son propre dossier de configuration dans
 `%APPDATA%\Blender Foundation\Blender\<version>\`.
 
 ## Nouveautés 5.3 utilisées dans le cursus (à revérifier au moment du chapitre concerné)
-Sources secondaires concordantes ; chaque fonctionnalité sera vérifiée dans le logiciel
-avant d'être enseignée.
+Voir les [notes officielles 5.3](https://developer.blender.org/docs/release_notes/5.3/). Les libellés, prérequis et limites propres à ces fonctions doivent être confirmés au chapitre concerné.
+
 - **Vulkan** devient le backend GPU par défaut sous Windows/Linux (CH00.03).
 - **Système de projet** optionnel : *File → Project* (CH00.06).
 - **Gaussian splats** : import PLY/SPZ, rendu Workbench/EEVEE/Cycles, nœuds *Import SPZ* et
@@ -41,8 +41,8 @@ avant d'être enseignée.
    écrasant).
 2. Au premier lancement, importer les préférences de la version précédente depuis l'écran
    d'accueil, ou créer des préférences propres (*Save New Preferences*).
-3. Lancer `TOOLS/run_all_tests.ps1 -Blender "<chemin du nouveau blender.exe>"` : il
-   régénère tous les fichiers de démarrage et exécute tous les scripts de validation.
+3. Depuis la racine, exécuter la suite en lecture des scènes avec TOOLS/run_all_tests.py et l’option --no-build, en indiquant le binaire avec --blender. Pour reconstruire les scènes ou recalculer le manifeste, utiliser une copie de travail séparée.
+
 4. Lire les notes de version (`developer.blender.org/docs/release_notes/<version>/`), en
    particulier la section *Python API* (changements incompatibles).
 5. Corriger les scripts en échec, mettre à jour ce fichier et `PROJECT_STATE.md`.

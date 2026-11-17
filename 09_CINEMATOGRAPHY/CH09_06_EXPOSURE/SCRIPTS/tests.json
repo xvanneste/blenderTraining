@@ -1,0 +1,36 @@
+{
+  "build": "build_ch09_06_files.py",
+  "validator": "validate_ch09_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_06_exposure_solution.blend",
+      "exercise": "exposure",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_06_exposure_starter.blend",
+      "exercise": "exposure",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_06_exposure_standard_clipped.blend",
+      "exercise": "exposure",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_06_exposure_too_dark.blend",
+      "exercise": "exposure",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_06_exposure_too_bright.blend",
+      "exercise": "exposure",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_06_exposure_punchy_dark.blend",
+      "exercise": "exposure",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_06_files.py",
+  "validator": "validate_ch12_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_06_export_solution.blend",
+      "exercise": "export",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_06_export_starter.blend",
+      "exercise": "export",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_06_export_mpeg4_codec.blend",
+      "exercise": "export",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_06_export_no_audio.blend",
+      "exercise": "export",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_06_export_half_res.blend",
+      "exercise": "export",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_06_export_fps30.blend",
+      "exercise": "export",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_06_export_short_range.blend",
+      "exercise": "export",
+      "expect": false
+    }
+  ]
+}

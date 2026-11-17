@@ -1,6 +1,6 @@
 """
 validate_ch18_06.py — Correcteur CH18.06 (objets Grease Pencil organisés dans une scène 3D).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch18_06.py --python-exit-code 1 -- --exercise organize [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch18_06.py -- --exercise organize [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

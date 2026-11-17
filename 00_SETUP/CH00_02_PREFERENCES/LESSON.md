@@ -15,7 +15,7 @@ changent pas.
 
 ### C. Reproduire
 TUTORIAL.md — tutoriels 1 (sauvegarde du dossier config) et 2 (visite).
-✅ Archive `config_5.3_<date>.zip` créée ; *Auto-Save Preferences* coché.
+✅ Archive `config_5.3_<date>.zip` créée. L’état de *Auto-Save Preferences* est relevé.
 
 ### D. Pratiquer
 - **Facile :** trouvez par la recherche les réglages *Save Versions*, *Resolution Scale*,
@@ -99,7 +99,7 @@ TUTORIAL.md — tutoriels 4 et 7.
 
 ### D. Pratiquer
 - **Facile :** exercice 1 (EXERCISES.md).
-- **Moyen :** exercice 2 (course chronométrée avant/après).
+- **Moyen :** exercice 2 (cadrer deux objets et expliquer le geste).
 - **Difficile :** exercice 3 (cadrer l'aiguille avec la caméra) — correcteur automatique.
 
 ### E. Produire

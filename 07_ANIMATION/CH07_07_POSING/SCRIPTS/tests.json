@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_07_files.py",
+  "validator": "validate_ch07_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_07_posing_solution.blend",
+      "exercise": "posing",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_07_posing_starter.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_no_tilt.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_twin_tilt.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_both_bent.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_unbalanced.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_no_curve.blend",
+      "exercise": "posing",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_07_posing_arms_at_sides.blend",
+      "exercise": "posing",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.05",
+  "title": "Attributs",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un domaine d'attribut ?",
+      "choices": [
+        "Le nom de l'attribut",
+        "L'élément qui porte la valeur : point, arête, face, coin…",
+        "Son type de données",
+        "Le matériau"
+      ],
+      "answer": 1,
+      "explain": "Un attribut de domaine Point a une valeur par sommet ; de domaine Face, une par face."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud stocke une valeur sous un nom ?",
+      "choices": [
+        "Set Position",
+        "Store Named Attribute",
+        "Capture",
+        "Join"
+      ],
+      "answer": 1,
+      "explain": "Store Named Attribute écrit un champ dans un attribut nommé, de type et de domaine choisis."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type convient pour une hauteur ?",
+      "choices": [
+        "Boolean",
+        "Float",
+        "Color",
+        "Integer"
+      ],
+      "answer": 1,
+      "explain": "Une grandeur continue : Float."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi stocker la hauteur APRÈS Set Position ?",
+      "answer_text": "Position.z lue avant le déplacement vaudrait 0 partout ; après, elle contient le relief : l'attribut vaut la coordonnée z des sommets."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Comment voir un attribut ?",
+      "answer_text": "Dans le Spreadsheet : colonne portant son nom pour le domaine concerné (Vertex, Face…)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud de shader lit un attribut de la géométrie ?",
+      "choices": [
+        "Texture Coordinate",
+        "Attribute (type Geometry)",
+        "Image Texture",
+        "Mix"
+      ],
+      "answer": 1,
+      "explain": "Le nœud Attribute, Type Geometry, Name = nom de l'attribut."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que se passe-t-il si les noms diffèrent (« altitude » / « height ») ?",
+      "choices": [
+        "Rien",
+        "Le shader ne trouve pas l'attribut : valeur 0, couleur uniforme",
+        "Une erreur de rendu",
+        "Le terrain disparaît"
+      ],
+      "answer": 1,
+      "explain": "Le correcteur exige le même nom ; sinon le shader lit zéro."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi un Map Range avant la Color Ramp ?",
+      "answer_text": "La hauteur varie de −0,6 à +0,6 : Map Range la ramène à 0–1 (−0,5 → 0 ; 0,5 → 1) pour que la rampe en tire parti."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que donne un attribut de domaine Face alimenté par un champ de points ?",
+      "answer_text": "Une valeur par face (le champ est évalué sur le domaine cible) : l'attribut n'est plus un attribut de point, le shader lit des facettes et le correcteur le refuse."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Donnez un autre usage d'un attribut stocké.",
+      "answer_text": "Un masque (pente, humidité) lu par le shader, par un Instance on Points (Selection) ou par un autre nœud de l'arbre (Named Attribute)."
+    }
+  ]
+}

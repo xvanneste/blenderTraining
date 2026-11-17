@@ -1,0 +1,9 @@
+{
+  "images": 96,
+  "fps": 24,
+  "erreur_ik_max_mm": 0.03,
+  "glissement_max_appui_mm": 0.02,
+  "semelle_appui_min_mm": 0.01,
+  "semelle_appui_max_mm": 0.04,
+  "semelle_tout_cycle_min_mm": 0.01
+}

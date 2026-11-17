@@ -1,6 +1,6 @@
 """
 validate_ch01_08.py — Correcteur du grand rangement (CH01.08).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_08.py --python-exit-code 1 -- --exercise organize [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_08.py -- --exercise organize [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

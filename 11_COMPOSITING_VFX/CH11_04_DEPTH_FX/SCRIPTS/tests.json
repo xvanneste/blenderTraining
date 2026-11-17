@@ -1,0 +1,36 @@
+{
+  "build": "build_ch11_04_files.py",
+  "validator": "validate_ch11_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch11_04_depth_fx_solution.blend",
+      "exercise": "depth_fx",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch11_04_depth_fx_starter.blend",
+      "exercise": "depth_fx",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_04_depth_fx_no_defocus.blend",
+      "exercise": "depth_fx",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_04_depth_fx_wrong_focus.blend",
+      "exercise": "depth_fx",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_04_depth_fx_no_vector_blur.blend",
+      "exercise": "depth_fx",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch11_04_depth_fx_weak_shutter.blend",
+      "exercise": "depth_fx",
+      "expect": false
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # PROGRESS — Suivi de l'apprenant
 
+Le [parcours de modélisation pratique](SITE/index.html#atelier) enregistre les étapes cochées et le dernier atelier dans ce navigateur. Pour chaque jalon, gardez aussi le nom et la version de votre fichier Blender.
+
 > Ce fichier est **le vôtre**. Mettez-le à jour à la fin de chaque séance.
 > Statuts : ⬜ Non commencée · 🟨 En cours · 🟩 Acquise · 🔁 À réviser · ⭐ Maîtrisée
 
@@ -13,7 +15,18 @@
 | Dernier bilan de compétences | — |
 | Prochaine révision espacée | — |
 
-## Critères de passage (rappel)
+## Jalons du premier plan
+
+Utilisez ce tableau avec le [parcours du premier plan animé](DOCUMENTATION/PARCOURS_PREMIER_PLAN.md). Cochez un jalon après avoir produit le livrable et refait la variante sans aide.
+
+| Jalon | Livrable | Variante réussie sans aide | Geste à réviser |
+|---|---|---|---|
+| Première image | | ☐ | |
+| Petite scène | | ☐ | |
+| Premier mouvement | | ☐ | |
+| Plan exporté | | ☐ | |
+
+## Critères de passage du cursus complet
 Un chapitre est **validé** quand : quiz ≥ 80 % · exercice difficile réussi **sans
 tutoriel** · mini-projet ≥ 70/100 · test de rapidité réussi (s'il existe).
 Une compétence passe à **⭐ Maîtrisée** quand elle a été réussie **3 fois espacées**
@@ -34,7 +47,7 @@ Une compétence passe à **⭐ Maîtrisée** quand elle a été réussie **3 foi
 
 Mini-projet (fiche de poste) : ___/100 · Quiz total : ___/20 · Chapitre validé : ☐
 
-### CH00.02 → CH00.08 — contenu à produire
+### CH00.02 → CH00.08 — contenu disponible
 | Code | Compétence | Statut |
 |---|---|---|
 | C00.02.a / b | Configurer et restaurer ses préférences | ⬜ |

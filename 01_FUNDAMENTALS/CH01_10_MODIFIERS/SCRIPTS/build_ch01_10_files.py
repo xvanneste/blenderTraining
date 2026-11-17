@@ -9,7 +9,7 @@ build_ch01_10_files.py — Le petit pont (CH01.10 : pile de modificateurs non de
   COMPLETED_EXAMPLES/ch01_10_bridge_solution.blend
       Array (10 planches), Mirror (rambarde complète), Bevel (pilier), Solidify puis
       Subdivision Surface (seau). Aucun modificateur appliqué : tout reste réglable.
-Usage : blender -b --factory-startup --python build_ch01_10_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch01_10_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

@@ -21,7 +21,7 @@
     ["SCRIPTS/shot_prep.py", "Préparation des plans (écrit avec une IA, testé)"],
     ["SCRIPTS/validate_ch18_21.py", "Correcteur (assist)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_21_assist_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_21.py\" --python-exit-code 1 -- --exercise assist --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_21_assist_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_21.py\" -- --exercise assist --render",
   "deliverables": ["Storyboard assisté validé.", "Journal AI_LOG.", "Auto-évaluation ≥ 7/10."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Exercice 2 validé."],
   "next": "[CH18.22 — Projets de la phase](../CH18_22_PROJECTS/README.md)"

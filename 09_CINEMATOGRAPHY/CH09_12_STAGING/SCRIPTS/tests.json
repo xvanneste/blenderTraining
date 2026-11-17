@@ -1,0 +1,51 @@
+{
+  "build": "build_ch09_12_files.py",
+  "validator": "validate_ch09_12.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_12_staging_solution.blend",
+      "exercise": "staging",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_12_staging_starter.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_line_up.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_flat_depth.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_teleport.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_cup_moved.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_too_fast.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_occluded.blend",
+      "exercise": "staging",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_12_staging_collision.blend",
+      "exercise": "staging",
+      "expect": false
+    }
+  ]
+}

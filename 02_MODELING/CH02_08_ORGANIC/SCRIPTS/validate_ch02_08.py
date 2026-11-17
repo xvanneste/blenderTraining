@@ -1,6 +1,6 @@
 """
 validate_ch02_08.py — Correcteur de « L'arbre au modificateur Skin » (CH02.08).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_08.py --python-exit-code 1 -- --exercise tree [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_08.py -- --exercise tree [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

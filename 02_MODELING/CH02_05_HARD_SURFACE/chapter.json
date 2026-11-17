@@ -22,7 +22,7 @@
     ["COMPLETED_EXAMPLES/ch02_05_device_closeup.png", "Gros plan sur les arêtes"],
     ["SCRIPTS/validate_ch02_05.py", "Correcteur (poids, modificateurs, creux, boutons, fermeture)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_05_device_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_05.py\" --python-exit-code 1 -- --exercise device --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_05_device_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_05.py\" -- --exercise device --render",
   "deliverables": ["Boîtier validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : le talkie-walkie."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Boîtier validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.06 — Subdivision Surface](../CH02_06_SUBDIVISION/README.md)"

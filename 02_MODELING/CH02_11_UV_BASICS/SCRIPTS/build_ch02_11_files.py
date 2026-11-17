@@ -7,7 +7,7 @@ build_ch02_11_files.py — « Déplier une caisse et une boîte de conserve » (
   COMPLETED_EXAMPLES/ch02_11_uv_solution.blend (+ _reference.png)
       GEO_Crate : Smart UV Project ; GEO_Can : coutures (1 arête verticale + 2 cercles des
       couvercles) puis Unwrap (Angle Based) ; Pack Islands. Opérateurs de l'interface.
-Usage : blender -b --factory-startup --python build_ch02_11_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_11_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

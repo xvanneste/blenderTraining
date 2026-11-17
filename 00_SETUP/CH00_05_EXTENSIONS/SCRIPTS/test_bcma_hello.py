@@ -3,7 +3,7 @@ test_bcma_hello.py — Teste l'extension d'exemple ASSETS/bcma_hello sans l'inst
 
 Importe le module, appelle register(), crée des objets, exécute l'opérateur
 bcma.prefix_names, vérifie les noms, puis unregister(). Aucune préférence n'est modifiée.
-Usage : blender -b --factory-startup --python test_bcma_hello.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python test_bcma_hello.py
 Testé avec : Blender 5.3.0.
 """
 import importlib.util

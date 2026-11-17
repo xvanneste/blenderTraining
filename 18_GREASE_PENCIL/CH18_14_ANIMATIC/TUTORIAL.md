@@ -34,7 +34,7 @@
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_14_animatic_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_14.py" --python-exit-code 1 -- --exercise animatic --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_14.py" -- --exercise animatic --render
 ```
 
 ## Tutoriel 6 — L'animatique 3D à caméras multiples
@@ -47,3 +47,7 @@
    marqueur (Timeline), *Marker > Bind Camera to Markers* (Ctrl+B).
 4. *End* = durée totale (324). Lecture : les caméras s'enchaînent.
 5. Correcteur : `-- --exercise layout --render`. Référence : `COMPLETED_EXAMPLES/ch18_14_layout_contact.png`.
+
+## Variante de contrôle
+
+À 24 i/s, réduisez une pause de 8 images en prolongeant l’action suivante d’autant. Vérifiez le total et les deux coupes voisines. **Preuve** La nouvelle durée globale reste stable et la différence de rythme s’observe en lecture.

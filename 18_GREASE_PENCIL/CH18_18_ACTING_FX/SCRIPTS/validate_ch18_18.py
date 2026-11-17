@@ -1,6 +1,6 @@
 """
 validate_ch18_18.py — Correcteur « Le plan animé de 5 s » (CH18.18).
-Usage : … --python validate_ch18_18.py --python-exit-code 1 -- --exercise shot [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_18.py -- --exercise shot [--render]
 Vérifie : durée 4,5–6 s à 24 i/s ; USER_Char (≥ 12 dessins, ≥ 3 tenues ≥ 6 images, parties rapides,
 réaction 1–6 images après le début de l'effet, déformation écrasé/étiré) ; USER_FX (≥ 6 dessins,
 éclair rapide, évolution de taille, clé vide finale) ; caméra : tremblement (≥ 5 clés en ≤ 14 images,

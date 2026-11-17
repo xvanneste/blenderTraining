@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.04",
+  "title": "Depth, defocus, motion blur",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que contient la passe Depth ?",
+      "choices": [
+        "La distance de chaque pixel à la caméra",
+        "La couleur",
+        "Les normales",
+        "Le mouvement"
+      ],
+      "answer": 0,
+      "explain": "Prise « Depth » de Render Layers (passe Z)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où règle-t-on la distance de mise au point du nœud Defocus ?",
+      "choices": [
+        "Sur la caméra : Depth of Field > Focus Distance",
+        "Dans le nœud Blur",
+        "Sur la lampe",
+        "Dans le monde"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : mise au point à 5 m : Far 0,30 ; à 30 m : Far 0,92."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que règle le F-stop du nœud Defocus ?",
+      "choices": [
+        "La quantité de flou (petit = plus de flou)",
+        "La couleur",
+        "L'exposition",
+        "La résolution"
+      ],
+      "answer": 0,
+      "explain": "Propriété `f_stop` du nœud (1,0 dans la solution)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi activer Use Z-Buffer ?",
+      "answer_text": "Pour que le flou dépende de la passe Depth reliée à la prise Z ; sans elle on utilise un flou constant."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi n'avoir pas activé la profondeur de champ de la caméra ?",
+      "answer_text": "Le rendu doit rester net : la profondeur de champ est faite en post ; la caméra ne fournit que la distance de mise au point."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que contient la passe Vector ?",
+      "choices": [
+        "Le déplacement de chaque pixel entre deux images",
+        "Les normales",
+        "La profondeur",
+        "Les ombres"
+      ],
+      "answer": 0,
+      "explain": "Prise « Vector » ; activer View Layer > Passes > Data > Vector."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que règle Shutter ?",
+      "choices": [
+        "La durée d'obturation : plus grande, plus d'étalement",
+        "Le nombre de lampes",
+        "La focale",
+        "La graine"
+      ],
+      "answer": 0,
+      "explain": "Mover : 12 px sans flou, 27 px à Shutter 1,0 ; Shutter 0,1 donne 12 px."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi relier aussi Depth au Vector Blur ?",
+      "answer_text": "Il l'utilise pour que les objets lointains ne bavent pas sur les objets proches ; la prise Depth est un des entrées du nœud."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi garder use_motion_blur de rendu désactivé ?",
+      "answer_text": "Pour doser le flou en post et ne pas le compter deux fois."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de ces effets en post ?",
+      "answer_text": "Ils manquent d'information cachée (ce qui est derrière un objet) : bords de profondeur de champ moins fidèles qu'au rendu ; la mesure ne juge que des barres fines."
+    }
+  ]
+}

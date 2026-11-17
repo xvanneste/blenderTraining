@@ -1,0 +1,112 @@
+{
+  "chapter": "CH04.09",
+  "title": "Matériaux types",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui donne l'aspect « bois » dans la solution ?",
+      "choices": [
+        "Un Voronoi",
+        "Une Wave Texture en bandes étirée, passée dans une Color Ramp brune",
+        "Metallic 1",
+        "Transmission 1"
+      ],
+      "answer": 1,
+      "explain": "Des bandes distordues (Wave) donnent les veines ; l'étirement selon un axe (Mapping) les allonge."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi un Bump sur la pierre ?",
+      "choices": [
+        "Pour la rendre transparente",
+        "Pour casser l'aspect lisse : micro-relief qui accroche la lumière",
+        "Pour changer l'IOR",
+        "Pour baker"
+      ],
+      "answer": 1,
+      "explain": "Un bump alimenté par un Noise fin ajoute du grain sans polygone."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel input fait un acier « brossé » ?",
+      "choices": [
+        "Sheen",
+        "Anisotropic",
+        "Subsurface",
+        "Emission"
+      ],
+      "answer": 1,
+      "explain": "L'anisotropie étire le reflet dans une direction, comme les rayures d'un brossage."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le plastique reçoit-il un Coat ?",
+      "answer_text": "Le plastique coloré est souvent recouvert d'une couche brillante (vernis) : Coat Weight ajoute ce second reflet sans changer la couleur de base."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi la roughness de l'acier est-elle pilotée par un Noise étiré ?",
+      "answer_text": "Des rayures de rugosité alignées imitent un brossage ; une valeur constante donne un métal trop parfait."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle commande marque un matériau comme asset ?",
+      "choices": [
+        "Mark as Asset",
+        "Make Local",
+        "Pack",
+        "Bake"
+      ],
+      "answer": 0,
+      "explain": "Le libellé de l'opérateur `asset.mark` est « Mark as Asset » (confirmé par l'API)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi exiger une description d'asset ?",
+      "choices": [
+        "Par décoration",
+        "Pour retrouver et comprendre le matériau dans l'Asset Browser",
+        "Pour le rendu",
+        "Pour le baking"
+      ],
+      "answer": 1,
+      "explain": "Une bibliothèque sans métadonnées est inutilisable à plusieurs."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que vérifie le correcteur pour la pierre ?",
+      "answer_text": "Base Color pilotée par une texture (Voronoi ou Noise), un Bump alimenté par une texture relié à Normal, Roughness ≥ 0,6."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles sont les valeurs du verre ?",
+      "answer_text": "Transmission Weight 1, Roughness 0,02, IOR 1,5 (comme en CH04.03)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut a un plastique à Roughness 0,9 ?",
+      "answer_text": "Il devient mat comme du caoutchouc : plus de reflet net, donc plus du tout l'aspect plastique brillant attendu."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "code": "CH10.01",
+  "title": "EEVEE en profondeur",
+  "phase_title": "10 — Rendu et optimisation",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "EEVEE est le moteur temps réel de Blender : il rend en quelques secondes ce que Cycles calcule en minutes, au prix d'approximations. Trois réglages décident de son réalisme : les ombres (Shadows), le ray tracing (réflexions et lumière indirecte approchées) et le nombre d'échantillons (qualité contre temps). Ce chapitre fait activer ces réglages sur une scène de test : le correcteur rend l'image avec les réglages de l'élève et mesure l'ombre au sol et la réflexion sur une sphère chromée.",
+  "prereqs": [
+    "CH01 (rendu), CH09.01 (lumière), CH09.06 (exposition)."
+  ],
+  "objectives": [
+    "Activer et régler les ombres d'EEVEE.",
+    "Activer le ray tracing et reconnaître son effet sur les réflexions.",
+    "Choisir un nombre d'échantillons raisonnable.",
+    "Mesurer l'effet d'un réglage par un rendu."
+  ],
+  "competences": [
+    [
+      "C10.01.a",
+      "Régler EEVEE",
+      "Exercice 2 (correcteur)"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Ombres et ray tracing",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Qualité contre temps",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch10_01_eevee_starter.blend",
+      "Shadows et Raytracing désactivés, 1 échantillon : pas d'ombre au sol (rapport 0,96), sphère chromée plate (0,030) ; 11/32"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_01_eevee_solution.blend",
+      "Shadows, Raytracing activés, 64 échantillons : ombre (rapport 0,70), sphère chromée qui reflète la scène (0,081) ; 32/32"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch10_01_eevee_reference.png",
+      "Rendu de départ (gauche) et solution (droite) : l'ombre de la boule et le reflet dans la sphère chromée apparaissent"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans ombres, sans ray tracing, trop peu d'échantillons, trop d'échantillons, mauvais moteur)"
+    ],
+    [
+      "SCRIPTS/validate_ch10_01.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch10_01_eevee_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch10_01.py\" -- --exercise eevee",
+  "deliverables": [
+    "Réglages EEVEE justifiés.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH10.02 — Cycles en profondeur](../CH10_02_CYCLES/README.md)"
+}

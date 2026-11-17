@@ -53,7 +53,7 @@ Votre suivi : [PROGRESS.md](PROGRESS.md) · État du projet : [PROJECT_STATE.md]
 
 ## Application de consultation
 ```powershell
-python TOOLSuild_site.py     # régénère SITE/ après chaque nouveau chapitre
+python TOOLS/build_site.py     # régénère SITE/ après chaque nouveau chapitre
 ```
 Ouvrez `SITE/index.html` dans un navigateur : sommaire par phase avec statut réel, lecture des
 documents de chaque chapitre, quiz interactifs, recherche, fiches de révision, progression et favoris

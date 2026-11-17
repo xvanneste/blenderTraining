@@ -60,7 +60,7 @@ Les 7 projets obligatoires de la phase 18 : planche de 12 cases, dialogue storyb
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "MES_PROJETS\...\mon_projet_v001.blend" `
-  --python "18_GREASE_PENCIL\CH18_22_PROJECTS\SCRIPTS\validate_ch18_22.py" --python-exit-code 1 -- --exercise p5
+  --python-exit-code 1 --python "18_GREASE_PENCIL\CH18_22_PROJECTS\SCRIPTS\validate_ch18_22.py" -- --exercise p5
 ```
 
 ## Livrables attendus

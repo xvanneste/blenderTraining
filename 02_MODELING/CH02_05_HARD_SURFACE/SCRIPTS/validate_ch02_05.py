@@ -1,6 +1,6 @@
 """
 validate_ch02_05.py — Correcteur du boîtier de commande (CH02.05).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_05.py --python-exit-code 1 -- --exercise device [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_05.py -- --exercise device [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

@@ -1,6 +1,6 @@
 """
 validate_ch01_12.py — Correcteur du portrait (CH01.12).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch01_12.py --python-exit-code 1 -- --exercise portrait [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch01_12.py -- --exercise portrait [--render]
 Testé avec : Blender 5.3.0.
 """
 import os

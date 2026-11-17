@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.06",
+  "title": "Budget, planning et risques",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que mesure la somme des charges ?",
+      "type": "mcq",
+      "choices": [
+        "La date de fin à elle seule",
+        "Le travail total alloué aux activités",
+        "La résolution du rendu"
+      ],
+      "answer": 1,
+      "explain": "Une charge s’additionne. Un délai dépend des liens entre activités et des ressources mobilisables."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quand un jour de retard affecte-t-il directement le délai ?",
+      "type": "mcq",
+      "choices": [
+        "Sur n’importe quelle tâche",
+        "Sur les tâches déjà livrées uniquement",
+        "Sur le chemin critique, à hypothèses constantes"
+      ],
+      "answer": 2,
+      "explain": "Tout retard sur le chemin critique décale la livraison si les autres hypothèses restent identiques."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Que doit contenir un plan B ?",
+      "type": "mcq",
+      "choices": [
+        "Un déclencheur, une action et un responsable",
+        "Un intitulé sans date",
+        "Une nouvelle palette uniquement"
+      ],
+      "answer": 0,
+      "explain": "Un risque décrit occurrence, impact et action. Une réserve ne remplace pas le mécanisme de reprise."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La production vend le délai de 19 jours alors qu’un artiste cumule les tâches parallèles. »",
+      "answer_text": "Le calcul a supposé une capacité indépendante par activité. Replanifiez avec la disponibilité réelle puis annoncez le délai corrigé."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le rendu dure 5 jours au lieu de 3. Quel est le délai à capacité inchangée ?",
+      "answer_text": "21 jours car le rendu se trouve sur le chemin critique."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi existe-t-il une marge de 1 jour sur ASSETS ?",
+      "answer_text": "L’actif finit au jour 5, tandis qu’ANIMATIQUE finit au jour 6. Le layout attend les deux."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Si la même personne assure les deux tâches, le délai de 19 jours est-il encore garanti ?",
+      "answer_text": "Non. Il faut séquencer les tâches qui utilisent cette personne et recalculer le début du layout."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Estimer la charge » vérifiable ?",
+      "answer_text": "La feuille reproduit 24 jours-activité et 19 jours de délai théorique."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Trouver le chemin » vérifiable ?",
+      "answer_text": "Le chemin suit DEV, ANIMATIQUE, LAYOUT, ANIM, RENDU, LIVRAISON."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Réduire le risque » vérifiable ?",
+      "answer_text": "Le rendu retardé de 2 jours mène à 21 jours. Un jour de retard sur ASSETS ne décale pas le cas nominal."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 """
 validate_ch18_22.py — Correcteur des 7 projets obligatoires de la phase 18 (CH18.22).
-Usage : … --python validate_ch18_22.py --python-exit-code 1 -- --exercise p1|p2|…|p7 [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_22.py -- --exercise p1|p2|…|p7 [--render]
   p1 planche de 12 cases          → critères du correcteur CH18.13 (exécuté tel quel)
   p2 dialogue storyboardé         → planche ≥ 8 cases normées, champ/contrechamp (≥ 2 plans serrés)
   p3 scène d'action de 30 s       → animatique GP : 25–35 s, ≥ 12 plans (marqueurs), un dessin par plan,

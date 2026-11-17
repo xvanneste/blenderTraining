@@ -10,10 +10,11 @@
 <header class="top">
   <button id="menuBtn" class="icon" aria-label="Afficher le sommaire">☰</button>
   <a href="#home" class="brand">Blender Cinema Master Academy</a>
-  <div class="search">
-    <input id="q" type="search" placeholder="Rechercher (ex. passe Z, Fill, Snap Base…)" aria-label="Rechercher">
-  </div>
-  <span id="progressBadge" class="badge" title="Chapitres marqués « acquis » / chapitres disponibles"></span>
+  <form class="search" id="globalSearch" role="search" aria-label="Bibliothèque">
+    <input id="q" type="search" placeholder="Chercher dans la bibliothèque" aria-label="Chercher dans la bibliothèque" required minlength="2" maxlength="150">
+    <button class="btn" type="submit">Chercher</button>
+  </form>
+  <span id="progressBadge" class="badge" aria-live="polite"></span>
 </header>
 <div class="layout">
   <nav id="nav" aria-label="Sommaire"></nav>

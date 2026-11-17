@@ -1,0 +1,42 @@
+{
+  "build": "build_ch05_04_files.py",
+  "validator": "validate_ch05_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_04_distribution_solution.blend",
+      "exercise": "distribution",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_04_distribution_starter.blend",
+      "exercise": "distribution",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_04_distribution_no_mask.blend",
+      "exercise": "distribution",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_04_distribution_random_method.blend",
+      "exercise": "distribution",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_04_distribution_sparse.blend",
+      "exercise": "distribution",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_04_distribution_wrong_side.blend",
+      "exercise": "distribution",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_04_distribution_orphan.blend",
+      "exercise": "distribution",
+      "expect": false
+    }
+  ]
+}

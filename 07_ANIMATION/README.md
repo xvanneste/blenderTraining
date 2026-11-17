@@ -18,27 +18,27 @@
 | CH07.14 Motion capture | Import BVH/FBX, retargeting, nettoyage | C07.14.a nettoyer une mocap |
 | CH07.15 Scène dialoguée | Blocking, splining, polish | C07.15.a scène dialoguée |
 
-**Projet P7 :** scène de 15–25 s avec jeu d'acteur, dialogue et mouvements de caméra.
+**Projet P7 :** [scène de 15–25 s](PROJECT_P7/README.md) avec jeu d'acteur, dialogue et mouvements de caméra (montage NLA).
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH07.01 Les 12 principes | ⬜ Non commencé |
-| CH07.02 Keyframes et timeline | ⬜ Non commencé |
-| CH07.03 Dope Sheet et Action | ⬜ Non commencé |
-| CH07.04 Graph Editor | ⬜ Non commencé |
-| CH07.05 Timing et spacing | ⬜ Non commencé |
-| CH07.06 Arcs, overlap, follow-through | ⬜ Non commencé |
-| CH07.07 Posing et silhouette | ⬜ Non commencé |
-| CH07.08 Cycles de marche | ⬜ Non commencé |
-| CH07.09 Course, saut, interactions | ⬜ Non commencé |
-| CH07.10 Acting | ⬜ Non commencé |
-| CH07.11 Animation faciale et lip sync | ⬜ Non commencé |
-| CH07.12 Animation de caméra | ⬜ Non commencé |
-| CH07.13 Animation non linéaire | ⬜ Non commencé |
-| CH07.14 Motion capture | ⬜ Non commencé |
-| CH07.15 Scène dialoguée | ⬜ Non commencé |
+| [CH07.01 Les 12 principes](CH07_01_PRINCIPLES/README.md) | ✅ Terminé et vérifié |
+| [CH07.02 Keyframes et timeline](CH07_02_KEYFRAMES/README.md) | ✅ Terminé et vérifié |
+| [CH07.03 Dope Sheet et Action](CH07_03_DOPESHEET/README.md) | ✅ Terminé et vérifié |
+| [CH07.04 Graph Editor](CH07_04_GRAPHEDITOR/README.md) | ✅ Terminé et vérifié |
+| [CH07.05 Timing et spacing](CH07_05_TIMING/README.md) | ✅ Terminé et vérifié |
+| [CH07.06 Arcs, overlap, follow-through](CH07_06_OVERLAP/README.md) | ✅ Terminé et vérifié |
+| [CH07.07 Posing et silhouette](CH07_07_POSING/README.md) | ✅ Terminé et vérifié |
+| [CH07.08 Cycles de marche](CH07_08_WALK/README.md) | ✅ Terminé et vérifié |
+| [CH07.09 Course, saut, interactions](CH07_09_RUN_JUMP/README.md) | ✅ Terminé et vérifié |
+| [CH07.10 Acting](CH07_10_ACTING/README.md) | ✅ Terminé et vérifié |
+| [CH07.11 Animation faciale et lip sync](CH07_11_FACIAL/README.md) | ✅ Terminé et vérifié |
+| [CH07.12 Animation de caméra](CH07_12_CAMERA/README.md) | ✅ Terminé et vérifié |
+| [CH07.13 Animation non linéaire](CH07_13_NLA/README.md) | ✅ Terminé et vérifié |
+| [CH07.14 Motion capture](CH07_14_MOCAP/README.md) | ✅ Terminé et vérifié |
+| [CH07.15 Scène dialoguée](CH07_15_DIALOGUE/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH07_MM_NOM/` conforme à

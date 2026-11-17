@@ -1,0 +1,41 @@
+{
+  "build": "build_ch08_09_files.py",
+  "validator": "validate_ch08_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_09_forces_solution.blend",
+      "exercise": "forces",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_09_forces_starter.blend",
+      "exercise": "forces",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_09_forces_no_wind.blend",
+      "exercise": "forces",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_09_forces_wrong_direction.blend",
+      "exercise": "forces",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_09_forces_weak_wind.blend",
+      "exercise": "forces",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_09_forces_no_turbulence.blend",
+      "exercise": "forces",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_09_forces_ignore_wind.blend",
+      "exercise": "forces",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.01",
+  "title": "Principes de Geometry Nodes",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qui circule dans un arbre Geometry Nodes ?",
+      "choices": [
+        "Des images",
+        "De la géométrie (maillage, courbes, instances…)",
+        "Des UV",
+        "Des textures"
+      ],
+      "answer": 1,
+      "explain": "Les sockets de géométrie (en vert-turquoise) transportent la géométrie de nœud en nœud jusqu'au Group Output."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un champ ?",
+      "choices": [
+        "Un maillage",
+        "Une valeur calculée pour chaque point, face ou arête au moment où un nœud la lit",
+        "Un matériau",
+        "Un modificateur"
+      ],
+      "answer": 1,
+      "explain": "Un champ (par exemple un bruit ou la position) est évalué en chaque élément de la géométrie qui le consomme."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel nœud génère une grille de sommets ?",
+      "choices": [
+        "Set Position",
+        "Grid",
+        "Join Geometry",
+        "Transform"
+      ],
+      "answer": 1,
+      "explain": "Le nœud Grid (GeometryNodeMeshGrid) crée un maillage plan : taille et nombre de sommets."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le Noise Texture fonctionne-t-il comme un champ dans Set Position ?",
+      "answer_text": "Son vecteur d'entrée par défaut est la position du point ; Set Position l'évalue en chaque sommet, d'où un déplacement différent partout."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que fait Set Position avec Offset ?",
+      "answer_text": "Il déplace chaque point de la valeur du champ Offset (un vecteur) : ici (0, 0, (bruit − 0,5) × 2)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi ajouter un nœud Set Material ?",
+      "choices": [
+        "Pour changer la couleur du bruit",
+        "La géométrie générée n'hérite pas des matériaux du maillage d'origine",
+        "Pour lisser",
+        "Pour baker"
+      ],
+      "answer": 1,
+      "explain": "Un arbre qui remplace la géométrie produit un maillage sans matériaux : on assigne le matériau dans l'arbre."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est l'effet de Set Shade Smooth ?",
+      "choices": [
+        "Subdivise",
+        "Lisse l'ombrage des faces sans changer la forme",
+        "Supprime des sommets",
+        "Ajoute du relief"
+      ],
+      "answer": 1,
+      "explain": "Il active l'ombrage lisse : le terrain paraît continu sans polygones supplémentaires."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que mesure le correcteur sur la géométrie ÉVALUÉE ?",
+      "answer_text": "Nombre de sommets (2 500–20 000), emprise 10 × 10 m, écart-type et étendue de Z, part de faces lisses, présence de MAT_Terrain."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi limiter l'amplitude du relief ?",
+      "answer_text": "Une amplitude démesurée (ici ×20, étendue de 8 m) casse l'échelle du décor ; le correcteur exige 0,2–2,5 m d'étendue de Z."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment inspecter les valeurs d'un champ dans Blender ?",
+      "answer_text": "Avec le Spreadsheet (valeurs par élément) et le nœud Viewer (visualisation dans la vue 3D) ; l'arbre doit rester évalué."
+    }
+  ]
+}

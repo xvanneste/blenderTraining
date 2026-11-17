@@ -1,0 +1,41 @@
+{
+  "build": "build_ch08_06_files.py",
+  "validator": "validate_ch08_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_06_smoke_solution.blend",
+      "exercise": "smoke",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_06_smoke_starter.blend",
+      "exercise": "smoke",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_06_smoke_no_flow.blend",
+      "exercise": "smoke",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_06_smoke_smoke_only.blend",
+      "exercise": "smoke",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_06_smoke_low_res.blend",
+      "exercise": "smoke",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_06_smoke_short_cache.blend",
+      "exercise": "smoke",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_06_smoke_no_shader.blend",
+      "exercise": "smoke",
+      "expect": false
+    }
+  ]
+}

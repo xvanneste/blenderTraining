@@ -1,0 +1,46 @@
+{
+  "build": "build_ch08_08_files.py",
+  "validator": "validate_ch08_08.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch08_08_hair_solution.blend",
+      "exercise": "hair",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch08_08_hair_starter.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_no_group.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_no_children.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_no_clump.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_no_dynamics.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_short.blend",
+      "exercise": "hair",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch08_08_hair_too_few.blend",
+      "exercise": "hair",
+      "expect": false
+    }
+  ]
+}

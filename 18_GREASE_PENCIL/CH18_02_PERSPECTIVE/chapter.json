@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch18_02_perspective_reference.png", "Rendu de la référence"],
     ["SCRIPTS/validate_ch18_02.py", "Correcteur (via bcma_gp_check + gp_spec.json)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_02_perspective_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_02.py\" --python-exit-code 1 -- --exercise perspective --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_02_perspective_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_02.py\" -- --exercise perspective --render",
   "deliverables": ["Feuille complétée et validée.", "Auto-évaluation ≥ 14/20.", "Mini-projet : trois décors."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Feuille validée.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.03 — Proportions, silhouettes, gestuelle](../CH18_03_PROPORTIONS_GESTURE/README.md)"

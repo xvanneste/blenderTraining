@@ -26,7 +26,7 @@ MES_PROJETS/P18_05_animation/
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "MES_PROJETS\P18_05_animation\04_ANIM\p18_05_anim_v003.blend" `
-  --python "18_GREASE_PENCIL\CH18_22_PROJECTS\SCRIPTS\validate_ch18_22.py" --python-exit-code 1 -- --exercise p5 --render
+  --python-exit-code 1 --python "18_GREASE_PENCIL\CH18_22_PROJECTS\SCRIPTS\validate_ch18_22.py" -- --exercise p5 --render
 ```
 Remplacez `p5` par le numéro du projet. Les exemples techniques sont dans
 `COMPLETED_EXAMPLES/` (ouvrez-les pour voir la structure attendue).
@@ -39,3 +39,7 @@ Remplacez `p5` par le numéro du projet. Les exemples techniques sont dans
 ## 5. Clore le projet
 Un projet est clos quand : correcteur ✔ + grille ≥ seuil + export/rendu final archivé + note de fin
 (ce que vous referiez autrement). Cochez-le dans votre suivi (le site hors ligne garde votre progression).
+
+## Variante de contrôle
+
+Choisissez un projet de synthèse du chapitre et rédigez trois preuves à rendre, récit, technique et livraison. Faites examiner la feuille une fois avant et une fois après une révision. **Preuve** Le retour produit une correction vérifiable, avec le nom du fichier et la version soumise.

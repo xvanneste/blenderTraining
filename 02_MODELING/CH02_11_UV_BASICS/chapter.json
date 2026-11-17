@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_11_uv_reference.png", "Rendu avec UV"],
     ["SCRIPTS/validate_ch02_11.py", "Correcteur (bornes, occupation, chevauchement, étirement, coutures)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_11_uv_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_11.py\" --python-exit-code 1 -- --exercise uv --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_11_uv_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_11.py\" -- --exercise uv --render",
   "deliverables": ["Dépliages validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : déplier trois props."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Dépliages validés.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.12 — Modélisation pour l'animation](../CH02_12_ANIMATION_READY/README.md)"

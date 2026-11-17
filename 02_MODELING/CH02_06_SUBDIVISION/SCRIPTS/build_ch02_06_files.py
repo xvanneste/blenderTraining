@@ -7,7 +7,7 @@ build_ch02_06_files.py — « Garder la forme sous la subdivision » (CH02.06).
       GEO_Crease  : devient une boule molle → crease sur les 4 arêtes du dessus ;
       GEO_Pebble  : galet (Levels 3 en viewport ET au rendu) → optimiser Levels / Render.
   COMPLETED_EXAMPLES/ch02_06_subdiv_solution.blend (+ _reference.png, + _starter_view.png)
-Usage : blender -b --factory-startup --python build_ch02_06_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_06_files.py
 Testé avec : Blender 5.3.0.
 """
 import os

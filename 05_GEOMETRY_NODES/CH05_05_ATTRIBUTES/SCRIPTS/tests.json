@@ -1,0 +1,47 @@
+{
+  "build": "build_ch05_05_files.py",
+  "validator": "validate_ch05_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch05_05_attributes_solution.blend",
+      "exercise": "attributes",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch05_05_attributes_starter.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_no_store.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_wrong_name.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_wrong_domain.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_shader_unlinked.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_constant.blend",
+      "exercise": "attributes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch05_05_attributes_orphan.blend",
+      "exercise": "attributes",
+      "expect": false
+    }
+  ]
+}

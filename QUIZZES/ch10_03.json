@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.03",
+  "title": "Bruit et débruitage",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que le bruit dans un rendu Cycles ?",
+      "choices": [
+        "Du grain dû à un nombre d'échantillons insuffisant",
+        "Un défaut de la caméra",
+        "Un effet de la lampe",
+        "Un format de fichier"
+      ],
+      "answer": 0,
+      "explain": "4 échantillons : EQM 0,073 contre la référence."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait OpenImageDenoise ?",
+      "choices": [
+        "Il estime l'image propre à partir de l'image bruitée",
+        "Il ajoute du bruit",
+        "Il change la focale",
+        "Il cuit une simulation"
+      ],
+      "answer": 0,
+      "explain": "Sur CPU, sans carte NVIDIA."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Où l'active-t-on ?",
+      "choices": [
+        "Render Properties > Sampling > Render > Denoise (case d'en-tête)",
+        "Object > Visibility",
+        "World > Surface",
+        "Output > Format"
+      ],
+      "answer": 0,
+      "explain": "Panneau relu dans addons_core/cycles/ui.py."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi débruiter plutôt que monter les échantillons ?",
+      "answer_text": "Le débruitage est très peu coûteux : 4 échantillons débruités donnent EQM 0,056 ; 64 échantillons coûtent 16 fois plus de calcul (EQM 0,0085)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Un rendu à 1 échantillon débruité est-il bon ?",
+      "answer_text": "Non : EQM 0,110 et contraste 1,29 : trop peu d'information ; le débruiteur devine mal."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que montre no_prefilter ?",
+      "choices": [
+        "Un préfiltre None n'apporte presque rien (EQM 0,071 contre 0,073)",
+        "Un gain énorme",
+        "Une image noire",
+        "Une erreur"
+      ],
+      "answer": 0,
+      "explain": "Les passes d'aide bruitées guident mal le débruiteur."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que mesure le rapport de contraste ?",
+      "choices": [
+        "Si le damier garde son contraste (écart-type / référence)",
+        "La couleur",
+        "Le temps",
+        "La taille"
+      ],
+      "answer": 0,
+      "explain": "Entre 0,85 et 1,15 ; le bruit l'augmente, un flou le baisse."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi une référence de 256 échantillons ?",
+      "answer_text": "Elle sert de vérité de terrain : à 256 échantillons le bruit résiduel est faible ; c'est ce que mesure l'EQM."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi OptiX n'est-il pas évalué ?",
+      "answer_text": "OptiX demande une carte NVIDIA et l'énumération des débruiteurs est dynamique (vide en arrière-plan) : je n'ai pas pu le tester dans le correcteur."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Une scène, un damier, une zone, une graine : elle ne juge pas le débruitage d'animations (scintillement entre images) ni les passes (CH10.04)."
+    }
+  ]
+}

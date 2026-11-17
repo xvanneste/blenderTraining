@@ -1,0 +1,46 @@
+{
+  "build": "build_ch07_09_files.py",
+  "validator": "validate_ch07_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch07_09_jump_solution.blend",
+      "exercise": "jump",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch07_09_jump_starter.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_no_anticipation.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_no_landing.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_floaty.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_too_low.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_feet_slide.blend",
+      "exercise": "jump",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch07_09_jump_no_return.blend",
+      "exercise": "jump",
+      "expect": false
+    }
+  ]
+}

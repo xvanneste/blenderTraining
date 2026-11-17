@@ -1,6 +1,6 @@
 """
 validate_ch02_02.py — Correcteur du tabouret (CH02.02).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_02.py --python-exit-code 1 -- --exercise stool [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_02.py -- --exercise stool [--render]
 Mesures sur la géométrie évaluée (coordonnées monde). Testé avec : Blender 5.3.0.
 """
 import os

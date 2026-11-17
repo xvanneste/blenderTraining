@@ -1,0 +1,51 @@
+{
+  "build": "build_ch06_05_files.py",
+  "validator": "validate_ch06_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_05_humanoid_solution.blend",
+      "exercise": "humanoid",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_05_humanoid_starter.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_not_generated.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_unskinned.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_wrong_scale.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_no_modifier.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_partial_weights.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_offset.blend",
+      "exercise": "humanoid",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_05_humanoid_arms_unfitted.blend",
+      "exercise": "humanoid",
+      "expect": false
+    }
+  ]
+}

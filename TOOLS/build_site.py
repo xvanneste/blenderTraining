@@ -19,6 +19,9 @@ import json
 import os
 import re
 import sys
+import tempfile
+from pathlib import Path
+from urllib.parse import quote, unquote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "TOOLS"))
@@ -29,13 +32,41 @@ TABS = [("README.md", "Présentation"), ("LESSON.md", "Leçons"), ("THEORY.md", 
         ("TUTORIAL.md", "Tutoriels"), ("EXERCISES.md", "Exercices"), ("SOLUTIONS.md", "Solutions"),
         ("TROUBLESHOOTING.md", "Dépannage"), ("RESOURCES.md", "Ressources")]
 GENERAL = [("START_HERE.md", "Commencer ici"), ("README.md", "Présentation de l'académie"),
+           ("DOCUMENTATION/PARCOURS_PREMIER_PLAN.md", "Premier plan animé"),
+           ("01_FUNDAMENTALS/PROJECT_P1/README.md", "Projet P1 · Nature morte"),
            ("CURRICULUM.md", "Programme complet"), ("ROADMAP.md", "Feuilles de route"),
            ("PROGRESS.md", "Suivi de progression (modèle)"),
            ("DOCUMENTATION/CONVENTIONS.md", "Conventions"),
+           ("DOCUMENTATION/GLOSSAIRE_BLENDER.md", "Glossaire Blender"),
            ("DOCUMENTATION/PIPELINE_BRIDGES.md", "Passerelles du pipeline"),
            ("DOCUMENTATION/COMPLEMENTARY_SOFTWARE.md", "Logiciels complémentaires"),
            ("DOCUMENTATION/VERSION_COMPATIBILITY.md", "Compatibilité des versions"),
-           ("FINAL_AUDIT.md", "Audit final")]
+           ("FINAL_AUDIT.md", "Contrôles de production")]
+CHAPTER_DOCS = {filename for filename, _ in TABS}
+GENERAL_DOCS = {filename for filename, _ in GENERAL}
+
+MODELING_PRACTICE = {
+    "CH01.05": ("outils", "maison"),
+    "CH02.01": ("outils", "hum-topologie"),
+    "CH02.02": ("caisse", "table", "chaise"),
+    "CH02.03": ("epee", "maison"),
+    "CH02.04": ("outils",),
+    "CH02.05": ("epee", "coffre"),
+    "CH02.06": ("stylise", "hum-mirror"),
+    "CH02.07": ("coffre",),
+    "CH02.08": ("stylise", "hum-corps"),
+    "CH02.09": ("hum-topologie",),
+    "CH02.10": ("hum-topologie",),
+    "CH02.11": ("projet-humain",),
+    "CH02.12": ("hum-rig",),
+    "CH02.13": ("projet-humain",),
+    "CH03.01": ("hum-poses", "hum-photos"),
+    "CH03.04": ("stylise",),
+    "CH03.06": ("hum-visage",),
+    "CH03.07": ("hum-corps",),
+    "CH03.09": ("hum-topologie",),
+    "CH03.10": ("hum-rig", "projet-humain"),
+}
 
 
 # ---------------------------------------------------------------------------
@@ -69,13 +100,31 @@ def _inline(text, base):
 def _url(u, base):
     if re.match(r"^(https?:|mailto:|#)", u):
         return u
-    # liens relatifs : depuis SITE/ vers le fichier réel de l'académie
-    target = os.path.normpath(os.path.join(base, u)).replace("\\", "/")
+    if base == "02_MODELING/PARCOURS_PRATIQUE" and re.fullmatch(r"[a-z0-9-]+\.md", u):
+        return "#atelier/" + u[:-3]
+    path, _, fragment = u.partition("#")
+    target = os.path.normpath(os.path.join(base, unquote(path))).replace("\\", "/")
+    anchor = "/" + quote(unquote(fragment), safe="") if fragment else ""
+    chapter = re.fullmatch(r"(\d{2}_[^/]+)/(CH(\d{2})_(\d{2})_[^/]+)/([^/]+)", target)
+    if chapter and chapter.group(1) == S.PHASE_DIRS.get(int(chapter.group(3))):
+        doc = chapter.group(5)
+        filename = Path(ROOT) / target
+        if doc in CHAPTER_DOCS and filename.is_file():
+            return f"#ch/CH{chapter.group(3)}.{chapter.group(4)}/{doc}{anchor}"
+        if doc == "QUIZ.md" and not fragment and filename.is_file():
+            return f"#ch/CH{chapter.group(3)}.{chapter.group(4)}/QUIZ"
+    if target in GENERAL_DOCS:
+        return "#doc/" + target + anchor
+    if target == "SITE/index.html" and fragment:
+        return "#" + html.escape(fragment)
+    # Les ressources à ouvrir ou à télécharger restent des fichiers relatifs.
     rel = os.path.relpath(os.path.join(ROOT, target), OUT).replace("\\", "/")
-    return html.escape(rel)
+    return html.escape(rel + ("#" + fragment if fragment else ""))
 
 
-def md_to_html(text, base=""):
+def md_to_html(text, base="", anchors=None):
+    if anchors is None:
+        anchors = set()
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     lines = text.split("\n")
     out, i = [], 0
@@ -95,7 +144,16 @@ def md_to_html(text, base=""):
         m = re.match(r"^(#{1,6})\s+(.*)$", st)
         if m:
             lvl = len(m.group(1))
-            out.append(f"<h{lvl}>{_inline(m.group(2), base)}</h{lvl}>")
+            title = _inline(m.group(2), base)
+            visible = html.unescape(re.sub(r"<[^>]*>", "", title)).lower()
+            slug = re.sub(r"[^\w\- ]", "", visible).replace(" ", "-")
+            identifier = slug or "section"
+            index = 1
+            while identifier in anchors:
+                identifier = f"{slug or 'section'}-{index}"
+                index += 1
+            anchors.add(identifier)
+            out.append(f'<h{lvl} id="{identifier}" tabindex="-1">{title}</h{lvl}>')
             i += 1
             continue
         if re.match(r"^(-{3,}|\*{3,})$", st):
@@ -118,7 +176,7 @@ def md_to_html(text, base=""):
             while i < len(lines) and lines[i].strip().startswith(">"):
                 buf.append(lines[i].strip()[1:].strip())
                 i += 1
-            out.append(f"<blockquote>{md_to_html(chr(10).join(buf), base)}</blockquote>")
+            out.append(f"<blockquote>{md_to_html(chr(10).join(buf), base, anchors)}</blockquote>")
             continue
         if re.match(r"^\s*([-*+]|\d+[.)])\s+", line):
             items, ordered = [], bool(re.match(r"^\s*\d+[.)]", line))
@@ -161,6 +219,44 @@ def plain(text):
     return re.sub(r"[#*`|>\[\]()_-]+", " ", text)
 
 
+def modeling_course():
+    base = Path(ROOT) / "02_MODELING" / "PARCOURS_PRATIQUE"
+    with (base / "programme.json").open(encoding="utf-8") as src:
+        course = json.load(src)
+    units = set()
+    for group in course:
+        for unit in group["units"]:
+            code = unit["id"]
+            if code in units or not re.fullmatch(r"[a-z0-9-]+", code):
+                raise ValueError(f"Identifiant d'atelier invalide : {code}")
+            units.add(code)
+            path = base / (code + ".md")
+            text = path.read_text(encoding="utf-8")
+            intro, guided = text.split("\n## Tutoriel dans Blender\n", 1)
+            parts = re.split(r"^### ([a-z0-9-]+) — (.+)$", guided, flags=re.M)
+            steps = []
+            if parts[0].strip() or len(parts) < 4:
+                raise ValueError(f"Étapes introuvables : {path}")
+            for i in range(1, len(parts), 3):
+                step, title, body = parts[i:i + 3]
+                steps.append({"id": step, "title": title, "html": md_to_html(body, "02_MODELING/PARCOURS_PRATIQUE")})
+            if len({step["id"] for step in steps}) != len(steps):
+                raise ValueError(f"Étape dupliquée : {path}")
+            for link in re.findall(r"\]\(([^\s()]+)\)", text):
+                if not link.startswith(("https:", "http:", "#")) and not (base / link.split("#")[0]).exists():
+                    raise ValueError(f"Lien local introuvable dans {path.name} : {link}")
+            intro = re.sub(r"^# [^\n]+\n", "", intro, count=1)
+            unit.update({"intro": md_to_html(intro, "02_MODELING/PARCOURS_PRATIQUE"), "steps": steps, "text": plain(text)})
+            if unit.get("video"):
+                if not (base / unit["video"]).is_file():
+                    raise ValueError(f"Vidéo introuvable : {unit['video']}")
+                unit["video"] = _url(unit["video"], "02_MODELING/PARCOURS_PRATIQUE")
+            for question in unit.get("quiz", []):
+                if question["type"] != "mcq" or not 0 <= question["answer"] < len(question["choices"]):
+                    raise ValueError(f"Quiz invalide : {path}")
+    return course
+
+
 # ---------------------------------------------------------------------------
 # Collecte du contenu
 # ---------------------------------------------------------------------------
@@ -185,6 +281,9 @@ def collect():
             if d and os.path.isdir(d):
                 rel = os.path.relpath(d, ROOT).replace("\\", "/")
                 item["dir"] = rel
+                if status.startswith("✅"):
+                    item["evidence"] = ("Contrôles techniques enregistrés" if os.path.isfile(
+                        os.path.join(d, "SCRIPTS", "tests.json")) else "Supports publiés · évaluation par revue")
                 docs = {}
                 for fname, label in TABS:
                     f = os.path.join(d, fname)
@@ -212,6 +311,12 @@ def collect():
         data["sheets"].append({"id": os.path.basename(f), "label": title.replace("Fiche de révision — ", ""),
                                "html": md_to_html(txt, "CHEAT_SHEETS"), "text": plain(txt)})
     data["stats"] = {"total": len(chapters_meta), "done": n_done}
+    data["modeling"] = modeling_course()
+    unit_ids = {unit["id"] for group in data["modeling"] for unit in group["units"]}
+    for chapter, units in MODELING_PRACTICE.items():
+        if chapter not in data["chapters"] or not unit_ids.issuperset(units):
+            raise ValueError(f"Renvoi d'atelier invalide : {chapter}")
+        data["chapters"][chapter]["practice"] = units
     return data
 
 
@@ -220,16 +325,22 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8")
     os.makedirs(OUT, exist_ok=True)
     data = collect()
-    with open(os.path.join(OUT, "data.js"), "w", encoding="utf-8") as fh:
-        fh.write("window.BCMA = ")
-        json.dump(data, fh, ensure_ascii=False)
-        fh.write(";\n")
+    output = tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=OUT, delete=False)
+    temp_data = Path(output.name)
+    try:
+        with output as fh:
+            fh.write("window.BCMA = ")
+            json.dump(data, fh, ensure_ascii=False)
+            fh.write(";\n")
+        temp_data.replace(Path(OUT) / "data.js")
+    finally:
+        temp_data.unlink(missing_ok=True)
     for name in ("index.html", "style.css", "app.js"):
         src = os.path.join(ROOT, "TOOLS", "site_template", name)
         with open(src, encoding="utf-8") as a, open(os.path.join(OUT, name), "w", encoding="utf-8") as b:
             b.write(a.read())
     n_docs = sum(len(c["docs"]) for c in data["chapters"].values())
-    print(f"[site] {data['stats']['done']}/{data['stats']['total']} chapitres vérifiés, "
+    print(f"[site] {data['stats']['done']}/{data['stats']['total']} chapitres au statut publié, "
           f"{len(data['chapters'])} dossiers, {n_docs} documents, {len(data['sheets'])} fiches -> SITE/index.html")
 
 

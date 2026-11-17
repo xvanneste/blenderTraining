@@ -1,0 +1,43 @@
+{
+  "code": "CH16.02",
+  "title": "Séquences et plans",
+  "phase_title": "16 — Production de longs-métrages",
+  "level": "avancé",
+  "duration": "3 h",
+  "intro": "Transformer le pilote des Veilleurs du quai en découpage qui survive aux révisions.",
+  "prereqs": [
+    "CH16.01"
+  ],
+  "objectives": [
+    "Douze identifiants uniques, trois séquences et un motif de coupe par plan.",
+    "La timeline du pilote couvre 1–2880. SQ020_SH010 commence à 961 et SQ030_SH010 à 1921.",
+    "Le total reste 2880 images et la note identifie deux plans affectés."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Décrire les séquences",
+      ""
+    ],
+    [
+      "L2",
+      "Conformer la timeline",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/plans_pilote.csv",
+      "Feuille du pilote en douze plans"
+    ],
+    [
+      "../../15_SHORT_FILMS/ASSETS_ATELIERS/sur_le_quai_animatique.blend",
+      "Exemple VSE éditable à trois plans"
+    ]
+  ],
+  "pass_criteria": [
+    "Douze identifiants uniques, trois séquences et un motif de coupe par plan.",
+    "La timeline du pilote couvre 1–2880. SQ020_SH010 commence à 961 et SQ030_SH010 à 1921.",
+    "Le total reste 2880 images et la note identifie deux plans affectés."
+  ]
+}

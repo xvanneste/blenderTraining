@@ -1,0 +1,46 @@
+{
+  "build": "build_ch06_06_files.py",
+  "validator": "validate_ch06_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_06_quadruped_solution.blend",
+      "exercise": "quadruped",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_06_quadruped_starter.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_not_generated.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_unskinned.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_wrong_scale.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_no_modifier.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_partial_weights.blend",
+      "exercise": "quadruped",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_06_quadruped_offset.blend",
+      "exercise": "quadruped",
+      "expect": false
+    }
+  ]
+}

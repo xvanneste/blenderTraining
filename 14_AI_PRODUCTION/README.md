@@ -20,13 +20,13 @@ de chaque chapitre.
 
 | Chapitre | Statut |
 |---|---|
-| CH14.01 Cadre, éthique et droits | ⬜ Non commencé |
-| CH14.02 IA en préproduction | ⬜ Non commencé |
-| CH14.03 IA pour les assets | ⬜ Non commencé |
-| CH14.04 IA pour l'animation | ⬜ Non commencé |
-| CH14.05 IA pour la mise en scène | ⬜ Non commencé |
-| CH14.06 Claude Code et Blender | ⬜ Non commencé |
-| CH14.07 Pipeline hybride | ⬜ Non commencé |
+| [CH14.01 Cadre, éthique et droits](CH14_01_RIGHTS/README.md) | ✅ Terminé et vérifié |
+| [CH14.02 IA en préproduction](CH14_02_PREPRODUCTION/README.md) | ✅ Terminé et vérifié |
+| [CH14.03 IA pour les assets](CH14_03_ASSETS/README.md) | ✅ Terminé et vérifié |
+| [CH14.04 IA pour l'animation](CH14_04_ANIMATION/README.md) | ✅ Terminé et vérifié |
+| [CH14.05 IA pour la mise en scène](CH14_05_DIRECTION/README.md) | ✅ Terminé et vérifié |
+| [CH14.06 Claude Code et Blender](CH14_06_CLAUDE_CODE/README.md) | ✅ Terminé et vérifié |
+| [CH14.07 Pipeline hybride](CH14_07_HYBRID_PIPELINE/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH14_MM_NOM/` conforme à

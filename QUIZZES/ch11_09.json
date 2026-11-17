@@ -1,0 +1,112 @@
+{
+  "chapter": "CH11.09",
+  "title": "Intégration 3D/réel",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment déduire la direction du soleil d'une plaque ?",
+      "choices": [
+        "Par la direction des ombres des objets réels",
+        "Par la couleur du ciel",
+        "Par la focale",
+        "Par le bruit"
+      ],
+      "answer": 0,
+      "explain": "Le poteau de la plaque projette son ombre vers la droite : le soleil est à gauche."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait un shadow catcher ?",
+      "choices": [
+        "Il ne rend que les ombres reçues et devient transparent ailleurs",
+        "Il attrape les objets",
+        "Il coupe les ombres",
+        "Il change la lumière"
+      ],
+      "answer": 0,
+      "explain": "Propriété `is_shadow_catcher` de l'objet (Cycles)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi activer Film > Transparent ?",
+      "choices": [
+        "Pour que le fond du rendu ait un alpha 0 et laisse voir la plaque",
+        "Pour le bruit",
+        "Pour la vitesse",
+        "Pour la couleur du cube"
+      ],
+      "answer": 0,
+      "explain": "`render.film_transparent` ; sans lui l'alpha vaut 1 partout (+0,279 sur le sol lointain)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi l'ombre du cube doit-elle tomber du même côté que celle du poteau ?",
+      "answer_text": "Deux directions d'ombre dans la même image trahissent l'incrustation : contre-exemple wrong_side : ombre à gauche (−0,062)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre no_catcher ?",
+      "answer_text": "Le sol 3D opaque recouvre la plaque : l'image est le sol 3D, plus de plaque (+0,328)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel nœud pose le rendu sur la plaque ?",
+      "choices": [
+        "Alpha Over : Background = plaque, Foreground = Render Layers Image",
+        "Blur",
+        "Glare",
+        "Denoise"
+      ],
+      "answer": 0,
+      "explain": "Sortie : Group Output."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle rotation de SUN donne une ombre à droite ?",
+      "choices": [
+        "X 50°, Z −50° (mesuré)",
+        "X 50°, Z 50°",
+        "X 0°, Z 0°",
+        "X 90°"
+      ],
+      "answer": 0,
+      "explain": "Avec Z +50° l'ombre tombe à gauche (wrong_side)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer la différence avec la plaque ?",
+      "answer_text": "Le sol lointain doit rester identique à la plaque (± 0,03) : toute différence est du sol 3D visible ; la différence à droite du cube mesure l'ombre."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que manque-t-il à cette intégration ?",
+      "answer_text": "La plaque est générée et plate : pas de perspective du sol réel, pas de grain, pas d'éclairage HDRI capturé ; la caméra est calée à la main, pas issue d'un matchmoving (CH11.08)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Un cube, un sol plan, un seul soleil : pas de réflexions ni de lumière indirecte colorée du sol sur l'objet."
+    }
+  ]
+}

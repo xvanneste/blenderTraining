@@ -1,0 +1,51 @@
+{
+  "build": "build_ch06_10_files.py",
+  "validator": "validate_ch06_10.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch06_10_controls_solution.blend",
+      "exercise": "controls",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch06_10_controls_starter.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_no_collections.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_not_hidden.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_no_shapes.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_no_colors.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_no_locks.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_broken_link.blend",
+      "exercise": "controls",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch06_10_controls_deform_flags.blend",
+      "exercise": "controls",
+      "expect": false
+    }
+  ]
+}

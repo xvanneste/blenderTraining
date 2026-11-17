@@ -1,0 +1,67 @@
+{
+  "code": "CH04.05",
+  "title": "Textures procédurales",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Une texture procédurale est calculée par un algorithme : pas d'image, donc pas de résolution, pas d'UV, pas de répétition visible. Ce chapitre construit un mur de briques avec la seule Brick Texture : variation de briques, joint clair, rangées décalées, et joints creusés grâce à un Bump piloté par le même motif. Le correcteur lit les réglages du nœud et vérifie que le relief est bien alimenté par la texture.",
+  "prereqs": [
+    "CH04.04."
+  ],
+  "objectives": [
+    "Expliquer l'intérêt et les limites d'une texture procédurale.",
+    "Régler une Brick Texture (Scale, Mortar Size, Offset, couleurs).",
+    "Dériver un relief (Bump) du même motif que la couleur."
+  ],
+  "competences": [
+    [
+      "C04.05.a",
+      "Créer un matériau procédural",
+      "Exercice 2 (correcteur) + rendu regardé"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Procédural ou image ?",
+      "2 h"
+    ],
+    [
+      "L2",
+      "Brique, bump et variation",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_05_procedural_starter.blend",
+      "Mur PROP_Wall, Principled par défaut"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_05_procedural_solution.blend",
+      "Mur de briques procédural"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_05_procedural_reference.png",
+      "Deux vues"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans bump, bump non alimenté, briques identiques, mortier de même couleur, échelle excessive, rangées alignées)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_05.py",
+      "Correcteur (procedural)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_05_procedural_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_05.py\" -- --exercise procedural --render",
+  "deliverables": [
+    "Mur de briques validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH04.06 — Texture Painting](../CH04_06_TEXTURE_PAINTING/README.md)"
+}

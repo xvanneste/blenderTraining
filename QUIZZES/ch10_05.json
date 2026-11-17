@@ -1,0 +1,112 @@
+{
+  "chapter": "CH10.05",
+  "title": "Mémoire et optimisation",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Combien de maillages différents le départ utilise-t-il ?",
+      "choices": [
+        "200",
+        "1",
+        "5",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Un par rocher : ME_Rock_000 … ME_Rock_199."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'une instance de collection ?",
+      "choices": [
+        "Un empty qui affiche une collection sans la dupliquer",
+        "Un modificateur",
+        "Un matériau",
+        "Un calque"
+      ],
+      "answer": 0,
+      "explain": "L'objet source n'est évalué qu'une fois."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi Link Object Data économise-t-il de la mémoire ?",
+      "choices": [
+        "Plusieurs objets partagent le même maillage en mémoire",
+        "Il compresse les images",
+        "Il supprime les lampes",
+        "Il baisse la résolution"
+      ],
+      "answer": 0,
+      "explain": "Object > Link/Transfer Data > Link Object Data (Ctrl+L)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Un maillage partagé suffit-il à réduire les triangles évalués ?",
+      "answer_text": "Non : chaque objet applique son modificateur : 200 objets à Subdivision Surface niveau 2 = 384 000 triangles (contre-exemple high_poly)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi garder la source dans une collection exclue ?",
+      "answer_text": "Pour qu'elle ne s'affiche pas en plus des instances : elle n'est évaluée que par les instances."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Combien pèse la texture de départ ?",
+      "choices": [
+        "64 Mo (4 096 × 4 096 × 4 octets)",
+        "1 Mo",
+        "4 Mo",
+        "640 Mo"
+      ],
+      "answer": 0,
+      "explain": "Avec Texture Limit 1024 : 4 Mo."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Où limite-t-on les textures au rendu ?",
+      "choices": [
+        "Render Properties > Simplify > Render > Texture Limit",
+        "Object > Visibility",
+        "World > Settings",
+        "Output > Format"
+      ],
+      "answer": 0,
+      "explain": "Réglage `Scene.cycles.texture_limit_render` : « OFF », 128, 256, 512, 1024… ; actif avec Simplify."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment le correcteur compte-t-il les triangles ?",
+      "answer_text": "Il parcourt les instances du graphe de dépendances, évalue chaque objet source une seule fois (modificateurs inclus) et additionne les triangles."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi accepter plusieurs solutions ?",
+      "answer_text": "Les contraintes sont des budgets (≤ 5 maillages, ≤ 100 000 triangles, ≤ 16 Mo) : instances ou maillage partagé au niveau 0 tiennent le budget ; c'est le résultat qui compte."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Elle compte des proxys (triangles, Mo de textures) : elle ne mesure pas la mémoire réelle du processus, ni la mémoire GPU, ni le temps de rendu ; pas de LOD ni de simplification des particules."
+    }
+  ]
+}

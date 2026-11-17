@@ -35,5 +35,9 @@ calques GROUND, BG, MID, FG.
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_09_set_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_09.py" --python-exit-code 1 -- --exercise set --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_09.py" -- --exercise set --render
 ```
+
+## Variante de contrôle
+
+Contrôlez votre dessin dans une vue latérale en plus de la caméra. Déplacez un élément de fond en profondeur et comparez le recouvrement apparent. **Preuve** Le plan présente le même ordre de lecture et le placement en espace est explicite.

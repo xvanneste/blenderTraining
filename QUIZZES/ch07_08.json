@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.08",
+  "title": "Cycles de marche",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelles sont les quatre poses d'un pas ?",
+      "choices": [
+        "Contact, descente, passage, montée",
+        "Départ, milieu, fin, retour",
+        "Haut, bas, gauche, droite",
+        "Ouverture, fermeture, pause, reprise"
+      ],
+      "answer": 0,
+      "explain": "Contact (talon), descente (le corps s'abaisse), passage (la jambe libre passe), montée (la jambe d'appui pousse)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quand les hanches sont-elles au plus bas ?",
+      "choices": [
+        "Au contact",
+        "Au passage",
+        "À la montée",
+        "Jamais"
+      ],
+      "answer": 0,
+      "explain": "0,899 m au contact, 0,950 m au passage dans la solution."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le déphasage entre les deux jambes ?",
+      "choices": [
+        "Un demi-cycle (12 images)",
+        "Un cycle",
+        "Un quart de cycle",
+        "Aucun"
+      ],
+      "answer": 0,
+      "explain": "À l'image 13 la jambe gauche est où était la droite à l'image 1."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi une marche « sur place » ?",
+      "answer_text": "On anime un seul cycle qui boucle ; le sol défile (ou le personnage est déplacé séparément) : plus simple à corriger et réutilisable (CH07.13)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi les bras sont-ils opposés aux jambes ?",
+      "answer_text": "Pour l'équilibre : quand la jambe gauche avance, le bras droit avance ; le bras gauche recule."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un glissement de pied ?",
+      "choices": [
+        "Le pied d'appui avance ou recule par rapport au sol",
+        "Une rotation de cheville",
+        "Un mouvement de caméra",
+        "Un shape key"
+      ],
+      "answer": 0,
+      "explain": "Le sol défile à la vitesse du pas : le pied d'appui doit reculer à 0,05 m par image, à vitesse constante."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi l'image 25 reprend-elle l'image 1 ?",
+      "choices": [
+        "Pour que la boucle n'ait pas de saut",
+        "Pour allonger l'animation",
+        "Par convention du rendu",
+        "Pour économiser des clés"
+      ],
+      "answer": 0,
+      "explain": "Sans cela la jambe saute à chaque cycle (contre-exemple « no_loop » : 158 mm d'écart)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'interpolation Linear pour le pied d'appui ?",
+      "answer_text": "Une courbe Bezier ralentit près des clés : le pied glisse. En Linear, l'écart à la droite tombe à 0,6 mm (contre 15 à 18 mm en Bezier avec neuf clés)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « shuffle » ?",
+      "answer_text": "Les pieds ne se lèvent pas : ils restent au sol 24 images sur 24 ; la marche devient un traînement de pieds."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment vérifier une marche sans la regarder ?",
+      "answer_text": "Mesurer : écart de la boucle, pas, images au sol, levée du pied, vitesse d'appui, rebond des hanches, bras opposés (le correcteur)."
+    }
+  ]
+}

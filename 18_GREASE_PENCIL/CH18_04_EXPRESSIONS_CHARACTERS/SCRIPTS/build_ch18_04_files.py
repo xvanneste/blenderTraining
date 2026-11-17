@@ -9,7 +9,7 @@ build_ch18_04_files.py — Feuille « têtes, expressions, feuille de modèle »
       USER_Expressions : vide — les 6 émotions de base sur le même personnage.
       USER_ModelSheet  : vide — face, trois-quarts, profil alignés sur les repères.
   COMPLETED_EXAMPLES/ch18_04_expressions_solution.blend (+ _reference.png)
-Usage : blender -b --factory-startup --python build_ch18_04_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_04_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

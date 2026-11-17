@@ -10,7 +10,7 @@ build_ch02_05_files.py — « Le boîtier de commande » (CH02.05, hard surface)
       - 3 boutons (cylindres) posés sur le dessus ;
       - Bevel modificateur n°2 « Angle » 30° (3 mm, 2 segments, Harden Normals) → arêtes qui
         accrochent la lumière ; Shade Smooth.
-Usage : blender -b --factory-startup --python build_ch02_05_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_05_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,0 +1,47 @@
+{
+  "build": "build_ch04_04_files.py",
+  "validator": "validate_ch04_04.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_04_nodes_solution.blend",
+      "exercise": "nodes",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_04_nodes_starter.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_orphan.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_const_metal.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_no_mapping.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_no_output.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_flat_ramp.blend",
+      "exercise": "nodes",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_04_nodes_huge_scale.blend",
+      "exercise": "nodes",
+      "expect": false
+    }
+  ]
+}

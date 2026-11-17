@@ -20,7 +20,7 @@
     ["COMPLETED_EXAMPLES/ch01_10_bridge_reference.png", "Rendu de référence"],
     ["SCRIPTS/validate_ch01_10.py", "Correcteur (géométrie évaluée, ordre de pile)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_10_bridge_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_10.py\" --python-exit-code 1 -- --exercise bridge --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_10_bridge_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_10.py\" -- --exercise bridge --render",
   "deliverables": ["ch01_10_bridge_<prenom>_v001.blend validé.", "Mini-projet : la passerelle."],
   "next": "[CH01.11 — Matériaux simples](../CH01_11_MATERIALS_BASICS/README.md)"
 }

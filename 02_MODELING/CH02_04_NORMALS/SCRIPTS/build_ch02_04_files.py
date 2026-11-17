@@ -9,7 +9,7 @@ build_ch02_04_files.py — « Les ombrages ratés » (CH02.04, normales).
   COMPLETED_EXAMPLES/ch02_04_normals_solution.blend (+ _reference.png, + _starter_view.png)
       GEO_Flipped : Recalculate Outside ; GEO_Can : Shade Auto Smooth 30° ; GEO_Block : Weighted
       Normal (Face Influence, Keep Sharp).
-Usage : blender -b --factory-startup --python build_ch02_04_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_04_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

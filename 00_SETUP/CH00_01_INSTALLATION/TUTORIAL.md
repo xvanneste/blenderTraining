@@ -6,10 +6,22 @@
 
 ---
 
+## Premier jalon — Rendre et conserver une image
+
+Si Blender est déjà installé, commencez ici. Sinon, faites les tutoriels 1 et 2, puis revenez à ce jalon. La mire est une scène préparée avec une caméra, des lumières et quelques formes. Votre premier geste consiste à obtenir l’image que voit cette caméra.
+
+1. Téléchargez ou ouvrez la [mire de départ](STARTER_FILES/ch00_01_testcard_starter.blend). Dans Blender, utilisez **File → Save As** et enregistrez une copie dans votre dossier de travail sous ch00_01_testcard_prenom_v001.blend.
+2. Dans **Render Properties** (propriétés de rendu), choisissez **Cycles** comme moteur et **CPU** comme périphérique. Dans **Sampling → Render**, réglez **Max Samples** sur 128 et activez **Denoise**. Dans **Output Properties → Format**, laissez l’échelle à 100 %. Sous **Output**, utilisez le chemin relatif //renders/mire_. Rouvrez les propriétés pour vérifier que vous avez réglé **Render** et non **Viewport** sous Sampling.
+3. Enregistrez le .blend. Lancez **Render → Render Image** ou **F12**. Quand le calcul se termine, la fenêtre de rendu affiche **Render Result**. Comparez le cadre et la présence des formes au [rendu de référence](COMPLETED_EXAMPLES/ch00_01_testcard_reference_render.png). Le débruitage et le périphérique peuvent donner de petites différences.
+4. Dans la fenêtre de rendu, ouvrez **Image → Save As**, choisissez **PNG**, saisissez mire_v001.png dans le dossier de travail, puis validez. Ouvrez le PNG dans un lecteur d’images. Rouvrez aussi votre copie .blend et retrouvez le moteur Cycles et le périphérique CPU.
+5. **À refaire sans le pas-à-pas**. Dans une nouvelle copie v002, passez à 64 échantillons et enregistrez le second PNG sous mire_v002.png. Les deux PNG doivent rester distincts et cadrer la même scène. Si votre objectif est d’aller plus loin, le tutoriel 3 permet de comparer un GPU compatible, et le tutoriel 4 permet de refaire le rendu par le terminal.
+
+**Réussite** Vous avez deux fichiers .blend versionnés et deux PNG lisibles. F12 calcule l’image courante. L’enregistrement du PNG depuis Image → Save As produit le fichier que vous pouvez partager.
+
 ## Tutoriel 1 — Installer Blender 5.3 (installeur ou zip)
 
 ### Option A : installeur Windows (recommandé pour le poste principal)
-1. Ouvrez un navigateur sur **https://www.blender.org/download/**.
+1. Ouvrez un navigateur sur [la page Blender 5.3](https://www.blender.org/releases/5-3/).
 2. Le site détecte Windows : vérifiez que la version proposée est **5.3.x** et
    l'architecture **x64** (ou ARM64 si vous avez un PC ARM).
 3. Téléchargez le fichier **Windows Installer** (`blender-5.3.x-windows-x64.msi`).
@@ -60,7 +72,7 @@
 
 ---
 
-## Tutoriel 3 — Activer le GPU pour Cycles
+## Tutoriel 3 — Activer le GPU pour Cycles (approfondissement)
 
 1. Menu **Edit → Preferences** (Édition → Préférences).
 2. Onglet **System** (à gauche).
@@ -68,7 +80,8 @@
    s'affichent (selon votre plateforme).
    - Carte **NVIDIA RTX** : choisissez **OptiX**.
    - Autre carte NVIDIA : **CUDA**.
-   - **AMD** : **HIP**. **Intel Arc** : **oneAPI**.
+   - **AMD compatible** : **HIP**. **Intel compatible** : **oneAPI**. Sur macOS, vérifiez **Metal** si le matériel est compatible.
+   - Si aucun périphérique compatible n’apparaît, gardez **CPU** sur la mire.
 4. Cochez votre carte graphique dans la liste. **Décochez le CPU** sauf si vous savez que
    le rendu hybride est plus rapide sur votre machine (à mesurer avec le benchmark).
    ✅ Votre GPU est listé et coché. S'il n'apparaît pas, voir TROUBLESHOOTING.md §2.
@@ -96,19 +109,16 @@ l'utiliser.
    & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" --version
    ```
    ✅ La première ligne indique `Blender 5.3.0`, suivie de la date et du *hash* du build.
-3. Placez-vous dans le dossier du chapitre (adaptez le chemin) :
-   ```powershell
-   cd "G:\_formation\blender\BLENDER_CINEMA_MASTER_ACADEMY\00_SETUP\CH00_01_INSTALLATION"
-   ```
-4. Rendez l'image 1 de la mire **sans ouvrir l'interface**, avec OptiX :
-   ```powershell
-   & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b `
-     "COMPLETED_EXAMPLES\ch00_01_testcard_solution.blend" `
-     -o "//renders/cli_####" -f 1 -- --cycles-device OPTIX
-   ```
-   (remplacez `OPTIX` par `CUDA`, `HIP`, `ONEAPI` ou `CPU` selon votre matériel)
-   ✅ Le terminal affiche la progression puis `Saved: '...\renders\cli_0001.png'`.
-   Le fichier est créé dans `COMPLETED_EXAMPLES\renders\` (le `//` signifie « à côté du .blend »).
+3. Dans PowerShell, placez-vous dans le dossier qui contient votre copie de la mire. Le chemin de Blender ci-dessous correspond à l’installeur Windows par défaut. Remplacez-le par le chemin de votre exécutable si vous utilisez l’archive portable.
+4. Rendez l’image 1 en CPU. Conservez le nom de fichier appliqué à votre copie.
+
+```powershell
+$blender = "C:/Program Files/Blender Foundation/Blender 5.3/blender.exe"
+$scene = (Resolve-Path "./ch00_01_testcard_prenom_v001.blend").Path
+& $blender -b $scene -o "//renders/cli_cpu_####" -F PNG -f 1 -- --cycles-device CPU
+```
+
+Le terminal indique le chemin effectivement écrit. Ouvrez renders/cli_cpu_0001.png à côté de votre .blend. Placez les options de sortie avant -f, qui déclenche le calcul. Le suffixe #### indique quatre positions réservées au numéro de l’image. Sur un poste compatible, remplacez CPU par le périphérique validé au tutoriel 3 et utilisez un préfixe différent pour garder les deux mesures.
 
 > 💡 Astuce : créez un alias PowerShell pour ne plus taper le chemin complet. Dans votre
 > profil PowerShell (`notepad $PROFILE`) ajoutez :
@@ -148,13 +158,13 @@ tableau `benchmark_<date>.md`. Comparez avec `COMPLETED_EXAMPLES/benchmark_refer
 
 ## Tutoriel 6 — Utiliser le correcteur automatique
 
-Après avoir fait un exercice et enregistré votre fichier :
+Depuis le dossier du chapitre, indiquez le chemin de votre copie. Pour un fichier réglé sur CPU, utilisez testcard_cpu. Pour évaluer le réglage GPU, utilisez testcard. Le mini-rendu du correcteur utilise le CPU.
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_01_testcard_prenom_v001.blend" `
-  --python "SCRIPTS\validate_ch00_01.py" --python-exit-code 1 -- --exercise testcard --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_01.py" -- --exercise testcard_cpu --render
 ```
-- `--exercise testcard` pour les exercices 1–2, `--exercise broken` pour l'exercice 3.
+- Pour les exercices 1–2, choisissez testcard_cpu ou testcard selon le périphérique configuré. Utilisez broken pour l’exercice 3.
 - `--render` ajoute un petit rendu de contrôle (CPU, 25 %, 8 échantillons).
 
 ✅ Le correcteur affiche ✔ / ✘ pour chaque critère, une **piste** pour chaque erreur, un

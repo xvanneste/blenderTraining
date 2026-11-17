@@ -1,0 +1,112 @@
+{
+  "chapter": "CH07.13",
+  "title": "Animation non linéaire",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert l'éditeur NLA ?",
+      "choices": [
+        "Monter des actions comme des clips",
+        "Éditer les poids",
+        "Régler la lumière",
+        "Rendre une image"
+      ],
+      "answer": 0,
+      "explain": "On place, décale, répète et fond des actions sans modifier leurs clés."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un strip ?",
+      "choices": [
+        "Une action placée sur une piste, avec début, fin, échelle et répétition",
+        "Un objet",
+        "Un matériau",
+        "Une caméra"
+      ],
+      "answer": 0,
+      "explain": "Strip Slide : images 1 à 49 avec Repeat 2."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Repeat = 2 sur un strip de 24 images ?",
+      "choices": [
+        "Le strip couvre 48 images (l'action joue deux fois)",
+        "Il double la vitesse",
+        "Il double les valeurs",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Le strip passe de 1–25 à 1–49 ; X repart de 0 à l'image 25."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi monter plutôt que copier des clés ?",
+      "answer_text": "Une action réutilisée reste unique : on corrige une fois et tous les strips suivent ; le NLA décale, répète, ralentit et fond sans toucher aux clés."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que veut dire Push Down ?",
+      "answer_text": "Transformer l'action active en strip d'une nouvelle piste NLA ; l'objet n'a plus d'action active."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que se passe-t-il si une action reste active ?",
+      "choices": [
+        "Elle passe par-dessus le NLA et le masque",
+        "Rien",
+        "Elle est supprimée",
+        "Elle est dupliquée"
+      ],
+      "answer": 0,
+      "explain": "Contre-exemple : X(30) = 4,00 au lieu de 0,83 : l'action active écrase le montage."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel est l'effet de Blend In = 6 ?",
+      "choices": [
+        "Le strip entre progressivement en 6 images",
+        "Le strip dure 6 images",
+        "Le strip se répète 6 fois",
+        "Le strip est muet"
+      ],
+      "answer": 0,
+      "explain": "À l'image 16 (3 images après le début), l'influence est de 0,5 : rotation 11,25° au lieu de 22,5°."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que fait l'échelle d'un strip ?",
+      "answer_text": "Elle ralentit (> 1) ou accélère (< 1) l'action : avec 0,5 le strip Spin dure 12 images (13 à 25)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi deux pistes ?",
+      "answer_text": "Deux strips qui se chevauchent dans le temps ne peuvent pas partager une piste ; Move et Spin agissent sur des canaux différents et se combinent."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la plage de la scène est-elle 1–49 ?",
+      "answer_text": "Le strip Move s'arrête à l'image 49 : la plage doit le couvrir."
+    }
+  ]
+}

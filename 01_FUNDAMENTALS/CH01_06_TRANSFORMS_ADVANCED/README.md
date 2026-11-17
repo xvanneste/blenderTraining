@@ -57,7 +57,7 @@ Une caisse peut mesurer 2 mètres parce que son maillage mesure 2 mètres, ou pa
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_06_moving_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_06.py" --python-exit-code 1 -- --exercise moving
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_06.py" -- --exercise moving
 ```
 
 ## Livrables attendus

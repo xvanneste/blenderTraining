@@ -58,7 +58,7 @@ Un storyboard n'est pas une suite de jolis dessins : c'est une suite de cadres p
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_05_composition_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_05.py" --python-exit-code 1 -- --exercise composition --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_05.py" -- --exercise composition --render
 ```
 
 ## Livrables attendus

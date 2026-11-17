@@ -11,7 +11,7 @@ Les préférences sont le « réglage du siège et des rétroviseurs » avant de
 
 ## Prérequis
 
-- CH00.01 validé (Blender 5.3 installé, GPU activé).
+- Blender 5.3 installé. Le [premier jalon de CH00.01](../CH00_01_INSTALLATION/TUTORIAL.md#premier-jalon--rendre-et-conserver-une-image) suffit.
 - Savoir ouvrir un fichier .blend.
 
 ## Objectifs pédagogiques
@@ -22,7 +22,7 @@ Les préférences sont le « réglage du siège et des rétroviseurs » avant de
 3. Régler l'interface : Resolution Scale, thème, langue, barre d'état.
 4. Régler la navigation : Orbit Around Selection, Zoom to Mouse Position, Auto Depth, Auto Perspective, émulations.
 5. Sécuriser son travail : Undo Steps, Save Versions, Auto-Save, chemins relatifs.
-6. Sauvegarder, annuler et réinitialiser ses préférences sans risque.
+6. Sauvegarder des préférences et tester leur restauration dans un profil séparé.
 7. Auditer et appliquer un profil de préférences par script.
 
 ## Compétences évaluées
@@ -41,6 +41,10 @@ Les préférences sont le « réglage du siège et des rétroviseurs » avant de
 | L2 | Interface : échelle, thème, langue, barre d'état | 20 min |
 | L3 | Navigation : orbite, zoom, profondeur, émulations | 35 min |
 | L4 | Édition et sécurité : annulation, versions, auto-save, startup file | 25 min |
+
+## Premier passage
+
+Ouvrez le [jalon de cadrage](TUTORIAL.md#premier-jalon--cadrer-un-objet-et-retrouver-ses-réglages). Poursuivez avec l’archive de préférences pour pouvoir reprendre vos réglages. Les mesures de temps sont réservées à la consolidation.
 
 ## Parcours conseillé
 
@@ -65,7 +69,7 @@ Les préférences sont le « réglage du siège et des rétroviseurs » avant de
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch00_02_navigation_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch00_02.py" --python-exit-code 1 -- --exercise needle --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch00_02.py" -- --exercise needle --render
 ```
 
 ## Livrables attendus

@@ -2,7 +2,7 @@
 validate_ch00_02.py — Correcteur de l'exercice 3 de CH00.02 (cadrer l'aiguille).
 
 Usage :
-  blender -b --factory-startup <fichier.blend> --python validate_ch00_02.py --python-exit-code 1 -- --exercise needle [--render]
+  blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch00_02.py -- --exercise needle [--render]
 Vérifie que CAM_Needle est la caméra active, qu'elle est proche de l'aiguille (< 3 m),
 que l'aiguille est dans le cadre et occupe une part visible de l'image.
 Testé avec : Blender 5.3.0.

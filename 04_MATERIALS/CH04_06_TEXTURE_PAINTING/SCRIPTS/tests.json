@@ -1,0 +1,42 @@
+{
+  "build": "build_ch04_06_files.py",
+  "validator": "validate_ch04_06.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch04_06_painting_solution.blend",
+      "exercise": "painting",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch04_06_painting_starter.blend",
+      "exercise": "painting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_06_painting_blank.blend",
+      "exercise": "painting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_06_painting_one_color.blend",
+      "exercise": "painting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_06_painting_flood.blend",
+      "exercise": "painting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_06_painting_spill.blend",
+      "exercise": "painting",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch04_06_painting_unlinked.blend",
+      "exercise": "painting",
+      "expect": false
+    }
+  ]
+}

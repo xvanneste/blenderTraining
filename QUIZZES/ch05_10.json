@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.10",
+  "title": "Optimisation et outils",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle est la première cause de lourdeur d'un scattering ?",
+      "choices": [
+        "Le nom des nœuds",
+        "Le nombre de sommets de la géométrie instanciée multiplié par le nombre d'instances, surtout si elles sont réalisées",
+        "Le matériau",
+        "Le Seed"
+      ],
+      "answer": 1,
+      "explain": "64 côtés × 2 000 instances réalisées = 252 504 triangles ; 8 côtés instanciés = 14 triangles partagés."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait Realize Instances ?",
+      "choices": [
+        "Il les supprime",
+        "Il les convertit en géométrie propre : chaque copie a ses sommets",
+        "Il les colore",
+        "Il les lisse"
+      ],
+      "answer": 1,
+      "explain": "On ne réalise que si la suite exige une géométrie réelle (booléen, export, déformation par copie)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi borner Density à 5 ?",
+      "choices": [
+        "Par esthétique",
+        "Pour qu'un utilisateur ne puisse pas demander 400 001 instances par erreur (mesuré avec 1 000)",
+        "Pour le matériau",
+        "Pour le bake"
+      ],
+      "answer": 1,
+      "explain": "Une borne est une protection : 5/m² × 400 m² ≈ 2 000 instances."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Donnez trois règles d'optimisation d'un arbre.",
+      "answer_text": "Garder des instances ; réduire la géométrie instanciée ; borner les paramètres coûteux ; éviter les nœuds évalués inutilement ; réutiliser des attributs plutôt que recalculer."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi mesure-t-on des budgets de géométrie plutôt qu'un temps ?",
+      "answer_text": "Dans un script en arrière-plan le temps mesuré est trompeur (évaluation paresseuse et mise en cache : 0,001 s même pour 400 001 instances) ; le nombre de sommets, d'instances et de triangles est reproductible."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle option fait d'un arbre un outil applicable comme modificateur ?",
+      "choices": [
+        "is_modifier (option Modifier de l'arbre)",
+        "is_tool",
+        "Un nom commençant par MOD_",
+        "Un matériau"
+      ],
+      "answer": 0,
+      "explain": "`node_group.is_modifier` : l'arbre apparaît dans le menu Add Modifier > Geometry Nodes ; `is_tool` est une autre option (outils d'édition)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que doit faire un outil modificateur de la géométrie d'entrée ?",
+      "choices": [
+        "L'ignorer",
+        "La recevoir et la conserver (Join Geometry), en y ajoutant son résultat",
+        "La supprimer",
+        "La colorier"
+      ],
+      "answer": 1,
+      "explain": "Sinon le maillage de l'objet disparaît quand on applique l'outil (contre-exemple « ignores_input » : 0 sommet de base)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles métadonnées exige le correcteur pour un asset ?",
+      "answer_text": "Description, auteur, licence, au moins 2 tags et un catalogue présent dans blender_assets.cats.txt."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le catalogue est-il un fichier à part ?",
+      "answer_text": "Blender écrit les catalogues dans blender_assets.cats.txt, à côté du .blend de la bibliothèque : les assets y font référence par un identifiant (UUID)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment l'utilisateur retrouve-t-il l'outil ?",
+      "answer_text": "Dans l'Asset Browser (catalogue « Tools/Scatter ») si le dossier est une bibliothèque déclarée ; en glissant l'asset sur l'objet ou via le menu des modificateurs."
+    }
+  ]
+}

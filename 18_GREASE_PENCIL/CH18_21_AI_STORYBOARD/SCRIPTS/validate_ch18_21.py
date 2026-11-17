@@ -1,6 +1,6 @@
 """
 validate_ch18_21.py — Correcteur « Storyboard assisté, contrôlé » (CH18.21).
-Usage : … --python validate_ch18_21.py --python-exit-code 1 -- --exercise assist [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_21.py -- --exercise assist [--render]
 1. CONTRÔLE de la liste SHOTLIST (proposition d'IA corrigée) : ≥ 5 plans, codes uniques, valeurs et
    sujets connus, toutes les caméras côté « face » (règle des 180°), durées > 0, total = durée cible
    annoncée dans l'en-tête (« durée cible : 12 s »).

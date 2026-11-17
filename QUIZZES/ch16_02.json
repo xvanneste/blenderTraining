@@ -1,0 +1,95 @@
+{
+  "chapter": "CH16.02",
+  "title": "Séquences et plans",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Combien de temps durent 2880 images à 24 i/s ?",
+      "type": "mcq",
+      "choices": [
+        "120 s",
+        "96 s",
+        "180 s"
+      ],
+      "answer": 0,
+      "explain": "Un identifiant stable conserve l’historique quand une coupe change. Une plage de montage peut changer à chaque version."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que conserver quand une coupe décale le plan ?",
+      "type": "mcq",
+      "choices": [
+        "Son absolu de timeline dans tous les cas",
+        "Son identifiant et l’historique de version",
+        "Seulement un nouveau nom"
+      ],
+      "answer": 1,
+      "explain": "La durée d’un plan vaut fin moins début plus un dans la feuille. Deux plages adjacentes s’enchaînent sans image noire."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Comment mesurer une plage inclusive ?",
+      "type": "mcq",
+      "choices": [
+        "Fin moins début",
+        "Fin plus début",
+        "Fin moins début plus un"
+      ],
+      "answer": 2,
+      "explain": "Le suivi doit distinguer détail du plan, changement de montage et statut d’approbation."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Une revue commente SH030 mais ce nom apparaît dans trois séquences. »",
+      "answer_text": "L’identifiant de plan a été abrégé sans sa séquence. Utilisez SQ020_SH030 dans les notes et indiquez la version de montage."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La coupe avant SQ020_SH030 avance de 24 images. Où commence le nouveau plan ?",
+      "answer_text": "À 1393 au lieu de 1417. La fin du précédent passe à 1392 à durée totale constante."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment insérer un plan sans renommer ceux qui suivent ?",
+      "answer_text": "Attribuer SH025 entre SH020 et SH030 et noter les nouvelles bornes."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel diagnostic faire si la timeline a 2879 images ?",
+      "answer_text": "Comparer les plages inclusives et chercher le premier début qui ne vaut pas la fin précédente plus un."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Décrire les séquences » vérifiable ?",
+      "answer_text": "Douze identifiants uniques, trois séquences et un motif de coupe par plan."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Conformer la timeline » vérifiable ?",
+      "answer_text": "La timeline du pilote couvre 1–2880. SQ020_SH010 commence à 961 et SQ030_SH010 à 1921."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Réviser et suivre » vérifiable ?",
+      "answer_text": "Le total reste 2880 images et la note identifie deux plans affectés."
+    }
+  ]
+}

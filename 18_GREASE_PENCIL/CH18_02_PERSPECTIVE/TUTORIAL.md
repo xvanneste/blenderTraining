@@ -36,6 +36,10 @@ Enregistrez `ch18_02_perspective_<prenom>_v001.blend` puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_02_perspective_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_02.py" --python-exit-code 1 -- --exercise perspective --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_02.py" -- --exercise perspective --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_02_perspective_reference.png`.
+
+## Variante de contrôle
+
+Sur une copie du couloir, déplacez l’horizon et reconstruisez les fuyantes. Comparez avec une variante qui garde la hauteur et change le point de fuite horizontal. **Preuve** Vous distinguez changement de hauteur du regard et changement de direction.

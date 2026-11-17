@@ -1,0 +1,43 @@
+{
+  "code": "CH14.01",
+  "title": "Cadre, éthique et droits",
+  "phase_title": "14 — IA appliquée à Blender et au cinéma",
+  "level": "avancé",
+  "duration": "2 h",
+  "intro": "Décider si une référence, un son ou une sortie générée peut entrer dans un projet fictif.",
+  "prereqs": [
+    "CH13.09"
+  ],
+  "objectives": [
+    "Trois lignes avec une décision, une preuve et un responsable de suivi.",
+    "Le brief reste utile et aucun identifiant personnel du dossier n’apparaît.",
+    "La source au contrat introuvable est suspendue, avec un remplacement documenté."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Inventaire",
+      ""
+    ],
+    [
+      "L2",
+      "Minimisation",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/cas_hybride.md",
+      "Données fictives pour la revue"
+    ],
+    [
+      "https://cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative",
+      "Guide CNIL sur les données personnelles"
+    ]
+  ],
+  "pass_criteria": [
+    "Trois lignes avec une décision, une preuve et un responsable de suivi.",
+    "Le brief reste utile et aucun identifiant personnel du dossier n’apparaît.",
+    "La source au contrat introuvable est suspendue, avec un remplacement documenté."
+  ]
+}

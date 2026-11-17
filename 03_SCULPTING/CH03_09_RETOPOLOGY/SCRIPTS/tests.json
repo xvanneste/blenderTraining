@@ -1,0 +1,42 @@
+{
+  "build": "build_ch03_09_files.py",
+  "validator": "validate_ch03_09.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch03_09_retopo_solution.blend",
+      "exercise": "retopo",
+      "expect": true,
+      "render": true
+    },
+    {
+      "file": "STARTER_FILES/ch03_09_retopo_starter.blend",
+      "exercise": "retopo",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_09_retopo_uniform.blend",
+      "exercise": "retopo",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_09_retopo_triangulated.blend",
+      "exercise": "retopo",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_09_retopo_floating.blend",
+      "exercise": "retopo",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_09_retopo_too_dense.blend",
+      "exercise": "retopo",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch03_09_retopo_misplaced.blend",
+      "exercise": "retopo",
+      "expect": false
+    }
+  ]
+}

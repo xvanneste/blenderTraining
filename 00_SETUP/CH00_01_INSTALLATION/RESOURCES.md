@@ -1,22 +1,22 @@
 # CH00.01 — Ressources
 
-## Documentation officielle (consultée le 14/11/2026)
+## Documentation officielle · Blender 5.3
 | Ressource | URL | Utilisée pour |
 |---|---|---|
-| Téléchargement | https://www.blender.org/download/ | Tutoriel 1 |
+| Téléchargement | https://www.blender.org/releases/5-3/ | Tutoriel 1 |
 | Configuration requise | https://www.blender.org/download/requirements/ | Choix du matériel |
 | Versions LTS | https://www.blender.org/download/lts/ | L1 |
 | Notes de version 5.3 | https://developer.blender.org/docs/release_notes/5.3/ | L1, compatibilité |
-| Manuel — Installation Windows | https://docs.blender.org/manual/en/latest/getting_started/installing/windows.html | L2 |
-| Manuel — Disposition des dossiers (portable, chemins) | https://docs.blender.org/manual/en/latest/advanced/blender_directory_layout.html | L2, L3 |
-| Manuel — Réglages initiaux (écran d'accueil) | https://docs.blender.org/manual/en/latest/getting_started/configuration/defaults.html | Tutoriel 2 |
-| Manuel — Arguments de ligne de commande | https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html | L4 |
-| Manuel — Rendu GPU Cycles | https://docs.blender.org/manual/en/latest/render/cycles/gpu_rendering.html | L4 |
-| Manuel — Récupération (Recover) | https://docs.blender.org/manual/en/latest/files/blend/open_save.html | TROUBLESHOOTING |
-| API Python | https://docs.blender.org/api/current/ | Scripts |
+| Manuel — Installation Windows | https://docs.blender.org/manual/en/5.3/getting_started/installing/windows.html | L2 |
+| Manuel — Disposition des dossiers (portable, chemins) | https://docs.blender.org/manual/en/5.3/advanced/blender_directory_layout.html | L2, L3 |
+| Manuel — Réglages initiaux (écran d'accueil) | https://docs.blender.org/manual/en/5.3/getting_started/configuration/defaults.html | Tutoriel 2 |
+| Manuel — Arguments de ligne de commande | https://docs.blender.org/manual/en/5.3/advanced/command_line/arguments.html | L4 |
+| Manuel — Rendu GPU Cycles | https://docs.blender.org/manual/en/5.3/render/cycles/gpu_rendering.html | L4 |
+| Manuel — Récupération (Recover) | https://docs.blender.org/manual/en/5.3/files/blend/open_save.html | TROUBLESHOOTING |
+| API Python | https://docs.blender.org/api/5.3/ | Scripts |
 | Licence de Blender | https://www.blender.org/about/license/ | L1 |
 
-Le manuel hors ligne est consultable depuis Blender : *Help → Manual*.
+*Help → Manual* ouvre le manuel en ligne.
 
 ## Presse spécialisée (sortie de 5.3, sources secondaires)
 - CG Channel, 11/11/2026 — annonce de Blender 5.3.

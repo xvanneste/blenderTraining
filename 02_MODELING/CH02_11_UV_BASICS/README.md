@@ -58,7 +58,7 @@ Pour poser une texture image sur un objet 3D, il faut le déplier comme un patro
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_11_uv_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_11.py" --python-exit-code 1 -- --exercise uv --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_11.py" -- --exercise uv --render
 ```
 
 ## Livrables attendus

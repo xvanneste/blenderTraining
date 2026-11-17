@@ -1,0 +1,68 @@
+{
+  "code": "CH09.07",
+  "title": "Composition",
+  "phase_title": "9 — Lighting et cinématographie",
+  "level": "intermédiaire",
+  "duration": "6 h",
+  "intro": "Composer, c'est décider où placer les choses dans le cadre. La règle des tiers divise l'image en neuf par deux lignes verticales et deux lignes horizontales ; on place le sujet sur une ligne ou une intersection, et l'horizon sur une ligne horizontale plutôt qu'au milieu. Ce n'est pas une loi : c'est un point de départ qui évite la composition statique du centre. Ce chapitre recompose un plan avec la caméra seule : les décalages d'objectif (Shift X et Shift Y) déplacent le cadre sans changer la perspective. Le correcteur segmente un rendu plat par couleur et mesure la position du sujet et de l'horizon.",
+  "prereqs": [
+    "CH01 (caméra, rendu), CH09.06 (lecture de l'image)."
+  ],
+  "objectives": [
+    "Placer un sujet sur le tiers gauche ou droit.",
+    "Placer l'horizon sur un tiers.",
+    "Utiliser Shift X et Shift Y d'une caméra.",
+    "Mesurer une composition sur un rendu."
+  ],
+  "competences": [
+    [
+      "C09.07.a",
+      "Composer un plan",
+      "Exercice 2 (correcteur) + grille des tiers"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Tiers, horizon, marges",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Shift et mesure",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch09_07_composition_starter.blend",
+      "Sujet au centre (50 %) et horizon au milieu (51 %) : composition statique"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_07_composition_solution.blend",
+      "Shift X +0,167, Shift Y −0,1 : sujet à 33 % de la largeur, horizon à 33 % de la hauteur, sujet entier (de 29 % à 68 %)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch09_07_composition_reference.png",
+      "Rendu de départ (gauche) et solution (droite) avec la grille des tiers en blanc et la ligne verticale du tiers gauche en jaune"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sujet à droite, horizon au milieu, sujet coupé, sujet trop petit, tout centré)"
+    ],
+    [
+      "SCRIPTS/validate_ch09_07.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch09_07_composition_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch09_07.py\" -- --exercise composition",
+  "deliverables": [
+    "Composition validée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH09.08 — Objectifs et focales](../CH09_08_LENSES/README.md)"
+}

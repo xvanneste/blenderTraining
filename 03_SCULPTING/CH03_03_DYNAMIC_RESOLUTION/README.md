@@ -59,7 +59,7 @@ Adapter la densité du maillage à l'étape du sculpt : Voxel Remesh pour fusion
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch03_03_remesh_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch03_03.py" --python-exit-code 1 -- --exercise remesh --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch03_03.py" -- --exercise remesh --render
 ```
 
 ## Livrables attendus

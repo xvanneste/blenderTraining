@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_03_files.py",
+  "validator": "validate_ch12_03.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_03_sound_solution.blend",
+      "exercise": "sound",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_03_sound_starter.blend",
+      "exercise": "sound",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_03_sound_late_hit.blend",
+      "exercise": "sound",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_03_sound_early_voice.blend",
+      "exercise": "sound",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_03_sound_short_ambience.blend",
+      "exercise": "sound",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_03_sound_clipping.blend",
+      "exercise": "sound",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_03_sound_muted_hit.blend",
+      "exercise": "sound",
+      "expect": false
+    }
+  ]
+}

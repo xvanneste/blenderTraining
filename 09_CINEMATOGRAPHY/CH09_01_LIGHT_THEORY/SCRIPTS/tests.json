@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_01_files.py",
+  "validator": "validate_ch09_01.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_01_light_solution.blend",
+      "exercise": "light",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_01_light_starter.blend",
+      "exercise": "light",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_01_light_under_exposed.blend",
+      "exercise": "light",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_01_light_over_exposed.blend",
+      "exercise": "light",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_01_light_too_close.blend",
+      "exercise": "light",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_01_light_hard_shadow.blend",
+      "exercise": "light",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_01_light_cold_light.blend",
+      "exercise": "light",
+      "expect": false
+    }
+  ]
+}

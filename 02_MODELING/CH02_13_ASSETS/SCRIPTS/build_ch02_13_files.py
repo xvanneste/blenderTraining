@@ -9,7 +9,7 @@ Réutilise les solutions des chapitres précédents (append) :
   COMPLETED_EXAMPLES/ch02_13_library_solution.blend + COMPLETED_EXAMPLES/blender_assets.cats.txt
       6 assets marqués : catalogue, description, auteur, licence, ≥ 2 tags, aperçu généré.
   COMPLETED_EXAMPLES/ch02_13_library_reference.png
-Usage : blender -b --factory-startup --python build_ch02_13_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_13_files.py
 Testé avec : Blender 5.3.0 (les .blend des chapitres CH02.02, 02.03, 02.05, 02.08, 02.11 doivent exister).
 """
 import os

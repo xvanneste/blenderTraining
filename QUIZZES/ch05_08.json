@@ -1,0 +1,112 @@
+{
+  "chapter": "CH05.08",
+  "title": "Architecture procédurale",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quelle hauteur totale pour 7 étages de 3,4 m ?",
+      "choices": [
+        "21 m",
+        "23,8 m",
+        "24 m",
+        "20,4 m"
+      ],
+      "answer": 1,
+      "explain": "7 × 3,4 = 23,8 m ; le correcteur mesure 23,80 m."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi le Cube du corps est-il translaté de hauteur ÷ 2 ?",
+      "choices": [
+        "Pour le colorer",
+        "Le Cube est centré : il faut le monter de la moitié de sa hauteur pour poser sa base sur z = 0",
+        "Pour le lisser",
+        "Pour l'instancier"
+      ],
+      "answer": 1,
+      "explain": "Le Cube du nœud est centré sur l'origine."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment placer une fenêtre au centre de chaque travée avec une Grid ?",
+      "choices": [
+        "Grid de Vertices X = Bays et Size X = (Bays − 1) × Bay Width : les sommets tombent aux centres",
+        "Grid de Size X = Bays",
+        "Avec Random Value",
+        "Avec Distribute"
+      ],
+      "answer": 0,
+      "explain": "Aux bords, les sommets d'une Grid sont aux extrémités : n sommets, espacement Size ÷ (n − 1) = Bay Width."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que vaut Size X pour 5 travées de 2,5 m ?",
+      "answer_text": "(5 − 1) × 2,5 = 10 m ; les sommets sont à −5, −2,5, 0, 2,5, 5 : espacés de 2,5 m, symétriques autour de l'axe."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi tourner la Grid de 90° autour de X ?",
+      "answer_text": "La Grid est dans le plan XY ; la façade est dans le plan XZ : une rotation de 90° autour de X amène Y vers Z."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que montre le contre-exemple « fixed_count » ?",
+      "choices": [
+        "L'outil marche en défaut mais pas pour d'autres réglages : le nombre de fenêtres ne suit pas Bays et Floors",
+        "Un nœud orphelin",
+        "Un matériau manquant",
+        "Une couleur fausse"
+      ],
+      "answer": 0,
+      "explain": "Il passe le réglage A (5 × 4) et échoue au réglage B (7 × 3) : d'où deux réglages dans le correcteur."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "À quelle hauteur est la première rangée de fenêtres ?",
+      "choices": [
+        "À 0",
+        "À 0,55 × Floor Height",
+        "À Floor Height",
+        "À la moitié du bâtiment"
+      ],
+      "answer": 1,
+      "explain": "0,55 × hauteur d'étage : une allège sous la fenêtre, comme sur un vrai étage."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi tester deux réglages et non un seul ?",
+      "answer_text": "Un outil peut être correct pour ses valeurs par défaut et faux dès qu'on change un paramètre (valeur codée en dur, mauvais lien) : deux réglages différents l'exposent."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle mesure détecte des fenêtres posées « dans » le mur ?",
+      "answer_text": "Leur y doit valoir −Depth ÷ 2 (± 5 cm) : à y = 0 elles sont au centre du volume, invisibles (contre-exemple « off_facade »)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment ajouter une porte au rez-de-chaussée ?",
+      "answer_text": "Instancier une porte sur la travée centrale du premier étage et supprimer la fenêtre correspondante (Selection de Instance on Points ou Delete Geometry sur un Index)."
+    }
+  ]
+}

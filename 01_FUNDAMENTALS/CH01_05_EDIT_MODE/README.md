@@ -59,7 +59,7 @@ Jusqu'ici vous avez déplacé des objets entiers. En Edit Mode, vous prenez le c
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch01_05_house_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch01_05.py" --python-exit-code 1 -- --exercise house
+  --python-exit-code 1 --python "SCRIPTS\validate_ch01_05.py" -- --exercise house
 ```
 
 ## Livrables attendus

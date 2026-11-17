@@ -1,0 +1,41 @@
+{
+  "build": "build_ch09_07_files.py",
+  "validator": "validate_ch09_07.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_07_composition_solution.blend",
+      "exercise": "composition",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_07_composition_starter.blend",
+      "exercise": "composition",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_07_composition_subject_right.blend",
+      "exercise": "composition",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_07_composition_horizon_middle.blend",
+      "exercise": "composition",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_07_composition_cropped.blend",
+      "exercise": "composition",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_07_composition_tiny_subject.blend",
+      "exercise": "composition",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_07_composition_centered.blend",
+      "exercise": "composition",
+      "expect": false
+    }
+  ]
+}

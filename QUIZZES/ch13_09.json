@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.09",
+  "title": "Débogage et performance",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que vérifier avant de comparer les temps ?",
+      "type": "mcq",
+      "choices": [
+        "Le nombre de commentaires",
+        "La couleur des logs",
+        "L’équivalence des résultats"
+      ],
+      "answer": 2,
+      "explain": "Le type d’exception précise le mécanisme. La pile montre comment l’exécution y est arrivée."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Que décrit la dernière ligne habituelle du traceback ?",
+      "type": "mcq",
+      "choices": [
+        "Le type et le message d’erreur",
+        "Le temps total",
+        "La version de la scène"
+      ],
+      "answer": 0,
+      "explain": "Une règle d’absence explicite évite un résultat incomplet difficile à voir."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Qu’inclure dans la mesure du dictionnaire ?",
+      "type": "mcq",
+      "choices": [
+        "Les accès seulement dans tous les cas",
+        "Sa construction et les accès",
+        "Le temps d’ouverture de Blender"
+      ],
+      "answer": 1,
+      "explain": "La création du dictionnaire fait partie de la mesure. Les temps servent à comparer ce jeu de données."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le code optimisé affiche un meilleur temps mais perd des demandes. »",
+      "answer_text": "La version rapide a changé le traitement des absences ou l’ordre des résultats. Comparez les sorties et les erreurs sur le même jeu avant de chronométrer."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que faites-vous avant de corriger une exception intermittente ?",
+      "answer_text": "Conservez l’entrée, la version, l’appel et le traceback, puis réduisez-les à une reproduction stable."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer aussi 25 lignes ?",
+      "answer_text": "Le coût fixe de construction de l’index peut dominer quand le jeu et le nombre de recherches sont petits."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Une version rapide trie ses résultats au passage. Que vérifiez-vous ?",
+      "answer_text": "Que le changement d’ordre est prévu. Sinon les résultats doivent rester identiques, ordre compris."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Reproduire » ?",
+      "answer_text": "Vous identifiez l’accès qui échoue et un jeu de données reproductible."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Corriger » ?",
+      "answer_text": "Le message contient le plan absent et le chemin nominal est toujours correct."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Mesurer » ?",
+      "answer_text": "Le compte rendu donne taille, machine, version, temps et égalité du résultat."
+    }
+  ]
+}

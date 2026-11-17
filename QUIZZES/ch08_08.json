@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.08",
+  "title": "Cheveux et fourrure",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel type de système de particules pour des cheveux ?",
+      "choices": [
+        "Hair",
+        "Emitter",
+        "Fluid",
+        "Rigid"
+      ],
+      "answer": 0,
+      "explain": "Type Hair : brins attachés à une racine."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment limiter les cheveux à la calotte ?",
+      "choices": [
+        "Groupe de sommets en densité",
+        "Masque UV",
+        "Scale",
+        "Rien"
+      ],
+      "answer": 0,
+      "explain": "Vertex Groups > Density."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi servent les enfants ?",
+      "choices": [
+        "Multiplier les brins sans les simuler tous",
+        "Casser les cheveux",
+        "Ajouter des collisions",
+        "Changer la couleur"
+      ],
+      "answer": 0,
+      "explain": "Interpolated : suivent les parents voisins."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quel effet a Clumping ?",
+      "answer_text": "Il rassemble les enfants autour de leur parent : des mèches. Mesuré : distance moyenne extrémité enfant–parent 73 mm à 0, 39 mm à 0,5, 0 à 1."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi 300 parents pour 3 000 enfants ?",
+      "answer_text": "On ne simule que les parents ; les enfants sont déduits : plus rapide, même densité visuelle."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Où active-t-on la dynamique ?",
+      "choices": [
+        "Hair Dynamics du système de particules",
+        "Rigid Body",
+        "Cloth sur la tête",
+        "Force Field"
+      ],
+      "answer": 0,
+      "explain": "Panneau Hair Dynamics (`ps.use_hair_dynamics`)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle propriété du correcteur lit les enfants ?",
+      "choices": [
+        "`co_hair(particle_no=nb_parents + j)`",
+        "`hair_keys` des enfants",
+        "`children.location`",
+        "`bound_box`"
+      ],
+      "answer": 0,
+      "explain": "Les enfants n'ont pas de hair_keys : `co_hair` donne le point d'une étape (0 à 4 ici)."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que mesure la chute des pointes ?",
+      "answer_text": "Hauteur moyenne des pointes : 0,96 m à l'image 1, 0,28 m à l'image 30 : les cheveux retombent ; sans dynamique : 0 m de chute."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « no_group » ?",
+      "answer_text": "Sans densité par groupe, les racines sont réparties sur toute la sphère : z minimal −0,98 m au lieu de 0,23 m."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi lire les images dans l'ordre ?",
+      "answer_text": "La dynamique de cheveux est une simulation : il faut avancer image par image depuis l'image 1."
+    }
+  ]
+}

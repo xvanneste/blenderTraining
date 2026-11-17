@@ -1,0 +1,43 @@
+{
+  "code": "CH17.07",
+  "title": "Technical Director",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Localiser une défaillance de rig et livrer une correction reproductible par l’animation.",
+  "prereqs": [
+    "CH17.06"
+  ],
+  "objectives": [
+    "La version de défaut échoue à une action que la référence réalise.",
+    "Vous identifiez le lien rompu et éliminez une autre cause par une preuve.",
+    "Une fiche donne avant/après, procédure de migration et résultat de quatre tests."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Reproduire",
+      ""
+    ],
+    [
+      "L2",
+      "Localiser",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../06_RIGGING/PROJECT_P6/REFERENCE/p6_character_reference.blend",
+      "Rig humanoïde de référence"
+    ],
+    [
+      "../../06_RIGGING/CH06_04_IK_FK/README.md",
+      "Atelier IK/FK et contraintes"
+    ]
+  ],
+  "pass_criteria": [
+    "La version de défaut échoue à une action que la référence réalise.",
+    "Vous identifiez le lien rompu et éliminez une autre cause par une preuve.",
+    "Une fiche donne avant/après, procédure de migration et résultat de quatre tests."
+  ]
+}

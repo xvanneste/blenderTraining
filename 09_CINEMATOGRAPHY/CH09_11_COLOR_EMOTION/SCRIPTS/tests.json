@@ -1,0 +1,46 @@
+{
+  "build": "build_ch09_11_files.py",
+  "validator": "validate_ch09_11.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch09_11_color_solution.blend",
+      "exercise": "color",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch09_11_color_starter.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_wrong_hue_sadness.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_saturated_calm.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_dim_joy.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_same_hues.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_low_contrast.blend",
+      "exercise": "color",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch09_11_color_bright_fear.blend",
+      "exercise": "color",
+      "expect": false
+    }
+  ]
+}

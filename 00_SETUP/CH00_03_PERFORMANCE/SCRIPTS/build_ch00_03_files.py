@@ -9,7 +9,7 @@ build_ch00_03_files.py — Scène « trop lourde » à optimiser (CH00.03).
      Même image : maillage PARTAGÉ (duplications liées), Subdivision 1 / 2, Simplify activé
      comme garde-fou  ; ~0,26 million de faces au rendu (64 fois moins).
 
-Usage : blender -b --factory-startup --python build_ch00_03_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch00_03_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

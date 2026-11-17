@@ -7,7 +7,7 @@ build_ch02_09_files.py — « Retopologiser un rocher » (CH02.09).
   COMPLETED_EXAMPLES/ch02_09_retopo_solution.blend (+ _reference.png, + _wire.png)
       GEO_Retopo : cage de 216 quads (cube subdivisé arrondi) + modificateur Shrinkwrap
       (Nearest Surface Point, cible GEO_Sculpt, offset 5 mm) ; GEO_Sculpt masquée au rendu.
-Usage : blender -b --factory-startup --python build_ch02_09_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_09_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

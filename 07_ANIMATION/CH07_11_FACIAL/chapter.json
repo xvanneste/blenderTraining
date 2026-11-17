@@ -1,0 +1,68 @@
+{
+  "code": "CH07.11",
+  "title": "Animation faciale et lip sync",
+  "phase_title": "7 — Animation 3D",
+  "level": "expert",
+  "duration": "10 h",
+  "intro": "Le lip sync fait parler un visage : à chaque phonème correspond une forme de bouche, un VISÈME, atteinte légèrement avant le son. On n'anime pas chaque lettre mais des formes clés : bouche fermée (M, B, P), ouverte (A), arrondie (O), étirée (E). Ce chapitre fait parler le visage de CH06.09 sur une piste de huit phonèmes (48 images) : mâchoire et sourire suivent les visèmes, sans saut, et un clignement ponctue la phrase. Le correcteur lit la mâchoire, le sourire et le clignement sur les 48 images.",
+  "prereqs": [
+    "CH06.09 (rig facial), CH07.05 (timing), CH07.10 (acting)."
+  ],
+  "objectives": [
+    "Connaître les visèmes de base.",
+    "Synchroniser une bouche sur une piste de phonèmes.",
+    "Atteindre la forme une image avant le son.",
+    "Poser un clignement naturel."
+  ],
+  "competences": [
+    [
+      "C07.11.a",
+      "Lip sync",
+      "Exercice 2 (correcteur) + courbes de la solution"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Phonèmes et visèmes",
+      "5 h"
+    ],
+    [
+      "L2",
+      "Synchroniser et clignoter",
+      "5 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch07_11_lipsync_starter.blend",
+      "Visage de CH06.09 sans animation, avec le texte PHONEMES (piste de huit phonèmes)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_11_lipsync_solution.blend",
+      "Visèmes M, A, O, E synchronisés (une image avant le son), clignement à l'image 19"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch07_11_lipsync_reference.png",
+      "Courbes de mâchoire (orange), sourire (vert) et clignement (bleu) ; visèmes cibles en blanc"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (en retard, bouche ouverte sur M, sans variété, bouche qui saute, sans clignement, clignement lent)"
+    ],
+    [
+      "SCRIPTS/validate_ch07_11.py",
+      "Correcteur"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch07_11_lipsync_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch07_11.py\" -- --exercise lipsync",
+  "deliverables": [
+    "Lip sync validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH07.12 — Animation de caméra](../CH07_12_CAMERA/README.md)"
+}

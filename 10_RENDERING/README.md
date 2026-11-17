@@ -10,19 +10,19 @@
 | CH10.06 EXR et couleur | OpenEXR multicouche, profondeur de bits | C10.06.a sortie EXR correcte |
 | CH10.07 Rendu distribué | Ligne de commande, batch, farms (Flamenco) | C10.07.a rendre en batch |
 
-**Projet P10 :** scène complexe optimisée, rendue en EXR multicouche, avec rapport de temps.
+**Projet P10 :** [scène complexe optimisée, rendue en EXR multicouche, avec rapport de temps](PROJECT_P10/README.md).
 
 ## État de production
 
 | Chapitre | Statut |
 |---|---|
-| CH10.01 EEVEE en profondeur | ⬜ Non commencé |
-| CH10.02 Cycles en profondeur | ⬜ Non commencé |
-| CH10.03 Bruit et débruitage | ⬜ Non commencé |
-| CH10.04 Passes, AOV, View Layers | ⬜ Non commencé |
-| CH10.05 Mémoire et optimisation | ⬜ Non commencé |
-| CH10.06 EXR et couleur | ⬜ Non commencé |
-| CH10.07 Rendu distribué | ⬜ Non commencé |
+| [CH10.01 EEVEE en profondeur](CH10_01_EEVEE/README.md) | ✅ Terminé et vérifié |
+| [CH10.02 Cycles en profondeur](CH10_02_CYCLES/README.md) | ✅ Terminé et vérifié |
+| [CH10.03 Bruit et débruitage](CH10_03_DENOISING/README.md) | ✅ Terminé et vérifié |
+| [CH10.04 Passes, AOV, View Layers](CH10_04_PASSES/README.md) | ✅ Terminé et vérifié |
+| [CH10.05 Mémoire et optimisation](CH10_05_MEMORY/README.md) | ✅ Terminé et vérifié |
+| [CH10.06 EXR et couleur](CH10_06_EXR_COLOR/README.md) | ✅ Terminé et vérifié |
+| [CH10.07 Rendu distribué](CH10_07_BATCH/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre aura son sous-dossier `CH10_MM_NOM/` conforme à

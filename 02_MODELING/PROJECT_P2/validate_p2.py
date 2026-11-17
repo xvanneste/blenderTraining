@@ -1,6 +1,6 @@
 """
 validate_p2.py — Correcteur du décor du projet de phase P2 « L'atelier ».
-Usage : blender -b --factory-startup <p2_atelier_xxx.blend> --python validate_p2.py --python-exit-code 1
+Usage : blender -b --factory-startup <p2_atelier_xxx.blend> --python-exit-code 1 --python validate_p2.py
 La bibliothèque se vérifie avec 02_MODELING/CH02_13_ASSETS/SCRIPTS/validate_ch02_13.py.
 Testé avec : Blender 5.3.0 (test_p2.py : fichier vide refusé, scène d'exemple acceptée).
 """

@@ -11,8 +11,9 @@ Usage :
 Fonction réutilisable : scene_cost(scene) -> dict
 
 Note : l'estimation multiplie les faces par 4 à chaque niveau de Subdivision (règle exacte
-pour des quads, approchée pour des triangles/n-gons). Les autres modificateurs sont
-évalués tels quels en viewport.
+pour la subdivision d’un maillage de quads dans l’exemple). Il ignore la
+géométrie ajoutée par les autres modificateurs et les exclusions de collections.
+Ce total n’est ni un comptage évalué général ni une mesure de mémoire.
 Testé avec : Blender 5.3.0.
 """
 import bpy

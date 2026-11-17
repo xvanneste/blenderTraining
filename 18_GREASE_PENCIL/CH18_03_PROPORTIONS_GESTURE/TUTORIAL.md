@@ -42,6 +42,10 @@ Enregistrez `ch18_03_gesture_<prenom>_v001.blend` (Object Mode), puis :
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_03_gesture_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_03.py" --python-exit-code 1 -- --exercise gesture --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_03.py" -- --exercise gesture --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_03_gesture_reference.png`.
+
+## Variante de contrôle
+
+Simplifiez la silhouette du mannequin à des masses et des axes. Tirez une autre pose avec le même personnage en changeant l’appui. **Preuve** La silhouette identifie la pose et l’appui sans détails de vêtement ou de visage.

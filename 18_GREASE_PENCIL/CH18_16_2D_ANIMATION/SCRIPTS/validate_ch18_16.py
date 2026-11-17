@@ -1,6 +1,6 @@
 """
 validate_ch18_16.py — Correcteur « La balle rebondissante 2D » (CH18.16).
-Usage : … --python validate_ch18_16.py --python-exit-code 1 -- --exercise keys|bounce [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_16.py -- --exercise keys|bounce [--render]
 Mesure, pour chaque image clé du calque USER_Ball : centre, largeur, hauteur de la balle (boîte
 englobante des traits). En déduit contacts (bas de la balle au sol, minimum local), sommets
 (maximum entre deux contacts), amortissement, progression horizontale, et pour « bounce » :

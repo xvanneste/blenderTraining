@@ -30,7 +30,7 @@ phases 4 (matériaux), 9 (lumière) et 15 (court-métrage).
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "PROJECTS\p2_atelier\p2_atelier_<prenom>_v001.blend" `
-  --python "02_MODELING\PROJECT_P2\validate_p2.py" --python-exit-code 1
+  --python-exit-code 1 --python "02_MODELING\PROJECT_P2\validate_p2.py"
 ```
 
 ## Grille d'évaluation (sur 100)

@@ -1,0 +1,95 @@
+{
+  "chapter": "CH17.02",
+  "title": "Environment Artist",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Que représentent les origines des modules ?",
+      "type": "mcq",
+      "choices": [
+        "La couleur dominante",
+        "Le centre de toute la scène",
+        "Les points de placement et raccord"
+      ],
+      "answer": 2,
+      "explain": "Un kit cohérent résout les raccords avant la production en série. Appliquer l’échelle permet de comparer dimensions et snapping."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Pourquoi fixer la graine ?",
+      "type": "mcq",
+      "choices": [
+        "Rejouer la même distribution pour comparer",
+        "Réduire mécaniquement chaque mesh",
+        "Mettre la timeline à zéro"
+      ],
+      "answer": 0,
+      "explain": "Le vide fait partie de la composition. La graine stable permet de reproduire un contrôle visuel."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quand réaliser des instances ?",
+      "type": "mcq",
+      "choices": [
+        "Toujours avant de tester le budget",
+        "Quand une opération ou une livraison a besoin de géométrie réelle",
+        "Seulement pour changer la lumière"
+      ],
+      "answer": 1,
+      "explain": "Réaliser les instances a un coût. Mesurez ce qui change dans le contexte de livraison."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « Le scatter place des objets dans la zone de passage. »",
+      "answer_text": "Le masque est inversé ou mélange une donnée d’instance avec une donnée de surface. Affichez le masque seul puis testez sa valeur avant l’instanciation."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Deux modules s’alignent en vue de dessus mais pas en hauteur. Que comparer ?",
+      "answer_text": "L’origine, la grille verticale et la cote des points de raccord."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi isoler le masque avant le scatter ?",
+      "answer_text": "Une erreur de densité ou d’inversion se lit plus clairement sans les instances."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles mesures défendre dans le portfolio ?",
+      "answer_text": "Un budget de géométrie, taille ou temps de lecture sur deux versions visuellement comparables."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Kit modulaire » vérifiable ?",
+      "answer_text": "Quatre modules et deux assemblages qui se raccordent sans interstice."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Distribution et histoire » vérifiable ?",
+      "answer_text": "Une vue d’ensemble montre le chemin, le principal point focal et le masque."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle preuve rend l’étape « Budget » vérifiable ?",
+      "answer_text": "Un tableau chiffre deux versions et justifie laquelle garder."
+    }
+  ]
+}

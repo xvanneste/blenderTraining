@@ -1,6 +1,6 @@
 """
 validate_ch18_19.py — Correcteur « Personnage 2D dans un décor 3D » (CH18.19).
-Usage : … --python validate_ch18_19.py --python-exit-code 1 -- --exercise hybrid [--render]
+Usage : … --python-exit-code 1 --python validate_ch18_19.py -- --exercise hybrid [--render]
 Vérifie : un objet GP avec modificateur Line Art sur le décor (traits réellement générés) ; le
 personnage GP_Character debout DANS le décor (pieds au sol, taille humaine, profondeur entre l'avant
 et le mur) et en partie caché par un objet 3D vu de la caméra (lancer de rayons) ; les traits de

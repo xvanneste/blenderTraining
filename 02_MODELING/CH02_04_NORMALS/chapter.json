@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch02_04_normals_reference.png", "Rendu après correction"],
     ["SCRIPTS/validate_ch02_04.py", "Correcteur (orientation, normales de coin du maillage évalué)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_04_normals_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch02_04.py\" --python-exit-code 1 -- --exercise normals --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch02_04_normals_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch02_04.py\" -- --exercise normals --render",
   "deliverables": ["Objets validés.", "Auto-évaluation ≥ 14/20.", "Mini-projet : trois props propres."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Objets validés.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH02.05 — Hard Surface](../CH02_05_HARD_SURFACE/README.md)"

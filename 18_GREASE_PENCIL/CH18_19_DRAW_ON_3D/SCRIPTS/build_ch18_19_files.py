@@ -9,7 +9,7 @@ build_ch18_19_files.py — « Personnage 2D dans un décor 3D » (CH18.19, phase
       GP_LineArt : objet GP avec modificateur Line Art (source : collection SET) ; personnage 2D
       dessiné DEBOUT dans le décor (plan X-Z à y = 1,0, pieds au sol), en partie caché par la caisse
       avant ; affiche et fenêtre dessinées SUR le mur du fond (placement Surface) ; passe Z activée.
-Usage : blender -b --factory-startup --python build_ch18_19_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch18_19_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -59,7 +59,7 @@ Sculptures, scans et booléens donnent des maillages trop denses et désordonné
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch02_09_retopo_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch02_09.py" --python-exit-code 1 -- --exercise retopo --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch02_09.py" -- --exercise retopo --render
 ```
 
 ## Livrables attendus

@@ -58,7 +58,7 @@ Le même jeu de dessins change de caractère selon son exposition : ce chapitre 
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_17_walk_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_17.py" --python-exit-code 1 -- --exercise walk --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_17.py" -- --exercise walk --render
 ```
 
 ## Livrables attendus

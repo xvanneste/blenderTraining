@@ -1,7 +1,28 @@
 {
   "extra": [
-    {"script": "bcma_input_report.py", "args": ["--profile", "mouse3"]},
-    {"script": "bcma_input_report.py", "args": ["--profile", "laptop"]},
-    {"script": "bcma_input_report.py", "args": ["--profile", "tablet"]}
+    {
+      "script": "bcma_input_report.py",
+      "args": [
+        "--profile",
+        "mouse3"
+      ]
+    },
+    {
+      "script": "bcma_input_report.py",
+      "args": [
+        "--profile",
+        "laptop"
+      ]
+    },
+    {
+      "script": "bcma_input_report.py",
+      "args": [
+        "--profile",
+        "tablet"
+      ]
+    },
+    {
+      "script": "verifier_navigation.py"
+    }
   ]
 }

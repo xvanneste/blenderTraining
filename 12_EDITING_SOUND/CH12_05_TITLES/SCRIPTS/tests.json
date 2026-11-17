@@ -1,0 +1,41 @@
+{
+  "build": "build_ch12_05_files.py",
+  "validator": "validate_ch12_05.py",
+  "cases": [
+    {
+      "file": "COMPLETED_EXAMPLES/ch12_05_titles_solution.blend",
+      "exercise": "titles",
+      "expect": true
+    },
+    {
+      "file": "STARTER_FILES/ch12_05_titles_starter.blend",
+      "exercise": "titles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_05_titles_typo.blend",
+      "exercise": "titles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_05_titles_late_sub.blend",
+      "exercise": "titles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_05_titles_top_sub.blend",
+      "exercise": "titles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_05_titles_tiny_title.blend",
+      "exercise": "titles",
+      "expect": false
+    },
+    {
+      "file": "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/ch12_05_titles_title_off_center.blend",
+      "exercise": "titles",
+      "expect": false
+    }
+  ]
+}

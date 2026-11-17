@@ -31,6 +31,10 @@ Ouvrez `STARTER_FILES/ch18_19_hybrid_starter.blend` ; Num 0 (vue caméra `CAM_Sh
 ```powershell
 & "C:\Program Files\Blender Foundation\Blender 5.3\blender.exe" -b --factory-startup `
   "STARTER_FILES\ch18_19_hybrid_<prenom>_v001.blend" `
-  --python "SCRIPTS\validate_ch18_19.py" --python-exit-code 1 -- --exercise hybrid --render
+  --python-exit-code 1 --python "SCRIPTS\validate_ch18_19.py" -- --exercise hybrid --render
 ```
 Référence : `COMPLETED_EXAMPLES/ch18_19_hybrid_reference.png`.
+
+## Variante de contrôle
+
+Comparez une vue caméra, une vue de côté et un export de test. Recherchez un croisement entre le trait et un objet 3D. **Preuve** Vous résolvez un défaut de visibilité par placement ou réglage en gardant le cadre voulu.

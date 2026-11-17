@@ -1,0 +1,112 @@
+{
+  "chapter": "CH06.08",
+  "title": "Shape keys et drivers",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Un shape key stocke…",
+      "choices": [
+        "Une nouvelle texture",
+        "Une autre position pour chaque sommet, mélangée selon une valeur",
+        "Un os",
+        "Un modificateur"
+      ],
+      "answer": 1,
+      "explain": "Chaque shape key est un jeu de positions de sommets ; la Value (0 à 1) dose le mélange avec Basis."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "À quoi sert Basis ?",
+      "choices": [
+        "Au rendu",
+        "À la forme de référence : les autres shape keys sont relatifs à elle",
+        "À la texture",
+        "À rien"
+      ],
+      "answer": 1,
+      "explain": "Basis est la forme de repos ; elbow_fix = déplacement relatif à Basis."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Pourquoi limiter le shape key par un groupe de sommets ?",
+      "choices": [
+        "Pour accélérer le rendu",
+        "Pour qu'il n'agisse qu'autour du coude",
+        "Pour changer la couleur",
+        "C'est obligatoire"
+      ],
+      "answer": 1,
+      "explain": "Sans groupe, le gonflement s'applique à tout le tube (écart de 11 mm mesuré loin du coude)."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi le coude s'écrase-t-il à 90° ?",
+      "answer_text": "Le skinning linéaire mélange deux rotations : les sommets de l'anneau du coude sont interpolés en ligne droite entre leurs deux positions, ce qui les rapproche de l'axe (rayon 4,08 cm côté moyen, 2,5 cm côté intérieur)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que mesure le correcteur au repos ?",
+      "answer_text": "Que le maillage évalué est identique à celui sans le shape key (≤ 0,01 mm) : la correction ne doit agir que quand le coude plie."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle expression donne 1 à 90° (en radians) ?",
+      "choices": [
+        "a / 90",
+        "a / 1.5708",
+        "a * 90",
+        "a + 1"
+      ],
+      "answer": 1,
+      "explain": "90° = π/2 ≈ 1,5708 rad ; l'API et le driver travaillent en radians."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quel type de variable lit la rotation d'un bone ?",
+      "choices": [
+        "Single Property",
+        "Transform Channel",
+        "Context Property",
+        "Distance"
+      ],
+      "answer": 1,
+      "explain": "Transform Channel : bone fore, Z Rotation, Local Space."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il si le driver lit upper au lieu de fore ?",
+      "answer_text": "upper ne tourne pas : la valeur reste à 0, le coude reste écrasé (mesuré : 4,08 cm)."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi mesurer sur le maillage évalué ?",
+      "answer_text": "Parce que le résultat visible dépend du skinning, du shape key et du driver combinés ; les propriétés seules ne prouvent rien."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Donnez un autre usage d'un shape key piloté.",
+      "answer_text": "Plis de la peau, muscle qui gonfle, correction d'épaule, ou expressions faciales (CH06.09)."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "chapter": "CH04.02",
+  "title": "Packing et UDIM",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que représente une tuile UDIM ?",
+      "choices": [
+        "Un îlot",
+        "Un carré UV [0,1]² avec sa propre image",
+        "Un matériau",
+        "Un modificateur"
+      ],
+      "answer": 1,
+      "explain": "Chaque tuile a sa propre texture ; l'objet les utilise toutes."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Quel est le numéro de la tuile u ∈ [1, 2], v ∈ [0, 1] ?",
+      "choices": [
+        "1001",
+        "1002",
+        "1011",
+        "2001"
+      ],
+      "answer": 1,
+      "explain": "Numéro = 1001 + ⌊u⌋ + 10·⌊v⌋ : ici 1001 + 1 = 1002."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Et pour u ∈ [0, 1], v ∈ [1, 2] ?",
+      "choices": [
+        "1002",
+        "1011",
+        "1101",
+        "1010"
+      ],
+      "answer": 1,
+      "explain": "1001 + 0 + 10 = 1011."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi packer chaque groupe séparément avant de déplacer un groupe vers sa tuile ?",
+      "answer_text": "Pack Islands remplit le carré [0,1]² avec les îlots sélectionnés ; on obtient ainsi un groupe qui occupe bien sa tuile, qu'on translate ensuite d'une unité (G, X, 1)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quel est le défaut d'un îlot à cheval sur deux tuiles ?",
+      "answer_text": "Une partie de l'îlot lit une image et l'autre une autre : coupure visible sur le modèle, et les outils de peinture et de baking sont perdus."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Quelle Source donne-t-on à l'image d'un matériau UDIM ?",
+      "choices": [
+        "Single Image",
+        "UDIM Tiles",
+        "Generated",
+        "Movie"
+      ],
+      "answer": 1,
+      "explain": "Image Texture > Source : UDIM Tiles (en API : source = TILED)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que se passe-t-il si les UV utilisent la tuile 1002 mais que l'image n'a que 1001 ?",
+      "answer_text": "La tuile manquante s'affiche en magenta ou noir ; le correcteur exige que l'image possède toutes les tuiles utilisées."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi la densité de texels peut-elle différer entre tuiles ?",
+      "answer_text": "Choix de production : plus de résolution sur le couvercle (ici 1,5×) ; l'important est qu'elle soit uniforme DANS une tuile et que la différence soit voulue."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Occupation par tuile dans la solution ?",
+      "answer_text": "76 % pour la tuile 1001 et 74 % pour la tuile 1002 (le correcteur exige ≥ 40 %)."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quand préférer UDIM à une seule texture plus grande ?",
+      "answer_text": "Quand une seule texture dépasse la mémoire ou la taille voulue, ou quand différents artistes peignent différentes parties (corps, visage, vêtements) sur des tuiles séparées."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "CH13.08",
+  "title": "Extensions Blender",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h 30",
+  "intro": "Fabriquer et valider un ZIP d’extension locale à partir du panneau de repères.",
+  "prereqs": [
+    "CH13.07"
+  ],
+  "objectives": [
+    "Les deux fichiers sont à la racine du dossier de construction.",
+    "Blender crée bcma_reperes-1.0.0.zip et signale la construction.",
+    "Le panneau est utilisable après activation et disparaît après désactivation."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Préparer le paquet",
+      ""
+    ],
+    [
+      "L2",
+      "Valider puis construire",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/blender_manifest.toml",
+      "Manifeste de l’extension"
+    ],
+    [
+      "../ASSETS_ATELIERS/bcma_reperes-1.0.0.zip",
+      "Archive construite"
+    ]
+  ],
+  "pass_criteria": [
+    "Les deux fichiers sont à la racine du dossier de construction.",
+    "Blender crée bcma_reperes-1.0.0.zip et signale la construction.",
+    "Le panneau est utilisable après activation et disparaît après désactivation."
+  ]
+}

@@ -21,12 +21,12 @@ livrables, critères qualité et budget (détails dans `15_SHORT_FILMS/`).
 
 | Chapitre | Statut |
 |---|---|
-| CH15.01 De l'idée au scénario | ⬜ Non commencé |
-| CH15.02 Storyboard et animatique | ⬜ Non commencé |
-| CH15.03 Direction artistique | ⬜ Non commencé |
-| CH15.04 Planification | ⬜ Non commencé |
-| CH15.05 Fabrication | ⬜ Non commencé |
-| CH15.06 Finition | ⬜ Non commencé |
+| [CH15.01 De l'idée au scénario](CH15_01_SCRIPT/README.md) | ✅ Terminé et vérifié |
+| [CH15.02 Storyboard et animatique](CH15_02_STORYBOARD/README.md) | ✅ Terminé et vérifié |
+| [CH15.03 Direction artistique](CH15_03_ART_DIRECTION/README.md) | ✅ Terminé et vérifié |
+| [CH15.04 Planification](CH15_04_PLANNING/README.md) | ✅ Terminé et vérifié |
+| [CH15.05 Fabrication](CH15_05_PRODUCTION/README.md) | ✅ Terminé et vérifié |
+| [CH15.06 Finition](CH15_06_FINISHING/README.md) | ✅ Terminé et vérifié |
 
 ## Organisation du dossier
 Chaque chapitre a son sous-dossier `CH15_MM_NOM/` conforme à

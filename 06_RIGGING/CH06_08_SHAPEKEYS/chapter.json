@@ -1,0 +1,68 @@
+{
+  "code": "CH06.08",
+  "title": "Shape keys et drivers",
+  "phase_title": "6 — Rigging professionnel",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Le skinning linéaire écrase les articulations : un coude plié à 90° perd du volume (rayon de l'anneau du coude : 4,08 cm au lieu de 5,00 cm). Un shape key correctif remet le volume, et un driver le déclenche automatiquement en fonction de la pose. Ce chapitre construit ce mécanisme sur un bras-tube : shape key limité par un groupe de sommets, valeur pilotée par la rotation du bone fore. Le correcteur plie le bras à 45° et 90° et mesure les sommets évalués.",
+  "prereqs": [
+    "CH06.03 (skinning), CH06.07 (drivers)."
+  ],
+  "objectives": [
+    "Créer un shape key relatif à Basis.",
+    "Le limiter par un groupe de sommets.",
+    "Le piloter par un driver lié à une pose.",
+    "Mesurer l'effet sur le maillage évalué."
+  ],
+  "competences": [
+    [
+      "C06.08.a",
+      "Corrective shape keys",
+      "Exercice 2 (correcteur) + croquis du coude"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Le shape key correctif",
+      "3 h"
+    ],
+    [
+      "L2",
+      "Le driver et la mesure",
+      "3 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch06_08_shapekeys_starter.blend",
+      "Bras lié (Automatic Weights), sans shape key ni driver"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_08_shapekeys_solution.blend",
+      "Shape key elbow_fix, groupe elbow, driver sur fore"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch06_08_shapekeys_reference.png",
+      "Vue de dessus à 90° : coude écrasé (gauche) puis corrigé (droite)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (sans shape key, sans driver, toujours actif, trop faible, sans groupe, mauvais bone)"
+    ],
+    [
+      "SCRIPTS/validate_ch06_08.py",
+      "Correcteur (shapekeys)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch06_08_shapekeys_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch06_08.py\" -- --exercise shapekeys",
+  "deliverables": [
+    "Shape key correctif piloté validé.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "[CH06.09 — Rig facial](../CH06_09_FACIAL/README.md)"
+}

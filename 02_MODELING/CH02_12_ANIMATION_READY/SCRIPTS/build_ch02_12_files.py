@@ -8,7 +8,7 @@ build_ch02_12_files.py — « Le coude qui plie bien » (CH02.12, modélisation 
   COMPLETED_EXAMPLES/ch02_12_arm_solution.blend
       Mêmes objets + 4 boucles ajoutées autour du coude (z = 0,24 / 0,27 / 0,33 / 0,36).
   COMPLETED_EXAMPLES/ch02_12_arm_bent_starter.png et _bent_solution.png : coude plié à 90°.
-Usage : blender -b --factory-startup --python build_ch02_12_files.py --python-exit-code 1
+Usage : blender -b --factory-startup --python-exit-code 1 --python build_ch02_12_files.py
 Testé avec : Blender 5.3.0.
 """
 import math

@@ -1,6 +1,6 @@
 """
 validate_ch02_13.py — Correcteur « La bibliothèque de props » (CH02.13).
-Usage : blender -b --factory-startup <fichier.blend> --python validate_ch02_13.py --python-exit-code 1 -- --exercise library [--render]
+Usage : blender -b --factory-startup <fichier.blend> --python-exit-code 1 --python validate_ch02_13.py -- --exercise library [--render]
 Lit les métadonnées d'asset des objets et le fichier blender_assets.cats.txt situé À CÔTÉ du .blend.
 Testé avec : Blender 5.3.0.
 """

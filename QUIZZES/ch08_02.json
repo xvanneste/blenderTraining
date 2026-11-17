@@ -1,0 +1,112 @@
+{
+  "chapter": "CH08.02",
+  "title": "Soft Bodies",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce qu'un Soft Body ?",
+      "choices": [
+        "Un maillage de masses reliées par des ressorts",
+        "Un matériau",
+        "Un shape key",
+        "Un rig"
+      ],
+      "answer": 0,
+      "explain": "Chaque sommet est une masse, chaque arête un ressort."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que fait le Goal ?",
+      "choices": [
+        "Il ramène les sommets vers leur position d'origine selon leur poids",
+        "Il règle la couleur",
+        "Il supprime la gravité",
+        "Il lisse le maillage"
+      ],
+      "answer": 0,
+      "explain": "Poids 1 : le sommet reste accroché ; poids 0 : il est libre."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Comment choisir les sommets accrochés ?",
+      "choices": [
+        "Un groupe de sommets (poids)",
+        "Une texture",
+        "Un modificateur Mirror",
+        "Un marqueur"
+      ],
+      "answer": 0,
+      "explain": "Groupe « pin » : poids 1 sur le bord x = −1."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi des poids explicites 0 sur les sommets libres ?",
+      "answer_text": "Avec Goal Default à 1, un sommet absent du groupe reste fixe ; les poids 0 explicites le libèrent (mesure : la plaque ne pend pas sans eux)."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Que montre « no_goal » ?",
+      "answer_text": "Sans goal, toute la plaque tombe : z minimal de −39 m après 100 images."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Que règlent Pull et Push ?",
+      "choices": [
+        "La raideur des arêtes (étirement et compression)",
+        "La couleur",
+        "La caméra",
+        "La masse"
+      ],
+      "answer": 0,
+      "explain": "À 0,02 la plaque s'étire de 2,8 fois ; à 0,9 de 1,01 fois."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Pourquoi garder une masse modeste ?",
+      "choices": [
+        "Une masse forte étire les arêtes",
+        "Elle accélère le rendu",
+        "Elle change la couleur",
+        "Aucun effet"
+      ],
+      "answer": 0,
+      "explain": "30 kg : arêtes étirées à 1,20 fois, plaque à 1,10 m de haut."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi simuler pas à pas ?",
+      "answer_text": "L'état d'une image dépend de la précédente : on avance de l'image 1 à 100 avant de mesurer."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Que montre « no_edges » ?",
+      "answer_text": "Sans arêtes-ressorts les sommets se dispersent : étirement de 213 fois."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Soft Body ou Cloth ?",
+      "answer_text": "Soft Body pour des volumes mous et des plaques simples ; Cloth (CH08.03) pour les tissus (plis, collisions, couture)."
+    }
+  ]
+}

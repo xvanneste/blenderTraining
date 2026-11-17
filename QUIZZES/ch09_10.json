@@ -1,0 +1,112 @@
+{
+  "chapter": "CH09.10",
+  "title": "Mouvements et grammaire",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Qu'est-ce que la ligne d'action ?",
+      "choices": [
+        "La droite qui relie les deux personnages",
+        "La ligne d'horizon",
+        "Le chemin de la caméra",
+        "Une ligne de dialogue"
+      ],
+      "answer": 0,
+      "explain": "Ici l'axe X, de A (x = −1) à B (x = +1)."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Que se passe-t-il si la caméra traverse cette ligne ?",
+      "choices": [
+        "Les personnages changent de côté à l'écran",
+        "Rien",
+        "Le plan devient plus net",
+        "Le son change"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : gros plan de l'autre côté → rouge à 74 % de la largeur (au lieu de 26 %)."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L1",
+      "type": "mcq",
+      "q": "Dans quel ordre découpe-t-on classiquement une approche ?",
+      "choices": [
+        "Large, moyen, gros plan",
+        "Gros plan, large, moyen",
+        "Aucun ordre",
+        "Toujours un seul plan"
+      ],
+      "answer": 0,
+      "explain": "C'est une convention, pas une loi."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Pourquoi A doit-il rester à gauche ?",
+      "answer_text": "Le spectateur se repère par la direction à l'écran : si A et B échangent leurs côtés, le dialogue semble s'inverser."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L1",
+      "type": "open",
+      "q": "Quelles tailles de plan le correcteur vérifie-t-il ?",
+      "answer_text": "Hauteur de A : large ≤ 35 % (mesuré 27 %), moyen 40–65 % (58 %), gros plan 70–95 % (82 %)."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Comment lier une caméra à une image de la timeline ?",
+      "choices": [
+        "Marker > Bind Camera to Markers (marker.camera_bind)",
+        "Render > Camera",
+        "Object > Parent",
+        "Edit > Undo"
+      ],
+      "answer": 0,
+      "explain": "Libellé relu par l'API : « Bind Camera to Markers » ; menu relu dans bl_ui/space_time.py ; M ajoute un repère (keymap)."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "mcq",
+      "q": "Un travelling avant fait…",
+      "choices": [
+        "Grandir les personnages dans le cadre",
+        "Les rapetisser",
+        "Changer leur couleur",
+        "Les déplacer"
+      ],
+      "answer": 0,
+      "explain": "Mesuré : 58 % → 78 % de la hauteur de l'image."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi l'interpolation linéaire ?",
+      "answer_text": "Un travelling à vitesse constante : une interpolation par défaut (Bézier) accélère et ralentit aux extrémités."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Pourquoi le correcteur rend-il l'image 48 en plus de l'image 25 ?",
+      "answer_text": "Pour comparer la taille de A au début et à la fin du travelling : la valeur à 48 doit dépasser 1,15 fois celle de 25."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelle est la limite de cette mesure ?",
+      "answer_text": "Deux cylindres de couleur et trois caméras ; elle ne juge ni le rythme du montage, ni le regard, ni le raccord de mouvement."
+    }
+  ]
+}

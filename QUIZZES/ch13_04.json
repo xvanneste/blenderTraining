@@ -1,0 +1,95 @@
+{
+  "chapter": "CH13.04",
+  "title": "Collections, caméras et rendus",
+  "pass_score": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "lesson": "L1",
+      "q": "Quelle propriété relie un marqueur à une caméra ?",
+      "type": "mcq",
+      "choices": [
+        "marker.camera",
+        "marker.name",
+        "scene.render.camera"
+      ],
+      "answer": 0,
+      "explain": "Les vecteurs position et cible règlent séparément le placement et l’axe optique."
+    },
+    {
+      "id": "Q2",
+      "lesson": "L2",
+      "q": "Quel réglage zoome en caméra orthographique ?",
+      "type": "mcq",
+      "choices": [
+        "clip_end",
+        "ortho_scale",
+        "fps"
+      ],
+      "answer": 1,
+      "explain": "Un marqueur lié à une caméra prend effet à son image, puis reste actif jusqu’au marqueur suivant."
+    },
+    {
+      "id": "Q3",
+      "lesson": "L2",
+      "q": "Quel état prouve que la coupe se fait en 25 ?",
+      "type": "mcq",
+      "choices": [
+        "Deux objets caméra dans l’Outliner",
+        "Deux marqueurs de même nom",
+        "PLAN_010 en 24 et PLAN_020 en 25"
+      ],
+      "answer": 2,
+      "explain": "Des réglages communs évitent des rapports d’image ou des cadences incohérentes."
+    },
+    {
+      "id": "Q4",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quel défaut explique ce résultat et quelle correction testez-vous ? « La caméra ne change pas en lecture. »",
+      "answer_text": "Le marqueur porte un nom de plan mais sa propriété camera est vide. Reliez le marqueur à une caméra et testez une image de part et d’autre de la coupe."
+    },
+    {
+      "id": "Q5",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Le plan de détail s’active trop tôt. Quel couple de valeurs comparez-vous ?",
+      "answer_text": "Comparez les images 24 et 25 et le frame du marqueur lié. Le résultat attendu change sur 25."
+    },
+    {
+      "id": "Q6",
+      "lesson": "L2",
+      "type": "open",
+      "q": "La caméra montre encore une large portion de studio. Que changez-vous sans déplacer son axe ?",
+      "answer_text": "Diminuez ortho_scale tant que le sujet reste dans le champ."
+    },
+    {
+      "id": "Q7",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Comment livrer une scène dont on peut reproduire le rendu ?",
+      "answer_text": "Joindre le .blend, les réglages 640 × 360 à 100 %, 24 i/s, les images de coupe et les noms de caméra."
+    },
+    {
+      "id": "Q8",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Origine du cadre » ?",
+      "answer_text": "Les deux caméras se trouvent dans COL_Plans et visent le présentoir."
+    },
+    {
+      "id": "Q9",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Raccord de caméra » ?",
+      "answer_text": "PLAN_010 est actif en 1 et 24, PLAN_020 en 25 et 48."
+    },
+    {
+      "id": "Q10",
+      "lesson": "L2",
+      "type": "open",
+      "q": "Quelles preuves conserver pour l’étape « Réglage de livraison » ?",
+      "answer_text": "Deux PNG cadrés différemment, aux images 1 et 25."
+    }
+  ]
+}

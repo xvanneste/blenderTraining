@@ -21,7 +21,7 @@
     ["COMPLETED_EXAMPLES/ch01_02_museum_solution.blend", "Caméras orthographiques face/droite/dessus réglées"],
     ["SCRIPTS/validate_ch01_02.py", "Correcteur de l'exercice 3"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_02_museum_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch01_02.py\" --python-exit-code 1 -- --exercise cameras",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch01_02_museum_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch01_02.py\" -- --exercise cameras",
   "deliverables": ["ch01_02_museum_<prenom>_v001.blend validé.", "Temps des tests chronométrés dans PROGRESS.md.", "Mini-projet : 5 images de visite guidée."],
   "next": "[CH01.03 — Sélection et manipulation](../CH01_03_SELECTION_TRANSFORM/README.md)"
 }

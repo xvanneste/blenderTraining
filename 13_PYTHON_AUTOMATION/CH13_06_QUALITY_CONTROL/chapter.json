@@ -1,0 +1,43 @@
+{
+  "code": "CH13.06",
+  "title": "Validation d’une scène",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h 15",
+  "intro": "Établir un rapport de contrôle local avec trois anomalies reproductibles.",
+  "prereqs": [
+    "CH13.05"
+  ],
+  "objectives": [
+    "Le terminal affiche zéro anomalie pour la référence.",
+    "Le rapport contient NOM, ECHELLE et IMAGE_ABSENTE avec les noms concernés.",
+    "Le rapport repasse à zéro et une vue de contrôle compare la silhouette."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Point zéro",
+      ""
+    ],
+    [
+      "L2",
+      "Défauts contrôlés",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/controler_scene.py",
+      "Script de contrôle"
+    ],
+    [
+      "../ASSETS_ATELIERS/presentoir_plans.blend",
+      "Scène étalon"
+    ]
+  ],
+  "pass_criteria": [
+    "Le terminal affiche zéro anomalie pour la référence.",
+    "Le rapport contient NOM, ECHELLE et IMAGE_ABSENTE avec les noms concernés.",
+    "Le rapport repasse à zéro et une vue de contrôle compare la silhouette."
+  ]
+}

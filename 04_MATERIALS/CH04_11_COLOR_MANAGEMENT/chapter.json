@@ -1,0 +1,69 @@
+{
+  "code": "CH04.11",
+  "title": "Gestion des couleurs",
+  "phase_title": "4 — UV, textures et matériaux",
+  "level": "intermédiaire",
+  "duration": "4 h",
+  "intro": "Une image n'a de couleur que par son espace colorimétrique. Ce chapitre ferme la phase 4 par les règles qui évitent les erreurs invisibles : couleurs en sRGB, données (rugosité, normales) en Non-Color, un View Transform adapté aux hautes lumières, une exposition raisonnable, un gamma à 1 et une sortie maître en OpenEXR. Le correcteur contrôle tous ces réglages sur une planche d'essai à trois textures et un panneau lumineux.",
+  "prereqs": [
+    "CH04.03 (PBR)",
+    "CH04.07 (Non-Color pour les normales)."
+  ],
+  "objectives": [
+    "Distinguer une donnée d'une couleur et choisir l'espace de chaque image.",
+    "Choisir un View Transform et un Look.",
+    "Expliquer pourquoi gamma 1 et exposition modérée.",
+    "Choisir une sortie maître linéaire."
+  ],
+  "competences": [
+    [
+      "C04.11.a",
+      "Choisir le bon espace colorimétrique",
+      "Exercice 2 (correcteur) + comparaison de rendus"
+    ]
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Couleur ou donnée ?",
+      "2 h"
+    ],
+    [
+      "L2",
+      "View Transform, exposition, sortie maître",
+      "2 h"
+    ]
+  ],
+  "files": [
+    [
+      "STARTER_FILES/ch04_11_color_starter.blend",
+      "Planche d'essai : images en sRGB, vue Standard, sortie PNG (tout à corriger)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_11_color_solution.blend",
+      "Réglages corrects (AgX, EXR)"
+    ],
+    [
+      "COMPLETED_EXAMPLES/ch04_11_color_reference.png",
+      "Deux vues sous AgX"
+    ],
+    [
+      "COMPLETED_EXAMPLES/COUNTER_EXAMPLES/",
+      "Fichiers FAUX volontaires (albedo en Non-Color, rugosité en sRGB, vue Standard, vue Raw, exposition +4, gamma 2,2, sortie PNG)"
+    ],
+    [
+      "SCRIPTS/validate_ch04_11.py",
+      "Correcteur (color)"
+    ]
+  ],
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch04_11_color_starter_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch04_11.py\" -- --exercise color --render",
+  "deliverables": [
+    "Planche d'essai correctement réglée.",
+    "Auto-évaluation ≥ 7/10."
+  ],
+  "pass_criteria": [
+    "Quiz ≥ 8/10.",
+    "Exercice 2 validé."
+  ],
+  "next": "Projet P4 — bibliothèque de 25 matériaux (ou [PHASE 5](../../05_GEOMETRY_NODES/README.md) une fois ce projet réalisé)"
+}

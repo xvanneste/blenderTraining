@@ -8,6 +8,8 @@ phase de l'académie correspondante dans [CURRICULUM.md](../../CURRICULUM.md).
 Scénario (30 s) : *« Un petit robot répare seul une ampoule dans un atelier, la nuit, sous
 la pluie. L'ampoule s'allume. La pluie cesse, le soleil se lève sur la ville. Le robot
 sourit. »*
+**Exemple de décision**. Donnez d’abord 96 images au plan large qui situe l’atelier. Le spectateur voit le robot et sa zone de travail. Dans le plan suivant, rapprochez-vous de la main et de l’ampoule pour rendre le geste lisible. À 24 i/s, 96 images valent 4 secondes. Le budget de 30 secondes vaut 720 images. Additionnez les durées et conservez le temps du changement d’état, de la lampe éteinte à la lampe allumée.
+
 1. Lisez le scénario trois fois. Soulignez les **actions** et les **émotions**.
 2. Pour chaque action/émotion, choisissez une valeur de plan (THEORY §6) : un lieu → EWS ;
    une action précise → MS/FS ; une émotion → CU/ECU.
@@ -21,7 +23,7 @@ sourit. »*
 ```powershell
 python "..\..\SCRIPTS\bcma_shotlist_check.py" "ch00_08_shotlist_<prenom>.csv" --target-seconds 30 --tolerance 3
 ```
-✅ `RÉSULTAT : VALIDÉ`, 6 à 12 plans, ~30 s.
+✅ Le correcteur confirme la structure de la liste. Vérifiez aussi 6 à 12 plans et 648 à 792 images à 24 i/s si vous choisissez la tolérance de 3 secondes. Lisez les descriptions dans l’ordre et repérez dans quel plan le robot prend sa décision.
 
 ## Tutoriel 3 — Corriger une shot list cassée
 ```powershell
@@ -33,3 +35,7 @@ Lisez chaque `✘`, corrigez le fichier (copie), relancez jusqu'à `VALIDÉ`.
 Dans un tableur, créez un onglet *Suivi* : lignes = plans, colonnes = étapes (Board,
 Animatique, Layout, Anim, FX, Light, Rendu, Comp), cases = statut. Ajoutez une mise en forme
 conditionnelle (vert = done). Vous le réutiliserez pour le court A (phase 15).
+
+## À refaire sans le tutoriel
+
+Raccourcissez le film à 24 secondes en conservant la réparation, l’allumage et la réaction. À cadence inchangée, votre cible est de 576 images. Remettez une nouvelle version de la liste et justifiez la coupe retirée ou raccourcie.

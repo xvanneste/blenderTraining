@@ -23,7 +23,7 @@
     ["ASSETS/ch18_09_concept.png", "Image de référence (licence BCMA)"],
     ["SCRIPTS/validate_ch18_09.py", "Correcteur (profondeurs mesurées, sol à plat, cadre, passe Z)"]
   ],
-  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_09_set_<prenom>_v001.blend\" `\n  --python \"SCRIPTS\\validate_ch18_09.py\" --python-exit-code 1 -- --exercise set --render",
+  "validator_usage": "& \"C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe\" -b --factory-startup `\n  \"STARTER_FILES\\ch18_09_set_<prenom>_v001.blend\" `\n  --python-exit-code 1 --python \"SCRIPTS\\validate_ch18_09.py\" -- --exercise set --render",
   "deliverables": ["Décor validé.", "Auto-évaluation ≥ 14/20.", "Mini-projet : travelling dans un décor dessiné."],
   "pass_criteria": ["Quiz ≥ 8/10.", "Décor validé.", "Auto-évaluation ≥ 14/20."],
   "next": "[CH18.10 — Langage cinématographique](../CH18_10_FILM_LANGUAGE/README.md)"

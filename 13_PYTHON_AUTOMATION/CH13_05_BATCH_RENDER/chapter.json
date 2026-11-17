@@ -1,0 +1,43 @@
+{
+  "code": "CH13.05",
+  "title": "Rendu par lot",
+  "phase_title": "13 — Python et automatisation",
+  "level": "intermédiaire",
+  "duration": "2 h",
+  "intro": "Produire des images de contrôle via la ligne de commande et diagnostiquer un lot interrompu.",
+  "prereqs": [
+    "CH13.04"
+  ],
+  "objectives": [
+    "plan_0001.png ouvre correctement depuis le dossier désigné.",
+    "Les PNG 0001 et 0025 sont produits et le programme revient sans erreur.",
+    "Le chemin invalide échoue et la reprise produit les deux fichiers dans un dossier séparé."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Commande unitaire",
+      ""
+    ],
+    [
+      "L2",
+      "Lot et chemins",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../ASSETS_ATELIERS/rendre_lot.py",
+      "Lanceur Python"
+    ],
+    [
+      "../ASSETS_ATELIERS/presentoir_plans.blend",
+      "Scène à rendre"
+    ]
+  ],
+  "pass_criteria": [
+    "plan_0001.png ouvre correctement depuis le dossier désigné.",
+    "Les PNG 0001 et 0025 sont produits et le programme revient sans erreur.",
+    "Le chemin invalide échoue et la reprise produit les deux fichiers dans un dossier séparé."
+  ]
+}

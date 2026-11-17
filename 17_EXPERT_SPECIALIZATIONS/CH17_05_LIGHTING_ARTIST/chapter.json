@@ -1,0 +1,43 @@
+{
+  "code": "CH17.05",
+  "title": "Lighting Artist",
+  "phase_title": "17 — Expertise et spécialisations",
+  "level": "avancé",
+  "duration": "6 h",
+  "intro": "Éclairer une séquence de trois plans et prouver la continuité de valeurs et de couleurs à la coupe.",
+  "prereqs": [
+    "CH17.04"
+  ],
+  "objectives": [
+    "Deux témoins visibles dans les rendus de test et une configuration de couleur notée.",
+    "Le changement de luminance est narratif, tandis que la silhouette et le fond restent comparables.",
+    "Une planche avec trois fenêtres, une recommandation de budget et un défaut résolu."
+  ],
+  "lessons": [
+    [
+      "L1",
+      "Références et lookdev",
+      ""
+    ],
+    [
+      "L2",
+      "Continuité et exception",
+      ""
+    ]
+  ],
+  "files": [
+    [
+      "../../09_CINEMATOGRAPHY/PROJECT_P9/REFERENCE/p9_scene_reference.blend",
+      "Séquence d’éclairage de référence"
+    ],
+    [
+      "../../15_SHORT_FILMS/ASSETS_ATELIERS/sur_le_quai_layout.blend",
+      "Plans S010 à S030"
+    ]
+  ],
+  "pass_criteria": [
+    "Deux témoins visibles dans les rendus de test et une configuration de couleur notée.",
+    "Le changement de luminance est narratif, tandis que la silhouette et le fond restent comparables.",
+    "Une planche avec trois fenêtres, une recommandation de budget et un défaut résolu."
+  ]
+}
